@@ -978,6 +978,90 @@ export const terms: Term[] = [
     tags: ['bioengineering', 'regenerative medicine', 'ethics', 'future'],
     is_new: true,
   },
+  {
+    slug: 'nested-selves-overlapping-selves',
+    letter: 'N',
+    title: 'Nested Selves (Overlapping Selves)',
+    subtitle: 'selves inside selves, with goals at many scales',
+    definition: `The idea that a living system is not one self all the way down, but a stack of partially overlapping agents. Cells, tissues, organs, organisms, and collectives can each maintain goals, memories, and boundaries; their interests can align, compete, or be folded into a larger agenda. A coherent animal is therefore not the absence of smaller selves. It is a successful temporary coalition in which many local agents have been coupled into shared anatomical and behavioral goals.
+    <br><br>
+    This is why Levin treats "self" as an empirical, movable boundary rather than a fixed metaphysical unit. Development, regeneration, cancer, pregnancy, and chimeric constructs all expose cases where the relevant self is negotiable. The practical question is which level of organization can sense error, remember a target state, and act to reduce the mismatch.`,
+    authored_by: 'Prior art (GPT-Oct25)',
+    source: 'Levin (2019) "The Computational Boundary of a \'Self\'." DOI 10.3389/fpsyg.2019.02688. Also Shamilov et al. (2023) "Nested Selves: Self-Organization and Shared Markov Blankets in Prenatal Development in Humans." DOI 10.1111/tops.12717.',
+    provenance: ['GPT-Oct25'],
+    related: ['self', 'computational-boundary-of-a-self', 'cognitive-light-cone', 'multi-scale-competency-architecture'],
+    tags: ['selfhood', 'agency', 'scale', 'development'],
+  },
+  {
+    slug: 'non-neural-bioelectric-network-ben',
+    letter: 'N',
+    title: 'Non-Neural Bioelectric Network (BEN)',
+    subtitle: 'electrical computation outside the nervous system',
+    definition: `A network of non-neural cells that uses membrane voltage, ion channels, gap junctions, and related physiology to compute outcomes for growth, repair, and patterning. The point of BEN is not that a tissue is secretly a brain. It is that many of the functional ingredients associated with nervous systems — excitable states, electrical coupling, memory, feedback, and state-dependent decision-making — are older than neurons and already operate in somatic tissues.
+    <br><br>
+    Manicka and Levin model these networks as a substrate for somatic computation: cells exchange physiological information, settle into collective states, and bias morphogenesis without requiring a synaptic nervous system. BENs are one reason Levin can argue for continuity between neural cognition and developmental bioelectricity. Brains are a later, faster specialization of an ancient electrical control strategy.`,
+    authored_by: 'Prior art (GPT-Oct25)',
+    source: 'Manicka & Levin (2019) "Modeling somatic computation with non-neural bioelectric networks." DOI 10.1038/s41598-019-54859-8.',
+    provenance: ['GPT-Oct25'],
+    related: ['bioelectric-networks', 'bioelectric-code', 'developmental-bioelectricity', 'basal-cognition'],
+    tags: ['bioelectricity', 'computation', 'non-neural cognition', 'morphogenesis'],
+  },
+  {
+    slug: 'ownership-metadata-gap-junction-erasure',
+    letter: 'O',
+    title: 'Ownership Metadata (Gap Junction erasure)',
+    subtitle: 'signals shared without a source tag',
+    definition: `A shorthand for what happens when cells are coupled strongly enough that information no longer arrives with a clear individual owner. Gap junctions pass ions and small molecules directly between neighboring cells, creating shared physiological states. In Levin's TAME framing, this partially erases the informational identity of cellular subunits: a signal that began in one cell can become part of a tissue-level state without preserving a label saying "this was mine."
+    <br><br>
+    The phrase is useful because it names a mechanism of self-scaling. Larger selves are not built only by commanding smaller parts. They are built by changing what information each part can treat as its own concern. When gap-junctional coupling fails, cells can shrink back toward local goals; when coupling succeeds, a collective can act from a less parochial model of the body.`,
+    authored_by: 'Prior art (Claude-Oct25)',
+    source: 'Levin (2022) "Technological Approach to Mind Everywhere." DOI 10.3389/fnsys.2022.768201. Also Levin (2019) "The Computational Boundary of a \'Self\'." DOI 10.3389/fpsyg.2019.02688.',
+    provenance: ['Claude-Oct25'],
+    related: ['gap-junctions-connexins', 'cognitive-glue', 'computational-boundary-of-a-self', 'cognitive-dissociation'],
+    tags: ['gap junctions', 'selfhood', 'bioelectricity', 'collective intelligence'],
+  },
+  {
+    slug: 'planarian',
+    letter: 'P',
+    title: 'Planarian',
+    subtitle: 'Levin\'s workhorse model for regenerative pattern memory',
+    definition: `A flatworm model system, especially species such as Dugesia and Girardia, used by Levin's lab to study how tissues know what shape to rebuild. Planaria can regenerate complete animals from small fragments, which makes them unusually good for separating genetic instructions from physiological pattern memory. The famous two-headed planarian result shows why: a brief bioelectric or gap-junctional intervention during regeneration can alter head-tail polarity so that later amputations regenerate the same abnormal form without repeating the original treatment.
+    <br><br>
+    In Levinese, "planarian" is therefore more than an organism name. It is the canonical demonstration that anatomy is regulated by distributed memories and attractors, not just by hardwired local cell rules. Planaria make the bioelectric code experimentally visible because their body plan can be rewritten, inherited through regeneration, and tested again by cutting.`,
+    authored_by: 'Prior art (Claude-Oct25, Grok-Colophon, Sonnet-Colophon)',
+    source: 'Levin (2019) "Planarian regeneration as a model of anatomical homeostasis." DOI 10.1016/j.semcdb.2018.04.003. Also Emmons-Bell et al. (2015) "Gap Junctional Blockade Stochastically Induces Different Species-Specific Head Anatomies." DOI 10.3390/ijms161126065.',
+    provenance: ['Claude-Oct25', 'Grok-Colophon', 'Sonnet-Colophon', 'Video transcripts'],
+    related: ['morphogenetic-memory', 'bioelectric-pattern-memory', 'anatomical-homeostasis', 'bioelectric-code'],
+    tags: ['model system', 'regeneration', 'planaria', 'bioelectricity'],
+  },
+  {
+    slug: 'proto-cognition-proto-cognitive',
+    letter: 'P',
+    title: 'Proto-Cognition (Proto-Cognitive)',
+    subtitle: 'cognitive capacities before brains',
+    definition: `The minimal cognitive capacities that appear before nervous systems: sensing, memory, error correction, adaptation, preference, and goal-directed action in cells and tissues. "Proto" does not mean fake cognition. It means evolutionarily early and functionally simpler. A cell following a gradient, a bioelectric network storing a pattern, or a regenerating tissue deciding when repair is complete can be described as proto-cognitive when it performs some of the same control work that later becomes obvious in brains.
+    <br><br>
+    Levin uses the term to avoid a hard threshold between mechanism and mind. Neural cognition is not dropped onto passive matter from nowhere; it elaborates ancient competencies already present in living systems. Proto-cognition is the bridge concept that lets basal cognition, developmental bioelectricity, and TAME talk to one another without pretending a planarian fragment thinks like a person.`,
+    authored_by: 'Prior art (Grok-67, Grok-Lex)',
+    source: 'Levin (2019) "The Computational Boundary of a \'Self\'." DOI 10.3389/fpsyg.2019.02688. Also Levin (2023) "Bioelectric networks: the cognitive glue enabling evolutionary scaling from physiology to mind." DOI 10.1007/s10071-023-01780-3.',
+    provenance: ['Grok-67', 'Grok-Lex'],
+    related: ['basal-cognition', 'scale-free-cognition', 'mind-everywhere', 'non-neural-bioelectric-network-ben'],
+    tags: ['cognition', 'evolution', 'basal cognition', 'non-neural cognition'],
+  },
+  {
+    slug: 'quantum-reference-frames-in-biology',
+    letter: 'Q',
+    title: 'Quantum Reference Frames (in biology)',
+    subtitle: 'a formal language for nested biological observers',
+    definition: `A physics-adjacent formalism Levin uses with Chris Fields and colleagues to describe biological systems as hierarchies of observers, each with its own boundary, memory, and way of carving the world into meaningful states. In the neuron paper, synapses, dendrites, cells, and larger neural structures are modeled as nested quantum reference frames. The biological payoff is not a claim that ordinary cognition is magical quantum mind-stuff. It is a way to express how scale-dependent agents construct and transform information.
+    <br><br>
+    For the Levin dictionary, this term sits at the formal edge of the corpus. It generalizes the same theme as cognitive light cones and computational boundaries: what a system can know and control depends on the frame from which it samples the world. The formalism tries to make that nesting mathematically explicit.`,
+    authored_by: 'Prior art (GPT-Oct25)',
+    source: 'Fields, Glazebrook & Levin (2022) "Neurons as hierarchies of quantum reference frames." DOI 10.1016/j.biosystems.2022.104714.',
+    provenance: ['GPT-Oct25'],
+    related: ['cognitive-light-cone', 'computational-boundary-of-a-self', 'scale-free-cognition', 'nested-selves-overlapping-selves'],
+    tags: ['formal theory', 'physics', 'cognition', 'scale'],
+  },
 ];
 
 export function getTermBySlug(slug: string): Term | undefined {
