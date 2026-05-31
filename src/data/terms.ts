@@ -722,6 +722,90 @@ export const terms: Term[] = [
     related: ['anti-self', 'computational-boundary-of-a-self', 'bioelectric-code', 'morphoceutical'],
     tags: ['cancer', 'bioelectricity', 'selfhood', 'agency'],
   },
+  {
+    slug: 'coarse-graining-fine-graining',
+    letter: 'C',
+    title: 'Coarse-Graining / Fine-Graining',
+    subtitle: 'choosing the scale at which a system becomes intelligible',
+    definition: `Coarse-graining is the reduction of low-level detail into a higher-level variable that can be used for prediction and control; fine-graining is the reverse move toward more detailed description. In Levin's theoretical work with Fields and Friston, the distinction matters because biological agents do not act on the full molecular state of the world. They build usable summaries: voltage, tissue stress, anatomical error, hunger, pain, or other actionable state variables.
+    <br><br>
+    This is not hand-waving away mechanism. It is the reason higher scales can have real explanatory force. A cell collective can regulate "make a normal face" without representing every molecule in every cell. Coarse-graining is how lower-level happenings become a problem space a larger agent can navigate.`,
+    authored_by: 'Prior art (GPT-Oct25)',
+    source: 'Fields, Friston & Levin (2022) "Neurons as hierarchies of quantum reference frames." DOI 10.1016/j.biosystems.2022.104714. Also Levin (2022) TAME paper, DOI 10.3389/fnsys.2022.768201.',
+    provenance: ['GPT-Oct25'],
+    related: ['problem-space-navigation', 'cognitive-light-cone', 'scale-free-cognition', 'multi-scale-competency-architecture'],
+    tags: ['computation', 'scale', 'theory', 'control'],
+  },
+  {
+    slug: 'cognitive-dissociation',
+    letter: 'C',
+    title: 'Cognitive Dissociation',
+    subtitle: 'when competent parts stop sharing the larger goal',
+    definition: `A breakdown in the coupling that lets lower-level agents participate in a higher-level self. In healthy development and maintenance, cells retain their own local competencies while being aligned to tissue- and organism-level goals. Cognitive dissociation names the failure mode: the parts are still capable, but they no longer receive, trust, or act on the larger collective's control signals.
+    <br><br>
+    Levin uses this framing in aging and cancer contexts. Aged tissues may drift because morphostatic information no longer coordinates repair; tumors arise when cells shrink their computational boundary and return to unicellular goals. The point is subtle: dysfunction is not always incompetence. It can be competence at the wrong scale, after the cognitive glue binding the collective has weakened.`,
+    authored_by: 'Prior art (Grok-67)',
+    source: 'Pio-Lopez & Levin (2024) "Aging as a loss of morphostatic information." DOI 10.1016/j.arr.2024.102310. Also Levin (2021) "Bioelectrical approaches to cancer as a problem of the scaling of the cellular self." DOI 10.1016/j.pbiomolbio.2021.04.007.',
+    provenance: ['Grok-67'],
+    related: ['cognitive-glue', 'anti-self', 'cancer-as-self-shrinkage-oncostate', 'morphostasis'],
+    tags: ['aging', 'cancer', 'agency', 'scale'],
+  },
+  {
+    slug: 'competency-functional-competency',
+    letter: 'C',
+    title: 'Competency (Functional Competency)',
+    subtitle: 'problem-solving ability measured by outcomes, not mechanism',
+    definition: `The capacity of a system to reach an appropriate goal despite perturbation, novelty, or incomplete instructions. Levin's "competency" is functional: it is measured by what the system can reliably accomplish, not by whether it uses a familiar brain-like mechanism. A cell maintaining ion balance, a tissue closing a wound, an embryo correcting a scrambled face, and an organism learning a task all display competencies in different problem spaces.
+    <br><br>
+    The phrase is central because it lets Levin avoid both mysticism and reductionism. Living parts are not passive machines waiting for external commands, but their agency is not assumed to be humanlike. A functional competency is a real, testable ability: perturb the system, observe whether it can still navigate toward the target, and ask what interventions expand or redirect that ability.`,
+    authored_by: 'Prior art (Grok-67, GPT-Oct25)',
+    source: 'Levin (2023) "Darwin\'s agential materials: evolutionary implications of multiscale competency in developmental biology." DOI 10.1007/s00018-023-04790-z. Also Levin (2022) TAME paper, DOI 10.3389/fnsys.2022.768201.',
+    provenance: ['Grok-67', 'GPT-Oct25'],
+    related: ['multi-scale-competency-architecture', 'agential-material', 'goal-directedness', 'problem-space-navigation'],
+    tags: ['agency', 'developmental biology', 'TAME', 'scale'],
+  },
+  {
+    slug: 'decision-in-non-neural-tissue',
+    letter: 'D',
+    title: 'Decision (in non-neural tissue)',
+    subtitle: 'choice-like transitions outside brains',
+    definition: `A tissue-level transition that is better understood as information integration and action than as a local mechanical push. Levin does not use "decision" to smuggle consciousness into every cell. He uses it to mark cases where a non-neural system samples state, compares alternatives over some cognitive light cone, and changes behavior toward a goal. A regenerating tissue deciding between scarring and limb-building is the kind of case at stake.
+    <br><br>
+    Manicka and Levin's somatic computation work makes the framing concrete: bioelectric networks can implement memory, prediction, and control without neurons. The degree of decision-like behavior depends on how much information the system integrates and how flexibly it can act. Non-neural decisions are therefore graded events in cellular problem solving, not miniature human deliberations.`,
+    authored_by: 'Prior art (GPT-Oct25)',
+    source: 'Manicka & Levin (2019) "Modeling somatic computation with non-neural bioelectric networks." DOI 10.1038/s41598-019-54859-8. Also Levin (2022) TAME paper, DOI 10.3389/fnsys.2022.768201.',
+    provenance: ['GPT-Oct25'],
+    related: ['basal-cognition', 'bioelectric-networks', 'cognitive-light-cone', 'sensorimotor-loop'],
+    tags: ['somatic computation', 'bioelectricity', 'cognition', 'cells'],
+  },
+  {
+    slug: 'developmental-bioelectricity',
+    letter: 'D',
+    title: 'Developmental Bioelectricity',
+    subtitle: 'voltage as a control layer for building bodies',
+    definition: `The study of how endogenous electrical states guide growth, patterning, regeneration, and repair. Cells maintain membrane potentials through ion channels and pumps, communicate through gap junctions, and respond to voltage patterns by changing gene expression, migration, proliferation, and differentiation. Developmental bioelectricity treats those voltage states as a real control layer in morphogenesis, not as incidental physiology.
+    <br><br>
+    In Levin's work, this field is the practical bridge between basal cognition and regenerative medicine. Bioelectric patterns can store anatomical information, couple cells into larger agents, and be rewritten by interventions such as ion-channel modulation. That is why the same vocabulary appears around planarian heads, frog faces, cancer normalization, and limb regeneration: the body is using electricity to coordinate what shape it is trying to make.`,
+    authored_by: 'Prior art (Grok-Lex, GPT-Oct25)',
+    source: 'Levin (2019) "The Computational Boundary of a \'Self\': Developmental Bioelectricity Drives Multicellularity and Scale-Free Cognition." DOI 10.3389/fpsyg.2019.02688. Also Levin & Martyniuk (2018) "The bioelectric code." DOI 10.1016/j.biosystems.2017.08.009.',
+    provenance: ['Grok-Lex', 'GPT-Oct25'],
+    related: ['bioelectric-code', 'bioelectric-networks', 'bioelectric-pattern-memory', 'morphogenetic-field'],
+    tags: ['bioelectricity', 'developmental biology', 'morphogenesis', 'regeneration'],
+  },
+  {
+    slug: 'ectopic-eyes-picasso-tadpoles',
+    letter: 'E',
+    title: 'Ectopic Eyes (Picasso Tadpoles)',
+    subtitle: 'experimental landmarks for anatomical problem solving',
+    definition: `Two related Xenopus experiments that show how much plasticity is hidden in developmental systems. In ectopic-eye work, tadpoles can be made without normal eyes but with an eye on the tail; the animals can still perform visual tasks, even though the sensory organ is in a radically unfamiliar location. In the Picasso tadpole experiments, craniofacial organs begin in scrambled positions but move by novel paths until a normal frog face is achieved.
+    <br><br>
+    These are not party tricks. They are canonical evidence for target morphology and problem-space navigation. The brain and body can integrate useful information from unexpected anatomy, while cell collectives can solve for the right large-scale arrangement from abnormal starting conditions. The lesson is that development builds robust goal-seeking systems, not brittle shape scripts.`,
+    authored_by: 'Prior art (Claude-Oct25, Grok-Colophon, Sonnet-Colophon)',
+    source: 'Levin (2023) "Bioelectric networks: the cognitive glue enabling evolutionary scaling from physiology to mind." DOI 10.1007/s10071-023-01780-3. Also Levin (2022) TAME paper, DOI 10.3389/fnsys.2022.768201.',
+    provenance: ['Claude-Oct25', 'Grok-Colophon', 'Sonnet-Colophon'],
+    related: ['target-morphology', 'problem-space-navigation', 'developmental-bioelectricity', 'morphospace'],
+    tags: ['experimental landmark', 'morphogenesis', 'bioelectricity', 'Xenopus'],
+  },
 ];
 
 export function getTermBySlug(slug: string): Term | undefined {
