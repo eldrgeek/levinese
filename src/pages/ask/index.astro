@@ -1,0 +1,96 @@
+---
+import Base from '../../layouts/Base.astro';
+
+const sampleQA = [
+  {
+    q: "What is a cognitive light cone, and why does it matter more than asking 'is this thing conscious?'",
+    a: `The question "is this thing conscious?" imports all the hard problems of philosophy into the conversation before you've done any science. What I find more productive is asking: over what spatial extent and what temporal horizon does this system integrate information and exert control? That's the cognitive light cone. A bacterium has a small one — it responds to chemical gradients in its immediate vicinity on the timescale of seconds. An organism undergoing regeneration after losing a limb has a much larger one — it is integrating positional information across its entire body plan over days or weeks. The light cone is measurable in principle. "Consciousness" is not.`,
+    cite: 'Synthesized from "The Computational Boundary of a \'Self\'" (Frontiers in Psychology, 2019) and "What are Cognitive Light Cones?" (public lecture)',
+  },
+  {
+    q: "How do you actually know if a cell is making a decision versus just doing chemistry?",
+    a: `You don't know until you test it. The signature of a decision — in the engineering sense I use — is that the outcome is robust to perturbation in a way that cannot be explained by local chemistry alone. When we scramble the facial organs of a tadpole — put the eyes where the nose should be, the mouth on the side — and the tadpole still develops into a viable frog with a functioning face, that's not local chemistry. The cells know where they need to end up, and they navigate there from wherever you've put them. That's what I call navigating a problem space rather than executing a program.`,
+    cite: 'Synthesized from the "Picasso tadpole" experiments; see Levin lab publications on bioelectric morphogenesis (multiple, 2011–2023)',
+  },
+  {
+    q: "What would it take to convince you that something is not an agent?",
+    a: `That's the right question to ask, and I take it seriously. My answer is: a system that cannot maintain any setpoint in any space, that exhibits zero regulative plasticity, that shows no robustness to perturbation — that system is not an agent in my framework. A truly passive system is like a rock being pushed: you push it, it rolls exactly where physics dictates, with no recovery, no goal-seeking, nothing that looks like "trying." But I'll be honest: I don't think you can draw a sharp line. The question is where on the spectrum from rock to human a given system sits, and that question is empirical.`,
+    cite: 'Synthesized from Levin\'s FAQ (thoughtforms.life/faqs-from-my-academic-work/) and TAME framework (Frontiers in Systems Neuroscience, 2022)',
+  },
+  {
+    q: "What is the connection between cancer and the loss of collective intelligence?",
+    a: `Cancer, in my framework, is what happens when a cell loses its membership in the larger collective. A normal cell has internalized a high-level goal — "be a liver cell, maintain liver function, cooperate with other cells toward the goal of a healthy organism." A cancer cell has reverted to an older, smaller-scale goal: "survive and reproduce." Its cognitive light cone has shrunk. It no longer participates in the bioelectric conversation that coordinates tissues. We've shown that you can sometimes reverse this — reconnect tumor cells to normal tissue via gap junctions and they rejoin the cooperative. That's not killing the cancer; it's curing the dissociation.`,
+    cite: 'Synthesized from Levin lab cancer bioelectricity research; see Physics of Life Reviews (2023) and bioelectric normalization papers',
+  },
+  {
+    q: "What do you mean when you say the body is running software that predates neurons?",
+    a: `Neurons didn't invent bioelectric signaling. They inherited it. Every cell in your body uses voltage gradients across its membrane to communicate, coordinate, and store information. That's ancient — it predates the evolution of nervous systems by hundreds of millions of years. What neurons did was specialize that capability: they made the signals faster, more directional, and architecturally complex. But the same computational medium — membrane potential, ion gradients, gap junction coupling — is present in your liver, your skin, your regenerating limb. Brains are a particularly elaborate implementation of a very old program.`,
+    cite: 'Synthesized from "Bioelectric networks: the cognitive glue enabling evolutionary scaling from physiology to mind" (Springer, 2023)',
+  },
+];
+---
+<Base title="Ask" description="Ask questions in the voice of Michael Levin's corpus. Sample queries and answers synthesized from 364 papers and 333 transcripts.">
+
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 pt-12">
+    <div class="mb-10">
+      <p class="text-sm font-medium text-teal uppercase tracking-widest mb-3">Ask</p>
+      <h1 class="font-serif text-3xl sm:text-4xl font-medium text-ink mb-4">The Corpus Speaks</h1>
+      <p class="text-muted max-w-2xl leading-relaxed mb-2">
+        In v1, this page will let you ask questions directly against the full LanceDB corpus — 364 papers, 333 transcripts, all searchable and answered in Levin's voice with citations.
+      </p>
+      <div class="bg-amber-light border border-amber/20 rounded-lg px-4 py-3 text-sm text-amber inline-block mb-6">
+        v0 stub — five sample questions with answers synthesized from the corpus. Full RAG backend coming in v1.
+      </div>
+    </div>
+
+    <!-- Sample Q&A -->
+    <div class="space-y-8 mb-16">
+      {sampleQA.map((item, i) => (
+        <div class="bg-white border border-border rounded-xl overflow-hidden">
+          <!-- Question -->
+          <div class="bg-surface border-b border-border px-6 py-4">
+            <div class="flex items-start gap-3">
+              <span class="mt-0.5 shrink-0 w-6 h-6 rounded-full bg-teal text-white text-xs font-mono flex items-center justify-center font-medium">Q</span>
+              <p class="font-medium text-ink leading-snug">{item.q}</p>
+            </div>
+          </div>
+
+          <!-- Answer -->
+          <div class="px-6 py-5">
+            <div class="flex items-start gap-3">
+              <span class="mt-0.5 shrink-0 w-6 h-6 rounded-full bg-parchment border border-border text-teal text-xs font-mono flex items-center justify-center font-medium">A</span>
+              <div>
+                <p class="text-ink leading-relaxed mb-3 font-serif">{item.a}</p>
+                <p class="text-xs text-muted italic">— {item.cite}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <!-- V1 preview -->
+    <div class="border border-teal/20 bg-teal-light rounded-xl p-6 mb-12">
+      <h2 class="font-serif text-xl font-medium text-teal mb-3">Coming in v1</h2>
+      <ul class="space-y-2 text-sm text-ink/80">
+        <li class="flex items-start gap-2">
+          <span class="text-teal mt-0.5">→</span>
+          <span>Live RAG search against the full 1,000+ document LanceDB corpus</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-teal mt-0.5">→</span>
+          <span>Answers grounded in specific paper passages, with clickable citations</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-teal mt-0.5">→</span>
+          <span>Follow-up questions that maintain context across the conversation</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-teal mt-0.5">→</span>
+          <span>Year and type filters to narrow which part of the corpus the answer draws from</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</Base>

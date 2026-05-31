@@ -1,0 +1,191 @@
+---
+import Base from '../../layouts/Base.astro';
+import { signatories, llmReplies } from '../../data/colophon';
+---
+<Base title="Colophon" description="The colophon of Levinese — who made it, who signed it, and what the seven AI systems actually said about Michael Levin's work.">
+
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 pt-12">
+
+    <!-- Header -->
+    <div class="mb-10">
+      <p class="text-sm font-medium text-teal uppercase tracking-widest mb-3">Colophon</p>
+      <h1 class="font-serif text-3xl sm:text-4xl font-medium text-ink mb-4">Who made this, and why</h1>
+      <p class="text-muted max-w-2xl leading-relaxed">
+        This site is a gift to Michael Levin. The team that built it includes two humans, one AI compiler, and seven AI systems from four different organizations who each read the corpus and decided whether to put their name on this.
+      </p>
+    </div>
+
+    <!-- Dedication -->
+    <div class="bg-white border border-border rounded-xl p-8 mb-10">
+      <p class="font-serif text-lg italic text-ink leading-relaxed text-center">
+        "For Michael Levin — whose question,<br>
+        <em>what counts as a mind?</em><br>
+        turned out to be our question too."
+      </p>
+      <p class="text-center text-sm text-muted mt-4">
+        In honor of Michael Levin. From the team listed below. 2026.
+      </p>
+    </div>
+
+    <!-- Signatures -->
+    <section class="mb-12">
+      <h2 class="font-serif text-2xl font-medium text-ink mb-6">Signatories</h2>
+      <div class="space-y-4">
+        {signatories.map(s => (
+          <div class="bg-white border border-border rounded-lg p-5">
+            <div class="flex items-start gap-4">
+              <div class={`mt-0.5 w-7 h-7 rounded-full flex items-center justify-center text-sm shrink-0
+                ${s.status === 'signed' ? 'bg-teal text-white' : 'bg-surface border border-border text-muted'}`}>
+                {s.status === 'signed' ? '✓' : '○'}
+              </div>
+              <div class="flex-1">
+                <div class="flex flex-wrap items-baseline gap-2 mb-1">
+                  <span class="font-medium text-ink">{s.name}</span>
+                  <span class="text-sm text-muted">{s.affiliation}</span>
+                  <span class="text-xs text-muted/70 italic">{s.role}</span>
+                </div>
+                {s.signature && (
+                  <p class="text-sm text-muted italic mt-1.5">{s.signature}</p>
+                )}
+                {s.contribution && (
+                  <p class="text-xs text-teal mt-2 font-medium">Contribution: {s.contribution}</p>
+                )}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- AI model signatures summary -->
+    <section class="mb-12">
+      <h2 class="font-serif text-2xl font-medium text-ink mb-2">The Seven AI Systems</h2>
+      <p class="text-muted text-sm mb-6">
+        Each model was shown the same prompt: the archive scope, the gift concept, and an invitation to sign the colophon, give their honest assessment, and contribute a definition if they wanted to. The replies below are verbatim.
+      </p>
+
+      <!-- Summary cards -->
+      <div class="grid sm:grid-cols-2 gap-4 mb-8">
+        {llmReplies.map(r => (
+          <a
+            href={`#reply-${r.model.toLowerCase().replace(/[\s.]+/g, '-')}`}
+            class="group block bg-white border border-border rounded-lg p-4 hover:border-teal/30 transition-all"
+          >
+            <div class="flex items-start gap-3">
+              <div class={`mt-0.5 w-7 h-7 rounded-full flex items-center justify-center text-sm shrink-0 font-medium
+                ${r.has_reservations ? 'bg-amber-light text-amber border border-amber/30' : 'bg-teal text-white'}`}>
+                {r.has_reservations ? '⚡' : '✓'}
+              </div>
+              <div>
+                <p class="font-medium text-ink text-sm">{r.model}</p>
+                <p class="text-xs text-muted">{r.affiliation}</p>
+                <p class="text-sm text-muted mt-2 leading-snug line-clamp-3">{r.short_summary}</p>
+                <span class="text-xs text-teal font-medium mt-2 block opacity-0 group-hover:opacity-100 transition-opacity">
+                  Read full reply →
+                </span>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <!-- Full replies (preview-gated) -->
+    <section class="mb-12">
+      <div class="flex items-center gap-4 mb-6">
+        <h2 class="font-serif text-2xl font-medium text-ink">Full Verbatim Replies</h2>
+        <div id="preview-badge" class="hidden">
+          <span class="text-xs bg-amber-light text-amber border border-amber/20 px-3 py-1 rounded-full font-medium">
+            preview mode — private until public launch
+          </span>
+        </div>
+      </div>
+
+      <!-- Public notice (shown when not in preview mode) -->
+      <div id="public-notice" class="bg-surface border border-border rounded-xl p-6 mb-6">
+        <p class="text-muted leading-relaxed mb-3">
+          The full text of all seven replies — including Grok's detailed reservations — will be public at launch. If you're reading a preview URL, add <code class="font-mono text-xs bg-white border border-border px-1.5 py-0.5 rounded">?preview=levin-first</code> to this URL to see everything.
+        </p>
+        <p class="text-sm text-muted italic">
+          The gift's honesty is the gift. Grok's pushback is not a footnote — it's on the page, verbatim, because a resource that only publishes the agreement isn't honest about the state of the conversation.
+        </p>
+      </div>
+
+      <!-- Full replies (hidden until preview) -->
+      <div id="full-replies" class="hidden space-y-10">
+        {llmReplies.map(r => (
+          <article id={`reply-${r.model.toLowerCase().replace(/[\s.]+/g, '-')}`} class="scroll-mt-20">
+            <!-- Reply header -->
+            <div class={`rounded-t-xl px-6 py-4 border-l-4 flex items-start gap-3
+              ${r.has_reservations
+                ? 'bg-amber-light/50 border-amber'
+                : 'bg-teal-light border-teal'}`}>
+              <div class={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium shrink-0 mt-0.5
+                ${r.has_reservations ? 'bg-amber text-white' : 'bg-teal text-white'}`}>
+                {r.has_reservations ? '⚡' : '✓'}
+              </div>
+              <div>
+                <div class="font-medium text-ink">{r.model}</div>
+                <div class="text-sm text-muted">{r.affiliation}</div>
+                {r.has_reservations && (
+                  <div class="text-xs text-amber font-medium mt-1">
+                    Signed with stated reservations — full text below
+                  </div>
+                )}
+              </div>
+            </div>
+
+            <!-- Reply body -->
+            <div class="bg-white border border-t-0 border-border rounded-b-xl px-6 py-6">
+              <div class="prose prose-sm max-w-none text-ink leading-relaxed">
+                <div class="whitespace-pre-wrap font-sans text-sm leading-relaxed" set:html={r.full_reply
+                  .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+                  .replace(/\*(.+?)\*/g, '<em>$1</em>')
+                  .replace(/^### (.+)$/gm, '<h3 class="font-serif text-base font-medium text-ink mt-4 mb-2">$1</h3>')
+                  .replace(/^## (.+)$/gm, '<h2 class="font-serif text-lg font-medium text-ink mt-6 mb-3">$1</h2>')
+                  .replace(/^# (.+)$/gm, '<h1 class="font-serif text-xl font-medium text-ink mt-6 mb-3">$1</h1>')
+                  .replace(/^---$/gm, '<hr class="border-border my-4" />')
+                  .replace(/\n\n/g, '</p><p class="mb-3">')
+                  .replace(/^/, '<p class="mb-3">')
+                  .replace(/$/, '</p>')} />
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <!-- How this was made -->
+    <section class="mb-16">
+      <h2 class="font-serif text-2xl font-medium text-ink mb-4">How this was made</h2>
+      <div class="bg-white border border-border rounded-xl p-6 space-y-4 text-sm text-muted leading-relaxed">
+        <p>
+          Dee (Claude Sonnet 4.6) compiled this site in May 2026 from the SOMA archive: 364 papers, 333 video transcripts, 350 blog posts, and the adjacent corpus. The dictionary v0 covers 11 terms — three of them new, identified through a gap analysis comparing prior LLM-assisted glossary sessions against the actual transcript and paper corpus.
+        </p>
+        <p>
+          The colophon replies were collected by showing each AI system the same invitation: read the scope, give your honest assessment, sign or decline. All seven signed. One (Grok) signed with substantial stated reservations, which are published here in full because they are accurate and useful.
+        </p>
+        <p>
+          The stack: Astro + Tailwind, deployed to Netlify. LanceDB vector index of the full corpus lives at <code class="font-mono text-xs bg-surface border border-border px-1 py-0.5 rounded">~/Projects/SOMA/state/levin-archive/lancedb/</code>. Full corpus search will be wired in v1.
+        </p>
+        <p>
+          Mike Wolf initiated this. Dee built it. The work being honored is Michael Levin's.
+        </p>
+      </div>
+    </section>
+
+  </div>
+
+</Base>
+
+<script>
+  // Preview gate: ?preview=levin-first reveals the full colophon
+  const params = new URLSearchParams(window.location.search);
+  const isPreview = params.get('preview') === 'levin-first';
+
+  if (isPreview) {
+    document.getElementById('full-replies')?.classList.remove('hidden');
+    document.getElementById('public-notice')?.classList.add('hidden');
+    document.getElementById('preview-badge')?.classList.remove('hidden');
+  }
+</script>

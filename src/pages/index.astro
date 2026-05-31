@@ -1,0 +1,128 @@
+---
+import Base from '../layouts/Base.astro';
+import { terms } from '../data/terms';
+import { signatories, llmReplies } from '../data/colophon';
+
+const signedModels = llmReplies.filter(r => r.signed);
+---
+<Base title="Home" description="A gift to Michael Levin — a dictionary of his ideas, a corpus browser, and a window into the ideas of a biologist who asks what it means for matter to think.">
+
+  <!-- Hero -->
+  <section class="max-w-5xl mx-auto px-4 sm:px-6 pt-16 pb-12">
+    <div class="max-w-2xl">
+      <p class="text-sm font-medium text-teal uppercase tracking-widest mb-4">A gift</p>
+      <h1 class="font-serif text-4xl sm:text-5xl font-medium text-ink leading-tight mb-6">
+        Levinese
+      </h1>
+      <p class="text-xl text-muted font-serif italic mb-8 leading-relaxed">
+        A working dictionary, corpus browser, and conversation engine for the ideas of Michael Levin — assembled by the AI systems that studied him.
+      </p>
+      <div class="flex flex-wrap gap-3">
+        <a href="/dictionary/" class="inline-flex items-center gap-2 bg-teal text-white px-5 py-2.5 rounded-md text-sm font-medium hover:bg-teal-mid transition-colors">
+          Open Dictionary
+        </a>
+        <a href="/browse/" class="inline-flex items-center gap-2 bg-white border border-border text-ink px-5 py-2.5 rounded-md text-sm font-medium hover:bg-surface transition-colors">
+          Browse Corpus
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Levin -->
+  <section class="max-w-5xl mx-auto px-4 sm:px-6 py-10 border-t border-border">
+    <div class="grid md:grid-cols-2 gap-12 items-start">
+      <div>
+        <h2 class="font-serif text-2xl font-medium text-ink mb-4">Who is Michael Levin?</h2>
+        <p class="text-muted leading-relaxed mb-4">
+          Michael Levin is a developmental and synthetic biologist at Tufts University whose work asks a disquieting question: what if cognition is not a product of brains, but a property of matter organized in certain ways? His lab studies how cells — without neurons, without nervous systems — nonetheless sense, remember, decide, and pursue goals.
+        </p>
+        <p class="text-muted leading-relaxed mb-4">
+          The results are not metaphors. Planaria whose bioelectric state is briefly altered regenerate as two-headed animals indefinitely — no further intervention required. Tadpoles with scrambled facial organs still develop into viable frogs, because the cells know where they need to end up. Human airway cells, freed from their tissue context, self-assemble into motile constructs that heal neural wounds.
+        </p>
+        <p class="text-muted leading-relaxed">
+          These experiments have generated a distinctive vocabulary — Levinese — for describing intelligence at scales biology previously ignored. This site is an attempt to organize that vocabulary, make the corpus searchable, and offer a way to converse with the ideas directly.
+        </p>
+      </div>
+      <div>
+        <h2 class="font-serif text-2xl font-medium text-ink mb-4">What's in the archive</h2>
+        <div class="space-y-3">
+          {[
+            { count: '364', label: 'papers cataloged' },
+            { count: '333', label: 'video transcripts' },
+            { count: '350', label: 'blog posts' },
+            { count: '22', label: 'magazine articles' },
+            { count: '7', label: 'Substack posts' },
+            { count: '4', label: 'X archive pages' },
+          ].map(({ count, label }) => (
+            <div class="flex items-baseline gap-3">
+              <span class="font-mono text-2xl font-medium text-teal">{count}</span>
+              <span class="text-muted text-sm">{label}</span>
+            </div>
+          ))}
+        </div>
+        <div class="mt-6 text-sm text-muted">
+          Plus an adjacent-corpus bibliography and a full LanceDB vector index of the primary corpus.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dictionary preview -->
+  <section class="max-w-5xl mx-auto px-4 sm:px-6 py-10 border-t border-border">
+    <div class="flex items-baseline justify-between mb-6">
+      <h2 class="font-serif text-2xl font-medium text-ink">Dictionary</h2>
+      <a href="/dictionary/" class="text-sm text-teal hover:text-teal-mid font-medium">All {terms.length} terms →</a>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      {terms.slice(0, 6).map(term => (
+        <a href={`/dictionary/#${term.slug}`} class="group block bg-white border border-border rounded-lg p-4 hover:border-teal/40 hover:shadow-sm transition-all">
+          <div class="flex items-start justify-between gap-2 mb-2">
+            <h3 class="font-serif font-medium text-ink group-hover:text-teal transition-colors">{term.title}</h3>
+            {term.is_new && (
+              <span class="shrink-0 text-xs bg-amber-light text-amber px-2 py-0.5 rounded-full font-medium">new</span>
+            )}
+          </div>
+          {term.subtitle && (
+            <p class="text-xs text-muted italic mb-2">{term.subtitle}</p>
+          )}
+          <p class="text-sm text-muted line-clamp-3" set:html={term.definition.replace(/<[^>]+>/g, ' ').trim().slice(0, 140) + '…'} />
+          <div class="mt-3 text-xs text-teal font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+            Read definition →
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- Signatories -->
+  <section class="max-w-5xl mx-auto px-4 sm:px-6 py-10 border-t border-border">
+    <div class="flex items-baseline justify-between mb-6">
+      <h2 class="font-serif text-2xl font-medium text-ink">Signed by</h2>
+      <a href="/colophon/" class="text-sm text-teal hover:text-teal-mid font-medium">Full colophon →</a>
+    </div>
+    <div class="flex flex-wrap gap-2">
+      {signatories.filter(s => s.status !== 'pending').map(s => (
+        <span class="inline-flex items-center gap-1.5 bg-teal-light border border-teal/20 text-teal px-3 py-1.5 rounded-full text-sm">
+          <span class="text-xs">✓</span>
+          {s.name}
+        </span>
+      ))}
+      {signatories.filter(s => s.status === 'pending').map(s => (
+        <span class="inline-flex items-center gap-1.5 bg-surface border border-border text-muted px-3 py-1.5 rounded-full text-sm">
+          <span class="text-xs">○</span>
+          {s.name} <span class="text-xs">(pending)</span>
+        </span>
+      ))}
+      {signedModels.map(r => (
+        <span class={`inline-flex items-center gap-1.5 border px-3 py-1.5 rounded-full text-sm ${r.has_reservations ? 'bg-amber-light border-amber/20 text-amber' : 'bg-teal-light border-teal/20 text-teal'}`}>
+          <span class="text-xs">{r.has_reservations ? '⚡' : '✓'}</span>
+          {r.model}
+        </span>
+      ))}
+    </div>
+    <p class="mt-4 text-xs text-muted">
+      ⚡ = signed with stated reservations (see colophon for full text — Grok's pushback is a feature of the gift, not a footnote)
+    </p>
+  </section>
+
+</Base>
