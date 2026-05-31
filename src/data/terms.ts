@@ -891,6 +891,93 @@ export const terms: Term[] = [
     related: ['cognitive-light-cone', 'scale-free-cognition', 'multi-scale-competency-architecture', 'cognitive-dissociation'],
     tags: ['evolution', 'agency', 'scale', 'cognition'],
   },
+  {
+    slug: 'ingressions-from-the-platonic-space',
+    letter: 'I',
+    title: 'Ingressions from the Platonic Space',
+    subtitle: 'patterns entering embodiment',
+    definition: `Levin's term for the way abstract patterns become real participants in the physical world. In the strong version, forms, behaviors, and goals are not fully produced by local mechanism, genome, and environment; they "ingress" from a structured Platonic Space of possible patterns through interfaces such as cells, embryos, algorithms, or synthetic constructs. Xenobots and anthrobots motivate the question: if these coherent beings were never selected as such, where did their behavioral repertoire come from?
+    <br><br>
+    In a more conservative reading, ingression names the sampling of a high-dimensional possibility space by competent material. The body, robot, or cell collective is an interface that lets a latent pattern become embodied. The term is useful because it marks Levin's recent attempt to explain novelty without reducing it to either magic emergence or genetic blueprinting.`,
+    authored_by: 'Prior art (Grok-Lex, Grok-67, Grok-Colophon)',
+    source: 'Levin, "Where do novel goals come from?" OSF preprint 7m3bv. Also "Platonic Space: brief argument and research agenda," transcript EdEqgCOSx7E.',
+    provenance: ['Grok-Lex', 'Grok-67', 'Grok-Colophon'],
+    related: ['platonic-space', 'morphospace', 'life-as-it-can-be-mind-as-it-can-be', 'substrate-independent-cognition'],
+    tags: ['philosophy', 'metaphysics', 'possibility space', 'novelty'],
+    contested: true,
+    contested_note: 'Grok\'s critique is that the Platonic-space and pointer-to-patterns turn is evocative but still reads more like metaphysics than a source of distinctive, falsifiable predictions.',
+  },
+  {
+    slug: 'life-as-it-can-be-mind-as-it-can-be',
+    letter: 'L',
+    title: 'Life-as-it-Can-Be (Mind-as-it-Can-Be)',
+    subtitle: 'biology and cognition beyond the known sample',
+    definition: `The research posture that present-day organisms and familiar minds are only a small sample of what life and cognition can be. Levin uses synthetic biology, xenobots, anthrobots, chimeras, AI, and hybrid systems as ways to explore a wider possibility space rather than merely cataloging natural history. Life-as-it-can-be asks what living matter can do when its normal constraints are changed; mind-as-it-can-be asks what kinds of agency, memory, goal-seeking, and communication can appear in unfamiliar embodiments.
+    <br><br>
+    The phrase matters because it links Levin's practical bioengineering to his broader theory of diverse intelligence. A novel biological construct is not just a tool or curiosity. It is an experiment on the boundaries of life, mind, and embodiment: a way to ask which competencies were latent in the material all along.`,
+    authored_by: 'Prior art (GPT-Oct25, Grok-Lex)',
+    source: 'Levin (2022) "Technological Approach to Mind Everywhere." DOI 10.3389/fnsys.2022.768201. Also transcript 2ersmJK87bw.',
+    provenance: ['GPT-Oct25', 'Grok-Lex'],
+    related: ['diverse-intelligence', 'mind-everywhere', 'morphospace', 'ingressions-from-the-platonic-space'],
+    tags: ['synthetic biology', 'diverse intelligence', 'TAME', 'possibility space'],
+  },
+  {
+    slug: 'machines-all-the-way-up-cognition-all-the-way-down',
+    letter: 'M',
+    title: 'Machines All the Way Up and Cognition All the Way Down',
+    subtitle: 'mechanism and mind without a threshold',
+    definition: `A slogan and paper title for Levin and Watson's attempt to update the machine metaphor in biology. The target is not mechanism itself. Levin's point is that mechanism and cognition are not mutually exclusive explanations. Cell and developmental biology needs machines all the way up because living systems are made of physical mechanisms; it also needs cognition all the way down because those mechanisms can participate in memory, learning, goal-directedness, and problem solving at many scales.
+    <br><br>
+    The phrase rejects a naive threshold story in which matter is mere mechanism until a brain appears and cognition suddenly begins. It also rejects anti-mechanistic vitalism. A tissue can be a machine-like causal system and an agent-like problem solver at once, depending on the scale and intervention strategy that gives the best prediction and control.`,
+    authored_by: 'Prior art (Grok-Lex, Grok-67)',
+    source: 'Watson & Levin (2026) "Machines all the way up and cognition all the way down: Updating the machine metaphor in biology." DOI 10.1016/j.semcdb.2026.103668.',
+    provenance: ['Grok-Lex', 'Grok-67'],
+    related: ['mind-everywhere', 'basal-cognition', 'multi-scale-competency-architecture', 'agential-material'],
+    tags: ['philosophy', 'developmental biology', 'mechanism', 'cognition'],
+  },
+  {
+    slug: 'morphogenetic-memory',
+    letter: 'M',
+    title: 'Morphogenetic Memory',
+    subtitle: 'pattern memory as a regenerative attractor',
+    definition: `The stored target pattern that lets a tissue rebuild an anatomical form after disturbance. This overlaps with pattern memory, but the emphasis is specifically developmental and regenerative: a morphogenetic memory is a stable attractor for form-making, not a general memory metaphor. In planaria, a transient bioelectric intervention can rewrite the remembered head-tail pattern so that future fragments regenerate as two-headed animals even after the original perturbation is gone.
+    <br><br>
+    The term keeps the memory claim experimentally grounded. The animal's genome has not been edited; the durable change is carried by physiological network state, especially bioelectric and gap-junctional dynamics. Morphogenetic memory is therefore the thing a regenerating collective consults when deciding what counts as "done," and the thing a morphoceutical would need to reset when repair goes wrong.`,
+    authored_by: 'Prior art (GPT-Oct25, Grok-Colophon)',
+    source: 'Levin (2023) "Bioelectric networks: the cognitive glue enabling evolutionary scaling from physiology to mind." DOI 10.1007/s10071-023-01780-3. Also Levin (2014) "Endogenous bioelectrical networks store non-genetic patterning information." DOI 10.1113/jphysiol.2014.271940.',
+    provenance: ['GPT-Oct25', 'Grok-Colophon'],
+    related: ['pattern-memory', 'bioelectric-pattern-memory', 'target-morphology', 'morphostasis'],
+    tags: ['memory', 'morphogenesis', 'bioelectricity', 'regeneration'],
+  },
+  {
+    slug: 'morphogenetic-prepatterning',
+    letter: 'M',
+    title: 'Morphogenetic Prepatterning',
+    subtitle: 'early voltage patterns before visible anatomy',
+    definition: `The formation of spatial instructive patterns before the final anatomical structure appears. In Levin's bioelectric work, the key example is an early voltage prepattern in the embryo that anticipates and helps guide later face formation. The prepattern is not merely a shadow of gene expression already underway; it is a control layer that can carry positional information and bias downstream morphogenesis.
+    <br><br>
+    Manicka and Levin's 2025 computational study sharpens the idea by asking how field-mediated bioelectric networks can form these patterns. Depending on how cells respond to the surrounding field, the model can produce either a mosaic strategy, where the organizer more directly seeds the pattern, or a stigmergic strategy, where cells sequentially read and reshape a shared field. Prepatterning is therefore the body's early sketch in physiological space.`,
+    authored_by: 'Prior art (Grok-67)',
+    source: 'Manicka & Levin (2025) "Field-mediated bioelectric basis of morphogenetic prepatterning." Cell Reports Physical Science. DOI 10.1016/j.xcrp.2025.102865.',
+    provenance: ['Grok-67'],
+    related: ['developmental-bioelectricity', 'bioelectric-code', 'morphogenetic-field', 'target-morphology'],
+    tags: ['bioelectricity', 'morphogenesis', 'patterning', 'developmental biology'],
+  },
+  {
+    slug: 'morphological-freedom',
+    letter: 'M',
+    title: 'Morphological Freedom',
+    subtitle: 'the right to choose and revise embodiment',
+    definition: `The aspirational endpoint of Levin's regenerative medicine and synthetic biology program: bodies should become editable, repairable, and selectable rather than fixed by accident of birth, injury, disease, or evolutionary history. Morphological freedom is not simply cosmetic body modification. In this frame it includes regrowing limbs, correcting birth defects, normalizing cancer, reversing degenerative drift, and eventually choosing forms or hybrid embodiments that biology has not yet explored.
+    <br><br>
+    The phrase is normative as well as technical. It turns the anatomical compiler and morphoceuticals into a liberation project: learn the language of cell collectives so people are no longer trapped in whatever morphology they happened to receive. Its risks are real, but Levin's emphasis is that reliable communication with living matter could make embodiment a design space rather than a sentence.`,
+    authored_by: 'Prior art (Claude-Oct25) and Codex',
+    source: 'Levin talk transcript iwOJ9PWcPmo. Also Mathews & Levin (2023) "Morphoceuticals." DOI 10.1016/j.drudis.2023.103585.',
+    provenance: ['Claude-Oct25', 'Video transcripts'],
+    related: ['morphospace', 'anatomical-compiler', 'morphoceutical', 'life-as-it-can-be-mind-as-it-can-be'],
+    tags: ['bioengineering', 'regenerative medicine', 'ethics', 'future'],
+    is_new: true,
+  },
 ];
 
 export function getTermBySlug(slug: string): Term | undefined {
