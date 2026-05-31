@@ -638,6 +638,90 @@ export const terms: Term[] = [
     tags: ['cells', 'sensorimotor', 'morphogenesis', 'agency'],
     is_new: true,
   },
+  {
+    slug: 'aging-as-a-loss-of-goal-directedness',
+    letter: 'A',
+    title: 'Aging as a Loss of Goal-Directedness',
+    subtitle: 'senescence as shrinking agency, not just accumulating damage',
+    definition: `A framing of aging as the gradual loss of the cellular collective's ability to pursue large-scale goals. The standard damage view asks what molecular parts have broken; Levin's version asks what happens when competent subunits stop coordinating around organism-level setpoints and fall back toward smaller, local agendas. In that sense, aging is close to cognitive dissociation: the body still contains skilled cells, but the shared target morphology, repair priorities, and long-range bioelectric coordination become harder to maintain.
+    <br><br>
+    This does not deny molecular damage. It changes the intervention target. A rejuvenation strategy would not merely replace worn parts; it would restore morphostatic information and reinflate the goal-directed capacities of tissues. The practical question becomes: what signals convince old cells to participate again in the larger anatomical project?`,
+    authored_by: 'Prior art (Grok-67, Grok-Lex)',
+    source: 'Levin et al. (2025) "Aging as a Loss of Goal-Directedness: An Evolutionary Simulation and Analysis Under the TAME Framework," Advanced Science. DOI 10.1002/advs.202509872. Also Pio-Lopez & Levin (2024) "Aging as a loss of morphostatic information." DOI 10.1016/j.arr.2024.102310.',
+    provenance: ['Grok-67', 'Grok-Lex'],
+    related: ['allostasis', 'morphostasis', 'cognitive-light-cone', 'morphoceutical'],
+    tags: ['aging', 'agency', 'regenerative medicine', 'TAME'],
+  },
+  {
+    slug: 'attractor-morphological-attractor',
+    letter: 'A',
+    title: 'Attractor (Morphological Attractor)',
+    subtitle: 'a stable destination in anatomical possibility space',
+    definition: `A stable state toward which a tissue, organ, or whole body tends to move in morphospace. In dynamical-systems language, an attractor is not a blueprint but a basin of outcomes: many starting conditions can flow toward the same final configuration. Levin uses this idea to explain why embryos, regenerating limbs, and planarian fragments can recover correct form after perturbation. The system is navigating toward an anatomical setpoint, not following a rigid step-by-step script.
+    <br><br>
+    Morphological attractors connect bioelectric physiology to large-scale shape. A transient change in gap-junction connectivity or membrane voltage can move a cell collective into a different basin, as in planaria that regenerate with two heads. The therapeutic implication is direct: medicine may be able to shift tissues out of pathological attractors and into healthy ones by changing the control landscape rather than micromanaging every cell.`,
+    authored_by: 'Prior art (GPT-Oct25)',
+    source: 'Levin (2023) "Bioelectric networks: the cognitive glue enabling evolutionary scaling from physiology to mind." DOI 10.1007/s10071-023-01780-3. Also Levin (2012) "Morphogenetic fields in embryogenesis, regeneration, and cancer." DOI 10.1016/j.biosystems.2012.04.005.',
+    provenance: ['GPT-Oct25'],
+    related: ['morphospace', 'target-morphology', 'anatomical-homeostasis', 'bioelectric-code'],
+    tags: ['morphogenesis', 'dynamical systems', 'bioelectricity', 'regeneration'],
+  },
+  {
+    slug: 'bioelectric-networks',
+    letter: 'B',
+    title: 'Bioelectric Networks',
+    subtitle: 'electrical coupling as cognitive glue',
+    definition: `The distributed communication systems formed by ion channels, membrane potentials, and gap junctions across living cells. In Levin's work, bioelectric networks are not just background physiology. They are a tractable medium for memory, coordination, and control: cells read voltage states, write to them, and use them to align local behaviors with tissue-level goals.
+    <br><br>
+    The key claim is scale. Bioelectric networks let many small cellular agents become a larger collective intelligence by sharing stress, state, and patterning information. That is why the same medium appears in development, regeneration, cancer, and synthetic living machines. It binds the anatomical boundary of the agent without requiring a nervous system: the sources and readers of the signal are distributed through the tissue itself.`,
+    authored_by: 'Prior art (Grok-Lex, Grok-BioField)',
+    source: 'Levin (2023) "Bioelectric networks: the cognitive glue enabling evolutionary scaling from physiology to mind." DOI 10.1007/s10071-023-01780-3.',
+    provenance: ['Grok-Lex', 'Grok-BioField'],
+    related: ['bioelectric-code', 'cognitive-glue', 'bioelectric-pattern-memory', 'collective-intelligence'],
+    tags: ['bioelectricity', 'cognitive glue', 'collective intelligence', 'morphogenesis'],
+  },
+  {
+    slug: 'bioprompting',
+    letter: 'B',
+    title: 'Bioprompting',
+    subtitle: 'asking cells to solve, not forcing every step',
+    definition: `The practice of giving living systems compact signals that recruit their own problem-solving capacities. The analogy to AI prompt engineering is intentional but limited: a prompt does not specify every internal operation of a model, and a bioprompt does not dictate every molecular event inside a tissue. It supplies a cue, constraint, or goal-like signal that cells can interpret using competencies they already have.
+    <br><br>
+    Levin uses this idea to move biology away from pure micromanagement. A gall wasp does not build a plant gall cell by cell; it issues signals that induce the plant to construct one. A regenerative medicine intervention might work the same way: find the right bioelectric, biochemical, or mechanical prompt, then let the cell collective navigate the detailed path through morphospace.`,
+    authored_by: 'Prior art (Grok-67, Grok-Dup)',
+    source: 'Levin, "FAQs from my academic work," thoughtforms.life. Also Levin (2022) "Technological Approach to Mind Everywhere," Frontiers in Systems Neuroscience. DOI 10.3389/fnsys.2022.768201.',
+    provenance: ['Grok-67', 'Grok-Dup'],
+    related: ['anatomical-compiler', 'axis-of-persuadability', 'morphoceutical', 'target-morphology'],
+    tags: ['communication', 'bioengineering', 'regenerative medicine', 'control'],
+  },
+  {
+    slug: 'bowtie-architecture',
+    letter: 'B',
+    title: 'Bowtie Architecture',
+    subtitle: 'compressed evolutionary memory, expanded developmental possibility',
+    definition: `A many-to-few-to-many organization in which rich evolutionary experience is compressed through a narrow control bottleneck and then expanded by developmental machinery into adaptive form. In the Levinese version, the genome is not a literal blueprint for anatomy. It is more like the knot of a bowtie: a compact store of lineage-tested resources that can be decoded by morphogenetic, physiological, and behavioral systems into many context-sensitive outcomes.
+    <br><br>
+    The concept helps explain plasticity. If DNA directly specified every final shape, development would be brittle. A bowtie architecture instead lets evolution conserve a compressed core while allowing cells and tissues to improvise around damage, environment, and new constraints. The genome supplies hardware and priors; the living system supplies the competent decoding.`,
+    authored_by: 'Prior art (Grok-67)',
+    source: 'Levin & collaborators (2025) "What does evolution make? Learning in living lineages and machines," Trends in Genetics. DOI 10.1016/j.tig.2025.04.002. Also Levin (2022) TAME paper, DOI 10.3389/fnsys.2022.768201.',
+    provenance: ['Grok-67'],
+    related: ['agential-material', 'multi-scale-competency-architecture', 'top-down-causation', 'morphogenetic-field'],
+    tags: ['evolution', 'development', 'plasticity', 'information'],
+  },
+  {
+    slug: 'cancer-as-self-shrinkage-oncostate',
+    letter: 'C',
+    title: 'Cancer as Self-Shrinkage / Oncostate',
+    subtitle: 'a smaller self escaping the body\'s larger goals',
+    definition: `Levin reframes cancer as a collapse of scale in biological selfhood. A healthy cell participates in organism-level goals through gap junctions, bioelectric coordination, and tissue constraints. A cancer cell shrinks its computational boundary: the rest of the body becomes environment, while ancient cell-level goals such as proliferation, migration, and survival regain priority. The tumor is therefore not merely bad growth. It is competent agency at the wrong scale.
+    <br><br>
+    The "oncostate" names the bioelectric side of that shift, especially the depolarized voltage states associated with malignant behavior. This matters therapeutically because it suggests that some tumors may be normalized, not only killed. Restoring bioelectric coupling or voltage patterns can, in Levin's framing, persuade cells back into the larger anatomical collective.`,
+    authored_by: 'Prior art (Claude-Oct25, Grok-Colophon, Sonnet-Colophon)',
+    source: 'Levin (2021) "Bioelectrical approaches to cancer as a problem of the scaling of the cellular self." DOI 10.1016/j.pbiomolbio.2021.04.007. Also Levin (2023) "Cancer\'s unique bioelectric properties: From cells to body-wide networks." DOI 10.1016/j.plrev.2023.09.013.',
+    provenance: ['Claude-Oct25', 'Grok-Colophon', 'Sonnet-Colophon'],
+    related: ['anti-self', 'computational-boundary-of-a-self', 'bioelectric-code', 'morphoceutical'],
+    tags: ['cancer', 'bioelectricity', 'selfhood', 'agency'],
+  },
 ];
 
 export function getTermBySlug(slug: string): Term | undefined {
