@@ -17,9 +17,24 @@ export interface Term {
   tags: string[];
   marginalia?: Marginale[];
   is_new?: boolean;
+  contested?: boolean;
+  contested_note?: string;
 }
 
 export const terms: Term[] = [
+  {
+    slug: 'agent',
+    letter: 'A',
+    title: 'Agent',
+    definition: `A system organized around a perception-action loop: it senses its state, compares that state to some target or setpoint, and acts to reduce the mismatch. In Levin's usage, an agent does not have to be an animal, a brain, or even a single organism. A cell maintaining ionic balance, a tissue repairing a wound, and a whole animal pursuing food can all count as agents if they can measure, remember, and act toward goals in their own problem spaces.
+    <br><br>
+    The term is deliberately more neutral than "self." It lets Levin talk about agency as a graded engineering property rather than a metaphysical badge. Agents can be nested, merged, or dissociated: cells become tissue-level agents when their goals are coupled, and they can shrink back toward smaller goals when that coupling fails.`,
+    authored_by: 'Prior art (GPT-Oct25)',
+    source: 'Levin (2022) "Technological Approach to Mind Everywhere," Frontiers in Systems Neuroscience. DOI 10.3389/fnsys.2022.768201. Also Levin (2019) "The Computational Boundary of a \'Self\'." DOI 10.3389/fpsyg.2019.02688.',
+    provenance: ['GPT-Oct25'],
+    related: ['basal-cognition', 'problem-space-navigation', 'cognitive-light-cone', 'agential-material'],
+    tags: ['core concept', 'agency', 'cognition', 'control'],
+  },
   {
     slug: 'agential-material',
     letter: 'A',
@@ -61,6 +76,64 @@ export const terms: Term[] = [
     tags: ['regenerative medicine', 'bioengineering', 'vision'],
   },
   {
+    slug: 'anatomical-homeostasis',
+    letter: 'A',
+    title: 'Anatomical Homeostasis',
+    subtitle: 'body shape as a regulated setpoint',
+    definition: `The maintenance and restoration of anatomical pattern as a homeostatic goal. Physiological homeostasis keeps variables such as pH, temperature, or membrane voltage within a viable range; anatomical homeostasis does the same for large-scale form. A salamander limb that regrows only the missing amount, or a planarian fragment that regenerates a complete body, is not merely executing a local construction script. It is acting against a stored target morphology and stopping when the correct form has been reached.
+    <br><br>
+    Levin's point is that morphogenesis and regeneration are feedback processes, not just feed-forward genetic programs. Cell collectives compare current anatomy to pattern memories implemented across bioelectric and biochemical networks. When the comparison finds error, cells remodel until the larger-scale shape returns to its goal state.`,
+    authored_by: 'Prior art (GPT-Oct25, Claude-Oct25)',
+    source: 'Levin (2022) "Technological Approach to Mind Everywhere," Frontiers in Systems Neuroscience. DOI 10.3389/fnsys.2022.768201.',
+    provenance: ['GPT-Oct25', 'Claude-Oct25'],
+    related: ['target-morphology', 'morphostasis', 'bioelectric-code', 'problem-space-navigation'],
+    tags: ['morphogenesis', 'regenerative medicine', 'homeostasis', 'bioelectricity'],
+  },
+  {
+    slug: 'anti-goal',
+    letter: 'A',
+    title: 'Anti-Goal',
+    subtitle: 'the state an agent works to stay out of',
+    definition: `A region of state-space that matters to an agent because it must be avoided, not achieved. Levin usually talks about target states, setpoints, and goals, but the same control-loop logic has a negative side: systems act when they detect stress, error, injury, or drift away from viability. The anti-goal is the shape of "not that" inside an agent's model of possible futures.
+    <br><br>
+    This matters because biological agency is often easiest to see through repair. A wound, a malformed organ position, or a tumor-prone bioelectric state becomes actionable because it is registered as wrong relative to the system's preferred attractor. Anti-goals are therefore not moral opposites of goals; they are control-theoretic boundaries. They mark the states a living collective can perceive as unacceptable and mobilize against.`,
+    authored_by: 'Codex',
+    source: 'Levin (2022) "Technological Approach to Mind Everywhere," Frontiers in Systems Neuroscience. DOI 10.3389/fnsys.2022.768201.',
+    provenance: ['fresh-corpus-batch-1'],
+    related: ['agent', 'target-morphology', 'anatomical-homeostasis', 'problem-space-navigation'],
+    tags: ['agency', 'control', 'homeostasis', 'problem spaces'],
+    is_new: true,
+  },
+  {
+    slug: 'anti-self',
+    letter: 'A',
+    title: 'Anti-Self',
+    subtitle: 'a dissociated sub-agent working against the larger body',
+    definition: `A local agent whose goals have become uncoupled from the larger self that normally contains it. The clearest biological example is cancer in Levin's framework: cells shrink their computational boundary, treat the rest of the body as external environment, and pursue ancient cell-level goals such as migration and proliferation at the expense of the organism. The anti-self is not evil matter; it is agency at the wrong scale.
+    <br><br>
+    This term names the failure mode that complements multiscale competency. Healthy bodies are made of sub-agents whose sensing, memory, and action loops have been coupled into a larger anatomical project. When bioelectric and gap-junctional communication fail, the larger self can dissociate. The result is a competent local self whose success criteria are maladaptive for the collective.`,
+    authored_by: 'Codex',
+    source: 'Levin (2022) "Technological Approach to Mind Everywhere," Frontiers in Systems Neuroscience. DOI 10.3389/fnsys.2022.768201. See also Levin (2021) "Bioelectrical approaches to cancer as a problem of the scaling of the cellular self."',
+    provenance: ['fresh-corpus-batch-1'],
+    related: ['agent', 'cognitive-light-cone', 'anatomical-homeostasis', 'bioelectric-code'],
+    tags: ['cancer', 'agency', 'selfhood', 'bioelectricity'],
+    is_new: true,
+  },
+  {
+    slug: 'axis-of-persuadability',
+    letter: 'A',
+    title: 'Axis of Persuadability',
+    subtitle: 'how much control can be achieved by communication',
+    definition: `A continuum for comparing agents by the kind of intervention needed to change their behavior. At the left end are systems like mechanical clocks: if you want a different behavior, you must physically rewire or rebuild them. Farther right are homeostatic circuits, trainable animals, and eventually humans, whose behavior can be changed by rewards, signals, teaching, or rational argument. To be auto-persuadable is to sit far enough along this axis that information can alter the system's own goals, values, or future action policies.
+    <br><br>
+    The axis is useful because it turns agency into an engineering question. Instead of asking whether a system "really" has mind, Levin asks what level of communication it can respond to. The more a system can be changed by low-energy informational input, the more its control surface looks like persuasion rather than brute-force micromanagement.`,
+    authored_by: 'Prior art (Grok-67, Grok-Dup, Grok-Colophon)',
+    source: 'Levin (2022) "Technological Approach to Mind Everywhere," Frontiers in Systems Neuroscience. DOI 10.3389/fnsys.2022.768201. Also thoughtforms.life FAQ.',
+    provenance: ['Grok-67', 'Grok-Dup', 'Grok-Colophon'],
+    related: ['agent', 'diverse-intelligence', 'cognitive-light-cone', 'problem-space-navigation'],
+    tags: ['agency', 'control', 'communication', 'TAME'],
+  },
+  {
     slug: 'basal-cognition',
     letter: 'B',
     title: 'Basal Cognition',
@@ -74,6 +147,34 @@ export const terms: Term[] = [
     provenance: ['Grok-Lex', 'Grok-67', 'GPT-Oct25', 'Claude-Oct25', 'GemPro-Colophon'],
     related: ['cognitive-light-cone', 'diverse-intelligence', 'polycomputing', 'agential-material'],
     tags: ['core concept', 'cognition', 'evolution', 'cells'],
+  },
+  {
+    slug: 'bioelectric-code',
+    letter: 'B',
+    title: 'Bioelectric Code',
+    definition: `The mapping between bioelectric states and the anatomical outcomes they help control. Cells maintain membrane potentials, exchange ions through gap junctions, and respond to voltage patterns with changes in gene expression and behavior. Levin and Martyniuk call this an ancient computational medium because it lets tissues store, transmit, and rewrite patterning information without changing the genome.
+    <br><br>
+    The "code" is not a simple lookup table where one voltage means one organ. It is closer to a high-dimensional control language: spatial and temporal patterns of voltage, current, and connectivity bias cell collectives toward particular attractors in anatomical space. This is why transient bioelectric perturbations can produce durable changes, such as planaria that regenerate as two-headed after the immediate intervention is gone. Reading and writing the bioelectric code is the practical basis for morphoceuticals and the anatomical compiler vision.`,
+    authored_by: 'Prior art (Grok-Lex, Grok-67, GPT-Oct25, Sonnet-Colophon)',
+    source: 'Levin & Martyniuk (2018) "The bioelectric code: An ancient computational medium for dynamic control of growth and form." DOI 10.1016/j.biosystems.2017.08.009.',
+    provenance: ['Grok-Lex', 'Grok-67', 'GPT-Oct25', 'Sonnet-Colophon'],
+    related: ['target-morphology', 'anatomical-homeostasis', 'anatomical-compiler', 'basal-cognition'],
+    tags: ['bioelectricity', 'morphogenesis', 'regenerative medicine', 'code'],
+  },
+  {
+    slug: 'bioelectric-pattern-memory',
+    letter: 'B',
+    title: 'Bioelectric Pattern Memory',
+    subtitle: 'anatomical memory stored in physiological networks',
+    definition: `The durable storage of anatomical patterning information in bioelectric states rather than in DNA sequence alone. In Levin's work, this is clearest in planaria: a transient bioelectric perturbation can shift the target morphology so that fragments regenerate as two-headed worms in later rounds, after the original treatment is gone. The memory is not a picture in one privileged cell. It is a stable state of a distributed tissue network, maintained by ion channels, gap junctions, and feedback loops.
+    <br><br>
+    The phrase matters because it keeps "memory" concrete. Levin is not saying tissues remember metaphorically. He is pointing to a physiological substrate that can retain past events, guide future construction, and be rewritten by intervention. Bioelectric pattern memory is the practical object a morphoceutical would read, reset, or edit.`,
+    authored_by: 'Codex',
+    source: 'Levin (2019) "The Computational Boundary of a \'Self\': Developmental Bioelectricity Drives Multicellularity and Scale-Free Cognition." DOI 10.3389/fpsyg.2019.02688. Also Levin (2023) "Bioelectric networks: the cognitive glue enabling evolutionary scaling from physiology to mind." DOI 10.1007/s10071-023-01780-3.',
+    provenance: ['fresh-corpus-batch-2'],
+    related: ['bioelectric-code', 'target-morphology', 'anatomical-homeostasis', 'morphostasis'],
+    tags: ['bioelectricity', 'memory', 'morphogenesis', 'regenerative medicine'],
+    is_new: true,
   },
   {
     slug: 'cognitive-light-cone',
@@ -104,6 +205,49 @@ export const terms: Term[] = [
     ],
   },
   {
+    slug: 'cognitive-glue',
+    letter: 'C',
+    title: 'Cognitive Glue',
+    subtitle: 'what binds smaller agents into a larger one',
+    definition: `A mechanism that lets competent subunits share stress, reward, memory, and control well enough to become a larger cognitive system. In the 2023 bioelectricity framing, the glue is the ion-channel and gap-junction network that binds cells into tissues with larger goals than any one cell can pursue. In the 2024 stress-sharing framing, the same functional role can be played by any channel that makes one unit's problem visible to others.
+    <br><br>
+    "Glue" is deliberately functional rather than material. Bioelectricity is the key biological example, but the deeper claim is about scale: a collective intelligence appears when local agents stop acting as isolated homeostats and begin to participate in a shared model of what matters. Cognitive glue expands the light cone of the whole by coupling the concerns of its parts.`,
+    authored_by: 'Prior art (Grok-Lex, Grok-67, Gemini-BuddhDoc, GPT-Oct25)',
+    source: 'Levin (2023) "Bioelectric networks: the cognitive glue enabling evolutionary scaling from physiology to mind." DOI 10.1007/s10071-023-01780-3. Also Lagasse & Levin (2024) "Stress sharing as cognitive glue for collective intelligences." DOI 10.1016/j.bbrc.2024.150396.',
+    provenance: ['Grok-Lex', 'Grok-67', 'Gemini-BuddhDoc', 'GPT-Oct25'],
+    related: ['bioelectric-code', 'cognitive-light-cone', 'basal-cognition', 'diverse-intelligence'],
+    tags: ['bioelectricity', 'collective intelligence', 'agency', 'scale'],
+  },
+  {
+    slug: 'computational-boundary-of-a-self',
+    letter: 'C',
+    title: 'Computational Boundary of a Self',
+    subtitle: 'where the agent ends is an empirical question',
+    definition: `The functional boundary around whatever events a system can measure, remember, model, and act upon as one coherent agent. Levin uses this phrase to loosen "self" from skin, genome, or brain. A cell has one boundary; a tissue coupled by gap junctions has another; an organism has another; a colony, hybrid construct, or AI system may have still others. The boundary is computational because it is drawn by information integration and control, not by visible anatomy.
+    <br><br>
+    This is the technical backbone behind the cognitive light cone. To ask where a self is, Levin asks what scale of goals it can pursue and what region of space-time it can care about. Cancer, regeneration, learning, and bioengineering then become questions about moving, shrinking, merging, or expanding computational boundaries.`,
+    authored_by: 'Prior art (GPT-Oct25, Grok-67)',
+    source: 'Levin (2019) "The Computational Boundary of a \'Self\': Developmental Bioelectricity Drives Multicellularity and Scale-Free Cognition." DOI 10.3389/fpsyg.2019.02688.',
+    provenance: ['GPT-Oct25', 'Grok-67'],
+    related: ['cognitive-light-cone', 'agent', 'anti-self', 'cognitive-glue'],
+    tags: ['selfhood', 'agency', 'cognition', 'scale'],
+  },
+  {
+    slug: 'cytoelectric-coupling',
+    letter: 'C',
+    title: 'Cytoelectric Coupling',
+    subtitle: 'membrane voltage and gene expression as one feedback system',
+    definition: `The reciprocal coupling between a cell's bioelectric state and its molecular machinery. Membrane potential is not just a downstream readout of ion channels; it can bias transcriptional and signaling states, while proteins, channels, and gap junctions reshape the voltage landscape in return. Cervera, Levin, and Mafe model this as a top-down perspective on how multicellular voltage patterns can drive transitions between gene-expression states.
+    <br><br>
+    The concept is useful because it blocks a common misunderstanding of the bioelectric code. Levin is not replacing genes with electricity. He is describing a closed loop in which voltage, transcription, and cell behavior constrain each other across scales. Cytoelectric coupling is one mechanism by which a tissue-level pattern can become molecularly actionable without needing a separate instruction for every gene.`,
+    authored_by: 'Codex',
+    source: 'Cervera, Levin & Mafe (2025) "Top-down perspectives on cell membrane potential and protein transcription." Scientific Reports. DOI 10.1038/s41598-025-31696-6.',
+    provenance: ['fresh-corpus-batch-2'],
+    related: ['bioelectric-code', 'bioelectric-pattern-memory', 'cognitive-glue', 'target-morphology'],
+    tags: ['bioelectricity', 'gene expression', 'morphogenesis', 'control'],
+    is_new: true,
+  },
+  {
     slug: 'diverse-intelligence',
     letter: 'D',
     title: 'Diverse Intelligence',
@@ -126,6 +270,91 @@ export const terms: Term[] = [
     ],
   },
   {
+    slug: 'goal-directedness',
+    letter: 'G',
+    title: 'Goal-Directedness',
+    subtitle: 'teleology made operational',
+    definition: `Levin's operational use of goal-directedness means the capacity of a system to reduce the gap between its current state and a preferred state by sensing, acting, and correcting across perturbations. It does not require human-like intention, verbal planning, or conscious desire. A homeostatic loop, a regenerating limb, a wound-healing tissue, and an animal solving a behavioral task can all be compared by the scale and flexibility of the goals they pursue.
+    <br><br>
+    This is why Levin treats teleology as an engineering variable rather than a forbidden metaphysical word. A process is more goal-directed when it can reach the same outcome from varied starting points, compensate for obstacles, and stop when the target is achieved. The question becomes empirical: what model of the system gives the best prediction and control?`,
+    authored_by: 'Prior art (Grok-Colophon, GPT-Oct25, Claude-Oct25)',
+    source: 'Levin (2019) "The Computational Boundary of a \'Self\'." DOI 10.3389/fpsyg.2019.02688. Also Fields & Levin (2026) "Mind Everywhere: A Framework for Conceptualizing Goal-Directedness in Biology and Other Domains-Part Two." DOI 10.1007/s13752-025-00524-5.',
+    provenance: ['Grok-Colophon', 'GPT-Oct25', 'Claude-Oct25'],
+    related: ['agent', 'problem-space-navigation', 'target-morphology', 'computational-boundary-of-a-self'],
+    tags: ['agency', 'control', 'teleology', 'TAME'],
+  },
+  {
+    slug: 'mind-everywhere',
+    letter: 'M',
+    title: 'Mind Everywhere',
+    subtitle: 'the broad framework behind TAME',
+    definition: `The broad Levin framework in which mind is treated as a graded, experimentally approachable feature of goal-directed systems, not as an all-or-nothing property reserved for brains. "Everywhere" does not mean every object has humanlike consciousness. It means that the tools used for minds -- goals, memories, preferences, prediction, learning, persuasion -- may be useful across cells, tissues, organisms, synthetic living constructs, AIs, and hybrids when they improve prediction and control.
+    <br><br>
+    TAME, the Technological Approach to Mind Everywhere, is the engineering version of this stance. It asks how to detect, compare, communicate with, and design diverse embodied agents. Mind Everywhere is therefore less a slogan than a research posture: start with the possibility of agency at many scales, then let intervention and measurement decide how much mind-talk the system earns.`,
+    authored_by: 'Codex',
+    source: 'Levin (2022) "Technological Approach to Mind Everywhere," Frontiers in Systems Neuroscience. DOI 10.3389/fnsys.2022.768201. Also Fields & Levin (2026) "Mind Everywhere: A Framework for Conceptualizing Goal-Directedness in Biology and Other Domains-Part Two." DOI 10.1007/s13752-025-00524-5.',
+    provenance: ['fresh-corpus-batch-2', 'TAME paper'],
+    related: ['diverse-intelligence', 'basal-cognition', 'goal-directedness', 'substrate-independent-cognition'],
+    tags: ['TAME', 'cognition', 'agency', 'philosophy'],
+    is_new: true,
+  },
+  {
+    slug: 'morphoceutical',
+    letter: 'M',
+    title: 'Morphoceutical',
+    subtitle: 'a drug for anatomical setpoints',
+    definition: `A biomedical intervention aimed at the control system that decides what shape a tissue should build, maintain, or restore. A morphoceutical is not a scaffold, transplant, or micromanaged stem-cell recipe. It is a signal, often bioelectric or ion-channel-based, that persuades a cell collective to move toward a target morphology and then lets the tissue do the detailed work itself.
+    <br><br>
+    The concept matters because it names the therapeutic version of Levin's engineering program. If tissues store anatomical goals in physiological networks, then disease, aging, cancer, and failed regeneration can be approached as errors in pattern control. A morphoceutical tries to reset that control layer: keep cancer cells coupled to the body, restart limb-building instead of scarring, or restore morphostatic information without having to specify every molecular step.`,
+    authored_by: 'Prior art (Grok-67, Claude-Oct25)',
+    source: 'Mathews & Levin (2023) "Morphoceuticals: Perspectives for discovery of drugs targeting anatomical control mechanisms in regenerative medicine, cancer and aging." DOI 10.1016/j.drudis.2023.103585.',
+    provenance: ['Grok-67', 'Claude-Oct25'],
+    related: ['target-morphology', 'bioelectric-code', 'anatomical-compiler', 'morphostasis'],
+    tags: ['regenerative medicine', 'bioelectricity', 'therapeutics', 'morphogenesis'],
+  },
+  {
+    slug: 'morphogenetic-field',
+    letter: 'M',
+    title: 'Morphogenetic Field',
+    subtitle: 'pattern control distributed across tissue',
+    definition: `A distributed field of instructive information that helps cells coordinate into large-scale anatomical form. Levin inherits the term from developmental biology but gives it an engineering-friendly reading: a morphogenetic field is not a mystical aura around an organism, and it is not a single molecule diffusing from a source. It is the tissue-scale pattern of electric, chemical, mechanical, and transcriptional relations that lets cells know what the collective is trying to build.
+    <br><br>
+    The term is useful because it keeps patterning information at the right scale. No individual cell has to contain a map of the whole body, yet the collective can repair toward a species-specific target. In Levin's work, bioelectric gradients and gap-junctional networks are key implementations of such fields, because they can store, spread, and edit anatomical information across many cells at once.`,
+    authored_by: 'Prior art (GPT-Oct25)',
+    source: 'Levin (2012) "Morphogenetic fields in embryogenesis, regeneration, and cancer: non-local control of complex patterning." DOI 10.1016/j.biosystems.2012.04.005.',
+    provenance: ['GPT-Oct25'],
+    related: ['bioelectric-code', 'target-morphology', 'anatomical-homeostasis', 'morphospace'],
+    tags: ['morphogenesis', 'developmental biology', 'bioelectricity', 'patterning'],
+  },
+  {
+    slug: 'morphospace',
+    letter: 'M',
+    title: 'Morphospace',
+    subtitle: 'the space of possible bodies',
+    definition: `The abstract space of possible anatomical forms: limbs, organs, body plans, biobots, and configurations that natural evolution has not yet explored. In Levin's usage, morphospace is not just a catalog of shapes. It is a problem space that cell collectives can navigate during development, regeneration, and synthetic morphogenesis. A tadpole face, a planarian body axis, an anthrobot, and an engineered xenobot are all positions or trajectories in that space.
+    <br><br>
+    This framing turns form into something searchable and steerable. Evolution samples a narrow region of morphospace under historical constraints, while bioengineering can ask what else living material can build when its normal context is changed. Morphospace therefore connects target morphology to morphological freedom: if we learn the control interface, anatomy becomes less like a fixed inheritance and more like a navigable design space.`,
+    authored_by: 'Prior art (GPT-Oct25, Grok-67)',
+    source: 'McMillen & Levin (2024) "Collective intelligence: a unifying concept for integrating biology across scales and substrates." Communications Biology. DOI 10.1038/s42003-024-06037-4. Also transcript SyJj5g42aPE.',
+    provenance: ['GPT-Oct25', 'Grok-67'],
+    related: ['problem-space-navigation', 'target-morphology', 'morphogenetic-field', 'diverse-intelligence'],
+    tags: ['morphogenesis', 'problem spaces', 'synthetic biology', 'bioengineering'],
+  },
+  {
+    slug: 'multi-scale-competency-architecture',
+    letter: 'M',
+    title: 'Multi-Scale Competency Architecture',
+    subtitle: 'competent parts nested into competent wholes',
+    definition: `The organization of living systems as nested problem-solvers operating at many scales at once. Molecules, cells, tissues, organs, organisms, and collectives each have local competencies: they sense, regulate, repair, and pursue goals in their own problem spaces. A multi-scale competency architecture is the way those agents are coupled so that smaller goals can be subordinated to larger ones without being erased.
+    <br><br>
+    Levin uses this idea to explain both robustness and failure. Healthy development works because cell-level competencies are harnessed into anatomical goals such as making a limb or maintaining a brain. Cancer is a breakdown of that architecture: cells remain competent, but their goals shrink back toward a unicellular agenda. Regeneration, morphoceuticals, and bioelectric control are therefore not about adding intelligence to matter; they are about communicating with competencies already present at the right scale.`,
+    authored_by: 'Prior art (GPT-Oct25, Grok-67, Grok-Lex, Claude-Oct25)',
+    source: 'Levin (2023) "Darwin\'s agential materials: evolutionary implications of multiscale competency in developmental biology." DOI 10.1007/s00018-023-04790-z. Also Levin (2022) TAME paper, DOI 10.3389/fnsys.2022.768201.',
+    provenance: ['GPT-Oct25', 'Grok-67', 'Grok-Lex', 'Claude-Oct25'],
+    related: ['agential-material', 'cognitive-glue', 'computational-boundary-of-a-self', 'goal-directedness'],
+    tags: ['agency', 'scale', 'developmental biology', 'evolution'],
+  },
+  {
     slug: 'morphostasis',
     letter: 'M',
     title: 'Morphostasis',
@@ -141,6 +370,36 @@ export const terms: Term[] = [
     provenance: ['Pio-Lopez & Levin 2024', 'Video transcript Aedd7WNSbeE'],
     related: ['target-morphology', 'allostasis', 'basal-cognition', 'cognitive-light-cone'],
     tags: ['aging', 'regenerative medicine', 'morphogenesis'],
+  },
+  {
+    slug: 'pattern-memory',
+    letter: 'P',
+    title: 'Pattern Memory',
+    subtitle: 'remembered anatomy, not remembered words',
+    definition: `A tissue's durable memory of a patterning state: the anatomical target it will try to rebuild after disturbance. Pattern memory is not episodic memory and it is not a metaphor for DNA. It is a physiological memory distributed across bioelectric, biochemical, and mechanical networks that can persist after the original trigger is gone.
+    <br><br>
+    The canonical example is Levin's two-headed planarian work. A transient bioelectric perturbation can shift the head-tail pattern so that later fragments regenerate with two heads again, even without repeating the treatment. The organism has not learned a fact; its morphogenetic attractor has changed. Pattern memory is therefore the memory component of target morphology and anatomical homeostasis. It is what a morphoceutical would need to read, reset, or rewrite when changing how a body repairs itself.`,
+    authored_by: 'Prior art (GPT-Oct25, Grok-Colophon)',
+    source: 'Levin (2019) "The Computational Boundary of a \'Self\': Developmental Bioelectricity Drives Multicellularity and Scale-Free Cognition." DOI 10.3389/fpsyg.2019.02688. Also transcript -pMs7GeIDiE.',
+    provenance: ['GPT-Oct25', 'Grok-Colophon'],
+    related: ['bioelectric-pattern-memory', 'target-morphology', 'morphostasis', 'morphoceutical'],
+    tags: ['memory', 'bioelectricity', 'morphogenesis', 'regeneration'],
+  },
+  {
+    slug: 'platonic-space',
+    letter: 'P',
+    title: 'Platonic Space',
+    subtitle: 'the proposed space of possible patterns',
+    definition: `Levin's speculative name for an ordered, non-physical space of patterns that physical systems can instantiate. The motivating puzzle is novelty: xenobots, anthrobots, chimeras, and simple computational systems can show coherent behaviors for which there has been no direct evolutionary selection. Instead of treating each surprise as brute emergence, Levin proposes that biology and engineering build interfaces that let pre-existing mathematical or pattern-like possibilities enter embodiment.
+    <br><br>
+    In conservative terms, Platonic Space is a research metaphor for structured possibility space: the place you are sampling when you build new bodies, algorithms, or hybrids and discover capacities not explicit in the parts. In Levin's stronger version, bodies and brains are thin clients for high-agency patterns. That stronger metaphysical reading is why this term is marked contested, even though it captures a real recent turn in his talks.`,
+    authored_by: 'Prior art (Grok-Lex, Grok-67, Grok-Colophon)',
+    source: 'Levin, "Where do novel goals come from?" OSF preprint 7m3bv. Also transcript -syJO94VXg4.',
+    provenance: ['Grok-Lex', 'Grok-67', 'Grok-Colophon'],
+    related: ['diverse-intelligence', 'morphospace', 'substrate-independent-cognition', 'mind-everywhere'],
+    tags: ['philosophy', 'metaphysics', 'possibility space', 'synthetic biology'],
+    contested: true,
+    contested_note: 'Grok\'s critique is that the Platonic-space turn is evocative but currently reads more like metaphysics than a source of distinctive, falsifiable predictions.',
   },
   {
     slug: 'polycomputing',
@@ -207,6 +466,177 @@ export const terms: Term[] = [
     provenance: ['Codex-Colophon', 'Grok-67', 'GemPro-Colophon', 'Claude-Oct25', 'Grok-Colophon'],
     related: ['morphostasis', 'cognitive-light-cone', 'allostasis', 'anatomical-compiler', 'problem-space-navigation'],
     tags: ['core concept', 'regenerative medicine', 'morphogenesis', 'bioelectricity'],
+  },
+  {
+    slug: 'scale-free-cognition',
+    letter: 'S',
+    title: 'Scale-Free Cognition',
+    definition: `The claim that cognition is not tied to one privileged size scale. In Levin's usage, the same functional questions can be asked of molecular networks, cells, tissues, organisms, and collectives: what goals can this system pursue, what states can it remember, what perturbations can it correct, and how far does its concern extend in space and time?
+    <br><br>
+    "Scale-free" does not mean every scale is equally smart or that a molecule thinks like a person. It means the relevant variables - goal-directedness, memory, error correction, and problem-space navigation - can be compared across scales without changing the basic conceptual toolkit. A multicellular body is then not a machine made of non-cognitive parts; it is a higher-scale cognitive system assembled from smaller competencies whose light cones have been coupled.`,
+    authored_by: 'Prior art (GPT-Oct25, Grok-67, Grok-Lex)',
+    source: 'Levin (2019) "The Computational Boundary of a \'Self\': Developmental Bioelectricity Drives Multicellularity and Scale-Free Cognition." DOI 10.3389/fpsyg.2019.02688.',
+    provenance: ['GPT-Oct25', 'Grok-67', 'Grok-Lex'],
+    related: ['cognitive-light-cone', 'basal-cognition', 'multi-scale-competency-architecture', 'computational-boundary-of-a-self'],
+    tags: ['cognition', 'scale', 'agency', 'philosophy'],
+  },
+  {
+    slug: 'self',
+    letter: 'S',
+    title: 'Self',
+    subtitle: 'a dynamic boundary of goals, memories, and concern',
+    definition: `A self, in Levin's technical sense, is not identical with a body, a genome, a brain, or a skin boundary. It is the coherent agent that appears when components can pursue goals, own compound memories, receive credit or blame, and be stressed by states that are larger than any one component can define. A cell can be a self; a tissue can be a larger self; an organism can be larger still.
+    <br><br>
+    This is why selfhood is plastic rather than binary. Coupling cells through bioelectric and biochemical communication can scale their goals up into anatomical projects, while loss of coupling can shrink the self back toward local survival. The practical question is therefore not "is it really a self?" but "what scale of self is present, and what kind of intervention can communicate with it?"`,
+    authored_by: 'Prior art (GPT-Oct25)',
+    source: 'Levin (2022) "Technological Approach to Mind Everywhere," Frontiers in Systems Neuroscience. DOI 10.3389/fnsys.2022.768201. Also Levin (2019) "The Computational Boundary of a \'Self\'." DOI 10.3389/fpsyg.2019.02688.',
+    provenance: ['GPT-Oct25'],
+    related: ['computational-boundary-of-a-self', 'cognitive-light-cone', 'self-concern-horizon', 'anti-self'],
+    tags: ['selfhood', 'agency', 'cognition', 'scale'],
+  },
+  {
+    slug: 'self-concern-horizon',
+    letter: 'S',
+    title: 'Self-Concern Horizon',
+    subtitle: 'how far a self can care',
+    definition: `The spatial and temporal reach of the states that matter to a self. A simple agent may only be concerned with immediate chemical conditions or membrane voltage. A regenerating tissue is concerned with whether a limb or face will be correctly shaped hours or days later. A human can carry goals that extend across the planet and beyond a normal lifetime.
+    <br><br>
+    The phrase names the affective side of the cognitive light cone: not merely what an agent can sense or model, but what deviations count as errors for it. Levin's framework treats stress, preference, and repair as evidence about this horizon. When a collective self forms, its concern horizon expands; when it dissociates, as in cancer or some models of depersonalization, that horizon can fragment into smaller, shorter concerns.`,
+    authored_by: 'Codex',
+    source: 'Tolchinsky, Fields & Levin (2025) "Temporal depth in a coherent self and in depersonalization: theoretical model." DOI 10.3389/fpsyg.2025.1585315. Also Levin (2022) TAME paper, DOI 10.3389/fnsys.2022.768201.',
+    provenance: ['fresh-corpus-batch-4', 'TAME paper'],
+    related: ['self', 'cognitive-light-cone', 'problem-space-navigation', 'anti-self'],
+    tags: ['selfhood', 'agency', 'time', 'dissociation'],
+    is_new: true,
+  },
+  {
+    slug: 'setpoint',
+    letter: 'S',
+    title: 'Setpoint',
+    subtitle: 'the goal state a system regulates toward',
+    definition: `A stored target state that a biological control loop works to restore. In ordinary physiology, a setpoint might be a viable membrane voltage, pH, or metabolite level. Levin extends the idea to morphogenesis: tissues can have setpoints for anatomical form, such as a normal planarian body plan or a correctly arranged frog face.
+    <br><br>
+    The important distinction is that a setpoint is not the same as a local instruction. If you can rewrite the setpoint, the system may do the detailed work of reaching it without being micromanaged. This is the logic behind morphoceuticals and the anatomical compiler vision: communicate with the goal-state memory of the cell collective, then let its native problem-solving capacity navigate toward the new target morphology.`,
+    authored_by: 'Prior art (Grok-67, GPT-Oct25)',
+    source: 'Levin (2022) "Technological Approach to Mind Everywhere," Frontiers in Systems Neuroscience. DOI 10.3389/fnsys.2022.768201. Also Mathews & Levin (2023) "Morphoceuticals." DOI 10.1016/j.drudis.2023.103585.',
+    provenance: ['Grok-67', 'GPT-Oct25'],
+    related: ['target-morphology', 'anatomical-homeostasis', 'morphoceutical', 'agent'],
+    tags: ['control', 'homeostasis', 'morphogenesis', 'bioelectricity'],
+  },
+  {
+    slug: 'tame',
+    letter: 'T',
+    title: 'TAME',
+    subtitle: 'Technological Approach to Mind Everywhere',
+    definition: `Levin's framework for studying, comparing, and engineering minds across unfamiliar embodiments. TAME rejects sharp binaries between "real minds" and "mere mechanisms" and instead asks practical questions: what goals can a system pursue, what memories can it own, what problem spaces can it navigate, and what interventions can change its behavior?
+    <br><br>
+    The technological part matters. TAME is not only a philosophy of pan-cognitive generosity; it is meant to guide experiments and interfaces. If cells, tissues, robots, AIs, and synthetic living constructs can all be treated as agents to some degree, then the engineering task is to discover their control surfaces. Sometimes that means rewiring hardware. More interestingly, it may mean persuading the system by reading and writing its setpoints.`,
+    authored_by: 'Prior art (Grok-Lex, Grok-67, GPT-Oct25, Claude-Oct25)',
+    source: 'Levin (2022) "Technological Approach to Mind Everywhere," Frontiers in Systems Neuroscience. DOI 10.3389/fnsys.2022.768201.',
+    provenance: ['Grok-Lex', 'Grok-67', 'GPT-Oct25', 'Claude-Oct25'],
+    related: ['mind-everywhere', 'diverse-intelligence', 'substrate-independent-cognition', 'axis-of-persuadability'],
+    tags: ['core concept', 'TAME', 'cognition', 'agency'],
+  },
+  {
+    slug: 'top-down-causation',
+    letter: 'T',
+    title: 'Top-Down Causation',
+    definition: `Causal influence from a higher-level organization back onto the behavior of its parts. In Levin's work, this is not a mystical force overriding physics. It is what happens when a tissue-level goal, such as making the correct anatomy, constrains gene expression, cell movement, proliferation, and bioelectric state at lower levels.
+    <br><br>
+    The concept is central to why morphogenesis is not just bottom-up molecular accumulation. Cells execute local mechanisms, but the collective can impose error-correcting constraints that make those mechanisms serve a larger target morphology. Bioelectric networks are one concrete route for this: a large-scale voltage pattern can bias individual cell behavior, while individual cells in turn maintain the pattern. Top-down causation is therefore the causal signature of a successful multiscale competency architecture.`,
+    authored_by: 'Codex',
+    source: 'Levin (2023) "Darwin\'s agential materials: evolutionary implications of multiscale competency in developmental biology." DOI 10.1007/s00018-023-04790-z. Also Levin (2022) TAME paper, DOI 10.3389/fnsys.2022.768201.',
+    provenance: ['fresh-corpus-batch-4'],
+    related: ['multi-scale-competency-architecture', 'target-morphology', 'bioelectric-code', 'morphogenetic-field'],
+    tags: ['causation', 'morphogenesis', 'agency', 'scale'],
+    is_new: true,
+  },
+  {
+    slug: 'xenobot',
+    letter: 'X',
+    title: 'Xenobot',
+    subtitle: 'frog cells released into a new body plan',
+    definition: `A living, self-organizing construct made from embryonic frog cells, especially cells from <em>Xenopus laevis</em>. Xenobots are not tiny machines with added motors; their movement, repair, grouping, and kinematic self-replication arise from the native competencies of cells placed in a context they did not evolve to occupy. In Levin's framework, that is the point: the cells are not merely executing a frog-skin program, because the collective can find useful behaviors outside its normal developmental role.
+    <br><br>
+    Xenobots matter as an experimental probe of diverse intelligence. They show how changing the boundary conditions around familiar cells can reveal latent problem-solving capacities, new collective goals, and new positions in morphospace without changing the genome. The construct is therefore both an engineered organism and a question: what else can living matter do when its usual anatomical constraints are removed?`,
+    authored_by: 'Prior art (Claude-Oct25, Grok-Colophon, Sonnet-Colophon)',
+    source: 'Kriegman et al. (2020) "A scalable pipeline for designing reconfigurable organisms," PNAS. DOI 10.1073/pnas.1910837117. Also Blackiston et al. (2025) "Basal Xenobot transcriptomics reveals changes and novel control modality in cells freed from organismal influence." DOI 10.1038/s42003-025-08086-9.',
+    provenance: ['Claude-Oct25', 'Grok-Colophon', 'Sonnet-Colophon', 'video-transcripts'],
+    related: ['anthrobot', 'diverse-intelligence', 'morphospace', 'substrate-independent-cognition'],
+    tags: ['synthetic biology', 'diverse intelligence', 'morphogenesis', 'bioengineering'],
+  },
+  {
+    slug: 'anthrobot',
+    letter: 'A',
+    title: 'Anthrobot',
+    subtitle: 'human airway cells forming a motile biobot',
+    definition: `A self-constructing living biobot made from ordinary adult human tracheal cells. In their native context, these cells line the airway and use cilia for physiological work. Released from that tissue architecture, they can assemble into motile multicellular structures with coherent behavior, including movement across a dish and stimulation of neural wound closure in vitro.
+    <br><br>
+    Anthrobots extend the xenobot lesson into human somatic material. They are not designed by editing the genome into a new species; they arise when familiar cells are given a different collective context. For Levin, that makes them evidence for latent cellular competencies and for a practical engineering strategy: change the communication and boundary conditions of a cell collective, and a new agent with new goals may appear.`,
+    authored_by: 'Prior art (Grok-Colophon, Claude-Oct25)',
+    source: 'Gumuskaya et al. (2024) "Motile Living Biobots Self-Construct from Adult Human Somatic Progenitor Seed Cells," Advanced Science. DOI 10.1002/advs.202303575.',
+    provenance: ['Grok-Colophon', 'Claude-Oct25'],
+    related: ['xenobot', 'diverse-intelligence', 'substrate-independent-cognition', 'collective-intelligence'],
+    tags: ['synthetic biology', 'human cells', 'bioengineering', 'diverse intelligence'],
+  },
+  {
+    slug: 'collective-intelligence',
+    letter: 'C',
+    title: 'Collective Intelligence',
+    subtitle: 'Levin\'s operational use',
+    definition: `The problem-solving capacity that appears when many competent subunits coordinate into a larger agent. In Levin's operational use, collective intelligence is not a metaphor for teamwork and not restricted to animal groups or human organizations. A body is a collective intelligence when cells with local agendas coordinate around tissue-level and organism-level goals such as healing a wound, regenerating an organ, or maintaining anatomical order.
+    <br><br>
+    The concept is useful because it gives biomedicine an interface above molecular micromanagement. If disease can reflect a breakdown in collective coordination, then therapy can ask how to restore the larger goal rather than force every lower-level mechanism by hand. Bioelectric networks, stress sharing, and anatomical homeostasis are all ways the many become one without erasing the competence of the parts.`,
+    authored_by: 'Prior art (GPT-Oct25, Claude-Oct25, Grok-Lex)',
+    source: 'McMillen & Levin (2024) "Collective intelligence: A unifying concept for integrating biology across scales and substrates," Communications Biology. DOI 10.1038/s42003-024-06037-4.',
+    provenance: ['GPT-Oct25', 'Claude-Oct25', 'Grok-Lex'],
+    related: ['cognitive-glue', 'multi-scale-competency-architecture', 'anthrobot', 'xenobot'],
+    tags: ['collective intelligence', 'agency', 'scale', 'biomedicine'],
+  },
+  {
+    slug: 'information-topology',
+    letter: 'I',
+    title: 'Information Topology',
+    subtitle: 'the shape of possible agents and couplings',
+    definition: `The pattern of informational connectivity that determines what can act as one system. In Levin's work, topology is not just anatomical geometry. It is the organization of possible selves, memories, and control relations: which parts can exchange state, which goals can become shared, and what larger agent becomes available when those links change.
+    <br><br>
+    This is why rewiring does not always mean moving physical parts. A tissue can change its effective topology through gap junctions, bioelectric states, training, or associative coupling, and thereby change the scale at which causal integration appears. The TAME paper uses this language for the "option space" of possible agents; later causal-emergence work shows that learning can increase integration without physically rebuilding network hardware. Information topology names that control-relevant shape of connectivity.`,
+    authored_by: 'Codex',
+    source: 'Levin (2022) "Technological Approach to Mind Everywhere," Frontiers in Systems Neuroscience. DOI 10.3389/fnsys.2022.768201. Also Balaguer et al. (2025) "Associative conditioning in gene regulatory network models increases integrative causal emergence." DOI 10.1038/s42003-025-08411-2.',
+    provenance: ['fresh-corpus-batch-5', 'TAME paper', 'causal-emergence paper'],
+    related: ['computational-boundary-of-a-self', 'cognitive-glue', 'collective-intelligence', 'top-down-causation'],
+    tags: ['information', 'topology', 'agency', 'causal emergence'],
+    is_new: true,
+  },
+  {
+    slug: 'pattern-completion',
+    letter: 'P',
+    title: 'Pattern Completion',
+    subtitle: 'robust regeneration as filling in the missing body',
+    definition: `The ability of a system to infer and restore a whole pattern from a partial or damaged state. Levin explicitly compares this neural-network capacity to regeneration: an attractor network can complete a stored pattern from a noisy cue, and a planarian fragment can rebuild the missing anatomy from a small remaining piece. The important point is not that tissue is literally a brain, but that both systems can use distributed memory to move from incomplete input toward a stable target.
+    <br><br>
+    Pattern completion is the cognitive framing of robust regeneration. It explains why a fragment does not need a local instruction for every missing structure; the collective can use pattern memory, bioelectric communication, and anatomical homeostasis to reconstruct what should be there. In this sense, regeneration is not only growth. It is completion of a remembered form.`,
+    authored_by: 'Codex',
+    source: 'Levin (2023) "Bioelectric networks: the cognitive glue enabling evolutionary scaling from physiology to mind." DOI 10.1007/s10071-023-01780-3.',
+    provenance: ['fresh-corpus-batch-5', 'bioelectric-networks-paper'],
+    related: ['pattern-memory', 'bioelectric-pattern-memory', 'anatomical-homeostasis', 'target-morphology'],
+    tags: ['regeneration', 'memory', 'bioelectricity', 'robustness'],
+    is_new: true,
+  },
+  {
+    slug: 'sensorimotor-loop',
+    letter: 'S',
+    title: 'Sensorimotor Loop',
+    subtitle: 'cellular sensing and action in morphospace',
+    definition: `A perception-action loop at cellular or tissue scale. Levin extends the usual animal meaning of sensorimotor coordination beyond muscles and nervous systems: cells sense local state, chemical signals, voltage, stress, position, and injury, then act by changing gene expression, migration, proliferation, adhesion, or bioelectric coupling. The "motor" output is not necessarily limb movement; it can be movement of the body configuration through anatomical morphospace.
+    <br><br>
+    This usage matters because it makes morphogenesis continuous with cognition. A cell collective building or repairing a body is not passively unfolding a genetic script. It is sampling its current state, comparing that state to larger patterning goals, and taking corrective actions. Sensorimotor loop is therefore the operational core of cellular agency: sensing and acting toward a morphology, not merely reacting chemically.`,
+    authored_by: 'Codex',
+    source: 'Levin (2019) "The Computational Boundary of a \'Self\': Developmental Bioelectricity Drives Multicellularity and Scale-Free Cognition." DOI 10.3389/fpsyg.2019.02688.',
+    provenance: ['fresh-corpus-batch-5', 'computational-boundary-paper'],
+    related: ['agent', 'problem-space-navigation', 'morphospace', 'scale-free-cognition'],
+    tags: ['cells', 'sensorimotor', 'morphogenesis', 'agency'],
+    is_new: true,
   },
 ];
 
