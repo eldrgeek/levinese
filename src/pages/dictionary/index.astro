@@ -3,6 +3,7 @@ import Base from '../../layouts/Base.astro';
 import { terms, termsByLetter } from '../../data/terms';
 
 const letters = Object.keys(termsByLetter).sort();
+const stripHtml = (html: string) => html.replace(/<[^>]*>/g, ' ');
 ---
 <Base title="Dictionary" description="A working dictionary of Levinese — the conceptual vocabulary developed by Michael Levin across 364 papers, 333 transcripts, and a decade of biological research on the nature of mind.">
 
@@ -19,24 +20,36 @@ const letters = Object.keys(termsByLetter).sort();
         = new term from corpus gap analysis, not in prior glossary sessions
       </div>
     </div>
+  </div>
 
-    <!-- Letter nav -->
-    <div class="flex flex-wrap gap-2 mb-10 pb-6 border-b border-border">
-      {letters.map(letter => (
-        <a
-          href={`#letter-${letter}`}
-          class="w-8 h-8 flex items-center justify-center rounded border border-border text-muted text-sm font-medium hover:bg-white hover:text-ink hover:border-teal/30 transition-colors"
-        >
-          {letter}
-        </a>
-      ))}
+  <!-- Sticky search + letter rail -->
+  <div id="dict-nav" class="sticky top-14 z-40 bg-parchment/95 backdrop-blur-sm border-b border-border">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-3 flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-4">
+      <!-- Search -->
+      <div class="flex items-center gap-3 flex-1 min-w-0">
+        <div class="relative flex-1 max-w-xs">
+          <svg class="absolute left-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-muted pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          <input id="dict-search" type="search" placeholder="Filter terms…"
+            class="w-full pl-8 pr-8 py-1.5 text-sm border border-border rounded-md bg-white text-ink placeholder:text-muted/60 focus:outline-none focus:border-teal/50 focus:ring-1 focus:ring-teal/20" />
+          <button id="dict-clear" class="absolute right-2 top-1/2 -translate-y-1/2 text-muted hover:text-ink hidden text-xs leading-none" aria-label="Clear search">✕</button>
+        </div>
+        <span id="dict-count" class="text-xs text-muted whitespace-nowrap tabular-nums">Showing {terms.length} of {terms.length}</span>
+      </div>
+      <!-- Letter rail -->
+      <div class="flex flex-wrap gap-1">
+        {letters.map(letter => (
+          <a href={`#letter-${letter}`} data-letter={letter}
+            class="dict-letter w-7 h-7 flex items-center justify-center rounded text-xs font-medium text-muted border border-transparent hover:bg-white hover:border-border hover:text-ink transition-colors"
+          >{letter}</a>
+        ))}
+      </div>
     </div>
   </div>
 
   <!-- Terms -->
-  <div class="max-w-5xl mx-auto px-4 sm:px-6">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 mt-6">
     {letters.map(letter => (
-      <div id={`letter-${letter}`} class="mb-14 scroll-mt-20">
+      <div id={`letter-${letter}`} class="dict-section mb-14 scroll-mt-28" data-letter={letter}>
         <div class="flex items-center gap-4 mb-8">
           <span class="font-serif text-5xl font-medium text-teal/30">{letter}</span>
           <div class="h-px flex-1 bg-border" />
@@ -44,7 +57,11 @@ const letters = Object.keys(termsByLetter).sort();
 
         <div class="space-y-12">
           {termsByLetter[letter].map(term => (
-            <article id={term.slug} class="scroll-mt-20">
+            <article
+              id={`term-${term.slug}`}
+              class="dict-entry scroll-mt-28"
+              data-search={`${term.title} ${term.subtitle ?? ''} ${stripHtml(term.definition)} ${term.tags.join(' ')}`.toLowerCase()}
+            >
               <!-- Term header -->
               <div class="flex items-start gap-3 mb-3">
                 <div class="flex-1">
@@ -104,7 +121,7 @@ const letters = Object.keys(termsByLetter).sort();
                   const relatedTerm = terms.find(t => t.slug === slug);
                   return relatedTerm ? (
                     <a
-                      href={`#${slug}`}
+                      href={`#term-${slug}`}
                       class="text-xs text-teal hover:text-teal-mid underline underline-offset-2 decoration-teal/30"
                     >
                       {relatedTerm.title}
@@ -119,6 +136,11 @@ const letters = Object.keys(termsByLetter).sort();
     ))}
   </div>
 
+  <!-- No-results message -->
+  <div id="dict-empty" class="hidden max-w-5xl mx-auto px-4 sm:px-6 py-16 text-center">
+    <p class="text-muted">No terms match your search.</p>
+  </div>
+
   <!-- Footer note -->
   <div class="max-w-5xl mx-auto px-4 sm:px-6 py-10 border-t border-border mt-6">
     <p class="text-sm text-muted">
@@ -127,3 +149,59 @@ const letters = Object.keys(termsByLetter).sort();
   </div>
 
 </Base>
+
+<script>
+  const input = document.getElementById('dict-search') as HTMLInputElement;
+  const clearBtn = document.getElementById('dict-clear') as HTMLButtonElement;
+  const countEl = document.getElementById('dict-count') as HTMLElement;
+  const emptyEl = document.getElementById('dict-empty') as HTMLElement;
+  const entries = document.querySelectorAll<HTMLElement>('.dict-entry');
+  const sections = document.querySelectorAll<HTMLElement>('.dict-section');
+  const letterBtns = document.querySelectorAll<HTMLAnchorElement>('.dict-letter');
+  const total = entries.length;
+
+  function applyFilter(raw: string) {
+    const q = raw.trim().toLowerCase();
+    let shown = 0;
+
+    entries.forEach(el => {
+      const match = !q || (el.dataset.search ?? '').includes(q);
+      el.hidden = !match;
+      if (match) shown++;
+    });
+
+    sections.forEach(sec => {
+      const hasVisible = [...sec.querySelectorAll<HTMLElement>('.dict-entry')].some(e => !e.hidden);
+      sec.hidden = !hasVisible;
+      const btn = document.querySelector<HTMLElement>(`.dict-letter[data-letter="${sec.dataset.letter}"]`);
+      if (btn) btn.style.opacity = hasVisible ? '' : '0.3';
+    });
+
+    countEl.textContent = `Showing ${shown} of ${total}`;
+    clearBtn.classList.toggle('hidden', !q);
+    emptyEl.classList.toggle('hidden', shown > 0);
+  }
+
+  input.addEventListener('input', () => applyFilter(input.value));
+  clearBtn.addEventListener('click', () => { input.value = ''; applyFilter(''); input.focus(); });
+
+  // Active letter highlight on scroll
+  const dictNav = document.getElementById('dict-nav') as HTMLElement;
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      const letter = (entry.target as HTMLElement).dataset.letter;
+      const btn = document.querySelector<HTMLElement>(`.dict-letter[data-letter="${letter}"]`);
+      if (!btn) return;
+      if (entry.isIntersecting) {
+        btn.classList.add('bg-teal/10', 'text-teal', 'border-teal/30');
+      } else {
+        btn.classList.remove('bg-teal/10', 'text-teal', 'border-teal/30');
+      }
+    });
+  }, {
+    rootMargin: `-${(dictNav.offsetHeight + 56)}px 0px -55% 0px`,
+  });
+
+  sections.forEach(s => observer.observe(s));
+</script>
