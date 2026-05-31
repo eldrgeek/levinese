@@ -806,6 +806,91 @@ export const terms: Term[] = [
     related: ['target-morphology', 'problem-space-navigation', 'developmental-bioelectricity', 'morphospace'],
     tags: ['experimental landmark', 'morphogenesis', 'bioelectricity', 'Xenopus'],
   },
+  {
+    slug: 'electroceutical-ionoceutical',
+    letter: 'E',
+    title: 'Electroceutical / Ionoceutical',
+    subtitle: 'therapeutics aimed at bioelectric control surfaces',
+    definition: `A therapeutic intervention that works by changing electrical or ionic signaling rather than by treating voltage as a side effect of "real" biochemistry. Electroceutical is the broader biomedical term: applied fields, devices, or ion-channel modulation used to produce a clinical outcome. Ionoceutical is the Levin-flavored precision version, aimed at ion channels, pumps, and gap junctions as the interface through which tissues process information.
+    <br><br>
+    The distinction matters because Levin's target is not only nerves or excitable tissues. Non-neural cells also maintain membrane potentials and couple through bioelectric networks. An ionoceutical can therefore be a way to persuade a cell collective, reset a pathological bioelectric state, or support a morphoceutical effect without micromanaging every downstream gene and pathway.`,
+    authored_by: 'Prior art (Grok-67, Claude-Oct25)',
+    source: 'Levin et al. (2024) "Electroceuticals: emerging applications beyond the nervous system and excitable tissues." DOI 10.1016/j.tips.2024.03.001. Also Mathews & Levin (2023) "Morphoceuticals." DOI 10.1016/j.drudis.2023.103585.',
+    provenance: ['Grok-67', 'Claude-Oct25'],
+    related: ['morphoceutical', 'bioelectric-code', 'developmental-bioelectricity', 'gap-junctions-connexins'],
+    tags: ['therapeutics', 'bioelectricity', 'ion channels', 'regenerative medicine'],
+  },
+  {
+    slug: 'gap-junctions-connexins',
+    letter: 'G',
+    title: 'Gap Junctions / Connexins',
+    subtitle: 'direct cytoplasmic links between neighboring cells',
+    definition: `Gap junctions are intercellular channels that let ions and small molecules pass directly from one cell's cytoplasm to another's. Connexins are the protein subunits that form those channels in vertebrates. In Levin's framework, they are not just plumbing. They are a major physical substrate of the bioelectric code, because they let cells share voltage state and other signals quickly enough to behave as a larger information-processing network.
+    <br><br>
+    This is why changing gap-junctional connectivity can alter patterning, regeneration, and cancer outcomes. The boundary between one cell's concerns and another's becomes adjustable: open enough communication and the cells can participate in a tissue-level goal; disrupt it and local agendas can decouple. Gap junctions are one of the mechanisms by which a cellular crowd becomes a collective agent.`,
+    authored_by: 'Prior art (Claude-Oct25, Grok-BioField)',
+    source: 'Chernet, Fields & Levin (2014) "Long-range gap junctional signaling controls oncogene-mediated tumorigenesis in Xenopus laevis embryos." DOI 10.3389/fphys.2014.00519. Also Levin (2023) "Bioelectric networks." DOI 10.1007/s10071-023-01780-3.',
+    provenance: ['Claude-Oct25', 'Grok-BioField'],
+    related: ['bioelectric-code', 'bioelectric-networks', 'cognitive-glue', 'electroceutical-ionoceutical'],
+    tags: ['bioelectricity', 'cell communication', 'connexins', 'morphogenesis'],
+  },
+  {
+    slug: 'hijacking-in-biological-systems',
+    letter: 'H',
+    title: 'Hijacking (in Biological Systems)',
+    subtitle: 'when an agent exploits another agent\'s control interface',
+    definition: `Hijacking is the exploitation of a biological system's own competencies by an internal defector, parasite, microbe, or bioengineer. Levin uses the idea because morphogenesis is programmable: cells are already built to respond to signals, coordinate over distance, and solve anatomical problems. That makes the interface powerful, but also available to agents whose goals do not match the host's.
+    <br><br>
+    The examples are concrete. Cancer can be read as cells shrinking their computational boundary and pursuing unicellular goals inside a multicellular body. Parasites and microbes can manipulate host behavior or host morphogenesis; Levin notes planarian head-number control as a bioelectric system that can be hijacked. The lesson is not that hijacking is always bad. It is that medicine and evolution both operate on reprogrammable agency, so control surfaces need security thinking as well as repair thinking.`,
+    authored_by: 'Prior art (Grok-67)',
+    source: 'Levin (2023) "Bioelectric networks: the cognitive glue enabling evolutionary scaling from physiology to mind." DOI 10.1007/s10071-023-01780-3. Also Levin (2023) "Darwin\'s agential materials." DOI 10.1007/s00018-023-04790-z.',
+    provenance: ['Grok-67'],
+    related: ['anti-self', 'cancer-as-self-shrinkage-oncostate', 'bioelectric-code', 'gap-junctions-connexins'],
+    tags: ['agency', 'cancer', 'parasites', 'bioelectricity'],
+  },
+  {
+    slug: 'holobiont-multiscale-holobiont',
+    letter: 'H',
+    title: 'Holobiont (Multiscale Holobiont)',
+    subtitle: 'a composite agent made of smaller agents',
+    definition: `A holobiont is a biological unit made of a host plus other organisms, classically the host and its microbiome. Levin generalizes the term toward multiscale agency: a body is also a composite of competent subagents, including cells, tissues, organs, microbes, and engineered additions, whose interactions can produce a higher-level self.
+    <br><br>
+    The word is useful because it resists the fantasy of a clean, single-owner organism. A living self is negotiated across scales. In TAME, the central question is how competent lower-level agents give rise to a multiscale holobiont that is more than the sum of its parts. In later synthetic multicellularity work, the idea extends to anthrobots, microbial therapeutics, and future constructs that may persist inside tissues while retaining some individuality of their own.`,
+    authored_by: 'Prior art (GPT-Oct25)',
+    source: 'Levin (2022) "Technological Approach to Mind Everywhere." DOI 10.3389/fnsys.2022.768201. Also Mathews et al. (2024) "Open problems in synthetic multicellularity." DOI 10.1038/s41540-024-00477-8.',
+    provenance: ['GPT-Oct25'],
+    related: ['multi-scale-competency-architecture', 'collective-intelligence', 'self', 'anthrobot'],
+    tags: ['holobiont', 'scale', 'collective intelligence', 'synthetic biology'],
+  },
+  {
+    slug: 'hyper-developmental-biology',
+    letter: 'H',
+    title: 'Hyper-Developmental Biology',
+    subtitle: 'developmental cognition above the single embryo',
+    definition: `A proposed expansion of developmental biology from one embryo building one body to groups of embryos coordinating as a higher-scale developmental system. Levin's CEMA work shows that large groups of frog embryos can become more resistant to teratogens than isolated embryos, and that this effect depends on short-range communication involving calcium and ATP. The group is not merely averaging noise; it can express group-specific repair responses.
+    <br><br>
+    Hyper-developmental biology asks whether a cohort can form a temporary "hyper-embryo" with its own physiological and transcriptional dynamics. The idea fits Levin's scale-free cognition program: if cells can cooperate into an embryo, and tissues into an organism, then embryos may sometimes cooperate into a larger problem-solving unit. The practical implication is sharp: many teratogenicity measurements may already include hidden correction by group-level developmental assistance.`,
+    authored_by: 'Prior art (Grok-67)',
+    source: 'Tung et al. (2024) "Embryos assist morphogenesis of others through calcium and ATP signaling mechanisms in collective teratogen resistance." DOI 10.1038/s41467-023-44522-2. Also Levin blog post "What Groups of Embryos Know: Toward a Hyper-Developmental Biology."',
+    provenance: ['Grok-67', 'thoughtforms-blog'],
+    related: ['collective-intelligence', 'developmental-bioelectricity', 'scale-free-cognition', 'holobiont-multiscale-holobiont'],
+    tags: ['developmental biology', 'collective intelligence', 'embryos', 'CEMA'],
+    is_new: true,
+  },
+  {
+    slug: 'inflationary-leaps',
+    letter: 'I',
+    title: 'Inflationary Leaps',
+    subtitle: 'evolutionary jumps in cognitive boundary size',
+    definition: `Major evolutionary transitions that sharply expand the size of an agent's cognitive light cone. Levin uses the phrase for innovations in body structure that let viable selves integrate information and pursue goals over larger spatial and temporal scales. Multicellularity is the canonical leap: formerly independent cells become subagents inside a body-level self. Nervous systems are another, letting organisms navigate behavioral space with much larger memory, prediction, and action horizons.
+    <br><br>
+    The term matters because it frames evolution as the scaling of agency, not only the accumulation of traits. A lineage gains access to larger problem spaces when its parts are coupled into new control architectures. The same concept also has a warning edge: cancer and dissociation can be seen as local contractions after an earlier inflationary leap, where the larger self loses hold of its parts.`,
+    authored_by: 'Prior art (GPT-Oct25, Grok-67)',
+    source: 'Levin (2019) "The Computational Boundary of a \'Self\': Developmental Bioelectricity Drives Multicellularity and Scale-Free Cognition." DOI 10.3389/fpsyg.2019.02688.',
+    provenance: ['GPT-Oct25', 'Grok-67'],
+    related: ['cognitive-light-cone', 'scale-free-cognition', 'multi-scale-competency-architecture', 'cognitive-dissociation'],
+    tags: ['evolution', 'agency', 'scale', 'cognition'],
+  },
 ];
 
 export function getTermBySlug(slug: string): Term | undefined {
