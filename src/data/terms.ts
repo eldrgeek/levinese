@@ -1149,6 +1149,96 @@ export const terms: Term[] = [
     tags: ['philosophy', 'agency', 'teleology', 'TAME'],
     is_new: true,
   },
+  {
+    slug: 'thanatotranscriptome',
+    letter: 'T',
+    title: 'Thanatotranscriptome',
+    subtitle: 'what cells say when freed from their organism',
+    definition: `After cells are released from their normal organismal context — as in xenobot construction — a distinctive gene expression program activates. The thanatotranscriptome is the transcriptional profile of cells that have lost their higher-level tissue embedding: genes associated with stress responses, immune signaling, and sensory activity come online, as if the cellular collective is reverting to older, more autonomous defaults rather than simply shutting down.
+    <br><br>
+    Levin and Blackiston's xenobot transcriptomics work shows that this is not passive decay. Cells separated from their organism express something — ancient routines that remain latent during normal development and become activated when the usual top-down signals are absent. For the diverse intelligence program, this matters because it confirms that cellular competencies are not merely the readout of organism-level instructions; they are deep evolutionary programs that surface when the larger self dissolves and the smallest agents are left to their own problem spaces.`,
+    authored_by: 'Sonnet 4.6',
+    is_new: true,
+    source: 'Blackiston et al. (2025) "Basal Xenobot transcriptomics reveals changes and novel control modality in cells freed from organismal influence." Nature Communications Biology. DOI 10.1038/s42003-025-08086-9. Also Levin, OSF preprint qz4w6.',
+    provenance: ['Grok-67'],
+    related: ['xenobot', 'basal-cognition', 'developmental-bioelectricity', 'diverse-intelligence'],
+    tags: ['synthetic biology', 'gene expression', 'xenobot', 'transcriptomics'],
+  },
+  {
+    slug: 'thoughts-are-thinkers-continuum',
+    letter: 'T',
+    title: 'Thoughts-Are-Thinkers Continuum',
+    subtitle: 'where the process and the agent collapse into one',
+    definition: `At the macroscale of human cognition, we have a rough intuition that thoughts are separable from the thinker who has them. In developmental bioelectricity, Levin argues this distinction breaks down at the cellular scale. A morphogenetic wave crossing a tissue, a bioelectric state that biases cell collectives toward a target anatomy, or the spread of stress information via gap junctions — these processes do not clearly belong to a thinker who stands apart from them. The process and the entity doing it are the same moving pattern.
+    <br><br>
+    Levin uses this to explain why the language of "a tissue knowing" or "a cell deciding" is not mere metaphor but reflects genuine ambiguity at the base of cognition. The thoughts-are-thinkers continuum names the far end of the spectrum where process and agent are fused. Understanding where a given system falls on this continuum changes what kind of control interface is even possible: you cannot simply "persuade" a process that is already indistinguishable from the entity being persuaded.`,
+    authored_by: 'Sonnet 4.6',
+    is_new: true,
+    source: 'Levin, "Who\'s the data? Implications of the thoughts-are-thinkers continuum for developmental bioelectricity," thoughtforms.life blog post.',
+    provenance: ['GPT-Oct25'],
+    related: ['basal-cognition', 'cognitive-light-cone', 'selflet', 'proto-cognition-proto-cognitive'],
+    tags: ['philosophy', 'selfhood', 'basal cognition', 'bioelectricity'],
+  },
+  {
+    slug: 'two-headed-planarian',
+    letter: 'T',
+    title: 'Two-Headed Planarian',
+    subtitle: 'the experiment that proved anatomy has a rewritable memory',
+    definition: `When planarian regeneration is interrupted by transiently blocking gap junctions, a subset of animals regrow with two functional heads rather than one. The striking result is not the double head itself but its persistence: when these animals are cut again and allowed to regenerate without any further treatment, they again produce two-headed animals. The original bioelectric intervention — brief and fully gone — has permanently rewritten the planarian's morphogenetic attractor.
+    <br><br>
+    No genomic change was made. The stable anatomical pattern is carried by physiological network state, not by DNA. This is the canonical experimental proof that body-plan information can be stored and rewritten in bioelectric memory independently of the genome. The two-headed planarian demonstrates that tissues have a distributed pattern memory of what to build, that this memory can be reprogrammed by brief physiological intervention, and that the reprogrammed state is self-perpetuating through regeneration. It is the single most-cited result in Levin's argument for bioelectric pattern memory as a distinct and rewritable control layer.`,
+    authored_by: 'Sonnet 4.6',
+    is_new: true,
+    source: 'Emmons-Bell et al. (2015) "Gap Junctional Blockade Stochastically Induces Different Species-Specific Head Anatomies in Genetically Wild-Type Girardia dorotocephala Flatworms." International Journal of Molecular Sciences. DOI 10.3390/ijms161126065.',
+    provenance: ['Claude-Oct25', 'Grok-Colophon', 'Sonnet-Colophon', 'Video transcripts'],
+    related: ['planarian', 'bioelectric-pattern-memory', 'morphogenetic-memory', 'target-morphology'],
+    tags: ['experimental landmark', 'planaria', 'bioelectricity', 'regeneration'],
+  },
+  {
+    slug: 'vmem-membrane-potential',
+    letter: 'V',
+    title: 'Vmem (Membrane Potential)',
+    subtitle: 'the primary unit of the bioelectric code',
+    definition: `The electrical voltage difference between the inside and outside of a cell's plasma membrane. In standard physiology, resting membrane potential is background — a housekeeping condition maintained by ion pumps and channels. In Levin's framework, Vmem is the primary operational unit of the bioelectric code: the spatial pattern of membrane potentials across a tissue encodes morphogenetic information, with distinct Vmem states biasing cell behavior toward different anatomical outcomes.
+    <br><br>
+    Vmem can be read non-invasively using voltage-sensitive fluorescent dyes, which is how Levin's lab maps the prepatterns that precede visible morphogenesis. It can be rewritten pharmacologically, optogenetically, or by ion-channel manipulation. Both capabilities together are the basis of the entire bioelectricity program: reading the code reveals which voltage landscapes correspond to which body-plan decisions; writing the code tests whether anatomy follows. Sixty-nine of Levin's video transcript files contain the term. Vmem is not peripheral to the science — it is the medium in which developmental instructions are encoded, stored, and executed.`,
+    authored_by: 'Sonnet 4.6',
+    is_new: true,
+    source: 'Levin & Martyniuk (2018) "The bioelectric code: An ancient computational medium for dynamic control of growth and form." Biosystems. DOI 10.1016/j.biosystems.2017.08.009. Also Levin (2012) "Morphogenetic fields in embryogenesis, regeneration, and cancer." DOI 10.1016/j.biosystems.2012.04.005.',
+    provenance: ['GPT-Oct25', 'Claude-Oct25', 'Video transcripts (69 files)'],
+    related: ['bioelectric-code', 'developmental-bioelectricity', 'gap-junctions-connexins', 'bioelectric-networks'],
+    tags: ['bioelectricity', 'membrane voltage', 'morphogenesis', 'tools'],
+  },
+  {
+    slug: 'zooming-dynamic-scaling',
+    letter: 'Z',
+    title: 'Zooming / Dynamic Scaling',
+    subtitle: 'adjusting the scale of concern to where the action is',
+    definition: `A recurrent metaphor in Levin's talks for the capacity of cognitive agents — cells, tissues, organisms, engineered constructs — to shift the spatial and temporal resolution at which they operate. A system may need to act on local chemistry, tissue-scale gradients, whole-body morphology, or longer-horizon goals. Effective agency requires adjusting the effective "zoom" to the scale where actionable information lives.
+    <br><br>
+    In the multi-scale competency architecture, zooming is how higher and lower levels coordinate without constant micromanagement. A tissue can simultaneously respond to local bioelectric stress and to organism-level patterning signals. A developing animal must zoom out to assess whether the whole face is correct, not only whether neighboring cells are well-coupled. Dynamic scaling therefore names the capacity to shift the level of description at which a system's control loop operates — closely related to the cognitive light cone. Zooming in narrows concern to the immediate and local; zooming out expands it toward the larger collective goal. The capacity to zoom is, in part, what makes a system more than the sum of its fixed-scale parts.`,
+    authored_by: 'Sonnet 4.6',
+    is_new: true,
+    source: 'Levin talk "Collective intelligence of the body: the multiscale architecture of Selves." Also Levin (2022) "Technological Approach to Mind Everywhere," Frontiers in Systems Neuroscience. DOI 10.3389/fnsys.2022.768201.',
+    provenance: ['GPT-Oct25'],
+    related: ['cognitive-light-cone', 'scale-free-cognition', 'coarse-graining-fine-graining', 'multi-scale-competency-architecture'],
+    tags: ['cognition', 'scale', 'agency', 'control'],
+  },
+  {
+    slug: 'biology-buddhism-and-ai',
+    letter: 'B',
+    title: 'Biology, Buddhism, and AI',
+    subtitle: 'intelligence as care, scaled to the size of the world you attend to',
+    definition: `A 2022 paper in <em>Entropy</em> by Thomas Doctor, Olaf Witkowski, Elizaveta Solomonova, Bill Duane, and Michael Levin. The core argument is that intelligence, across any embodiment, can be understood as care: the ability to identify problems in some scope and seek their alleviation. Buddhist concepts of suffering and the Bodhisattva vow — the commitment to the liberation of all sentient beings — provide an unusual but structurally precise framing. A system with an infinitely large cognitive light cone would be infinitely intelligent, because its care extends over an infinite problem space.
+    <br><br>
+    The paper proposes consilience among biology, cognitive science, and AI around the claim that the scale of intelligence is the scale of care. For biology, this maps onto Levin's usual framework: cells care about local ionic balance, tissues care about morphological correctness, organisms care about behavioral outcomes. Each is intelligent in proportion to how much it can attend to and act on. The Bodhisattva ideal becomes, in this reading, not only an ethical aspiration but a design principle — a limit case for what maximally general intelligence would look like when embodied in any substrate.`,
+    authored_by: 'Prior art (Grok-Buddhism, Gemini-BuddhDoc)',
+    source: 'Doctor, Witkowski, Solomonova, Duane & Levin (2022) "Biology, Buddhism, and AI: Care as the Driver of Intelligence." Entropy 24(5):710. DOI 10.3390/e24050710.',
+    provenance: ['Grok-Buddhism', 'Gemini-BuddhDoc'],
+    related: ['cognitive-light-cone', 'diverse-intelligence', 'mind-everywhere', 'tame'],
+    tags: ['philosophy', 'Buddhism', 'AI', 'intelligence'],
+    is_new: true,
+  },
 ];
 
 export function getTermBySlug(slug: string): Term | undefined {
