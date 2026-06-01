@@ -94,25 +94,9 @@ import { signatories, llmReplies } from '../../data/colophon';
     <section class="mb-12">
       <div class="flex items-center gap-4 mb-6">
         <h2 class="font-serif text-2xl font-medium text-ink">Full Verbatim Replies</h2>
-        <div id="preview-badge" class="hidden">
-          <span class="text-xs bg-amber-light text-amber border border-amber/20 px-3 py-1 rounded-full font-medium">
-            preview mode — private until public launch
-          </span>
         </div>
-      </div>
-
-      <!-- Public notice (shown when not in preview mode) -->
-      <div id="public-notice" class="bg-surface border border-border rounded-xl p-6 mb-6">
-        <p class="text-muted leading-relaxed mb-3">
-          The full text of all seven replies — including Grok's detailed reservations — will be public at launch. If you're reading a preview URL, add <code class="font-mono text-xs bg-white border border-border px-1.5 py-0.5 rounded">?preview=levin-first</code> to this URL to see everything.
-        </p>
-        <p class="text-sm text-muted italic">
-          The gift's honesty is the gift. Grok's pushback is not a footnote — it's on the page, verbatim, because a resource that only publishes the agreement isn't honest about the state of the conversation.
-        </p>
-      </div>
-
       <!-- Full replies (hidden until preview) -->
-      <div id="full-replies" class="hidden space-y-10">
+      <div id="full-replies" class="space-y-10">
         {llmReplies.map(r => (
           <article id={`reply-${r.model.toLowerCase().replace(/[\s.]+/g, '-')}`} class="scroll-mt-20">
             <!-- Reply header -->
@@ -178,14 +162,3 @@ import { signatories, llmReplies } from '../../data/colophon';
 
 </Base>
 
-<script>
-  // Preview gate: ?preview=levin-first reveals the full colophon
-  const params = new URLSearchParams(window.location.search);
-  const isPreview = params.get('preview') === 'levin-first';
-
-  if (isPreview) {
-    document.getElementById('full-replies')?.classList.remove('hidden');
-    document.getElementById('public-notice')?.classList.add('hidden');
-    document.getElementById('preview-badge')?.classList.remove('hidden');
-  }
-</script>
