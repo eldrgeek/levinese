@@ -1062,6 +1062,93 @@ export const terms: Term[] = [
     related: ['cognitive-light-cone', 'computational-boundary-of-a-self', 'scale-free-cognition', 'nested-selves-overlapping-selves'],
     tags: ['formal theory', 'physics', 'cognition', 'scale'],
   },
+  {
+    slug: 'regulative-plasticity',
+    letter: 'R',
+    title: 'Regulative Plasticity',
+    subtitle: 'reaching the target despite a disrupted path',
+    definition: `The capacity of a biological system to achieve its target form or function despite perturbation of its starting conditions, developmental steps, or component parts. A system with high regulative plasticity does not follow a rigid script; it navigates from wherever it finds itself toward the outcome it is organized to achieve. Classic examples include a sea-urchin half-embryo that still produces a complete pluteus larva, and a scrambled tadpole face that remodels into a normally functioning frog. The property is graded and multiscale: a cell, a tissue, an organ, and a whole organism can each display some degree of it in its own problem space.
+    <br><br>
+    In Levin's multi-scale competency architecture, regulative plasticity is both a diagnostic and an engineering target. Diagnosing it confirms that genuine goal-directed agency is present at some scale. Designing for it is the deeper challenge: treatments that restore a tissue's capacity to self-correct are more powerful than treatments that try to specify every downstream molecular step, because they recruit the system's own problem-solving machinery rather than bypassing it.`,
+    authored_by: 'Prior art (GPT-Oct25)',
+    source: 'Levin (2023) "Darwin\'s agential materials: evolutionary implications of multiscale competency in developmental biology." DOI 10.1007/s00018-023-04790-z. Also Levin (2022) TAME paper, DOI 10.3389/fnsys.2022.768201.',
+    provenance: ['GPT-Oct25'],
+    related: ['multi-scale-competency-architecture', 'target-morphology', 'problem-space-navigation', 'competency-functional-competency'],
+    tags: ['developmental biology', 'morphogenesis', 'agency', 'robustness'],
+  },
+  {
+    slug: 'selflet',
+    letter: 'S',
+    title: 'Selflet',
+    subtitle: 'the smallest unit of agency that still counts as a self',
+    definition: `A minimal self — a system that has just enough cognitive boundary, memory, and goal-directedness to register as an agent in Levin's framework. The suffix "-let" signals smallness and gradedness: a selflet is not a truncated human self, but the lower end of a continuous spectrum the concept of "self" can still usefully describe.
+    <br><br>
+    The term becomes necessary once Levin's account of selfhood is taken seriously at all scales. If a self is defined by a computational boundary, some memory capacity, and a problem space the system can navigate, then individual cells, minimal synthetic constructs, and proto-agents in morphogenesis may qualify — not as metaphor, but as the micro-scale end of a real continuum. Selflets matter because they allow the same core questions to be asked at every level: what is this agent trying to maintain, and how far does its concern extend? A cell maintaining ionic balance is a selflet. Couple enough of them and you get a tissue-level self.`,
+    authored_by: 'Prior art (Claude-Oct25)',
+    source: 'Levin (2019) "The Computational Boundary of a \'Self\': Developmental Bioelectricity Drives Multicellularity and Scale-Free Cognition." DOI 10.3389/fpsyg.2019.02688. Also Levin (2022) TAME paper, DOI 10.3389/fnsys.2022.768201.',
+    provenance: ['Claude-Oct25'],
+    related: ['self', 'computational-boundary-of-a-self', 'basal-cognition', 'cognitive-light-cone'],
+    tags: ['selfhood', 'agency', 'basal cognition', 'scale'],
+    is_new: true,
+  },
+  {
+    slug: 'stigmergic-pattern-coding',
+    letter: 'S',
+    title: 'Stigmergic Pattern-Coding',
+    subtitle: 'cells reading the field that earlier cells wrote',
+    definition: `A developmental patterning strategy in which cells sequentially read and reshape a shared bioelectric field rather than receiving independent simultaneous instructions. The name comes from stigmergy — indirect coordination through modifications to a shared environment. In mosaic coding, each position is patterned directly by a local organizer; in stigmergic coding, the field left by earlier responding cells becomes the cue for later ones, producing a cascade of locally informed but collectively organized pattern.
+    <br><br>
+    Manicka and Levin's 2025 computational models of craniofacial prepatterning identify this as one of two major strategies by which field-mediated bioelectric networks establish anatomical coordinates before visible anatomy is set. The distinction has practical implications: a stigmergic pattern is more robust to some perturbations because every cell inherits the collective history written into the shared field, but it is also more sensitive to early disturbances that corrupt the initial signal. Understanding which strategy a tissue uses changes how one would design bioelectric interventions for regenerative medicine.`,
+    authored_by: 'Prior art (Grok-67)',
+    source: 'Manicka & Levin (2025) "Field-mediated bioelectric basis of morphogenetic prepatterning." Cell Reports Physical Science. DOI 10.1016/j.xcrp.2025.102865.',
+    provenance: ['Grok-67'],
+    related: ['morphogenetic-prepatterning', 'bioelectric-code', 'developmental-bioelectricity', 'morphogenetic-field'],
+    tags: ['bioelectricity', 'patterning', 'morphogenesis', 'developmental biology'],
+  },
+  {
+    slug: 'stress-sharing',
+    letter: 'S',
+    title: 'Stress / Stress Sharing',
+    subtitle: 'exported error signals as cognitive glue',
+    definition: `The capacity of competent subunits to export their internal error signals so that neighboring agents can sense and respond to them. In Levin's physiological usage, stress is not metaphorical. When a cell detects a deviation from its preferred state — metabolic, bioelectric, or mechanical — it can release signals that carry that information outward. Neighbors that sense the stress can alter their behavior to help resolve it, making the resolution a collective rather than a purely local achievement.
+    <br><br>
+    Lagasse and Levin (2024) use this mechanism to generalize cognitive glue beyond bioelectricity: any channel through which one unit's error becomes actionable for others can bind those units into a larger problem-solving agent. Stress sharing therefore explains part of why cell collectives can pursue goals that exceed any individual cell's cognitive light cone. It is simultaneously a molecular phenomenon — calcium waves, ATP release, cytokine gradients — and a formal, scale-free property: the more widely stress can be communicated and responded to, the larger the effective self that forms around the shared concern.`,
+    authored_by: 'Prior art (Grok-67, Grok-Lex, GPT-Oct25)',
+    source: 'Lagasse & Levin (2024) "Stress sharing as cognitive glue for collective intelligences." Biochemical and Biophysical Research Communications. DOI 10.1016/j.bbrc.2024.150396.',
+    provenance: ['Grok-67', 'Grok-Lex', 'GPT-Oct25'],
+    related: ['cognitive-glue', 'collective-intelligence', 'cognitive-light-cone', 'basal-cognition'],
+    tags: ['cognitive glue', 'collective intelligence', 'agency', 'communication'],
+  },
+  {
+    slug: 'synthbiosis',
+    letter: 'S',
+    title: 'Synthbiosis',
+    subtitle: 'living and engineered forms in mutual thriving',
+    definition: `Levin's neologism for the relationship of mutual co-prosperity between living and engineered forms. Formed from "synthesis" and "bios," it names both an empirical prediction and an ethical stance: hybrid beings such as xenobots, anthrobots, and biological-AI constructs are not anomalies to be tolerated but genuine participants in a widening ecology of minds and bodies. Synthbiosis pushes back against two opposing errors — the anxiety that artifice corrupts the living, and the instrumental fantasy that living matter is raw material for human projects.
+    <br><br>
+    The term appears in Levin's public-facing FAQ at thoughtforms.life, where he frames the coexistence of biological and synthetic intelligences as something to be designed deliberately toward thriving rather than conflict. In the broader context of TAME and diverse intelligence, synthbiosis is the social and moral correlate of substrate-independent cognition: if minds and agency can be implemented across many materials and origins, then how those implementations relate to one another becomes a question biology and ethics must address together.`,
+    authored_by: 'Prior art (Grok-Lex, Grok-67)',
+    source: 'Levin, "FAQs from my academic work," thoughtforms.life. Also McMillen & Levin (2024) "Collective intelligence: a unifying concept for integrating biology across scales and substrates." Communications Biology. DOI 10.1038/s42003-024-06037-4.',
+    provenance: ['Grok-Lex', 'Grok-67'],
+    related: ['xenobot', 'anthrobot', 'diverse-intelligence', 'life-as-it-can-be-mind-as-it-can-be'],
+    tags: ['synthetic biology', 'AI', 'ethics', 'philosophy'],
+    is_new: true,
+  },
+  {
+    slug: 'teleophobia',
+    letter: 'T',
+    title: 'Teleophobia',
+    subtitle: 'the scientific fear of saying "goal"',
+    definition: `The excessive reluctance to attribute goal-directedness, intention, or purpose to non-human, non-neural biological systems. Levin uses this term critically. He argues that a scientific culture shaped by behaviorism and mechanistic reductionism has overcorrected against teleological language to the point of systematically under-using cognitive tools that would improve prediction and control of biological systems. Refusing to say a tissue is "trying to rebuild a limb" may feel epistemically cautious, but it forecloses experiments, therapeutic strategies, and design concepts that goal-directed framing would suggest.
+    <br><br>
+    Teleophobia is the mirror failure to naive teleology: one overclaims mind, the other refuses to acknowledge any. Levin's TAME framework is explicitly designed as a remedy at the research-design level. The question TAME poses is practical, not philosophical: does treating cells and tissues as goal-directed agents improve or worsen our ability to intervene? When it measurably improves prediction and control, the goal-talk earns its place. Teleophobia, by pre-emptively rejecting that question, blocks a class of experiments before they begin.`,
+    authored_by: 'Prior art (Grok-Lex, Claude-Oct25)',
+    source: 'Levin, "FAQs from my academic work," thoughtforms.life. Also Levin (2022) "Technological Approach to Mind Everywhere," Frontiers in Systems Neuroscience. DOI 10.3389/fnsys.2022.768201.',
+    provenance: ['Grok-Lex', 'Claude-Oct25'],
+    related: ['goal-directedness', 'diverse-intelligence', 'basal-cognition', 'tame'],
+    tags: ['philosophy', 'agency', 'teleology', 'TAME'],
+    is_new: true,
+  },
 ];
 
 export function getTermBySlug(slug: string): Term | undefined {
