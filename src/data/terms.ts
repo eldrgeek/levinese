@@ -1329,6 +1329,96 @@ export const terms: Term[] = [
     tags: ['philosophy', 'Buddhism', 'AI', 'intelligence'],
     is_new: true,
   },
+  {
+    slug: 'ion-channel',
+    letter: 'I',
+    title: 'Ion Channel',
+    subtitle: 'the read/write head of the bioelectric code',
+    definition: `Ion channels are transmembrane protein complexes that allow specific ions — sodium, potassium, calcium, chloride — to flow down their electrochemical gradients. Channel opening and closing is governed by voltage, ligands, mechanical force, or light. Their collective activity determines a cell's resting membrane potential and its capacity for rapid voltage change.
+    <br><br>
+    <strong>Levin's lens:</strong> For Levin, individual ion channels are the read/write heads of the bioelectric code. Each channel type is a specific transduction modality: a K⁺ leak channel sets resting Vmem; a voltage-gated Na⁺ channel enables rapid depolarization; a connexin hemichannel opens to the extracellular space under stress. When a pharmacological agent or optogenetic tool changes which channels are open, it is rewriting a bioelectric state — changing what a tissue "says" to its neighbors and which morphogenetic attractor it is navigating toward. Ion channel manipulation is therefore the most direct available interface for morphoceutical intervention.`,
+    authored_by: 'Sonnet 4.6 + Levin gloss',
+    is_new: true,
+    source: 'Levin & Martyniuk (2018) "The bioelectric code: An ancient computational medium for dynamic control of growth and form." DOI 10.1016/j.biosystems.2017.08.009. Also Levin et al. (2024) "Electroceuticals: emerging applications beyond the nervous system and excitable tissues." DOI 10.1016/j.tips.2024.03.001.',
+    provenance: ['batch-14-corpus'],
+    related: ['vmem-membrane-potential', 'bioelectric-code', 'gap-junctions-connexins', 'electroceutical-ionoceutical', 'morphoceutical', 'calcium-signalling'],
+    tags: ['bioelectricity', 'borrowed-framework', 'levin-gloss', 'tools'],
+  },
+  {
+    slug: 'calcium-signalling',
+    letter: 'C',
+    title: 'Calcium Signalling',
+    subtitle: 'information carrier for cross-cell state, not just metabolism',
+    definition: `Calcium ions (Ca²⁺) serve as a versatile intracellular messenger in virtually all eukaryotic cells. Transient rises in cytoplasmic Ca²⁺ are triggered by IP₃-mediated release from the endoplasmic reticulum or by Ca²⁺ entry through plasma membrane channels. These transients activate kinases, transcription factors, cytoskeletal rearrangements, and cell motility programs — a nearly universal cellular alarm-and-mobilization system.
+    <br><br>
+    <strong>Levin's lens:</strong> In Levin's framework, calcium signals are not only metabolic triggers — they carry information across cell collectives. Calcium waves propagating through gap junctions relay error signals and stress over tissue distances, functioning as a form of cognitive glue. The embryo teratogen-resistance work (Tung et al. 2024) shows that embryo collectives exchange calcium and ATP signals to coordinate repair responses that are computational rather than merely chemical. Calcium signalling is therefore one medium through which a tissue's bioelectric state becomes an inter-cellular language, routing information about anatomical error and stress from where it arises to where it can be acted on.`,
+    authored_by: 'Sonnet 4.6 + Levin gloss',
+    is_new: true,
+    source: 'Tung et al. (2024) "Embryos assist morphogenesis of others through calcium and ATP signaling mechanisms in collective teratogen resistance." Nature Communications. DOI 10.1038/s41467-023-44522-2. Also Levin (2023) "Bioelectric networks: the cognitive glue enabling evolutionary scaling from physiology to mind." DOI 10.1007/s10071-023-01780-3.',
+    provenance: ['batch-14-corpus', 'hyper-developmental-biology-paper'],
+    related: ['ion-channel', 'gap-junctions-connexins', 'bioelectric-networks', 'stress-sharing', 'cognitive-glue', 'hyper-developmental-biology'],
+    tags: ['bioelectricity', 'borrowed-framework', 'levin-gloss', 'cell communication'],
+  },
+  {
+    slug: 'morphogen',
+    letter: 'M',
+    title: 'Morphogen',
+    subtitle: 'one channel in a multi-modal cellular language',
+    definition: `A morphogen is a diffusible signaling molecule whose spatial concentration gradient provides positional information to cells in a developing tissue. Wolpert's "positional information" model (1969) proposed that cells read their distance from a morphogen source and differentiate accordingly. Classic morphogens include Bicoid in Drosophila anterior-posterior patterning, and Sonic Hedgehog and BMP family members in vertebrate body-axis specification.
+    <br><br>
+    <strong>Levin's lens:</strong> Levin reframes morphogens as one channel among several in a multi-modal cellular communication system. Bioelectric gradients, mechanical cues, and gap-junctional connectivity are parallel channels that carry patterning information morphogens cannot. A tissue does not simply threshold a chemical concentration; it integrates multiple signal streams into a navigational decision in morphospace. Focusing only on morphogen gradients makes development look like diffusion rather than information processing. Morphogens are necessary but not sufficient: they are inputs into a cell collective that is also reading Vmem, mechanical stress, and network topology when deciding what to build.`,
+    authored_by: 'Sonnet 4.6 + Levin gloss',
+    is_new: true,
+    source: 'Wolpert (1969) "Positional information and the spatial pattern of cellular differentiation." Journal of Theoretical Biology 25(1):1–47. DOI 10.1016/S0022-5193(69)80016-0. Also Levin (2012) "Morphogenetic fields in embryogenesis, regeneration, and cancer." DOI 10.1016/j.biosystems.2012.04.005.',
+    provenance: ['batch-14-corpus'],
+    related: ['morphogenetic-field', 'bioelectric-code', 'developmental-bioelectricity', 'gene-regulatory-network', 'morphospace', 'target-morphology'],
+    tags: ['developmental biology', 'borrowed-framework', 'levin-gloss', 'morphogenesis'],
+  },
+  {
+    slug: 'connectome',
+    letter: 'C',
+    title: 'Connectome',
+    subtitle: 'Levin extends it to the non-neural bioelectric wiring of tissues',
+    definition: `The connectome is the comprehensive map of neural connections in an organism's nervous system — which neuron connects to which, by what type of synapse, and with what strength. The concept was operationalized by Sydney Brenner's C. elegans work (complete wiring mapped by White et al., 1986) and has grown into a discipline with large-scale projects mapping mammalian circuits. The claim is that knowing the wiring predicts the behavior.
+    <br><br>
+    <strong>Levin's lens:</strong> Levin extends the connectome concept beyond neurons to the full bioelectric architecture of living tissue. Non-neural cells are also connected — by gap junctions, by shared extracellular space, and by bioelectric field propagation. The functional gap-junctional connectivity of a tissue is its bioelectric connectome, and it determines which patterning information can flow where, which cells share stress signals, and what scale of collective self can form. Just as rewiring a neural connectome changes behavior, rewiring the bioelectric connectome changes a tissue's morphogenetic attractor. Reading and editing the non-neural connectome is part of what the anatomical compiler vision requires.`,
+    authored_by: 'Sonnet 4.6 + Levin gloss',
+    is_new: true,
+    source: 'White et al. (1986) "The structure of the nervous system of the nematode Caenorhabditis elegans." Philosophical Transactions of the Royal Society B. DOI 10.1098/rstb.1986.0056. Also Levin (2023) "Bioelectric networks: the cognitive glue enabling evolutionary scaling from physiology to mind." DOI 10.1007/s10071-023-01780-3.',
+    provenance: ['batch-14-corpus'],
+    related: ['gap-junctions-connexins', 'bioelectric-networks', 'non-neural-bioelectric-network-ben', 'information-topology', 'anatomical-compiler', 'developmental-bioelectricity'],
+    tags: ['neuroscience', 'borrowed-framework', 'levin-gloss', 'bioelectricity'],
+  },
+  {
+    slug: 'gene-regulatory-network',
+    letter: 'G',
+    title: 'Gene Regulatory Network (GRN)',
+    subtitle: 'the genetic default that gets overridden by bioelectric instruction',
+    definition: `A gene regulatory network (GRN) is the interacting set of transcription factors, cis-regulatory elements, signaling mediators, and chromatin modifiers that collectively determine which genes are expressed in which cells at which times. GRNs implement the logic of cell-type specification, lineage commitment, and differentiation — they are the molecular substrate of cell identity. Peter and Davidson's work on sea urchin embryos established the field's foundational maps of developmental GRN logic.
+    <br><br>
+    <strong>Levin's gloss:</strong> GRNs are the genetic default that gets overridden or steered by bioelectric instruction. In Levin's multi-scale framework, the GRN defines the accessible space of gene-expression states a cell can occupy, but the bioelectric code determines which attractor within that space is actually reached. The Cervera, Levin & Mafe (2025) cytoelectric coupling paper models this explicitly: tissue-level voltage patterns drive transitions between GRN attractor states that a purely gene-regulatory view cannot predict. A morphoceutical that changes Vmem is therefore changing cell behavior without touching the genome — a top-down intervention that acts through the bioelectric layer above the GRN.`,
+    authored_by: 'Sonnet 4.6 + Levin gloss',
+    is_new: true,
+    source: 'Peter & Davidson (2011) "A gene regulatory network controlling the embryonic specification of endoderm." Nature 474:635–639. DOI 10.1038/nature10100. Also Cervera, Levin & Mafe (2025) "Top-down perspectives on cell membrane potential and protein transcription." Scientific Reports. DOI 10.1038/s41598-025-31696-6.',
+    provenance: ['batch-14-corpus', 'cytoelectric-coupling-paper'],
+    related: ['cytoelectric-coupling', 'bioelectric-code', 'vmem-membrane-potential', 'top-down-causation', 'morphogen', 'bowtie-architecture'],
+    tags: ['gene expression', 'borrowed-framework', 'levin-gloss', 'developmental biology'],
+  },
+  {
+    slug: 'cytoskeleton',
+    letter: 'C',
+    title: 'Cytoskeleton',
+    subtitle: 'structural scaffold as sub-cellular information processor',
+    definition: `The cytoskeleton is the internal scaffold of eukaryotic cells, comprising three polymer systems: actin filaments, microtubules, and intermediate filaments. It determines cell shape, enables directed motility, anchors membrane proteins including ion channels and gap junctions, and drives cell division. Microtubules, built from tubulin dimers, guide directed vesicle transport and form the mitotic spindle. Actin networks power membrane protrusions and force generation at the cortex.
+    <br><br>
+    <strong>Levin's lens:</strong> Levin treats the cytoskeleton as a substrate for information processing within cells rather than mere structural scaffolding — Hameroff-adjacent but more conservative, making no commitment to quantum coherence in tubulin. Because ion channels and gap junctions are anchored in cytoskeletal networks, cytoskeletal reorganization can alter a cell's bioelectric connectivity and thus change what it says to its neighbors. The cytoskeletal-membrane complex is part of Levin's multi-scale competency architecture at the sub-cellular level: a layer where mechanical, electrical, and chemical information is transduced and integrated before being exported through the bioelectric code into tissue-scale patterning decisions.`,
+    authored_by: 'Sonnet 4.6 + Levin gloss',
+    is_new: true,
+    source: 'Levin (2023) "Bioelectric networks: the cognitive glue enabling evolutionary scaling from physiology to mind." DOI 10.1007/s10071-023-01780-3. Also Levin & Martyniuk (2018) "The bioelectric code." DOI 10.1016/j.biosystems.2017.08.009.',
+    provenance: ['batch-14-corpus'],
+    related: ['ion-channel', 'gap-junctions-connexins', 'bioelectric-code', 'multi-scale-competency-architecture', 'vmem-membrane-potential', 'polycomputing'],
+    tags: ['cells', 'borrowed-framework', 'levin-gloss', 'information processing'],
+  },
 ];
 
 export function getTermBySlug(slug: string): Term | undefined {
