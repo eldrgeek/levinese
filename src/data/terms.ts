@@ -1405,6 +1405,96 @@ export const terms: Term[] = [
     tags: ['gene expression', 'borrowed-framework', 'levin-gloss', 'developmental biology'],
   },
   {
+    slug: 'neuron-as-telegraph-cell',
+    letter: 'N',
+    title: 'Neuron as Telegraph Cell',
+    subtitle: 'brains are a later, faster version of an ancient electrical strategy',
+    definition: `In standard neuroscience, neurons are treated as the fundamental units of cognition — the substrate that makes mind possible. Levin inverts this framing: neurons are ordinary cells that evolved a specialized fast-signaling system. They did not invent electrical communication in living tissue; they accelerated and localized a computational strategy already operating across all living cells via ion channels, gap junctions, and membrane voltage. A neuron is a cell that "figured out" how to send fast, targeted signals at the cost of specialization.
+    <br><br>
+    The cognitive substrate of a living system is therefore not the nervous system alone but the full bioelectric architecture — neural and non-neural alike. Nervous systems are inflationary leaps within an already-cognitive body, not the origin point of cognition. This reframe does heavy lifting in Levin's program: it lets him claim that tissues, organs, and embryos already have all the basic ingredients of cognition, and that studying the brain is studying one high-speed implementation of a much older and more general strategy. The non-neural bioelectric network is not a primitive precursor to real thinking — it is the cognitive glue through which anatomy is navigated long before a nervous system exists.`,
+    authored_by: 'Sonnet 4.6 + Levin gloss',
+    is_new: true,
+    source: 'Levin (2023) "Bioelectric networks: the cognitive glue enabling evolutionary scaling from physiology to mind." DOI 10.1007/s10071-023-01780-3. Also Manicka & Levin (2019) "Modeling somatic computation with non-neural bioelectric networks." DOI 10.1038/s41598-019-54859-8.',
+    provenance: ['batch-15-corpus'],
+    related: ['non-neural-bioelectric-network-ben', 'basal-cognition', 'bioelectric-networks', 'inflationary-leaps', 'scale-free-cognition', 'developmental-bioelectricity'],
+    tags: ['levin-gloss', 'neurons', 'bioelectricity', 'evolution'],
+  },
+  {
+    slug: 'recruitment',
+    letter: 'R',
+    title: 'Recruitment',
+    subtitle: 'pulling neighbors into a shared goal via instructional signals',
+    definition: `When a cell or small group of cells receives an organizing or instructional signal, it can convert neighboring cells to the same patterning state rather than simply passing the signal onward. Levin uses "recruitment" to describe how local information scales into regional and eventually anatomical programs: the eye-induction cascade, for example, begins with a small organizer region that recruits surrounding tissue into eye-building by changing the bioelectric, chemical, and transcriptional landscape of its neighbors. The recruited cells then become recruiters themselves, propagating the instructional state outward.
+    <br><br>
+    The concept is important because it explains how global patterns can arise from initially small perturbations without central coordination. Recruitment is one mechanism by which a compact bioelectric or morphogenetic signal scales up: a local primer recruits a larger domain, which recruits a larger domain still, until the body-plan instruction has propagated across the relevant tissue. This is why Levin can speak of bioprompting — a small input that triggers a large cooperative pattern — as a viable engineering strategy. A well-designed morphoceutical exploits recruitment: it delivers a minimal signal and then lets the tissue propagate and complete the instruction through its own cooperative dynamics.`,
+    authored_by: 'Sonnet 4.6 + Levin gloss',
+    is_new: true,
+    source: 'Levin (2022) "Technological Approach to Mind Everywhere," Frontiers in Systems Neuroscience. DOI 10.3389/fnsys.2022.768201. Also Levin (2012) "Morphogenetic fields in embryogenesis, regeneration, and cancer." DOI 10.1016/j.biosystems.2012.04.005.',
+    provenance: ['batch-15-corpus'],
+    related: ['bioprompting', 'morphogenetic-field', 'developmental-bioelectricity', 'top-down-causation', 'collective-intelligence', 'stress-sharing'],
+    tags: ['levin-gloss', 'morphogenesis', 'communication', 'developmental biology'],
+  },
+  {
+    slug: 'endogenous',
+    letter: 'E',
+    title: 'Endogenous',
+    subtitle: 'arising from within the system, not imposed from outside',
+    definition: `In standard biology, "endogenous" means produced or originating from within an organism rather than supplied from outside. Levin uses the term with philosophical precision: the bioelectric states, patterning memories, and instructional signals that guide morphogenesis are endogenous — they belong to the system's own physiology and emerge from interactions among its components, not from blueprints continuously injected by the genome or by external engineers.
+    <br><br>
+    This distinction carries practical weight. When Levin says a tissue's target morphology is endogenously maintained, he means the setpoint is regenerating itself from within: the collective is continuously re-establishing its own control state from internal dynamics. Endogenous control is what makes regeneration possible after injury — the missing parts are reconstructed from information that persisted in the remaining tissue. By contrast, exogenous interventions such as bioelectric stimulation or morphoceuticals must negotiate with an already-active endogenous system rather than writing fresh instructions onto blank matter. Respecting the endogenous control layer is central to bioprompting: a good prompt works with the system's own ongoing agenda rather than overriding it.`,
+    authored_by: 'Sonnet 4.6 + Levin gloss',
+    is_new: true,
+    source: 'Levin (2014) "Endogenous bioelectrical networks store non-genetic patterning information during development and regeneration." Journal of Physiology. DOI 10.1113/jphysiol.2014.271940. Also Levin (2023) "Bioelectric networks: the cognitive glue enabling evolutionary scaling from physiology to mind." DOI 10.1007/s10071-023-01780-3.',
+    provenance: ['batch-15-corpus'],
+    related: ['bioelectric-pattern-memory', 'morphogenetic-memory', 'bioprompting', 'target-morphology', 'morphoceutical', 'bioelectric-code'],
+    tags: ['levin-gloss', 'bioelectricity', 'control', 'regenerative medicine'],
+  },
+  {
+    slug: 'information-substrate',
+    letter: 'I',
+    title: 'Information Substrate',
+    subtitle: 'the informational layer between genes and form',
+    definition: `The medium in which biologically relevant patterning information is stored, transmitted, and transformed above the level of gene expression. For Levin, the information substrate is not the genome — DNA defines what molecules the cell can produce, but not the large-scale instructional states that guide morphogenesis. The bioelectric code, gap-junctional connectivity, mechanical force distributions, and ion-gradient patterns collectively constitute an information substrate that is physiological, dynamic, and editable without genomic change.
+    <br><br>
+    The concept is necessary because without a named substrate at this level, "biological instruction" collapses back to gene expression — and gene expression alone cannot explain why transient bioelectric perturbations leave permanent anatomical memories. An information substrate can store such memories: stable physiological states that persist through cell turnover, transmit to daughter cells, and bias downstream molecular events without being encoded in DNA sequence. Morphoceuticals and the anatomical compiler vision are both interventions at the information substrate level: they aim to rewrite physiological patterning states directly rather than editing the genome or micromanaging every molecular pathway downstream.`,
+    authored_by: 'Sonnet 4.6 + Levin gloss',
+    is_new: true,
+    source: 'Levin (2022) "Technological Approach to Mind Everywhere," Frontiers in Systems Neuroscience. DOI 10.3389/fnsys.2022.768201. Also Levin & Martyniuk (2018) "The bioelectric code: An ancient computational medium for dynamic control of growth and form." DOI 10.1016/j.biosystems.2017.08.009.',
+    provenance: ['batch-15-corpus'],
+    related: ['bioelectric-code', 'bioelectric-pattern-memory', 'morphogenetic-memory', 'endogenous', 'morphoceutical', 'cytoelectric-coupling', 'gene-regulatory-network'],
+    tags: ['levin-gloss', 'bioelectricity', 'information', 'morphogenesis'],
+  },
+  {
+    slug: 'robustness',
+    letter: 'R',
+    title: 'Robustness',
+    subtitle: 'completing the target pattern despite perturbation',
+    definition: `The ability of a biological system to reach its target morphology or functional state despite disturbances to its components, environment, or developmental pathway. Robustness in this sense is not mere resilience or structural stiffness; it is a positive, goal-directed competency. A robust system can navigate toward its outcome from varied and disrupted starting conditions because it is organized around a target state rather than a rigid script.
+    <br><br>
+    Levin frequently cites the Picasso tadpole experiments as canonical evidence: scramble a tadpole's facial organs so that eyes, nose, and mouth begin in wrong positions, and the tadpole still develops into a viable frog with a correctly functioning face. The cells did not follow a position-by-position instruction; they navigated through morphospace toward the target, correcting for their abnormal starting configuration. Robustness of this kind is evidence that goal-directed agency is present at the tissue scale. It is also an engineering aspiration: a sufficiently robust tissue-control interface would let a body complete a desired anatomy even when the intervention that initiated it is partial or imprecise. In this framing, robustness is closely related to regulative plasticity but distinct: plasticity is the breadth of available paths; robustness is the system's demonstrated ability to take one of them to completion.`,
+    authored_by: 'Sonnet 4.6 + Levin gloss',
+    is_new: true,
+    source: 'Levin (2023) "Darwin\'s agential materials: evolutionary implications of multiscale competency in developmental biology." DOI 10.1007/s00018-023-04790-z. Also Levin (2022) TAME paper, DOI 10.3389/fnsys.2022.768201.',
+    provenance: ['batch-15-corpus'],
+    related: ['regulative-plasticity', 'plasticity', 'target-morphology', 'problem-space-navigation', 'ectopic-eyes-picasso-tadpoles', 'pattern-completion'],
+    tags: ['levin-gloss', 'morphogenesis', 'agency', 'developmental biology'],
+  },
+  {
+    slug: 'plasticity',
+    letter: 'P',
+    title: 'Plasticity',
+    subtitle: 'finding a new path to the same goal',
+    definition: `In biology, plasticity broadly refers to the ability of a system to change in response to conditions — phenotypic plasticity, synaptic plasticity, developmental plasticity. Levin sharpens this with a goal-directedness criterion: plasticity for him is the competency to find a new route to the same target state when the normal route is blocked, disrupted, or unavailable. A plastic system does not merely react to perturbation; it reorganizes around its goal.
+    <br><br>
+    This makes plasticity a cognitive property rather than merely a physical one. An organism that switches developmental pathways to achieve the same anatomy despite a genetic lesion, a xenobot that discovers a novel locomotion strategy in an unfamiliar environment, or a tissue that reroutes a signaling cascade after a component is silenced — each is exhibiting plasticity in Levin's sense. The concept is closely related to regulative plasticity (the specific developmental-biology application) but extends across all problem spaces an agent can navigate. Plasticity is the measure of how many paths through problem space remain available to a system; robustness is the related but distinct measure of whether the system actually follows one of them to the target. Both properties together define what Levin calls functional competency: the ability to solve the same problem across a range of conditions.`,
+    authored_by: 'Sonnet 4.6 + Levin gloss',
+    is_new: true,
+    source: 'Levin (2023) "Darwin\'s agential materials: evolutionary implications of multiscale competency in developmental biology." DOI 10.1007/s00018-023-04790-z. Also McMillen & Levin (2024) "Collective intelligence: a unifying concept for integrating biology across scales and substrates." DOI 10.1038/s42003-024-06037-4.',
+    provenance: ['batch-15-corpus'],
+    related: ['regulative-plasticity', 'robustness', 'problem-space-navigation', 'competency-functional-competency', 'xenobot', 'morphospace'],
+    tags: ['levin-gloss', 'agency', 'developmental biology', 'cognition'],
+  },
+  {
     slug: 'cytoskeleton',
     letter: 'C',
     title: 'Cytoskeleton',
