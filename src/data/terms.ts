@@ -1225,6 +1225,96 @@ export const terms: Term[] = [
     tags: ['cognition', 'scale', 'agency', 'control'],
   },
   {
+    slug: 'free-energy-principle',
+    letter: 'F',
+    title: 'Free Energy Principle',
+    subtitle: 'Friston\'s account of how biological systems resist dissolution',
+    definition: `The Free Energy Principle (FEP), proposed by Karl Friston, provides a mathematical account of how biological systems maintain their existence: they minimize variational free energy, a bound on the "surprise" their sensory states would produce given their internal model. To do this, a system can either update its generative model (perception) or act to bring sensory inputs into line with its predictions (action). Both moves reduce the gap between expected and actual states.
+    <br><br>
+    <strong>Levin's lens:</strong> Levin and Friston treat the FEP as a unifying framework for agency at every biological scale. Just as a brain minimizes surprise about external events, a developing embryo minimizes surprise about its anatomical state by navigating toward its target morphology. Applying the FEP to morphogenesis turns development into a form of inference: cells act, sense, and update their collective model until form matches goal. This gives Levin's goal-directedness framework a precise mathematical scaffold, linking the cognitive light cone of a tissue to the temporal depth of its generative model.`,
+    authored_by: 'Sonnet 4.6 + Levin gloss',
+    is_new: true,
+    source: 'Friston (2010) "The free-energy principle: a unified brain theory?" Nature Reviews Neuroscience. DOI 10.1038/nrn2787. Also Friston, Levin et al. (2015) "Knowing one\'s place: a free-energy approach to pattern regulation." Journal of the Royal Society Interface. DOI 10.1098/rsif.2014.1383.',
+    provenance: ['batch-13-corpus'],
+    related: ['active-inference', 'bayesian-brain-predictive-processing', 'markov-blanket', 'cognitive-light-cone', 'goal-directedness', 'target-morphology'],
+    tags: ['borrowed-framework', 'formal theory', 'Friston', 'agency'],
+  },
+  {
+    slug: 'markov-blanket',
+    letter: 'M',
+    title: 'Markov Blanket',
+    subtitle: 'the statistical boundary of an agent',
+    definition: `A Markov blanket is a statistical partition that separates an agent's internal states from its environment. It comprises sensory states (through which the environment influences the interior) and active states (through which the interior influences the environment). Given the blanket, internal and external states are conditionally independent: the outside can only affect the inside through sensory states, and the inside affects the outside only through action. The blanket defines what can be treated as one system.
+    <br><br>
+    <strong>Levin's lens:</strong> In Levin's multi-scale framework, every self — from a cell to a tissue to a whole organism — has its own Markov blanket. Nested Markov blankets correspond to nested selves: the cell's blanket is enclosed within the tissue's, which is enclosed within the organism's. The blanket is the formal correlate of the computational boundary of a self, marking precisely where one agent ends and the next begins. Shamilov et al. (2023) apply this framing to prenatal development, where embryo, placenta, and mother maintain distinct but coupled blankets. Where the blanket holds, there is an agent; where it dissolves, cognitive dissociation follows.`,
+    authored_by: 'Sonnet 4.6 + Levin gloss',
+    is_new: true,
+    source: 'Friston (2013) "Life as we know it." Journal of the Royal Society Interface. DOI 10.1098/rsif.2013.0475. Also Shamilov, Fields & Levin (2023) "Nested Selves: Self-Organization and Shared Markov Blankets in Prenatal Development in Humans." DOI 10.1111/tops.12717.',
+    provenance: ['batch-13-corpus'],
+    related: ['free-energy-principle', 'active-inference', 'computational-boundary-of-a-self', 'nested-selves-overlapping-selves', 'self', 'cognitive-dissociation'],
+    tags: ['borrowed-framework', 'formal theory', 'Friston', 'selfhood'],
+  },
+  {
+    slug: 'active-inference',
+    letter: 'A',
+    title: 'Active Inference',
+    subtitle: 'Friston\'s account of action as prediction-matching, extended to morphogenesis',
+    definition: `Active inference is Friston's extension of the free energy principle to action: an agent does not merely update its internal model of the world, it also acts on the world to bring sensory states into conformity with its predictions. Perception and action are two strategies for the same goal — minimizing expected free energy. Behavior, on this account, is the sampling of the world to confirm the agent's prior expectations about what its body and environment should look like.
+    <br><br>
+    <strong>Levin's lens:</strong> Levin and Friston (2022) apply active inference directly to morphogenesis. A developing embryo is an active inference system: it generates predictions about its target anatomy and takes cellular actions — migration, proliferation, bioelectric adjustment — to reduce the gap between current and expected form. Cancer becomes a pathological active inference regime in which cells minimize their own shrunken expected free energy rather than the organism's. The therapeutic implication is pointed: restore the generative model of the cell collective, and adaptive behavior may follow without micromanaging every downstream step.`,
+    authored_by: 'Sonnet 4.6 + Levin gloss',
+    is_new: true,
+    source: 'Friston, Levin et al. (2022) "Active inference, morphogenesis, and computational psychiatry." Frontiers in Computational Neuroscience. DOI 10.3389/fncom.2022.988977.',
+    provenance: ['batch-13-corpus', '10-3389-fncom-2022-988977'],
+    related: ['free-energy-principle', 'bayesian-brain-predictive-processing', 'target-morphology', 'cancer-as-self-shrinkage-oncostate', 'goal-directedness', 'morphoceutical'],
+    tags: ['borrowed-framework', 'formal theory', 'Friston', 'morphogenesis'],
+  },
+  {
+    slug: 'bayesian-brain-predictive-processing',
+    letter: 'B',
+    title: 'Bayesian Brain / Predictive Processing',
+    subtitle: 'the brain as a prediction machine — and what that means below the brain',
+    definition: `Predictive processing (also called the Bayesian brain hypothesis) holds that the nervous system fundamentally generates predictions about its sensory inputs rather than passively registering them. The brain maintains a hierarchical generative model, produces top-down predictions, and propagates only prediction errors — mismatches between expected and actual input — upward for model revision. Perception, cognition, and action all serve to minimize prediction error across the model.
+    <br><br>
+    <strong>Levin's lens:</strong> Levin uses predictive processing to ground basal cognition: the inferential computation does not require neurons. Any system that generates expectations about its future states and acts to reduce mismatch is doing predictive processing in a functional sense. A planarian fragment "predicts" its target morphology, detects anatomical error, and acts to reduce it. The brain is then a later, faster specialization of a general biological inference strategy already present in tissues. Predictive processing provides the cognitive-science vocabulary for what Levin's developmental bioelectricity program observes at the cellular scale.`,
+    authored_by: 'Sonnet 4.6 + Levin gloss',
+    is_new: true,
+    source: 'Clark (2015) "Surfing Uncertainty: Prediction, Action, and the Embodied Mind." Also Fields, Friston & Levin (2022) "Neurons as hierarchies of quantum reference frames." DOI 10.1016/j.biosystems.2022.104714.',
+    provenance: ['batch-13-corpus'],
+    related: ['free-energy-principle', 'active-inference', 'basal-cognition', 'goal-directedness', 'quantum-reference-frames-in-biology', 'cognitive-light-cone'],
+    tags: ['borrowed-framework', 'cognition', 'Friston', 'inference'],
+  },
+  {
+    slug: 'affordance',
+    letter: 'A',
+    title: 'Affordance',
+    subtitle: 'what a problem space offers to an agent capable of perceiving it',
+    definition: `James Gibson coined "affordance" for the action possibilities an environment offers an organism — not a property of the environment alone or the animal alone, but of their relational fit. A surface affords standing for a heavy enough animal; a gap affords swimming for a fish. The affordance exists whether or not it is currently perceived, and it changes when either the environment or the agent's capabilities change.
+    <br><br>
+    <strong>Levin's lens:</strong> Levin extends affordance from physical environments to abstract problem spaces. What a problem space affords depends on the cognitive light cone of the agent navigating it: a bioelectric gradient affords directional migration only for a cell sensitive enough to detect it; a morphological error affords repair only for a tissue with the relevant pattern memory and the actuators to correct it. Crucially, expanding an agent's competencies reveals affordances already latent in the space. Morphoceuticals work partly by enlarging what an injured or aging tissue can perceive as actionable — restoring affordances that were present but inaccessible to a cognitively contracted collective.`,
+    authored_by: 'Sonnet 4.6 + Levin gloss',
+    is_new: true,
+    source: 'Gibson (1979) "The Ecological Approach to Visual Perception." Also Levin (2022) "Technological Approach to Mind Everywhere," Frontiers in Systems Neuroscience. DOI 10.3389/fnsys.2022.768201.',
+    provenance: ['batch-13-corpus', 'TAME paper'],
+    related: ['problem-space-navigation', 'cognitive-light-cone', 'competency-functional-competency', 'morphoceutical', 'regulative-plasticity', 'agent'],
+    tags: ['borrowed-framework', 'levin-gloss', 'agency', 'cognition'],
+  },
+  {
+    slug: 'self-organization',
+    letter: 'S',
+    title: 'Self-Organization',
+    subtitle: 'ordered patterns from local rules — necessary but not sufficient for agency',
+    definition: `Self-organization is the emergence of ordered, large-scale patterns from local interactions among components without central direction or external blueprint. The term comes from cybernetics (Ashby) and statistical physics, and spans phenomena from crystal growth to termite mounds to neural synchrony. The local rules do not contain the global pattern; the pattern is an emergent consequence of how the rules interact over time.
+    <br><br>
+    <strong>Levin's lens:</strong> Levin carefully distinguishes self-organization from goal-directed agency — a distinction that is clinically and philosophically load-bearing. Crystals and whirlpools self-organize, but by Levin's criteria they are not agents: they do not navigate toward a setpoint from varied starting conditions, correct for perturbation, or stop when a target is reached. For Levin, biological self-organization is necessary but not sufficient for cognition. The critical upgrade is whether self-organization has been recruited into a control loop with a target state — as in morphogenesis, wound healing, or bioelectric patterning. The cognitive light cone begins where self-organization acquires a setpoint and starts to behave like a homeostatic system.`,
+    authored_by: 'Sonnet 4.6 + Levin gloss',
+    is_new: true,
+    source: 'Ashby (1952) "Design for a Brain." Also McMillen & Levin (2024) "Collective intelligence: a unifying concept for integrating biology across scales and substrates." Communications Biology. DOI 10.1038/s42003-024-06037-4.',
+    provenance: ['batch-13-corpus'],
+    related: ['collective-intelligence', 'goal-directedness', 'cognitive-light-cone', 'target-morphology', 'anatomical-homeostasis', 'setpoint'],
+    tags: ['borrowed-framework', 'levin-gloss', 'cybernetics', 'emergence'],
+  },
+  {
     slug: 'biology-buddhism-and-ai',
     letter: 'B',
     title: 'Biology, Buddhism, and AI',
