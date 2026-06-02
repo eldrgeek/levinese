@@ -3,7 +3,16 @@ import Base from '../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 
 const rawEntries = await getCollection('papers');
-const papers = rawEntries.map(e => ({ slug: e.id.replace(/\.json$/, ''), ...e.data }));
+const papers = rawEntries.map(e => ({
+  slug: e.id.replace(/\.json$/, ''),
+  ...e.data,
+  href: e.data.doi_url || e.data.link || null,
+  source_host: (() => {
+    const url = e.data.link || e.data.doi_url;
+    if (!url) return null;
+    try { return new URL(url).hostname.replace(/^www\./, ''); } catch { return null; }
+  })(),
+}));
 
 // Build reverse index: paper slug → [{termSlug, termTitle}]
 const rawTerms = await getCollection('terms');
@@ -153,6 +162,7 @@ const maxYear = years[years.length - 1] ?? 2026;
         const isReachable = paper.reachable === true;
 
         const citedBy = citedByMap.get(paper.slug) ?? [];
+        const hasDoi = Boolean(paper.doi);
 
         return (
           <div
@@ -160,7 +170,7 @@ const maxYear = years[years.length - 1] ?? 2026;
             class="paper-row py-4 group"
             data-title={paper.title.toLowerCase()}
             data-year={paper.year || '0'}
-            data-journal={paper.journal.toLowerCase()}
+            data-journal={(paper.journal || '').toLowerCase()}
             data-authors={(paper.authors || []).join(' ').toLowerCase()}
             data-abstract={paper.abstract ? paper.abstract.toLowerCase().slice(0, 500) : ''}
             data-reachable={isReachable ? '1' : '0'}
@@ -182,14 +192,24 @@ const maxYear = years[years.length - 1] ?? 2026;
               <div class="flex-1 min-w-0">
                 <!-- Title row -->
                 <div class="flex items-start gap-2 flex-wrap">
-                  <a
-                    href={paper.doi_url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="text-ink font-medium text-sm hover:text-teal transition-colors leading-snug"
-                  >
-                    {paper.title}
-                  </a>
+                  {paper.href ? (
+                    <a
+                      href={paper.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-ink font-medium text-sm hover:text-teal transition-colors leading-snug"
+                    >
+                      {paper.title}
+                    </a>
+                  ) : (
+                    <span class="text-ink font-medium text-sm leading-snug">{paper.title}</span>
+                  )}
+                  {!hasDoi && paper.source_host && (
+                    <span class="shrink-0 text-xs font-mono bg-surface border border-border text-muted px-1.5 py-0.5 rounded mt-0.5">{paper.source_host}</span>
+                  )}
+                  {!hasDoi && paper.source_type && !paper.source_host && (
+                    <span class="shrink-0 text-xs font-mono bg-surface border border-border text-muted px-1.5 py-0.5 rounded mt-0.5">{paper.source_type}</span>
+                  )}
                   {isReachable && (
                     <span class="shrink-0 text-muted/40 text-xs font-mono mt-0.5" title="Link verified reachable">✓</span>
                   )}

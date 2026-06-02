@@ -3,8 +3,10 @@ import { defineCollection, z } from 'astro:content';
 const papers = defineCollection({
   type: 'data',
   schema: z.object({
-    doi: z.string().optional(),
-    doi_url: z.string().optional(),
+    doi: z.string().nullable().optional(),
+    doi_url: z.string().nullable().optional(),
+    link: z.string().nullable().optional(),
+    source_type: z.string().optional(),
     title: z.string(),
     year: z.union([z.string(), z.number()]).optional(),
     journal: z.string().optional(),
