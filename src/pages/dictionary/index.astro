@@ -3,6 +3,34 @@ import Base from '../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 
 const rawTerms = await getCollection('terms');
+const rawPapers = await getCollection('papers');
+
+// Build paper slug → title map (slug = id without .json)
+const paperMap = new Map<string, string>();
+for (const p of rawPapers) {
+  const slug = p.id.replace(/\.json$/, '');
+  paperMap.set(slug, p.data.title);
+}
+
+// DOI slug pattern: starts with "10-" followed by digits, then more segments
+const doiSlugRe = /^10-\d{4,}-.+/;
+
+// DOI in free text: 10.XXXX/... — find and replace with links
+function linkifySourceDois(source: string): string {
+  // Match DOIs in source text, stop at whitespace, comma, semicolon, close-paren, close-bracket
+  return source.replace(/10\.\d{4,}\/[^\s,;)\]]+/g, (doi) => {
+    const doiClean = doi.replace(/[.,;)\]]+$/, ''); // strip trailing punctuation
+    const trailingPunct = doi.slice(doiClean.length);
+    const slug = doiClean.replace(/\./g, '-').replace(/\//g, '-');
+    const title = paperMap.get(slug);
+    if (title) {
+      const shortTitle = title.length > 60 ? title.slice(0, 57) + '…' : title;
+      return `<a href="/papers#${slug}" class="paper-link" title="${title.replace(/"/g, '&quot;')}">${doiClean}</a>${trailingPunct}`;
+    }
+    return doi;
+  });
+}
+
 const terms = rawTerms.map(e => ({
   slug: e.slug,
   letter: e.data.letter,
@@ -11,6 +39,7 @@ const terms = rawTerms.map(e => ({
   authored_by: e.data.authored_by,
   authored_by_note: e.data.authored_by_note,
   source: e.data.source,
+  sourceLinkified: linkifySourceDois(e.data.source),
   provenance: e.data.provenance,
   related: e.data.related,
   tags: e.data.tags,
@@ -131,7 +160,22 @@ const stripHtml = (html: string) => html.replace(/<[^>]*>/g, ' ');
                 </div>
                 <div class="sm:col-span-2">
                   <p class="text-muted font-medium uppercase tracking-wide mb-1">Source</p>
-                  <p class="text-ink leading-relaxed">{term.source}</p>
+                  <p class="text-ink leading-relaxed" set:html={term.sourceLinkified} />
+                  {/* Provenance DOI links — show papers that match */}
+                  {term.provenance.filter(p => doiSlugRe.test(p) && paperMap.has(p)).length > 0 && (
+                    <p class="mt-1.5 text-xs text-muted">
+                      <span class="font-medium uppercase tracking-wide">Paper{term.provenance.filter(p => doiSlugRe.test(p) && paperMap.has(p)).length > 1 ? 's' : ''}:</span>{' '}
+                      {term.provenance
+                        .filter(p => doiSlugRe.test(p) && paperMap.has(p))
+                        .map((p, i, arr) => (
+                          <Fragment>
+                            <a href={`/papers#${p}`} class="paper-link">{paperMap.get(p)}</a>
+                            {i < arr.length - 1 ? '; ' : ''}
+                          </Fragment>
+                        ))
+                      }
+                    </p>
+                  )}
                 </div>
               </div>
 
@@ -231,3 +275,19 @@ const stripHtml = (html: string) => html.replace(/<[^>]*>/g, ' ');
 
   sections.forEach(s => observer.observe(s));
 </script>
+
+<style>
+  /* Paper links — subtle, distinct from related-term links */
+  .paper-link {
+    color: var(--color-teal, #0c6b5a);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-color: color-mix(in srgb, currentColor 30%, transparent);
+    font-size: inherit;
+    transition: color 0.15s;
+  }
+  .paper-link:hover {
+    color: var(--color-teal-mid, #0a5a4a);
+    text-decoration-color: color-mix(in srgb, currentColor 60%, transparent);
+  }
+</style>

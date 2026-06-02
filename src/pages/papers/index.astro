@@ -5,6 +5,52 @@ import { getCollection } from 'astro:content';
 const rawEntries = await getCollection('papers');
 const papers = rawEntries.map(e => ({ slug: e.id.replace(/\.json$/, ''), ...e.data }));
 
+// Build reverse index: paper slug → [{termSlug, termTitle}]
+const rawTerms = await getCollection('terms');
+const doiSlugRe = /^10-\d{4,}-.+/;
+// Note: doiInTextRe must be recreated per call or use matchAll (which clones the regex)
+function extractSourceDois(source: string): string[] {
+  const re = /10\.\d{4,}\/[^\s,;)\]]+/g;
+  const results: string[] = [];
+  let m;
+  while ((m = re.exec(source)) !== null) {
+    results.push(m[0].replace(/[.,;)\]]+$/, ''));
+  }
+  return results;
+}
+
+// Build paper slug set for quick lookup
+const paperSlugSet = new Set(papers.map(p => p.slug));
+
+// Build reverse index
+const citedByMap = new Map<string, Array<{termSlug: string; termTitle: string}>>();
+
+for (const term of rawTerms) {
+  const termSlug = term.slug;
+  const termTitle = term.data.title;
+
+  // Check provenance DOI slugs
+  for (const prov of term.data.provenance) {
+    if (doiSlugRe.test(prov) && paperSlugSet.has(prov)) {
+      if (!citedByMap.has(prov)) citedByMap.set(prov, []);
+      citedByMap.get(prov)!.push({ termSlug, termTitle });
+    }
+  }
+
+  // Check source DOIs
+  for (const doi of extractSourceDois(term.data.source)) {
+    const slug = doi.replace(/\./g, '-').replace(/\//g, '-');
+    if (paperSlugSet.has(slug)) {
+      if (!citedByMap.has(slug)) citedByMap.set(slug, []);
+      // Avoid duplicates (provenance may already have added this)
+      const existing = citedByMap.get(slug)!;
+      if (!existing.some(e => e.termSlug === termSlug)) {
+        existing.push({ termSlug, termTitle });
+      }
+    }
+  }
+}
+
 // Sort by year desc by default
 const sortedPapers = [...papers].sort((a, b) => {
   const ya = parseInt(String(a.year)) || 0;
@@ -106,8 +152,11 @@ const maxYear = years[years.length - 1] ?? 2026;
         const hasAbstract = Boolean(paper.abstract);
         const isReachable = paper.reachable === true;
 
+        const citedBy = citedByMap.get(paper.slug) ?? [];
+
         return (
           <div
+            id={paper.slug}
             class="paper-row py-4 group"
             data-title={paper.title.toLowerCase()}
             data-year={paper.year || '0'}
@@ -163,6 +212,22 @@ const maxYear = years[years.length - 1] ?? 2026;
                 {hasAbstract && (
                   <div class="abstract-panel hidden mt-3 text-sm text-muted leading-relaxed border-l-2 border-border pl-3">
                     {paper.abstract}
+                  </div>
+                )}
+
+                <!-- Cited in: terms that reference this paper -->
+                {citedBy.length > 0 && (
+                  <div class="cited-in mt-2 text-xs text-muted">
+                    <span class="font-medium">Cited in:</span>{' '}
+                    {citedBy.map((t, i) => (
+                      <Fragment>
+                        <a
+                          href={`/dictionary#term-${t.termSlug}`}
+                          class="text-teal hover:text-teal-mid underline underline-offset-2 decoration-teal/30"
+                        >{t.termTitle}</a>
+                        {i < citedBy.length - 1 ? ', ' : ''}
+                      </Fragment>
+                    ))}
                   </div>
                 )}
               </div>
@@ -325,6 +390,39 @@ const maxYear = years[years.length - 1] ?? 2026;
 
   // Initial count
   applyFilters();
+
+  // Hash-based deep-linking: scroll to paper row and expand abstract
+  function navigateToHash(hash: string) {
+    if (!hash) return;
+    const slug = hash.startsWith('#') ? hash.slice(1) : hash;
+    const row = document.getElementById(slug);
+    if (!row) return;
+
+    // Small delay to let DOM settle after filter/sort
+    setTimeout(() => {
+      row.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+      // Expand abstract if present
+      const panel = row.querySelector('.abstract-panel') as HTMLElement | null;
+      const btn = row.querySelector('.expand-btn') as HTMLElement | null;
+      if (panel && btn && btn.dataset.hasAbstract === '1') {
+        panel.classList.remove('hidden');
+        const chevron = btn.querySelector('.chevron') as SVGElement | null;
+        chevron?.classList.add('rotate-90');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+
+      // Highlight flash
+      row.classList.add('paper-highlight');
+      setTimeout(() => row.classList.remove('paper-highlight'), 1800);
+    }, 100);
+  }
+
+  // On load
+  if (window.location.hash) navigateToHash(window.location.hash);
+
+  // On hash change (browser back/forward or manual navigation)
+  window.addEventListener('hashchange', () => navigateToHash(window.location.hash));
 </script>
 
 <style>
@@ -349,5 +447,15 @@ const maxYear = years[years.length - 1] ?? 2026;
   @keyframes slideDown {
     from { opacity: 0; transform: translateY(-4px); }
     to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Deep-link highlight flash */
+  .paper-highlight {
+    animation: paperFlash 1.5s ease-out forwards;
+  }
+
+  @keyframes paperFlash {
+    0%   { background-color: rgba(12, 107, 90, 0.12); }
+    100% { background-color: transparent; }
   }
 </style>
