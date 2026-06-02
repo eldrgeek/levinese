@@ -1,96 +1,230 @@
 ---
 import Base from '../../layouts/Base.astro';
 
-const sampleQA = [
-  {
-    q: "What is a cognitive light cone, and why does it matter more than asking 'is this thing conscious?'",
-    a: `The question "is this thing conscious?" imports all the hard problems of philosophy into the conversation before you've done any science. What I find more productive is asking: over what spatial extent and what temporal horizon does this system integrate information and exert control? That's the cognitive light cone. A bacterium has a small one — it responds to chemical gradients in its immediate vicinity on the timescale of seconds. An organism undergoing regeneration after losing a limb has a much larger one — it is integrating positional information across its entire body plan over days or weeks. The light cone is measurable in principle. "Consciousness" is not.`,
-    cite: 'Synthesized from "The Computational Boundary of a \'Self\'" (Frontiers in Psychology, 2019) and "What are Cognitive Light Cones?" (public lecture)',
-  },
-  {
-    q: "How do you actually know if a cell is making a decision versus just doing chemistry?",
-    a: `You don't know until you test it. The signature of a decision — in the engineering sense I use — is that the outcome is robust to perturbation in a way that cannot be explained by local chemistry alone. When we scramble the facial organs of a tadpole — put the eyes where the nose should be, the mouth on the side — and the tadpole still develops into a viable frog with a functioning face, that's not local chemistry. The cells know where they need to end up, and they navigate there from wherever you've put them. That's what I call navigating a problem space rather than executing a program.`,
-    cite: 'Synthesized from the "Picasso tadpole" experiments; see Levin lab publications on bioelectric morphogenesis (multiple, 2011–2023)',
-  },
-  {
-    q: "What would it take to convince you that something is not an agent?",
-    a: `That's the right question to ask, and I take it seriously. My answer is: a system that cannot maintain any setpoint in any space, that exhibits zero regulative plasticity, that shows no robustness to perturbation — that system is not an agent in my framework. A truly passive system is like a rock being pushed: you push it, it rolls exactly where physics dictates, with no recovery, no goal-seeking, nothing that looks like "trying." But I'll be honest: I don't think you can draw a sharp line. The question is where on the spectrum from rock to human a given system sits, and that question is empirical.`,
-    cite: 'Synthesized from Levin\'s FAQ (thoughtforms.life/faqs-from-my-academic-work/) and TAME framework (Frontiers in Systems Neuroscience, 2022)',
-  },
-  {
-    q: "What is the connection between cancer and the loss of collective intelligence?",
-    a: `Cancer, in my framework, is what happens when a cell loses its membership in the larger collective. A normal cell has internalized a high-level goal — "be a liver cell, maintain liver function, cooperate with other cells toward the goal of a healthy organism." A cancer cell has reverted to an older, smaller-scale goal: "survive and reproduce." Its cognitive light cone has shrunk. It no longer participates in the bioelectric conversation that coordinates tissues. We've shown that you can sometimes reverse this — reconnect tumor cells to normal tissue via gap junctions and they rejoin the cooperative. That's not killing the cancer; it's curing the dissociation.`,
-    cite: 'Synthesized from Levin lab cancer bioelectricity research; see Physics of Life Reviews (2023) and bioelectric normalization papers',
-  },
-  {
-    q: "What do you mean when you say the body is running software that predates neurons?",
-    a: `Neurons didn't invent bioelectric signaling. They inherited it. Every cell in your body uses voltage gradients across its membrane to communicate, coordinate, and store information. That's ancient — it predates the evolution of nervous systems by hundreds of millions of years. What neurons did was specialize that capability: they made the signals faster, more directional, and architecturally complex. But the same computational medium — membrane potential, ion gradients, gap junction coupling — is present in your liver, your skin, your regenerating limb. Brains are a particularly elaborate implementation of a very old program.`,
-    cite: 'Synthesized from "Bioelectric networks: the cognitive glue enabling evolutionary scaling from physiology to mind" (Springer, 2023)',
-  },
+const API_URL = import.meta.env.PUBLIC_LEVIN_ASK_API_URL ?? '';
+const API_TOKEN = import.meta.env.PUBLIC_LEVIN_ASK_TOKEN ?? '';
+
+const starters = [
+  "What is the cognitive light cone, and why does it replace asking 'is this thing conscious?'",
+  "How does bioelectricity act as an information processing layer in development?",
+  "What is target morphology, and how do cells remember the correct body plan?",
+  "How does Levin frame cancer as a failure of collective intelligence?",
+  "What is the TAME framework and how does it extend agency beyond brains?",
 ];
 ---
-<Base title="Ask" description="Ask questions in the voice of Michael Levin's corpus. Sample queries and answers synthesized from 364 papers and 333 transcripts.">
 
-  <div class="max-w-5xl mx-auto px-4 sm:px-6 pt-12">
-    <div class="mb-10">
+<Base
+  title="Ask"
+  description="Ask questions against Michael Levin's full corpus — 68 papers, 293 transcripts, 350 blog posts. Answered in his voice with citations."
+>
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 pt-12 pb-20">
+
+    <!-- Header -->
+    <div class="mb-8">
       <p class="text-sm font-medium text-teal uppercase tracking-widest mb-3">Ask</p>
-      <h1 class="font-serif text-3xl sm:text-4xl font-medium text-ink mb-4">The Corpus Speaks</h1>
-      <p class="text-muted max-w-2xl leading-relaxed mb-2">
-        In v1, this page will let you ask questions directly against the full LanceDB corpus — 364 papers, 333 transcripts, all searchable and answered in Levin's voice with citations.
+      <h1 class="font-serif text-3xl sm:text-4xl font-medium text-ink mb-3">The Corpus Speaks</h1>
+      <p class="text-muted max-w-xl leading-relaxed">
+        Questions answered from 68 papers, 293 transcripts, and 350 essays — grounded in what Levin actually wrote, with citations.
       </p>
-      <div class="bg-amber-light border border-amber/20 rounded-lg px-4 py-3 text-sm text-amber inline-block mb-6">
-        v0 stub — five sample questions with answers synthesized from the corpus. Full RAG backend coming in v1.
+    </div>
+
+    <!-- Ask form -->
+    <div id="ask-form">
+      <div class="mb-5">
+        <p class="text-xs font-medium text-muted uppercase tracking-wider mb-3">Try asking</p>
+        <div class="flex flex-wrap gap-2">
+          {starters.map(s => (
+            <button
+              class="starter-btn text-sm text-teal bg-teal-light border border-teal/20 rounded-lg px-3 py-1.5 hover:bg-teal/10 transition-colors text-left leading-snug"
+              data-q={s}
+            >
+              {s}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div>
+        <textarea
+          id="question-input"
+          rows="3"
+          placeholder="Ask anything about Levin's work… (Cmd+Enter to submit)"
+          class="w-full bg-white border border-border rounded-xl px-4 py-3 text-ink placeholder-muted/60 focus:outline-none focus:border-teal/50 focus:ring-2 focus:ring-teal/10 resize-none text-sm leading-relaxed"
+        ></textarea>
+        <div class="mt-3 flex items-center justify-between">
+          <p id="form-error" class="text-sm text-amber hidden"></p>
+          <div class="ml-auto">
+            <button
+              id="submit-btn"
+              class="inline-flex items-center gap-2 bg-teal text-white text-sm font-medium px-5 py-2.5 rounded-lg hover:bg-teal-mid transition-colors"
+            >
+              <span>Ask the corpus</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- Sample Q&A -->
-    <div class="space-y-8 mb-16">
-      {sampleQA.map((item, i) => (
-        <div class="bg-white border border-border rounded-xl overflow-hidden">
-          <!-- Question -->
-          <div class="bg-surface border-b border-border px-6 py-4">
-            <div class="flex items-start gap-3">
-              <span class="mt-0.5 shrink-0 w-6 h-6 rounded-full bg-teal text-white text-xs font-mono flex items-center justify-center font-medium">Q</span>
-              <p class="font-medium text-ink leading-snug">{item.q}</p>
-            </div>
-          </div>
-
-          <!-- Answer -->
-          <div class="px-6 py-5">
-            <div class="flex items-start gap-3">
-              <span class="mt-0.5 shrink-0 w-6 h-6 rounded-full bg-parchment border border-border text-teal text-xs font-mono flex items-center justify-center font-medium">A</span>
-              <div>
-                <p class="text-ink leading-relaxed mb-3 font-serif">{item.a}</p>
-                <p class="text-xs text-muted italic">— {item.cite}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      ))}
+    <!-- Loading -->
+    <div id="ask-loading" class="hidden py-16 text-center">
+      <div class="inline-flex flex-col items-center gap-4">
+        <div class="w-8 h-8 border-2 border-teal/30 border-t-teal rounded-full animate-spin"></div>
+        <p class="text-muted text-sm">Searching corpus and synthesizing…</p>
+      </div>
     </div>
 
-    <!-- V1 preview -->
-    <div class="border border-teal/20 bg-teal-light rounded-xl p-6 mb-12">
-      <h2 class="font-serif text-xl font-medium text-teal mb-3">Coming in v1</h2>
-      <ul class="space-y-2 text-sm text-ink/80">
-        <li class="flex items-start gap-2">
-          <span class="text-teal mt-0.5">→</span>
-          <span>Live RAG search against the full 1,000+ document LanceDB corpus</span>
-        </li>
-        <li class="flex items-start gap-2">
-          <span class="text-teal mt-0.5">→</span>
-          <span>Answers grounded in specific paper passages, with clickable citations</span>
-        </li>
-        <li class="flex items-start gap-2">
-          <span class="text-teal mt-0.5">→</span>
-          <span>Follow-up questions that maintain context across the conversation</span>
-        </li>
-        <li class="flex items-start gap-2">
-          <span class="text-teal mt-0.5">→</span>
-          <span>Year and type filters to narrow which part of the corpus the answer draws from</span>
-        </li>
-      </ul>
+    <!-- Result -->
+    <div id="ask-result" class="hidden">
+
+      <div class="mb-5 bg-surface border border-border rounded-xl px-5 py-4">
+        <div class="flex items-start gap-3">
+          <span class="mt-0.5 shrink-0 w-6 h-6 rounded-full bg-teal text-white text-xs font-mono flex items-center justify-center font-medium">Q</span>
+          <p id="result-question" class="font-medium text-ink leading-snug"></p>
+        </div>
+      </div>
+
+      <div class="mb-6 bg-white border border-border rounded-xl px-5 py-5">
+        <div class="flex items-start gap-3">
+          <span class="mt-0.5 shrink-0 w-6 h-6 rounded-full bg-parchment border border-border text-teal text-xs font-mono flex items-center justify-center font-medium">A</span>
+          <div id="result-answer" class="font-serif text-ink leading-relaxed min-w-0 flex-1"></div>
+        </div>
+      </div>
+
+      <div class="mb-8">
+        <h2 class="text-xs font-medium text-muted uppercase tracking-wider mb-3">Sources</h2>
+        <div id="citations-list" class="space-y-2"></div>
+      </div>
+
+      <button
+        id="reset-btn"
+        class="inline-flex items-center gap-2 text-teal text-sm font-medium border border-teal/30 rounded-lg px-4 py-2 hover:bg-teal-light transition-colors"
+      >
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 19l-7-7 7-7m8 14l-7-7 7-7" />
+        </svg>
+        Ask another question
+      </button>
+
     </div>
   </div>
-
 </Base>
+
+<script define:vars={{ API_URL, API_TOKEN }}>
+  const askForm    = document.getElementById('ask-form');
+  const askLoading = document.getElementById('ask-loading');
+  const askResult  = document.getElementById('ask-result');
+  const input      = document.getElementById('question-input');
+  const submitBtn  = document.getElementById('submit-btn');
+  const formError  = document.getElementById('form-error');
+  const resultQ    = document.getElementById('result-question');
+  const resultA    = document.getElementById('result-answer');
+  const citeList   = document.getElementById('citations-list');
+  const resetBtn   = document.getElementById('reset-btn');
+
+  document.querySelectorAll('.starter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      input.value = btn.dataset.q;
+      input.focus();
+    });
+  });
+
+  submitBtn.addEventListener('click', submit);
+  input.addEventListener('keydown', e => {
+    if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) submit();
+  });
+  resetBtn.addEventListener('click', reset);
+
+  function reset() {
+    askResult.classList.add('hidden');
+    askForm.classList.remove('hidden');
+    input.value = '';
+    input.focus();
+  }
+
+  async function submit() {
+    const q = input.value.trim();
+    if (!q) {
+      showError('Please enter a question.');
+      return;
+    }
+    if (!API_URL) {
+      showError('API not configured — check PUBLIC_LEVIN_ASK_API_URL.');
+      return;
+    }
+    formError.classList.add('hidden');
+    askForm.classList.add('hidden');
+    askLoading.classList.remove('hidden');
+    askResult.classList.add('hidden');
+
+    try {
+      const res = await fetch(`${API_URL}/ask`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${API_TOKEN}`,
+        },
+        body: JSON.stringify({ question: q, top_k: 8 }),
+      });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+
+      resultQ.textContent = q;
+      resultA.innerHTML = renderMd(data.answer || '');
+      citeList.innerHTML = (data.citations || []).map(citationCard).join('');
+
+      askLoading.classList.add('hidden');
+      askResult.classList.remove('hidden');
+    } catch (err) {
+      askLoading.classList.add('hidden');
+      askForm.classList.remove('hidden');
+      showError(`Error: ${err.message}`);
+    }
+  }
+
+  function showError(msg) {
+    formError.textContent = msg;
+    formError.classList.remove('hidden');
+  }
+
+  const TYPE_COLORS = {
+    paper:    'bg-blue-50 text-blue-700 border-blue-200',
+    video:    'bg-purple-50 text-purple-700 border-purple-200',
+    blog:     'bg-green-50 text-green-700 border-green-200',
+    magazine: 'bg-orange-50 text-orange-700 border-orange-200',
+    substack: 'bg-amber-50 text-amber-700 border-amber-200',
+    x:        'bg-gray-50 text-gray-700 border-gray-200',
+  };
+
+  function citationCard(c) {
+    const badge = TYPE_COLORS[c.type] || 'bg-surface text-muted border-border';
+    return `<div class="border border-border rounded-lg px-4 py-3 bg-white text-sm">
+      <div class="flex items-start gap-3">
+        <span class="shrink-0 mt-0.5 text-xs font-medium px-1.5 py-0.5 rounded border ${badge}">${h(c.type)}</span>
+        <div class="min-w-0">
+          <p class="font-medium text-ink leading-snug">${h(c.title)} <span class="text-muted font-normal">(${c.year})</span></p>
+          <p class="text-muted mt-1 text-xs leading-relaxed">${h(c.snippet)}</p>
+        </div>
+      </div>
+    </div>`;
+  }
+
+  function h(s) {
+    return String(s)
+      .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  function renderMd(md) {
+    return md.split(/\n\n+/).map(para => {
+      let p = para.trim();
+      p = p.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+      p = p.replace(/\*(.+?)\*/g, '<em>$1</em>');
+      p = p.replace(/`(.+?)`/g, '<code class="bg-surface px-1 rounded text-xs font-mono">$1</code>');
+      p = p.replace(/\[SOURCE:\s*([^\]]+)\]/g,
+        '<span class="text-xs text-muted not-italic">↑ $1</span>');
+      return `<p class="mb-4 last:mb-0">${p.replace(/\n/g,'<br>')}</p>`;
+    }).join('');
+  }
+</script>

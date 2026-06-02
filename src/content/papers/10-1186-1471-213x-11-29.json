@@ -1,0 +1,23 @@
+{
+  "doi": "10.1186/1471-213X-11-29",
+  "doi_url": "https://doi.org/10.1186/1471-213X-11-29",
+  "title": "Histone deacetylase activity is necessary for left-right patterning during vertebrate development",
+  "year": "2011",
+  "journal": "BMC Developmental Biology",
+  "authors": [
+    "Katia Carneiro",
+    "Claudia Donnet",
+    "Tomas Rejtar",
+    "Barry L Karger",
+    "Gustavo A Barisone",
+    "Elva Díaz",
+    "Sandhya Kortagere",
+    "Joan M Lemire",
+    "Michael Levin"
+  ],
+  "abstract": "Abstract Background Consistent asymmetry of the left-right (LR) axis is a crucial aspect of vertebrate embryogenesis. Asymmetric gene expression of the TGFβ superfamily member Nodal related 1 ( Nr1) in the left lateral mesoderm plate is a highly conserved step regulating the situs of the heart and viscera. In Xenopus , movement of maternal serotonin (5HT) through gap-junctional paths at cleavage stages dictates asymmetry upstream of Nr1 . However, the mechanisms linking earlier biophysical asymmetries with this transcriptional control point are not known. Results To understand how an early physiological gradient is transduced into a late, stable pattern of Nr1 expression we investigated epigenetic regulation during LR patterning. Embryos injected with mRNA encoding a dominant-negative of Histone Deacetylase (HDAC) lacked Nr1 expression and exhibited randomized sidedness of the heart and viscera (heterotaxia) at stage 45. Timing analysis using pharmacological blockade of HDACs implicated cleavage stages as the active period. Inhibition during these early stages was correlated with an absence of Nr1 expression at stage 21, high levels of heterotaxia at stage 45, and the deposition of the epigenetic marker H3K4me2 on the Nr1 gene. To link the epigenetic machinery to the 5HT signaling pathway, we performed a high-throughput proteomic screen for novel cytoplasmic 5HT partners associated with the epigenetic machinery. The data identified the known HDAC partner protein Mad3 as a 5HT-binding regulator. While Mad3 overexpression led to an absence of Nr1 transcription and randomized the LR axis, a mutant form of Mad3 lacking 5HT binding sites was not able to induce heterotaxia, showing that Mad3's biological activity is dependent on 5HT binding. Conclusion HDAC activity is a new LR determinant controlling the epigenetic state of Nr1 from early developmental stages. The HDAC binding partner Mad3 may be a new serotonin-dependent regulator of asymmetry linking early physiological asymmetries to stable changes in gene expression during organogenesis.",
+  "pmid": "21599922",
+  "pmc": "PMC3113753",
+  "reachable": true,
+  "reachable_status": 200
+}

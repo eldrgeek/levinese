@@ -1,0 +1,18 @@
+{
+  "doi": "10.1016/j.isci.2021.102131",
+  "doi_url": "https://doi.org/10.1016/j.isci.2021.102131",
+  "title": "Gene regulatory networks exhibit several kinds of memory: Quantification of memory in biological and random transcriptional networks",
+  "year": "2021",
+  "journal": "iScience",
+  "authors": [
+    "Surama Biswas",
+    "Santosh Manicka",
+    "Erik Hoel",
+    "Michael Levin"
+  ],
+  "abstract": "Gene regulatory networks (GRNs) process important information in developmental biology and biomedicine. A key knowledge gap concerns how their responses change over time. Hypothesizing long-term changes of dynamics induced by transient prior events, we created a computational framework for defining and identifying diverse types of memory in candidate GRNs. We show that GRNs from a wide range of model systems are predicted to possess several types of memory, including Pavlovian conditioning. Associative memory offers an alternative strategy for the biomedical use of powerful drugs with undesirable side effects, and a novel approach to understanding the variability and time-dependent changes of drug action. We find evidence of natural selection favoring GRN memory. Vertebrate GRNs overall exhibit more memory than invertebrate GRNs, and memory is most prevalent in differentiated metazoan cell networks compared with undifferentiated cells. Timed stimuli are a powerful alternative for biomedical control of complex <i>in vivo</i> dynamics without genomic editing or transgenes.",
+  "pmid": "33748699",
+  "pmc": "PMC7970124",
+  "reachable": true,
+  "reachable_status": 200
+}

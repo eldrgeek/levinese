@@ -1,0 +1,24 @@
+{
+  "doi": "10.1038/s43856-025-00975-8",
+  "doi_url": "https://doi.org/10.1038/s43856-025-00975-8",
+  "title": "AI-enabled drug prediction and gene network analysis reveal therapeutic use of vorinostat for Rett Syndrome in preclinical models",
+  "year": "2025",
+  "journal": "Communications Medicine",
+  "authors": [
+    "Richard Novak",
+    "Tiffany Lin",
+    "Shruti Kaushal",
+    "Megan Sperry",
+    "Frederic Vigneault",
+    "Erica Gardner",
+    "Sahil Loomba",
+    "Kostyantyn Shcherbina",
+    "Vishal Keshari",
+    "Alexandre Dinis"
+  ],
+  "abstract": "Many neurodevelopmental genetic disorders, such as Rett syndrome, are caused by a single gene mutation but trigger changes in expression of numerous genes. This impairs functions of multiple organs beyond the central nervous system (CNS), making it difficult to develop broadly effective treatments based on a single drug target. This is further complicated by the lack of sufficiently broad and biologically relevant drug screens, and the inherent complexity in identifying clinically relevant targets responsible for diverse phenotypes that involve multiple organs. Here, we use computational drug prediction that combines artificial intelligence, human gene regulatory network analysis, and in vivo screening in a CRISPR-edited, Xenopus laevis tadpole model of Rett syndrome to carry out target-agnostic drug discovery. Four-week-old MeCP2-null male mice expressing the Rett phenotype are used to validate the therapeutic efficacy. This approach identifies the FDA-approved drug, vorinostat, which broadly improves both CNS and non-CNS (e.g., gastrointestinal, respiratory, inflammatory) abnormalities in X. laevis and MeCP2-null mice. To our knowledge, this is the first Rett syndrome treatment to demonstrate pre-clinical efficacy across multiple organ systems when dosed after the onset of symptoms. Gene network analysis also reveals a putative therapeutic mechanism for the cross-organ normalizing effects of vorinostat based on its impact on acetylation metabolism and post-translational modifications of microtubules. Although vorinostat is an inhibitor of histone deacetylases (HDAC), it unexpectedly reverses the Rett phenotype by restoring protein acetylation across hypo- and hyperacetylated tissues, suggesting its activity is based on a previously unknown therapeutic mechanism. Traditional drug discovery platforms focus on singular targets and take several years to validate treatment efficacy before entering clinical trials. Here, we describe a discovery platform that leverages artificial intelligence (AI) and gene expression profiles in combination with a genetically engineered tadpole and mouse models of a form of autism, known as Rett syndrome, to identify an existing FDA approved anticancer drug (vorinostat) that may be repurposed as a treatment for this condition. We show that vorinostat improves both the neurological and non-neurological symptoms of Rett syndrome in both models. Analysis of vorinostat’s therapeutic action reveals that internal structural elements in cells, known as microtubules, represent a suitable target for treatment of this disease. This AI-based computational discovery platform demonstrates the possibility of rapidly identifying alternative uses for existing FDA approved drugs for treatments of patients with complex genetic disorders. Novak, Lin et al. use AI computational drug prediction and CRISPR-enabled in vivo disease modeling to identify therapeutic strategies for the treatment of Rett syndrome. Findings reveal the therapeutic efficacy of vorinostat in a mouse model of Rett syndrome.",
+  "pmid": "40595330",
+  "pmc": "PMC12219841",
+  "reachable": true,
+  "reachable_status": 200
+}

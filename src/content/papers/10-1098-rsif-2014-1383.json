@@ -1,0 +1,18 @@
+{
+  "doi": "10.1098/rsif.2014.1383",
+  "doi_url": "https://doi.org/10.1098/rsif.2014.1383",
+  "title": "Knowing one's place: a free-energy approach to pattern regulation",
+  "year": "2015",
+  "journal": "Journal of The Royal Society Interface",
+  "authors": [
+    "Karl Friston",
+    "Michael Levin",
+    "Biswa Sengupta",
+    "Giovanni Pezzulo"
+  ],
+  "abstract": "Understanding how organisms establish their form during embryogenesis and regeneration represents a major knowledge gap in biological pattern formation. It has been recently suggested that morphogenesis could be understood in terms of cellular information processing and the ability of cell groups to model shape. Here, we offer a proof of principle that self-assembly is an emergent property of cells that share a common (genetic and epigenetic) model of organismal form. This behaviour is formulated in terms of variational free-energy minimization—of the sort that has been used to explain action and perception in neuroscience. In brief, casting the minimization of thermodynamic free energy in terms of variational free energy allows one to interpret (the dynamics of) a system as inferring the causes of its inputs—and acting to resolve uncertainty about those causes. This novel perspective on the coordination of migration and differentiation of cells suggests an interpretation of genetic codes as parametrizing a generative model—predicting the signals sensed by cells in the target morphology—and epigenetic processes as the subsequent inversion of that model. This theoretical formulation may complement bottom-up strategies—that currently focus on molecular pathways—with (constructivist) top-down approaches that have proved themselves in neuroscience and cybernetics.",
+  "pmid": "25788538",
+  "pmc": "PMC4387527",
+  "reachable": true,
+  "reachable_status": 403
+}

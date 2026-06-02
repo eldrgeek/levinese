@@ -1,0 +1,16 @@
+{
+  "doi": "10.1242/dev.015974",
+  "doi_url": "https://doi.org/10.1242/dev.015974",
+  "title": "Is left-right asymmetry a form of planar cell polarity?",
+  "year": "2009",
+  "journal": "Development",
+  "authors": [
+    "Sherry Aw",
+    "Michael Levin"
+  ],
+  "abstract": "Consistent left-right (LR) patterning is a clinically important embryonic process. However, key questions remain about the origin of asymmetry and its amplification across cell fields. Planar cell polarity (PCP) solves a similar morphogenetic problem, and although core PCP proteins have yet to be implicated in embryonic LR asymmetry, studies of mutations affecting planar polarity, together with exciting new data in cell and developmental biology,provide a new perspective on LR patterning. Here we propose testable models for the hypothesis that LR asymmetry propagates as a type of PCP that imposes coherent orientation onto cell fields, and that the cue that orients this polarization is a chiral intracellular structure.",
+  "pmid": "19141667",
+  "pmc": "PMC2687587",
+  "reachable": true,
+  "reachable_status": 403
+}

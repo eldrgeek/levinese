@@ -1,0 +1,19 @@
+{
+  "doi": "10.1242/dmm.005561",
+  "doi_url": "https://doi.org/10.1242/dmm.005561",
+  "title": "Transmembrane potential of GlyCl-expressing instructor cells induces a neoplastic-like conversion of melanocytes via a serotonergic pathway",
+  "year": "2011",
+  "journal": "Disease Models &amp; Mechanisms",
+  "authors": [
+    "Douglas Blackiston",
+    "Dany S. Adams",
+    "Joan M. Lemire",
+    "Maria Lobikin",
+    "Michael Levin"
+  ],
+  "abstract": "SUMMARY Understanding the mechanisms that coordinate stem cell behavior within the host is a high priority for developmental biology, regenerative medicine and oncology. Endogenous ion currents and voltage gradients function alongside biochemical cues during pattern formation and tumor suppression, but it is not known whether bioelectrical signals are involved in the control of stem cell progeny in vivo. We studied Xenopus laevis neural crest, an embryonic stem cell population that gives rise to many cell types, including melanocytes, and contributes to the morphogenesis of the face, heart and other complex structures. To investigate how depolarization of transmembrane potential of cells in the neural crest’s environment influences its function in vivo, we manipulated the activity of the native glycine receptor chloride channel (GlyCl). Molecular-genetic depolarization of a sparse, widely distributed set of GlyCl-expressing cells non-cell-autonomously induces a neoplastic-like phenotype in melanocytes: they overproliferate, acquire an arborized cell shape and migrate inappropriately, colonizing numerous tissues in a metalloprotease-dependent fashion. A similar effect was observed in human melanocytes in culture. Depolarization of GlyCl-expressing cells induces these drastic changes in melanocyte behavior via a serotonin-transporter-dependent increase of extracellular serotonin (5-HT). These data reveal GlyCl as a molecular marker of a sparse and heretofore unknown cell population with the ability to specifically instruct neural crest derivatives, suggest transmembrane potential as a tractable signaling modality by which somatic cells can control stem cell behavior at considerable distance, identify a new biophysical aspect of the environment that confers a neoplastic-like phenotype upon stem cell progeny, reveal a pre-neural role for serotonin and its transporter, and suggest a novel strategy for manipulating stem cell behavior.",
+  "pmid": "20959630",
+  "pmc": "PMC3008964",
+  "reachable": true,
+  "reachable_status": 403
+}

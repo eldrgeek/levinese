@@ -1,0 +1,20 @@
+{
+  "doi": "10.4103/1673-5374.165216",
+  "doi_url": "https://doi.org/10.4103/1673-5374.165216",
+  "title": "Target morphology and cell memory: a model of regenerative pattern formation",
+  "year": "2015",
+  "journal": "Neural Regeneration Research",
+  "authors": [
+    "Vitaly Volpert",
+    "Nikolai Bessonov",
+    "Michael Levin",
+    "Nadya Morozova",
+    "Natalia Reinberg",
+    "Alen Tosenberger"
+  ],
+  "abstract": "Despite the growing body of work on molecular components required for regenerative repair, we still lack a deep understanding of the ability of some animal species to regenerate their appropriate complex anatomical structure following damage. A key question is how regenerating systems know when to stop growth and remodeling - what mechanisms implement recognition of correct morphology that signals a stop condition? In this work, we review two conceptual models of pattern regeneration that implement a kind of pattern memory. In the first one, all cells communicate with each other and keep the value of the total signal received from the other cells. If a part of the pattern is amputated, the signal distribution changes. The difference fromthe original signal distribution stimulates cell proliferation and leads to pattern regeneration, in effect implementing an error minimization process that uses signaling memory to achieve pattern correction. In the second model, we consider a more complex pattern organization with different cell types. Each tissue contains a central (coordinator) cell that controls the tissue and communicates with the other central cells. Each of them keeps memory about the signals received from other central cells. The values of these signals depend on the mutual cell location, and the memory allows regeneration of the structure when it is modified. The purpose of these models is to suggest possible mechanisms of pattern regeneration operating on the basis of cell memory which are compatible with diverse molecular implementation mechanisms within specific organisms.",
+  "pmid": "26889161",
+  "pmc": "PMC4730797",
+  "reachable": true,
+  "reachable_status": 200
+}

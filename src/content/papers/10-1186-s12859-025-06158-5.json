@@ -1,0 +1,16 @@
+{
+  "doi": "10.1186/s12859-025-06158-5",
+  "doi_url": "https://doi.org/10.1186/s12859-025-06158-5",
+  "title": "Universal multilayer network embedding reveals a causal link between GABA neurotransmitter and cancer",
+  "year": "2025",
+  "journal": "BMC Bioinformatics",
+  "authors": [
+    "Léo Pio-Lopez",
+    "Michael Levin"
+  ],
+  "abstract": "Abstract Background The volume and complexity of biological data have significantly increased in recent years, often represented as network models continue to increase at a rapid pace. However, drug discovery in the context of complex phenotypes are hampered by the difficulties inherent in producing machine learning algorithms that can integrate molecular-genetic, biochemical, physiological, and other diverse datasets. Recent developments have expanded network analysis techniques, such as network embedding, to effectively explore multilayer network structures. Multilayer networks, which incorporate various nodes and connections in formats such as multiplex, heterogeneous, and bipartite networks, provide an effective framework for merging diverse and multi-scale biological data sources. However, current network embedding methods face challenges and limitations in addressing the heterogeneity and diversity of these networks. Therefore, there is an essential need for the development of new network embedding methods to manage the complexity and diversity of multi-omics biological information effectively. Results Here, we report a universal multilayer network embedding method MultiXVERSE, which is to the best of our knowledge the first one capable of handling any kind of multilayer network. We applied it to a molecular-drug-disease multiplex-heterogeneous network. Our model made new predictions about a link between GABA and cancer that we verified experimentally in the Xenopus laevis model. Conclusions The development of MultiXVERSE represents a significant advancement in the integration and analysis of multilayer networks for biological research. By providing a universal, scalable framework for multilayer network embedding, MultiXVERSE enables the systematic exploration of molecular and phenotypic interactions across diverse biological contexts. Our experimental validation of the predicted link between GABA and cancer using Xenopus laevis underscores its capability to generate biologically meaningful hypotheses and accelerate breakthroughs in multi-omics research. Future directions include applying MultiXVERSE to additional multi-omics datasets and integrating it with high-throughput experimental pipelines for systematic hypothesis generation and validation, particularly in drug discovery. Beyond its biological applications, MultiXVERSE is a versatile tool that can be utilized for analyzing multilayer networks in a wide range of fields, including social sciences and other complex systems. By offering a universal framework, MultiXVERSE paves the way for novel insights and interdisciplinary collaborations in multilayer network research.",
+  "pmid": "40457205",
+  "pmc": "PMC12131449",
+  "reachable": true,
+  "reachable_status": 200
+}

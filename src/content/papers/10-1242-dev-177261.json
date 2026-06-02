@@ -1,0 +1,16 @@
+{
+  "doi": "10.1242/dev.177261",
+  "doi_url": "https://doi.org/10.1242/dev.177261",
+  "title": "Reverse-engineering growth and form in Heidelberg",
+  "year": "2019",
+  "journal": "Development",
+  "authors": [
+    "Michael Levin",
+    "Alfonso Martinez Arias"
+  ],
+  "abstract": "ABSTRACT The EMBO-EMBL Symposium ‘Synthetic Morphogenesis: From Gene Circuits to Tissue Architecture’ was held in Heidelberg, Germany, in March 2019, with 150 participants seeking to reverse-engineer embryogenesis, emphasizing quantitative simulation and the use of synthetic systems to test models. This highly dynamic, interdisciplinary mix of quantitative developmental genetics, bioengineering, synthetic biology and artificial life aimed to reveal how evolution exploits physical forces and genetics to implement the cell- and tissue-level decision-making required for complex morphogenesis.",
+  "pmid": "31324672",
+  "pmc": null,
+  "reachable": true,
+  "reachable_status": 403
+}

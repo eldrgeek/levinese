@@ -1,0 +1,18 @@
+{
+  "doi": "10.1103/PhysRevE.102.052412",
+  "doi_url": "https://doi.org/10.1103/PhysRevE.102.052412",
+  "title": "Community effects allow bioelectrical reprogramming of cell membrane potentials in multicellular aggregates: Model simulations",
+  "year": "2020",
+  "journal": "Physical Review E",
+  "authors": [
+    "Javier Cervera",
+    "Patricio Ramirez",
+    "Michael Levin",
+    "Salvador Mafe"
+  ],
+  "abstract": "Bioelectrical patterns are established by spatiotemporal correlations of cell membrane potentials at the multicellular level, being crucial to development, regeneration, and tumorigenesis. We have conducted multicellular simulations on bioelectrical community effects and intercellular coupling in multicellular aggregates. The simulations aim at establishing under which conditions a local heterogeneity consisting of a small patch of cells can be stabilized against a large aggregate of surrounding identical cells which are in a different bioelectrical state. In this way, instructive bioelectrical information can be persistently encoded in spatiotemporal patterns of separated domains with different cell polarization states. The multicellular community effects obtained are regulated both at the single-cell and intercellular levels, and emerge from a delicate balance between the degrees of intercellular coupling in: (i) the small patch, (ii) the surrounding bulk, and (iii) the interface that separates these two regions. The model is experimentally motivated and consists of two generic voltage-gated ion channels that attempt to establish the depolarized and polarized cell states together with coupling conductances whose individual and intercellular different states permit a dynamic multicellular connectivity. The simulations suggest that community effects may allow the reprogramming of single-cell bioelectrical states, in agreement with recent experimental data. A better understanding of the resulting electrical regionalization can assist the electroceutical correction of abnormally depolarized regions initiated in the bulk of normal tissues as well as suggest new biophysical mechanisms for the establishment of target patterns in multicellular engineering.",
+  "pmid": "33327213",
+  "pmc": null,
+  "reachable": true,
+  "reachable_status": 403
+}

@@ -1,0 +1,16 @@
+{
+  "doi": "10.1016/j.semcdb.2026.103668",
+  "doi_url": "https://doi.org/10.1016/j.semcdb.2026.103668",
+  "title": "Machines all the way up and cognition all the way down: Updating the machine metaphor in biology",
+  "year": "2026",
+  "journal": "Seminars in Cell &amp; Developmental Biology",
+  "authors": [
+    "Michael Levin",
+    "Richard Watson"
+  ],
+  "abstract": "Cell and developmental biology (CDB) offer numerous remarkable examples of collective adaptive plasticity, as cells coordinate to implement large-scale form and function. Despite the gaps in understanding, it is often assumed that the machine metaphor (dominating molecular and cell biology) will explain all of the adaptive complexity involved, from molecules up. In the case of goal-driven intentional agents, however, living tissues have cognitive properties that seem different from machines. So what is the relationship between cognition and CDB, and can the machine metaphor accommodate it? The relationship between 'ordinary' machine-like matter and minded agents is often treated naively, as if: a) a complexity threshold exists above which memory, learning, problem solving and intelligence are possible, but below which there is no such thing, b) this putative threshold lies far outside the remit of day-to-day CDB, and c) the identification of mechanisms (e.g. cell signalling, morphogens and pathways) confirms the absence of cognition, as if mechanism and 'real cognition' were mutually exclusive. In this paper, we argue that, in fact, CDB is the only discipline that can possibly naturalise the cognition of biological matter avoiding such exceptionalist and dualist positions, and that doing so requires a multiscale approach that also offers interdisciplinary insight in the other direction. Specifically, characterizing a continuum of cognitive competencies (without a naïve threshold) and identifying its mechanisms (without explaining it away) illuminates the gaps in our understanding of CDB's extraordinary collective adaptive plasticity.",
+  "pmid": "41734513",
+  "pmc": null,
+  "reachable": true,
+  "reachable_status": 200
+}

@@ -1,0 +1,20 @@
+{
+  "doi": "10.1038/s41540-024-00477-8",
+  "doi_url": "https://doi.org/10.1038/s41540-024-00477-8",
+  "title": "Open problems in synthetic multicellularity",
+  "year": "2024",
+  "journal": "npj Systems Biology and Applications",
+  "authors": [
+    "Ricard Solé",
+    "Núria Conde–Pueyo",
+    "Jordi Pla–Mauri",
+    "Jordi Garcia–Ojalvo",
+    "Nuria Montserrat",
+    "Michael Levin"
+  ],
+  "abstract": "Multicellularity is one of the major evolutionary transitions, and its rise provided the ingredients for the emergence of a biosphere inhabited by complex organisms. Over the last decades, the potential for bioengineering multicellular systems has been instrumental in interrogating nature and exploring novel paths to regeneration, disease, cognition, and behaviour. Here, we provide a list of open problems that encapsulate many of the ongoing and future challenges in the field and suggest conceptual approaches that may facilitate progress.",
+  "pmid": "39741147",
+  "pmc": "PMC11688451",
+  "reachable": true,
+  "reachable_status": 200
+}

@@ -1,0 +1,24 @@
+{
+  "doi": "10.1038/s41467-023-44522-2",
+  "doi_url": "https://doi.org/10.1038/s41467-023-44522-2",
+  "title": "Embryos assist morphogenesis of others through calcium and ATP signaling mechanisms in collective teratogen resistance",
+  "year": "2024",
+  "journal": "Nature Communications",
+  "authors": [
+    "Angela Tung",
+    "Megan M. Sperry",
+    "Wesley Clawson",
+    "Ananya Pavuluri",
+    "Sydney Bulatao",
+    "Michelle Yue",
+    "Ramses Martinez Flores",
+    "Vaibhav P. Pai",
+    "Patrick McMillen",
+    "Franz Kuchling"
+  ],
+  "abstract": "Abstract Information for organismal patterning can come from a variety of sources. We investigate the possibility that instructive influences for normal embryonic development are provided not only at the level of cells within the embryo, but also via interactions between embryos. To explore this, we challenge groups of embryos with disruptors of normal development while varying group size. Here, we show that Xenopus laevis embryos are much more sensitive to a diverse set of chemical and molecular-biological perturbations when allowed to develop alone or in small groups, than in large groups. Keeping per-embryo exposure constant, we find that increasing the number of exposed embryos in a cohort increases the rate of survival while incidence of defects decreases. This inter-embryo assistance effect is mediated by short-range diffusible signals and involves the P2 ATP receptor. Our data and computational model emphasize that morphogenesis is a collective phenomenon not only at the level of cells, but also of whole bodies, and that cohort size is a crucial variable in studies of ecotoxicology, teratogenesis, and developmental plasticity.",
+  "pmid": "38233424",
+  "pmc": "PMC10794468",
+  "reachable": true,
+  "reachable_status": 200
+}

@@ -1,0 +1,16 @@
+{
+  "doi": "10.1371/journal.pcbi.1004295",
+  "doi_url": "https://doi.org/10.1371/journal.pcbi.1004295",
+  "title": "Inferring Regulatory Networks from Experimental Morphological Phenotypes: A Computational Method Reverse-Engineers Planarian Regeneration",
+  "year": "2015",
+  "journal": "PLOS Computational Biology",
+  "authors": [
+    "Daniel Lobo",
+    "Michael Levin"
+  ],
+  "abstract": "Transformative applications in biomedicine require the discovery of complex regulatory networks that explain the development and regeneration of anatomical structures, and reveal what external signals will trigger desired changes of large-scale pattern. Despite recent advances in bioinformatics, extracting mechanistic pathway models from experimental morphological data is a key open challenge that has resisted automation. The fundamental difficulty of manually predicting emergent behavior of even simple networks has limited the models invented by human scientists to pathway diagrams that show necessary subunit interactions but do not reveal the dynamics that are sufficient for complex, self-regulating pattern to emerge. To finally bridge the gap between high-resolution genetic data and the ability to understand and control patterning, it is critical to develop computational tools to efficiently extract regulatory pathways from the resultant experimental shape phenotypes. For example, planarian regeneration has been studied for over a century, but despite increasing insight into the pathways that control its stem cells, no constructive, mechanistic model has yet been found by human scientists that explains more than one or two key features of its remarkable ability to regenerate its correct anatomical pattern after drastic perturbations. We present a method to infer the molecular products, topology, and spatial and temporal non-linear dynamics of regulatory networks recapitulating in silico the rich dataset of morphological phenotypes resulting from genetic, surgical, and pharmacological experiments. We demonstrated our approach by inferring complete regulatory networks explaining the outcomes of the main functional regeneration experiments in the planarian literature; By analyzing all the datasets together, our system inferred the first systems-biology comprehensive dynamical model explaining patterning in planarian regeneration. This method provides an automated, highly generalizable framework for identifying the underlying control mechanisms responsible for the dynamic regulation of growth and form.",
+  "pmid": "26042810",
+  "pmc": "PMC4456145",
+  "reachable": true,
+  "reachable_status": 200
+}

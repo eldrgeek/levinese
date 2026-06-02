@@ -1,0 +1,18 @@
+{
+  "doi": "10.3389/fcell.2021.739024",
+  "doi_url": "https://doi.org/10.3389/fcell.2021.739024",
+  "title": "Beyond Neurons: Long Distance Communication in Development and Cancer",
+  "year": "2021",
+  "journal": "Frontiers in Cell and Developmental Biology",
+  "authors": [
+    "Patrick McMillen",
+    "Madeleine J. Oudin",
+    "Michael Levin",
+    "Samantha L. Payne"
+  ],
+  "abstract": "Cellular communication is important in all aspects of tissue and organism functioning, from the level of single cells, two discreet populations, and distant tissues of the body. Long distance communication networks integrate individual cells into tissues to maintain a complex organism during development, but when communication between cells goes awry, disease states such as cancer emerge. Herein we discuss the growing body of evidence suggesting that communication methods known to be employed by neurons, also exist in other cell types. We identify three major areas of long-distance communication: bioelectric signaling, tunneling nanotubes (TNTs), and macrophage modulation of networks, and draw comparisons about how these systems operate in the context of development and cancer. Bioelectric signaling occurs between cells through exchange of ions and tissue-level electric fields, leading to changes in biochemical gradients and molecular signaling pathways to control normal development and tumor growth and invasion in cancer. TNTs transport key morphogens and other cargo long distances, mediating electrical coupling, tissue patterning, and malignancy of cancer cells. Lastly macrophages maintain long distance signaling networks through trafficking of vesicles during development, providing communication relays and priming favorable microenvironments for cancer metastasis. By drawing comparisons between non-neural long distance signaling in the context of development and cancer we aim to encourage crosstalk between the two fields to cultivate new hypotheses and potential therapeutic strategies.",
+  "pmid": "34621752",
+  "pmc": "PMC8491768",
+  "reachable": true,
+  "reachable_status": 200
+}

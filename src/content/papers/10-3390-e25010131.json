@@ -1,0 +1,16 @@
+{
+  "doi": "10.3390/e25010131",
+  "doi_url": "https://doi.org/10.3390/e25010131",
+  "title": "Cellular Competency during Development Alters Evolutionary Dynamics in an Artificial Embryogeny Model",
+  "year": "2023",
+  "journal": "Entropy",
+  "authors": [
+    "Lakshwin Shreesha",
+    "Michael Levin"
+  ],
+  "abstract": "Biological genotypes do not code directly for phenotypes; developmental physiology is the control layer that separates genomes from capacities ascertained by selection. A key aspect is cellular competency, since cells are not passive materials but descendants of unicellular organisms with complex context-sensitive behavioral capabilities. To probe the effects of different degrees of cellular competency on evolutionary dynamics, we used an evolutionary simulation in the context of minimal artificial embryogeny. Virtual embryos consisted of a single axis of positional information values provided by cells’ ‘structural genes’, operated upon by an evolutionary cycle in which embryos’ fitness was proportional to monotonicity of the axial gradient. Evolutionary dynamics were evaluated in two modes: hardwired development (genotype directly encodes phenotype), and a more realistic mode in which cells interact prior to evaluation by the fitness function (“regulative” development). We find that even minimal ability of cells with to improve their position in the embryo results in better performance of the evolutionary search. Crucially, we observed that increasing the behavioral competency masks the raw fitness encoded by structural genes, with selection favoring improvements to its developmental problem-solving capacities over improvements to its structural genome. This suggests the existence of a powerful ratchet mechanism: evolution progressively becomes locked in to improvements in the intelligence of its agential substrate, with reduced pressure on the structural genome. This kind of feedback loop in which evolution increasingly puts more effort into the developmental software than perfecting the hardware explains the very puzzling divergence of genome from anatomy in species like planaria. In addition, it identifies a possible driver for scaling intelligence over evolutionary time, and suggests strategies for engineering novel systems in silico and in bioengineering.",
+  "pmid": "36673272",
+  "pmc": "PMC9858125",
+  "reachable": true,
+  "reachable_status": 403
+}

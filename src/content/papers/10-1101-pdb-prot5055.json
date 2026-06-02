@@ -1,0 +1,18 @@
+{
+  "doi": "10.1101/pdb.prot5055",
+  "doi_url": "https://doi.org/10.1101/pdb.prot5055",
+  "title": "Live Imaging of Planarian Membrane Potential Using DiBAC<sub>4</sub>(3): Figure 1.",
+  "year": "2008",
+  "journal": "Cold Spring Harbor Protocols",
+  "authors": [
+    "Néstor J. Oviedo",
+    "Cindy L. Nicolas",
+    "Dany S. Adams",
+    "Michael Levin"
+  ],
+  "abstract": "INTRODUCTION This protocol describes how to use the anionic membrane voltage-reporting dye DiBAC 4 (3) to generate images of cell membrane potential in live planarians. These images qualitatively reveal variations in time-averaged membrane potential across different regions of the organism. Changes in these images due to experimental treatments reveal how the particular treatment affects this physiological parameter. This method is a great improvement over standard electrophysiological techniques, which cannot be used to gain an understanding of the electrical properties of an entire worm or a regenerating fragment, due to small cell size and large cell number. When the proper controls are performed, this technique is a very powerful and simple way to gather physiologic data.",
+  "pmid": "21356693",
+  "pmc": "PMC10468776",
+  "reachable": true,
+  "reachable_status": 200
+}

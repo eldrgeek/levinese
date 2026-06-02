@@ -1,0 +1,16 @@
+{
+  "doi": "10.1080/19420889.2019.1643666",
+  "doi_url": "https://doi.org/10.1080/19420889.2019.1643666",
+  "title": "Somatic multicellularity as a satisficing solution to the prediction-error minimization problem",
+  "year": "2019",
+  "journal": "Communicative &amp; Integrative Biology",
+  "authors": [
+    "Chris Fields",
+    "Michael Levin"
+  ],
+  "abstract": "Adaptive success in the biosphere requires the dynamic ability to adjust physiological, transcriptional, and behavioral responses to environmental conditions. From chemical networks to organisms to whole communities, biological entities at all levels of organization seek to optimize their predictive power. Here, we argue that this fundamental drive provides a novel perspective on the origin of multicellularity. One way for unicellular organisms to minimize surprise with respect to external inputs is to be surrounded by reproductively-disabled, i.e. somatic copies of themselves - highly predictable agents which in effect reduce uncertainty in their microenvironments. We show that the transition to multicellularity can be modeled as a phase transition driven by environmental threats. We present modeling results showing how multicellular bodies can arise if non-reproductive somatic cells protect their reproductive parents from environmental lethality. We discuss how a somatic body can be interpreted as a Markov blanket around one or more reproductive cells, and how the transition to somatic multicellularity can be represented as a transition from exposure of reproductive cells to a high-uncertainty environment to their protection from environmental uncertainty by this Markov blanket. This is, effectively, a transition by the Markov blanket from transparency to opacity for the variational free energy of the environment. We suggest that the ability to arrest the cell cycle of daughter cells and redirect their resource utilization from division to environmental threat amelioration is the key innovation of obligate multicellular eukaryotes, that the nervous system evolved to exercise this control over long distances, and that cancer is an escape by somatic cells from the control of reproductive cells. Our quantitative model illustrates the evolutionary dynamics of this system, provides a novel hypothesis for the origin of multicellular animal bodies, and suggests a fundamental link between the architectures of complex organisms and information processing in proto-cognitive cellular agents.",
+  "pmid": "31413788",
+  "pmc": "PMC6682261",
+  "reachable": true,
+  "reachable_status": 403
+}

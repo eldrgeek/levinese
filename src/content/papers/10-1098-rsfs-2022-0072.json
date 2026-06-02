@@ -1,0 +1,18 @@
+{
+  "doi": "10.1098/rsfs.2022.0072",
+  "doi_url": "https://doi.org/10.1098/rsfs.2022.0072",
+  "title": "The scaling of goals from cellular to anatomical homeostasis: an evolutionary simulation, experiment and analysis",
+  "year": "2023",
+  "journal": "Interface Focus",
+  "authors": [
+    "Léo Pio-Lopez",
+    "Johanna Bischof",
+    "Jennifer V. LaPalme",
+    "Michael Levin"
+  ],
+  "abstract": "Complex living agents consist of cells, which are themselves competent sub-agents navigating physiological and metabolic spaces. Behaviour science, evolutionary developmental biology and the field of machine intelligence all seek to understand the scaling of biological cognition: what enables individual cells to integrate their activities to result in the emergence of a novel, higher-level intelligence with large-scale goals and competencies that belong to it and not to its parts? Here, we report the results of simulations based on the TAME framework, which proposes that evolution pivoted the collective intelligence of cells during morphogenesis of the body into traditional behavioural intelligence by scaling up homeostatic competencies of cells in metabolic space. In this article, we created a minimal in silico system (two-dimensional neural cellular automata) and tested the hypothesis that evolutionary dynamics are sufficient for low-level setpoints of metabolic homeostasis in individual cells to scale up to tissue-level emergent behaviour. Our system showed the evolution of the much more complex setpoints of cell collectives (tissues) that solve a problem in morphospace: the organization of a body-wide positional information axis (the classic French flag problem in developmental biology). We found that these emergent morphogenetic agents exhibit a number of predicted features, including the use of stress propagation dynamics to achieve the target morphology as well as the ability to recover from perturbation (robustness) and long-term stability (even though neither of these was directly selected for). Moreover, we observed an unexpected behaviour of sudden remodelling long after the system stabilizes. We tested this prediction in a biological system—regenerating planaria—and observed a very similar phenomenon. We propose that this system is a first step towards a quantitative understanding of how evolution scales minimal goal-directed behaviour (homeostatic loops) into higher-level problem-solving agents in morphogenetic and other spaces.",
+  "pmid": "37065270",
+  "pmc": "PMC10102734",
+  "reachable": true,
+  "reachable_status": 403
+}

@@ -1,0 +1,17 @@
+{
+  "doi": "10.1002/dvdy.23770",
+  "doi_url": "https://doi.org/10.1002/dvdy.23770",
+  "title": "Normalized shape and location of perturbed craniofacial structures in the\n                    <i>Xenopus</i>\n                    tadpole reveal an innate ability to achieve correct morphology",
+  "year": "2012",
+  "journal": "Developmental Dynamics",
+  "authors": [
+    "Laura N. Vandenberg",
+    "Dany S. Adams",
+    "Michael Levin"
+  ],
+  "abstract": "Abstract Background: Embryonic development can often adjust its morphogenetic processes to counteract external perturbation. The existence of self‐monitoring responses during pattern formation is of considerable importance to the biomedicine of birth defects, but has not been quantitatively addressed. To understand the computational capabilities of biological tissues in a molecularly tractable model system, we induced craniofacial defects in Xenopus embryos, then tracked tadpoles with craniofacial deformities and used geometric morphometric techniques to characterize changes in the shape and position of the craniofacial structures. Results: Canonical variate analysis revealed that the shapes and relative positions of perturbed jaws and branchial arches were corrected during the first few months of tadpole development. Analysis of the relative movements of the anterior‐most structures indicates that misplaced structures move along the anterior–posterior and left–right axes in ways that are significantly different from their normal movements. Conclusions: Our data suggest a model in which craniofacial structures use a measuring mechanism to assess and adjust their location relative to other local organs. Understanding the correction mechanisms at work in this system could lead to the better understanding of the adaptive decision‐making capabilities of living tissues and suggest new approaches to correct birth defects in humans. Developmental Dynamics 241:863–878, 2012. © 2012 Wiley Periodicals, Inc.",
+  "pmid": "22411736",
+  "pmc": "PMC3428595",
+  "reachable": true,
+  "reachable_status": 200
+}

@@ -1,0 +1,23 @@
+{
+  "doi": "10.1242/dev.187427",
+  "doi_url": "https://doi.org/10.1242/dev.187427",
+  "title": "Formin, an opinion",
+  "year": "2020",
+  "journal": "Development",
+  "authors": [
+    "Angus Davison",
+    "Gary S. McDowell",
+    "Jennifer M. Holden",
+    "Harriet F. Johnson",
+    "Christopher M. Wade",
+    "Satoshi Chiba",
+    "Daniel J. Jackson",
+    "Michael Levin",
+    "Mark L. Blaxter"
+  ],
+  "abstract": "In previous work (Davison et al., 2016), we used both genetic mapping and a chemical knockdown to show that a frameshift mutation in one copy of a duplicated formin gene is most likely the mutation that causes changes in left-right (LR) asymmetry, or chirality, in the pond snail Lymnaea stagnalis. We also showed that the asymmetric morphology is preceded by asymmetric formin expression in snails, and that overexpressing the same gene in frogs reverses LR asymmetry.",
+  "pmid": "31919229",
+  "pmc": null,
+  "reachable": true,
+  "reachable_status": 403
+}

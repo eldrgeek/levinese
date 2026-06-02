@@ -1,0 +1,19 @@
+{
+  "doi": "10.1371/journal.pcbi.1006904",
+  "doi_url": "https://doi.org/10.1371/journal.pcbi.1006904",
+  "title": "Neural control of body-plan axis in regenerating planaria",
+  "year": "2019",
+  "journal": "PLOS Computational Biology",
+  "authors": [
+    "Alexis Pietak",
+    "Johanna Bischof",
+    "Joshua LaPalme",
+    "Junji Morokuma",
+    "Michael Levin"
+  ],
+  "abstract": "Control of axial polarity during regeneration is a crucial open question. We developed a quantitative model of regenerating planaria, which elucidates self-assembly mechanisms of morphogen gradients required for robust body-plan control. The computational model has been developed to predict the fraction of heteromorphoses expected in a population of regenerating planaria fragments subjected to different treatments, and for fragments originating from different regions along the anterior-posterior and medio-lateral axis. This allows for a direct comparison between computational and experimental regeneration outcomes. Vector transport of morphogens was identified as a fundamental requirement to account for virtually scale-free self-assembly of the morphogen gradients observed in planarian homeostasis and regeneration. The model correctly describes altered body-plans following many known experimental manipulations, and accurately predicts outcomes of novel cutting scenarios, which we tested. We show that the vector transport field coincides with the alignment of nerve axons distributed throughout the planarian tissue, and demonstrate that the head-tail axis is controlled by the net polarity of neurons in a regenerating fragment. This model provides a comprehensive framework for mechanistically understanding fundamental aspects of body-plan regulation, and sheds new light on the role of the nervous system in directing growth and form.",
+  "pmid": "30990801",
+  "pmc": "PMC6485777",
+  "reachable": true,
+  "reachable_status": 200
+}

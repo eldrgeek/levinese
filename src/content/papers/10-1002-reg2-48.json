@@ -1,0 +1,20 @@
+{
+  "doi": "10.1002/reg2.48",
+  "doi_url": "https://doi.org/10.1002/reg2.48",
+  "title": "Genome‐wide analysis reveals conserved transcriptional responses downstream of resting potential change in <i>Xenopus</i> embryos, axolotl regeneration, and human mesenchymal cell differentiation",
+  "year": "2016",
+  "journal": "Regeneration",
+  "authors": [
+    "Vaibhav P. Pai",
+    "Christopher J. Martyniuk",
+    "Karen Echeverri",
+    "Sarah Sundelacruz",
+    "David L. Kaplan",
+    "Michael Levin"
+  ],
+  "abstract": "Abstract Endogenous bioelectric signaling via changes in cellular resting potential ( V mem ) is a key regulator of patterning during regeneration and embryogenesis in numerous model systems. Depolarization of V mem has been functionally implicated in dedifferentiation, tumorigenesis, anatomical re‐specification, and appendage regeneration. However, no unbiased analyses have been performed to understand genome‐wide transcriptional responses to V mem change in vivo. Moreover, it is unknown which genes or gene networks represent conserved targets of bioelectrical signaling across different patterning contexts and species. Here, we use microarray analysis to comparatively analyze transcriptional responses to V mem depolarization. We compare the response of the transcriptome during embryogenesis ( Xenopus development), regeneration (axolotl regeneration), and stem cell differentiation (human mesenchymal stem cells in culture) to identify common networks across model species that are associated with depolarization. Both subnetwork enrichment and PANTHER analyses identified a number of key genetic modules as targets of V mem change, and also revealed important (well‐conserved) commonalities in bioelectric signal transduction, despite highly diverse experimental contexts and species. Depolarization regulates specific transcriptional networks across all three germ layers (ectoderm, mesoderm, and endoderm) such as cell differentiation and apoptosis, and this information will be used for developing mechanistic models of bioelectric regulation of patterning. Moreover, our analysis reveals that V mem change regulates transcripts related to important disease pathways such as cancer and neurodegeneration, which may represent novel targets for emerging electroceutical therapies.",
+  "pmid": "27499876",
+  "pmc": "PMC4857752",
+  "reachable": true,
+  "reachable_status": 200
+}

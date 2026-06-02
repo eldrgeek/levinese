@@ -1,0 +1,19 @@
+{
+  "doi": "10.1387/ijdb.140215ml",
+  "doi_url": "https://doi.org/10.1387/ijdb.140215ml",
+  "title": "Left-right patterning in Xenopus conjoined twin embryos requires serotonin signaling and gap junctions",
+  "year": "2014",
+  "journal": "The International Journal of Developmental Biology",
+  "authors": [
+    "Laura N. Vandenberg",
+    "Douglas J. Blackiston",
+    "Adam C. Rea",
+    "Timothy M. Dore",
+    "Michael Levin"
+  ],
+  "abstract": "A number of processes operating during the first cell cleavages enable the left-right (LR) axis to be consistently oriented during Xenopus laevis development. Prior work showed that secondary organizers induced in frog embryos after cleavage stages (i.e. conjoined twins arising from ectopic induced primary axes) correctly pattern their own LR axis only when a primary (early) organizer is also present. This instructive effect confirms the unique LR patterning functions that occur during early embryogenesis, but leaves open the question: which mechanisms that operate during early stages are also involved in the orientation of later-induced organizers? We sought to distinguish the two phases of LR patterning in secondary organizers (LR patterning of the primary twin and the later transfer of this information to the secondary twin) by perturbing only the latter process. Here, we used reagents that do not affect primary LR patterning at the time secondary organizers form to inhibit each of 4 mechanisms in the induced twin. Using pharmacological, molecular-genetic, and photo-chemical tools, we show that serotonergic and gap-junctional signaling, but not proton or potassium flows, are required for the secondary organizer to appropriately pattern its LR axis in a multicellular context. We also show that consistently-asymmetric gene expression begins prior to ciliary flow. Together, our data highlight the importance of physiological signaling in the propagation of cleavage-derived LR orientation to multicellular cell fields.",
+  "pmid": "25896280",
+  "pmc": "PMC10471180",
+  "reachable": true,
+  "reachable_status": 200
+}

@@ -1,0 +1,18 @@
+{
+  "doi": "10.1088/1478-3975/9/6/065002",
+  "doi_url": "https://doi.org/10.1088/1478-3975/9/6/065002",
+  "title": "Resting potential, oncogene-induced tumorigenesis, and metastasis: the bioelectric basis of cancer<i>in vivo</i>",
+  "year": "2012",
+  "journal": "Physical Biology",
+  "authors": [
+    "Maria Lobikin",
+    "Brook Chernet",
+    "Daniel Lobo",
+    "Michael Levin"
+  ],
+  "abstract": "Cancer may result from localized failure of instructive cues that normally orchestrate cell behaviors toward the patterning needs of the organism. Steady-state gradients of transmembrane voltage (V(mem)) in non-neural cells are instructive, epigenetic signals that regulate pattern formation during embryogenesis and morphostatic repair. Here, we review molecular data on the role of bioelectric cues in cancer and present new findings in the Xenopus laevis model on how the microenvironment's biophysical properties contribute to cancer in vivo. First, we investigated the melanoma-like phenotype arising from serotonergic signaling by 'instructor' cells-a cell population that is able to induce a metastatic phenotype in normal melanocytes. We show that when these instructor cells are depolarized, blood vessel patterning is disrupted in addition to the metastatic phenotype induced in melanocytes. Surprisingly, very few instructor cells need to be depolarized for the hyperpigmentation phenotype to occur; we present a model of antagonistic signaling by serotonin receptors that explains the unusual all-or-none nature of this effect. In addition to the body-wide depolarization-induced metastatic phenotype, we investigated the bioelectrical properties of tumor-like structures induced by canonical oncogenes and cancer-causing compounds. Exposure to carcinogen 4-nitroquinoline 1-oxide (4NQO) induces localized tumors, but has a broad (and variable) effect on the bioelectric properties of the whole body. Tumors induced by oncogenes show aberrantly high sodium content, representing a non-invasive diagnostic modality. Importantly, depolarized transmembrane potential is not only a marker of cancer but is functionally instructive: susceptibility to oncogene-induced tumorigenesis is significantly reduced by forced prior expression of hyperpolarizing ion channels. Importantly, the same effect can be achieved by pharmacological manipulation of endogenous chloride channels, suggesting a strategy for cancer suppression that does not require gene therapy. Together, these data extend our understanding of the recently demonstrated role of transmembrane potential in tumor formation and metastatic cell behavior. V(mem) is an important non-genetic biophysical aspect of the microenvironment that regulates the balance between normally patterned growth and carcinogenesis.",
+  "pmid": "23196890",
+  "pmc": "PMC3528107",
+  "reachable": true,
+  "reachable_status": 200
+}

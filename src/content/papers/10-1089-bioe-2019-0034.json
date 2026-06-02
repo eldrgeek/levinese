@@ -1,0 +1,18 @@
+{
+  "doi": "10.1089/bioe.2019.0034",
+  "doi_url": "https://doi.org/10.1089/bioe.2019.0034",
+  "title": "A Meta-Analysis of Bioelectric Data in Cancer, Embryogenesis, and Regeneration",
+  "year": "2021",
+  "journal": "Bioelectricity",
+  "authors": [
+    "Pranjal Srivastava",
+    "Anna Kane",
+    "Christina Harrison",
+    "Michael Levin"
+  ],
+  "abstract": "Developmental bioelectricity is the study of the endogenous role of bioelectrical signaling in all cell types. Resting potentials and other aspects of ionic cell physiology are known to be important regulatory parameters in embryogenesis, regeneration, and cancer. However, relevant quantitative measurement and genetic phenotyping data are distributed throughout wide-ranging literature, hampering experimental design and hypothesis generation. Here, we analyze published studies on bioelectrics and transcriptomic and genomic/phenotypic databases to provide a novel synthesis of what is known in three important aspects of bioelectrics research. First, we provide a comprehensive list of channelopathies—ion channel and pump gene mutations—in a range of important model systems with developmental patterning phenotypes, illustrating the breadth of channel types, tissues, and phyla (including man) in which bioelectric signaling is a critical endogenous aspect of embryogenesis. Second, we perform a novel bioinformatic analysis of transcriptomic data during regeneration in diverse taxa that reveals an electrogenic protein to be the one common factor specifically expressed in regeneration blastemas across Kingdoms. Finally, we analyze data on distinct V mem signatures in normal and cancer cells, revealing a specific bioelectrical signature corresponding to some types of malignancies. These analyses shed light on fundamental questions in developmental bioelectricity and suggest new avenues for research in this exciting field.",
+  "pmid": "34476377",
+  "pmc": "PMC8370481",
+  "reachable": true,
+  "reachable_status": 403
+}

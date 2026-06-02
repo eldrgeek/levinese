@@ -1,0 +1,16 @@
+{
+  "doi": "10.1242/jeb.087809",
+  "doi_url": "https://doi.org/10.1242/jeb.087809",
+  "title": "An automated training paradigm reveals long-term memory in planaria and its persistence through head regeneration",
+  "year": "2013",
+  "journal": "Journal of Experimental Biology",
+  "authors": [
+    "Tal Shomrat",
+    "Michael Levin"
+  ],
+  "abstract": "Summary Planarian flatworms are a popular system for research into the molecular mechanisms that enable these complex organisms to regenerate their entire body, including the brain. Classical data suggest that they may also be capable of long-term memory. Thus, the planarian system may offer the unique opportunity to study brain regeneration and memory in the same animal. To establish a system for the investigation of the dynamics of memory in a regenerating brain, we developed a computerized training and testing paradigm that avoided the many issues that confounded previous, manual attempts to train planaria. We then used this new system to train flatworms in an environmental familiarization protocol. We show that worms exhibit environmental familiarization, and that this memory persists for at least 14 days – long enough for the brain to regenerate. We further show that trained, decapitated planaria exhibit evidence of memory retrieval in a savings paradigm after regenerating a new head. Our work establishes a foundation for objective, high-throughput assays in this molecularly-tractable model system that will shed light on the fundamental interface between body patterning and stored memories. We propose planaria as a key emerging model species for mechanistic investigations of the encoding of specific memories in biological tissues. Moreover, this system is likely to have important implications for the biomedicine of stem cell-derived treatments of degenerative brain disorders in human adults.",
+  "pmid": "23821717",
+  "pmc": null,
+  "reachable": true,
+  "reachable_status": 403
+}

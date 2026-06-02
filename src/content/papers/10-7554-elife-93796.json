@@ -1,0 +1,24 @@
+{
+  "doi": "10.7554/eLife.93796",
+  "doi_url": "https://doi.org/10.7554/eLife.93796",
+  "title": "Identification of pharmacological inducers of a reversible hypometabolic state for whole organ preservation",
+  "year": "2024",
+  "journal": "eLife",
+  "authors": [
+    "Megan M Sperry",
+    "Berenice Charrez",
+    "Haleh Fotowat",
+    "Erica Gardner",
+    "Kanoelani Pilobello",
+    "Zohreh Izadifar",
+    "Tiffany Lin",
+    "Abigail Kuelker",
+    "Sahith Kaki",
+    "Michael Lewandowski"
+  ],
+  "abstract": "Drugs that induce reversible slowing of metabolic and physiological processes would have great value for organ preservation, especially for organs with high susceptibility to hypoxia-reperfusion injury, such as the heart. Using whole-organism screening of metabolism, mobility, and development in Xenopus , we identified an existing drug, SNC80, that rapidly and reversibly slows biochemical and metabolic activities while preserving cell and tissue viability. Although SNC80 was developed as a delta opioid receptor activator, we discovered that its ability to slow metabolism is independent of its opioid modulating activity as a novel SNC80 analog (WB3) with almost 1000 times less delta opioid receptor binding activity is equally active. Metabolic suppression was also achieved using SNC80 in microfluidic human organs-on-chips, as well as in explanted whole porcine hearts and limbs, demonstrating the cross-species relevance of this approach and potential clinical relevance for surgical transplantation. Pharmacological induction of physiological slowing in combination with organ perfusion transport systems may offer a new therapeutic approach for tissue and organ preservation for transplantation, trauma management, and enhancing patient survival in remote and low-resource locations.",
+  "pmid": "39316042",
+  "pmc": "PMC11421850",
+  "reachable": true,
+  "reachable_status": 200
+}

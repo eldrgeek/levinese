@@ -1,0 +1,22 @@
+{
+  "doi": "10.1002/brb3.295",
+  "doi_url": "https://doi.org/10.1002/brb3.295",
+  "title": "Membrane potential depolarization causes alterations in neuron arrangement and connectivity in cocultures",
+  "year": "2015",
+  "journal": "Brain and Behavior",
+  "authors": [
+    "Nurdan Özkucur",
+    "Kyle P. Quinn",
+    "Jin C. Pang",
+    "Chuang Du",
+    "Irene Georgakoudi",
+    "Eric Miller",
+    "Michael Levin",
+    "David L. Kaplan"
+  ],
+  "abstract": "Abstract Background The disruption of neuron arrangement is associated with several pathologies. In contrast to action potentials, the role of resting potential (V mem ) in regulating connectivity remains unknown. Methods Neuron assemblies were quantified when their V mem was depolarized using ivermectin (Ivm), a drug that opens chloride channels, for 24 h in cocultures with astrocytes. Cell aggregation was analyzed using automated cluster analysis methods. Neural connectivity was quantified based on the identification of isolated somas in phase‐contrast images using image processing. V mem was measured using voltage‐sensitive dyes and whole‐cell patch clamping. Immunocytochemistry and Western blotting were used to detect changes in the distribution and production of the proteins. Results Data show that V mem regulates cortical tissue shape and connectivity. Automated cluster analysis methods revealed that the degree of neural aggregation was significantly increased (0.26 clustering factor vs. 0.21 in controls, P ≤ 0.01). The number of beta‐tubulin III positive neural projections was also significantly increased in the neural aggregates in cocultures with Ivm. Hyperpolarized neuron cells formed fewer connections (33% at 24 h, P ≤ 0.05) compared to control cells in 1‐day cultures. Glia cell densities increased (33.3%, P ≤ 0.05) under depolarizing conditions. Conclusion V mem can be a useful tool to probe neuronal cells, disease tissues models, and cortical tissue arrangements.",
+  "pmid": "25722947",
+  "pmc": "PMC4321392",
+  "reachable": true,
+  "reachable_status": 403
+}

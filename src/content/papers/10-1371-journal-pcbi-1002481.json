@@ -1,0 +1,17 @@
+{
+  "doi": "10.1371/journal.pcbi.1002481",
+  "doi_url": "https://doi.org/10.1371/journal.pcbi.1002481",
+  "title": "Modeling Planarian Regeneration: A Primer for Reverse-Engineering the Worm",
+  "year": "2012",
+  "journal": "PLoS Computational Biology",
+  "authors": [
+    "Daniel Lobo",
+    "Wendy S. Beane",
+    "Michael Levin"
+  ],
+  "abstract": "A mechanistic understanding of robust self-assembly and repair capabilities of complex systems would have enormous implications for basic evolutionary developmental biology as well as for transformative applications in regenerative biomedicine and the engineering of highly fault-tolerant cybernetic systems. Molecular biologists are working to identify the pathways underlying the remarkable regenerative abilities of model species that perfectly regenerate limbs, brains, and other complex body parts. However, a profound disconnect remains between the deluge of high-resolution genetic and protein data on pathways required for regeneration, and the desired spatial, algorithmic models that show how self-monitoring and growth control arise from the synthesis of cellular activities. This barrier to progress in the understanding of morphogenetic controls may be breached by powerful techniques from the computational sciences-using non-traditional modeling approaches to reverse-engineer systems such as planaria: flatworms with a complex bodyplan and nervous system that are able to regenerate any body part after traumatic injury. Currently, the involvement of experts from outside of molecular genetics is hampered by the specialist literature of molecular developmental biology: impactful collaborations across such different fields require that review literature be available that presents the key functional capabilities of important biological model systems while abstracting away from the often irrelevant and confusing details of specific genes and proteins. To facilitate modeling efforts by computer scientists, physicists, engineers, and mathematicians, we present a different kind of review of planarian regeneration. Focusing on the main patterning properties of this system, we review what is known about the signal exchanges that occur during regenerative repair in planaria and the cellular mechanisms that are thought to underlie them. By establishing an engineering-like style for reviews of the molecular developmental biology of biomedically important model systems, significant fresh insights and quantitative computational models will be developed by new collaborations between biology and the information sciences.",
+  "pmid": "22570595",
+  "pmc": "PMC3343107",
+  "reachable": true,
+  "reachable_status": 200
+}

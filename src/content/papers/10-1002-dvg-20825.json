@@ -1,0 +1,16 @@
+{
+  "doi": "10.1002/dvg.20825",
+  "doi_url": "https://doi.org/10.1002/dvg.20825",
+  "title": "Polarity proteins are required for left–right axis orientation and twin–twin instruction",
+  "year": "2012",
+  "journal": "genesis",
+  "authors": [
+    "Laura N. Vandenberg",
+    "Michael Levin"
+  ],
+  "abstract": "Abstract Two main classes of models address the earliest steps of left–right patterning: those postulating that asymmetry is initiated via cilia‐driven fluid flow in a multicellular tissue at gastrulation, and those postulating that asymmetry is amplified from intrinsic chirality of individual cells at very early embryonic stages. A recent study revealed that cultured human cells have consistent left–right (LR) biases that are dependent on apical‐basal polarity machinery. The ability of single cells to set up asymmetry suggests that cellular chirality could be converted to embryonic laterality by cilia‐independent polarity mechanisms in cell fields. To examine the link between cellular polarity and LR patterning in a vertebrate model organism, we probed the roles of apical‐basal and planar polarity proteins in the orientation of the LR axis in Xenopus . Molecular loss‐of‐function targeting these polarity pathways specifically randomizes organ situs independently of contribution to the ciliated organ. Alterations in cell polarity also disrupt tight junction integrity, localization of the LR signaling molecule serotonin, the normally left‐sided expression of Xnr‐1 , and the LR instruction occurring between native and ectopic organizers. We propose that well‐conserved polarity complexes are required for LR asymmetry and that cell polarity signals establish the flow of laterality information across the early blastoderm independently of later ciliary functions. genesis 50:219–234, 2012. © 2011 Wiley Periodicals, Inc.",
+  "pmid": "22086838",
+  "pmc": "PMC3294047",
+  "reachable": true,
+  "reachable_status": 403
+}

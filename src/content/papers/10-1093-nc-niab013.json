@@ -1,0 +1,17 @@
+{
+  "doi": "10.1093/nc/niab013",
+  "doi_url": "https://doi.org/10.1093/nc/niab013",
+  "title": "Minimal physicalism as a scale-free substrate for cognition and consciousness",
+  "year": "2021",
+  "journal": "Neuroscience of Consciousness",
+  "authors": [
+    "Chris Fields",
+    "James F Glazebrook",
+    "Michael Levin"
+  ],
+  "abstract": "Abstract Theories of consciousness and cognition that assume a neural substrate automatically regard phylogenetically basal, nonneural systems as nonconscious and noncognitive. Here, we advance a scale-free characterization of consciousness and cognition that regards basal systems, including synthetic constructs, as not only informative about the structure and function of experience in more complex systems but also as offering distinct advantages for experimental manipulation. Our “minimal physicalist” approach makes no assumptions beyond those of quantum information theory, and hence is applicable from the molecular scale upwards. We show that standard concepts including integrated information, state broadcasting via small-world networks, and hierarchical Bayesian inference emerge naturally in this setting, and that common phenomena including stigmergic memory, perceptual coarse-graining, and attention switching follow directly from the thermodynamic requirements of classical computation. We show that the self-representation that lies at the heart of human autonoetic awareness can be traced as far back as, and serves the same basic functions as, the stress response in bacteria and other basal systems.",
+  "pmid": "34345441",
+  "pmc": "PMC8327199",
+  "reachable": true,
+  "reachable_status": 403
+}

@@ -1,0 +1,17 @@
+{
+  "doi": "10.1089/bioe.2019.0010",
+  "doi_url": "https://doi.org/10.1089/bioe.2019.0010",
+  "title": "Post-SSRI Sexual Dysfunction: A Bioelectric Mechanism?",
+  "year": "2020",
+  "journal": "Bioelectricity",
+  "authors": [
+    "David Healy",
+    "Joshua LaPalme",
+    "Michael Levin"
+  ],
+  "abstract": "Selective serotonin reuptake inhibitor (SSRI) drugs, targeting serotonin transport, are widely used. A puzzling and biomedically important phenomenon concerns the persistent sexual dysfunction following SSRI use seen in some patients. What could be the mechanism of a persistent physiological state brought on by a transient exposure to serotonin transport blockers? In this study, we briefly review the clinical facts concerning this side effect of serotonin reuptake inhibitors and suggest a possible mechanism. Bioelectric circuits (among neural or non-neural cells) could persistently maintain alterations of bioelectric cell properties (resting potential), resulting in long-term changes in electrophysiology and signaling. We present new data revealing this phenomenon in planarian flatworms, in which brief SSRI exposures induce long-lasting changes in resting potential profile. We also briefly review recent data linking neurotransmitter signaling to developmental bioelectrics. Further study of tissue bioelectric memory could enable the design of ionoceutical interventions to counteract side effects of SSRIs and similar drugs.",
+  "pmid": "34471832",
+  "pmc": "PMC8370302",
+  "reachable": true,
+  "reachable_status": 403
+}

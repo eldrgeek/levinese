@@ -1,0 +1,20 @@
+{
+  "doi": "10.1038/s41467-018-03334-5",
+  "doi_url": "https://doi.org/10.1038/s41467-018-03334-5",
+  "title": "HCN2 Rescues brain defects by enforcing endogenous voltage pre-patterns",
+  "year": "2018",
+  "journal": "Nature Communications",
+  "authors": [
+    "Vaibhav P. Pai",
+    "Alexis Pietak",
+    "Valerie Willocq",
+    "Bin Ye",
+    "Nian-Qing Shi",
+    "Michael Levin"
+  ],
+  "abstract": "Abstract Endogenous bioelectrical signaling coordinates cell behaviors toward correct anatomical outcomes. Lack of a model explaining spatialized dynamics of bioelectric states has hindered the understanding of the etiology of some birth defects and the development of predictive interventions. Nicotine, a known neuroteratogen, induces serious defects in brain patterning and learning. Our bio-realistic computational model explains nicotine’s effects via the disruption of endogenous bioelectrical gradients and predicts that exogenous HCN2 ion channels would restore the endogenous bioelectric prepatterns necessary for brain patterning. Voltage mapping in vivo confirms these predictions, and exogenous expression of the HCN2 ion channel rescues nicotine-exposed embryos, resulting in normal brain morphology and molecular marker expression, with near-normal learning capacity. By combining molecular embryology, electrophysiology, and computational modeling, we delineate a biophysical mechanism of developmental brain damage and its functional rescue.",
+  "pmid": "29519998",
+  "pmc": "PMC5843655",
+  "reachable": true,
+  "reachable_status": 200
+}

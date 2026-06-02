@@ -1,0 +1,18 @@
+{
+  "doi": "10.1016/j.isci.2018.11.021",
+  "doi_url": "https://doi.org/10.1016/j.isci.2018.11.021",
+  "title": "The Bacterial Metabolite Indole Inhibits Regeneration of the Planarian Flatworm Dugesia japonica",
+  "year": "2018",
+  "journal": "iScience",
+  "authors": [
+    "Fredrick J. Lee",
+    "Katherine B. Williams",
+    "Michael Levin",
+    "Benjamin E. Wolfe"
+  ],
+  "abstract": "Planarian flatworms have been used for over a century as models for regeneration. Planarians live in aquatic environments with constant exposure to microbes, but the mechanisms by which bacteria may mediate planarian regeneration are largely unknown. We characterized the microbiome of laboratory populations of the planarian Dugesia japonica and determined how individual bacteria impact D. japonica regeneration. Eight to ten taxa in the phyla Bacteroidetes and Proteobacteria consistently occur across planarian colonies housed in different research laboratories. Individual members of the D. japonica microbiome can delay regeneration including the development of eye spots and blastema formation. The microbial metabolite indole is produced in significant quantities by two bacteria that are consistently found in the D. japonica microbiome and contributes to delays in regeneration. Collectively, these results provide a baseline understanding of the bacteria associated with the planarian D. japonica and demonstrate how metabolite production by host-associated microbes can affect regeneration.",
+  "pmid": "30521984",
+  "pmc": "PMC6280633",
+  "reachable": true,
+  "reachable_status": 200
+}

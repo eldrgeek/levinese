@@ -1,0 +1,24 @@
+{
+  "doi": "10.1002/advs.202200222",
+  "doi_url": "https://doi.org/10.1002/advs.202200222",
+  "title": "Enhancers of Host Immune Tolerance to Bacterial Infection Discovered Using Linked Computational and Experimental Approaches",
+  "year": "2022",
+  "journal": "Advanced Science",
+  "authors": [
+    "Megan M. Sperry",
+    "Richard Novak",
+    "Vishal Keshari",
+    "Alexandre L. M. Dinis",
+    "Mark J. Cartwright",
+    "Diogo M. Camacho",
+    "Jean‐François Paré",
+    "Michael Super",
+    "Michael Levin",
+    "Donald E. Ingber"
+  ],
+  "abstract": "Abstract Current therapeutic strategies against bacterial infections focus on reduction of pathogen load using antibiotics; however, stimulation of host tolerance to infection in the presence of pathogens might offer an alternative approach. Computational transcriptomics and Xenopus laevis embryos are used to discover infection response pathways, identify potential tolerance inducer drugs, and validate their ability to induce broad tolerance. Xenopus exhibits natural tolerance to Acinetobacter baumanii , Klebsiella pneumoniae , Staphylococcus aureus , and Streptococcus pneumoniae bacteria, whereas Aeromonas hydrophila and Pseudomonas aeruginosa produce lethal infections. Transcriptional profiling leads to definition of a 20‐gene signature that discriminates between tolerant and susceptible states, as well as identification of a more active tolerance response to gram negative compared to gram positive bacteria. Gene pathways associated with active tolerance in Xenopus , including some involved in metal ion binding and hypoxia, are found to be conserved across species, including mammals, and administration of a metal chelator (deferoxamine) or a HIF‐1 α agonist (1,4‐DPCA) in embryos infected with lethal A. hydrophila increased survival despite high pathogen load. These data demonstrate the value of combining the Xenopus embryo infection model with computational multiomics analyses for mechanistic discovery and drug repurposing to induce host tolerance to bacterial infections.",
+  "pmid": "35706367",
+  "pmc": "PMC9475558",
+  "reachable": true,
+  "reachable_status": 200
+}

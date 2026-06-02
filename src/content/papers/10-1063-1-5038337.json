@@ -1,0 +1,24 @@
+{
+  "doi": "10.1063/1.5038337",
+  "doi_url": "https://doi.org/10.1063/1.5038337",
+  "title": "Perspective: The promise of multi-cellular engineered living systems",
+  "year": "2018",
+  "journal": "APL Bioengineering",
+  "authors": [
+    "Roger D. Kamm",
+    "Rashid Bashir",
+    "Natasha Arora",
+    "Roy D. Dar",
+    "Martha U. Gillette",
+    "Linda G. Griffith",
+    "Melissa L. Kemp",
+    "Kathy Kinlaw",
+    "Michael Levin",
+    "Adam C. Martin"
+  ],
+  "abstract": "Recent technological breakthroughs in our ability to derive and differentiate induced pluripotent stem cells, organoid biology, organ-on-chip assays, and 3-D bioprinting have all contributed to a heightened interest in the design, assembly, and manufacture of living systems with a broad range of potential uses. This white paper summarizes the state of the emerging field of “multi-cellular engineered living systems,” which are composed of interacting cell populations. Recent accomplishments are described, focusing on current and potential applications, as well as barriers to future advances, and the outlook for longer term benefits and potential ethical issues that need to be considered.",
+  "pmid": "31069321",
+  "pmc": "PMC6481725",
+  "reachable": true,
+  "reachable_status": 403
+}

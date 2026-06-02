@@ -1,0 +1,20 @@
+{
+  "doi": "10.1089/bioe.2025.0002",
+  "doi_url": "https://doi.org/10.1089/bioe.2025.0002",
+  "title": "The Bioelectrics of Immortality and Mortality in Cold-Sensitive\n                    <i>Hydra oligactis</i>",
+  "year": "2025",
+  "journal": "Bioelectricity",
+  "authors": [
+    "Stefania E. Kapsetaki",
+    "Angelina Pimkina",
+    "Patrick McMillen",
+    "Parande Tayyebi",
+    "Patrick Erickson",
+    "Michael Levin"
+  ],
+  "abstract": "Introduction: Bioelectric properties of cells are an important aspect of development, regeneration, and cancer. Because of their relevance to the establishment and maintenance of tissue form and function, bioelectric patterns have been hypothesized to have a role in aging. However, no data on bioelectric patterns of the whole body of young and old individuals have been available. Methods: We observed and quantified the bioelectrics of whole-body immortal (growing at 22°C) and aging mortal (growing at 10°C) cold-sensitive Hydra oligactis . Results: We found that the membrane-voltage-sensitive dyes FluoVolt and VF2.1.Cl can be used to reveal large-scale patterns of cellular membrane resting voltage potentials in hydra. The consensus whole-body bioelectric atlas of immortal hydra shows a consistently depolarized foot and occasionally depolarized tentacles. Immortal hydra are, on average, more depolarized and exhibit less sharply defined bioelectric patterns than old mortal hydra. Immortal hydra have a sharper foot:central body ratio than old mortal hydra. Conclusions: These data establish hydra as the first model system in which whole-body bioelectric imaging can be performed; the different bioelectric patterns of immortal versus old mortal hydra are consistent with a bioelectric component to the aging process and suggest a roadmap for using this model organism in antiaging therapeutic screens involving electroceuticals.",
+  "pmid": "41623508",
+  "pmc": "PMC12851869",
+  "reachable": true,
+  "reachable_status": 403
+}

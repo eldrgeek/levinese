@@ -1,0 +1,18 @@
+{
+  "doi": "10.1002/reg2.54",
+  "doi_url": "https://doi.org/10.1002/reg2.54",
+  "title": "Physiological controls of large‐scale patterning in planarian regeneration: a molecular and computational perspective on growth and form",
+  "year": "2016",
+  "journal": "Regeneration",
+  "authors": [
+    "Fallon Durant",
+    "Daniel Lobo",
+    "Jennifer Hammelman",
+    "Michael Levin"
+  ],
+  "abstract": "Planaria are complex metazoans that repair damage to their bodies and cease remodeling when a correct anatomy has been achieved. This model system offers a unique opportunity to understand how large-scale anatomical homeostasis emerges from the activities of individual cells. Much progress has been made on the molecular genetics of stem cell activity in planaria. However, recent data also indicate that the global pattern is regulated by physiological circuits composed of ionic and neurotransmitter signaling. Here, we overview the multi-scale problem of understanding pattern regulation in planaria, with specific focus on bioelectric signaling via ion channels and gap junctions (electrical synapses), and computational efforts to extract explanatory models from functional and molecular data on regeneration. We present a perspective that interprets results in this fascinating field using concepts from dynamical systems theory and computational neuroscience. Serving as a tractable nexus between genetic, physiological, and computational approaches to pattern regulation, planarian pattern homeostasis harbors many deep insights for regenerative medicine, evolutionary biology, and engineering.",
+  "pmid": "27499881",
+  "pmc": "PMC4895326",
+  "reachable": true,
+  "reachable_status": 403
+}

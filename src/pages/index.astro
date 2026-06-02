@@ -1,7 +1,10 @@
 ---
 import Base from '../layouts/Base.astro';
-import { terms } from '../data/terms';
+import { getCollection } from 'astro:content';
 import { signatories, llmReplies } from '../data/colophon';
+
+const rawTerms = await getCollection('terms');
+const terms = rawTerms.map(e => ({ slug: e.slug, title: e.data.title, subtitle: e.data.subtitle, definition: e.body, tags: e.data.tags, is_new: e.data.is_new }));
 
 const signedModels = llmReplies.filter(r => r.signed);
 ---
@@ -47,16 +50,19 @@ const signedModels = llmReplies.filter(r => r.signed);
         <h2 class="font-serif text-2xl font-medium text-ink mb-4">What's in the archive</h2>
         <div class="space-y-3">
           {[
-            { count: '364', label: 'papers cataloged' },
+            { count: '364', label: 'papers cataloged', href: '/papers/' },
             { count: '333', label: 'video transcripts' },
             { count: '350', label: 'blog posts' },
             { count: '22', label: 'magazine articles' },
             { count: '7', label: 'Substack posts' },
             { count: '4', label: 'X archive pages' },
-          ].map(({ count, label }) => (
+          ].map(({ count, label, href }) => (
             <div class="flex items-baseline gap-3">
               <span class="font-mono text-2xl font-medium text-teal">{count}</span>
-              <span class="text-muted text-sm">{label}</span>
+              {href
+                ? <a href={href} class="text-muted text-sm hover:text-teal transition-colors">{label} →</a>
+                : <span class="text-muted text-sm">{label}</span>
+              }
             </div>
           ))}
         </div>

@@ -1,0 +1,22 @@
+{
+  "doi": "10.1021/acsbiomaterials.9b00810",
+  "doi_url": "https://doi.org/10.1021/acsbiomaterials.9b00810",
+  "title": "Hyperosmolar Potassium Inhibits Myofibroblast Conversion and Reduces Scar Tissue Formation",
+  "year": "2019",
+  "journal": "ACS Biomaterials Science &amp; Engineering",
+  "authors": [
+    "Jonathan M. Grasman",
+    "Marisa D. Williams",
+    "Constantine G. Razis",
+    "Mattia Bonzanni",
+    "Annie S. Golding",
+    "Dana M. Cairns",
+    "Michael Levin",
+    "David L. Kaplan"
+  ],
+  "abstract": "Scar formation is a natural result of almost all wound healing in adult mammals. Unfortunately, scarring disrupts normal tissue function and can cause significant physical and psychological distress. In addition to improving surgical techniques to limit scar formation, several therapies are under development toward the same goal. Many of these treatments aim to disrupt transforming growth factor β1 (TGFβ1) signaling, as this is a critical control point for fibroblast differentiation into myofibroblasts; a contractile cell that organizes synthesized collagen fibrils into scar tissue. The present study aimed to examine the role of hyperosmolar potassium gluconate (KGluc) on fibroblast function in skin repair. KGluc was first determined to negatively regulate fibroblast proliferation, metabolism, and migration in a dose-dependent manner in vitro. Increasing concentrations of KGluc also inhibited differentiation into myofibroblasts, suggesting that local KGluc treatment might reduce fibrosis. KGluc delivery was confirmed via loading into collagen hydrogels and used to treat a full thickness skin wound in mice. KGluc qualitatively slowed initial closure of the wounds and resulted in tissue that more closely resembled mature, healthy skin (epidermal thickness and dermal-epidermal morphology) when compared to unloaded collagen hydrogels. KGluc treatment significantly reduced the number of myofibroblasts within the dermis while upregulated blood vessel density with respect to unloaded hydrogels, likely a result of disruption of TGFβ1 signaling. Taken together, these data demonstrate the effectiveness of KGluc treatment on skin wound healing and suggest that this may be an efficient treatment to limit scar formation.",
+  "pmid": "32440531",
+  "pmc": "PMC7241611",
+  "reachable": true,
+  "reachable_status": 403
+}

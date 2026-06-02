@@ -1,0 +1,18 @@
+{
+  "doi": "10.1002/bies.201900028",
+  "doi_url": "https://doi.org/10.1002/bies.201900028",
+  "title": "On the Generalization of Habituation: How Discrete Biological Systems Respond to Repetitive Stimuli",
+  "year": "2019",
+  "journal": "BioEssays",
+  "authors": [
+    "Mattia Bonzanni",
+    "Nicolas Rouleau",
+    "Michael Levin",
+    "David Lee Kaplan"
+  ],
+  "abstract": "Habituation, a form of non‐associative learning, isno longer studied exclusively within the fields of psychology and neuroscience. Indeed, the same stimulus–response pattern is observed at the molecular, cellular, and organismal scales and is not dependent upon the presence of neurons. Hence, a more inclusive theory is required to accommodate aneural forms of habituation. Here an abstraction of the habituation process that does not rely upon particular biological pathways or substrates is presented. Instead, five generalizable elements that define the habituation process are operationalized. The formulation can be applied to interrogate systems as they respond to several stimulation paradigms, providing new insights and supporting existing behavioral data. The model can be used to deduce the relative contribution of elements that contribute to the measurable output of the system. The results suggest that habituation serves as a general biological strategy that any system can implement to adaptively respond to harmless, repetitive stimuli.",
+  "pmid": "31222777",
+  "pmc": null,
+  "reachable": true,
+  "reachable_status": 403
+}

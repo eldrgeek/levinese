@@ -1,0 +1,17 @@
+{
+  "doi": "10.1101/pdb.prot5532",
+  "doi_url": "https://doi.org/10.1101/pdb.prot5532",
+  "title": "High-Throughput <i>Xenopus laevis</i> Immunohistochemistry Using Agarose Sections",
+  "year": "2010",
+  "journal": "Cold Spring Harbor Protocols",
+  "authors": [
+    "Douglas Blackiston",
+    "Laura N. Vandenberg",
+    "Michael Levin"
+  ],
+  "abstract": "INTRODUCTION Characterizing protein localization in Xenopus laevis embryos is an important aspect of developmental and regenerative studies that use this advantageous model system. Although whole-mount immunohistochemistry is an efficient and powerful way to visualize surface and ectodermal expression, its ability to localize proteins in internal tissues and cells is limited by the incomplete penetration of antibodies through outer layers of the embryo. Microtome sections of paraffin-embedded embryos provide good internal resolution, but precise orientation of embryos can be difficult, and sectioning many samples is time intensive. Further, care must be taken with sections to minimize tissue damage, because heat and organic solvents used during the process can render some proteins invisible to antibody detection. The method described here is a short protocol for generating robust sections for use in immunoreactions with as little as two days from collection to visualization, making it useful as a rapid screening process. Advantages of this method include: (1) the durability of the sections produced (which can be treated as if they were wholemounts and processed by fluid aspiration in vials rather than mounted onto slides); (2) the ability to examine multiple antibody targets in tandem, in tissue that is never heated or extracted with harsh reagents; (3) the lack of autofluorescence as occurs in glutaraldehyde-containing media; and (4) the ease of orientation of embryos in a fully transparent block.",
+  "pmid": "21123419",
+  "pmc": "PMC3654656",
+  "reachable": true,
+  "reachable_status": 200
+}

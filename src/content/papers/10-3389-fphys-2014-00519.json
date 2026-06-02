@@ -1,0 +1,17 @@
+{
+  "doi": "10.3389/fphys.2014.00519",
+  "doi_url": "https://doi.org/10.3389/fphys.2014.00519",
+  "title": "Long-range gap junctional signaling controls oncogene-mediated tumorigenesis in Xenopus laevis embryos",
+  "year": "2015",
+  "journal": "Frontiers in Physiology",
+  "authors": [
+    "Brook T. Chernet",
+    "Chris Fields",
+    "Michael Levin"
+  ],
+  "abstract": "In addition to the immediate microenvironment, long-range signaling may be an important component of cancer. Molecular-genetic analyses have implicated gap junctions-key mediators of cell-cell communication-in carcinogenesis. We recently showed that the resting voltage potential of distant cell groups is a key determinant of metastatic transformation and tumor induction. Here, we show in the Xenopus laevis model that gap junctional communication (GJC) is a modulator of the long-range bioelectric signaling that regulates tumor formation. Genetic disruption of GJC taking place within tumors, within remote host tissues, or between the host and tumors significantly lowers the incidence of tumors induced by KRAS mutations. The most pronounced suppression of tumor incidence was observed upon GJC disruption taking place farther away from oncogene-expressing cells, revealing a role for GJC in distant cells in the control of tumor growth. In contrast, enhanced GJC communication through the overexpression of wild-type connexin Cx26 increased tumor incidence. Our data confirm a role for GJC in tumorigenesis, and reveal that this effect is non-local. Based on these results and on published data on movement of ions through GJs, we present a quantitative model linking the GJC coupling and bioelectrical state of cells to the ability of oncogenes to initiate tumorigenesis. When integrated with data on endogenous bioelectric signaling during left-right patterning, the model predicts differential tumor incidence outcomes depending on the spatial configurations of gap junction paths relative to tumor location and major anatomical body axes. Testing these predictions, we found that the strongest influence of GJ modulation on tumor suppression by hyperpolarization occurred along the embryonic left-right axis. Together, these data reveal new, long-range aspects of cancer control by the host's physiological parameters.",
+  "pmid": "25646081",
+  "pmc": "PMC4298169",
+  "reachable": true,
+  "reachable_status": 200
+}

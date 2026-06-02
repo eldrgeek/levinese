@@ -1,0 +1,16 @@
+{
+  "doi": "10.1111/acel.70305",
+  "doi_url": "https://doi.org/10.1111/acel.70305",
+  "title": "Atavistic Genetic Expression Dissociation (\n                    <scp>AGED</scp>\n                    ) During Aging: Meta‐Phylostratigraphic Evidence of Cellular and Tissue‐Level Phylogenetic Dissociation",
+  "year": "2026",
+  "journal": "Aging Cell",
+  "authors": [
+    "Léo Pio‐Lopez",
+    "Michael Levin"
+  ],
+  "abstract": "ABSTRACT Aging is commonly attributed to accumulated damage, or evolved antagonistic genetic trade‐offs, which lead to an accumulation of damage causing misexpression of genes necessary for longevity. We propose an atavistic dysregulation of gene expression at cellular and tissue levels during aging, framing aging as a gradual regression toward ancestral cellular states. Similarly to the atavistic model of cancer, in which cells revert to unicellular‐like behavior, aging may result from the breakdown of coordinated morphogenetic control, leading organs and tissues toward less integrated, ancient unicellular states. We suggest that aging may involve a progressive reversal of the well‐known ontogenetic tracing of prior phylogenetic embryonic characteristics. Moreover, aging could involve a loss of large‐scale coordination, with tissues reverting to ancient gene expression to different degrees. We tested this hypothesis using a meta‐phylostratigraphic analysis, finding: (1) An atavistic over‐representation of differential expression in the most ancient genes and under‐representation in the evolutionary youngest genes for two multi‐tissue aging databases, and tissues covering skin, ovarian, immune, senescent and mesenchymal‐senescent cells; (2) No significant atavistic over‐representation of the differential gene expression during aging of brain cells and mesenchymal stem cells; (3) overall age‐dependent increase of heterogeneity in the direction of the phylogenetic position of tissues' transcriptional profiles; (4) and an overall negative evolutionary age mean shift toward the most ancient genes. Our analyses suggest that aging involves uncoordinated and tissue‐specific phylogenetic changes in gene expression. Understanding aging as a structured, heterogeneous atavistic process opens new avenues for rejuvenation, focusing on restoring multicellular coherence in evolutionarily youthful gene expression.",
+  "pmid": "41361829",
+  "pmc": "PMC12740083",
+  "reachable": true,
+  "reachable_status": 403
+}

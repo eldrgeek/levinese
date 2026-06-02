@@ -1,0 +1,20 @@
+{
+  "doi": "10.1039/c5ib00281h",
+  "doi_url": "https://doi.org/10.1039/c5ib00281h",
+  "title": "Conserved roles for cytoskeletal components in determining laterality",
+  "year": "2016",
+  "journal": "Integrative Biology",
+  "authors": [
+    "Gary S. McDowell",
+    "Joan M. Lemire",
+    "Jean-Francois Paré",
+    "Garrett Cammarata",
+    "Laura Anne Lowery",
+    "Michael Levin"
+  ],
+  "abstract": "Consistently-biased left-right (LR) patterning is required for the proper placement of organs including the heart and viscera. The LR axis is especially fascinating as an example of multi-scale pattern formation, since here chiral events at the subcellular level are integrated and amplified into asymmetric transcriptional cascades and ultimately into the anatomical patterning of the entire body. In contrast to the other two body axes, there is considerable controversy about the earliest mechanisms of embryonic laterality. Many molecular components of asymmetry have not been widely tested among phyla with diverse bodyplans, and it is unknown whether parallel (redundant) pathways may exist that could reverse abnormal asymmetry states at specific checkpoints in development. To address conservation of the early steps of LR patterning, we used the Xenopus laevis (frog) embryo to functionally test a number of protein targets known to direct asymmetry in plants, fruit fly, and rodent. Using the same reagents that randomize asymmetry in Arabidopsis, Drosophila, and mouse embryos, we show that manipulation of the microtubule and actin cytoskeleton immediately post-fertilization, but not later, results in laterality defects in Xenopus embryos. Moreover, we observed organ-specific randomization effects and a striking dissociation of organ situs from effects on the expression of left side control genes, which parallel data from Drosophila and mouse. Remarkably, some early manipulations that disrupt laterality of transcriptional asymmetry determinants can be subsequently \"rescued\" by the embryo, resulting in normal organ situs. These data reveal the existence of novel corrective mechanisms, demonstrate that asymmetric expression of Nodal is not a definitive marker of laterality, and suggest the existence of amplification pathways that connect early cytoskeletal processes to control of organ situs bypassing Nodal. Counter to alternative models of symmetry breaking during neurulation (via ciliary structures absent in many phyla), our data suggest a widely-conserved role for the cytoskeleton in regulating left-right axis formation immediately after fertilization of the egg. The novel mechanisms that rescue organ situs, even after incorrect expression of genes previously considered to be left-side master regulators, suggest LR patterning as a new context in which to explore multi-scale redundancy and integration of patterning from the subcellular structure to the entire bodyplan.",
+  "pmid": "26928161",
+  "pmc": "PMC4792684",
+  "reachable": true,
+  "reachable_status": 403
+}

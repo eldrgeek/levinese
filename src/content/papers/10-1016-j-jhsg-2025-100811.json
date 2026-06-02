@@ -1,0 +1,24 @@
+{
+  "doi": "10.1016/j.jhsg.2025.100811",
+  "doi_url": "https://doi.org/10.1016/j.jhsg.2025.100811",
+  "title": "Sustained Serotonergic Stimulation Platform for Peripheral Axonal Regeneration",
+  "year": "2025",
+  "journal": "Journal of Hand Surgery Global Online",
+  "authors": [
+    "Sara C. Chaker",
+    "Ling Yan",
+    "Jugal Kishore Sahoo",
+    "Cengiz H. Acikel",
+    "Isaac V. Manzanera Esteve",
+    "David L. Kaplan",
+    "Michael Levin",
+    "Vijay S. Gorantla",
+    "Wesley P. Thayer",
+    "Huseyin Karagoz"
+  ],
+  "abstract": "Purpose: Limitations remain in peripheral nerve injury treatments. Previous studies suggest that serotonergic signaling promotes nerve regeneration by facilitating reinnervation and modulating neuronal guidance. This study aimed to evaluate the potential of serotonergic peripheral neuroregeneration using Zolmitriptan, a serotonin receptor agonist. Methods: A total of 24 female Sprague-Dawley rats were divided into four nerve injury cohorts. Sciatic nerve transection and primary repair were performed in two groups, whereas a 1-cm nerve defect was created and repaired with the same nerve segment as an autograft in the other two groups. One primary repair group and one nerve graft group received 1 mL of Zolmitriptan directly to the nerve via sonicated silk protein gels. Control groups received gels without Zolmitriptan. At postoperative 8 weeks, the sciatic nerves were collected for histological analysis. Ex vivo diffusion tensor magnetic resonance imaging was also used to assess axonal regeneration. Results: The primary repair cohort treated with Zolmitriptan demonstrated robust regeneration, whereas the control cohort showed poorer regeneration. There was no statistical difference in regeneration between the treated and control autograft groups. When evaluating the regeneration rates of the primary repair groups, 80% of the axons successfully extended to the distal end in the Zolmitriptan group, compared with 57% in the control group. In the autograft groups, these rates were 65% for Zolmitriptan and 42% for the control. Electron microscopy supported the axonal counting results. Conclusions: This pilot study suggests that Zolmitriptan may enhance peripheral nerve regeneration following transection injuries, warranting further investigation for clinical translation. Clinical relevance: This study presents promising results regarding the potential of serotonin agonists to aid in peripheral nerve recovery. Additional investigation into these findings could inform new treatment strategies for peripheral nerve injuries.",
+  "pmid": "40917196",
+  "pmc": "PMC12409387",
+  "reachable": true,
+  "reachable_status": 200
+}

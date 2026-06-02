@@ -1,0 +1,20 @@
+{
+  "doi": "10.3390/cancers14061499",
+  "doi_url": "https://doi.org/10.3390/cancers14061499",
+  "title": "Ion Channel Drugs Suppress Cancer Phenotype in NG108-15 and U87 Cells: Toward Novel Electroceuticals for Glioblastoma",
+  "year": "2022",
+  "journal": "Cancers",
+  "authors": [
+    "Juanita Mathews",
+    "Franz Kuchling",
+    "David Baez-Nieto",
+    "Miranda Diberardinis",
+    "Jen Q. Pan",
+    "Michael Levin"
+  ],
+  "abstract": "Glioblastoma is a lethal brain cancer that commonly recurs after tumor resection and chemotherapy treatment. Depolarized resting membrane potentials and an acidic intertumoral extracellular pH have been associated with a proliferative state and drug resistance, suggesting that forced hyperpolarization and disruption of proton pumps in the plasma membrane could be a successful strategy for targeting glioblastoma overgrowth. We screened 47 compounds and compound combinations, most of which were ion-modulating, at different concentrations in the NG108-15 rodent neuroblastoma/glioma cell line. A subset of these were tested in the U87 human glioblastoma cell line. A FUCCI cell cycle reporter was stably integrated into both cell lines to monitor proliferation and cell cycle response. Immunocytochemistry, electrophysiology, and a panel of physiological dyes reporting voltage, calcium, and pH were used to characterize responses. The most effective treatments on proliferation in U87 cells were combinations of NS1643 and pantoprazole; retigabine and pantoprazole; and pantoprazole or NS1643 with temozolomide. Marker analysis and physiological dye signatures suggest that exposure to bioelectric drugs significantly reduces proliferation, makes the cells senescent, and promotes differentiation. These results, along with the observed low toxicity in human neurons, show the high efficacy of electroceuticals utilizing combinations of repurposed FDA approved drugs.",
+  "pmid": "35326650",
+  "pmc": "PMC8946312",
+  "reachable": true,
+  "reachable_status": 403
+}

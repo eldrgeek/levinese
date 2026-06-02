@@ -1,0 +1,17 @@
+{
+  "doi": "10.1093/lifemeta/load051",
+  "doi_url": "https://doi.org/10.1093/lifemeta/load051",
+  "title": "The energetics of cellular life transitions",
+  "year": "2024",
+  "journal": "Life Metabolism",
+  "authors": [
+    "Anna S Monzel",
+    "Michael Levin",
+    "Martin Picard"
+  ],
+  "abstract": "Abstract Major life transitions are always difficult because change costs energy. Recent findings have demonstrated how mitochondrial oxidative phosphorylation (OxPhos) defects increase the energetic cost of living and that excessive integrated stress response (ISR) signaling may prevent cellular identity transitions during development. In this perspective, we discuss general bioenergetic principles of life transitions and the costly molecular processes involved in reprograming the cellular hardware/software as cells shift identity. The energetic cost of cellular differentiation has not been directly quantified, representing a gap in knowledge. We propose that the ISR is an energetic checkpoint evolved to (i) prevent OxPhos-deficient cells from engaging in excessively costly transitions and (ii) allow ISR-positive cells to recruit systemic energetic resources by signaling via GDF15 and the brain.",
+  "pmid": "38566850",
+  "pmc": "PMC10984639",
+  "reachable": true,
+  "reachable_status": 403
+}

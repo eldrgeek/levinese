@@ -1,0 +1,16 @@
+{
+  "doi": "10.1002/wsbm.1410",
+  "doi_url": "https://doi.org/10.1002/wsbm.1410",
+  "title": "Multiscale memory and bioelectric error correction in the cytoplasm–cytoskeleton‐membrane system",
+  "year": "2018",
+  "journal": "WIREs Systems Biology and Medicine",
+  "authors": [
+    "Chris Fields",
+    "Michael Levin"
+  ],
+  "abstract": "A fundamental aspect of life is the modification of anatomy, physiology, and behavior in the face of changing conditions. This is especially illustrated by the adaptive regulation of growth and form that underlies the ability of most organisms—from single cells to complex large metazoa—to develop, remodel, and regenerate to specific anatomical patterns. What is the relationship of the genome and other cellular components to the robust computations that underlie this remarkable pattern homeostasis? Here we examine the role of constraints defined at the cellular level, especially endogenous bioelectricity, in generating and propagating biological information. We review evidence that the genome is only one of several multi‐generational biological memories. Focusing on the cell membrane and cytoplasm, which is physically continuous across all of life in evolutionary timeframes, we characterize the environment as an interstitial space through which messages are passed via bioelectric and biochemical codes. We argue that biological memory is a fundamental phenomenon that cannot be understood at any one scale, and suggest that functional studies of information propagated in non‐genomic cellular structures will not only strongly impact evolutionary developmental biology, but will also have implications for regenerative medicine and synthetic bioengineering. WIREs Syst Biol Med 2018, 10:e1410. doi: 10.1002/wsbm.1410 This article is categorized under: Developmental Biology &gt; Stem Cell Biology and Regeneration Physiology &gt; Physiology of Model Organisms Models of Systems Properties and Processes &gt; Cellular Models",
+  "pmid": "29148257",
+  "pmc": null,
+  "reachable": true,
+  "reachable_status": 403
+}

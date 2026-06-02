@@ -1,0 +1,15 @@
+{
+  "doi": "10.1016/j.pbiomolbio.2021.04.007",
+  "doi_url": "https://doi.org/10.1016/j.pbiomolbio.2021.04.007",
+  "title": "Bioelectrical approaches to cancer as a problem of the scaling of the cellular self",
+  "year": "2021",
+  "journal": "Progress in Biophysics and Molecular Biology",
+  "authors": [
+    "Michael Levin"
+  ],
+  "abstract": "One lens with which to understand the complex phenomenon of cancer is that of developmental biology. Cancer is the inevitable consequence of a breakdown of the communication that enables individual cells to join into computational networks that work towards large-scale, morphogenetic goals instead of more primitive, unicellular objectives. This perspective suggests that cancer may be a physiological disorder, not necessarily due to problems with the genetically-specified protein hardware. One aspect of morphogenetic coordination is bioelectric signaling, and indeed an abnormal bioelectric signature non-invasively reveals the site of incipient tumors in amphibian models. Functionally, a disruption of resting potential states triggers metastatic melanoma phenotypes in embryos with no genetic defects or carcinogen exposure. Conversely, optogenetic or molecular-biological modulation of bioelectric states can override powerful oncogenic mutations and prevent or normalize tumors. The bioelectrically-mediated information flows that harness cells toward body-level anatomical outcomes represent a very attractive and tractable endogenous control system, which is being targeted by emerging approaches to cancer.",
+  "pmid": "33961843",
+  "pmc": null,
+  "reachable": true,
+  "reachable_status": 200
+}

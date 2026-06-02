@@ -1,0 +1,17 @@
+{
+  "doi": "10.3390/e24050601",
+  "doi_url": "https://doi.org/10.3390/e24050601",
+  "title": "Metacognition as a Consequence of Competing Evolutionary Time Scales",
+  "year": "2022",
+  "journal": "Entropy",
+  "authors": [
+    "Franz Kuchling",
+    "Chris Fields",
+    "Michael Levin"
+  ],
+  "abstract": "Evolution is full of coevolving systems characterized by complex spatio-temporal interactions that lead to intertwined processes of adaptation. Yet, how adaptation across multiple levels of temporal scales and biological complexity is achieved remains unclear. Here, we formalize how evolutionary multi-scale processing underlying adaptation constitutes a form of metacognition flowing from definitions of metaprocessing in machine learning. We show (1) how the evolution of metacognitive systems can be expected when fitness landscapes vary on multiple time scales, and (2) how multiple time scales emerge during coevolutionary processes of sufficiently complex interactions. After defining a metaprocessor as a regulator with local memory, we prove that metacognition is more energetically efficient than purely object-level cognition when selection operates at multiple timescales in evolution. Furthermore, we show that existing modeling approaches to coadaptation and coevolution—here active inference networks, predator–prey interactions, coupled genetic algorithms, and generative adversarial networks—lead to multiple emergent timescales underlying forms of metacognition. Lastly, we show how coarse-grained structures emerge naturally in any resource-limited system, providing sufficient evidence for metacognitive systems to be a prevalent and vital component of (co-)evolution. Therefore, multi-scale processing is a necessary requirement for many evolutionary scenarios, leading to de facto metacognitive evolutionary outcomes.",
+  "pmid": "35626486",
+  "pmc": "PMC9141326",
+  "reachable": true,
+  "reachable_status": 403
+}

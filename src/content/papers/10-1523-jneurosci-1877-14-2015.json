@@ -1,0 +1,20 @@
+{
+  "doi": "10.1523/JNEUROSCI.1877-14.2015",
+  "doi_url": "https://doi.org/10.1523/JNEUROSCI.1877-14.2015",
+  "title": "Endogenous Gradients of Resting Potential Instructively Pattern Embryonic Neural Tissue via Notch Signaling and Regulation of Proliferation",
+  "year": "2015",
+  "journal": "The Journal of Neuroscience",
+  "authors": [
+    "Vaibhav P. Pai",
+    "Joan M. Lemire",
+    "Jean-François Paré",
+    "Gufa Lin",
+    "Ying Chen",
+    "Michael Levin"
+  ],
+  "abstract": "Biophysical forces play important roles throughout embryogenesis, but the roles of spatial differences in cellular resting potentials during large-scale brain morphogenesis remain unknown. Here, we implicate endogenous bioelectricity as an instructive factor during brain patterning in Xenopus laevis . Early frog embryos exhibit a characteristic hyperpolarization of cells lining the neural tube; disruption of this spatial gradient of the transmembrane potential ( V mem ) diminishes or eliminates the expression of early brain markers, and causes anatomical mispatterning of the brain, including absent or malformed regions. This effect is mediated by voltage-gated calcium signaling and gap-junctional communication. In addition to cell-autonomous effects, we show that hyperpolarization of transmembrane potential ( V mem ) in ventral cells outside the brain induces upregulation of neural cell proliferation at long range. Misexpression of the constitutively active form of Notch , a suppressor of neural induction, impairs the normal hyperpolarization pattern and neural patterning; forced hyperpolarization by misexpression of specific ion channels rescues brain defects induced by activated Notch signaling. Strikingly, hyperpolarizing posterior or ventral cells induces the production of ectopic neural tissue considerably outside the neural field. The hyperpolarization signal also synergizes with canonical reprogramming factors ( POU and HB4 ), directing undifferentiated cells toward neural fate in vivo . These data identify a new functional role for bioelectric signaling in brain patterning, reveal interactions between V mem and key biochemical pathways (Notch and Ca 2+ signaling) as the molecular mechanism by which spatial differences of V mem regulate organogenesis of the vertebrate brain, and suggest voltage modulation as a tractable strategy for intervention in certain classes of birth defects.",
+  "pmid": "25762681",
+  "pmc": "PMC4355204",
+  "reachable": true,
+  "reachable_status": 200
+}

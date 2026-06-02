@@ -1,0 +1,17 @@
+{
+  "doi": "10.1146/annurev-bioeng-071114-040647",
+  "doi_url": "https://doi.org/10.1146/annurev-bioeng-071114-040647",
+  "title": "Endogenous Bioelectric Signaling Networks: Exploiting Voltage Gradients for Control of Growth and Form",
+  "year": "2017",
+  "journal": "Annual Review of Biomedical Engineering",
+  "authors": [
+    "Michael Levin",
+    "Giovanni Pezzulo",
+    "Joshua M. Finkelstein"
+  ],
+  "abstract": "Living systems exhibit remarkable abilities to self-assemble, regenerate, and remodel complex shapes. How cellular networks construct and repair specific anatomical outcomes is an open question at the heart of the next-generation science of bioengineering. Developmental bioelectricity is an exciting emerging discipline that exploits endogenous bioelectric signaling among many cell types to regulate pattern formation. We provide a brief overview of this field, review recent data in which bioelectricity is used to control patterning in a range of model systems, and describe the molecular tools being used to probe the role of bioelectrics in the dynamic control of complex anatomy. We suggest that quantitative strategies recently developed to infer semantic content and information processing from ionic activity in the brain might provide important clues to cracking the bioelectric code. Gaining control of the mechanisms by which large-scale shape is regulated in vivo will drive transformative advances in bioengineering, regenerative medicine, and synthetic morphology, and could be used to therapeutically address birth defects, traumatic injury, and cancer.",
+  "pmid": "28633567",
+  "pmc": "PMC10478168",
+  "reachable": true,
+  "reachable_status": 200
+}

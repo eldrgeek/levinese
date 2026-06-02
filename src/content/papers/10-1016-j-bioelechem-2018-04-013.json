@@ -1,0 +1,18 @@
+{
+  "doi": "10.1016/j.bioelechem.2018.04.013",
+  "doi_url": "https://doi.org/10.1016/j.bioelechem.2018.04.013",
+  "title": "Bioelectrical coupling in multicellular domains regulated by gap junctions: A conceptual approach",
+  "year": "2018",
+  "journal": "Bioelectrochemistry",
+  "authors": [
+    "Javier Cervera",
+    "Alexis Pietak",
+    "Michael Levin",
+    "Salvador Mafe"
+  ],
+  "abstract": "We review the basic concepts involved in bioelectrically-coupled multicellular domains, focusing on the role of membrane potentials (V<sub>mem</sub>). In the first model, single-cell V<sub>mem</sub> is modulated by two generic polarizing and depolarizing ion channels, while intercellular coupling is implemented via voltage-gated gap junctions. Biochemical and bioelectrical signals are integrated via a feedback loop between V<sub>mem</sub> and the transcription and translation of a protein forming an ion channel. The effective rate constants depend on the single-cell V<sub>mem</sub> because these potentials modulate the local concentrations of signaling molecules and ions. This electrochemically-based idealization of the complex biophysical problem suggests that the spatio-temporal map of single-cell potentials can influence downstream patterning processes by means of the voltage-gated gap junction interconnectivity, much as in the case of electronic devices where the control of electric potentials and currents allows the local modulation of the circuitry to achieve full functionality. An alternative theoretical approach, the BioElectrical Tissue Simulation Engine (BETSE), is also presented. The BETSE modeling environment utilizes finite volume techniques to simulate bioelectric states from the perspective of ion concentrations and fluxes. This model has been successfully applied to make predictions and explain experimental observations in a variety of embryonic, regenerative, and oncogenic contexts.",
+  "pmid": "29723806",
+  "pmc": null,
+  "reachable": true,
+  "reachable_status": 200
+}

@@ -1,0 +1,15 @@
+{
+  "doi": "10.1091/mbc.E13-12-0708",
+  "doi_url": "https://doi.org/10.1091/mbc.E13-12-0708",
+  "title": "Molecular bioelectricity: how endogenous voltage potentials control cell behavior and instruct pattern regulation in vivo",
+  "year": "2014",
+  "journal": "Molecular Biology of the Cell",
+  "authors": [
+    "Michael Levin"
+  ],
+  "abstract": "In addition to biochemical gradients and transcriptional networks, cell behavior is regulated by endogenous bioelectrical cues originating in the activity of ion channels and pumps, operating in a wide variety of cell types. Instructive signals mediated by changes in resting potential control proliferation, differentiation, cell shape, and apoptosis of stem, progenitor, and somatic cells. Of importance, however, cells are regulated not only by their own V mem but also by the V mem of their neighbors, forming networks via electrical synapses known as gap junctions. Spatiotemporal changes in V mem distribution among nonneural somatic tissues regulate pattern formation and serve as signals that trigger limb regeneration, induce eye formation, set polarity of whole-body anatomical axes, and orchestrate craniofacial patterning. New tools for tracking and functionally altering V mem gradients in vivo have identified novel roles for bioelectrical signaling and revealed the molecular pathways by which V mem changes are transduced into cascades of downstream gene expression. Because channels and gap junctions are gated posttranslationally, bioelectrical networks have their own characteristic dynamics that do not reduce to molecular profiling of channel expression (although they couple functionally to transcriptional networks). The recent data provide an exciting opportunity to crack the bioelectric code, and learn to program cellular activity at the level of organs, not only cell types. The understanding of how patterning information is encoded in bioelectrical networks, which may require concepts from computational neuroscience, will have transformative implications for embryogenesis, regeneration, cancer, and synthetic bioengineering.",
+  "pmid": "25425556",
+  "pmc": "PMC4244194",
+  "reachable": true,
+  "reachable_status": 200
+}

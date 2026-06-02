@@ -1,0 +1,24 @@
+{
+  "doi": "10.1101/2025.07.22.666151",
+  "doi_url": "https://doi.org/10.1101/2025.07.22.666151",
+  "title": "Triple-Negative Breast Cancer Cells Activate Sensory Neurons via TRPV1 to Drive Nerve Outgrowth and Tumor Progression",
+  "year": "2025",
+  "journal": "",
+  "authors": [
+    "Hanan Bloomer",
+    "Savannah R. Parker",
+    "Audrey L. Pierce",
+    "Wesley Clawson",
+    "Mallory M. Caron",
+    "Thomas Gerton",
+    "Ankit Pandey",
+    "Thanh T. Le",
+    "Tolulope Adewumi",
+    "Charlotte Kuperwasser"
+  ],
+  "abstract": "Abstract The tumor microenvironment in triple-negative breast cancer (TNBC) is characterized by increased sensory nerve density, which contributes to cancer progression by promoting migration and metastasis. However, the origin of tumor-innervating nerves and the mechanisms driving sensory innervation into tumors remain poorly understood. Using in vivo retrograde labeling techniques, we show that mammary tumors are associated with an increase in nerves originating from the dorsal root ganglia. Additionally, we find that TNBC cells trigger stress and activation markers and induce neuronal firing in a transient receptor potential anilloid subtype 1 (TRPV1)-dependent manner. In both 2D and 3D cell culture models, TNBC cells promote outgrowth of sensory nerves that is abrogated with Trpv1 knockout. We identified c-Jun and IL-6 as an effector of neurite outgrowth that acts downstream of TRPV1 to promote outgrowth in vitro . Finally, in Trpv1 knockout mice, TNBC tumors exhibit delayed growth and reduced lung metastasis. These findings suggest that a critical role for TRPV1 in tumor-nerve crosstalk, offering a potential target to reduce metastatic disease.",
+  "pmid": "40777234",
+  "pmc": "PMC12330673",
+  "reachable": true,
+  "reachable_status": 403
+}

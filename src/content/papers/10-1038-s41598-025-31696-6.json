@@ -1,0 +1,17 @@
+{
+  "doi": "10.1038/s41598-025-31696-6",
+  "doi_url": "https://doi.org/10.1038/s41598-025-31696-6",
+  "title": "Top-down perspectives on cell membrane potential and protein transcription",
+  "year": "2025",
+  "journal": "Scientific Reports",
+  "authors": [
+    "Javier Cervera",
+    "Michael Levin",
+    "Salvador Mafe"
+  ],
+  "abstract": "We have explored a simple model for the multicellular interplay between bioelectricity and protein transcription using a top-down perspective that offers new insights complementary to the commonly used bottom-up descriptions. We model the non-excitable cell bioelectrical representation of the external environment, including the neighboring cells, using voltage-gated ion channels and intercellular junctions. The simulations make three predictions: (i) shifts in membrane potential allow transitions between gene expression states, (ii) in the case of different cell potential-gated transcriptions, depolarized cells cannot control the distinct gene expressions as effectively as polarized cells, and (iii) community effects should permit to extend the single-cell control to the multicellular level. Because the spatio-temporal distributions of instructive signaling ions and molecules depend on the local electric potentials, different multicellular potentials correlate with distinct downstream gene expression patterns. A central cell is able to measure the number of neighboring cells and learn their bioelectrical state from the downward-induced membrane potential changes, which suggests that multiscale bioelectricity can operate as a top-down mechanism in development and regeneration.",
+  "pmid": "41372487",
+  "pmc": "PMC12808214",
+  "reachable": true,
+  "reachable_status": 200
+}

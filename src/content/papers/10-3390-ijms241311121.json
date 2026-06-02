@@ -1,0 +1,20 @@
+{
+  "doi": "10.3390/ijms241311121",
+  "doi_url": "https://doi.org/10.3390/ijms241311121",
+  "title": "The Yin and Yang of Breast Cancer: Ion Channels as Determinants of Left–Right Functional Differences",
+  "year": "2023",
+  "journal": "International Journal of Molecular Sciences",
+  "authors": [
+    "Sofía Masuelli",
+    "Sebastián Real",
+    "Patrick McMillen",
+    "Madeleine Oudin",
+    "Michael Levin",
+    "María Roqué"
+  ],
+  "abstract": "Breast cancer is a complex and heterogeneous disease that displays diverse molecular subtypes and clinical outcomes. Although it is known that the location of tumors can affect their biological behavior, the underlying mechanisms are not fully understood. In our previous study, we found a differential methylation profile and membrane potential between left (L)- and right (R)-sided breast tumors. In this current study, we aimed to identify the ion channels responsible for this phenomenon and determine any associated phenotypic features. To achieve this, experiments were conducted in mammary tumors in mice, human patient samples, and with data from public datasets. The results revealed that L-sided tumors have a more depolarized state than R-sided. We identified a 6-ion channel-gene signature (CACNA1C, CACNA2D2, CACNB2, KCNJ11, SCN3A, and SCN3B) associated with the side: L-tumors exhibit lower expression levels than R-tumors. Additionally, in silico analyses show that the signature correlates inversely with DNA methylation writers and with key biological processes involved in cancer progression, such as proliferation and stemness. The signature also correlates inversely with patient survival rates. In an in vivo mouse model, we confirmed that KI67 and CD44 markers were increased in L-sided tumors and a similar tendency for KI67 was found in patient L-tumors. Overall, this study provides new insights into the potential impact of anatomical location on breast cancer biology and highlights the need for further investigation into possible differential treatment options.",
+  "pmid": "37446299",
+  "pmc": "PMC10342022",
+  "reachable": true,
+  "reachable_status": 403
+}

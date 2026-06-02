@@ -1,0 +1,16 @@
+{
+  "doi": "10.1101/pdb.top068338",
+  "doi_url": "https://doi.org/10.1101/pdb.top068338",
+  "title": "Aversive Training Methods in <i>Xenopus laevis</i>: General Principles",
+  "year": "2012",
+  "journal": "Cold Spring Harbor Protocols",
+  "authors": [
+    "Douglas J. Blackiston",
+    "Michael Levin"
+  ],
+  "abstract": "Xenopus laevis is an ideal organism in which to study the mechanisms linking genetics, the embryogenesis of the central nervous system, and the generation of cognitive behavior. Frog embryos facilitate the targeting of many pathways of importance to neuroscience via pharmacological, genetic, and surgical manipulations. A limiting factor for investigations of memory and learning has been the difficulty of eliciting learning in Xenopus . Here, we outline a simple strategy for aversive conditioning (associative learning) in Xenopus tadpoles, and present sample data using a quantitative automated analysis system. We also discuss the factors and variables that must be considered to ensure optimal learning and recall performance, for use as behavioral endpoints in any experiment.",
+  "pmid": "22550289",
+  "pmc": "PMC3617481",
+  "reachable": true,
+  "reachable_status": 200
+}

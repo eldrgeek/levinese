@@ -1,0 +1,17 @@
+{
+  "doi": "10.4161/cc.8.21.9888",
+  "doi_url": "https://doi.org/10.4161/cc.8.21.9888",
+  "title": "Bioelectric controls of cell proliferation: Ion channels, membrane voltage and the cell cycle",
+  "year": "2009",
+  "journal": "Cell Cycle",
+  "authors": [
+    "Douglas J. Blackiston",
+    "Kelly A. McLaughlin",
+    "Michael Levin"
+  ],
+  "abstract": "All cells possess long-term, steady-state voltage gradients across the plasma membrane. These transmembrane potentials arise from the combined activity of numerous ion channels, pumps and gap junction complexes. Increasing data from molecular physiology now reveal that the role of changes in membrane voltage controls, and is in turn controlled by, progression through the cell cycle. We review recent functional data on the regulation of mitosis by bioelectric signals, and the function of membrane voltage and specific potassium, sodium and chloride ion channels in the proliferation of embryonic, somatic and neoplastic cells. Its unique properties place this powerful, well-conserved, but still poorly-understood signaling system at the center of the coordinated cellular interactions required for complex pattern formation. Moreover, disregulation of ion channel expression and function is increasingly observed to be not only a useful marker but likely a functional element in oncogenesis. New advances in genomics and the development of in vivo biophysical techniques suggest exciting opportunities for molecular medicine, bioengineering and regenerative approaches to human health.",
+  "pmid": "19823012",
+  "pmc": "PMC2862582",
+  "reachable": true,
+  "reachable_status": 200
+}

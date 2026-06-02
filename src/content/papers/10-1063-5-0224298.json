@@ -1,0 +1,18 @@
+{
+  "doi": "10.1063/5.0224298",
+  "doi_url": "https://doi.org/10.1063/5.0224298",
+  "title": "A microfluidic sucrose gap device for electrical measurement of gap junction connectivity",
+  "year": "2025",
+  "journal": "Review of Scientific Instruments",
+  "authors": [
+    "J. Dungan",
+    "J. Mathews",
+    "M. Levin",
+    "V. Koomson"
+  ],
+  "abstract": "A microfluidic device has been designed to electrically measure average intercellular connectivity in a cell monolayer. This proof-of-concept design uses elastomeric microvalves to isolate cells across three microfluidic chambers, creating a direct microscale analog of benchtop sucrose gap physiology rigs. The device operation has been verified for normal rat kidney cells (NRK-49F) using a chemical gap junction blocker, 2-aminoethoxydiphenyl borate (2-APB). At 410 Hz, the system measured an averaged network impedance magnitude between 730 and 930 kΩ and demonstrated the ability to distinguish a significant increase of 6.51 kΩ and 0.464° due to 2-APB perfusion.",
+  "pmid": "39918384",
+  "pmc": null,
+  "reachable": true,
+  "reachable_status": 403
+}

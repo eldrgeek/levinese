@@ -1,0 +1,19 @@
+{
+  "doi": "10.1098/rsif.2020.0177",
+  "doi_url": "https://doi.org/10.1098/rsif.2020.0177",
+  "title": "On the coupling of mechanics with bioelectricity and its role in morphogenesis",
+  "year": "2020",
+  "journal": "Journal of The Royal Society Interface",
+  "authors": [
+    "A. Leronni",
+    "L. Bardella",
+    "L. Dorfmann",
+    "A. Pietak",
+    "M. Levin"
+  ],
+  "abstract": "The role of endogenous bioelectricity in morphogenesis has recently been explored through the finite volume-based code BioElectric Tissue Simulation Engine . We extend this platform to electrostatic and osmotic forces due to bioelectrical ion fluxes, causing cell cluster deformation. We further account for mechanosensitive ion channels, which, gated by membrane tension, modulate ion fluxes and, ultimately, bioelectrical forces. We illustrate the potentialities of this combined model of actuation and sensing with reference to cancer progression, osmoregulation, symmetry breaking and long-range signalling. This suggests control strategies for the manipulation of cell networks in vivo .",
+  "pmid": "32486953",
+  "pmc": "PMC7328399",
+  "reachable": true,
+  "reachable_status": 403
+}

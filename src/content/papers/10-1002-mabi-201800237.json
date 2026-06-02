@@ -1,0 +1,16 @@
+{
+  "doi": "10.1002/mabi.201800237",
+  "doi_url": "https://doi.org/10.1002/mabi.201800237",
+  "title": "Effects of Ivermectin Exposure on Regeneration of\n                    <i>D. dorotocephala</i>\n                    Planaria: Exploiting Human‐Approved Ion Channel Drugs as Morphoceuticals",
+  "year": "2019",
+  "journal": "Macromolecular Bioscience",
+  "authors": [
+    "Nina N. Ferenc",
+    "Michael Levin"
+  ],
+  "abstract": "Abstract Transformative applications in regenerative medicine await increased control of processes implementing repair and remodeling of complex living structures. Recent work reveals ion channel drugs as a powerful toolkit for modulating endogenous bioelectric circuits that control growth and form in vivo and in vitro. It is therefore especially important to develop assays in model systems that will enable the testing of these “morphoceuticals”—compounds with predictable effects on anatomical structure. The regenerative planaria are an ideal model system for this purpose. Several studies have shown a role for bioelectric signaling in planarian regeneration, but these have focused on Dugesia japonica and Schmidtea mediterranea . It is not known how the alterations of ion channel activity would affect regeneration in other species of planaria—an important aspect of building robust computational models of bioelectric circuits. Here, the effect of ivermectin (IVM), a chloride channel opener drug commonly used to combat heartworm is tested, on regeneration in a new species of planaria: Dugesia dorotocephala . Exposure to IVM during regeneration results in patterning abnormalities, such as bifurcated tails with partial heads, as well as delayed regeneration. These data extend our understanding of the effects of human‐approved ion channel drugs on regenerative processes.",
+  "pmid": "30485697",
+  "pmc": null,
+  "reachable": true,
+  "reachable_status": 403
+}

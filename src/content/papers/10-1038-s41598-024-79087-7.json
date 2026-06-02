@@ -1,0 +1,17 @@
+{
+  "doi": "10.1038/s41598-024-79087-7",
+  "doi_url": "https://doi.org/10.1038/s41598-024-79087-7",
+  "title": "Multicellular adaptation to electrophysiological perturbations analyzed by deterministic and stochastic bioelectrical models",
+  "year": "2024",
+  "journal": "Scientific Reports",
+  "authors": [
+    "Javier Cervera",
+    "Michael Levin",
+    "Salvador Mafe"
+  ],
+  "abstract": "Abstract Cells can compensate a disruptive change in one ion channel by compensatory changes in other channels. We have simulated the adaptation of a multicellular aggregate of non-excitable cells to the electrophysiological perturbation produced by the external blocking of a cation channel. In the biophysical model employed, we consider that this blocking provokes a cell depolarization that opens a voltage-gated calcium channel, thus allowing toxic Ca 2+ levels. The cell adaptation to this externally-induced perturbation is ascribed to the multiplicity of channels available to keep the cell membrane potential within a physiological window. We propose that the cell depolarization provokes the upregulated expression of a compensatory channel protein that resets the cell potential to the correct polarized value, which prevents the calcium entry. To this end, we use two different simulation algorithms based on deterministic and stochastic methods. The simulations suggest that because of the local correlations coupling the cell potential to transcription, short-term bioelectrical perturbations can trigger long-term biochemical adaptations to novel stressors in multicellular aggregates. Previous experimental data on planarian flatworms’ adaptation to a barium-containing environment is also discussed.",
+  "pmid": "39528615",
+  "pmc": "PMC11554804",
+  "reachable": true,
+  "reachable_status": 200
+}

@@ -1,0 +1,16 @@
+{
+  "doi": "10.3390/biomimetics8010110",
+  "doi_url": "https://doi.org/10.3390/biomimetics8010110",
+  "title": "There’s Plenty of Room Right Here: Biological Systems as Evolved, Overloaded, Multi-Scale Machines",
+  "year": "2023",
+  "journal": "Biomimetics",
+  "authors": [
+    "Joshua Bongard",
+    "Michael Levin"
+  ],
+  "abstract": "The applicability of computational models to the biological world is an active topic of debate. We argue that a useful path forward results from abandoning hard boundaries between categories and adopting an observer-dependent, pragmatic view. Such a view dissolves the contingent dichotomies driven by human cognitive biases (e.g., a tendency to oversimplify) and prior technological limitations in favor of a more continuous view, necessitated by the study of evolution, developmental biology, and intelligent machines. Form and function are tightly entwined in nature, and in some cases, in robotics as well. Thus, efforts to re-shape living systems for biomedical or bioengineering purposes require prediction and control of their function at multiple scales. This is challenging for many reasons, one of which is that living systems perform multiple functions in the same place at the same time. We refer to this as “polycomputing”—the ability of the same substrate to simultaneously compute different things, and make those computational results available to different observers. This ability is an important way in which living things are a kind of computer, but not the familiar, linear, deterministic kind; rather, living things are computers in the broad sense of their computational materials, as reported in the rapidly growing physical computing literature. We argue that an observer-centered framework for the computations performed by evolved and designed systems will improve the understanding of mesoscale events, as it has already done at quantum and relativistic scales. To develop our understanding of how life performs polycomputing, and how it can be convinced to alter one or more of those functions, we can first create technologies that polycompute and learn how to alter their functions. Here, we review examples of biological and technological polycomputing, and develop the idea that the overloading of different functions on the same hardware is an important design principle that helps to understand and build both evolved and designed systems. Learning to hack existing polycomputing substrates, as well as to evolve and design new ones, will have massive impacts on regenerative medicine, robotics, and computer engineering.",
+  "pmid": "36975340",
+  "pmc": "PMC10046700",
+  "reachable": true,
+  "reachable_status": 403
+}

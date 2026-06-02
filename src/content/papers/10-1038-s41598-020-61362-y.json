@@ -1,0 +1,19 @@
+{
+  "doi": "10.1038/s41598-020-61362-y",
+  "doi_url": "https://doi.org/10.1038/s41598-020-61362-y",
+  "title": "Sertraline induces DNA damage and cellular toxicity in Drosophila that can be ameliorated by antioxidants",
+  "year": "2020",
+  "journal": "Scientific Reports",
+  "authors": [
+    "Arpita Jajoo",
+    "Catherine Donlon",
+    "Sarah Shnayder",
+    "Michael Levin",
+    "Mitch McVey"
+  ],
+  "abstract": "Abstract Sertraline hydrochloride is a commonly prescribed antidepressant medication that acts by amplifying serotonin signaling. Numerous studies have suggested that children of women taking sertraline during pregnancy have an increased risk of developmental defects. Resolving the degree of risk for human fetuses requires comprehensive knowledge of the pathways affected by this drug. We utilized a Drosophila melanogaster model system to assess the effects of sertraline throughout development. Ingestion of sertraline by females did not affect their fecundity or embryogenesis in their progeny. However, larvae that consumed sertraline experienced delayed developmental progression and reduced survival at all stages of development. Genetic experiments showed that these effects were mostly independent of aberrant extracellular serotonin levels. Using an ex vivo imaginal disc culture system, we showed that mitotically active sertraline-treated tissues accumulate DNA double-strand breaks and undergo apoptosis at increased frequencies. Remarkably, the sertraline-induced genotoxicity was partially rescued by co-incubation with ascorbic acid, suggesting that sertraline induces oxidative DNA damage. These findings may have implications for the biomedicine of sertraline-induced birth defects.",
+  "pmid": "32161356",
+  "pmc": "PMC7066164",
+  "reachable": true,
+  "reachable_status": 200
+}

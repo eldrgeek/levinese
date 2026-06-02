@@ -1,0 +1,19 @@
+{
+  "doi": "10.1523/JNEUROSCI.3315-10.2010",
+  "doi_url": "https://doi.org/10.1523/JNEUROSCI.3315-10.2010",
+  "title": "Induction of Vertebrate Regeneration by a Transient Sodium Current",
+  "year": "2010",
+  "journal": "The Journal of Neuroscience",
+  "authors": [
+    "Ai-Sun Tseng",
+    "Wendy S. Beane",
+    "Joan M. Lemire",
+    "Alessio Masi",
+    "Michael Levin"
+  ],
+  "abstract": "Amphibians such as frogs can restore lost organs during development, including the lens and tail. To design biomedical therapies for organ repair, it is necessary to develop a detailed understanding of natural regeneration. Recently, ion transport has been implicated as a functional regulator of regeneration. Whereas voltage-gated sodium channels play a well known and important role in propagating action potentials in excitable cells, we have identified a novel role in regeneration for the ion transport function mediated by the voltage-gated sodium channel, Na V 1.2. A local, early increase in intracellular sodium is required for initiating regeneration following Xenopus laevis tail amputation, and molecular and pharmacological inhibition of sodium transport causes regenerative failure. Na V 1.2 is absent under nonregenerative conditions, but misexpression of human Na V 1.5 can rescue regeneration during these states. Remarkably, pharmacological induction of a transient sodium current is capable of restoring regeneration even after the formation of a nonregenerative wound epithelium, confirming that it is the regulation of sodium transport that is critical for regeneration. Our studies reveal a previously undetected competency window in which cells retain their intrinsic regenerative program, identify a novel endogenous role for Na V in regeneration, and show that modulation of sodium transport represents an exciting new approach to organ repair.",
+  "pmid": "20881138",
+  "pmc": "PMC2965411",
+  "reachable": true,
+  "reachable_status": 200
+}

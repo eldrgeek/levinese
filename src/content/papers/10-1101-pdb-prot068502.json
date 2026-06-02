@@ -1,0 +1,17 @@
+{
+  "doi": "10.1101/pdb.prot068502",
+  "doi_url": "https://doi.org/10.1101/pdb.prot068502",
+  "title": "Photoconversion for Tracking the Dynamics of Cell Movement in <i>Xenopus laevis</i> Embryos",
+  "year": "2012",
+  "journal": "Cold Spring Harbor Protocols",
+  "authors": [
+    "Brook T. Chernet",
+    "Dany S. Adams",
+    "Michael Levin"
+  ],
+  "abstract": "Xenopus laevis is an ideal model system for investigating dynamic morphogenetic processes during embryogenesis, regeneration, and homeostasis. Our understanding of these events has been greatly facilitated by lineage labeling, that is, marking a cell or a group of cells and all their descendants using vital dyes, fluorescent molecules, or transplantation techniques. Unfortunately, these strategies are limited in their spatiotemporal resolution: They do not allow long-term dynamic in vivo imaging, are generally invasive, and labeling is restricted to cells on the surface. Genetically encoded fluorescent proteins (FPs), on the other hand, provide excellent alternative methods to traditional lineage labeling, enabling labeling with high spatiotemporal resolution and tracking of cellular and subcellular structures to study patterning events. Over the past decade, FPs have evolved to allow fine control of their spectral properties (in a defined region of interest) for greater labeling specificity. One example is EosFP, which is a protein cloned from the scleractinian coral Lobophyllia hemprichii that can be photoconverted from green to red fluorescence state with near-ultraviolet (UV) light irradiation. Here, we describe EosFP-photoconversion of Xenopus embryos to track cells during developmental and regenerative processes using a metal-halide- or xenon-arc-based fluorescent microscope system, which provides a simpler, less expensive alternative to photoconversion using laser microscopy.",
+  "pmid": "22661444",
+  "pmc": "PMC4061756",
+  "reachable": true,
+  "reachable_status": 200
+}

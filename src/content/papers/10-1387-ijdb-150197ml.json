@@ -1,0 +1,19 @@
+{
+  "doi": "10.1387/ijdb.150197ml",
+  "doi_url": "https://doi.org/10.1387/ijdb.150197ml",
+  "title": "Local and long-range endogenous resting potential gradients antagonistically regulate apoptosis and proliferation in the embryonic CNS",
+  "year": "2015",
+  "journal": "The International Journal of Developmental Biology",
+  "authors": [
+    "Vaibhav P. Pai",
+    "Joan M. Lemire",
+    "Ying Chen",
+    "Gufa Lin",
+    "Michael Levin"
+  ],
+  "abstract": "Bioelectric signals, particularly transmembrane voltage potentials (Vmem), play an important role in large-scale patterning during embryonic development. Endogenous bioelectric gradients across tissues function as instructive factors during eye, brain, and other morphogenetic processes. An important and still poorly-understood aspect is the control of cell behaviors by the voltage states of distant cell groups. Here, experimental alteration of endogenous Vmem was induced in Xenopus laevis embryos by misexpression of well-characterized ion channel mRNAs, a strategy often used to identify functional roles of Vmem gradients during embryonic development and regeneration. Immunofluorescence analysis (for activated caspase 3 and phosphor-histone H3P) on embryonic sections was used to characterize apoptosis and proliferation. Disrupting local bioelectric signals (within the developing neural tube region) increased caspase 3 and decreased H3P in the brain, resulting in brain mispatterning. Disrupting remote (ventral, non-neural region) bioelectric signals decreased caspase 3 and highly increased H3P within the brain, with normal brain patterning. Disrupting both the local and distant bioelectric signals produced antagonistic effects on caspase 3 and H3P. Thus, two components of bioelectric signals regulate apoptosis-proliferation balance within the developing brain and spinal cord: local (developing neural tube region) and distant (ventral non-neural region). Together, the local and long-range bioelectric signals create a binary control system capable of fine-tuning apoptosis and proliferation with the brain and spinal cord to achieve correct pattern and size control. Our data suggest a roadmap for utilizing bioelectric state as a diagnostic modality and convenient intervention parameter for birth defects and degenerative disease states of the CNS.",
+  "pmid": "26198142",
+  "pmc": "PMC10505512",
+  "reachable": true,
+  "reachable_status": 200
+}

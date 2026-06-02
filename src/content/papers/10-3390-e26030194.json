@@ -1,0 +1,17 @@
+{
+  "doi": "10.3390/e26030194",
+  "doi_url": "https://doi.org/10.3390/e26030194",
+  "title": "Principled Limitations on Self-Representation for Generic Physical Systems",
+  "year": "2024",
+  "journal": "Entropy",
+  "authors": [
+    "Chris Fields",
+    "James F. Glazebrook",
+    "Michael Levin"
+  ],
+  "abstract": "The ideas of self-observation and self-representation, and the concomitant idea of self-control, pervade both the cognitive and life sciences, arising in domains as diverse as immunology and robotics. Here, we ask in a very general way whether, and to what extent, these ideas make sense. Using a generic model of physical interactions, we prove a theorem and several corollaries that severely restrict applicable notions of self-observation, self-representation, and self-control. We show, in particular, that adding observational, representational, or control capabilities to a meta-level component of a system cannot, even in principle, lead to a complete meta-level representation of the system as a whole. We conclude that self-representation can at best be heuristic, and that self models cannot, in general, be empirically tested by the systems that implement them.",
+  "pmid": "38539706",
+  "pmc": "PMC10969210",
+  "reachable": true,
+  "reachable_status": 403
+}

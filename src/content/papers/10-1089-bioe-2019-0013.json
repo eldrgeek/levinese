@@ -1,0 +1,17 @@
+{
+  "doi": "10.1089/bioe.2019.0013",
+  "doi_url": "https://doi.org/10.1089/bioe.2019.0013",
+  "title": "Bioelectric Control of Metastasis in Solid Tumors",
+  "year": "2019",
+  "journal": "Bioelectricity",
+  "authors": [
+    "Samantha L. Payne",
+    "Michael Levin",
+    "Madeleine J. Oudin"
+  ],
+  "abstract": "As the leading cause of death in cancer, there is an urgent need to develop treatments to target the dissemination of primary tumor cells to secondary organs, known as metastasis. Bioelectric signaling has emerged in the last century as an important controller of cell growth, and with the development of current molecular tools we are now beginning to identify its role in driving cell migration and metastasis in a variety of cancer types. This review summarizes the currently available research for bioelectric signaling in solid tumor metastasis. We review the steps of metastasis and discuss how these can be controlled by bioelectric cues at the level of a cell, a population of cells, and the tissue. The role of ion channel, pump, and exchanger activity and ion flux is discussed, along with the importance of the membrane potential and the relationship between ion flux and membrane potential. We also provide an overview of the evidence for control of metastasis by external electric fields (EFs) and draw from examples in embryogenesis and regeneration to discuss the implications for endogenous EFs. By increasing our understanding of the dynamic properties of bioelectric signaling, we can develop new strategies that target metastasis to be translated into the clinic.",
+  "pmid": "32292893",
+  "pmc": "PMC6768203",
+  "reachable": true,
+  "reachable_status": 403
+}

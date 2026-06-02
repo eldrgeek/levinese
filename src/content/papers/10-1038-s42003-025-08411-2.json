@@ -1,0 +1,17 @@
+{
+  "doi": "10.1038/s42003-025-08411-2",
+  "doi_url": "https://doi.org/10.1038/s42003-025-08411-2",
+  "title": "Associative conditioning in gene regulatory network models increases integrative causal emergence",
+  "year": "2025",
+  "journal": "Communications Biology",
+  "authors": [
+    "Federico Pigozzi",
+    "Adam Goldstein",
+    "Michael Levin"
+  ],
+  "abstract": "How does learning affect the integration of an agent’s internal components into an emergent whole? We analyzed gene regulatory networks, which learn to associate distinct stimuli, using causal emergence, which captures the degree to which an integrated system is more than the sum of its parts. Analyzing 29 biological (experimentally derived) networks before, during, after training, we discovered that biological networks increase their causal emergence due to training. Clustering analysis uncovered five distinct ways in which networks’ emergence responds to training, not mapping to traditional ways to characterize network structure and function but correlating to different biological categories. Our analysis reveals how learning can reify the existence of an agent emerging over its parts and suggests that this property is favored by evolution. Our data have implications for the scaling of diverse intelligence, and for a biomedical roadmap to exploit these remarkable features in networks with relevance for health and disease. The authors investigate how associative conditioning in gene regulatory networks (GRNs) affects their causal emergence. They show that biological GRNs show increased causal emergence after training, more than random networks.",
+  "pmid": "40634498",
+  "pmc": "PMC12241368",
+  "reachable": true,
+  "reachable_status": 200
+}

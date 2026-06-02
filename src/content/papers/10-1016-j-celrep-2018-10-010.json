@@ -1,0 +1,24 @@
+{
+  "doi": "10.1016/j.celrep.2018.10.010",
+  "doi_url": "https://doi.org/10.1016/j.celrep.2018.10.010",
+  "title": "Brief Local Application of Progesterone via a Wearable Bioreactor Induces Long-Term Regenerative Response in Adult Xenopus Hindlimb",
+  "year": "2018",
+  "journal": "Cell Reports",
+  "authors": [
+    "Celia Herrera-Rincon",
+    "Annie S. Golding",
+    "Kristine M. Moran",
+    "Christina Harrison",
+    "Christopher J. Martyniuk",
+    "Justin A. Guay",
+    "Julia Zaltsman",
+    "Hayley Carabello",
+    "David L. Kaplan",
+    "Michael Levin"
+  ],
+  "abstract": "The induction of limb repair in adult vertebrates is a pressing, unsolved problem. Here, we characterize the effects of an integrated device that delivers drugs to severed hindlimbs of adult Xenopus laevis, which normally regenerate cartilaginous spikes after amputation. A wearable bioreactor containing a silk protein-based hydrogel that delivered progesterone to the wound site immediately after hindlimb amputation for only 24 hr induced the regeneration of paddle-like structures in adult frogs. Molecular markers, morphometric analysis, X-ray imaging, immunofluorescence, and behavioral assays were used to characterize the differences between the paddle-like structures of successful regenerates and hypomorphic spikes that grew in untreated animals. Our experiments establish a model for testing therapeutic cocktails in vertebrate hindlimb regeneration, identify pro-regenerative activities of progesterone-containing bioreactors, and provide proof of principle of brief use of integrated device-based delivery of small-molecule drugs as a viable strategy to induce and maintain a long-term regenerative response.",
+  "pmid": "30404012",
+  "pmc": "PMC6317729",
+  "reachable": true,
+  "reachable_status": 200
+}

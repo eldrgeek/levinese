@@ -1,0 +1,18 @@
+{
+  "doi": "10.1021/acsbiomaterials.1c01163",
+  "doi_url": "https://doi.org/10.1021/acsbiomaterials.1c01163",
+  "title": "Impact of Membrane Voltage on Formation and Stability of Human Renal Proximal Tubules <i>in Vitro</i>",
+  "year": "2022",
+  "journal": "ACS Biomaterials Science &amp; Engineering",
+  "authors": [
+    "Miryam Adelfio",
+    "Mattia Bonzanni",
+    "Michael Levin",
+    "David L. Kaplan"
+  ],
+  "abstract": "More than 15% of adults in the United States suffer from some form of chronic kidney disease (CKD). Current strategies for CKD consist of dialysis or kidney transplant, which, however, can take several years. In this light, tissue engineering and regenerative medicine approaches are the key to improving people’s living conditions by advancing previous tissue engineering approaches and seeking new targets as intervention methods for kidney repair or replacement. The membrane voltage (Vm) dynamics of a cell have been associated with cell migration, cell cycle progression, differentiation, and pattern formation. Furthermore, bioelectrical stimuli have been used as a means in the treatment of diseases and wound healing. Here, we investigated the role of Vm as a novel target to guide and manipulate in vitro renal tissue models. Human-immortalized renal proximal tubule epithelial cells (RPTECs-TERT1) were cultured on Matrigel to support the formation of 3D proximal tubular-like structures with the incorporation of a voltage-sensitive dye indicator─bis-(1,3-dibutylbarbituric acid)timethine oxonol (DiBAC). The results demonstrated a correlation between the depolarization and the reorganization of human renal proximal tubule cells, indicating Vm as a candidate variable to control these events. Accordingly, Vm was pharmacologically manipulated using glibenclamide and pinacidil, KATP channel modulators, and proximal tubule formation and tubule stability over 21 days were assessed. Chronic manipulation of KATP channels induced changes in the tubular network topology without affecting lumen formation. Thus, a relationship was found between the preluminal tubulogenesis phase and KATP channels. This relationship may provide future options as a control point during kidney tissue development, treatment, and regeneration goals.",
+  "pmid": "35157435",
+  "pmc": "PMC9906498",
+  "reachable": true,
+  "reachable_status": 403
+}

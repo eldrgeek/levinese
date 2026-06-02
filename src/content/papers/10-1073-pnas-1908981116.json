@@ -1,0 +1,18 @@
+{
+  "doi": "10.1073/pnas.1908981116",
+  "doi_url": "https://doi.org/10.1073/pnas.1908981116",
+  "title": "L-type voltage-gated Ca<sup>2+</sup>channel Ca<sub>V</sub>1.2 regulates chondrogenesis during limb development",
+  "year": "2019",
+  "journal": "Proceedings of the National Academy of Sciences",
+  "authors": [
+    "Yuji Atsuta",
+    "Reiko R. Tomizawa",
+    "Michael Levin",
+    "Clifford J. Tabin"
+  ],
+  "abstract": "All cells, including nonexcitable cells, maintain a discrete transmembrane potential ( V mem ), and have the capacity to modulate V mem and respond to their own and neighbors’ changes in V mem . Spatiotemporal variations have been described in developing embryonic tissues and in some cases have been implicated in influencing developmental processes. Yet, how such changes in V mem are converted into intracellular inputs that in turn regulate developmental gene expression and coordinate patterned tissue formation, has remained elusive. Here we document that the V mem of limb mesenchyme switches from a hyperpolarized to depolarized state during early chondrocyte differentiation. This change in V mem increases intracellular Ca 2+ signaling through Ca 2+ influx, via Ca V 1.2, 1 of L-type voltage-gated Ca 2+ channels (VGCCs). We find that Ca V 1.2 activity is essential for chondrogenesis in the developing limbs. Pharmacological inhibition by an L-type VGCC specific blocker, or limb-specific deletion of Ca V 1.2, down-regulates expression of genes essential for chondrocyte differentiation, including Sox9 , Col2a1 , and Agc1 , and thus disturbs proper cartilage formation. The Ca 2+ -dependent transcription factor NFATc1, which is a known major transducer of intracellular Ca 2+ signaling, partly rescues Sox9 expression. These data reveal instructive roles of Ca V 1.2 in limb development, and more generally expand our understanding of how modulation of membrane potential is used as a mechanism of developmental regulation.",
+  "pmid": "31591237",
+  "pmc": "PMC6815189",
+  "reachable": true,
+  "reachable_status": 403
+}

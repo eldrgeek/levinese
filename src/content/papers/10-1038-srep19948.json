@@ -1,0 +1,19 @@
+{
+  "doi": "10.1038/srep19948",
+  "doi_url": "https://doi.org/10.1038/srep19948",
+  "title": "Towards a Physarum learning chip",
+  "year": "2016",
+  "journal": "Scientific Reports",
+  "authors": [
+    "James G. H. Whiting",
+    "Jeff Jones",
+    "Larry Bull",
+    "Michael Levin",
+    "Andrew Adamatzky"
+  ],
+  "abstract": "Abstract Networks of protoplasmic tubes of organism Physarum polycehpalum are macro-scale structures which optimally span multiple food sources to avoid repellents yet maximize coverage of attractants. When data are presented by configurations of attractants and behaviour of the slime mould is tuned by a range of repellents, the organism preforms computation. It maps given data configuration into a protoplasmic network. To discover physical means of programming the slime mould computers we explore conductivity of the protoplasmic tubes; proposing that the network connectivity of protoplasmic tubes shows pathway-dependent plasticity. To demonstrate this we encourage the slime mould to span a grid of electrodes and apply AC stimuli to the network. Learning and weighted connections within a grid of electrodes is produced using negative and positive voltage stimulation of the network at desired nodes; low frequency (10 Hz) sinusoidal (0.5 V peak-to-peak) voltage increases connectivity between stimulated electrodes while decreasing connectivity elsewhere, high frequency (1000 Hz) sinusoidal (2.5 V peak-to-peak) voltage stimulation decreases network connectivity between stimulated electrodes. We corroborate in a particle model. This phenomenon may be used for computation in the same way that neural networks process information and has the potential to shed light on the dynamics of learning and information processing in non-neural metazoan somatic cell networks.",
+  "pmid": "26837470",
+  "pmc": "PMC4738259",
+  "reachable": true,
+  "reachable_status": 200
+}

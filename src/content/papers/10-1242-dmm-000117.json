@@ -1,0 +1,18 @@
+{
+  "doi": "10.1242/dmm.000117",
+  "doi_url": "https://doi.org/10.1242/dmm.000117",
+  "title": "Planarian PTEN homologs regulate stem cells and regeneration through TOR signaling",
+  "year": "2008",
+  "journal": "Disease Models &amp; Mechanisms",
+  "authors": [
+    "Néstor J. Oviedo",
+    "Bret J. Pearson",
+    "Michael Levin",
+    "Alejandro Sánchez Alvarado"
+  ],
+  "abstract": "SUMMARY We have identified two genes, Smed-PTEN-1 and Smed-PTEN-2, capable of regulating stem cell function in the planarian Schmidtea mediterranea. Both genes encode proteins homologous to the mammalian tumor suppressor, phosphatase and tensin homolog deleted on chromosome 10 (PTEN). Inactivation of Smed-PTEN-1 and -2 by RNA interference (RNAi) in planarians disrupts regeneration, and leads to abnormal outgrowths in both cut and uncut animals followed soon after by death (lysis). The resulting phenotype is characterized by hyperproliferation of neoblasts (planarian stem cells), tissue disorganization and a significant accumulation of postmitotic cells with impaired differentiation capacity. Further analyses revealed that rapamycin selectively prevented such accumulation without affecting the normal neoblast proliferation associated with physiological turnover and regeneration. In animals in which PTEN function is abrogated, we also detected a significant increase in the number of cells expressing the planarian Akt gene homolog (Smed-Akt). However, functional abrogation of Smed-Akt in Smed-PTEN RNAi-treated animals does not prevent cell overproliferation and lethality, indicating that functional abrogation of Smed-PTEN is sufficient to induce abnormal outgrowths. Altogether, our data reveal roles for PTEN in the regulation of planarian stem cells that are strikingly conserved to mammalian models. In addition, our results implicate this protein in the control of stem cell maintenance during the regeneration of complex structures in planarians.",
+  "pmid": "19048075",
+  "pmc": "PMC2562200",
+  "reachable": true,
+  "reachable_status": 403
+}

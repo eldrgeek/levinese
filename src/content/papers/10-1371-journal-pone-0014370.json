@@ -1,0 +1,19 @@
+{
+  "doi": "10.1371/journal.pone.0014370",
+  "doi_url": "https://doi.org/10.1371/journal.pone.0014370",
+  "title": "A Second-Generation Device for Automated Training and Quantitative Behavior Analyses of Molecularly-Tractable Model Organisms",
+  "year": "2010",
+  "journal": "PLoS ONE",
+  "authors": [
+    "Douglas Blackiston",
+    "Tal Shomrat",
+    "Cindy L. Nicolas",
+    "Christopher Granata",
+    "Michael Levin"
+  ],
+  "abstract": "A deep understanding of cognitive processes requires functional, quantitative analyses of the steps leading from genetics and the development of nervous system structure to behavior. Molecularly-tractable model systems such as Xenopus laevis and planaria offer an unprecedented opportunity to dissect the mechanisms determining the complex structure of the brain and CNS. A standardized platform that facilitated quantitative analysis of behavior would make a significant impact on evolutionary ethology, neuropharmacology, and cognitive science. While some animal tracking systems exist, the available systems do not allow automated training (feedback to individual subjects in real time, which is necessary for operant conditioning assays). The lack of standardization in the field, and the numerous technical challenges that face the development of a versatile system with the necessary capabilities, comprise a significant barrier keeping molecular developmental biology labs from integrating behavior analysis endpoints into their pharmacological and genetic perturbations. Here we report the development of a second-generation system that is a highly flexible, powerful machine vision and environmental control platform. In order to enable multidisciplinary studies aimed at understanding the roles of genes in brain function and behavior, and aid other laboratories that do not have the facilities to undergo complex engineering development, we describe the device and the problems that it overcomes. We also present sample data using frog tadpoles and flatworms to illustrate its use. Having solved significant engineering challenges in its construction, the resulting design is a relatively inexpensive instrument of wide relevance for several fields, and will accelerate interdisciplinary discovery in pharmacology, neurobiology, regenerative medicine, and cognitive science.",
+  "pmid": "21179424",
+  "pmc": "PMC3003703",
+  "reachable": true,
+  "reachable_status": 200
+}

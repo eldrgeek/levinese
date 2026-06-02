@@ -1,0 +1,17 @@
+{
+  "doi": "10.1002/advs.202509872",
+  "doi_url": "https://doi.org/10.1002/advs.202509872",
+  "title": "Aging as a Loss of Goal‐Directedness: An Evolutionary Simulation and Analysis Unifying Regeneration with Anatomical Rejuvenation",
+  "year": "2025",
+  "journal": "Advanced Science",
+  "authors": [
+    "Léo Pio‐Lopez",
+    "Benedikt Hartl",
+    "Michael Levin"
+  ],
+  "abstract": "Abstract Although substantial advancements are made in manipulating lifespan in model organisms, the fundamental mechanisms driving aging remain elusive. No comprehensive computational platform is capable of making predictions on aging in multicellular systems. Focus is placed on the processes that build and maintain complex target morphologies, and develop an insilico model of multiscale homeostatic morphogenesis using Neural Cellular Automata (NCAs) trained by neuroevolution. In the context of this model: 1) Aging emerges after developmental goals are completed, even without noise or programmed degeneration; 2) Cellular misdifferentiation, reduced competency, communication failures, and genetic damage all accelerate aging but are not its primary cause; 3) Aging correlates with increased active information storage and transfer entropy, while spatial entropy distinguishes two dynamics, structural loss and morphological noise accumulation; 4) Despite organ loss, spatial information persists in tissue, implementing a memory of lost structures, which can be reactivated for organ restoration through targeted regenerative information; and 5) rejuvenation is found to be most efficient when regenerative information includes differential patterns of affected cells and their neighboring tissue, highlighting strategies for rejuvenation. This model suggests a novel perspective on aging as loss of goal‐directedness, with potentially significant implications for longevity research and regenerative medicine.",
+  "pmid": "41082360",
+  "pmc": "PMC12697880",
+  "reachable": true,
+  "reachable_status": 200
+}

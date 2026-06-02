@@ -1,0 +1,15 @@
+{
+  "doi": "10.1007/s00018-023-04790-z",
+  "doi_url": "https://doi.org/10.1007/s00018-023-04790-z",
+  "title": "Darwin’s agential materials: evolutionary implications of multiscale competency in developmental biology",
+  "year": "2023",
+  "journal": "Cellular and Molecular Life Sciences",
+  "authors": [
+    "Michael Levin"
+  ],
+  "abstract": "Abstract A critical aspect of evolution is the layer of developmental physiology that operates between the genotype and the anatomical phenotype. While much work has addressed the evolution of developmental mechanisms and the evolvability of specific genetic architectures with emergent complexity, one aspect has not been sufficiently explored: the implications of morphogenetic problem-solving competencies for the evolutionary process itself. The cells that evolution works with are not passive components: rather, they have numerous capabilities for behavior because they derive from ancestral unicellular organisms with rich repertoires. In multicellular organisms, these capabilities must be tamed, and can be exploited, by the evolutionary process. Specifically, biological structures have a multiscale competency architecture where cells, tissues, and organs exhibit regulative plasticity—the ability to adjust to perturbations such as external injury or internal modifications and still accomplish specific adaptive tasks across metabolic, transcriptional, physiological, and anatomical problem spaces. Here, I review examples illustrating how physiological circuits guiding cellular collective behavior impart computational properties to the agential material that serves as substrate for the evolutionary process. I then explore the ways in which the collective intelligence of cells during morphogenesis affect evolution, providing a new perspective on the evolutionary search process. This key feature of the physiological software of life helps explain the remarkable speed and robustness of biological evolution, and sheds new light on the relationship between genomes and functional anatomical phenotypes.",
+  "pmid": "37156924",
+  "pmc": "PMC10167196",
+  "reachable": true,
+  "reachable_status": 200
+}

@@ -1,0 +1,18 @@
+{
+  "doi": "10.3390/cancers13215300",
+  "doi_url": "https://doi.org/10.3390/cancers13215300",
+  "title": "Cell Systems Bioelectricity: How Different Intercellular Gap Junctions Could Regionalize a Multicellular Aggregate",
+  "year": "2021",
+  "journal": "Cancers",
+  "authors": [
+    "Alejandro Riol",
+    "Javier Cervera",
+    "Michael Levin",
+    "Salvador Mafe"
+  ],
+  "abstract": "Electric potential distributions can act as instructive pre-patterns for development, regeneration, and tumorigenesis in cell systems. The biophysical states influence transcription, proliferation, cell shape, migration, and differentiation through biochemical and biomechanical downstream transduction processes. A major knowledge gap is the origin of spatial patterns in vivo, and their relationship to the ion channels and the electrical synapses known as gap junctions. Understanding this is critical for basic evolutionary developmental biology as well as for regenerative medicine. We computationally show that cells may express connexin proteins with different voltage-gated gap junction conductances as a way to maintain multicellular regions at distinct membrane potentials. We show that increasing the multicellular connectivity via enhanced junction function does not always contribute to the bioelectrical normalization of abnormally depolarized multicellular patches. From a purely electrical junction view, this result suggests that the reduction rather than the increase of specific connexin levels can also be a suitable bioelectrical approach in some cases and time stages. We offer a minimum model that incorporates effective conductances ultimately related to specific ion channel and junction proteins that are amenable to external regulation. We suggest that the bioelectrical patterns and their encoded instructive information can be externally modulated by acting on the mean fields of cell systems, a complementary approach to that of acting on the molecular characteristics of individual cells. We believe that despite the limitations of a biophysically focused model, our approach can offer useful qualitative insights into the collective dynamics of cell system bioelectricity.",
+  "pmid": "34771463",
+  "pmc": "PMC8582473",
+  "reachable": true,
+  "reachable_status": 403
+}

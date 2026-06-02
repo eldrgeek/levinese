@@ -1,0 +1,21 @@
+{
+  "doi": "10.1073/pnas.1202659109",
+  "doi_url": "https://doi.org/10.1073/pnas.1202659109",
+  "title": "Early, nonciliary role for microtubule proteins in left–right patterning is conserved across kingdoms",
+  "year": "2012",
+  "journal": "Proceedings of the National Academy of Sciences",
+  "authors": [
+    "Maria Lobikin",
+    "Gang Wang",
+    "Jingsong Xu",
+    "Yi-Wen Hsieh",
+    "Chiou-Fen Chuang",
+    "Joan M. Lemire",
+    "Michael Levin"
+  ],
+  "abstract": "Many types of embryos’ bodyplans exhibit consistently oriented laterality of the heart, viscera, and brain. Errors of left–right patterning present an important class of human birth defects, and considerable controversy exists about the nature and evolutionary conservation of the molecular mechanisms that allow embryos to reliably orient the left–right axis. Here we show that the same mutations in the cytoskeletal protein tubulin that alter asymmetry in plants also affect very early steps of left–right patterning in nematode and frog embryos, as well as chirality of human cells in culture. In the frog embryo, tubulin α and tubulin γ-associated proteins are required for the differential distribution of maternal proteins to the left or right blastomere at the first cell division. Our data reveal a remarkable molecular conservation of mechanisms initiating left–right asymmetry. The origin of laterality is cytoplasmic, ancient, and highly conserved across kingdoms, a fundamental feature of the cytoskeleton that underlies chirality in cells and multicellular organisms.",
+  "pmid": "22802643",
+  "pmc": "PMC3412009",
+  "reachable": true,
+  "reachable_status": 403
+}

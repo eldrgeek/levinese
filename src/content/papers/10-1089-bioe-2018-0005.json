@@ -1,0 +1,18 @@
+{
+  "doi": "10.1089/bioe.2018.0005",
+  "doi_url": "https://doi.org/10.1089/bioe.2018.0005",
+  "title": "Membrane Potential Depolarization Alters Calcium Flux and Phosphate Signaling During Osteogenic Differentiation of Human Mesenchymal Stem Cells",
+  "year": "2019",
+  "journal": "Bioelectricity",
+  "authors": [
+    "Sarah Sundelacruz",
+    "Amy Thurber Moody",
+    "Michael Levin",
+    "David L. Kaplan"
+  ],
+  "abstract": "Background: Membrane potential (Vmem) changes accompany important events in embryonic development and organ regeneration. Recent studies have pointed to its function as a potent regulator of cell proliferation, differentiation, migration, and tissue regeneration. We have previously reported that Vmem depolarization and hyperpolarization control the osteogenic (OS) differentiation potential of human mesenchymal stem cells (hMSCs). Materials and Methods: In this study, we sought to understand the mechanism(s) underlying voltage regulation of hMSC differentiation. We investigated the role of calcium and phosphate ion flux in the depolarization response of OS-differentiating hMSCs, as these ions are the two major inorganic components of the bone mineral matrix and are indicative of mature osteoblast function. Results: Our results suggest that inorganic phosphate levels play a larger role than calcium flux in mediating hMSC response to depolarization and that the expression of stanniocalcin 1 (STC1), a protein that regulates calcium and phosphate homeostasis in osteoblasts, is functionally required for the depolarization response during the early stages of differentiation. Conclusion: Depolarization alters hMSC differentiation through a phosphate signaling pathway involving STC1. This study enriches our mechanistic understanding of hMSC response to endogenous voltage cues.",
+  "pmid": "32292891",
+  "pmc": "PMC6524654",
+  "reachable": true,
+  "reachable_status": 403
+}

@@ -1,0 +1,16 @@
+{
+  "doi": "10.1002/ar.22495",
+  "doi_url": "https://doi.org/10.1002/ar.22495",
+  "title": "Transducing Bioelectric Signals into Epigenetic Pathways During Tadpole Tail Regeneration",
+  "year": "2012",
+  "journal": "The Anatomical Record",
+  "authors": [
+    "Ai‐Sun Tseng",
+    "Michael Levin"
+  ],
+  "abstract": "Abstract One important component of the cell–cell communication that occurs during regenerative patterning is bioelectrical signaling. In particular, the regeneration of the tail in Xenopus laevis tadpoles both requires, and can be initiated at non‐regenerative stages by, specific regulation of bioelectrical signaling (alteration in resting membrane potential and a subsequent change in sodium content of blastemal cells). Although standing gradients of transmembrane voltage and ion concentration can provide positional guidance and other morphogenetic cues, these biophysical parameters must be transduced into transcriptional responses within cells. A number of mechanisms have been described for linking slow voltage changes to gene expression, but recent data on the importance of epigenetic regulation for regeneration suggest a novel hypothesis: that sodium/butyrate transporters link ion flows to influx of small molecules needed to modify chromatin state. Here, we briefly review the data on bioelectricity in tadpole tail regeneration, present a technique for convenient alteration of transmembrane potential in vivo that does not require transgenes, show augmentation of regeneration in vivo by manipulation of voltage, and present new data in the Xenopus tail consistent with the hypothesis that the monocarboxlyate transporter SLC5A8 may link regeneration‐relevant epigenetic modification with upstream changes in ion content. Anat Rec, 2012. © 2012 Wiley Periodicals, Inc.",
+  "pmid": "22933452",
+  "pmc": "PMC3442154",
+  "reachable": true,
+  "reachable_status": 403
+}

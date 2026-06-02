@@ -1,0 +1,17 @@
+{
+  "doi": "10.3390/ijms24010285",
+  "doi_url": "https://doi.org/10.3390/ijms24010285",
+  "title": "Learning in Transcriptional Network Models: Computational Discovery of Pathway-Level Memory and Effective Interventions",
+  "year": "2022",
+  "journal": "International Journal of Molecular Sciences",
+  "authors": [
+    "Surama Biswas",
+    "Wesley Clawson",
+    "Michael Levin"
+  ],
+  "abstract": "Trainability, in any substrate, refers to the ability to change future behavior based on past experiences. An understanding of such capacity within biological cells and tissues would enable a particularly powerful set of methods for prediction and control of their behavior through specific patterns of stimuli. This top-down mode of control (as an alternative to bottom-up modification of hardware) has been extensively exploited by computer science and the behavioral sciences; in biology however, it is usually reserved for organism-level behavior in animals with brains, such as training animals towards a desired response. Exciting work in the field of basal cognition has begun to reveal degrees and forms of unconventional memory in non-neural tissues and even in subcellular biochemical dynamics. Here, we characterize biological gene regulatory circuit models and protein pathways and find them capable of several different kinds of memory. We extend prior results on learning in binary transcriptional networks to continuous models and identify specific interventions (regimes of stimulation, as opposed to network rewiring) that abolish undesirable network behavior such as drug pharmacoresistance and drug sensitization. We also explore the stability of created memories by assessing their long-term behavior and find that most memories do not decay over long time periods. Additionally, we find that the memory properties are quite robust to noise; surprisingly, in many cases noise actually increases memory potential. We examine various network properties associated with these behaviors and find that no one network property is indicative of memory. Random networks do not show similar memory behavior as models of biological processes, indicating that generic network dynamics are not solely responsible for trainability. Rational control of dynamic pathway function using stimuli derived from computational models opens the door to empirical studies of proto-cognitive capacities in unconventional embodiments and suggests numerous possible applications in biomedicine, where behavior shaping of pathway responses stand as a potential alternative to gene therapy.",
+  "pmid": "36613729",
+  "pmc": "PMC9820177",
+  "reachable": true,
+  "reachable_status": 403
+}

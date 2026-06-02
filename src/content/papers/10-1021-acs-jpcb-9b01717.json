@@ -1,0 +1,18 @@
+{
+  "doi": "10.1021/acs.jpcb.9b01717",
+  "doi_url": "https://doi.org/10.1021/acs.jpcb.9b01717",
+  "title": "Synchronization of Bioelectric Oscillations in Networks of Nonexcitable Cells: From Single-Cell to Multicellular States",
+  "year": "2019",
+  "journal": "The Journal of Physical Chemistry B",
+  "authors": [
+    "Javier Cervera",
+    "José Antonio Manzanares",
+    "Salvador Mafe",
+    "Michael Levin"
+  ],
+  "abstract": "Biological networks use collective oscillations for information processing tasks. In particular, oscillatory membrane potentials have been observed in nonexcitable cells and bacterial communities where specific ion channel proteins contribute to the bioelectric coordination of large populations. We aim at describing theoretically the oscillatory spatiotemporal patterns that emerge at the multicellular level from the single-cell bioelectric dynamics. To this end, we focus on two key questions: (i) What single-cell properties are relevant to multicellular behavior? (ii) What properties defined at the multicellular level can allow an external control of the bioelectric dynamics? In particular, we explore the interplay between transcriptional and translational dynamics and membrane potential dynamics in a model multicellular ensemble, describe the spatiotemporal patterns that arise when the average electric potential allows groups of cells to act as a coordinated multicellular patch, and characterize the resulting synchronization phenomena. The simulations concern bioelectric networks and collective communication across different scales based on oscillatory and synchronization phenomena, thus shedding light on the physiological dynamics of a wide range of endogenous contexts across embryogenesis and regeneration.",
+  "pmid": "31003574",
+  "pmc": null,
+  "reachable": true,
+  "reachable_status": 403
+}

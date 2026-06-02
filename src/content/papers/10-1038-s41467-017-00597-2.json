@@ -1,0 +1,19 @@
+{
+  "doi": "10.1038/s41467-017-00597-2",
+  "doi_url": "https://doi.org/10.1038/s41467-017-00597-2",
+  "title": "The brain is required for normal muscle and nerve patterning during early Xenopus development",
+  "year": "2017",
+  "journal": "Nature Communications",
+  "authors": [
+    "Celia Herrera-Rincon",
+    "Vaibhav P. Pai",
+    "Kristine M. Moran",
+    "Joan M. Lemire",
+    "Michael Levin"
+  ],
+  "abstract": "Abstract Possible roles of brain-derived signals in the regulation of embryogenesis are unknown. Here we use an amputation assay in Xenopus laevis to show that absence of brain alters subsequent muscle and peripheral nerve patterning during early development. The muscle phenotype can be rescued by an antagonist of muscarinic acetylcholine receptors. The observed defects occur at considerable distances from the head, suggesting that the brain provides long-range cues for other tissue systems during development. The presence of brain also protects embryos from otherwise-teratogenic agents. Overexpression of a hyperpolarization-activated cyclic nucleotide-gated ion channel rescues the muscle phenotype and the neural mispatterning that occur in brainless embryos, even when expressed far from the muscle or neural cells that mispattern. We identify a previously undescribed developmental role for the brain and reveal a non-local input into the control of early morphogenesis that is mediated by neurotransmitters and ion channel activity.",
+  "pmid": "28943634",
+  "pmc": "PMC5610959",
+  "reachable": true,
+  "reachable_status": 200
+}

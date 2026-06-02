@@ -1,0 +1,16 @@
+{
+  "doi": "10.1063/5.0062442",
+  "doi_url": "https://doi.org/10.1063/5.0062442",
+  "title": "Stability and robustness properties of bioelectric networks: A computational approach",
+  "year": "2021",
+  "journal": "Biophysics Reviews",
+  "authors": [
+    "Joel Grodstein",
+    "Michael Levin"
+  ],
+  "abstract": "Morphogenesis during development and regeneration requires cells to communicate and cooperate toward the construction of complex anatomical structures. One important set of mechanisms for coordinating growth and form occurs via developmental bioelectricity—the dynamics of cellular networks driving changes of resting membrane potential which interface with transcriptional and biomechanical downstream cascades. While many molecular details have been elucidated about the instructive processes mediated by ion channel-dependent signaling outside of the nervous system, future advances in regenerative medicine and bioengineering require the understanding of tissue, organ, or whole body-level properties. A key aspect of bioelectric networks is their robustness, which can drive correct, invariant patterning cues despite changing cell number and anatomical configuration of the underlying tissue network. Here, we computationally analyze the minimal models of bioelectric networks and use the example of the regenerating planarian flatworm, to reveal important system-level aspects of bioelectrically derived patterns. These analyses promote an understanding of the robustness of circuits controlling regeneration and suggest design properties that can be exploited for synthetic bioengineering.",
+  "pmid": "38505634",
+  "pmc": "PMC10903393",
+  "reachable": true,
+  "reachable_status": 403
+}

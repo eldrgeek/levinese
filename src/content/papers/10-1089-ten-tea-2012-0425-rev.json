@@ -1,0 +1,17 @@
+{
+  "doi": "10.1089/ten.tea.2012.0425.rev",
+  "doi_url": "https://doi.org/10.1089/ten.tea.2012.0425.rev",
+  "title": "Depolarization Alters Phenotype, Maintains Plasticity of Predifferentiated Mesenchymal Stem Cells",
+  "year": "2013",
+  "journal": "Tissue Engineering Part A",
+  "authors": [
+    "Sarah Sundelacruz",
+    "Michael Levin",
+    "David L. Kaplan"
+  ],
+  "abstract": "Although adult stem cell transplantation has been implemented as a therapy for tissue repair, it is limited by the availability of functional adult stem cells. A potential approach to generate stem and progenitor cells may be to modulate the differentiated status of somatic cells. Therefore, there is a need for a better understanding of how the differentiated phenotype of mature cells is regulated. We hypothesize that bioelectric signaling plays an important role in the maintenance of the differentiated state, as it is a functional regulator of the differentiation process in various cells and tissues. In this study, we asked whether the mature phenotype of osteoblasts and adipocytes derived from human mesenchymal stem cells (hMSCs) could be altered by modulation of their membrane potential. hMSC-derived osteoblasts and adipocytes were depolarized by treatment with ouabain, a Na(+)/K(+) ATPase inhibitor, or by treatment with high concentrations of extracellular K(+). To characterize the effect of voltage modulation on the differentiated state, the depolarized cells were evaluated for (1) the loss of differentiation markers; (2) the up-regulation of stemness markers and stem properties; and (3) differences in gene expression profiles in response to voltage modulation. hMSC-derived osteoblasts and adipocytes exhibited significant down-regulation of bone and fat tissue markers in response to depolarization, despite the presence of differentiation-inducing soluble factors, suggesting that bioelectric signaling overrides biochemical signaling in the maintenance of cell state. Suppression of the osteoblast or adipocyte phenotype was not accompanied by up-regulation of genes associated with the stem state. Thus, depolarization does not activate the stem cell genetic signature and, therefore, does not induce a full reprogramming event. However, after transdifferentiating the depolarized cells to evaluate for multi-lineage potential, depolarized osteoblasts demonstrated improved ability to achieve correct adipocyte morphology compared with nondepolarized osteoblasts. The present study thus demonstrates that depolarization reduces the differentiated phenotype of hMSC-derived cells and improves their transdifferentiation capacity, but does not restore a stem-like genetic profile. Through global transcript profiling of depolarized osteoblasts, we identified pathways that may mediate the effects of voltage signaling on cell state, which will require a detailed mechanistic inquiry in future studies.",
+  "pmid": "23738690",
+  "pmc": "PMC3726227",
+  "reachable": true,
+  "reachable_status": 403
+}

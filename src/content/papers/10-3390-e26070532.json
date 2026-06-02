@@ -1,0 +1,17 @@
+{
+  "doi": "10.3390/e26070532",
+  "doi_url": "https://doi.org/10.3390/e26070532",
+  "title": "Evolutionary Implications of Self-Assembling Cybernetic Materials with Collective Problem-Solving Intelligence at Multiple Scales",
+  "year": "2024",
+  "journal": "Entropy",
+  "authors": [
+    "Benedikt Hartl",
+    "Sebastian Risi",
+    "Michael Levin"
+  ],
+  "abstract": "In recent years, the scientific community has increasingly recognized the complex multi-scale competency architecture (MCA) of biology, comprising nested layers of active homeostatic agents, each forming the self-orchestrated substrate for the layer above, and, in turn, relying on the structural and functional plasticity of the layer(s) below. The question of how natural selection could give rise to this MCA has been the focus of intense research. Here, we instead investigate the effects of such decision-making competencies of MCA agential components on the process of evolution itself, using in silico neuroevolution experiments of simulated, minimal developmental biology. We specifically model the process of morphogenesis with neural cellular automata (NCAs) and utilize an evolutionary algorithm to optimize the corresponding model parameters with the objective of collectively self-assembling a two-dimensional spatial target pattern (reliable morphogenesis). Furthermore, we systematically vary the accuracy with which the uni-cellular agents of an NCA can regulate their cell states (simulating stochastic processes and noise during development). This allows us to continuously scale the agents’ competency levels from a direct encoding scheme (no competency) to an MCA (with perfect reliability in cell decision executions). We demonstrate that an evolutionary process proceeds much more rapidly when evolving the functional parameters of an MCA compared to evolving the target pattern directly. Moreover, the evolved MCAs generalize well toward system parameter changes and even modified objective functions of the evolutionary process. Thus, the adaptive problem-solving competencies of the agential parts in our NCA-based in silico morphogenesis model strongly affect the evolutionary process, suggesting significant functional implications of the near-ubiquitous competency seen in living matter.",
+  "pmid": "39056895",
+  "pmc": "PMC11275831",
+  "reachable": true,
+  "reachable_status": 403
+}

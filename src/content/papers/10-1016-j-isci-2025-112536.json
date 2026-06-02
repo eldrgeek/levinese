@@ -1,0 +1,16 @@
+{
+  "doi": "10.1016/j.isci.2025.112536",
+  "doi_url": "https://doi.org/10.1016/j.isci.2025.112536",
+  "title": "Harnessing the analog computing power of regulatory networks with the Regulatory Network Machine",
+  "year": "2025",
+  "journal": "iScience",
+  "authors": [
+    "Alexis Pietak",
+    "Michael Levin"
+  ],
+  "abstract": "Gene regulatory networks (GRNs) are critically important for efforts in biomedicine and biotechnology. Here, we introduce the Regulatory Network Machine (RNM) framework, demonstrating how GRNs behave as analog computers capable of sophisticated information processing. Our RNM framework encapsulates: (1) a dissipative dynamic system with a focus on GRNs, (2) a set of inputs to the system, (3) system output states with identifiable relevance to biotechnological or biomedical objectives, and (4) Network Finite State Machines (NFSMs), which are maps detailing how the system changes equilibrium state in response to patterns of applied inputs. As an extension to attractor landscape analysis, the NFSMs map the sequential logic inherent in the GRN and, therefore, embody the \"software-like\" nature of the system, providing easy identification of specific applied interventions necessary to achieve desired, stable biological outcomes. We illustrate the use of our RNM framework in important biological examples, including in cancer renormalization.",
+  "pmid": "40600146",
+  "pmc": "PMC12210318",
+  "reachable": true,
+  "reachable_status": 200
+}

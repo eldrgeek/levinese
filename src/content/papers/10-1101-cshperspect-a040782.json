@@ -1,0 +1,16 @@
+{
+  "doi": "10.1101/cshperspect.a040782",
+  "doi_url": "https://doi.org/10.1101/cshperspect.a040782",
+  "title": "Inducing Vertebrate Limb Regeneration: A Review of Past Advances and Future Outlook",
+  "year": "2021",
+  "journal": "Cold Spring Harbor Perspectives in Biology",
+  "authors": [
+    "Devon Davidian",
+    "Michael Levin"
+  ],
+  "abstract": "Limb loss due to traumatic injury or amputation is a major biomedical burden. Many vertebrates exhibit the ability to form and pattern normal limbs during embryogenesis from amorphous clusters of precursor cells, hinting that this process could perhaps be activated later in life to rebuild missing or damaged limbs. Indeed, some animals, such as salamanders, are proficient regenerators of limbs throughout their life span. Thus, research over the last century has sought to stimulate regeneration in species that do not normally regenerate their appendages. Importantly, these efforts are not only a vital aspect of regenerative medicine, but also have fundamental implications for understanding evolution and the cellular control of growth and form throughout the body. Here we review major recent advances in augmenting limb regeneration, summarizing the degree of success that has been achieved to date in frog and mammalian models using genetic, biochemical, and bioelectrical interventions. While the degree of whole limb repair in rodent models has been modest to date, a number of new technologies and approaches comprise an exciting near-term road map for basic and clinical progress in regeneration.",
+  "pmid": "34400551",
+  "pmc": "PMC9121900",
+  "reachable": true,
+  "reachable_status": 200
+}

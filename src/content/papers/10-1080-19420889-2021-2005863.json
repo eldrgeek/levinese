@@ -1,0 +1,16 @@
+{
+  "doi": "10.1080/19420889.2021.2005863",
+  "doi_url": "https://doi.org/10.1080/19420889.2021.2005863",
+  "title": "Behaviorist approaches to investigating memory and learning: A primer for synthetic biology and bioengineering",
+  "year": "2021",
+  "journal": "Communicative &amp; Integrative Biology",
+  "authors": [
+    "Charles I. Abramson",
+    "Michael Levin"
+  ],
+  "abstract": "The fields of developmental biology, biomedicine, and artificial life are being revolutionized by advances in synthetic morphology. The next phase of synthetic biology and bioengineering is resulting in the construction of novel organisms (biobots), which exhibit not only morphogenesis and physiology but functional behavior. It is now essential to begin to characterize the behavioral capacity of novel living constructs in terms of their ability to make decisions, form memories, learn from experience, and anticipate future stimuli. These synthetic organisms are highly diverse, and often do not resemble familiar model systems used in behavioral science. Thus, they represent an important context in which to begin to unify and standardize vocabulary and techniques across developmental biology, behavioral ecology, and neuroscience. To facilitate the study of behavior in novel living systems, we present a primer on techniques from the behaviorist tradition that can be used to probe the functions of any organism - natural, chimeric, or synthetic - regardless of the details of their construction or origin. These techniques provide a rich toolkit for advancing the fields of synthetic bioengineering, evolutionary developmental biology, basal cognition, exobiology, and robotics.",
+  "pmid": "34925687",
+  "pmc": "PMC8677006",
+  "reachable": true,
+  "reachable_status": 403
+}

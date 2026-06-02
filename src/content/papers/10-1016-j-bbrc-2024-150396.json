@@ -1,0 +1,16 @@
+{
+  "doi": "10.1016/j.bbrc.2024.150396",
+  "doi_url": "https://doi.org/10.1016/j.bbrc.2024.150396",
+  "title": "Stress sharing as cognitive glue for collective intelligences: A computational model of stress as a coordinator for morphogenesis",
+  "year": "2024",
+  "journal": "Biochemical and Biophysical Research Communications",
+  "authors": [
+    "Lakshwin Shreesha",
+    "Michael Levin"
+  ],
+  "abstract": "Individual cells have numerous competencies in physiological and metabolic spaces. However, multicellular collectives can reliably navigate anatomical morphospace towards much larger, reliable endpoints. Understanding the robustness and control properties of this process is critical for evolutionary developmental biology, bioengineering, and regenerative medicine. One mechanism that has been proposed for enabling individual cells to coordinate toward specific morphological outcomes is the sharing of stress (where stress is a physiological parameter that reflects the current amount of error in the context of a homeostatic loop). Here, we construct and analyze a multiscale agent-based model of morphogenesis in which we quantitatively examine the impact of stress sharing on the ability to reach target morphology. We found that stress sharing improves the morphogenetic efficiency of multicellular collectives; populations with stress sharing reached anatomical targets faster. Moreover, stress sharing influenced the future fate of distant cells in the multi-cellular collective, enhancing cells' movement and their radius of influence, consistent with the hypothesis that stress sharing works to increase cohesiveness of collectives. During development, anatomical goal states could not be inferred from observation of stress states, revealing the limitations of knowledge of goals by an extern observer outside the system itself. Taken together, our analyses support an important role for stress sharing in natural and engineered systems that seek robust large-scale behaviors to emerge from the activity of their competent components.",
+  "pmid": "39018974",
+  "pmc": "PMC11356093",
+  "reachable": true,
+  "reachable_status": 200
+}

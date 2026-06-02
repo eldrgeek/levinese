@@ -1,0 +1,18 @@
+{
+  "doi": "10.1002/advs.202511537",
+  "doi_url": "https://doi.org/10.1002/advs.202511537",
+  "title": "Heuristically Adaptive Diffusion‐Model Evolutionary Strategy",
+  "year": "2026",
+  "journal": "Advanced Science",
+  "authors": [
+    "Benedikt Hartl",
+    "Yanbo Zhang",
+    "Hananel Hazan",
+    "Michael Levin"
+  ],
+  "abstract": "ABSTRACT Diffusion Models (DMs) and Evolutionary Algorithms (EAs) share a core generative principle: iterative refinement of random initial distributions to produce high‐quality solutions. DMs degrade and restore data using Gaussian noise, enabling versatile generation, while EAs optimize numerical parameters through biologically inspired heuristics. Our research integrates these frameworks, employing deep learning‐based DMs to enhance EAs across diverse domains. By iteratively refining DMs with heuristically curated databases, we generate better‐adapted offspring parameters, achieving efficient convergence toward high‐fitness solutions while preserving explorative diversity. DMs augment EAs with deep memory, retaining historical data and exploiting subtle correlations for refined sampling. Classifier‐free guidance further enables precise control over evolutionary dynamics, targeting specific genotypical, phenotypical, or population traits. This hybrid approach transforms EAs into adaptive, memory‐enhanced frameworks, offering unprecedented flexibility, and precision in evolutionary optimization, with broad implications for generative modeling and heuristic search.",
+  "pmid": "41793196",
+  "pmc": "PMC13067789",
+  "reachable": true,
+  "reachable_status": 200
+}

@@ -1,0 +1,23 @@
+{
+  "doi": "10.1113/JP271930",
+  "doi_url": "https://doi.org/10.1113/JP271930",
+  "title": "Bioelectric signalling via potassium channels: a mechanism for craniofacial dysmorphogenesis in KCNJ2‐associated Andersen–Tawil Syndrome",
+  "year": "2016",
+  "journal": "The Journal of Physiology",
+  "authors": [
+    "Dany Spencer Adams",
+    "Sebastien G. M. Uzel",
+    "Jin Akagi",
+    "Donald Wlodkowic",
+    "Viktoria Andreeva",
+    "Pamela Crotty Yelick",
+    "Adrian Devitt‐Lee",
+    "Jean‐Francois Pare",
+    "Michael Levin"
+  ],
+  "abstract": "Key points Xenopus laevis craniofacial development is a good system for the study of Andersen–Tawil Syndrome (ATS)‐associated craniofacial anomalies (CFAs) because (1) Kcnj2 is expressed in the nascent face; (2) molecular‐genetic and biophysical techniques are available for the study of ion‐dependent signalling during craniofacial morphogenesis; (3) as in humans, expression of variant Kcnj2 forms in embryos causes a muscle phenotype; and (4) variant forms of Kcnj2 found in human patients, when injected into frog embryos, cause CFAs in the same cell lineages. Forced expression of WT or variant Kcnj2 changes the normal pattern of V mem (resting potential) regionalization found in the ectoderm of neurulating embryos, and changes the normal pattern of expression of ten different genetic regulators of craniofacial development, including markers of cranial neural crest and of placodes. Expression of other potassium channels and two different light‐activated channels, all of which have an effect on V mem , causes CFAs like those induced by injection of Kcnj 2 variants. In contrast, expression of Slc9A (NHE3), an electroneutral ion channel, and of GlyR , an inactive Cl − channel, do not cause CFAs, demonstrating that correct craniofacial development depends on a pattern of bioelectric states, not on ion‐ or channel‐specific signalling. Using optogenetics to control both the location and the timing of ion flux in developing embryos, we show that affecting V mem of the ectoderm and no other cell layers is sufficient to cause CFAs, but only during early neurula stages. Changes in V mem induced late in neurulation do not affect craniofacial development. We interpret these data as strong evidence, consistent with our hypothesis, that ATS‐associated CFAs are caused by the effect of variant Kcnj2 on the V mem of ectodermal cells of the developing face. We predict that the critical time is early during neurulation, and the critical cells are the ectodermal cranial neural crest and placode lineages. This points to the potential utility of extant, ion flux‐modifying drugs as treatments to prevent CFAs associated with channelopathies such as ATS. Abstract Variants in potassium channel KCNJ2 cause Andersen–Tawil Syndrome (ATS); the induced craniofacial anomalies (CFAs) are entirely unexplained. We show that KCNJ2 is expressed in Xenopus and mouse during the earliest stages of craniofacial development. Misexpression in Xenopus of KCNJ2 carrying ATS‐associated mutations causes CFAs in the same structures affected in humans, changes the normal pattern of membrane voltage potential regionalization in the developing face and disrupts expression of important craniofacial patterning genes, revealing the endogenous control of craniofacial patterning by bioelectric cell states. By altering cells’ resting potentials using other ion translocators, we show that a change in ectodermal voltage, not tied to a specific protein or ion, is sufficient to cause CFAs. By adapting optogenetics for use in non‐neural cells in embryos, we show that developmentally patterned K + flux is required for correct regionalization of the resting potentials and for establishment of endogenous early gene expression domains in the anterior ectoderm, and that variants in KCNJ2 disrupt this regionalization, leading to the CFAs seen in ATS patients.",
+  "pmid": "26864374",
+  "pmc": "PMC4908029",
+  "reachable": true,
+  "reachable_status": 403
+}

@@ -1,0 +1,17 @@
+{
+  "doi": "10.1152/physiol.00027.2019",
+  "doi_url": "https://doi.org/10.1152/physiol.00027.2019",
+  "title": "Morphological Coordination: A Common Ancestral Function Unifying Neural and Non-Neural Signaling",
+  "year": "2020",
+  "journal": "Physiology",
+  "authors": [
+    "Chris Fields",
+    "Johanna Bischof",
+    "Michael Levin"
+  ],
+  "abstract": "Nervous systems are traditionally thought of as providing sensing and behavioral coordination functions at the level of the whole organism. What is the evolutionary origin of the mechanisms enabling the nervous systems’ information processing ability? Here, we review evidence from evolutionary, developmental, and regenerative biology suggesting a deeper, ancestral function of both pre-neural and neural cell-cell communication systems: the long-distance coordination of cell division and differentiation required to create and maintain body-axis symmetries. This conceptualization of the function of nervous system activity sheds new light on the evolutionary transition from the morphologically rudimentary, non-neural Porifera and Placazoa to the complex morphologies of Ctenophores, Cnidarians, and Bilaterians. It further allows a sharp formulation of the distinction between long-distance axis-symmetry coordination based on external coordinates, e.g., by whole-organism scale trophisms as employed by plants and sessile animals, and coordination based on body-centered coordinates as employed by motile animals. Thus we suggest that the systems that control animal behavior evolved from ancient mechanisms adapting preexisting ionic and neurotransmitter mechanisms to regulate individual cell behaviors during morphogenesis. An appreciation of the ancient, non-neural origins of bioelectrically mediated computation suggests new approaches to the study of embryological development, including embryological dysregulation, cancer, regenerative medicine, and synthetic bioengineering.",
+  "pmid": "31799909",
+  "pmc": null,
+  "reachable": true,
+  "reachable_status": 403
+}

@@ -1,0 +1,22 @@
+{
+  "doi": "10.1242/bio.025957",
+  "doi_url": "https://doi.org/10.1242/bio.025957",
+  "title": "HCN4 ion channel function is required for early events that regulate anatomical left-right patterning in a Nodal- and Lefty asymmetric gene expression-independent manner",
+  "year": "2017",
+  "journal": "Biology Open",
+  "authors": [
+    "Vaibhav P. Pai",
+    "Valerie Willocq",
+    "Emily J. Pitcairn",
+    "Joan M. Lemire",
+    "Jean-François Paré",
+    "Nian-Qing Shi",
+    "Kelly A. McLaughlin",
+    "Michael Levin"
+  ],
+  "abstract": "Laterality is a basic characteristic of all life forms, from single cell organisms to complex plants and animals. For many metazoans, consistent left-right asymmetric patterning is essential for the correct anatomy of internal organs, such as the heart, gut, and brain; disruption of left-right asymmetry patterning leads to an important class of birth defects in human patients. Laterality functions across multiple scales, where early embryonic, subcellular and chiral cytoskeletal events are coupled with asymmetric amplification mechanisms and gene regulatory networks leading to asymmetric physical forces that ultimately result in distinct left and right anatomical organ patterning. Recent studies have suggested the existence of multiple parallel pathways regulating organ asymmetry. Here, we show that an isoform of the Hyperpolarization-activated cyclic-nucleotide gated family of ion channels, HCN4, is important for correct left-right patterning. HCN4 channels are present very early in Xenopus embryos. Blocking HCN channels (Ih current) with pharmacological inhibitors leads to errors in organ situs. This effect is only seen when HCN4 channels are blocked early (pre-stage 10) and not by a later block (post-stage 10). Injections of HCN4-DN (dominant-negative) mRNA induces left-right defects only when injected in both blastomeres no later than the 2-cell stage. Analysis of key asymmetric genes’ expression showed that the sidedness of Nodal, Lefty, and Pitx2 expression is largely unchanged by HCN4 blockade, despite the randomization of subsequent organ situs, although the area of Pitx2 expression was significantly reduced. Together these data identify a novel, developmental role for HCN4 channels and reveal a new Nodal-Lefty-Pitx2 asymmetric gene expression-independent mechanism upstream of organ positioning during embryonic left-right patterning.",
+  "pmid": "28818840",
+  "pmc": "PMC5665463",
+  "reachable": true,
+  "reachable_status": 403
+}

@@ -1,0 +1,18 @@
+{
+  "doi": "10.1242/dev.086900",
+  "doi_url": "https://doi.org/10.1242/dev.086900",
+  "title": "Bioelectric signaling regulates head and organ size during planarian regeneration",
+  "year": "2013",
+  "journal": "Development",
+  "authors": [
+    "Wendy Scott Beane",
+    "Junji Morokuma",
+    "Joan M. Lemire",
+    "Michael Levin"
+  ],
+  "abstract": "A main goal of regenerative medicine is to replace lost or damaged tissues and organs with functional parts of the correct size and shape. But the proliferation of new cells is not sufficient; we will also need to understand how the scale and ultimate form of newly produced tissues are determined. Using the planarian model system, we report that membrane voltage-dependent bioelectric signaling determines both head size and organ scaling during regeneration. RNA interference of the H+,K+-ATPase ion pump results in membrane hyperpolarization, which has no effect on the amount of new tissue (blastema) that is regenerated yet produces regenerates with tiny ‘shrunken’ heads and proportionally oversized pharynges. Our data show that this disproportionality results from a lack of the apoptosis required to adjust head and organ size and placement, highlighting apoptotic remodeling as the link between bioelectric signaling and the establishment of organ size during regeneration.",
+  "pmid": "23250205",
+  "pmc": "PMC3597208",
+  "reachable": true,
+  "reachable_status": 403
+}

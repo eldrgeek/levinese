@@ -1,0 +1,17 @@
+{
+  "doi": "10.1038/s41536-017-0012-5",
+  "doi_url": "https://doi.org/10.1038/s41536-017-0012-5",
+  "title": "Serotonergic stimulation induces nerve growth and promotes visual learning via posterior eye grafts in a vertebrate model of induced sensory plasticity",
+  "year": "2017",
+  "journal": "npj Regenerative Medicine",
+  "authors": [
+    "Douglas J. Blackiston",
+    "Khanh Vien",
+    "Michael Levin"
+  ],
+  "abstract": "Abstract The major goal of regenerative medicine is to repair damaged tissues and organ systems, thereby restoring their native functions in the host. Control of innervation by re-grown or implanted structures, and integration of the nascent nerves into behavioral/cognitive programs of the host, remains a critical barrier. In the case of sensory organs, this is particularly true, as afferent neurons must form connections with the host to communicate auditory, visual, and tactile information. Xenopus embryos and tadpoles are powerful models for such studies, as grafting techniques allow for the creation of eyes and other sensory structures along the body axis, and the behavior of the resulting organism can be quantitatively analyzed. Previous work has demonstrated that ectopic eyes could be grafted in blinded tadpoles, allowing some of the animals to learn in a simple light-preference assay. Here, we show that it is possible to improve the efficiency of the process in the context of a novel image-forming vision assay, using a drug already approved for human use. Innervation of the host by ectopic eyes can be increased by targeting a serotonergic signaling mechanism: grafts treated with a 5-HT 1B/D agonist strongly innervate the recipient compared with untreated grafts, without large-scale disruption of the host nervous system. Blind animals possessing eye grafts with the augmented innervation demonstrate increased performance over untreated siblings in wavelength-based learning assays. Furthermore, treated animals also exhibit enhanced visual pattern recognition, suggesting that the increased innervation in response to 5-HT 1B/D activation leads to enhanced functional integration of the ectopic organ with the host central nervous system and behavioral programs. These data establish a model system and reveal a new roadmap using small molecule neurotransmitter drugs to augment innervation, integration, and function of transplanted heterologous organs in regenerative medicine.",
+  "pmid": "29302344",
+  "pmc": "PMC5665622",
+  "reachable": true,
+  "reachable_status": 200
+}

@@ -1,0 +1,17 @@
+{
+  "doi": "10.1101/pdb.prot071977",
+  "doi_url": "https://doi.org/10.1101/pdb.prot071977",
+  "title": "Humane Anesthesia and Pain Management in Amphibian Limb Surgery of <i>Rana pipiens</i>",
+  "year": "2013",
+  "journal": "Cold Spring Harbor Protocols",
+  "authors": [
+    "Punita Koustubhan",
+    "David L. Kaplan",
+    "Michael Levin"
+  ],
+  "abstract": "Adult Rana pipiens frogs are used as a model to investigate mechanisms of vertebrate organ regeneration, anti-tumor ribonucleases, zoological impacts of various pollutants, oncogenesis, neuroplasticity, and neurogenesis. In regenerative biology, the adult Rana pipiens frog is an important alternative to other frog models, such as Xenopus laevis , because it offers the opportunity to study and attempt to augment limb regeneration in an animal that spends significant time out of water and bears weight on its limbs. To elucidate regenerative processes, it is necessary to amputate the limb to study the processes associated with wound healing, blastema formation, and morphogenesis. Being able to revive the animal successfully with little or no side effects is paramount to these studies. Anesthesia and the effect it has on the frogs can vary based on the methods and post-operative care exercised during surgery. However, useful information is not readily available regarding current anesthesia methods or effective and humane analgesia use in amphibians. Amphibian patients are very sensitive to drug dosages, changes in temperature, humidity and water quality; here, special attention is given to these factors. This protocol establishes a humane anesthesia technique while maintaining physiological homeostasis during procedures in amphibians as well as a post-operative care plan addressing the clinical benefits of using analgesics in pain management. Suggestions for infection prevention are covered with a sample treatment plan to ensure that all of the animals have a positive outcome and all of the surgeries have reproducible results.",
+  "pmid": "23378649",
+  "pmc": "PMC3768120",
+  "reachable": true,
+  "reachable_status": 200
+}

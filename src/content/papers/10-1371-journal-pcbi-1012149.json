@@ -1,0 +1,24 @@
+{
+  "doi": "10.1371/journal.pcbi.1012149",
+  "doi_url": "https://doi.org/10.1371/journal.pcbi.1012149",
+  "title": "Revealing non-trivial information structures in aneural biological tissues via functional connectivity",
+  "year": "2025",
+  "journal": "PLOS Computational Biology",
+  "authors": [
+    "Douglas Blackiston",
+    "Hannah Dromiack",
+    "Caitlin Grasso",
+    "Thomas F Varley",
+    "Douglas G Moore",
+    "Krishna Kannan Srinivasan",
+    "Olaf Sporns",
+    "Joshua Bongard",
+    "Michael Levin",
+    "Sara I Walker"
+  ],
+  "abstract": "A central challenge in the progression of a variety of open questions in biology, such as morphogenesis, wound healing, and development, is learning from empirical data how information is integrated to support tissue-level function and behavior. Information-theoretic approaches provide a quantitative framework for extracting patterns from data, but so far have been predominantly applied to neuronal systems at the tissue-level. Here, we demonstrate how time series of Ca2 + dynamics can be used to identify the structure and information dynamics of other biological tissues. To this end, we expressed the calcium reporter GCaMP6s in an organoid system of explanted amphibian epidermis derived from the African clawed frog Xenopus laevis , and imaged calcium activity pre- and post- a puncture injury, for six replicate organoids. We constructed functional connectivity networks by computing mutual information between cells from time series derived using medical imaging techniques to track intracellular Ca2 + . We analyzed network properties including degree distribution, spatial embedding, and modular structure. We find organoid networks exhibit potential evidence for more connectivity than null models, with our models displaying high degree hubs and mesoscale community structure with spatial clustering. Utilizing functional connectivity networks, our model suggests the tissue retains non-random features after injury, displays long range correlations and structure, and non-trivial clustering that is not necessarily spatially dependent. In the context of this reconstruction method our results suggest increased integration after injury, possible cellular coordination in response to injury, and some type of generative structure of the anatomy. While we study Ca2 + in Xenopus epidermal cells, our computational approach and analyses highlight how methods developed to analyze functional connectivity in neuronal tissues can be generalized to any tissue and fluorescent signal type. We discuss expanded methods of analyses to improve models of non-neuronal information processing highlighting the potential of our framework to provide a bridge between neuroscience and more basal modes of information processing.",
+  "pmid": "40228211",
+  "pmc": "PMC11996219",
+  "reachable": true,
+  "reachable_status": 200
+}

@@ -1,0 +1,16 @@
+{
+  "doi": "10.1098/rsif.2017.0425",
+  "doi_url": "https://doi.org/10.1098/rsif.2017.0425",
+  "title": "Bioelectric gene and reaction networks: computational modelling of genetic, biochemical and bioelectrical dynamics in pattern regulation",
+  "year": "2017",
+  "journal": "Journal of The Royal Society Interface",
+  "authors": [
+    "Alexis Pietak",
+    "Michael Levin"
+  ],
+  "abstract": "Gene regulatory networks (GRNs) describe interactions between gene products and transcription factors that control gene expression. In combination with reaction–diffusion models, GRNs have enhanced comprehension of biological pattern formation. However, although it is well known that biological systems exploit an interplay of genetic and physical mechanisms, instructive factors such as transmembrane potential ( V mem ) have not been integrated into full GRN models. Here we extend regulatory networks to include bioelectric signalling, developing a novel synthesis: the bioelectricity-integrated gene and reaction (BIGR) network. Using in silico simulations, we highlight the capacity for V mem to alter steady-state concentrations of key signalling molecules inside and out of cells. We characterize fundamental feedbacks where V mem both controls, and is in turn regulated by, biochemical signals and thereby demonstrate V mem homeostatic control, V mem memory and V mem controlled state switching. BIGR networks demonstrating hysteresis are identified as a mechanisms through which more complex patterns of stable V mem spots and stripes, along with correlated concentration patterns, can spontaneously emerge. As further proof of principle, we present and analyse a BIGR network model that mechanistically explains key aspects of the remarkable regenerative powers of creatures such as planarian flatworms. The functional properties of BIGR networks generate the first testable, quantitative hypotheses for biophysical mechanisms underlying the stability and adaptive regulation of anatomical bioelectric pattern.",
+  "pmid": "28954851",
+  "pmc": "PMC5636277",
+  "reachable": true,
+  "reachable_status": 403
+}

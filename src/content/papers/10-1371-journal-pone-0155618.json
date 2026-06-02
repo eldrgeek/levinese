@@ -1,0 +1,19 @@
+{
+  "doi": "10.1371/journal.pone.0155618",
+  "doi_url": "https://doi.org/10.1371/journal.pone.0155618",
+  "title": "A Tunable Silk Hydrogel Device for Studying Limb Regeneration in Adult Xenopus Laevis",
+  "year": "2016",
+  "journal": "PLOS ONE",
+  "authors": [
+    "Anne Golding",
+    "Justin A. Guay",
+    "Celia Herrera-Rincon",
+    "Michael Levin",
+    "David L. Kaplan"
+  ],
+  "abstract": "In certain amphibian models limb regeneration can be promoted or inhibited by the local wound bed environment. This research introduces a device that can be utilized as an experimental tool to characterize the conditions that promotes limb regeneration in the adult frog (Xenopus laevis) model. In particular, this device was designed to manipulate the local wound environment via a hydrogel insert. Initial characterization of the hydrogel insert revealed that this interaction had a significant influence on mechanical forces to the animal, due to the contraction of the hydrogel. The material and mechanical properties of the hydrogel insert were a factor in the device design in relation to the comfort of the animal and the ability to effectively manipulate the amputation site. The tunable features of the hydrogel were important in determining the pro-regenerative effects in limb regeneration, which was measured by cartilage spike formation and quantified by micro-computed tomography. The hydrogel insert was a factor in the observed morphological outcomes following amputation. Future work will focus on characterizing and optimizing the device's observed capability to manipulate biological pathways that are essential for limb regeneration. However, the present work provides a framework for the role of a hydrogel in the device and a path forward for more systematic studies.",
+  "pmid": "27257960",
+  "pmc": "PMC4892606",
+  "reachable": true,
+  "reachable_status": 200
+}

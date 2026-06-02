@@ -1,0 +1,20 @@
+{
+  "doi": "10.1089/bioe.2019.0032",
+  "doi_url": "https://doi.org/10.1089/bioe.2019.0032",
+  "title": "Interferon-Gamma Stimulated Murine Macrophages\n                    <i>In Vitro</i>\n                    : Impact of Ionic Composition and Osmolarity and Therapeutic Implications",
+  "year": "2020",
+  "journal": "Bioelectricity",
+  "authors": [
+    "Joshua Erndt-Marino",
+    "Daniel J. Yeisley",
+    "Hongyu Chen",
+    "Michael Levin",
+    "David L. Kaplan",
+    "Mariah S. Hahn"
+  ],
+  "abstract": "Background: Injections of osmolytes are promising immunomodulatory treatments for medical benefit, although the rationale and underlying mechanisms are often lacking. The goals of the present study were twofold: (1) to clarify the anti-inflammatory role of the potassium ion and (2) to begin to decouple the effects that ionic strength, ionic species, and osmolarity have on macrophage biology. Materials and Methods: RAW 264.7 murine macrophages were encapsulated in three-dimensional, poly(ethylene glycol) diacrylate hydrogels and activated with interferon-gamma to yield M(IFN). Gene and protein profiles were made of M(IFN) exposed to different hyperosmolar treatments (80 mM potassium gluconate, 80 mM sodium gluconate, and 160 mM sucrose). Results: Relative to M(IFN), all hyperosmolar treatments suppressed expression of pro-inflammatory markers (nitric oxide synthase-2 [NOS-2], tumor necrosis factor-alpha, monocyte chemoattractant protein-1 [MCP-1]) and increased messenger RNA (mRNA) expression of the pleiotropic and angiogenic markers interleukin-6 ( IL-6 ) and vascular endothelial growth factor-A ( VEGF ), respectively. Ionic osmolytes also demonstrated a greater level of change compared to the nonionic treatments, with mRNA levels of IL-6 the most significantly affected. M(IFN) exposed to K + exhibited the lowest levels of NOS-2 and MCP-1, and this ion limited IL-6 release induced by osmolarity. Conclusion: Cumulatively, these data suggest that osmolyte composition, ionic strength, and osmolarity are all parameters that can influence therapeutic outcomes. Future work is necessary to further decouple and mechanistically understand the influence that these biophysical parameters have on cell biology, including their impact on other macrophage functions, intracellular osmolyte composition, and cellular and organellular membrane potentials.",
+  "pmid": "32292895",
+  "pmc": "PMC7107958",
+  "reachable": true,
+  "reachable_status": 403
+}

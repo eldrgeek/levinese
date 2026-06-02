@@ -1,0 +1,20 @@
+{
+  "doi": "10.1126/scisignal.aac6609",
+  "doi_url": "https://doi.org/10.1126/scisignal.aac6609",
+  "title": "Serotonergic regulation of melanocyte conversion: A bioelectrically regulated network for stochastic all-or-none hyperpigmentation",
+  "year": "2015",
+  "journal": "Science Signaling",
+  "authors": [
+    "Maria Lobikin",
+    "Daniel Lobo",
+    "Douglas J. Blackiston",
+    "Christopher J. Martyniuk",
+    "Elizabeth Tkachenko",
+    "Michael Levin"
+  ],
+  "abstract": "Computational modeling reveals mechanisms for the stochastic whole-body conversion of pigment cells in frogs.",
+  "pmid": "26443706",
+  "pmc": null,
+  "reachable": true,
+  "reachable_status": 200
+}

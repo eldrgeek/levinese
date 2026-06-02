@@ -1,0 +1,16 @@
+{
+  "doi": "10.1101/pdb.prot099937",
+  "doi_url": "https://doi.org/10.1101/pdb.prot099937",
+  "title": "Inverse Drug Screening of Bioelectric Signaling and Neurotransmitter Roles: Illustrated Using a<i>Xenopus</i>Tail Regeneration Assay",
+  "year": "2018",
+  "journal": "Cold Spring Harbor Protocols",
+  "authors": [
+    "Kelly G. Sullivan",
+    "Michael Levin"
+  ],
+  "abstract": "or other small aquatic model system (e.g., zebrafish). Given the ever-increasing toolkit of chemical genetics, such screens represent a powerful and versatile methodology for probing the physiological circuits underlying pattern regulation.",
+  "pmid": "29437995",
+  "pmc": null,
+  "reachable": true,
+  "reachable_status": 200
+}

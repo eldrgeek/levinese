@@ -1,0 +1,24 @@
+{
+  "doi": "10.1038/s41536-020-0087-2",
+  "doi_url": "https://doi.org/10.1038/s41536-020-0087-2",
+  "title": "An in vivo brain–bacteria interface: the developing brain as a key regulator of innate immunity",
+  "year": "2020",
+  "journal": "npj Regenerative Medicine",
+  "authors": [
+    "Celia Herrera-Rincon",
+    "Jean-Francois Paré",
+    "Christopher J. Martyniuk",
+    "Sophia K. Jannetty",
+    "Christina Harrison",
+    "Alina Fischer",
+    "Alexandre Dinis",
+    "Vishal Keshari",
+    "Richard Novak",
+    "Michael Levin"
+  ],
+  "abstract": "Abstract Infections have numerous effects on the brain. However, possible roles of the brain in protecting against infection, and the developmental origin and role of brain signaling in immune response, are largely unknown. We exploited a unique Xenopus embryonic model to reveal control of innate immune response to pathogenic E. coli by the developing brain. Using survival assays, morphological analysis of innate immune cells and apoptosis, and RNA-seq, we analyzed combinations of infection, brain removal, and tail-regenerative response. Without a brain, survival of embryos injected with bacteria decreased significantly. The protective effect of the developing brain was mediated by decrease of the infection-induced damage and of apoptosis, and increase of macrophage migration, as well as suppression of the transcriptional consequences of the infection, all of which decrease susceptibility to pathogen. Functional and pharmacological assays implicated dopamine signaling in the bacteria–brain–immune crosstalk. Our data establish a model that reveals the very early brain to be a central player in innate immunity, identify the developmental origins of brain–immune interactions, and suggest several targets for immune therapies.",
+  "pmid": "32047653",
+  "pmc": "PMC7000827",
+  "reachable": true,
+  "reachable_status": 200
+}

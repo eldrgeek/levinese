@@ -1,0 +1,17 @@
+{
+  "doi": "10.1007/978-1-0716-2172-1_3",
+  "doi_url": "https://doi.org/10.1007/978-1-0716-2172-1_3",
+  "title": "Studying Protista WBR and Repair Using Physarum polycephalum",
+  "year": "2022",
+  "journal": "Methods in Molecular Biology",
+  "authors": [
+    "Megan M. Sperry",
+    "Nirosha J. Murugan",
+    "Michael Levin"
+  ],
+  "abstract": "Abstract Physarum polycephalum is a protist slime mould that exhibits a high degree of responsiveness to its environment through a complex network of tubes and cytoskeletal components that coordinate behavior across its unicellular, multinucleated body. Physarum has been used to study decision making, problem solving, and mechanosensation in aneural biological systems. The robust generative and repair capacities of Physarum also enable the study of whole-body regeneration within a relatively simple model system. Here we describe methods for growing, imaging, quantifying, and sampling Physarum that are adapted for investigating regeneration and repair.",
+  "pmid": "35359302",
+  "pmc": "PMC9761523",
+  "reachable": true,
+  "reachable_status": 200
+}

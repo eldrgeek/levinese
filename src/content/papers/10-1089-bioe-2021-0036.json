@@ -1,0 +1,16 @@
+{
+  "doi": "10.1089/bioe.2021.0036",
+  "doi_url": "https://doi.org/10.1089/bioe.2021.0036",
+  "title": "A Computational Approach to Explaining Bioelectrically Induced Persistent, Stochastic Changes of Axial Polarity in Planarian Regeneration",
+  "year": "2022",
+  "journal": "Bioelectricity",
+  "authors": [
+    "Joel Grodstein",
+    "Michael Levin"
+  ],
+  "abstract": "Morphogenesis results when cells cooperate to construct a specific anatomical structure. The behavior of such cell swarms exhibits not only robustness but also plasticity with respect to what specific anatomies will be built. Important aspects of evolutionary biology, regenerative medicine, and cancer are impacted by the algorithms by which instructive information guides invariant or stochastic outcomes of such collective activity. Planarian flatworms are an important model system in this field, as flatworms reliably regenerate a primary body axis after diverse kinds of injury. Importantly, the number of heads to which they regenerate is not determined genetically: lines of worms can be produced, which, with no further manipulation, regenerate as two-headed (2H) worms, or as \"Cryptic\" worms. When cut into pieces, Cryptic worms produce one-headed (1H) and 2H regenerates stochastically. Neural and bioelectric mechanisms have been proposed to explain aspects of the regenerative dataset. However, these models have not been unified and do not explain all of the Cryptic worm data. In this study, we propose a model in which two separate systems (a bioelectric circuit and a neural polarity mechanism) compete to determine the anatomical structure of a regenerate. We show how our model accounts for existing data and provides a consistent synthesis of mechanisms that explain both the robustness of planarian regeneration and its remarkable re-writability toward novel stable and stochastic anatomical states.",
+  "pmid": "39372228",
+  "pmc": "PMC11450330",
+  "reachable": true,
+  "reachable_status": 403
+}

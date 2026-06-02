@@ -1,0 +1,18 @@
+{
+  "doi": "10.1371/journal.pone.0227230",
+  "doi_url": "https://doi.org/10.1371/journal.pone.0227230",
+  "title": "Optogenetically induced cellular habituation in non-neuronal cells",
+  "year": "2020",
+  "journal": "PLOS ONE",
+  "authors": [
+    "Mattia Bonzanni",
+    "Nicolas Rouleau",
+    "Michael Levin",
+    "David L. Kaplan"
+  ],
+  "abstract": "Habituation, defined as the reversible decrement of a response during repetitive stimulation, is widely established as a form of non-associative learning. Though more commonly ascribed to neural cells and systems, habituation has also been observed in single aneural cells, although evidence is limited. Considering the generalizability of the habituation process, we tested the degree to which organism-level behavioral and single cell manifestations were similar. Human embryonic kidney (HEK) cells that overexpressed an optogenetic actuator were photostimulated to test the effect of different stimulation protocols on cell responses. Depolarization induced by the photocurrent decreased successively over the stimulation protocol and the effect was reversible upon withdrawal of the stimulus. In addition to frequency- and intensity-dependent effects, the history of stimulations on the cells impacted subsequent depolarization in response to further stimulation. We identified tetraethylammonium (TEA)-sensitive native K+ channels as one of the mediators of this habituation phenotype. Finally, we used a theoretical model of habituation to elucidate some mechanistic aspects of the habituation response. In conclusion, we affirm that habituation is a time- and state-dependent biological strategy that can be adopted also by individual non-neuronal cells in response to repetitive stimuli.",
+  "pmid": "31951626",
+  "pmc": "PMC6968872",
+  "reachable": true,
+  "reachable_status": 200
+}

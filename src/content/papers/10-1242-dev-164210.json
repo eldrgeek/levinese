@@ -1,0 +1,17 @@
+{
+  "doi": "10.1242/dev.164210",
+  "doi_url": "https://doi.org/10.1242/dev.164210",
+  "title": "Cross-limb communication during <i>Xenopus</i> hind-limb regenerative response: non-local bioelectric injury signals",
+  "year": "2018",
+  "journal": "Development",
+  "authors": [
+    "Sera M. Busse",
+    "Patrick T. McMillen",
+    "Michael Levin"
+  ],
+  "abstract": "Regeneration of damaged body-parts requires coordination of size, shape, location, and orientation of tissue with the rest of the body. It is not currently known how far injury sites communicate with the remaining soma during repair, or what information may emanate from the injury site to other regions. We examined the bioelectric properties (resting potential gradients in the epidermis) of Xenopus froglets undergoing hind-limb amputation and observed that the contralateral (un-damaged) limb exhibits apparent depolarization signals immediately after the opposite hind-limb is amputated. The pattern of depolarization matches that of the amputated limb and is correlated to the position and type of injury, revealing that information about damage is available to remote body tissues and is detectable non-invasively in vivo by monitoring of the bioelectric state. These data extend knowledge about the electrophysiology of regenerative response, identify a novel communication process via long-range spread of injury signaling, a phenomenon which we call bioelectric injury mirroring (BIM), and suggests revisions to regenerative medicine and diagnostic strategies focused entirely on the wound site and to the use of contralateral limbs as controls.",
+  "pmid": "30126906",
+  "pmc": null,
+  "reachable": true,
+  "reachable_status": 403
+}

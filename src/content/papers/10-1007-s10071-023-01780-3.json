@@ -1,0 +1,15 @@
+{
+  "doi": "10.1007/s10071-023-01780-3",
+  "doi_url": "https://doi.org/10.1007/s10071-023-01780-3",
+  "title": "Bioelectric networks: the cognitive glue enabling evolutionary scaling from physiology to mind",
+  "year": "2023",
+  "journal": "Animal Cognition",
+  "authors": [
+    "Michael Levin"
+  ],
+  "abstract": "Abstract Each of us made the remarkable journey from mere matter to mind: starting life as a quiescent oocyte (“just chemistry and physics”), and slowly, gradually, becoming an adult human with complex metacognitive processes, hopes, and dreams. In addition, even though we feel ourselves to be a unified, single Self, distinct from the emergent dynamics of termite mounds and other swarms, the reality is that all intelligence is collective intelligence: each of us consists of a huge number of cells working together to generate a coherent cognitive being with goals, preferences, and memories that belong to the whole and not to its parts. Basal cognition is the quest to understand how Mind scales—how large numbers of competent subunits can work together to become intelligences that expand the scale of their possible goals. Crucially, the remarkable trick of turning homeostatic, cell-level physiological competencies into large-scale behavioral intelligences is not limited to the electrical dynamics of the brain. Evolution was using bioelectric signaling long before neurons and muscles appeared, to solve the problem of creating and repairing complex bodies. In this Perspective, I review the deep symmetry between the intelligence of developmental morphogenesis and that of classical behavior. I describe the highly conserved mechanisms that enable the collective intelligence of cells to implement regulative embryogenesis, regeneration, and cancer suppression. I sketch the story of an evolutionary pivot that repurposed the algorithms and cellular machinery that enable navigation of morphospace into the behavioral navigation of the 3D world which we so readily recognize as intelligence. Understanding the bioelectric dynamics that underlie construction of complex bodies and brains provides an essential path to understanding the natural evolution, and bioengineered design, of diverse intelligences within and beyond the phylogenetic history of Earth.",
+  "pmid": "37204591",
+  "pmc": "PMC10770221",
+  "reachable": true,
+  "reachable_status": 200
+}

@@ -1,0 +1,20 @@
+{
+  "doi": "10.1242/bio.048553",
+  "doi_url": "https://doi.org/10.1242/bio.048553",
+  "title": "Defined extracellular ionic solutions to study and manipulate the cellular resting membrane potential",
+  "year": "2019",
+  "journal": "Biology Open",
+  "authors": [
+    "Mattia Bonzanni",
+    "Samantha L. Payne",
+    "Miryam Adelfio",
+    "David L. Kaplan",
+    "Michael Levin",
+    "Madeleine J. Oudin"
+  ],
+  "abstract": "All cells possess an electric potential across their plasma membranes and can generate and receive bioelectric signals. The cellular resting membrane potential (RMP) can regulate cell proliferation, differentiation and apoptosis. Current approaches to measure the RMP rely on patch clamping, which is technically challenging, low-throughput and not widely available. It is therefore critical to develop simple strategies to measure, manipulate and characterize the RMP. Here, we present a simple methodology to study the RMP of non-excitable cells and characterize the contribution of individual ions to the RMP using a voltage-sensitive dye. We define protocols using extracellular solutions in which permeable ions (Na+, Cl− and K+) are substituted with non-permeable ions (N-Methyl-D-glucamine (NMDG), gluconate, choline, SO42-). The resulting RMP modifications were assessed with both patch clamp and a voltage sensitive dye. Using an epithelial and cancer cell line, we demonstrate that the proposed ionic solutions can selectively modify the RMP and help determine the relative contribution of ionic species in setting the RMP. The proposed method is simple and reproducible and will make the study of bioelectricity more readily available to the cell biology community.",
+  "pmid": "31852666",
+  "pmc": "PMC6994931",
+  "reachable": true,
+  "reachable_status": 403
+}

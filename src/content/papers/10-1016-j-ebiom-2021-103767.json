@@ -1,0 +1,20 @@
+{
+  "doi": "10.1016/j.ebiom.2021.103767",
+  "doi_url": "https://doi.org/10.1016/j.ebiom.2021.103767",
+  "title": "Potassium channel-driven bioelectric signalling regulates metastasis in triple-negative breast cancer",
+  "year": "2022",
+  "journal": "eBioMedicine",
+  "authors": [
+    "Samantha L. Payne",
+    "Priyanka Ram",
+    "Deepti H. Srinivasan",
+    "Thanh T. Le",
+    "Michael Levin",
+    "Madeleine J. Oudin"
+  ],
+  "abstract": "BACKGROUND: There is a critical need to better understand the mechanisms that drive local cell invasion and metastasis to develop new therapeutics targeting metastatic disease. Bioelectricity is an important mediator of cellular processes and changes in the resting membrane potential (RMP) are associated with increased cancer cell invasion. However, whether the RMP can be used to target invading cancer cells is unknown. METHODS: We employed both genetic and pharmacological manipulation of potassium channel activity and characterized the effects on breast cancer cell migration and invasion in vitro, and metastasis in an animal model of breast cancer. FINDINGS: Our data demonstrate that altering the RMP of triple-negative breast cancer (TNBC) cells by manipulating potassium channel expression increases in vitro invasion, in vivo tumour growth and metastasis, and is accompanied by changes in gene expression associated with cell adhesion. INTERPRETATION: We describe a novel mechanism for RMP-mediated cell migration involving cadherin-11 and the MAPK pathway. Importantly, we identify a new strategy to target metastatic TNBC in vivo by repurposing an FDA-approved potassium channel blocker. Our results demonstrate that bioelectricity regulates cancer cell invasion and metastasis which could lead to a new class of therapeutics for patients with metastatic disease. FUNDING: This work was supported by the National Institutes of Health (R00-CA207866 to M.J.O.), Tufts University (Start-up funds from the School of Engineering to M.J.O., Tufts Collaborates Award to M.J.O. and M.L.), Allen Discovery centre program (Paul G. Allen Frontiers Group (12,171) to M.L.), and Breast Cancer Alliance Young Investigator Grant to M.J.O, Laidlaw Scholar funding to D.S. M.L. also gratefully acknowledges support of the Barton Family Foundation.",
+  "pmid": "34933180",
+  "pmc": "PMC8688589",
+  "reachable": true,
+  "reachable_status": 200
+}

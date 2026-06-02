@@ -1,0 +1,18 @@
+{
+  "doi": "10.1155/2012/353491",
+  "doi_url": "https://doi.org/10.1155/2012/353491",
+  "title": "Neurally Derived Tissues in<i>Xenopus laevis</i>Embryos Exhibit a Consistent Bioelectrical Left-Right Asymmetry",
+  "year": "2012",
+  "journal": "Stem Cells International",
+  "authors": [
+    "Vaibhav P. Pai",
+    "Laura N. Vandenberg",
+    "Douglas Blackiston",
+    "Michael Levin"
+  ],
+  "abstract": "Consistent left-right asymmetry in organ morphogenesis is a fascinating aspect of bilaterian development. Although embryonic patterning of asymmetric viscera, heart, and brain is beginning to be understood, less is known about possible subtle asymmetries present in anatomically identical paired structures. We investigated two important developmental events: physiological controls of eye development and specification of neural crest derivatives, in Xenopus laevis embryos. We found that the striking hyperpolarization of transmembrane potential ( V mem ) demarcating eye induction usually occurs in the right eye field first. This asymmetry is randomized by perturbing visceral left-right patterning, suggesting that eye asymmetry is linked to mechanisms establishing primary laterality. Bilateral misexpression of a depolarizing channel mRNA affects primarily the right eye, revealing an additional functional asymmetry in the control of eye patterning by V mem . The ATP-sensitive K + channel subunit transcript, SUR1, is asymmetrically expressed in the eye primordia, thus being a good candidate for the observed physiological asymmetries. Such subtle asymmetries are not only seen in the eye: consistent asymmetry was also observed in the migration of differentiated melanocytes on the left and right sides. These data suggest that even anatomically symmetrical structures may possess subtle but consistent laterality and interact with other developmental left-right patterning pathways.",
+  "pmid": "23346115",
+  "pmc": "PMC3544345",
+  "reachable": true,
+  "reachable_status": 403
+}

@@ -1,0 +1,22 @@
+{
+  "doi": "10.3390/biom10081196",
+  "doi_url": "https://doi.org/10.3390/biom10081196",
+  "title": "A 3D Tissue Model of Traumatic Brain Injury with Excitotoxicity That Is Inhibited by Chronic Exposure to Gabapentinoids",
+  "year": "2020",
+  "journal": "Biomolecules",
+  "authors": [
+    "Nicolas Rouleau",
+    "Mattia Bonzanni",
+    "Joshua D. Erndt-Marino",
+    "Katja Sievert",
+    "Camila G. Ramirez",
+    "William Rusk",
+    "Michael Levin",
+    "David L. Kaplan"
+  ],
+  "abstract": "Injury progression associated with cerebral laceration is insidious. Following the initial trauma, brain tissues become hyperexcitable, begetting further damage that compounds the initial impact over time. Clinicians have adopted several strategies to mitigate the effects of secondary brain injury; however, higher throughput screening tools with modular flexibility are needed to expedite mechanistic studies and drug discovery that will contribute to the enhanced protection, repair, and even the regeneration of neural tissues. Here we present a novel bioengineered cortical brain model of traumatic brain injury (TBI) that displays characteristics of primary and secondary injury, including an outwardly radiating cell death phenotype and increased glutamate release with excitotoxic features. DNA content and tissue function were normalized by high-concentration, chronic administrations of gabapentinoids. Additional experiments suggested that the treatment effects were likely neuroprotective rather than regenerative, as evidenced by the drug-mediated decreases in cell excitability and an absence of drug-induced proliferation. We conclude that the present model of traumatic brain injury demonstrates validity and can serve as a customizable experimental platform to assess the individual contribution of cell types on TBI progression, as well as to screen anti-excitotoxic and pro-regenerative compounds.",
+  "pmid": "32824600",
+  "pmc": "PMC7463727",
+  "reachable": true,
+  "reachable_status": 403
+}

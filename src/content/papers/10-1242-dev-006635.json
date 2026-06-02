@@ -1,0 +1,16 @@
+{
+  "doi": "10.1242/dev.006635",
+  "doi_url": "https://doi.org/10.1242/dev.006635",
+  "title": "<i>smedinx-11</i>is a planarian stem cell gap junction gene required for regeneration and homeostasis",
+  "year": "2007",
+  "journal": "Development",
+  "authors": [
+    "Néstor J. Oviedo",
+    "Michael Levin"
+  ],
+  "abstract": "The largely unknown mechanisms that regulate adult stem cells probably involve signals from neighboring differentiated cells. Gap junction channels providing direct cell-cell communication via small molecules are a crucial component of morphogenesis and normal physiology. However, no specific gap junction protein has yet been functionally linked to adult/somatic stem cell behavior in vivo or to organ regeneration. We report the identification and characterization of smedinx-11 - an innexin gap junction channel gene expressed in the adult stem cells (neoblasts) of the planarian Schmidtea mediterranea. smedinx-11 RNAi treatment inhibits regeneration and abrogates neoblast maintenance. Moreover, smedinx-11 expression is enriched in an irradiation-sensitive subpopulation (`X2') and is required for proper expression of other stem cell-specific markers. Analyses of the smedinx-11 downregulation phenotype revealed a striking anterior-posterior neoblast gradient. Our data demonstrate a novel role for gap junction proteins and suggest gap junction-mediated signaling as a new and tractable control point for adult, somatic stem cell regulation.",
+  "pmid": "17670787",
+  "pmc": null,
+  "reachable": true,
+  "reachable_status": 403
+}

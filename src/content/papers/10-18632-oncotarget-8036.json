@@ -1,0 +1,18 @@
+{
+  "doi": "10.18632/oncotarget.8036",
+  "doi_url": "https://doi.org/10.18632/oncotarget.8036",
+  "title": "Use of genetically encoded, light-gated ion translocators to control tumorigenesis",
+  "year": "2016",
+  "journal": "Oncotarget",
+  "authors": [
+    "Brook T. Chernet",
+    "Dany S. Adams",
+    "Maria Lobikin",
+    "Michael Levin"
+  ],
+  "abstract": "// Brook T. Chernet 1 , Dany S. Adams 1 , Maria Lobikin 1 , Michael Levin 1 1 Center for Regenerative and Developmental Biology and Department of Biology Tufts University, Medford, MA 02155, USA Correspondence to: Michael Levin, e-mail: michael.levin@tufts.edu Keywords: V mem , bioelectricity, voltage, RAS, optogenetics Received: November 22, 2015&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Accepted: February 11, 2016&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Published: March 16, 2016 ABSTRACT It has long been known that the resting potential of tumor cells is depolarized relative to their normal counterparts. More recent work has provided evidence that resting potential is not just a readout of cell state: it regulates cell behavior as well. Thus, the ability to control resting potential in vivo would provide a powerful new tool for the study and treatment of tumors, a tool capable of revealing living-state physiological information impossible to obtain using molecular tools applied to isolated cell components. Here we describe the first use of optogenetics to manipulate ion-flux mediated regulation of membrane potential specifically to prevent and cause regression of oncogene-induced tumors. Injection of mutant-KRAS mRNA induces tumor-like structures with many documented similarities to tumors, in Xenopus tadpoles. We show that expression and activation of either ChR2 D156A , a blue-light activated cation channel, or Arch , a green-light activated proton pump, both of which hyperpolarize cells, significantly lowers the incidence of KRAS tumor formation. Excitingly, we also demonstrate that activation of co-expressed light-activated ion translocators after tumor formation significantly increases the frequency with which the tumors regress in a process called normalization. These data demonstrate an optogenetic approach to dissect the biophysics of cancer. Moreover, they provide proof-of-principle for a novel class of interventions, directed at regulating cell state by targeting physiological regulators that can over-ride the presence of mutations.",
+  "pmid": "26988909",
+  "pmc": "PMC4991402",
+  "reachable": true,
+  "reachable_status": 200
+}

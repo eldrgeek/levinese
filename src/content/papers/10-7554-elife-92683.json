@@ -1,0 +1,18 @@
+{
+  "doi": "10.7554/eLife.92683",
+  "doi_url": "https://doi.org/10.7554/eLife.92683",
+  "title": "AI-driven automated discovery tools reveal diverse behavioral competencies of biological networks",
+  "year": "2025",
+  "journal": "eLife",
+  "authors": [
+    "Mayalen Etcheverry",
+    "Clément Moulin-Frier",
+    "Pierre-Yves Oudeyer",
+    "Michael Levin"
+  ],
+  "abstract": "Many applications in biomedicine and synthetic bioengineering rely on understanding, mapping, predicting, and controlling the complex behavior of chemical and genetic networks. The emerging field of diverse intelligence investigates the problem-solving capacities of unconventional agents. However, few quantitative tools exist for exploring the competencies of non-conventional systems. Here, we view gene regulatory networks (GRNs) as agents navigating a problem space and develop automated tools to map the robust goal states GRNs can reach despite perturbations. Our contributions include: (1) Adapting curiosity-driven exploration algorithms from AI to discover the range of reachable goal states of GRNs, and (2) Proposing empirical tests inspired by behaviorist approaches to assess their navigation competencies. Our data shows that models inferred from biological data can reach a wide spectrum of steady states, exhibiting various competencies in physiological network dynamics without requiring structural changes in network properties or connectivity. We also explore the applicability of these ‘behavioral catalogs’ for comparing evolved competencies across biological networks, for designing drug interventions in biomedical contexts and synthetic gene networks for bioengineering. These tools and the emphasis on behavior-shaping open new paths for efficiently exploring the complex behavior of biological networks. For the interactive version of this paper, please visit https://developmentalsystems.org/curious-exploration-of-grn-competencies .",
+  "pmid": "39804159",
+  "pmc": "PMC11729405",
+  "reachable": true,
+  "reachable_status": 200
+}

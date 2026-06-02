@@ -1,0 +1,20 @@
+{
+  "doi": "10.3390/e26090765",
+  "doi_url": "https://doi.org/10.3390/e26090765",
+  "title": "Natural Induction: Spontaneous Adaptive Organisation without Natural Selection",
+  "year": "2024",
+  "journal": "Entropy",
+  "authors": [
+    "Christopher L. Buckley",
+    "Tim Lewens",
+    "Michael Levin",
+    "Beren Millidge",
+    "Alexander Tschantz",
+    "Richard A. Watson"
+  ],
+  "abstract": "Evolution by natural selection is believed to be the only possible source of spontaneous adaptive organisation in the natural world. This places strict limits on the kinds of systems that can exhibit adaptation spontaneously, i.e., without design. Physical systems can show some properties relevant to adaptation without natural selection or design. (1) The relaxation, or local energy minimisation, of a physical system constitutes a natural form of optimisation insomuch as it finds locally optimal solutions to the frustrated forces acting on it or between its components. (2) When internal structure ‘gives way’ or accommodates a pattern of forcing on a system, this constitutes learning insomuch, as it can store, recall, and generalise past configurations. Both these effects are quite natural and general, but in themselves insufficient to constitute non-trivial adaptation. However, here we show that the recurrent interaction of physical optimisation and physical learning together results in significant spontaneous adaptive organisation. We call this adaptation by natural induction. The effect occurs in dynamical systems described by a network of viscoelastic connections subject to occasional disturbances. When the internal structure of such a system accommodates slowly across many disturbances and relaxations, it spontaneously learns to preferentially visit solutions of increasingly greater quality (exceptionally low energy). We show that adaptation by natural induction thus produces network organisations that improve problem-solving competency with experience (without supervised training or system-level reward). We note that the conditions for adaptation by natural induction, and its adaptive competency, are different from those of natural selection. We therefore suggest that natural selection is not the only possible source of spontaneous adaptive organisation in the natural world.",
+  "pmid": "39330098",
+  "pmc": "PMC11431681",
+  "reachable": true,
+  "reachable_status": 403
+}

@@ -1,0 +1,17 @@
+{
+  "doi": "10.1371/journal.pone.0023306",
+  "doi_url": "https://doi.org/10.1371/journal.pone.0023306",
+  "title": "Low Frequency Vibrations Disrupt Left-Right Patterning in the Xenopus Embryo",
+  "year": "2011",
+  "journal": "PLoS ONE",
+  "authors": [
+    "Laura N. Vandenberg",
+    "Brian W. Pennarola",
+    "Michael Levin"
+  ],
+  "abstract": "The development of consistent left-right (LR) asymmetry across phyla is a fascinating question in biology. While many pharmacological and molecular approaches have been used to explore molecular mechanisms, it has proven difficult to exert precise temporal control over functional perturbations. Here, we took advantage of acoustical vibration to disrupt LR patterning in Xenopus embryos during tightly-circumscribed periods of development. Exposure to several low frequencies induced specific randomization of three internal organs (heterotaxia). Investigating one frequency (7 Hz), we found two discrete periods of sensitivity to vibration; during the first period, vibration affected the same LR pathway as nocodazole, while during the second period, vibration affected the integrity of the epithelial barrier; both are required for normal LR patterning. Our results indicate that low frequency vibrations disrupt two steps in the early LR pathway: the orientation of the LR axis with the other two axes, and the amplification/restriction of downstream LR signals to asymmetric organs.",
+  "pmid": "21826245",
+  "pmc": "PMC3149648",
+  "reachable": true,
+  "reachable_status": 200
+}

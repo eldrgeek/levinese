@@ -1,0 +1,18 @@
+{
+  "doi": "10.1098/rsif.2013.0918",
+  "doi_url": "https://doi.org/10.1098/rsif.2013.0918",
+  "title": "A linear-encoding model explains the variability of the target morphology in regeneration",
+  "year": "2014",
+  "journal": "Journal of The Royal Society Interface",
+  "authors": [
+    "Daniel Lobo",
+    "Mauricio Solano",
+    "George A. Bubenik",
+    "Michael Levin"
+  ],
+  "abstract": "A fundamental assumption of today's molecular genetics paradigm is that complex morphology emerges from the combined activity of low-level processes involving proteins and nucleic acids. An inherent characteristic of such nonlinear encodings is the difficulty of creating the genetic and epigenetic information that will produce a given self-assembling complex morphology. This ‘inverse problem’ is vital not only for understanding the evolution, development and regeneration of bodyplans, but also for synthetic biology efforts that seek to engineer biological shapes. Importantly, the regenerative mechanisms in deer antlers, planarian worms and fiddler crabs can solve an inverse problem: their target morphology can be altered specifically and stably by injuries in particular locations. Here, we discuss the class of models that use pre-specified morphological goal states and propose the existence of a linear encoding of the target morphology, making the inverse problem easy for these organisms to solve. Indeed, many model organisms such as Drosophila , hydra and Xenopus also develop according to nonlinear encodings producing linear encodings of their final morphologies. We propose the development of testable models of regeneration regulation that combine emergence with a top-down specification of shape by linear encodings of target morphology, driving transformative applications in biomedicine and synthetic bioengineering.",
+  "pmid": "24402915",
+  "pmc": "PMC3899861",
+  "reachable": true,
+  "reachable_status": 403
+}

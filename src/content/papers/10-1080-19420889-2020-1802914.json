@@ -1,0 +1,16 @@
+{
+  "doi": "10.1080/19420889.2020.1802914",
+  "doi_url": "https://doi.org/10.1080/19420889.2020.1802914",
+  "title": "Emergence of informative higher scales in biological systems: a computational toolkit for optimal prediction and control",
+  "year": "2020",
+  "journal": "Communicative &amp; Integrative Biology",
+  "authors": [
+    "Erik Hoel",
+    "Michael Levin"
+  ],
+  "abstract": "The biological sciences span many spatial and temporal scales in attempts to understand the function and evolution of complex systems-level processes, such as embryogenesis. It is generally assumed that the most effective description of these processes is in terms of molecular interactions. However, recent developments in information theory and causal analysis now allow for the quantitative resolution of this question. In some cases, macro-scale models can minimize noise and increase the amount of information an experimenter or modeler has about \"what does what.\" This result has numerous implications for evolution, pattern regulation, and biomedical strategies. Here, we provide an introduction to these quantitative techniques, and use them to show how informative macro-scales are common across biology. Our goal is to give biologists the tools to identify the maximally-informative scale at which to model, experiment on, predict, control, and understand complex biological systems.",
+  "pmid": "33014263",
+  "pmc": "PMC7518458",
+  "reachable": true,
+  "reachable_status": 403
+}

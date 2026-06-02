@@ -1,0 +1,24 @@
+{
+  "doi": "10.1126/sciadv.abj2164",
+  "doi_url": "https://doi.org/10.1126/sciadv.abj2164",
+  "title": "Acute multidrug delivery via a wearable bioreactor facilitates long-term limb regeneration and functional recovery in adult\n            <i>Xenopus laevis</i>",
+  "year": "2022",
+  "journal": "Science Advances",
+  "authors": [
+    "Nirosha J. Murugan",
+    "Hannah J. Vigran",
+    "Kelsie A. Miller",
+    "Annie Golding",
+    "Quang L. Pham",
+    "Megan M. Sperry",
+    "Cody Rasmussen-Ivey",
+    "Anna W. Kane",
+    "David L. Kaplan",
+    "Michael Levin"
+  ],
+  "abstract": "Limb regeneration is a frontier in biomedical science. Identifying triggers of innate morphogenetic responses in vivo to induce the growth of healthy patterned tissue would address the needs of millions of patients, from diabetics to victims of trauma. Organisms such as Xenopus laevis —whose limited regenerative capacities in adulthood mirror those of humans—are important models with which to test interventions that can restore form and function. Here, we demonstrate long-term (18 months) regrowth, marked tissue repatterning, and functional restoration of an amputated X. laevis hindlimb following a 24-hour exposure to a multidrug, pro-regenerative treatment delivered by a wearable bioreactor. Regenerated tissues composed of skin, bone, vasculature, and nerves significantly exceeded the complexity and sensorimotor capacities of untreated and control animals’ hypomorphic spikes. RNA sequencing of early tissue buds revealed activation of developmental pathways such as Wnt/β-catenin, TGF-β, hedgehog, and Notch. These data demonstrate the successful “kickstarting” of endogenous regenerative pathways in a vertebrate model.",
+  "pmid": "35080969",
+  "pmc": "PMC8791464",
+  "reachable": true,
+  "reachable_status": 200
+}

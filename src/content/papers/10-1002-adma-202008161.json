@@ -1,0 +1,24 @@
+{
+  "doi": "10.1002/adma.202008161",
+  "doi_url": "https://doi.org/10.1002/adma.202008161",
+  "title": "Mechanosensation Mediates Long‐Range Spatial Decision‐Making in an Aneural Organism",
+  "year": "2021",
+  "journal": "Advanced Materials",
+  "authors": [
+    "Nirosha J. Murugan",
+    "Daniel H. Kaltman",
+    "Paul H. Jin",
+    "Melanie Chien",
+    "Ramses Martinez",
+    "Cuong Q. Nguyen",
+    "Anna Kane",
+    "Richard Novak",
+    "Donald E. Ingber",
+    "Michael Levin"
+  ],
+  "abstract": "Abstract The unicellular protist Physarum polycephalum is an important emerging model for understanding how aneural organisms process information toward adaptive behavior. Here, it is revealed that Physarum can use mechanosensation to reliably make decisions about distant objects in its environment, preferentially growing in the direction of heavier, substrate‐deforming, but chemically inert masses. This long‐range sensing is abolished by gentle rhythmic mechanical disruption, changing substrate stiffness, or the addition of an inhibitor of mechanosensitive transient receptor potential channels. Additionally, it is demonstrated that Physarum does not respond to the absolute magnitude of strain. Computational modeling reveales that Physarum may perform this calculation by sensing the fraction of its perimeter that is distorted above a threshold substrate strain—a fundamentally novel method of mechanosensation. Using its body as both a distributed sensor array and computational substrate, this aneural organism leverages its unique morphology to make long‐range decisions. Together, these data identify a surprising behavioral preference relying on biomechanical features and quantitatively characterize how the Physarum exploits physics to adaptively regulate its growth and shape.",
+  "pmid": "34263487",
+  "pmc": null,
+  "reachable": true,
+  "reachable_status": 200
+}

@@ -1,0 +1,17 @@
+{
+  "doi": "10.1038/s41536-017-0019-y",
+  "doi_url": "https://doi.org/10.1038/s41536-017-0019-y",
+  "title": "Bioelectric regulation of innate immune system function in regenerating and intact Xenopus laevis",
+  "year": "2017",
+  "journal": "npj Regenerative Medicine",
+  "authors": [
+    "Jean-François Paré",
+    "Christopher J. Martyniuk",
+    "Michael Levin"
+  ],
+  "abstract": "Abstract Two key inputs that regulate regeneration are the function of the immune system, and spatial gradients of transmembrane potential ( V mem ). Endogenous bioelectric signaling in somatic tissues during regenerative patterning is beginning to be understood, but its role in the context of immune response has never been investigated. Here, we show that V mem levels modulate innate immunity activity in Xenopus laevis embryos. We developed an assay in which X. laevis embryos are infected with a uropathogenic microorganism, in the presence or absence of reagents that modify V mem , prior to the ontogenesis of the adaptive immune system. General depolarization of the organism’s V mem by pharmacological or molecular genetic (ion channel misexpression) methods increased resistance to infection, while hyperpolarization made the embryos more susceptible to death by infection. Hyperpolarized specimens harbored a higher load of infectious microorganisms when compared to controls. We identified two mechanisms by which V mem mediates immune function: serotonergic signaling involving melanocytes and an increase in the number of primitive myeloid cells. Bioinformatics analysis of genes whose transcription is altered by depolarization revealed a number of immune system targets consistent with mammalian data. Remarkably, amputation of the tail bud potentiates systemic resistance to infection by increasing the number of peripheral myeloid cells, revealing an interplay of regenerative response, innate immunity, and bioelectric regulation. Our study identifies bioelectricity as a new mechanism by which innate immune response can be regulated in the context of infection or regeneration. V mem modulation using drugs already approved for human use could be exploited to improve resistance to infections in clinical settings.",
+  "pmid": "29302351",
+  "pmc": "PMC5677984",
+  "reachable": true,
+  "reachable_status": 200
+}

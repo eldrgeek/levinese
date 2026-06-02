@@ -1,0 +1,17 @@
+{
+  "doi": "10.1098/rstb.2015.0409",
+  "doi_url": "https://doi.org/10.1098/rstb.2015.0409",
+  "title": "From cytoskeletal dynamics to organ asymmetry: a nonlinear, regulative pathway underlies left–right patterning",
+  "year": "2016",
+  "journal": "Philosophical Transactions of the Royal Society B: Biological Sciences",
+  "authors": [
+    "Gary McDowell",
+    "Suvithan Rajadurai",
+    "Michael Levin"
+  ],
+  "abstract": "Consistent left–right (LR) asymmetry is a fundamental aspect of the bodyplan across phyla, and errors of laterality form an important class of human birth defects. Its molecular underpinning was first discovered as a sequential pathway of left- and right-sided gene expression that controlled positioning of the heart and visceral organs. Recent data have revised this picture in two important ways. First, the physical origin of chirality has been identified; cytoskeletal dynamics underlie the asymmetry of single-cell behaviour and patterning of the LR axis. Second, the pathway is not linear: early disruptions that alter the normal sidedness of upstream asymmetric genes do not necessarily induce defects in the laterality of the downstream genes or in organ situs . Thus, the LR pathway is a unique example of two fascinating aspects of biology: the interplay of physics and genetics in establishing large-scale anatomy, and regulative (shape-homeostatic) pathways that correct molecular and anatomical errors over time. Here, we review aspects of asymmetry from its intracellular, cytoplasmic origins to the recently uncovered ability of the LR control circuitry to achieve correct gene expression and morphology despite reversals of key ‘determinant’ genes. We provide novel functional data, in Xenopus laevis , on conserved elements of the cytoskeleton that drive asymmetry, and comparatively analyse it together with previously published results in the field. Our new observations and meta-analysis demonstrate that despite aberrant expression of upstream regulatory genes, embryos can progressively normalize transcriptional cascades and anatomical outcomes. LR patterning can thus serve as a paradigm of how subcellular physics and gene expression cooperate to achieve developmental robustness of a body axis. This article is part of the themed issue ‘Provocative questions in left–right asymmetry’.",
+  "pmid": "27821521",
+  "pmc": "PMC5104508",
+  "reachable": true,
+  "reachable_status": 403
+}

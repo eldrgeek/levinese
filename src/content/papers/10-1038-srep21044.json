@@ -1,0 +1,17 @@
+{
+  "doi": "10.1038/srep21044",
+  "doi_url": "https://doi.org/10.1038/srep21044",
+  "title": "Bioelectric modulation of macrophage polarization",
+  "year": "2016",
+  "journal": "Scientific Reports",
+  "authors": [
+    "Chunmei Li",
+    "Michael Levin",
+    "David L. Kaplan"
+  ],
+  "abstract": "Abstract Macrophages play a critical role in regulating wound healing and tissue regeneration by changing their polarization state in response to local microenvironmental stimuli. The native roles of polarized macrophages encompass biomaterials and tissue remodeling needs, yet harnessing or directing the polarization response has been largely absent as a potential strategy to exploit in regenerative medicine to date. Recent data have revealed that specific alteration of cells’ resting potential (V mem ) is a powerful tool to direct proliferation and differentiation in a number of complex tissues, such as limb regeneration, craniofacial patterning and tumorigenesis. In this study, we explored the bioelectric modulation of macrophage polarization by targeting ATP sensitive potassium channels (K ATP ). Glibenclamide (K ATP blocker) and pinacidil (K ATP opener) treatment not only affect macrophage polarization, but also influence the phenotype of prepolarized macrophages. Furthermore, modulation of cell membrane electrical properties can fine-tune macrophage plasticity. Glibenclamide decreased the secretion and gene expression of selected M1 markers, while pinacidil augmented M1 markers. More interestingly, glibencalmide promoted macrophage alternative activation by enhancing certain M2 markers during M2 polarization. These findings suggest that control of bioelectric properties of macrophages could offer a promising approach to regulate macrophage phenotype as a useful tool in regenerative medicine.",
+  "pmid": "26869018",
+  "pmc": "PMC4751571",
+  "reachable": true,
+  "reachable_status": 200
+}

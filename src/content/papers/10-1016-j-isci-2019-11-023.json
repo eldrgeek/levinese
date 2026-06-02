@@ -1,0 +1,17 @@
+{
+  "doi": "10.1016/j.isci.2019.11.023",
+  "doi_url": "https://doi.org/10.1016/j.isci.2019.11.023",
+  "title": "Endogenous Bioelectrics in Development, Cancer, and Regeneration: Drugs and Bioelectronic Devices as Electroceuticals for Regenerative Medicine",
+  "year": "2019",
+  "journal": "iScience",
+  "authors": [
+    "Michael Levin",
+    "John Selberg",
+    "Marco Rolandi"
+  ],
+  "abstract": "A major frontier in the post-genomic era is the investigation of the control of coordinated growth and three-dimensional form. Dynamic remodeling of complex organs in regulative embryogenesis, regeneration, and cancer reveals that cells and tissues make decisions that implement complex anatomical outcomes. It is now essential to understand not only the genetics that specifies cellular hardware but also the physiological software that implements tissue-level plasticity and robust morphogenesis. Here, we review recent discoveries about the endogenous mechanisms of bioelectrical communication among non-neural cells that enables them to cooperate in vivo. We discuss important advances in bioelectronics, as well as computational and pharmacological tools that are enabling the taming of biophysical controls toward applications in regenerative medicine and synthetic bioengineering.",
+  "pmid": "31837520",
+  "pmc": "PMC6920204",
+  "reachable": true,
+  "reachable_status": 200
+}

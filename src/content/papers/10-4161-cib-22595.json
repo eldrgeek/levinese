@@ -1,0 +1,16 @@
+{
+  "doi": "10.4161/cib.22595",
+  "doi_url": "https://doi.org/10.4161/cib.22595",
+  "title": "Cracking the bioelectric code: Probing endogenous ionic controls of pattern formation",
+  "year": "2013",
+  "journal": "Communicative &amp; Integrative Biology",
+  "authors": [
+    "AiSun Tseng",
+    "Michael Levin"
+  ],
+  "abstract": "Patterns of resting potential in non-excitable cells of living tissue are now known to be instructive signals for pattern formation during embryogenesis, regeneration and cancer suppression. The development of molecular-level techniques for tracking ion flows and functionally manipulating the activity of ion channels and pumps has begun to reveal the mechanisms by which voltage gradients regulate cell behaviors and the assembly of complex large-scale structures. A recent paper demonstrated that a specific voltage range is necessary for demarcation of eye fields in the frog embryo. Remarkably, artificially setting other somatic cells to the eye-specific voltage range resulted in formation of eyes in aberrant locations, including tissues that are not in the normal anterior ectoderm lineage: eyes could be formed in the gut, on the tail, or in the lateral plate mesoderm. These data challenge the existing models of eye fate restriction and tissue competence maps, and suggest the presence of a bioelectric code-a mapping of physiological properties to anatomical outcomes. This Addendum summarizes the current state of knowledge in developmental bioelectricity, proposes three possible interpretations of the bioelectric code that functionally maps physiological states to anatomical outcomes, and highlights the biggest open questions in this field. We also suggest a speculative hypothesis at the intersection of cognitive science and developmental biology: that bioelectrical signaling among non-excitable cells coupled by gap junctions simulates neural network-like dynamics, and underlies the information processing functions required by complex pattern formation in vivo. Understanding and learning to control the information stored in physiological networks will have transformative implications for developmental biology, regenerative medicine and synthetic bioengineering.",
+  "pmid": "23802040",
+  "pmc": "PMC3689572",
+  "reachable": true,
+  "reachable_status": 200
+}

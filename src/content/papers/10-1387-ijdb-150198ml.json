@@ -1,0 +1,18 @@
+{
+  "doi": "10.1387/ijdb.150198ml",
+  "doi_url": "https://doi.org/10.1387/ijdb.150198ml",
+  "title": "Selective depolarization of transmembrane potential alters muscle patterning and muscle cell localization in Xenopus laevis embryos",
+  "year": "2015",
+  "journal": "The International Journal of Developmental Biology",
+  "authors": [
+    "Maria Lobikin",
+    "Jean-François Paré",
+    "David L. Kaplan",
+    "Michael Levin"
+  ],
+  "abstract": "The correct anatomical placement and precise determination of specific cell types is required for the establishment of normal embryonic patterning. Understanding these processes is also important for progress in regenerative medicine and cancer biology. Transmembrane voltage gradients across embryonic tissues can mediate cellular communication to regulate the processes of proliferation, migration, and differentiation. Our past work showed that selective depolarization of an endogenous instructor cell population in Xenopus laevis in vivo induced a melanoma-like phenotype in the absence of genetic damage. Here, we use a hypersensitive glycine-gated chloride channel (GlyR) under control of tissue-specific promoters to show that instructor cells resident within muscle are more effective at triggering the metastatic conversion of ectodermal melanocytes than those similar cells within the nervous system. Moreover, depolarization of muscle cells results in aberrant muscle patterning and the appearance of cells expressing muscle markers within the neural tube, which impacts but does not abolish the animals' ability to learn in an associative conditioning assay. Taken together, our data reveal new details of long-range (non-cell-autonomous) reprogramming of cell behavior via alteration of the resting potential of specific embryonic subpopulations.",
+  "pmid": "26198143",
+  "pmc": "PMC10461602",
+  "reachable": true,
+  "reachable_status": 200
+}

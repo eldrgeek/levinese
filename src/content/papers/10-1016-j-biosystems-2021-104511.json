@@ -1,0 +1,17 @@
+{
+  "doi": "10.1016/j.biosystems.2021.104511",
+  "doi_url": "https://doi.org/10.1016/j.biosystems.2021.104511",
+  "title": "Morphology changes induced by intercellular gap junction blocking: A reaction-diffusion mechanism",
+  "year": "2021",
+  "journal": "Biosystems",
+  "authors": [
+    "Javier Cervera",
+    "Michael Levin",
+    "Salvador Mafe"
+  ],
+  "abstract": "Complex anatomical form is regulated in part by endogenous physiological communication between cells; however, the dynamics by which gap junctional (GJ) states across tissues regulate morphology are still poorly understood. We employed a biophysical modeling approach combining different signaling molecules (morphogens) to qualitatively describe the anteroposterior and lateral morphology changes in model multicellular systems due to intercellular GJ blockade. The model is based on two assumptions for blocking-induced patterning: (i) the local concentrations of two small antagonistic morphogens diffusing through the GJs along the axial direction, together with that of an independent, uncoupled morphogen concentration along an orthogonal direction, constitute the instructive patterns that modulate the morphological outcomes, and (ii) the addition of an external agent partially blocks the intercellular GJs between neighboring cells and modifies thus the establishment of these patterns. As an illustrative example, we study how the different connectivity and morphogen patterns obtained in presence of a GJ blocker can give rise to novel head morphologies in regenerating planaria. We note that the ability of GJs to regulate the permeability of morphogens post-translationally suggests a mechanism by which different anatomies can be produced from the same genome without the modification of gene-regulatory networks. Conceptually, our model biosystem constitutes a reaction-diffusion information processing mechanism that allows reprogramming of biological morphologies through the external manipulation of the intercellular GJs and the resulting changes in instructive biochemical signals.",
+  "pmid": "34411690",
+  "pmc": null,
+  "reachable": true,
+  "reachable_status": 200
+}

@@ -1,0 +1,18 @@
+{
+  "doi": "10.1016/j.jtbi.2022.111356",
+  "doi_url": "https://doi.org/10.1016/j.jtbi.2022.111356",
+  "title": "Transplantation of fragments from different planaria: A bioelectrical model for head regeneration",
+  "year": "2023",
+  "journal": "Journal of Theoretical Biology",
+  "authors": [
+    "Javier Cervera",
+    "José A. Manzanares",
+    "Michael Levin",
+    "Salvador Mafe"
+  ],
+  "abstract": "Head-tail planaria morphologies are influenced by the electric potential differences across the animal's primary axis, as evidenced e.g. by voltage-sensitive dyes and functional experiments that create permanent lines of 2-headed but genetically wild-type animals. However, bioelectrical and biochemical models that make predictions on what would happen in the case of spatial chimeras made by tissue transplantation from different planaria (different species and head shapes) are lacking. Here, we use a bioelectrical model to qualitatively describe the effects of tissue transplantation on the shape of the regenerated head. To this end, we assume that the cells may have distinct sets of ion channels and ascribe the system outcome to the axial distributions of average cell potentials over morphologically relevant regions. Our rationale is that the distributions of signaling ions and molecules are spatially coupled with multicellular electric potentials. Thus, long-time downstream transcriptional events should be triggered by short-time bioelectrical processes. We show that relatively small differences between the ion channel characteristics of the cells could eventually give noticeable changes in the electric potential profiles and the expected morphological deviations, which suggests that small but timely bioelectrical actions may have significant morphological effects. Our approach is based on the observed relationships between bioelectrical regionalization and biochemical gradients in body-plan studies. Such models are relevant to regenerative, developmental, and cancer biology in which cells with distinct properties and morphogenetic target states confront each other in the same tissue.",
+  "pmid": "36403806",
+  "pmc": null,
+  "reachable": true,
+  "reachable_status": 200
+}

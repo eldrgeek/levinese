@@ -1,0 +1,18 @@
+{
+  "doi": "10.1089/soro.2022.0142",
+  "doi_url": "https://doi.org/10.1089/soro.2022.0142",
+  "title": "Biological Robots: Perspectives on an Emerging Interdisciplinary Field",
+  "year": "2023",
+  "journal": "Soft Robotics",
+  "authors": [
+    "Douglas Blackiston",
+    "Sam Kriegman",
+    "Josh Bongard",
+    "Michael Levin"
+  ],
+  "abstract": "Advances in science and engineering often reveal the limitations of classical approaches initially used to understand, predict, and control phenomena. With progress, conceptual categories must often be re-evaluated to better track recently discovered invariants across disciplines. It is essential to refine frameworks and resolve conflicting boundaries between disciplines such that they better facilitate, not restrict, experimental approaches and capabilities. In this essay, we address specific questions and critiques which have arisen in response to our research program, which lies at the intersection of developmental biology, computer science, and robotics. In the context of biological machines and robots, we explore changes across concepts and previously distinct fields that are driven by recent advances in materials, information, and life sciences. Herein, each author provides their own perspective on the subject, framed by their own disciplinary training. We argue that as with computation, certain aspects of developmental biology and robotics are not tied to specific materials; rather, the consilience of these fields can help to shed light on issues of multiscale control, self-assembly, and relationships between form and function. We hope new fields can emerge as boundaries arising from technological limitations are overcome, furthering practical applications from regenerative medicine to useful synthetic living machines.",
+  "pmid": "37083430",
+  "pmc": "PMC10442684",
+  "reachable": true,
+  "reachable_status": 403
+}

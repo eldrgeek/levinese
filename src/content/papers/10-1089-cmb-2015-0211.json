@@ -1,0 +1,17 @@
+{
+  "doi": "10.1089/cmb.2015.0211",
+  "doi_url": "https://doi.org/10.1089/cmb.2015.0211",
+  "title": "MoCha: Molecular Characterization of Unknown Pathways",
+  "year": "2016",
+  "journal": "Journal of Computational Biology",
+  "authors": [
+    "Daniel Lobo",
+    "Jennifer Hammelman",
+    "Michael Levin"
+  ],
+  "abstract": "Automated methods for the reverse-engineering of complex regulatory networks are paving the way for the inference of mechanistic comprehensive models directly from experimental data. These novel methods can infer not only the relations and parameters of the known molecules defined in their input datasets, but also unknown components and pathways identified as necessary by the automated algorithms. Identifying the molecular nature of these unknown components is a crucial step for making testable predictions and experimentally validating the models, yet no specific and efficient tools exist to aid in this process. To this end, we present here MoCha (Molecular Characterization), a tool optimized for the search of unknown proteins and their pathways from a given set of known interacting proteins. MoCha uses the comprehensive dataset of protein–protein interactions provided by the STRING database, which currently includes more than a billion interactions from over 2,000 organisms. MoCha is highly optimized, performing typical searches within seconds. We demonstrate the use of MoCha with the characterization of unknown components from reverse-engineered models from the literature. MoCha is useful for working on network models by hand or as a downstream step of a model inference engine workflow and represents a valuable and efficient tool for the characterization of unknown pathways using known data from thousands of organisms. MoCha and its source code are freely available online under the GPLv3 license.",
+  "pmid": "26950055",
+  "pmc": "PMC4827307",
+  "reachable": true,
+  "reachable_status": 403
+}

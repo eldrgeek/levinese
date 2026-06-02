@@ -1,0 +1,17 @@
+{
+  "doi": "10.1242/bio.020149",
+  "doi_url": "https://doi.org/10.1242/bio.020149",
+  "title": "Vertically- and horizontally-transmitted memories – the fading boundaries between regeneration and inheritance in planaria",
+  "year": "2016",
+  "journal": "Biology Open",
+  "authors": [
+    "Moran Neuhof",
+    "Michael Levin",
+    "Oded Rechavi"
+  ],
+  "abstract": "ABSTRACT The Weismann barrier postulates that genetic information passes only from the germline to the soma and not in reverse, thus providing an obstacle to the inheritance of acquired traits. Certain organisms such as planaria – flatworms that can reproduce through asymmetric fission – avoid the limitations of this barrier, thus blurring the distinction between the processes of inheritance and development. In this paper, we re-evaluate canonical ideas about the interaction between developmental, genetic and evolutionary processes through the lens of planaria. Biased distribution of epigenetic effects in asymmetrically produced parts of a regenerating organism could increase variation and therefore affect the species' evolution. The maintenance and fixing of somatic experiences, encoded via stable biochemical or physiological states, may contribute to evolutionary processes in the absence of classically defined generations. We discuss different mechanisms that could induce asymmetry between the two organisms that eventually develop from the regenerating parts, including one particularly fascinating source – the potential capacity of the brain to produce long-lasting epigenetic changes.",
+  "pmid": "27565761",
+  "pmc": "PMC5051648",
+  "reachable": true,
+  "reachable_status": 403
+}

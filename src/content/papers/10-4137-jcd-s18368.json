@@ -1,0 +1,17 @@
+{
+  "doi": "10.4137/JCD.S18368",
+  "doi_url": "https://doi.org/10.4137/JCD.S18368",
+  "title": "Optogenetic Control of Apoptosis in Targeted Tissues of Xenopus laevis Embryos",
+  "year": "2014",
+  "journal": "Journal of Cell Death",
+  "authors": [
+    "Kyle Jewhurst",
+    "Michael Levin",
+    "Kelly A. Mclaughlin"
+  ],
+  "abstract": "KillerRed (KR) is a recently discovered fluorescent protein that, when activated with green light, releases reactive oxygen species (ROS) into the cytoplasm, triggering apoptosis in a KR-expressing cell. This property allows for the use of KR as a means of killing cells in an organism with great temporal and spatial specificity, while minimizing the nonspecific effects that can result from mechanical or chemical exposure damage techniques. Such optogenetic control of cell death, and the resulting ability to induce the targeted death of specific tissues, is invaluable for regeneration/repair studies–-particularly in Xenopus laevis, where apoptosis plays a key role in regeneration and repair. We here describe a method by which membrane-bound KR, introduced to Xenopus embryos by mRNA microinjection, can be activated with green light to induce apoptosis in specific organs and tissues, with a focus on the developing eye and pronephric kidney.",
+  "pmid": "25374461",
+  "pmc": "PMC4213186",
+  "reachable": true,
+  "reachable_status": 403
+}

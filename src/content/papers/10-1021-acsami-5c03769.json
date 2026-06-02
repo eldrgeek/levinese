@@ -1,0 +1,19 @@
+{
+  "doi": "10.1021/acsami.5c03769",
+  "doi_url": "https://doi.org/10.1021/acsami.5c03769",
+  "title": "Electrical Impedance Correlated to Flow Rate in Elastomeric Valves: An Analog Material Memory",
+  "year": "2025",
+  "journal": "ACS Applied Materials &amp; Interfaces",
+  "authors": [
+    "Joel Dungan",
+    "Juanita Mathews",
+    "Jeffrey T. Borenstein",
+    "Michael Levin",
+    "Valencia Koomson"
+  ],
+  "abstract": "Elastomeric valves are used regularly in microfluidic applications as monolithic control elements to direct, arrest, and drive fluid flow. However, normally closed elastomeric microvalves constructed in polydimethylsiloxane (PDMS) appear to exhibit a material memory property in which flow rate information is stored in the electrical properties of the PDMS device. Flow rate through the open valves shows high correlation with the subsequent impedance measured across the closed valve, with a constant of proportionality as high as 7.61 kΩ per μL/min at 100 Hz. The memory effect is relatively nonvolatile, maintaining linearity for greater than 10 min and is resilient to mechanical perturbation. Overwrite times are characterized, and the memory effect is observed across multiple devices and stimulus frequencies. These characteristics as a nonvolatile analog memory element show promise for applications in neuromorphic computing systems.",
+  "pmid": "40135794",
+  "pmc": null,
+  "reachable": true,
+  "reachable_status": 200
+}

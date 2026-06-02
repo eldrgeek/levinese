@@ -1,0 +1,17 @@
+{
+  "doi": "10.1038/srep41339",
+  "doi_url": "https://doi.org/10.1038/srep41339",
+  "title": "Discovering novel phenotypes with automatically inferred dynamic models: a partial melanocyte conversion in Xenopus",
+  "year": "2017",
+  "journal": "Scientific Reports",
+  "authors": [
+    "Daniel Lobo",
+    "Maria Lobikin",
+    "Michael Levin"
+  ],
+  "abstract": "Abstract Progress in regenerative medicine requires reverse-engineering cellular control networks to infer perturbations with desired systems-level outcomes. Such dynamic models allow phenotypic predictions for novel perturbations to be rapidly assessed in silico . Here, we analyzed a Xenopus model of conversion of melanocytes to a metastatic-like phenotype only previously observed in an all-or-none manner. Prior in vivo genetic and pharmacological experiments showed that individual animals either fully convert or remain normal, at some characteristic frequency after a given perturbation. We developed a Machine Learning method which inferred a model explaining this complex, stochastic all-or-none dataset. We then used this model to ask how a new phenotype could be generated: animals in which only some of the melanocytes converted. Systematically performing in silico perturbations, the model predicted that a combination of altanserin (5HTR2 inhibitor), reserpine (VMAT inhibitor), and VP16-XlCreb1 (constitutively active CREB) would break the all-or-none concordance. Remarkably, applying the predicted combination of three reagents in vivo revealed precisely the expected novel outcome, resulting in partial conversion of melanocytes within individuals. This work demonstrates the capability of automated analysis of dynamic models of signaling networks to discover novel phenotypes and predictively identify specific manipulations that can reach them.",
+  "pmid": "28128301",
+  "pmc": "PMC5269672",
+  "reachable": true,
+  "reachable_status": 200
+}

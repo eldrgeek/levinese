@@ -1,0 +1,18 @@
+{
+  "doi": "10.1063/5.0246160",
+  "doi_url": "https://doi.org/10.1063/5.0246160",
+  "title": "A microfluidic sucrose gap platform using trilaminar flow with on-chip switching and novel calibration: Challenges and limitations",
+  "year": "2025",
+  "journal": "Biomicrofluidics",
+  "authors": [
+    "J. Dungan",
+    "J. Mathews",
+    "M. Levin",
+    "V. Koomson"
+  ],
+  "abstract": "Gap junction connectivity is crucial to intercellular communication and plays a key role in many critical processes in developmental biology. However, direct analysis of gap junction connectivity in populations of developing cells has proven difficult due to the limitations of patch clamp and dye diffusion based technologies. We re-examine a microfluidic technique based on the principle of laminar flow, which aims to electrically measure gap junction connectivity. In the device, the trilaminar flow of a saline sheathed sucrose solution establishes distinct regions of electrical conductivity in the extracellular fluid spanning an NRK-49F cell monolayer. In theory, the sucrose gap created by laminar flow provides sufficient electrical isolation to detect electrical current flows through the gap junctional network. A novel calibration approach is introduced to account for stream width variation in the device, and elastomeric valves are integrated to improve the performance of gap junction blocker assays. Ultimately, however, this approach is shown to be ineffective in detecting changes in gap junction impedance due to the gap junction blocker, 2-APB. A number of challenges associated with the technique are identified and analyzed in depth and important improvements are described for future iterations.",
+  "pmid": "39944291",
+  "pmc": "PMC11813541",
+  "reachable": true,
+  "reachable_status": 403
+}

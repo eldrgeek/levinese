@@ -1,0 +1,18 @@
+{
+  "doi": "10.1387/ijdb.140207ml",
+  "doi_url": "https://doi.org/10.1387/ijdb.140207ml",
+  "title": "Optogenetics in Developmental Biology: using light to control ion flux-dependent signals in Xenopus embryos",
+  "year": "2014",
+  "journal": "The International Journal of Developmental Biology",
+  "authors": [
+    "Dany Spencer Adams",
+    "Joan M. Lemire",
+    "Richard H. Kramer",
+    "Michael Levin"
+  ],
+  "abstract": "Developmental bioelectricity, electrical signaling among non-excitable cells, is now known to regulate proliferation, apoptosis, gene expression, and patterning during development. The extraordinary temporal and spatial resolution offered by optogenetics could revolutionize the study of bioelectricity the same way it has revolutionized neuroscience. There is, however, no guide to adapting optogenetics to patterning systems. To fill this gap, we used optogenetic reagents, both proteins and photochemical switches, to vary steady-state bioelectrical properties of non-spiking embryonic cells in Xenopus laevis. We injected mRNA for various proteins, including Channelrhodopsins and Archaerhodopsin, into 1-8 cell embryos, or soaked embryos in media containing photochemical switches, then examined the effect of light and dark on membrane voltage (Vmem) using both electrodes and fluorescent membrane voltage reporters. We also scored tadpoles for known effects of varying Vmem, including left-right asymmetry disruption, hyperpigmentation, and craniofacial phenotypes. The majority of reagents we tested caused a significant increase in the percentage of light-exposed tadpoles showing relevant phenotypes; however, the majority of reagents also induced phenotypes in controls kept in the dark. Experiments on this \"dark phenotype\" yielded evidence that the direction of ion flux via common optogenetic reagents may be reversed, or unpredictable in non-neural cells. When used in combination with rigorous controls, optogenetics can be a powerful tool for investigating ion-flux based signaling in non-excitable systems. Nonetheless, it is crucial that new reagents be designed with these non-neural cell types in mind.",
+  "pmid": "25896279",
+  "pmc": "PMC10468825",
+  "reachable": true,
+  "reachable_status": 200
+}

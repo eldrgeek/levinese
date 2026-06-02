@@ -1,0 +1,16 @@
+{
+  "doi": "10.1038/s41598-019-54859-8",
+  "doi_url": "https://doi.org/10.1038/s41598-019-54859-8",
+  "title": "Modeling somatic computation with non-neural bioelectric networks",
+  "year": "2019",
+  "journal": "Scientific Reports",
+  "authors": [
+    "Santosh Manicka",
+    "Michael Levin"
+  ],
+  "abstract": "Abstract The field of basal cognition seeks to understand how adaptive, context-specific behavior occurs in non-neural biological systems. Embryogenesis and regeneration require plasticity in many tissue types to achieve structural and functional goals in diverse circumstances. Thus, advances in both evolutionary cell biology and regenerative medicine require an understanding of how non-neural tissues could process information. Neurons evolved from ancient cell types that used bioelectric signaling to perform computation. However, it has not been shown whether or how non-neural bioelectric cell networks can support computation. We generalize connectionist methods to non-neural tissue architectures, showing that a minimal non-neural Bio-Electric Network (BEN) model that utilizes the general principles of bioelectricity (electrodiffusion and gating) can compute. We characterize BEN behaviors ranging from elementary logic gates to pattern detectors, using both fixed and transient inputs to recapitulate various biological scenarios. We characterize the mechanisms of such networks using dynamical-systems and information-theory tools, demonstrating that logic can manifest in bidirectional, continuous, and relatively slow bioelectrical systems, complementing conventional neural-centric architectures. Our results reveal a variety of non-neural decision-making processes as manifestations of general cellular biophysical mechanisms and suggest novel bioengineering approaches to construct functional tissues for regenerative medicine and synthetic biology as well as new machine learning architectures.",
+  "pmid": "31819119",
+  "pmc": "PMC6901451",
+  "reachable": true,
+  "reachable_status": 200
+}

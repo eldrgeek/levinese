@@ -1,0 +1,18 @@
+{
+  "doi": "10.1242/bio.031807",
+  "doi_url": "https://doi.org/10.1242/bio.031807",
+  "title": "Niclosamide rescues microcephaly in a humanized <i>in vivo</i> model of Zika infection using human induced neural stem cells",
+  "year": "2018",
+  "journal": "Biology Open",
+  "authors": [
+    "Dana M. Cairns",
+    "Devi Sai Sri Kavya Boorgu",
+    "Michael Levin",
+    "David L. Kaplan"
+  ],
+  "abstract": "ABSTRACT Zika virus (ZIKV) is a mosquito-transmitted flavivirus with a causative link to microcephaly, a condition resulting in reduced cranial size and brain abnormalities. Despite recent progress, there is a current lack of in vivo models that permit the study of systemic virus on human neurons in a developing organism that replicates the pathophysiology of human disease. Furthermore, no treatment to date has been reported to reduce ZIKV-induced microcephaly. We tested the effects of ZIKV on human induced neural stem cells (hiNSCs) in vitro and found that infected hiNSCs secrete inflammatory cytokines, display altered differentiation, and become apoptotic. We also utilized this in vitro system to assess the therapeutic effects of niclosamide, an FDA-approved anthelminthic, and found that it decreases ZIKV production, partially restores differentiation, and prevents apoptosis in hiNSCs. We intracranially injected hiNSCs into developing chicks, subjected them to systemic ZIKV infection via the chorioallantoic membrane (CAM), a tissue similar in structure and function to the mammalian placenta, and found that humanized ZIKV-infected embryos developed severe microcephaly including smaller crania, decreased forebrain volume and enlarged ventricles. Lastly, we utilized this humanized model to show that CAM-delivery of niclosamide can partially rescue ZIKV-induced microcephaly and attenuate infection of hiNSCs in vivo. This article has an associated First Person interview with the first author of the paper.",
+  "pmid": "29378701",
+  "pmc": "PMC5829514",
+  "reachable": true,
+  "reachable_status": 403
+}

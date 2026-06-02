@@ -1,0 +1,17 @@
+{
+  "doi": "10.1098/rsta.2025.0011",
+  "doi_url": "https://doi.org/10.1098/rsta.2025.0011",
+  "title": "Topological constraints on self-organization in locally interacting systems",
+  "year": "2026",
+  "journal": "Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences",
+  "authors": [
+    "Francesco Sacco",
+    "Dalton Sakthivadivel",
+    "Michael Levin"
+  ],
+  "abstract": "Abstract All intelligence is collective intelligence, in the sense that it is made of parts that must align with respect to system-level goals. Understanding the dynamics that facilitate or limit navigation of problem spaces by aligned parts thus impacts many fields ranging across life sciences and engineering. To that end, consider a system on the vertices of a planar graph, with pairwise interactions prescribed by the edges of the graph. Such systems can sometimes exhibit long-range order, distinguishing one phase of macroscopic behaviour from another. In networks of interacting systems, we may view spontaneous ordering as a form of self-organization, modelling neural and basal forms of cognition. Here, we discuss necessary conditions on the topology of the graph for an ordered phase to exist, with an eye towards finding constraints on the ability of a system with local interactions to maintain an ordered target state. By studying the scaling of free energy under the formation of domain walls in three model systems—the Potts model, autoregressive models and hierarchical networks—we show how the combinatorics of interactions on a graph prevent or allow spontaneous ordering. As an application, we are able to analyse why multiscale systems like those prevalent in biology are capable of organizing into complex patterns, whereas rudimentary language models are challenged by long sequences of outputs. This article is part of the theme issue ‘World models in natural and artificial intelligence’.",
+  "pmid": "42130439",
+  "pmc": null,
+  "reachable": true,
+  "reachable_status": 403
+}

@@ -1,0 +1,19 @@
+{
+  "doi": "10.1002/reg2.13",
+  "doi_url": "https://doi.org/10.1002/reg2.13",
+  "title": "A bioinformatics expert system linking functional data to anatomical outcomes in limb regeneration",
+  "year": "2014",
+  "journal": "Regeneration",
+  "authors": [
+    "Daniel Lobo",
+    "Erica B. Feldman",
+    "Michelle Shah",
+    "Taylor J. Malone",
+    "Michael Levin"
+  ],
+  "abstract": "Amphibians and molting arthropods have the remarkable capacity to regenerate amputated limbs, as described by an extensive literature of experimental cuts, amputations, grafts, and molecular techniques. Despite a rich history of experimental efforts, no comprehensive mechanistic model exists that can account for the pattern regulation observed in these experiments. While bioinformatics algorithms have revolutionized the study of signaling pathways, no such tools have heretofore been available to assist scientists in formulating testable models of large-scale morphogenesis that match published data in the limb regeneration field. Major barriers preventing an algorithmic approach are the lack of formal descriptions for experimental regenerative information and a repository to centralize storage and mining of functional data on limb regeneration. Establishing a new bioinformatics of shape would significantly accelerate the discovery of key insights into the mechanisms that implement complex regeneration. Here, we describe a novel mathematical ontology for limb regeneration to unambiguously encode phenotype, manipulation, and experiment data. Based on this formalism, we present the first centralized formal database of published limb regeneration experiments together with a user-friendly expert system tool to facilitate its access and mining. These resources are freely available for the community and will assist both human biologists and artificial intelligence systems to discover testable, mechanistic models of limb regeneration.",
+  "pmid": "25729585",
+  "pmc": "PMC4339036",
+  "reachable": true,
+  "reachable_status": 200
+}

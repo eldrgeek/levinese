@@ -1,0 +1,16 @@
+{
+  "doi": "10.1002/(sici)1521-186x(1997)18:3<255::aid-bem9>3.0.co;2-1",
+  "doi_url": "https://doi.org/10.1002/(sici)1521-186x(1997)18:3%3C255::aid-bem9%3E3.0.co;2-1",
+  "title": "Applied DC magnetic fields cause alterations in the time of cell divisions and developmental abnormalities in early sea urchin embryos",
+  "year": "1997",
+  "journal": "Bioelectromagnetics",
+  "authors": [
+    "Michael Levin",
+    "Susan G. Ernst"
+  ],
+  "abstract": "Most work on magnetic field effects focuses on AC fields. The present study demonstrates that exposure to medium-strength (10 mT-0.1 T) static magnetic fields can alter the early embryonic development of two species of sea urchin embryos. Batches of fertilized eggs from two species of urchin were exposed to fields produced by permanent magnets. Samples of the continuous cultures were scored for the timing of the first two cell divisions, time of hatching, and incidence of exogastrulation. It was found that static fields delay the onset of mitosis in both species by an amount dependent on the exposure timing relative to fertilization. The exposure time that caused the maximum effect differed between the two species. Thirty millitesla fields, but not 15 mT fields, caused an eightfold increase in the incidence of exogastrulation in Lytechinus pictus, whereas neither of these fields produced exogastrulation in Strongylocentrotus purpuratus.",
+  "pmid": "9096844",
+  "pmc": null,
+  "reachable": true,
+  "reachable_status": 200
+}

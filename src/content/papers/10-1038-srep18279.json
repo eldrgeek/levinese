@@ -1,0 +1,17 @@
+{
+  "doi": "10.1038/srep18279",
+  "doi_url": "https://doi.org/10.1038/srep18279",
+  "title": "Comparison of the depolarization response of human mesenchymal stem cells from different donors",
+  "year": "2015",
+  "journal": "Scientific Reports",
+  "authors": [
+    "Sarah Sundelacruz",
+    "Michael Levin",
+    "David L. Kaplan"
+  ],
+  "abstract": "Abstract Bioelectric signaling is currently being explored as a novel regulator of cell processes in non-excitable cells. In particular, stem cells have demonstrated increasing evidence of electrophysiology-mediated regulation of stemness acquisition, proliferation, differentiation and migration. However, in light of many reports of primary stem cell heterogeneity, it is important to characterize the variability of stem cell response to biophysical manipulations in order to assess the utility of bioelectric modulation as a universal strategy for stem cell control. In this work, human mesenchymal stem cells (hMSCs) from five donors were evaluated for their response to membrane potential (V mem ) depolarization. We compared the inter-donor variability of their osteogenic and adipogenic differentiation potential, as well as their ability to maintain a differentiated phenotype after induction. We identified the markers that responded most consistently across donors and found that calcium deposition and gene expression of bone sialoprotein, lipoprotein lipase and fatty acid binding protein 4 are the preferred markers for assessing differentiation response to V mem depolarization. We also note that since there exists variability even among some of these markers, these assays should be performed on any newly acquired hMSC population if their bioelectric properties are to be studied further.",
+  "pmid": "26658512",
+  "pmc": "PMC4677319",
+  "reachable": true,
+  "reachable_status": 200
+}

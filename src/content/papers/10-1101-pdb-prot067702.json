@@ -1,0 +1,16 @@
+{
+  "doi": "10.1101/pdb.prot067702",
+  "doi_url": "https://doi.org/10.1101/pdb.prot067702",
+  "title": "Measuring Resting Membrane Potential Using the Fluorescent Voltage Reporters DiBAC<sub>4</sub>(3) and CC2-DMPE",
+  "year": "2012",
+  "journal": "Cold Spring Harbor Protocols",
+  "authors": [
+    "Dany S. Adams",
+    "Michael Levin"
+  ],
+  "abstract": "Slow changes in steady-state (resting) transmembrane potential ( V mem ) of non-excitable cells often encode important instructive signals controlling differentiation, proliferation, and cell:cell communication. Probing the function of such bioelectric gradients in vivo or in culture requires the ability to track V mem , to characterize endogenous patterns of differential potential, map out isopotential cell groups (compartments or cell fields), and confirm the results of functional perturbation of V mem . The use of fluorescent bioelectricity reporters (FBRs) has become more common as continuing research and innovation have produced better and more options. These dyes are now used routinely for cell sorting and for studies of cultured cells. Important advantages over single cell electrode measurements are offered by dyes, including: (1) subcellular resolution, (2) the ability to monitor multicellular areas and volumes in vivo, (3) simplicity of use, (4) ability to measure moving targets, and (5) ability to measure over long time periods. Thus, FBRs are suitable for longitudinal studies of systems that change and move over time, for example, embryos. Existing protocols focus on measurements of rapid action potentials in cultured cells or neurons. This article describes a dye pair that can be used to measure resting V mem in cultured cells and in vivo in Xenopus laevis embryos and tadpoles (and is readily applied to other model systems, such as zebrafish, for studies of developmental bioelectricity). It is assumed that the reader is fully familiar with the process and terminology of fluorescence microscopy.",
+  "pmid": "22474652",
+  "pmc": "PMC4001116",
+  "reachable": true,
+  "reachable_status": 200
+}

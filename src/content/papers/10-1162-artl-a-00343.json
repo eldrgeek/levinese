@@ -1,0 +1,17 @@
+{
+  "doi": "10.1162/artl_a_00343",
+  "doi_url": "https://doi.org/10.1162/artl_a_00343",
+  "title": "A Comprehensive Conceptual and Computational Dynamics Framework for Autonomous Regeneration Systems",
+  "year": "2021",
+  "journal": "Artificial Life",
+  "authors": [
+    "Tran Nguyen Minh-Thai",
+    "Sandhya Samarasinghe",
+    "Michael Levin"
+  ],
+  "abstract": "Abstract Many biological organisms regenerate structure and function after damage. Despite the long history of research on molecular mechanisms, many questions remain about algorithms by which cells can cooperate towards the same invariant morphogenetic outcomes. Therefore, conceptual frameworks are needed not only for motivating hypotheses for advancing the understanding of regeneration processes in living organisms, but also for regenerative medicine and synthetic biology. Inspired by planarian regeneration, this study offers a novel generic conceptual framework that hypothesizes mechanisms and algorithms by which cell collectives may internally represent an anatomical target morphology towards which they build after damage. Further, the framework contributes a novel nature-inspired computing method for self-repair in engineering and robotics. Our framework, based on past in vivo and in silico studies on planaria, hypothesizes efficient novel mechanisms and algorithms to achieve complete and accurate regeneration of a simple in silico flatwormlike organism from any damage, much like the body-wide immortality of planaria, with minimal information and algorithmic complexity. This framework that extends our previous circular tissue repair model integrates two levels of organization: tissue and organism. In Level 1, three individual in silico tissues (head, body, and tail—each with a large number of tissue cells and a single stem cell at the centre) repair themselves through efficient local communications. Here, the contribution extends our circular tissue model to other shapes and invests them with tissue-wide immortality through an information field holding the minimum body plan. In Level 2, individual tissues combine to form a simple organism. Specifically, the three stem cells form a network that coordinates organism-wide regeneration with the help of Level 1. Here we contribute novel concepts for collective decision-making by stem cells for stem cell regeneration and large-scale recovery. Both levels (tissue cells and stem cells) represent networks that perform simple neural computations and form a feedback control system. With simple and limited cellular computations, our framework minimises computation and algorithmic complexity to achieve complete recovery. We report results from computer simulations of the framework to demonstrate its robustness in recovering the organism after any injury. This comprehensive hypothetical framework that significantly extends the existing biological regeneration models offers a new way to conceptualise the information-processing aspects of regeneration, which may also help design living and non-living self-repairing agents.",
+  "pmid": "34473826",
+  "pmc": null,
+  "reachable": true,
+  "reachable_status": 403
+}

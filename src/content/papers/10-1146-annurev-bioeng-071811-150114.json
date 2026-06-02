@@ -1,0 +1,16 @@
+{
+  "doi": "10.1146/annurev-bioeng-071811-150114",
+  "doi_url": "https://doi.org/10.1146/annurev-bioeng-071811-150114",
+  "title": "Regulation of Cell Behavior and Tissue Patterning by Bioelectrical Signals: Challenges and Opportunities for Biomedical Engineering",
+  "year": "2012",
+  "journal": "Annual Review of Biomedical Engineering",
+  "authors": [
+    "Michael Levin",
+    "Claire G. Stevenson"
+  ],
+  "abstract": "Achieving control over cell behavior and pattern formation requires molecular-level understanding of regulatory mechanisms. Alongside transcriptional networks and biochemical gradients, there functions an important system of cellular communication and control: transmembrane voltage gradients (V mem ). Bioelectrical signals encoded in spatiotemporal changes of V mem control cell proliferation, migration, and differentiation. Moreover, endogenous bioelectrical gradients serve as instructive cues mediating anatomical polarity and other organ-level aspects of morphogenesis. In the past decade, significant advances in molecular physiology have enabled the development of new genetic and biophysical tools for the investigation and functional manipulation of bioelectric cues. Recent data implicate V mem as a crucial epigenetic regulator of patterning events in embryogenesis, regeneration, and cancer. We review new conceptual and methodological developments in this fascinating field. Bioelectricity offers a novel way of quantitatively understanding regulation of growth and form in vivo, and it reveals tractable, powerful control points that will enable truly transformative applications in bioengineering, regenerative medicine, and synthetic biology.",
+  "pmid": "22809139",
+  "pmc": "PMC10472538",
+  "reachable": true,
+  "reachable_status": 200
+}

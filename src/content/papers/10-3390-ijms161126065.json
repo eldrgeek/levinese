@@ -1,0 +1,24 @@
+{
+  "doi": "10.3390/ijms161126065",
+  "doi_url": "https://doi.org/10.3390/ijms161126065",
+  "title": "Gap Junctional Blockade Stochastically Induces Different Species-Specific Head Anatomies in Genetically Wild-Type Girardia dorotocephala Flatworms",
+  "year": "2015",
+  "journal": "International Journal of Molecular Sciences",
+  "authors": [
+    "Maya Emmons-Bell",
+    "Fallon Durant",
+    "Jennifer Hammelman",
+    "Nicholas Bessonov",
+    "Vitaly Volpert",
+    "Junji Morokuma",
+    "Kaylinnette Pinet",
+    "Dany Adams",
+    "Alexis Pietak",
+    "Daniel Lobo"
+  ],
+  "abstract": "The shape of an animal body plan is constructed from protein components encoded by the genome. However, bioelectric networks composed of many cell types have their own intrinsic dynamics, and can drive distinct morphological outcomes during embryogenesis and regeneration. Planarian flatworms are a popular system for exploring body plan patterning due to their regenerative capacity, but despite considerable molecular information regarding stem cell differentiation and basic axial patterning, very little is known about how distinct head shapes are produced. Here, we show that after decapitation in G. dorotocephala, a transient perturbation of physiological connectivity among cells (using the gap junction blocker octanol) can result in regenerated heads with quite different shapes, stochastically matching other known species of planaria (S. mediterranea, D. japonica, and P. felina). We use morphometric analysis to quantify the ability of physiological network perturbations to induce different species-specific head shapes from the same genome. Moreover, we present a computational agent-based model of cell and physical dynamics during regeneration that quantitatively reproduces the observed shape changes. Morphological alterations induced in a genomically wild-type G. dorotocephala during regeneration include not only the shape of the head but also the morphology of the brain, the characteristic distribution of adult stem cells (neoblasts), and the bioelectric gradients of resting potential within the anterior tissues. Interestingly, the shape change is not permanent; after regeneration is complete, intact animals remodel back to G. dorotocephala-appropriate head shape within several weeks in a secondary phase of remodeling following initial complete regeneration. We present a conceptual model to guide future work to delineate the molecular mechanisms by which bioelectric networks stochastically select among a small set of discrete head morphologies. Taken together, these data and analyses shed light on important physiological modifiers of morphological information in dictating species-specific shape, and reveal them to be a novel instructive input into head patterning in regenerating planaria.",
+  "pmid": "26610482",
+  "pmc": "PMC4661923",
+  "reachable": true,
+  "reachable_status": 403
+}

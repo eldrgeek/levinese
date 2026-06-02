@@ -1,0 +1,16 @@
+{
+  "doi": "10.1089/bioe.2024.0033",
+  "doi_url": "https://doi.org/10.1089/bioe.2024.0033",
+  "title": "Potential Shortcomings of Genomic Database: The Case of Na\n                    <sub>v</sub>\n                    1.5 Expression in Breast Cancer",
+  "year": "2024",
+  "journal": "Bioelectricity",
+  "authors": [
+    "Mustafa B.A. Djamgoz",
+    "Michael Levin"
+  ],
+  "abstract": "I n the current post-genomic era, it is convenient and fashion- able to question how the expression of a certain gene might relate to disease progression and/or patient survival and, for this, publicly available genomic databases are frequently used.Such questioning is also true for ion channels, which are at the heart of bioelectricity.Thus, in a recent major review, Liu et al. ( 2024) examined the involvement of voltage-gated sodium channels (VGSCs) in the cancer process. 1 In particular, several aspects of the role of the VGSC subtype Na v 1.5 in breast cancer were examined in considerable depth.Overall, the evidence supported the notion that functional VGSC expression accelerates metastatic progression.However, in the bioinformatic account given by Liu et al., 1 data from The Cancer Genome Atlas (TCGA) suggested that expression of SCN5A (the gene coding for Na v 1.5) correlated positively with the survival of breast cancer patients.This is in sharp contrast to substantial in vitro and in vivo evidence, extending to humans, showing that Na v 1.5 expression/activity promotes metastasis, the main cause of death from cancer. 2 The evidence is even stronger when VGSCs are considered as a whole. 3here are several reasons for this discrepancy, as follows:204",
+  "pmid": "39372088",
+  "pmc": "PMC11447474",
+  "reachable": true,
+  "reachable_status": 403
+}

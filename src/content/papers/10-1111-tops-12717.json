@@ -1,0 +1,18 @@
+{
+  "doi": "10.1111/tops.12717",
+  "doi_url": "https://doi.org/10.1111/tops.12717",
+  "title": "Nested Selves: Self‐Organization and Shared Markov Blankets in Prenatal Development in Humans",
+  "year": "2023",
+  "journal": "Topics in Cognitive Science",
+  "authors": [
+    "Anna Ciaunica",
+    "Michael Levin",
+    "Fernando E. Rosas",
+    "Karl Friston"
+  ],
+  "abstract": "Abstract The immune system is a central component of organismic function in humans. This paper addresses self‐organization of biological systems in relation to—and nested within—other biological systems in pregnancy. Pregnancy constitutes a fundamental state for human embodiment and a key step in the evolution and conservation of our species. While not all humans can be pregnant, our initial state of emerging and growing within another person's body is universal. Hence, the pregnant state does not concern some individuals but all individuals. Indeed, the hierarchical relationship in pregnancy reflects an even earlier autopoietic process in the embryo by which the number of individuals in a single blastoderm is dynamically determined by cell– interactions. The relationship and the interactions between the two self‐organizing systems during pregnancy may play a pivotal role in understanding the nature of biological self‐organization per se in humans. Specifically, we consider the role of the immune system in biological self‐ organization in addition to neural/brain systems that furnish us with a sense of self. We examine the complex case of pregnancy, whereby two immune systems need to negotiate the exchange of resources and information in order to maintain viable self‐regulation of nested systems. We conclude with a proposal for the mechanisms—that scaffold the complex relationship between two self‐organising systems in pregnancy—through the lens of the Active Inference, with a focus on shared Markov blankets.",
+  "pmid": "38158882",
+  "pmc": null,
+  "reachable": true,
+  "reachable_status": 403
+}

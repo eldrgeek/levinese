@@ -1,0 +1,353 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+const rawEntries = await getCollection('papers');
+const papers = rawEntries.map(e => ({ slug: e.id.replace(/\.json$/, ''), ...e.data }));
+
+// Sort by year desc by default
+const sortedPapers = [...papers].sort((a, b) => {
+  const ya = parseInt(String(a.year)) || 0;
+  const yb = parseInt(String(b.year)) || 0;
+  return yb - ya;
+});
+
+const totalPapers = papers.length;
+const withAbstract = papers.filter(p => p.abstract).length;
+const reachableCount = papers.filter(p => p.reachable === true).length;
+
+// Get unique journals and years for filters
+const journals = [...new Set(papers.map(p => p.journal).filter(Boolean))].sort();
+const years = [...new Set(papers.map(p => parseInt(String(p.year))).filter(n => n > 0))].sort();
+const minYear = years[0] ?? 1990;
+const maxYear = years[years.length - 1] ?? 2026;
+---
+
+<Base
+  title="Papers"
+  description="All 364 Levin lab papers — searchable directory with abstracts, journal info, and source links."
+>
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 pt-12 pb-16">
+
+    <!-- Header -->
+    <div class="mb-8">
+      <p class="text-sm font-medium text-teal uppercase tracking-widest mb-3">Archive</p>
+      <h1 class="font-serif text-4xl font-medium text-ink mb-3">Papers</h1>
+      <p class="text-muted text-base max-w-2xl">
+        {totalPapers} papers from the Levin lab and collaborators.
+        {withAbstract > 0 && <span>{withAbstract} with abstracts.</span>}
+        Click any title to open the source. Expand for abstract.
+      </p>
+      <div class="mt-3 flex flex-wrap gap-4 text-sm text-muted">
+        <span class="font-mono">{totalPapers} total</span>
+        {withAbstract > 0 && <span class="font-mono">{withAbstract} abstracts</span>}
+        {reachableCount > 0 && <span class="font-mono">{reachableCount} verified reachable</span>}
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <div id="controls" class="sticky top-14 z-40 bg-parchment/95 backdrop-blur-sm border-b border-border -mx-4 sm:-mx-6 px-4 sm:px-6 py-3 mb-6">
+      <div class="flex flex-col sm:flex-row gap-3">
+        <!-- Search -->
+        <div class="flex-1 relative">
+          <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+          </svg>
+          <input
+            id="search-input"
+            type="text"
+            placeholder="Search title, abstract, authors…"
+            class="w-full pl-9 pr-4 py-2 bg-white border border-border rounded-md text-sm text-ink placeholder-muted focus:outline-none focus:ring-2 focus:ring-teal/30 focus:border-teal transition-colors"
+          />
+        </div>
+
+        <!-- Sort -->
+        <select id="sort-select" class="px-3 py-2 bg-white border border-border rounded-md text-sm text-ink focus:outline-none focus:ring-2 focus:ring-teal/30 appearance-none cursor-pointer pr-8">
+          <option value="year-desc">Year: newest first</option>
+          <option value="year-asc">Year: oldest first</option>
+          <option value="title-asc">Title A–Z</option>
+        </select>
+
+        <!-- Journal filter -->
+        <select id="journal-select" class="px-3 py-2 bg-white border border-border rounded-md text-sm text-ink focus:outline-none focus:ring-2 focus:ring-teal/30 appearance-none cursor-pointer pr-8" style="max-width: 200px">
+          <option value="">All journals</option>
+          {journals.map(j => <option value={j}>{j.length > 40 ? j.slice(0,37) + '…' : j}</option>)}
+        </select>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-4 mt-2.5">
+        <!-- Year range -->
+        <div class="flex items-center gap-2 text-xs text-muted">
+          <span>Year:</span>
+          <input id="year-min" type="number" min={minYear} max={maxYear} value={minYear}
+            class="w-16 px-2 py-1 bg-white border border-border rounded text-xs text-ink focus:outline-none focus:ring-1 focus:ring-teal/30" />
+          <span>–</span>
+          <input id="year-max" type="number" min={minYear} max={maxYear} value={maxYear}
+            class="w-16 px-2 py-1 bg-white border border-border rounded text-xs text-ink focus:outline-none focus:ring-1 focus:ring-teal/30" />
+        </div>
+
+        <!-- Reachable toggle -->
+        <label class="flex items-center gap-2 text-xs text-muted cursor-pointer select-none">
+          <input id="reachable-toggle" type="checkbox" class="w-3.5 h-3.5 accent-teal" />
+          <span>Verified links only</span>
+        </label>
+
+        <!-- Result count -->
+        <span id="result-count" class="text-xs text-muted font-mono ml-auto"></span>
+      </div>
+    </div>
+
+    <!-- Paper list -->
+    <div id="papers-list" class="divide-y divide-border">
+      {sortedPapers.map((paper, idx) => {
+        const authorDisplay = paper.authors.length > 0
+          ? paper.authors.slice(0, 3).join(', ') + (paper.authors.length > 3 ? ` +${paper.authors.length - 3}` : '')
+          : '';
+        const hasAbstract = Boolean(paper.abstract);
+        const isReachable = paper.reachable === true;
+
+        return (
+          <div
+            class="paper-row py-4 group"
+            data-title={paper.title.toLowerCase()}
+            data-year={paper.year || '0'}
+            data-journal={paper.journal.toLowerCase()}
+            data-authors={(paper.authors || []).join(' ').toLowerCase()}
+            data-abstract={paper.abstract ? paper.abstract.toLowerCase().slice(0, 500) : ''}
+            data-reachable={isReachable ? '1' : '0'}
+            data-idx={idx}
+          >
+            <div class="flex items-start gap-3">
+              <!-- Expand toggle (only if has abstract) -->
+              <button
+                class={`expand-btn shrink-0 mt-0.5 w-5 h-5 flex items-center justify-center text-muted/40 hover:text-muted transition-colors rounded ${hasAbstract ? 'cursor-pointer' : 'cursor-default opacity-0'}`}
+                aria-label="Toggle abstract"
+                aria-expanded="false"
+                data-has-abstract={hasAbstract ? '1' : '0'}
+              >
+                <svg class="chevron w-3.5 h-3.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/>
+                </svg>
+              </button>
+
+              <div class="flex-1 min-w-0">
+                <!-- Title row -->
+                <div class="flex items-start gap-2 flex-wrap">
+                  <a
+                    href={paper.doi_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-ink font-medium text-sm hover:text-teal transition-colors leading-snug"
+                  >
+                    {paper.title}
+                  </a>
+                  {isReachable && (
+                    <span class="shrink-0 text-muted/40 text-xs font-mono mt-0.5" title="Link verified reachable">✓</span>
+                  )}
+                </div>
+
+                <!-- Meta row -->
+                <div class="flex flex-wrap items-baseline gap-x-3 gap-y-0.5 mt-1">
+                  {paper.year && (
+                    <span class="text-xs font-mono text-muted/80">{paper.year}</span>
+                  )}
+                  {paper.journal && (
+                    <span class="text-xs text-muted italic truncate max-w-xs">{paper.journal}</span>
+                  )}
+                  {authorDisplay && (
+                    <span class="text-xs text-muted/70">{authorDisplay}</span>
+                  )}
+                </div>
+
+                <!-- Abstract (hidden by default) -->
+                {hasAbstract && (
+                  <div class="abstract-panel hidden mt-3 text-sm text-muted leading-relaxed border-l-2 border-border pl-3">
+                    {paper.abstract}
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+
+    <!-- Empty state -->
+    <div id="empty-state" class="hidden text-center py-16 text-muted">
+      <p class="font-serif text-lg mb-2">No papers match your search.</p>
+      <p class="text-sm">Try different keywords or clear your filters.</p>
+    </div>
+
+  </div>
+</Base>
+
+<script>
+  // Inline the papers data for search — MiniSearch is loaded from node_modules
+  import MiniSearch from 'minisearch';
+  import papersData from '../../data/papers.json';
+
+  // Build search index
+  const ms = new MiniSearch({
+    fields: ['title', 'abstract', 'authors', 'journal'],
+    storeFields: ['id'],
+    searchOptions: {
+      boost: { title: 3, authors: 1.5, journal: 1, abstract: 0.8 },
+      fuzzy: 0.2,
+      prefix: true,
+    }
+  });
+
+  const docs = papersData.map((p, i) => ({
+    id: i,
+    title: p.title || '',
+    abstract: p.abstract || '',
+    authors: (p.authors || []).join(' '),
+    journal: p.journal || '',
+  }));
+  ms.addAll(docs);
+
+  // DOM refs
+  const searchInput = document.getElementById('search-input') as HTMLInputElement;
+  const sortSelect = document.getElementById('sort-select') as HTMLSelectElement;
+  const journalSelect = document.getElementById('journal-select') as HTMLSelectElement;
+  const yearMin = document.getElementById('year-min') as HTMLInputElement;
+  const yearMax = document.getElementById('year-max') as HTMLInputElement;
+  const reachableToggle = document.getElementById('reachable-toggle') as HTMLInputElement;
+  const papersList = document.getElementById('papers-list')!;
+  const emptyState = document.getElementById('empty-state')!;
+  const resultCount = document.getElementById('result-count')!;
+  const rows = Array.from(document.querySelectorAll('.paper-row')) as HTMLElement[];
+
+  let searchResults: Set<number> | null = null;
+
+  function applyFilters() {
+    const query = searchInput.value.trim();
+    const sortMode = sortSelect.value;
+    const journalFilter = journalSelect.value.toLowerCase();
+    const minY = parseInt(yearMin.value) || 0;
+    const maxY = parseInt(yearMax.value) || 9999;
+    const reachableOnly = reachableToggle.checked;
+
+    // Search
+    if (query.length >= 2) {
+      const results = ms.search(query);
+      searchResults = new Set(results.map(r => r.id as number));
+    } else {
+      searchResults = null;
+    }
+
+    // Filter rows
+    let visible = rows.filter((row, idx) => {
+      if (searchResults !== null && !searchResults.has(idx)) return false;
+      const year = parseInt(row.dataset.year || '0');
+      if (year > 0 && (year < minY || year > maxY)) return false;
+      if (journalFilter && !row.dataset.journal?.includes(journalFilter)) return false;
+      if (reachableOnly && row.dataset.reachable !== '1') return false;
+      return true;
+    });
+
+    // Sort visible rows
+    visible = visible.slice().sort((a, b) => {
+      if (sortMode === 'year-desc') {
+        return parseInt(b.dataset.year || '0') - parseInt(a.dataset.year || '0');
+      } else if (sortMode === 'year-asc') {
+        return parseInt(a.dataset.year || '0') - parseInt(b.dataset.year || '0');
+      } else {
+        // title A-Z
+        return (a.dataset.title || '').localeCompare(b.dataset.title || '');
+      }
+    });
+
+    // Reorder DOM and show/hide
+    const visibleSet = new Set(visible);
+    rows.forEach(row => {
+      row.style.display = visibleSet.has(row) ? '' : 'none';
+    });
+
+    // Reorder visible rows in DOM
+    visible.forEach(row => papersList.appendChild(row));
+
+    // Update count
+    const total = papersData.length;
+    resultCount.textContent = visible.length < total
+      ? `${visible.length} of ${total}`
+      : `${total} papers`;
+
+    // Empty state
+    emptyState.classList.toggle('hidden', visible.length > 0);
+  }
+
+  // Event listeners
+  let searchTimer: ReturnType<typeof setTimeout>;
+  searchInput.addEventListener('input', () => {
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(applyFilters, 150);
+  });
+  sortSelect.addEventListener('change', applyFilters);
+  journalSelect.addEventListener('change', applyFilters);
+  yearMin.addEventListener('change', applyFilters);
+  yearMax.addEventListener('change', applyFilters);
+  reachableToggle.addEventListener('change', applyFilters);
+
+  // Expand/collapse abstracts
+  document.addEventListener('click', (e) => {
+    const btn = (e.target as Element).closest('.expand-btn') as HTMLElement | null;
+    if (!btn || btn.dataset.hasAbstract !== '1') return;
+
+    const row = btn.closest('.paper-row')!;
+    const panel = row.querySelector('.abstract-panel') as HTMLElement | null;
+    const chevron = btn.querySelector('.chevron') as SVGElement | null;
+    if (!panel) return;
+
+    const isOpen = !panel.classList.contains('hidden');
+    panel.classList.toggle('hidden', isOpen);
+    chevron?.classList.toggle('rotate-90', !isOpen);
+    btn.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+  });
+
+  // Also clicking on title row expands abstract
+  document.addEventListener('click', (e) => {
+    const target = e.target as Element;
+    // Don't fire on links or buttons
+    if (target.closest('a') || target.closest('.expand-btn')) return;
+    const row = target.closest('.paper-row') as HTMLElement | null;
+    if (!row) return;
+    const panel = row.querySelector('.abstract-panel') as HTMLElement | null;
+    const btn = row.querySelector('.expand-btn') as HTMLElement | null;
+    if (!panel || !btn || btn.dataset.hasAbstract !== '1') return;
+
+    const isOpen = !panel.classList.contains('hidden');
+    panel.classList.toggle('hidden', isOpen);
+    const chevron = btn.querySelector('.chevron') as SVGElement | null;
+    chevron?.classList.toggle('rotate-90', !isOpen);
+    btn.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+  });
+
+  // Initial count
+  applyFilters();
+</script>
+
+<style>
+  select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236b6878' stroke-width='2.5'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+  }
+
+  .paper-row {
+    transition: background-color 0.1s;
+  }
+
+  .paper-row:hover {
+    background-color: rgba(12, 107, 90, 0.02);
+  }
+
+  .abstract-panel {
+    animation: slideDown 0.15s ease-out;
+  }
+
+  @keyframes slideDown {
+    from { opacity: 0; transform: translateY(-4px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>

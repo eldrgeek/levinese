@@ -1,0 +1,15 @@
+{
+  "doi": "10.3389/fnsys.2022.768201",
+  "doi_url": "https://doi.org/10.3389/fnsys.2022.768201",
+  "title": "Technological Approach to Mind Everywhere: An Experimentally-Grounded Framework for Understanding Diverse Bodies and Minds",
+  "year": "2022",
+  "journal": "Frontiers in Systems Neuroscience",
+  "authors": [
+    "Michael Levin"
+  ],
+  "abstract": "Synthetic biology and bioengineering provide the opportunity to create novel embodied cognitive systems (otherwise known as minds) in a very wide variety of chimeric architectures combining evolved and designed material and software. These advances are disrupting familiar concepts in the philosophy of mind, and require new ways of thinking about and comparing truly diverse intelligences, whose composition and origin are not like any of the available natural model species. In this Perspective, I introduce TAME—Technological Approach to Mind Everywhere—a framework for understanding and manipulating cognition in unconventional substrates. TAME formalizes a non-binary (continuous), empirically-based approach to strongly embodied agency. TAME provides a natural way to think about animal sentience as an instance of collective intelligence of cell groups, arising from dynamics that manifest in similar ways in numerous other substrates. When applied to regenerating/developmental systems, TAME suggests a perspective on morphogenesis as an example of basal cognition. The deep symmetry between problem-solving in anatomical, physiological, transcriptional, and 3D (traditional behavioral) spaces drives specific hypotheses by which cognitive capacities can increase during evolution. An important medium exploited by evolution for joining active subunits into greater agents is developmental bioelectricity, implemented by pre-neural use of ion channels and gap junctions to scale up cell-level feedback loops into anatomical homeostasis. This architecture of multi-scale competency of biological systems has important implications for plasticity of bodies and minds, greatly potentiating evolvability. Considering classical and recent data from the perspectives of computational science, evolutionary biology, and basal cognition, reveals a rich research program with many implications for cognitive science, evolutionary biology, regenerative medicine, and artificial intelligence.",
+  "pmid": "35401131",
+  "pmc": "PMC8988303",
+  "reachable": true,
+  "reachable_status": 200
+}

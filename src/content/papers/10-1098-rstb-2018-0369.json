@@ -1,0 +1,16 @@
+{
+  "doi": "10.1098/rstb.2018.0369",
+  "doi_url": "https://doi.org/10.1098/rstb.2018.0369",
+  "title": "The Cognitive Lens: a primer on conceptual tools for analysing information processing in developmental and regenerative morphogenesis",
+  "year": "2019",
+  "journal": "Philosophical Transactions of the Royal Society B: Biological Sciences",
+  "authors": [
+    "Santosh Manicka",
+    "Michael Levin"
+  ],
+  "abstract": "Brains exhibit plasticity, multi-scale integration of information, computation and memory, having evolved by specialization of non-neural cells that already possessed many of the same molecular components and functions. The emerging field of basal cognition provides many examples of decision-making throughout a wide range of non-neural systems. How can biological information processing across scales of size and complexity be quantitatively characterized and exploited in biomedical settings? We use pattern regulation as a context in which to introduce the Cognitive Lens—a strategy using well-established concepts from cognitive and computer science to complement mechanistic investigation in biology. To facilitate the assimilation and application of these approaches across biology, we review tools from various quantitative disciplines, including dynamical systems, information theory and least-action principles. We propose that these tools can be extended beyond neural settings to predict and control systems-level outcomes, and to understand biological patterning as a form of primitive cognition. We hypothesize that a cognitive-level information-processing view of the functions of living systems can complement reductive perspectives, improving efficient top-down control of organism-level outcomes. Exploration of the deep parallels across diverse quantitative paradigms will drive integrative advances in evolutionary biology, regenerative medicine, synthetic bioengineering, cognitive neuroscience and artificial intelligence. This article is part of the theme issue ‘Liquid brains, solid brains: How distributed cognitive architectures process information’.",
+  "pmid": "31006373",
+  "pmc": "PMC6553590",
+  "reachable": true,
+  "reachable_status": 403
+}

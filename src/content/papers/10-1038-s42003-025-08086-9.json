@@ -1,0 +1,20 @@
+{
+  "doi": "10.1038/s42003-025-08086-9",
+  "doi_url": "https://doi.org/10.1038/s42003-025-08086-9",
+  "title": "Basal Xenobot transcriptomics reveals changes and novel control modality in cells freed from organismal influence",
+  "year": "2025",
+  "journal": "Communications Biology",
+  "authors": [
+    "Vaibhav P. Pai",
+    "Léo Pio-Lopez",
+    "Megan M. Sperry",
+    "Patrick Erickson",
+    "Parande Tayyebi",
+    "Michael Levin"
+  ],
+  "abstract": "Abstract Would transcriptomes change if cell collectives acquired a novel morphogenetic and behavioral phenotype in the absence of genomic editing, transgenes, heterologous materials, or drugs? We investigate the effects of morphology and nascent emergent life history on gene expression in the basal (no engineering, no sculpting) form of Xenobots —autonomously motile constructs derived from Xenopus embryo ectodermal cell explants. To investigate gene expression differences between cells in the context of an embryo with those that have been freed from instructive signals and acquired novel lived experiences, we compare transcriptomes of these basal Xenobots with age-matched Xenopus embryos. Basal Xenobots show significantly larger inter-individual gene variability than age-matched embryos, suggesting increased exploration of the transcriptional space. We identify at least 537 (non-epidermal) transcripts uniquely upregulated in these Xenobots. Phylostratigraphy shows a majority of transcriptomic shifts in the basal Xenobots towards evolutionarily ancient transcripts. Pathway analyses indicate transcriptomic shifts in the categories of motility machinery, multicellularity, stress and immune response, metabolism, thanatotranscriptome, and sensory perception of sound and mechanical stimuli. We experimentally confirm that basal Xenobots respond to acoustic stimuli via changes in behavior. Together, these data may have implications for evolution, biomedicine, and synthetic morphoengineering.",
+  "pmid": "40263484",
+  "pmc": "PMC12015265",
+  "reachable": true,
+  "reachable_status": 200
+}

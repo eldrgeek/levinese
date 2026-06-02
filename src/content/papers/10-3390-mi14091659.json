@@ -1,0 +1,18 @@
+{
+  "doi": "10.3390/mi14091659",
+  "doi_url": "https://doi.org/10.3390/mi14091659",
+  "title": "Optimization of Oligomer Stamping Technique for Normally Closed Elastomeric Valves on Glass Substrate",
+  "year": "2023",
+  "journal": "Micromachines",
+  "authors": [
+    "Joel Dungan",
+    "Juanita Mathews",
+    "Michael Levin",
+    "Valencia Koomson"
+  ],
+  "abstract": "Microscale elastomeric valves are an integral part of many lab-on-chip applications. Normally closed valves require lower actuation pressures to form tight seals, making them ideal for portable devices. However, fabrication of normally closed valves is typically more difficult because the valve structure must be selectively bonded to its substrate. In this work, an oligomer stamping technique for selective bonding of normally closed valves is optimized for bonding of PDMS devices on glass substrates. Contact angle and blister bursting testing measurements are used to quantitatively characterize the oligomer stamping process for the first time, and recommendations are made for plasma treatment conditions, microstamping technique, and valve construction. Glass–PDMS devices are ideal for lab-on-chip systems that integrate electrodes on the rigid glass substrate. Here, integrated electrodes are used to assess valve performance, demonstrating electrical isolation in excess of 8 MΩ over the biologically relevant frequency range in the closed state. Further, electrical measurement is used to demonstrate that the valve design can operate under a pulsed actuation scheme, sealing to withstand fluid pressures in excess of 200 mbar.",
+  "pmid": "37763822",
+  "pmc": "PMC10534499",
+  "reachable": true,
+  "reachable_status": 403
+}

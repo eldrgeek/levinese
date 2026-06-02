@@ -1,0 +1,19 @@
+{
+  "doi": "10.1007/s13311-014-0317-7",
+  "doi_url": "https://doi.org/10.1007/s13311-014-0317-7",
+  "title": "A Novel Method for Inducing Nerve Growth via Modulation of Host Resting Potential: Gap Junction-Mediated and Serotonergic Signaling Mechanisms",
+  "year": "2015",
+  "journal": "Neurotherapeutics",
+  "authors": [
+    "Douglas J. Blackiston",
+    "George M. Anderson",
+    "Nikita Rahman",
+    "Clara Bieck",
+    "Michael Levin"
+  ],
+  "abstract": "A major goal of regenerative medicine is to restore the function of damaged or missing organs through the implantation of bioengineered or donor-derived components. It is necessary to understand the signals and cues necessary for implanted structures to innervate the host, as organs devoid of neural connections provide little benefit to the patient. While developmental studies have identified neuronal pathfinding molecules required for proper patterning during embryogenesis, strategies to initiate innervation in structures transplanted at later times or alternate locations remain limited. Recent work has identified membrane resting potential of nerves as a key regulator of growth cone extension or arrest. Here, we identify a novel role of bioelectricity in the generation of axon guidance cues, showing that neurons read the electric topography of surrounding cells, and demonstrate these cues can be leveraged to initiate sensory organ transplant innervation. Grafts of fluorescently labeled embryological eye primordia were used to produce ectopic eyes in Xenopus laevis tadpoles. Depolarization of host tissues through anion channel activation or other means led to a striking hyperinnervation of the body by these ectopic eyes. A screen of possible transduction mechanisms identified serotonergic signaling to be essential for hyperinnervation to occur, and our molecular data suggest a possible model of bioelectrical control of the distribution of neurotransmitters that guides nerve growth. Together, these results identify the molecular components of bioelectrical signaling among cells that regulates axon guidance, and suggest novel biomedical and bioengineering strategies for triggering neuronal outgrowth using ion channel drugs already approved for human use.",
+  "pmid": "25449797",
+  "pmc": "PMC4322068",
+  "reachable": true,
+  "reachable_status": 200
+}

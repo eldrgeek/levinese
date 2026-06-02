@@ -1,0 +1,19 @@
+{
+  "doi": "10.1089/bioe.2019.0024",
+  "doi_url": "https://doi.org/10.1089/bioe.2019.0024",
+  "title": "Assessment of Enrichment of Human Mesenchymal Stem Cells Based on Plasma and Mitochondrial Membrane Potentials",
+  "year": "2020",
+  "journal": "Bioelectricity",
+  "authors": [
+    "Timothy Kamaldinov",
+    "Josh Erndt-Marino",
+    "Michael Levin",
+    "David L. Kaplan",
+    "Mariah S. Hahn"
+  ],
+  "abstract": "Background: Human mesenchymal stem cells (hMSCs) are utilized preclinically and clinically as a candidate cell therapy for a wide range of inflammatory and degenerative diseases. Despite promising results in early clinical trials, consistent outcomes with hMSC-based therapies have proven elusive in many of these applications. In this work, we attempt to address this limitation through the design of a stem cell therapy to enrich hMSCs for desired electrical and ionic properties with enhanced stemness and immunomodulatory/regenerative capacity. Materials and Methods: In this study, we sought to develop initial protocols to achieve electrically enriched hMSCs (EE-hMSCs) with distinct electrical states and assess the potential relationship with respect to hMSC state and function. We sorted hMSCs based on fluorescence intensity of tetramethylrhodamine ethyl ester (TMRE) and investigated phenotypic differences between the sorted populations. Results: Subpopulations of EE-hMSCs exhibit differential expression of genes associated with senescence, stemness, immunomodulation, and autophagy. EE-hMSCs with low levels of TMRE, indicative of depolarized membrane potential, have reduced mRNA expression of senescence-associated markers, and increased mRNA expression of autophagy and immunomodulatory markers relative to EE-hMSCs with high levels of TMRE (hyperpolarized). Conclusions : This work suggests that the utilization of EE-hMSCs may provide a novel strategy for cell therapies, enabling live cell enrichment for distinct phenotypes that can be exploited for different therapeutic outcomes.",
+  "pmid": "32292894",
+  "pmc": "PMC7107814",
+  "reachable": true,
+  "reachable_status": 403
+}

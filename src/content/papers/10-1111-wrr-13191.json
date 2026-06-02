@@ -1,0 +1,24 @@
+{
+  "doi": "10.1111/wrr.13191",
+  "doi_url": "https://doi.org/10.1111/wrr.13191",
+  "title": "A <scp>pro‐reparative</scp> bioelectronic device for controlled delivery of ions and biomolecules",
+  "year": "2024",
+  "journal": "Wound Repair and Regeneration",
+  "authors": [
+    "Narges Asefifeyzabadi",
+    "Tiffany Nguyen",
+    "Houpu Li",
+    "Kan Zhu",
+    "Hsin‐ya Yang",
+    "Prabhat Baniya",
+    "Andrea Medina Lopez",
+    "Anthony Gallegos",
+    "Hao‐Chieh Hsieh",
+    "Harika Dechiraju"
+  ],
+  "abstract": "Abstract Wound healing is a complex physiological process that requires precise control and modulation of many parameters. Therapeutic ion and biomolecule delivery has the capability to regulate the wound healing process beneficially. However, achieving controlled delivery through a compact device with the ability to deliver multiple therapeutic species can be a challenge. Bioelectronic devices have emerged as a promising approach for therapeutic delivery. Here, we present a pro‐reparative bioelectronic device designed to deliver ions and biomolecules for wound healing applications. The device incorporates ion pumps for the targeted delivery of H + and zolmitriptan to the wound site. In vivo studies using a mouse model further validated the device's potential for modulating the wound environment via H + delivery that decreased M1/M2 macrophage ratios. Overall, this bioelectronic ion pump demonstrates potential for accelerating wound healing via targeted and controlled delivery of therapeutic agents to wounds. Continued optimization and development of this device could not only lead to significant advancements in tissue repair and wound healing strategies but also reveal new physiological information about the dynamic wound environment.",
+  "pmid": "38794912",
+  "pmc": null,
+  "reachable": true,
+  "reachable_status": 200
+}

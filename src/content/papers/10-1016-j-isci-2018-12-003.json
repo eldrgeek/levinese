@@ -1,0 +1,18 @@
+{
+  "doi": "10.1016/j.isci.2018.12.003",
+  "doi_url": "https://doi.org/10.1016/j.isci.2018.12.003",
+  "title": "EDEn–Electroceutical Design Environment: Ion Channel Tissue Expression Database with Small Molecule Modulators",
+  "year": "2019",
+  "journal": "iScience",
+  "authors": [
+    "Cassandra D.M. Churchill",
+    "Philip Winter",
+    "Jack A. Tuszynski",
+    "Michael Levin"
+  ],
+  "abstract": "The emerging field of bioelectricity has revealed numerous new roles for ion channels beyond the nervous system, which can be exploited for applications in regenerative medicine. Developing such biomedical interventions for birth defects, cancer, traumatic injury, and bioengineering first requires knowledge of ion channel targets expressed in tissues of interest. This information can then be used to select combinations of small molecule inhibitors and/or activators that manipulate the bioelectric state. Here, we provide an overview of electroceutical design environment (EDEn), the first bioinformatic platform that facilitates the design of such therapeutic strategies. This database includes information on ion channels and ion pumps, linked to known chemical modulators and their properties. The database also provides information about the expression levels of the ion channels in over 100 tissue types. The graphical interface allows the user to readily identify chemical entities that can alter the electrical properties of target cells and tissues.",
+  "pmid": "30590250",
+  "pmc": "PMC6308252",
+  "reachable": true,
+  "reachable_status": 200
+}

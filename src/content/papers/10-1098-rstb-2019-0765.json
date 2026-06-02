@@ -1,0 +1,18 @@
+{
+  "doi": "10.1098/rstb.2019.0765",
+  "doi_url": "https://doi.org/10.1098/rstb.2019.0765",
+  "title": "Bistability of somatic pattern memories: stochastic outcomes in bioelectric circuits underlying regeneration",
+  "year": "2021",
+  "journal": "Philosophical Transactions of the Royal Society B",
+  "authors": [
+    "Giovanni Pezzulo",
+    "Joshua LaPalme",
+    "Fallon Durant",
+    "Michael Levin"
+  ],
+  "abstract": "Abstract Nervous systems’ computational abilities are an evolutionary innovation, specializing and speed-optimizing ancient biophysical dynamics. Bioelectric signalling originated in cells' communication with the outside world and with each other, enabling cooperation towards adaptive construction and repair of multicellular bodies. Here, we review the emerging field of developmental bioelectricity, which links the field of basal cognition to state-of-the-art questions in regenerative medicine, synthetic bioengineering and even artificial intelligence. One of the predictions of this view is that regeneration and regulative development can restore correct large-scale anatomies from diverse starting states because, like the brain, they exploit bioelectric encoding of distributed goal states—in this case, pattern memories. We propose a new interpretation of recent stochastic regenerative phenotypes in planaria, by appealing to computational models of memory representation and processing in the brain. Moreover, we discuss novel findings showing that bioelectric changes induced in planaria can be stored in tissue for over a week, thus revealing that somatic bioelectric circuits in vivo can implement a long-term, re-writable memory medium. A consideration of the mechanisms, evolution and functionality of basal cognition makes novel predictions and provides an integrative perspective on the evolution, physiology and biomedicine of information processing in vivo. This article is part of the theme issue ‘Basal cognition: multicellularity, neurons and the cognitive lens’.",
+  "pmid": "33550952",
+  "pmc": "PMC7935058",
+  "reachable": true,
+  "reachable_status": 403
+}

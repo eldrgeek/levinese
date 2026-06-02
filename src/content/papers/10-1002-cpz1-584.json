@@ -1,0 +1,22 @@
+{
+  "doi": "10.1002/cpz1.584",
+  "doi_url": "https://doi.org/10.1002/cpz1.584",
+  "title": "Evaluating the Clinical and Immune Responses to Spotted Fever Rickettsioses in the Guinea Pig‐Tick‐<i>Rickettsia</i> System",
+  "year": "2022",
+  "journal": "Current Protocols",
+  "authors": [
+    "John V. Stokes",
+    "Michael L. Levin",
+    "Claire E. Cross",
+    "Anne‐Marie L. Ross",
+    "Alyssa N. Snellgrove",
+    "Bridget V. Willeford",
+    "Navatha Alugubelly",
+    "Andrea S. Varela‐Stokes"
+  ],
+  "abstract": "Abstract The guinea pig was the original animal model developed for investigating spotted fever rickettsiosis (SFR). This model system has persisted on account of the guinea pig's conduciveness to tick transmission of SFR agents and ability to recapitulate SFR in humans through clinical signs that include fever, unthriftiness, and in some cases the development of an eschar. The guinea pig is the smallest animal model for SFR that allows the collection of multiple blood and skin samples antemortem for longitudinal studies. This unit provides the basic protocols necessary to establish, maintain, and utilize a guinea pig‐tick‐ Rickettsia model for monitoring the course of infection and immune response to an infection by spotted fever group Rickettsia (SFGR) that can be studied at biosafety level 2 (BSL‐2) and arthropod containment level 2 (ACL‐2); adaptations must be made for BSL‐3 agents. The protocols cover methods for tick feeding and colony development, laboratory infection of ticks, tick transmission of Rickettsia to guinea pigs, and monitoring of the course of infection through clinical signs, rickettsial burden, and immune response. It should be feasible to adapt these methods to study other tick‐borne pathogens. © 2022 The Authors. Current Protocols published by Wiley Periodicals LLC. Basic Protocol 1 : Tick transmission of SFGR to guinea pigs Support Protocol 1 : Laboratory infection of ticks by injection Alternate Protocol 1 : Needle inoculation of SFGR to guinea pigs Basic Protocol 2 : Monitoring the course of guinea pig rickettsial infection: clinical signs Basic Protocol 3 : Monitoring the course of guinea pig rickettsial infection: collection of biological specimens Support Protocol 2 : Guinea pig anesthesia Basic Protocol 4 : Monitoring rickettsial burden in guinea pigs by multiplex qPCR Basic Protocol 5 : Monitoring guinea pig immune response to infection: blood leukocytes by flow cytometry Basic Protocol 6 : Monitoring immune response to guinea pig rickettsial infection: leukocyte infiltration of skin at the tick bite site by flow cytometry Basic Protocol 7 : Monitoring the immune response to guinea pig rickettsial infection: antibody titer by ELISA Support Protocol 4 : Coating ELISA Plates Alternate Protocol 2 : Monitoring immune response to guinea pig rickettsial infection: antibody titer by immunofluorescence assay",
+  "pmid": "36383032",
+  "pmc": "PMC9828190",
+  "reachable": true,
+  "reachable_status": 200
+}

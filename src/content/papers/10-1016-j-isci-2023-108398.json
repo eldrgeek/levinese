@@ -1,0 +1,17 @@
+{
+  "doi": "10.1016/j.isci.2023.108398",
+  "doi_url": "https://doi.org/10.1016/j.isci.2023.108398",
+  "title": "Information integration during bioelectric regulation of morphogenesis of the embryonic frog brain",
+  "year": "2023",
+  "journal": "iScience",
+  "authors": [
+    "Santosh Manicka",
+    "Vaibhav P. Pai",
+    "Michael Levin"
+  ],
+  "abstract": ". This study demonstrates that machine learning and computational integration approaches can advance our understanding of the information-processing underlying morphogenetic decision-making, with a potential for other applications in developmental biology and regenerative medicine.",
+  "pmid": "38034358",
+  "pmc": "PMC10687303",
+  "reachable": true,
+  "reachable_status": 200
+}

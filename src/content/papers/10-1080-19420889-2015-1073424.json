@@ -1,0 +1,17 @@
+{
+  "doi": "10.1080/19420889.2015.1073424",
+  "doi_url": "https://doi.org/10.1080/19420889.2015.1073424",
+  "title": "The stability of memories during brain remodeling: A perspective",
+  "year": "2015",
+  "journal": "Communicative &amp; Integrative Biology",
+  "authors": [
+    "Douglas J Blackiston",
+    "Tal Shomrat",
+    "Michael Levin"
+  ],
+  "abstract": "One of the most important features of the nervous system is memory: the ability to represent and store experiences, in a manner that alters behavior and cognition at future times when the original stimulus is no longer present. However, the brain is not always an anatomically stable structure: many animal species regenerate all or part of the brain after severe injury, or remodel their CNS toward a new configuration as part of their life cycle. This raises a fascinating question: what are the dynamics of memories during brain regeneration? Can stable memories remain intact when cellular turnover and spatial rearrangement modify the biological hardware within which experiences are stored? What can we learn from model species that exhibit both, regeneration and memory, with respect to robustness and stability requirements for long-term memories encoded in living tissues? In this Perspective, we discuss relevant data in regenerating planaria, metamorphosing insects, and hibernating ground squirrels. While much remains to be done to understand this remarkable process, molecular-level insight will have important implications for cognitive science, regenerative medicine of the brain, and the development of non-traditional computational media in synthetic bioengineering.",
+  "pmid": "27066165",
+  "pmc": "PMC4802789",
+  "reachable": true,
+  "reachable_status": 403
+}

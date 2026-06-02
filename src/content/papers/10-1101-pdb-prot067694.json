@@ -1,0 +1,16 @@
+{
+  "doi": "10.1101/pdb.prot067694",
+  "doi_url": "https://doi.org/10.1101/pdb.prot067694",
+  "title": "A Versatile Protocol for mRNA Electroporation of <i>Xenopus laevis</i> Embryos",
+  "year": "2012",
+  "journal": "Cold Spring Harbor Protocols",
+  "authors": [
+    "Brook T. Chernet",
+    "Michael Levin"
+  ],
+  "abstract": "Xenopus laevis is an ideal model system for investigating the mechanisms of pattern formation. The ability to express exogenous mRNA or introduce morpholinos into cleavage-stage Xenopus embryos has allowed gain- and loss-of-function experiments that reveal molecular-genetic control of development and regeneration. However, injection of mRNAs into cleavage-stage embryos provides limited spatio-temporal control: It is difficult to limit targeting to small regions (e.g., inducing foci of expression) and the fate map does not facilitate targeting some tissues, such as those of the tail. Likewise, early injection can result in unwanted developmental defects because mRNA can be translated long before the desired time point. These are especially important limitations when studying developmental and regenerative processes during the gastrula to tailbud stages. Although transgenic techniques allow precise control over spatio-temporal expression of genes when the appropriate promoter is available, the process of creating stable transgenic animals is time-consuming. Electroporation provides an alternative method for delivering mRNA and other nucleic acids, enabling the targeting of single cells or groups of cells at any stage of development. This protocol describes detailed electroporation parameters for the transfection of mRNA into a wide range of tissues in embryos at gastrula to tailbud stages, with high efficiency and expression as early as 4 h post electroporation.",
+  "pmid": "22474651",
+  "pmc": "PMC3970573",
+  "reachable": true,
+  "reachable_status": 200
+}

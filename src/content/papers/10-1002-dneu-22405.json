@@ -1,0 +1,16 @@
+{
+  "doi": "10.1002/dneu.22405",
+  "doi_url": "https://doi.org/10.1002/dneu.22405",
+  "title": "Gap junctional signaling in pattern regulation: Physiological network connectivity instructs growth and form",
+  "year": "2017",
+  "journal": "Developmental Neurobiology",
+  "authors": [
+    "Juanita Mathews",
+    "Michael Levin"
+  ],
+  "abstract": "ABSTRACT Gap junctions (GJs) are aqueous channels that allow cells to communicate via physiological signals directly. The role of gap junctional connectivity in determining single‐cell functions has long been recognized. However, GJs have another important role: the regulation of large‐scale anatomical pattern. GJs are not only versatile computational elements that allow cells to control which small molecule signals they receive and emit, but also establish connectivity patterns within large groups of cells. By dynamically regulating the topology of bioelectric networks in vivo , GJs underlie the ability of many tissues to implement complex morphogenesis. Here, a review of recent data on patterning roles of GJs in growth of the zebrafish fin, the establishment of left‐right patterning, the developmental dysregulation known as cancer, and the control of large‐scale head‐tail polarity, and head shape in planarian regeneration has been reported. A perspective in which GJs are not only molecular features functioning in single cells, but also enable global neural‐like dynamics in non‐neural somatic tissues has been proposed. This view suggests a rich program of future work which capitalizes on the rapid advances in the biophysics of GJs to exploit GJ‐mediated global dynamics for applications in birth defects, regenerative medicine, and morphogenetic bioengineering. © 2016 Wiley Periodicals, Inc. Develop Neurobiol 77: 643–673, 2017",
+  "pmid": "27265625",
+  "pmc": "PMC10478170",
+  "reachable": true,
+  "reachable_status": 403
+}

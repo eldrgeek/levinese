@@ -1,0 +1,20 @@
+{
+  "doi": "10.1371/journal.pgen.1007642",
+  "doi_url": "https://doi.org/10.1371/journal.pgen.1007642",
+  "title": "Activating PAX gene family paralogs to complement PAX5 leukemia driver mutations",
+  "year": "2018",
+  "journal": "PLOS Genetics",
+  "authors": [
+    "Matthew R. Hart",
+    "Donovan J. Anderson",
+    "Christopher C. Porter",
+    "Tobias Neff",
+    "Michael Levin",
+    "Marshall S. Horwitz"
+  ],
+  "abstract": "PAX5, one of nine members of the mammalian paired box (PAX) family of transcription factors, plays an important role in B cell development. Approximately one-third of individuals with pre-B acute lymphoblastic leukemia (ALL) acquire heterozygous inactivating mutations of PAX5 in malignant cells, and heterozygous germline loss-of-function PAX5 mutations cause autosomal dominant predisposition to ALL. At least in mice, Pax5 is required for pre-B cell maturation, and leukemic remission occurs when Pax5 expression is restored in a Pax5-deficient mouse model of ALL. Together, these observations indicate that PAX5 deficiency reversibly drives leukemogenesis. PAX5 and its two most closely related paralogs, PAX2 and PAX8, which are not mutated in ALL, exhibit overlapping expression and function redundantly during embryonic development. However, PAX5 alone is expressed in lymphocytes, while PAX2 and PAX8 are predominantly specific to kidney and thyroid, respectively. We show that forced expression of PAX2 or PAX8 complements PAX5 loss-of-function mutation in ALL cells as determined by modulation of PAX5 target genes, restoration of immunophenotypic and morphological differentiation, and, ultimately, reduction of replicative potential. Activation of PAX5 paralogs, PAX2 or PAX8, ordinarily silenced in lymphocytes, may therefore represent a novel approach for treating PAX5-deficient ALL. In pursuit of this strategy, we took advantage of the fact that, in kidney, PAX2 is upregulated by extracellular hyperosmolarity. We found that hyperosmolarity, at potentially clinically achievable levels, transcriptionally activates endogenous PAX2 in ALL cells via a mechanism dependent on NFAT5, a transcription factor coordinating response to hyperosmolarity. We also found that hyperosmolarity upregulates residual wild type PAX5 expression in ALL cells and modulates gene expression, including in PAX5-mutant primary ALL cells. These findings specifically demonstrate that osmosensing pathways may represent a new therapeutic target for ALL and more broadly point toward the possibility of using gene paralogs to rescue mutations driving cancer and other diseases.",
+  "pmid": "30216339",
+  "pmc": "PMC6157899",
+  "reachable": true,
+  "reachable_status": 200
+}

@@ -1,0 +1,17 @@
+{
+  "doi": "10.3389/fcell.2023.1087650",
+  "doi_url": "https://doi.org/10.3389/fcell.2023.1087650",
+  "title": "Closing the loop on morphogenesis: a mathematical model of morphogenesis by closed-loop reaction-diffusion",
+  "year": "2023",
+  "journal": "Frontiers in Cell and Developmental Biology",
+  "authors": [
+    "Joel Grodstein",
+    "Patrick McMillen",
+    "Michael Levin"
+  ],
+  "abstract": "Morphogenesis, the establishment and repair of emergent complex anatomy by groups of cells, is a fascinating and biomedically-relevant problem. One of its most fascinating aspects is that a developing embryo can reliably recover from disturbances, such as splitting into twins. While this reliability implies some type of goal-seeking error minimization over a morphogenic field, there are many gaps with respect to detailed, constructive models of such a process. A common way to achieve reliability is negative feedback, which requires characterizing the existing body shape to create an error signal–but measuring properties of a shape may not be simple. We show how cells communicating in a wave-like pattern could analyze properties of the current body shape. We then describe a closed-loop negative-feedback system for creating reaction-diffusion (RD) patterns with high reliability. Specifically, we use a wave to count the number of peaks in a RD pattern, letting us use a negative-feedback controller to create a pattern with N repetitions, where N can be altered over a wide range. Furthermore, the individual repetitions of the RD pattern can be easily stretched or shrunk under genetic control to create, e.g., some morphological features larger than others. This work contributes to the exciting effort of understanding design principles of morphological computation, which can be used to understand evolved developmental mechanisms, manipulate them in regenerative-medicine settings, or engineer novel synthetic morphology constructs with desired robust behavior.",
+  "pmid": "37645245",
+  "pmc": "PMC10461482",
+  "reachable": true,
+  "reachable_status": 200
+}

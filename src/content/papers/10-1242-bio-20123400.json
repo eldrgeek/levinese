@@ -1,0 +1,17 @@
+{
+  "doi": "10.1242/bio.20123400",
+  "doi_url": "https://doi.org/10.1242/bio.20123400",
+  "title": "Towards a bioinformatics of patterning: a computational approach to understanding regulative morphogenesis",
+  "year": "2013",
+  "journal": "Biology Open",
+  "authors": [
+    "Daniel Lobo",
+    "Taylor J. Malone",
+    "Michael Levin"
+  ],
+  "abstract": "Summary The mechanisms underlying the regenerative abilities of certain model species are of central importance to the basic understanding of pattern formation. Complex organisms such as planaria and salamanders exhibit an exceptional capacity to regenerate complete body regions and organs from amputated pieces. However, despite the outstanding bottom-up efforts of molecular biologists and bioinformatics focused at the level of gene sequence, no comprehensive mechanistic model exists that can account for more than one or two aspects of regeneration. The development of computational approaches that help scientists identify constructive models of pattern regulation is held back by the lack of both flexible morphological representations and a repository for the experimental procedures and their results (altered pattern formation). No formal representation or computational tools exist to efficiently store, search, or mine the available knowledge from regenerative experiments, inhibiting fundamental insights from this huge dataset. To overcome these problems, we present here a new class of ontology to encode formally and unambiguously a very wide range of possible morphologies, manipulations, and experiments. This formalism will pave the way for top-down approaches for the discovery of comprehensive models of regeneration. We chose the planarian regeneration dataset to illustrate a proof-of-principle of this novel bioinformatics of shape; we developed a software tool to facilitate the formalization and mining of the planarian experimental knowledge, and cured a database containing all of the experiments from the principal publications on planarian regeneration. These resources are freely available for the regeneration community and will readily assist researchers in identifying specific functional data in planarian experiments. More importantly, these applications illustrate the presented framework for formalizing knowledge about functional perturbations of morphogenesis, which is widely applicable to numerous model systems beyond regenerating planaria, and can be extended to many aspects of functional developmental, regenerative, and evolutionary biology.",
+  "pmid": "23429669",
+  "pmc": "PMC3575650",
+  "reachable": true,
+  "reachable_status": 403
+}

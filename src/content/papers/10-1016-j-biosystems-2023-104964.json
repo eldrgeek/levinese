@@ -1,0 +1,19 @@
+{
+  "doi": "10.1016/j.biosystems.2023.104964",
+  "doi_url": "https://doi.org/10.1016/j.biosystems.2023.104964",
+  "title": "Toward an ethics of autopoietic technology: Stress, care, and intelligence",
+  "year": "2023",
+  "journal": "Biosystems",
+  "authors": [
+    "Olaf Witkowski",
+    "Thomas Doctor",
+    "Elizaveta Solomonova",
+    "Bill Duane",
+    "Michael Levin"
+  ],
+  "abstract": "The relationship between humans and technology has attracted increasing attention with the advent of ever stronger models of artificial intelligence. Humans and technology are intertwined within multiple autopoietic loops of stress, care, and intelligence. This paper suggests that technology should not be seen as a mere tool serving humans' needs, but rather as a partner in a rich relationship with humans. Our model for understanding autopoietic systems applies equally to biological, technological, and hybrid systems. Regardless of their substrates, all intelligent agents can be understood as needing to respond to a perceived mismatch between what is and what should be. We take this observation, which is evidence of intrinsic links between ontology and ethics, as the basis for proposing a stress-care-intelligence feedback loop (SCI loop for short). We note that the SCI loop provides a perspective on agency that does not require recourse to explanatorily burdensome notions of permanent and singular essences. SCI loops can be seen as individuals only by virtue of their dynamics, and are thus intrinsically integrative and transformational. We begin by considering the transition from poiesis to autopoiesis in Heidegger and the subsequent enactivist tradition, and on this basis formulate and explain the SCI loop. In an acknowledgment of Maturana's and Varela's project, our findings are considered against the backdrop of a classic Buddhist model for the cultivation of intelligence, known as the bodhisattva. We conclude by noting that SCI loops of human and technological agency can be seen as mutually integrative by noticing the stress-transfers between them. The loop framework thus acknowledges encounters and interactions between humans and technology in a way that does not relegate one to the subservience of the other (neither in ontological nor in ethical terms), suggesting instead integration and mutual respect as the default for their engagements. Moreover, an acknowledgment of diverse, multiscale embodiments of intelligence suggests an expansive model of ethics not bound by artificial, limited criteria based on privileged composition or history of an agent. The implications for our journey into the future appear numerous.",
+  "pmid": "37394111",
+  "pmc": null,
+  "reachable": true,
+  "reachable_status": 200
+}

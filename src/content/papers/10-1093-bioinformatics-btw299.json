@@ -1,0 +1,17 @@
+{
+  "doi": "10.1093/bioinformatics/btw299",
+  "doi_url": "https://doi.org/10.1093/bioinformatics/btw299",
+  "title": "Computational discovery and \n            <i>in vivo</i>\n             validation of \n            <i>hnf4</i>\n             as a regulatory gene in planarian regeneration",
+  "year": "2016",
+  "journal": "Bioinformatics",
+  "authors": [
+    "Daniel Lobo",
+    "Junji Morokuma",
+    "Michael Levin"
+  ],
+  "abstract": "Abstract Motivation: Automated computational methods can infer dynamic regulatory network models directly from temporal and spatial experimental data, such as genetic perturbations and their resultant morphologies. Recently, a computational method was able to reverse-engineer the first mechanistic model of planarian regeneration that can recapitulate the main anterior–posterior patterning experiments published in the literature. Validating this comprehensive regulatory model via novel experiments that had not yet been performed would add in our understanding of the remarkable regeneration capacity of planarian worms and demonstrate the power of this automated methodology. Results: Using the Michigan Molecular Interactions and STRING databases and the MoCha software tool, we characterized as hnf4 an unknown regulatory gene predicted to exist by the reverse-engineered dynamic model of planarian regeneration. Then, we used the dynamic model to predict the morphological outcomes under different single and multiple knock-downs (RNA interference) of hnf4 and its predicted gene pathway interactors β -catenin and hh . Interestingly, the model predicted that RNAi of hnf4 would rescue the abnormal regenerated phenotype (tailless) of RNAi of hh in amputated trunk fragments. Finally, we validated these predictions in vivo by performing the same surgical and genetic experiments with planarian worms, obtaining the same phenotypic outcomes predicted by the reverse-engineered model. Conclusion: These results suggest that hnf4 is a regulatory gene in planarian regeneration, validate the computational predictions of the reverse-engineered dynamic model, and demonstrate the automated methodology for the discovery of novel genes, pathways and experimental phenotypes. Contact: michael.levin@tufts.edu",
+  "pmid": "27166245",
+  "pmc": null,
+  "reachable": true,
+  "reachable_status": 403
+}

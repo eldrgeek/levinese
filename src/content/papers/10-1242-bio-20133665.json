@@ -1,0 +1,17 @@
+{
+  "doi": "10.1242/bio.20133665",
+  "doi_url": "https://doi.org/10.1242/bio.20133665",
+  "title": "Light-activation of the Archaerhodopsin H+-pump reverses age-dependent loss of vertebrate regeneration: sparking system-level controls <i>in vivo</i>",
+  "year": "2013",
+  "journal": "Biology Open",
+  "authors": [
+    "Dany Spencer Adams",
+    "Ai-Sun Tseng",
+    "Michael Levin"
+  ],
+  "abstract": "Summary Optogenetics, the regulation of proteins by light, has revolutionized the study of excitable cells, and generated strong interest in the therapeutic potential of this technology for regulating action potentials in neural and muscle cells. However, it is currently unknown whether light-activated channels and pumps will allow control of resting potential in embryonic or regenerating cells in vivo. Abnormalities in ion currents of non-excitable cells are known to play key roles in the etiology of birth defects and cancer. Moreover, changes in transmembrane resting potential initiate Xenopus tadpole tail regeneration, including regrowth of a functioning spinal cord, in tails that have been inhibited by natural inactivity of the endogenous H+-V-ATPase pump. However, existing pharmacological and genetic methods allow neither non-invasive control of bioelectric parameters in vivo nor the ability to abrogate signaling at defined time points. Here, we show that light activation of a H+-pump can prevent developmental defects and induce regeneration by hyperpolarizing transmembrane potentials. Specifically, light-dependent, Archaerhodopsin-based, H+-flux hyperpolarized cells in vivo and thus rescued Xenopus embryos from the craniofacial and patterning abnormalities caused by molecular blockade of endogenous H+-flux. Furthermore, light stimulation of Arch for only 2 days after amputation restored regenerative capacity to inhibited tails, inducing cell proliferation, tissue innervation, and upregulation of notch1 and msx1, essential genes in two well-known endogenous regenerative pathways. Electroneutral pH change, induced by expression of the sodium proton exchanger, NHE3, did not rescue regeneration, implicating the hyperpolarizing activity of Archaerhodopsin as the causal factor. The data reveal that hyperpolarization is required only during the first 48 hours post-injury, and that expression in the spinal cord is not necessary for the effect to occur. Our study shows that complex, coordinated sets of stable bioelectric events that alter body patterning—prevention of birth defects and induction of regeneration—can be elicited by the temporal modulation of a single ion current. Furthermore, as optogenetic reagents can be used to achieve that manipulation, the potential for this technology to impact clinical approaches for preventive, therapeutic, and regenerative medicine is extraordinary. We expect this first critical step will lead to an unprecedented expansion of optogenetics in biomedical research and in the probing of novel and fundamental biophysical determinants of growth and form.",
+  "pmid": "23519324",
+  "pmc": "PMC3603412",
+  "reachable": true,
+  "reachable_status": 403
+}

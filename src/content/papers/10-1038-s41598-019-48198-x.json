@@ -1,0 +1,19 @@
+{
+  "doi": "10.1038/s41598-019-48198-x",
+  "doi_url": "https://doi.org/10.1038/s41598-019-48198-x",
+  "title": "A flow through device for simultaneous dielectrophoretic cell trapping and AC electroporation",
+  "year": "2019",
+  "journal": "Scientific Reports",
+  "authors": [
+    "Meera Punjiya",
+    "Hojatollah Rezaei Nejad",
+    "Juanita Mathews",
+    "Michael Levin",
+    "Sameer Sonkusale"
+  ],
+  "abstract": "Abstract Isolation of cells and their transfection in a controlled manner is an integral step in cell biotechnology. Electric field approaches such as dielectrophoresis (DEP) offers a more viable method for targeted immobilization of cells without any labels. For transfection of cells to incorporate exogenous materials, electrical methods such as electroporation, are preferred over chemical and viral delivery methods since they minimally affect cell viability and can target many types. However prior approaches to both methods required multiple excitation sources, an AC source for DEP-based trapping and another DC source for electroporation. In this paper, we present a first of its kind flow through lab-on-chip platform using a single AC excitation source for combined trapping using negative dielectrophoresis (nDEP) and AC electroporation. Use of AC fields for electroporation eliminates the unwanted side effects of electrolysis or joule heating at electrodes compared to DC electroporation. Adjusting the flow rate and the electrical parameters of the incident AC field precisely controls the operation (trap, trap with electroporation and release). The platform has been validated through trapping and simultaneous transfection of HEK-293 embryonic kidney cells with a plasmid vector containing a fluorescent protein tag. Numerical scaling analysis is provided that indicates promise for individual cell trapping and electroporation using low voltage AC fields.",
+  "pmid": "31427614",
+  "pmc": "PMC6700080",
+  "reachable": true,
+  "reachable_status": 200
+}

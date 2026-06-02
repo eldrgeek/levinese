@@ -1,0 +1,17 @@
+{
+  "doi": "10.3390/cells11162470",
+  "doi_url": "https://doi.org/10.3390/cells11162470",
+  "title": "Screening Biophysical Sensors and Neurite Outgrowth Actuators in Human Induced-Pluripotent-Stem-Cell-Derived Neurons",
+  "year": "2022",
+  "journal": "Cells",
+  "authors": [
+    "Vaibhav P. Pai",
+    "Ben G. Cooper",
+    "Michael Levin"
+  ],
+  "abstract": "All living cells maintain a charge distribution across their cell membrane (membrane potential) by carefully controlled ion fluxes. These bioelectric signals regulate cell behavior (such as migration, proliferation, differentiation) as well as higher-level tissue and organ patterning. Thus, voltage gradients represent an important parameter for diagnostics as well as a promising target for therapeutic interventions in birth defects, injury, and cancer. However, despite much progress in cell and molecular biology, little is known about bioelectric states in human stem cells. Here, we present simple methods to simultaneously track ion dynamics, membrane voltage, cell morphology, and cell activity (pH and ROS), using fluorescent reporter dyes in living human neurons derived from induced neural stem cells (hiNSC). We developed and tested functional protocols for manipulating ion fluxes, membrane potential, and cell activity, and tracking neural responses to injury and reinnervation in vitro. Finally, using morphology sensor, we tested and quantified the ability of physiological actuators (neurotransmitters and pH) to manipulate nerve repair and reinnervation. These methods are not specific to a particular cell type and should be broadly applicable to the study of bioelectrical controls across a wide range of combinations of models and endpoints.",
+  "pmid": "36010547",
+  "pmc": "PMC9406775",
+  "reachable": true,
+  "reachable_status": 403
+}

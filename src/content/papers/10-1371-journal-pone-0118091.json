@@ -1,0 +1,20 @@
+{
+  "doi": "10.1371/journal.pone.0118091",
+  "doi_url": "https://doi.org/10.1371/journal.pone.0118091",
+  "title": "On a Model of Pattern Regeneration Based on Cell Memory",
+  "year": "2015",
+  "journal": "PLOS ONE",
+  "authors": [
+    "Nikolai Bessonov",
+    "Michael Levin",
+    "Nadya Morozova",
+    "Natalia Reinberg",
+    "Alen Tosenberger",
+    "Vitaly Volpert"
+  ],
+  "abstract": "We present here a new model of the cellular dynamics that enable regeneration of complex biological morphologies. Biological cell structures are considered as an ensemble of mathematical points on the plane. Each cell produces a signal which propagates in space and is received by other cells. The total signal received by each cell forms a signal distribution defined on the cell structure. This distribution characterizes the geometry of the cell structure. If a part of this structure is removed, the remaining cells have two signals. They keep the value of the signal which they had before the amputation (memory), and they receive a new signal produced after the amputation. Regeneration of the cell structure is stimulated by the difference between the old and the new signals. It is stopped when the two signals coincide. The algorithm of regeneration contains certain rules which are essential for its functioning, being the first quantitative model of cellular memory that implements regeneration of complex patterns to a specific target morphology. Correct regeneration depends on the form and the size of the cell structure, as well as on some parameters of regeneration.",
+  "pmid": "25695252",
+  "pmc": "PMC4335072",
+  "reachable": true,
+  "reachable_status": 200
+}

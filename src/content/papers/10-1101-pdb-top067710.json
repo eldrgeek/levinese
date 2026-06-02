@@ -1,0 +1,16 @@
+{
+  "doi": "10.1101/pdb.top067710",
+  "doi_url": "https://doi.org/10.1101/pdb.top067710",
+  "title": "General Principles for Measuring Resting Membrane Potential and Ion Concentration Using Fluorescent Bioelectricity Reporters",
+  "year": "2012",
+  "journal": "Cold Spring Harbor Protocols",
+  "authors": [
+    "Dany S. Adams",
+    "Michael Levin"
+  ],
+  "abstract": "This overview provides the basic information needed to understand, choose, and use fluorescent bioelectricity reporters (FBRs), where bioelectricity is defined as cell processes that involve ions or ion flux. While traditional methods of measuring these characteristics are still valid and necessary, the utility of FBRs has facilitated measurement of these properties under circumstances that are not possible with microelectrodes. Specifically, these dyes can be used to achieve subcellular resolution, to measure many cells simultaneously in vivo, and to track bioelectric gradients over long time periods despite cell movements and divisions. This article covers the basic principles underlying the interpretation of the dye signals, describes essential steps for troubleshooting, optimizing data collection, analysis, and presentation, and provides compilations of information that are useful for choosing FBRs for particular projects.",
+  "pmid": "22474653",
+  "pmc": "PMC4001120",
+  "reachable": true,
+  "reachable_status": 200
+}

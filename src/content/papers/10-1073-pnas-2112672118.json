@@ -1,0 +1,18 @@
+{
+  "doi": "10.1073/pnas.2112672118",
+  "doi_url": "https://doi.org/10.1073/pnas.2112672118",
+  "title": "Kinematic self-replication in reconfigurable organisms",
+  "year": "2021",
+  "journal": "Proceedings of the National Academy of Sciences",
+  "authors": [
+    "Sam Kriegman",
+    "Douglas Blackiston",
+    "Michael Levin",
+    "Josh Bongard"
+  ],
+  "abstract": "Significance Almost all organisms replicate by growing and then shedding offspring. Some molecules also replicate, but by moving rather than growing: They find and combine building blocks into self-copies. Here we show that clusters of cells, if freed from a developing organism, can similarly find and combine loose cells into clusters that look and move like they do, and that this ability does not have to be specifically evolved or introduced by genetic manipulation. Finally, we show that artificial intelligence can design clusters that replicate better, and perform useful work as they do so. This suggests that future technologies may, with little outside guidance, become more useful as they spread, and that life harbors surprising behaviors just below the surface, waiting to be uncovered.",
+  "pmid": "34845026",
+  "pmc": "PMC8670470",
+  "reachable": true,
+  "reachable_status": 403
+}

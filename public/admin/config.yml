@@ -1,0 +1,46 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: papers
+    label: Papers
+    label_singular: Paper
+    folder: src/content/papers
+    format: json
+    extension: json
+    identifier_field: title
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Year, name: year, widget: string, required: false }
+      - { label: Journal, name: journal, widget: string, required: false }
+      - { label: DOI, name: doi, widget: string, required: false }
+      - { label: DOI URL, name: doi_url, widget: string, required: false }
+      - { label: Authors, name: authors, widget: list, required: false }
+      - { label: Abstract, name: abstract, widget: text, required: false }
+      - { label: Reachable, name: reachable, widget: boolean, default: false, required: false }
+
+  - name: terms
+    label: Dictionary Terms
+    label_singular: Term
+    folder: src/content/terms
+    format: frontmatter
+    extension: md
+    identifier_field: title
+    fields:
+      - { label: Letter, name: letter, widget: string }
+      - { label: Title, name: title, widget: string }
+      - { label: Subtitle, name: subtitle, widget: string, required: false }
+      - { label: Definition, name: body, widget: markdown }
+      - { label: Authored By, name: authored_by, widget: string }
+      - { label: Author Note, name: authored_by_note, widget: string, required: false }
+      - { label: Source, name: source, widget: text }
+      - { label: Provenance, name: provenance, widget: list, required: false }
+      - { label: Related Terms, name: related, widget: list, required: false }
+      - { label: Tags, name: tags, widget: list, required: false }
+      - { label: New Term, name: is_new, widget: boolean, default: false, required: false }
+      - { label: Contested, name: contested, widget: boolean, default: false, required: false }
+      - { label: Contested Note, name: contested_note, widget: string, required: false }

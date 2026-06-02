@@ -1,0 +1,24 @@
+{
+  "doi": "10.1002/reg2.79",
+  "doi_url": "https://doi.org/10.1002/reg2.79",
+  "title": "Planarian regeneration in space: Persistent anatomical, behavioral, and bacteriological changes induced by space travel",
+  "year": "2017",
+  "journal": "Regeneration",
+  "authors": [
+    "Junji Morokuma",
+    "Fallon Durant",
+    "Katherine B. Williams",
+    "Joshua M. Finkelstein",
+    "Douglas J. Blackiston",
+    "Twyman Clements",
+    "David W. Reed",
+    "Michael Roberts",
+    "Mahendra Jain",
+    "Kris Kimel"
+  ],
+  "abstract": "Regeneration is regulated not only by chemical signals but also by physical processes, such as bioelectric gradients. How these may change in the absence of the normal gravitational and geomagnetic fields is largely unknown. Planarian flatworms were moved to the International Space Station for 5 weeks, immediately after removing their heads and tails. A control group in spring water remained on Earth. No manipulation of the planaria occurred while they were in orbit, and space-exposed worms were returned to our laboratory for analysis. One animal out of 15 regenerated into a double-headed phenotype-normally an extremely rare event. Remarkably, amputating this double-headed worm again, in plain water, resulted again in the double-headed phenotype. Moreover, even when tested 20 months after return to Earth, the space-exposed worms displayed significant quantitative differences in behavior and microbiome composition. These observations may have implications for human and animal space travelers, but could also elucidate how microgravity and hypomagnetic environments could be used to trigger desired morphological, neurological, physiological, and bacteriomic changes for various regenerative and bioengineering applications.",
+  "pmid": "28616247",
+  "pmc": "PMC5469732",
+  "reachable": true,
+  "reachable_status": 200
+}

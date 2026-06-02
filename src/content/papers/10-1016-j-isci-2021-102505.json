@@ -1,0 +1,16 @@
+{
+  "doi": "10.1016/j.isci.2021.102505",
+  "doi_url": "https://doi.org/10.1016/j.isci.2021.102505",
+  "title": "Synthetic living machines: A new window on life",
+  "year": "2021",
+  "journal": "iScience",
+  "authors": [
+    "Mo R. Ebrahimkhani",
+    "Michael Levin"
+  ],
+  "abstract": "Increased control of biological growth and form is an essential gateway to transformative medical advances. Repairing of birth defects, restoring lost or damaged organs, normalizing tumors, all depend on understanding how cells cooperate to make specific, functional large-scale structures. Despite advances in molecular genetics, significant gaps remain in our understanding of the meso-scale rules of morphogenesis. An engineering approach to this problem is the creation of novel synthetic living forms, greatly extending available model systems beyond evolved plant and animal lineages. Here, we review recent advances in the emerging field of synthetic morphogenesis, the bioengineering of novel multicellular living bodies. Emphasizing emergent self-organization, tissue-level guided self-assembly, and active functionality, this work is the essential next generation of synthetic biology. Aside from useful living machines for specific functions, the rational design and analysis of new, coherent anatomies will greatly increase our understanding of foundational questions in evolutionary developmental and cell biology.",
+  "pmid": "34041452",
+  "pmc": "PMC8141884",
+  "reachable": true,
+  "reachable_status": 200
+}

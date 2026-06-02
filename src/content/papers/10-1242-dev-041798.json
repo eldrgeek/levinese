@@ -1,0 +1,16 @@
+{
+  "doi": "10.1242/dev.041798",
+  "doi_url": "https://doi.org/10.1242/dev.041798",
+  "title": "Consistent left-right asymmetry cannot be established by late organizers in<i>Xenopus</i>unless the late organizer is a conjoined twin",
+  "year": "2010",
+  "journal": "Development",
+  "authors": [
+    "Laura N. Vandenberg",
+    "Michael Levin"
+  ],
+  "abstract": "How embryos consistently orient asymmetries of the left-right (LR) axis is an intriguing question, as no macroscopic environmental cues reliably distinguish left from right. Especially unclear are the events coordinating LR patterning with the establishment of the dorsoventral (DV) axes and midline determination in early embryos. In frog embryos, consistent physiological and molecular asymmetries manifest by the second cell cleavage; however, models based on extracellular fluid flow at the node predict correct de novo asymmetry orientation during neurulation. We addressed these issues in Xenopus embryos by manipulating the timing and location of dorsal organizer induction: the primary dorsal organizer was ablated by UV irradiation, and a new organizer was induced at various locations, either early, by mechanical rotation, or late, by injection of lithium chloride (at 32 cells) or of the transcription factor XSiamois (which functions after mid-blastula transition). These embryos were then analyzed for the position of three asymmetric organs. Whereas organizers rescued before cleavage properly oriented the LR axis 90% of the time, organizers induced in any position at any time after the 32-cell stage exhibited randomized laterality. Late organizers were unable to correctly orient the LR axis even when placed back in their endogenous location. Strikingly, conjoined twins produced by late induction of ectopic organizers did have normal asymmetry. These data reveal that although correct LR orientation must occur no later than early cleavage stages in singleton embryos, a novel instructive influence from an early organizer can impose normal asymmetry upon late organizers in the same cell field.",
+  "pmid": "20215347",
+  "pmc": "PMC2835325",
+  "reachable": true,
+  "reachable_status": 403
+}

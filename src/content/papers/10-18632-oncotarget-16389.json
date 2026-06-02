@@ -1,0 +1,20 @@
+{
+  "doi": "10.18632/oncotarget.16389",
+  "doi_url": "https://doi.org/10.18632/oncotarget.16389",
+  "title": "IK channel activation increases tumor growth and induces differential behavioral responses in two breast epithelial cell lines",
+  "year": "2017",
+  "journal": "Oncotarget",
+  "authors": [
+    "Amy E. Thurber",
+    "Michaela Nelson",
+    "Crystal L. Frost",
+    "Michael Levin",
+    "William J. Brackenbury",
+    "David L. Kaplan"
+  ],
+  "abstract": "// Amy E. Thurber 1, 2 , Michaela Nelson 3 , Crystal L. Frost 3 , Michael Levin 4 , William J. Brackenbury 3 and David L. Kaplan 2 1 Program in Cell, Molecular, and Developmental Biology, Sackler School of Graduate Biomedical Sciences, Tufts University, Boston, Massachusetts, USA 2 Department of Biomedical Engineering, Tufts University, Medford, Massachusetts, USA 3 Department of Biology, University of York, Heslington, York, UK 4 Biology Department, and Tufts Center for Regenerative and Developmental Biology, Tufts University, Medford, Massachusetts, USA Correspondence to: William J. Brackenbury, email: william.brackenbury@york.ac.uk David L. Kaplan, email: david.kaplan@tufts.edu Keywords: oncochannel, bioelectricity, potassium channel, cancer Received: April 19, 2016&emsp;&emsp;&emsp;&emsp; Accepted: March 08, 2017&emsp;&emsp;&emsp;&emsp; Published: March 21, 2017 ABSTRACT Many potassium channel families are over-expressed in cancer, but their mechanistic role in disease progression is poorly understood. Potassium channels modulate membrane potential (V mem ) and thereby influence calcium ion dynamics and other voltage-sensitive signaling mechanisms, potentially acting as transcriptional regulators. This study investigated the differential response to over-expression and activation of a cancer-associated potassium channel, the intermediate conductance calcium-activated potassium channel (IK), on aggressive behaviors in mammary epithelial and breast cancer cell lines. IK was over-expressed in the highly metastatic breast cancer cell line MDA-MB-231 and the spontaneously immortalized breast epithelial cell line MCF-10A, and the effect on cancer-associated behaviors was assessed. IK over-expression increased primary tumor growth and metastasis of MDA-MB-231 in orthotopic xenografts, demonstrating for the first time in any cancer type that increased IK is sufficient to promote cancer aggression. The primary tumors had similar vascularization as determined by CD31 staining and similar histological characteristics. Interestingly, despite the increased in vivo growth and metastasis, neither IK over-expression nor activation with agonist had a significant effect on MDA-MB-231 proliferation, invasion, or migration in vitro . In contrast, IK decreased MCF-10A proliferation and invasion through Matrigel but had no effect on migration in a scratch-wound assay. We conclude that IK activity is sufficient to promote cell aggression in vivo . Our data provide novel evidence supporting IK and downstream signaling networks as potential targets for cancer therapies.",
+  "pmid": "28415575",
+  "pmc": "PMC5522074",
+  "reachable": true,
+  "reachable_status": 200
+}

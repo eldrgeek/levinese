@@ -1,0 +1,17 @@
+{
+  "doi": "10.1371/journal.pone.0003737",
+  "doi_url": "https://doi.org/10.1371/journal.pone.0003737",
+  "title": "Membrane Potential Controls Adipogenic and Osteogenic Differentiation of Mesenchymal Stem Cells",
+  "year": "2008",
+  "journal": "PLoS ONE",
+  "authors": [
+    "Sarah Sundelacruz",
+    "Michael Levin",
+    "David L. Kaplan"
+  ],
+  "abstract": "BACKGROUND: Control of stem cell behavior is a crucial aspect of developmental biology and regenerative medicine. While the functional role of electrophysiology in stem cell biology is poorly understood, it has become clear that endogenous ion flows represent a powerful set of signals by means of which cell proliferation, differentiation, and migration can be controlled in regeneration and embryonic morphogenesis. METHODOLOGY/PRINCIPAL FINDINGS: We examined the membrane potential (V(mem)) changes exhibited by human mesenchymal stem cells (hMSCs) undergoing adipogenic (AD) and osteogenic (OS) differentiation, and uncovered a characteristic hyperpolarization of differentiated cells versus undifferentiated cells. Reversal of the progressive polarization via pharmacological modulation of transmembrane potential revealed that depolarization of hMSCs prevents differentiation. In contrast, treatment with hyperpolarizing reagents upregulated osteogenic markers. CONCLUSIONS/SIGNIFICANCE: Taken together, these data suggest that the endogenous hyperpolarization is a functional determinant of hMSC differentiation and is a tractable control point for modulating stem cell function.",
+  "pmid": "19011685",
+  "pmc": "PMC2581599",
+  "reachable": true,
+  "reachable_status": 200
+}

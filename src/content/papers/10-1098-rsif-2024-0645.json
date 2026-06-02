@@ -1,0 +1,20 @@
+{
+  "doi": "10.1098/rsif.2024.0645",
+  "doi_url": "https://doi.org/10.1098/rsif.2024.0645",
+  "title": "Uncertainty minimization and pattern recognition in\n                    <i>Volvox carteri</i>\n                    and\n                    <i>V. aureus</i>",
+  "year": "2025",
+  "journal": "Journal of The Royal Society Interface",
+  "authors": [
+    "Franz Kuchling",
+    "Isha Singh",
+    "Mridushi Daga",
+    "Susan Zec",
+    "Alexandra Kunen",
+    "Michael Levin"
+  ],
+  "abstract": "The field of diverse intelligence explores the capacity of systems without complex brains to dynamically engage with changing environments, seeking fundamental principles of cognition and their evolutionary origins. However, there are many knowledge gaps around a general behavioural directive connecting aneural to neural organisms. This study tests predictions of the computational framework of active inference based on the free energy principle in neuroscience, applied to aneural biological processes. We demonstrate pattern recognition in the green algae Volvox using phototactic experiments with varied light pulse patterns, measuring their phototactic bias as a readout for their preferential ability to detect and adapt to one pattern over another. Results show Volvox adapt more readily to regular patterns than irregular ones and even exhibit memory properties, exhibiting a crucial component of basal intelligence. Pharmacological and electric shock-based interventions and photoadaptation simulations reveal how randomized stimuli interfere with normal photoadaptation through a structured dynamic interplay of colony rotation and calcium-mediated photoreceptor-to-flagellar information transfer, consistent with uncertainty minimization. The detection of functional uncertainty minimization in an aneural organism expands concepts like uncertainty minimization beyond neurons and provides insights and novel intervention tools applicable to other living systems, similar to early learning validations in simpler neural organisms.",
+  "pmid": "39999882",
+  "pmc": "PMC11858792",
+  "reachable": true,
+  "reachable_status": 403
+}

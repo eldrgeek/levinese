@@ -1,0 +1,15 @@
+{
+  "doi": "10.3389/fpsyg.2019.02688",
+  "doi_url": "https://doi.org/10.3389/fpsyg.2019.02688",
+  "title": "The Computational Boundary of a “Self”: Developmental Bioelectricity Drives Multicellularity and Scale-Free Cognition",
+  "year": "2019",
+  "journal": "Frontiers in Psychology",
+  "authors": [
+    "Michael Levin"
+  ],
+  "abstract": "All epistemic agents physically consist of parts that must somehow comprise an integrated cognitive self. Biological individuals consist of subunits (organs, cells, molecular networks) that are themselves complex and competent in their own context. How do coherent biological Individuals result from the activity of smaller sub-agents? To understand the evolution and function of metazoan bodies and minds, it is essential to conceptually explore the origin of multicellularity and the scaling of the basal cognition of individual cells into a coherent larger organism. In this paper I synthesize ideas in cognitive science, evolutionary biology, and developmental physiology toward a hypothesis about the origin of Individuality: “Scale-Free Cognition”. I propose a fundamental definition of an Individual based on the ability to pursue goals at an appropriate level of scale and organization, and suggest a formalism for defining and comparing the cognitive capacities of highly diverse types of agents. Any Self is demarcated by a computational surface – the spatio-temporal boundary of events that it can measure, model, and try to affect. This surface sets a functional boundary - a cognitive “light cone” which defines the scale and limits of its cognition. I hypothesize that higher-level goal-directed activity and agency, resulting in larger cognitive boundaries, evolve from the primal homeostatic drive of living things to reduce stress – the difference between current conditions and life-optimal conditions. The mechanisms of developmental bioelectricity - the ability of all cells to form electrical networks that process information - suggests a plausible set of gradual evolutionary steps that naturally lead from physiological homeostasis in single cells to memory, prediction, and ultimately complex cognitive agents, via scale-up of the drive of infotaxis. Recent data on the molecular mechanisms of pre-neural bioelectricity suggest a model of how increasingly sophisticated cognitive functions emerge smoothly from cell-cell communication used to guide embryogenesis and regeneration. This set of hypotheses provides a novel perspective on numerous phenomena, such as cancer, and makes several unique, testable predictions for interdisciplinary research that have implications not only for evolutionary developmental biology but also for biomedicine and perhaps artificial intelligence and exobiology.",
+  "pmid": "31920779",
+  "pmc": "PMC6923654",
+  "reachable": true,
+  "reachable_status": 200
+}

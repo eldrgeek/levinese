@@ -1,0 +1,24 @@
+{
+  "doi": "10.7554/eLife.51217",
+  "doi_url": "https://doi.org/10.7554/eLife.51217",
+  "title": "Eya2 promotes cell cycle progression by regulating DNA damage response during vertebrate limb regeneration",
+  "year": "2020",
+  "journal": "eLife",
+  "authors": [
+    "Konstantinos Sousounis",
+    "Donald M Bryant",
+    "Jose Martinez Fernandez",
+    "Samuel S Eddy",
+    "Stephanie L Tsai",
+    "Gregory C Gundberg",
+    "Jihee Han",
+    "Katharine Courtemanche",
+    "Michael Levin",
+    "Jessica L Whited"
+  ],
+  "abstract": "How salamanders accomplish progenitor cell proliferation while faithfully maintaining genomic integrity and regenerative potential remains elusive. Here we found an innate DNA damage response mechanism that is evident during blastema proliferation (early- to late-bud) and studied its role during tissue regeneration by ablating the function of one of its components, Eyes absent 2. In eya2 mutant axolotls, we found that DNA damage signaling through the H2AX histone variant was deregulated, especially within the proliferating progenitors during limb regeneration. Ultimately, cell cycle progression was impaired at the G1/S and G2/M transitions and regeneration rate was reduced. Similar data were acquired using acute pharmacological inhibition of the Eya2 phosphatase activity and the DNA damage checkpoint kinases Chk1 and Chk2 in wild-type axolotls. Together, our data indicate that highly-regenerative animals employ a robust DNA damage response pathway which involves regulation of H2AX phosphorylation via Eya2 to facilitate proper cell cycle progression upon injury.",
+  "pmid": "32142407",
+  "pmc": "PMC7093111",
+  "reachable": true,
+  "reachable_status": 200
+}

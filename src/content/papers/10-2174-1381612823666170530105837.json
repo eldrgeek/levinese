@@ -1,0 +1,17 @@
+{
+  "doi": "10.2174/1381612823666170530105837",
+  "doi_url": "https://doi.org/10.2174/1381612823666170530105837",
+  "title": "Ion Channel and Neurotransmitter Modulators as Electroceutical Approaches to the Control of Cancer",
+  "year": "2017",
+  "journal": "Current Pharmaceutical Design",
+  "authors": [
+    "Jack Tuszynski",
+    "Tatiana M. Tilli",
+    "Michael Levin"
+  ],
+  "abstract": "The activities of individual cells must be tightly coordinated in order to build and maintain complex 3- dimensional body structures during embryogenesis and regeneration. Thus, one way to view cancer is within systems biology as a network disorder affecting the ability of cells to properly interact with a morphodynamic field of instructive signals that keeps proliferation and migration orchestrated toward the anatomical needs of the host organism. One layer of this set of instructive microenvironmental cues is bioelectrical. Voltage gradients among all somatic cells (not just excitable nerve and muscle) control cell behavior, and the ionic coupling of cells into networks via electrochemical synapses allows them to implement tissue-level patterning decisions. These gradients have been increasingly implicated in the induction and suppression of tumorigenesis and metastasis, in the emerging links between developmental bioelectricity to the cancer problem. Consistent with the well-known role of neurotransmitter molecules in transducing electrical activity to downstream cascades in the brain, serotonergic signaling has likewise been implicated in cancer. Here, we review these recent data and propose new approaches for manipulating bioelectric and neurotransmitter pathways in cancer biology based on a bioelectric view of cancer. To support this methodology, we present new data on the effects of the SSRI Prozac and its analog (ZINC ID = ZINC06811610) on survival of both cancer (MCF7) and normal (MCF10A) breast cells exposed to these compounds. We found an IC50 concentration (25 µM for Prozac and 100 µM for the Prozac analog) at which these compounds inhibited tumor cell survival and proliferation. Additionally, at these concentrations, we did not observe alterations in a non-tumoral cell line. This constitutes a proof-of-concept demonstration for our hypothesis that the use of both existing and novel drugs as electroceuticals could serve as an alternative to highly toxic chemotherapy strategies replacing or augmenting them with less toxic alternatives. We believe this new approach forms an exciting roadmap for future biomedical advances.",
+  "pmid": "28554310",
+  "pmc": "PMC6340161",
+  "reachable": true,
+  "reachable_status": 200
+}

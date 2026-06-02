@@ -1,0 +1,17 @@
+{
+  "doi": "10.1242/dmm.010256",
+  "doi_url": "https://doi.org/10.1242/dmm.010256",
+  "title": "Serotonin has early, cilia-independent roles in<i>Xenopus</i>left-right patterning",
+  "year": "2012",
+  "journal": "Disease Models &amp; Mechanisms",
+  "authors": [
+    "Laura N. Vandenberg",
+    "Joan M. Lemire",
+    "Michael Levin"
+  ],
+  "abstract": "Summary Consistent left-right (LR) patterning of the heart and viscera is a crucial part of normal embryogenesis. Because errors of laterality form a common class of birth defects, it is important to understand the molecular mechanisms and stage at which LR asymmetry is initiated. Frog embryos are a system uniquely suited to analysis of the mechanisms involved in orientation of the LR axis because of the many genetic and pharmacological tools available for use and the fate-map and accessibility of early blastomeres. Two major models exist for the origin of LR asymmetry and both implicate pre-nervous serotonergic signaling. In the first, the charged serotonin molecule is instructive for LR patterning; it is redistributed asymmetrically along the LR axis and signals intracellularly on the right side at cleavage stages. A second model suggests that serotonin is a permissive factor required to specify the dorsal region of the embryo containing chiral cilia that generate asymmetric fluid flow during neurulation, a much later process. We performed theory-neutral experiments designed to distinguish between these models. The results uniformly support a role for serotonin in the cleavage-stage embryo, long before the appearance of cilia, in ventral right blastomeres that do not contribute to the ciliated organ.",
+  "pmid": "22899856",
+  "pmc": "PMC3529356",
+  "reachable": true,
+  "reachable_status": 403
+}

@@ -1,0 +1,21 @@
+{
+  "doi": "10.1002/advs.202303575",
+  "doi_url": "https://doi.org/10.1002/advs.202303575",
+  "title": "Motile Living Biobots Self‐Construct from Adult Human Somatic Progenitor Seed Cells",
+  "year": "2024",
+  "journal": "Advanced Science",
+  "authors": [
+    "Gizem Gumuskaya",
+    "Pranjal Srivastava",
+    "Ben G. Cooper",
+    "Hannah Lesser",
+    "Ben Semegran",
+    "Simon Garnier",
+    "Michael Levin"
+  ],
+  "abstract": "Abstract Fundamental knowledge gaps exist about the plasticity of cells from adult soma and the potential diversity of body shape and behavior in living constructs derived from genetically wild‐type cells. Here anthrobots are introduced, a spheroid‐shaped multicellular biological robot (biobot) platform with diameters ranging from 30 to 500 microns and cilia‐powered locomotive abilities. Each Anthrobot begins as a single cell, derived from the adult human lung, and self‐constructs into a multicellular motile biobot after being cultured in extra cellular matrix for 2 weeks and transferred into a minimally viscous habitat. Anthrobots exhibit diverse behaviors with motility patterns ranging from tight loops to straight lines and speeds ranging from 5–50 microns s −1 . The anatomical investigations reveal that this behavioral diversity is significantly correlated with their morphological diversity. Anthrobots can assume morphologies with fully polarized or wholly ciliated bodies and spherical or ellipsoidal shapes, each related to a distinct movement type. Anthrobots are found to be capable of traversing, and inducing rapid repair of scratches in, cultured human neural cell sheets in vitro. By controlling microenvironmental cues in bulk, novel structures, with new and unexpected behavior and biomedically‐relevant capabilities, can be discovered in morphogenetic processes without direct genetic editing or manual sculpting.",
+  "pmid": "38032125",
+  "pmc": "PMC10811512",
+  "reachable": true,
+  "reachable_status": 403
+}

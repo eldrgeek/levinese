@@ -1,0 +1,17 @@
+{
+  "doi": "10.1080/19420889.2016.1192733",
+  "doi_url": "https://doi.org/10.1080/19420889.2016.1192733",
+  "title": "Physiological inputs regulate species-specific anatomy during embryogenesis and regeneration",
+  "year": "2016",
+  "journal": "Communicative &amp; Integrative Biology",
+  "authors": [
+    "Kelly G. Sullivan",
+    "Maya Emmons-Bell",
+    "Michael Levin"
+  ],
+  "abstract": "A key problem in evolutionary developmental biology is identifying the sources of instructive information that determine species-specific anatomical pattern. Understanding the inputs to large-scale morphology is also crucial for efforts to manipulate pattern formation in regenerative medicine and synthetic bioengineering. Recent studies have revealed a physiological system of communication among cells that regulates pattern during embryogenesis and regeneration in vertebrate and invertebrate models. Somatic tissues form networks using the same ion channels, electrical synapses, and neurotransmitter mechanisms exploited by the brain for information-processing. Experimental manipulation of these circuits was recently shown to override genome default patterning outcomes, resulting in head shapes resembling those of other species in planaria and Xenopus. The ability to drastically alter macroscopic anatomy to that of other extant species, despite a wild-type genomic sequence, suggests exciting new approaches to the understanding and control of patterning. Here, we review these results and discuss hypotheses regarding non-genomic systems of instructive information that determine biological growth and form.",
+  "pmid": "27574538",
+  "pmc": "PMC4988443",
+  "reachable": true,
+  "reachable_status": 403
+}

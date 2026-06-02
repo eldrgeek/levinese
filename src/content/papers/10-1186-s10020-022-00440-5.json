@@ -1,0 +1,24 @@
+{
+  "doi": "10.1186/s10020-022-00440-5",
+  "doi_url": "https://doi.org/10.1186/s10020-022-00440-5",
+  "title": "When left does not seem right: epigenetic and bioelectric differences between left- and right-sided breast cancer",
+  "year": "2022",
+  "journal": "Molecular Medicine",
+  "authors": [
+    "Sofía Masuelli",
+    "Sebastián Real",
+    "Emanuel Campoy",
+    "María Teresita Branham",
+    "Diego Matías Marzese",
+    "Matthew Salomon",
+    "Gerardo De Blas",
+    "Rodolfo Arias",
+    "Michael Levin",
+    "María Roqué"
+  ],
+  "abstract": "Abstract Background During embryogenesis lateral symmetry is broken, giving rise to Left/Right (L/R) breast tissues with distinct identity. L/R-sided breast tumors exhibit consistently-biased incidence, gene expression, and DNA methylation. We postulate that a differential L/R tumor-microenvironment crosstalk generates different tumorigenesis mechanisms. Methods We performed in-silico analyses on breast tumors of public datasets, developed xenografted tumors, and conditioned MDA-MB-231 cells with L/R mammary extracts. Results We found L/R differential DNA methylation involved in embryogenic and neuron-like functions. Focusing on ion-channels, we discovered significant L/R epigenetic and bioelectric differences. Specifically, L-sided cells presented increased methylation of hyperpolarizing ion channel genes and increased Ca 2+ concentration and depolarized membrane potential, compared to R-ones. Functional consequences were associated with increased proliferation in left tumors, assessed by KI67 expression and mitotic count. Conclusions Our findings reveal considerable L/R asymmetry in cancer processes, and suggest specific L/R epigenetic and bioelectric differences as future targets for cancer therapeutic approaches in the breast and many other paired organs.",
+  "pmid": "35123413",
+  "pmc": "PMC8817536",
+  "reachable": true,
+  "reachable_status": 200
+}

@@ -1,0 +1,20 @@
+{
+  "doi": "10.1002/adma.202002882",
+  "doi_url": "https://doi.org/10.1002/adma.202002882",
+  "title": "Shape Changing Robots: Bioinspiration, Simulation, and Physical Realization",
+  "year": "2021",
+  "journal": "Advanced Materials",
+  "authors": [
+    "Dylan Shah",
+    "Bilige Yang",
+    "Sam Kriegman",
+    "Michael Levin",
+    "Josh Bongard",
+    "Rebecca Kramer‐Bottiglio"
+  ],
+  "abstract": "Abstract One of the key differentiators between biological and artificial systems is the dynamic plasticity of living tissues, enabling adaptation to different environmental conditions, tasks, or damage by reconfiguring physical structure and behavioral control policies. Lack of dynamic plasticity is a significant limitation for artificial systems that must robustly operate in the natural world. Recently, researchers have begun to leverage insights from regenerating and metamorphosing organisms, designing robots capable of editing their own structure to more efficiently perform tasks under changing demands and creating new algorithms to control these changing anatomies. Here, an overview of the literature related to robots that change shape to enhance and expand their functionality is presented. Related grand challenges, including shape sensing, finding, and changing, which rely on innovations in multifunctional materials, distributed actuation and sensing, and somatic control to enable next‐generation shape changing robots are also discussed.",
+  "pmid": "32954582",
+  "pmc": null,
+  "reachable": true,
+  "reachable_status": 403
+}

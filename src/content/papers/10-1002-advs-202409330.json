@@ -1,0 +1,21 @@
+{
+  "doi": "10.1002/advs.202409330",
+  "doi_url": "https://doi.org/10.1002/advs.202409330",
+  "title": "The Morphological, Behavioral, and Transcriptomic Life Cycle of Anthrobots",
+  "year": "2025",
+  "journal": "Advanced Science",
+  "authors": [
+    "Gizem Gumuskaya",
+    "Nikolai Davey",
+    "Pranjal Srivastava",
+    "Andrew Bender",
+    "Léo Pio‐Lopez",
+    "Douglas Hazel",
+    "Michael Levin"
+  ],
+  "abstract": "Abstract Fascinating aspects of morphogenetic and behavioral plasticity of living material are revealed by novel constructs that self‐construct from genetically wild‐type cells. Anthrobots arise from cultured adult human airway epithelial cells, developing, becoming self‐motile, and acquiring neural repair capabilities without exogenous genetic circuits or inorganic scaffolds. Progress in bioengineering and regenerative medicine depends on developing a predictive understanding of collective cell behavior in novel circumstances. Toward that end, here a number of life cycle properties of Anthrobots, including their morphogenesis, maturation, and demise, are quantitatively characterized. A self‐healing capacity and a remarkable reduction of epigenetic age upon morphogenesis are uncovered. Transcriptomic analysis reveals that assembling into Anthrobots drives a massive remodeling of gene expression relative to their cellular source, including several embryonic patterning genes, and a shift toward more evolutionarily ancient gene expression. These data reveal new aspects of engineered multicellular configurations, in which wild‐type adult human cells self‐assemble into an active living construct with its own distinct transcriptome, morphogenesis, and life history.",
+  "pmid": "40479594",
+  "pmc": "PMC12376695",
+  "reachable": true,
+  "reachable_status": 403
+}

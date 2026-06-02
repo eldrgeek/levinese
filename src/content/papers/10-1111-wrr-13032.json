@@ -1,0 +1,16 @@
+{
+  "doi": "10.1111/wrr.13032",
+  "doi_url": "https://doi.org/10.1111/wrr.13032",
+  "title": "HCN2 channel‐induced rescue of brain, eye, heart and gut teratogenesis caused by nicotine, ethanol and aberrant notch signalling",
+  "year": "2022",
+  "journal": "Wound Repair and Regeneration",
+  "authors": [
+    "Vaibhav P. Pai",
+    "Michael Levin"
+  ],
+  "abstract": "Abstract Organogenesis is a complex process that can be disrupted by embryonic exposure to teratogens or mutation‐induced alterations in signalling pathways, both of which result in organ mispatterning. Building on prior work in Xenopus laevis that showed that increased HCN2 ion channel activity rescues nicotine‐induced brain and eye morphogenesis, we demonstrate much broader HCN2‐based rescue of organ patterning defects. Induced HCN2 expression in both local or distant tissues can rescue CNS (brain and eye) as well as non‐CNS (heart and gut) organ defects induced by three different teratogenic conditions: nicotine exposure, ethanol exposure or aberrant Notch protein. Rescue can also be induced by small‐molecule HCN2 channel activators, even with delayed treatment initiation. Our results suggest that HCN2 (likely mediated by bioelectric signals) can be an effective regulator of organogenesis from all three germ layers (ectoderm, mesoderm and endoderm) and reveal non‐cell‐autonomous influences on organ formation that work at a considerable distance during embryonic development. These results suggest molecular bioelectric strategies for repair that could be explored in the future for regenerative medicine.",
+  "pmid": "35662339",
+  "pmc": null,
+  "reachable": true,
+  "reachable_status": 200
+}

@@ -1,0 +1,15 @@
+{
+  "doi": "10.1002/wsbm.1236",
+  "doi_url": "https://doi.org/10.1002/wsbm.1236",
+  "title": "Reprogramming cells and tissue patterning via bioelectrical pathways: molecular mechanisms and biomedical opportunities",
+  "year": "2013",
+  "journal": "WIREs Systems Biology and Medicine",
+  "authors": [
+    "Michael Levin"
+  ],
+  "abstract": "Transformative impact in regenerative medicine requires more than the reprogramming of individual cells: advances in repair strategies for birth defects or injuries, tumor normalization, and the construction of bioengineered organs and tissues all require the ability to control large‐scale anatomical shape. Much recent work has focused on the transcriptional and biochemical regulation of cell behavior and morphogenesis. However, exciting new data reveal that bioelectrical properties of cells and their microenvironment exert a profound influence on cell differentiation, proliferation, and migration. Ion channels and pumps expressed in all cells, not just excitable nerve and muscle, establish resting potentials that vary across tissues and change with significant developmental events. Most importantly, the spatiotemporal gradients of these endogenous transmembrane voltage potentials ( V mem ) serve as instructive patterning cues for large‐scale anatomy, providing organ identity, positional information, and prepattern template cues for morphogenesis. New genetic and pharmacological techniques for molecular modulation of bioelectric gradients in vivo have revealed the ability to initiate complex organogenesis, change tissue identity, and trigger regeneration of whole vertebrate appendages. A large segment of the spatial information processing that orchestrates individual cells' programs toward the anatomical needs of the host organism is electrical; this blurs the line between memory and decision‐making in neural networks and morphogenesis in nonneural tissues. Advances in cracking this bioelectric code will enable the rational reprogramming of shape in whole tissues and organs, revolutionizing regenerative medicine, developmental biology, and synthetic bioengineering. WIREs Syst Biol Med 2013, 5:657–676. doi: 10.1002/wsbm.1236 This article is categorized under: Developmental Biology &gt; Developmental Processes in Health and Disease Laboratory Methods and Technologies &gt; Imaging Developmental Biology &gt; Stem Cell Biology and Regeneration",
+  "pmid": "23897652",
+  "pmc": "PMC3841289",
+  "reachable": true,
+  "reachable_status": 403
+}

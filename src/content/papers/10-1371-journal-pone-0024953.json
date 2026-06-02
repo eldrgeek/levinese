@@ -1,0 +1,20 @@
+{
+  "doi": "10.1371/journal.pone.0024953",
+  "doi_url": "https://doi.org/10.1371/journal.pone.0024953",
+  "title": "Long-Distance Signals Are Required for Morphogenesis of the Regenerating Xenopus Tadpole Tail, as Shown by Femtosecond-Laser Ablation",
+  "year": "2011",
+  "journal": "PLoS ONE",
+  "authors": [
+    "Jessica P. Mondia",
+    "Michael Levin",
+    "Fiorenzo G. Omenetto",
+    "Ryan D. Orendorff",
+    "Mary Rose Branch",
+    "Dany Spencer Adams"
+  ],
+  "abstract": "BACKGROUND: With the goal of learning to induce regeneration in human beings as a treatment for tissue loss, research is being conducted into the molecular and physiological details of the regeneration process. The tail of Xenopus laevis tadpoles has recently emerged as an important model for these studies; we explored the role of the spinal cord during tadpole tail regeneration. METHODS AND RESULTS: Using ultrafast lasers to ablate cells, and Geometric Morphometrics to quantitatively analyze regenerate morphology, we explored the influence of different cell populations. For at least twenty-four hours after amputation (hpa), laser-induced damage to the dorsal midline affected the morphology of the regenerated tail; damage induced 48 hpa or later did not. Targeting different positions along the anterior-posterior (AP) axis caused different shape changes in the regenerate. Interestingly, damaging two positions affected regenerate morphology in a qualitatively different way than did damaging either position alone. Quantitative comparison of regenerate shapes provided strong evidence against a gradient and for the existence of position-specific morphogenetic information along the entire AP axis. CONCLUSIONS: We infer that there is a conduit of morphology-influencing information that requires a continuous dorsal midline, particularly an undamaged spinal cord. Contrary to expectation, this information is not in a gradient and it is not localized to the regeneration bud. We present a model of morphogenetic information flow from tissue undamaged by amputation and conclude that studies of information coming from far outside the amputation plane and regeneration bud will be critical for understanding regeneration and for translating fundamental understanding into biomedical approaches.",
+  "pmid": "21949803",
+  "pmc": "PMC3174989",
+  "reachable": true,
+  "reachable_status": 200
+}

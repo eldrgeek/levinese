@@ -1,0 +1,18 @@
+{
+  "doi": "10.1093/biomethods/bpz005",
+  "doi_url": "https://doi.org/10.1093/biomethods/bpz005",
+  "title": "Live imaging of intracellular pH in planarians using the ratiometric fluorescent dye SNARF-5F-AM",
+  "year": "2019",
+  "journal": "Biology Methods and Protocols",
+  "authors": [
+    "Wendy Scott Beane",
+    "Dany Spencer Adams",
+    "Junji Morokuma",
+    "Michael Levin"
+  ],
+  "abstract": "Abstract Physiological parameters such as resting potential and pH are increasingly recognized as important regulators of cell activity and tissue-level events in regeneration, development, and cancer. The availability of fluorescent reporter dyes has greatly increased the ability to track these properties in vivo. The planarian flatworm is an important and highly tractable model system for regeneration, stem cell biology, and neuroscience; however, no protocols have been published for investigating pH in this system. Here, we report a simple and effective protocol for imaging pH gradients in living planaria suitable for intact and regenerating flatworms.",
+  "pmid": "31206034",
+  "pmc": "PMC6541873",
+  "reachable": true,
+  "reachable_status": 403
+}

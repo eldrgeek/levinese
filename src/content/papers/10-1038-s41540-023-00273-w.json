@@ -1,0 +1,18 @@
+{
+  "doi": "10.1038/s41540-023-00273-w",
+  "doi_url": "https://doi.org/10.1038/s41540-023-00273-w",
+  "title": "The nonlinearity of regulation in biological networks",
+  "year": "2023",
+  "journal": "npj Systems Biology and Applications",
+  "authors": [
+    "Santosh Manicka",
+    "Kathleen Johnson",
+    "Michael Levin",
+    "David Murrugarra"
+  ],
+  "abstract": "Abstract The extent to which the components of a biological system are (non)linearly regulated determines how amenable they are to therapy and control. To better understand this property termed “regulatory nonlinearity”, we analyzed a suite of 137 published Boolean network models, containing a variety of complex nonlinear regulatory interactions, using a probabilistic generalization of Boolean logic that George Boole himself had proposed. Leveraging the continuous-nature of this formulation, we used Taylor decomposition to approximate the models with various levels of regulatory nonlinearity. A comparison of the resulting series of approximations of the biological models with appropriate random ensembles revealed that biological regulation tends to be less nonlinear than expected, meaning that higher-order interactions among the regulatory inputs tend to be less pronounced. A further categorical analysis of the biological models revealed that the regulatory nonlinearity of cancer and disease networks could not only be sometimes higher than expected but also be relatively more variable. We show that this variation is caused by differences in the apportioning of information among the various orders of regulatory nonlinearity. Our results suggest that there may have been a weak but discernible selection pressure for biological systems to evolve linear regulation on average, but for certain systems such as cancer, on the other hand, to simultaneously evolve more nonlinear rules.",
+  "pmid": "37015937",
+  "pmc": "PMC10073134",
+  "reachable": true,
+  "reachable_status": 200
+}

@@ -1,0 +1,16 @@
+{
+  "doi": "10.3389/fbioe.2016.00055",
+  "doi_url": "https://doi.org/10.3389/fbioe.2016.00055",
+  "title": "Exploring Instructive Physiological Signaling with the Bioelectric Tissue Simulation Engine",
+  "year": "2016",
+  "journal": "Frontiers in Bioengineering and Biotechnology",
+  "authors": [
+    "Alexis Pietak",
+    "Michael Levin"
+  ],
+  "abstract": "Bioelectric cell properties have been revealed as powerful targets for modulating stem cell function, regenerative response, developmental patterning, and tumor reprograming. Spatio-temporal distributions of endogenous resting potential, ion flows, and electric fields are influenced not only by the genome and external signals but also by their own intrinsic dynamics. Ion channels and electrical synapses (gap junctions) both determine, and are themselves gated by, cellular resting potential. Thus, the origin and progression of bioelectric patterns in multicellular tissues is complex, which hampers the rational control of voltage distributions for biomedical interventions. To improve understanding of these dynamics and facilitate the development of bioelectric pattern control strategies, we developed the BioElectric Tissue Simulation Engine (BETSE), a finite volume method multiphysics simulator, which predicts bioelectric patterns and their spatio-temporal dynamics by modeling ion channel and gap junction activity and tracking changes to the fundamental property of ion concentration. We validate performance of the simulator by matching experimentally obtained data on membrane permeability, ion concentration and resting potential to simulated values, and by demonstrating the expected outcomes for a range of well-known cases, such as predicting the correct transmembrane voltage changes for perturbation of single cell membrane states and environmental ion concentrations, in addition to the development of realistic transepithelial potentials and bioelectric wounding signals. In silico experiments reveal factors influencing transmembrane potential are significantly different in gap junction-networked cell clusters with tight junctions, and identify non-linear feedback mechanisms capable of generating strong, emergent, cluster-wide resting potential gradients. The BETSE platform will enable a deep understanding of local and long-range bioelectrical dynamics in tissues, and assist the development of specific interventions to achieve greater control of pattern during morphogenesis and remodeling.",
+  "pmid": "27458581",
+  "pmc": "PMC4933718",
+  "reachable": true,
+  "reachable_status": 200
+}

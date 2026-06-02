@@ -1,0 +1,15 @@
+{
+  "doi": "10.1002/bies.201900146",
+  "doi_url": "https://doi.org/10.1002/bies.201900146",
+  "title": "The Biophysics of Regenerative Repair Suggests New Perspectives on Biological Causation",
+  "year": "2020",
+  "journal": "BioEssays",
+  "authors": [
+    "Michael Levin"
+  ],
+  "abstract": "Abstract Evolution exploits the physics of non‐neural bioelectricity to implement anatomical homeostasis: a process in which embryonic patterning, remodeling, and regeneration achieve invariant anatomical outcomes despite external interventions. Linear “developmental pathways” are often inadequate explanations for dynamic large‐scale pattern regulation, even when they accurately capture relationships between molecular components. Biophysical and computational aspects of collective cell activity toward a target morphology reveal interesting aspects of causation in biology. This is critical not only for unraveling evolutionary and developmental events, but also for the design of effective strategies for biomedical intervention. Bioelectrical controls of growth and form, including stochastic behavior in such circuits, highlight the need for the formulation of nuanced views of pathways, drivers of system‐level outcomes, and modularity, borrowing from concepts in related disciplines such as cybernetics, control theory, computational neuroscience, and information theory. This approach has numerous practical implications for basic research and for applications in regenerative medicine and synthetic bioengineering.",
+  "pmid": "31994772",
+  "pmc": null,
+  "reachable": true,
+  "reachable_status": 200
+}

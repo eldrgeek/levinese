@@ -1,0 +1,19 @@
+{
+  "doi": "10.3389/fncom.2022.988977",
+  "doi_url": "https://doi.org/10.3389/fncom.2022.988977",
+  "title": "Active inference, morphogenesis, and computational psychiatry",
+  "year": "2022",
+  "journal": "Frontiers in Computational Neuroscience",
+  "authors": [
+    "Léo Pio-Lopez",
+    "Franz Kuchling",
+    "Angela Tung",
+    "Giovanni Pezzulo",
+    "Michael Levin"
+  ],
+  "abstract": "Active inference is a leading theory in neuroscience that provides a simple and neuro-biologically plausible account of how action and perception are coupled in producing (Bayes) optimal behavior; and has been recently used to explain a variety of psychopathological conditions. In parallel, morphogenesis has been described as the behavior of a (non-neural) cellular collective intelligence solving problems in anatomical morphospace. In this article, we establish a link between the domains of cell biology and neuroscience, by analyzing disorders of morphogenesis as disorders of (active) inference. The aim of this article is three-fold. We want to: (i) reveal a connection between disorders of morphogenesis and disorders of active inference as apparent in psychopathological conditions; (ii) show how disorders of morphogenesis can be simulated using active inference; (iii) suggest that active inference can shed light on developmental defects or aberrant morphogenetic processes, seen as disorders of information processing, and perhaps suggesting novel intervention and repair strategies. We present four simulations illustrating application of these ideas to cellular behavior during morphogenesis. Three of the simulations show that the same forms of aberrant active inference (e.g., deficits of sensory attenuation and low sensory precision) that have been used to explain psychopathological conditions (e.g., schizophrenia and autism) also produce familiar disorders of development and morphogenesis when implemented at the level of the collective behavior of a group of cells. The fourth simulation involves two cells with too high precision, in which we show that the reduction of concentration signaling and sensitivity to the signals of other cells treats the development defect. Finally, we present the results of an experimental test of one of the model's predictions in early Xenopus laevis embryos: thioridazine (a dopamine antagonist that may reduce sensory precision in biological systems) induced developmental (anatomical) defects as predicted. The use of conceptual and empirical tools from neuroscience to understand the morphogenetic behavior of pre-neural agents offers the possibility of new approaches in regenerative medicine and evolutionary developmental biology.",
+  "pmid": "36507307",
+  "pmc": "PMC9731232",
+  "reachable": true,
+  "reachable_status": 200
+}

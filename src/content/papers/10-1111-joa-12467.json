@@ -1,0 +1,16 @@
+{
+  "doi": "10.1111/joa.12467",
+  "doi_url": "https://doi.org/10.1111/joa.12467",
+  "title": "Neurotransmitter signaling pathways required for normal development in<i>Xenopus laevis</i>embryos: a pharmacological survey screen",
+  "year": "2016",
+  "journal": "Journal of Anatomy",
+  "authors": [
+    "Kelly G. Sullivan",
+    "Michael Levin"
+  ],
+  "abstract": "Abstract Neurotransmitters are not only involved in brain function but are also important signaling molecules for many diverse cell types. Neurotransmitters are widely conserved, from evolutionarily ancient organisms lacking nervous systems through man. Here, results are reported from a loss‐ and gain‐of‐function survey, using pharmacological modulators of several neurotransmitter pathways to examine possible roles for these pathways in normal embryogenesis. Applying reagents targeting the glutamatergic, adrenergic and dopaminergic pathways to embryos of Xenopus laevis from gastrulation to organogenesis stages, we observed and quantified numerous malformations, including craniofacial defects, hyperpigmentation, muscle mispatterning and miscoiling of the gut. These data implicate several key neurotransmitters in new embryonic patterning roles, reveal novel earlier stages for processes involved in eye development, suggest new targets for subsequent molecular‐genetic investigation, and highlight the necessity for in‐depth toxicology studies of psychoactive compounds to which human embryos might be exposed during pregnancy.",
+  "pmid": "27060969",
+  "pmc": "PMC5013058",
+  "reachable": true,
+  "reachable_status": 403
+}

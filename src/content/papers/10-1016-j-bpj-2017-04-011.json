@@ -1,0 +1,20 @@
+{
+  "doi": "10.1016/j.bpj.2017.04.011",
+  "doi_url": "https://doi.org/10.1016/j.bpj.2017.04.011",
+  "title": "Long-Term, Stochastic Editing of Regenerative Anatomy via Targeting Endogenous Bioelectric Gradients",
+  "year": "2017",
+  "journal": "Biophysical Journal",
+  "authors": [
+    "Fallon Durant",
+    "Junji Morokuma",
+    "Christopher Fields",
+    "Katherine Williams",
+    "Dany Spencer Adams",
+    "Michael Levin"
+  ],
+  "abstract": "We show that regenerating planarians' normal anterior-posterior pattern can be permanently rewritten by a brief perturbation of endogenous bioelectrical networks. Temporary modulation of regenerative bioelectric dynamics in amputated trunk fragments of planaria stochastically results in a constant ratio of regenerates with two heads to regenerates with normal morphology. Remarkably, this is shown to be due not to partial penetrance of treatment, but a profound yet hidden alteration to the animals' patterning circuitry. Subsequent amputations of the morphologically normal regenerates in water result in the same ratio of double-headed to normal morphology, revealing a cryptic phenotype that is not apparent unless the animals are cut. These animals do not differ from wild-type worms in histology, expression of key polarity genes, or neoblast distribution. Instead, the altered regenerative bodyplan is stored in seemingly normal planaria via global patterns of cellular resting potential. This gradient is functionally instructive, and represents a multistable, epigenetic anatomical switch: experimental reversals of bioelectric state reset subsequent regenerative morphology back to wild-type. Hence, bioelectric properties can stably override genome-default target morphology, and provide a tractable control point for investigating cryptic phenotypes and the stochasticity of large-scale epigenetic controls.",
+  "pmid": "28538159",
+  "pmc": "PMC5443973",
+  "reachable": true,
+  "reachable_status": 200
+}

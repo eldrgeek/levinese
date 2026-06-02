@@ -1,0 +1,21 @@
+{
+  "doi": "10.1002/advs.202508967",
+  "doi_url": "https://doi.org/10.1002/advs.202508967",
+  "title": "Engineered Living Systems With Self‐Organizing Neural Networks: From Anatomy to Behavior and Gene Expression",
+  "year": "2026",
+  "journal": "Advanced Science",
+  "authors": [
+    "Haleh Fotowat",
+    "Laurie O'Neill",
+    "Léo Pio‐Lopez",
+    "Megan M. Sperry",
+    "Patrick Erickson",
+    "Tiffany Lin",
+    "Michael Levin"
+  ],
+  "abstract": "ABSTRACT A great deal is known about the formation and architecture of biological neural networks in animal models, which have arrived at their current structure‐function relationship through evolution by natural selection. Little is known about the development of such structure–function relationships in a scenario where neurons are allowed to grow within evolutionarily‐novel, motile bodies. Previous work showed that ectodermal tissue excised from Xenopus embryos, develops into a three‐dimensional mucociliary epidermal organoid ex vivo and exhibits movements distinct from age‐matched tadpoles. These ‘biobots’ are autonomous, self‐powered, and able to move through aqueous environments. Here, we report a new type of biobot, the neurobot, composed of mucociliary epidermis and neural tissue. We show that neural precursor cells implanted in explanted Xenopus ectodermal tissue develop into mature neurons, extending processes both toward the surface and among each other. These self‐organized neurobots exhibit unique morphology, more complex movements, and different responses to neuroactive drugs compared to non‐neuronal counterparts. Calcium imaging confirms neuronal activity in neurobots. Transcriptomics reveals increased transcript variability, expression of genes related to nervous system development, a shift toward ancient genes, and up‐regulation of neuronal genes linked to visual perception.",
+  "pmid": "41717829",
+  "pmc": "PMC13185861",
+  "reachable": true,
+  "reachable_status": 200
+}

@@ -1,0 +1,16 @@
+{
+  "doi": "10.1080/19420889.2020.1838809",
+  "doi_url": "https://doi.org/10.1080/19420889.2020.1838809",
+  "title": "Why isn’t sex optional? Stem-cell competition, loss of regenerative capacity, and cancer in metazoan evolution",
+  "year": "2020",
+  "journal": "Communicative &amp; Integrative Biology",
+  "authors": [
+    "Chris Fields",
+    "Michael Levin"
+  ],
+  "abstract": "Animals that can reproduce vegetatively by fission or budding and also sexually via specialized gametes are found in all five primary animal lineages (Bilateria, Cnidaria, Ctenophora, Placozoa, Porifera). Many bilaterian lineages, including roundworms, insects, and most chordates, have lost the capability of vegetative reproduction and are obligately gametic. We suggest a developmental explanation for this evolutionary phenomenon: obligate gametic reproduction is the result of germline stem cells winning a winner-take-all competition with non-germline stem cells for control of reproduction and hence lineage survival. We develop this suggestion by extending Hamilton's rule, which factors the relatedness between parties into the cost/benefit analysis that underpins cooperative behaviors, to include similarity of cellular state. We show how coercive or deceptive cell-cell signaling can be used to make costly cooperative behaviors appear less costly to the cooperating party. We then show how competition between stem-cell lineages can render an ancestral combination of vegetative reproduction with facultative sex unstable, with one or the other process driven to extinction. The increased susceptibility to cancer observed in obligately-sexual lineages is, we suggest, a side-effect of deceptive signaling that is exacerbated by the loss of whole-body regenerative abilities. We suggest a variety of experimental approaches for testing our predictions.",
+  "pmid": "33403054",
+  "pmc": "PMC7746248",
+  "reachable": true,
+  "reachable_status": 403
+}

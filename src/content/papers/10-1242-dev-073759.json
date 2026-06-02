@@ -1,0 +1,19 @@
+{
+  "doi": "10.1242/dev.073759",
+  "doi_url": "https://doi.org/10.1242/dev.073759",
+  "title": "Transmembrane voltage potential controls embryonic eye patterning in\n                    <i>Xenopus laevis</i>",
+  "year": "2012",
+  "journal": "Development",
+  "authors": [
+    "Vaibhav P. Pai",
+    "Sherry Aw",
+    "Tal Shomrat",
+    "Joan M. Lemire",
+    "Michael Levin"
+  ],
+  "abstract": "Uncovering the molecular mechanisms of eye development is crucial for understanding the embryonic morphogenesis of complex structures, as well as for the establishment of novel biomedical approaches to address birth defects and injuries of the visual system. Here, we characterize change in transmembrane voltage potential (Vmem) as a novel biophysical signal for eye induction in Xenopus laevis. During normal embryogenesis, a striking hyperpolarization demarcates a specific cluster of cells in the anterior neural field. Depolarizing the dorsal lineages in which these cells reside results in malformed eyes. Manipulating Vmem of non-eye cells induces well-formed ectopic eyes that are morphologically and histologically similar to endogenous eyes. Remarkably, such ectopic eyes can be induced far outside the anterior neural field. A Ca2+ channel-dependent pathway transduces the Vmem signal and regulates patterning of eye field transcription factors. These data reveal a new, instructive role for membrane voltage during embryogenesis and demonstrate that Vmem is a crucial upstream signal in eye development. Learning to control bioelectric initiators of organogenesis offers significant insight into birth defects that affect the eye and might have significant implications for regenerative approaches to ocular diseases.",
+  "pmid": "22159581",
+  "pmc": "PMC3243095",
+  "reachable": true,
+  "reachable_status": 403
+}

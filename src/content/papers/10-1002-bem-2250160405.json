@@ -1,0 +1,16 @@
+{
+  "doi": "10.1002/bem.2250160405",
+  "doi_url": "https://doi.org/10.1002/bem.2250160405",
+  "title": "Applied AC and DC magnetic fields cause alterations in the mitotic cycle of early sea urchin embryos",
+  "year": "1995",
+  "journal": "Bioelectromagnetics",
+  "authors": [
+    "Michael Levin",
+    "Susan G. Ernst"
+  ],
+  "abstract": "Abstract This study demonstrates that exposure to 60 Hz magnetic fields (3.4–8.8 mT) and magnetic fields over the range DC‐600 kHz (2.5–6.5 mT) can alter the early embryonic development of sea urchin embryos by inducing alterations in the timing of the cell cycle. Batches of fertilized eggs were exposed to the fields produced by a coil system. Samples of the continuous cultures were taken and scored for cell division. The times of both the first and second cell divisions were advanced by ELF AC fields and by static fields. The magnitude of the 60 Hz effect appears proportional to the field strength over the range tested. The relationship to field frequency was nonlinear and complex. For certain frequencies above the ELF range, the exposure resulted in a delay of the onset of mitosis. The advance of mitosis was also dependent on the duration of exposure and on the timing of exposure relative to fertilization. © 1995 Wiley‐Liss, Inc.",
+  "pmid": "7488256",
+  "pmc": null,
+  "reachable": true,
+  "reachable_status": 200
+}

@@ -1,0 +1,21 @@
+{
+  "doi": "10.1002/adma.202400241",
+  "doi_url": "https://doi.org/10.1002/adma.202400241",
+  "title": "Self‐Amputating and Interfusing Machines",
+  "year": "2024",
+  "journal": "Advanced Materials",
+  "authors": [
+    "Bilige Yang",
+    "Amir Mohammadi Nasab",
+    "Stephanie J. Woodman",
+    "Eugene Thomas",
+    "Liana G. Tilton",
+    "Michael Levin",
+    "Rebecca Kramer‐Bottiglio"
+  ],
+  "abstract": "Abstract Biological organisms exhibit phenomenal adaptation through morphology‐shifting mechanisms including self‐amputation, regeneration, and collective behavior. For example, reptiles, crustaceans, and insects amputate their own appendages in response to threats. Temporary fusion between individuals enables collective behaviors, such as in ants that temporarily fuse to build bridges. The concept of morphological editing often involves the addition and subtraction of mass and can be linked to modular robotics, wherein synthetic body morphology may be revised by rearranging parts. This work describes a reversible cohesive interface made of thermoplastic elastomer that allows for strong attachment and easy detachment of distributed soft robot modules without direct human handling. The reversible joint boasts a modulus similar to materials commonly used in soft robotics, and can thus be distributed throughout soft robot bodies without introducing mechanical incongruities. To demonstrate utility, the reversible joint is implemented in two embodiments: a soft quadruped robot that self‐amputates a limb when stuck, and a cluster of three soft‐crawling robots that fuse to cross a land gap. This work points toward future robots capable of radical shape‐shifting via changes in mass through autotomy and interfusion, as well as highlights the crucial role that interfacial stiffness change plays in autotomizable biological and artificial systems.",
+  "pmid": "38780175",
+  "pmc": null,
+  "reachable": true,
+  "reachable_status": 403
+}

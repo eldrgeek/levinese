@@ -1,6 +1,32 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { terms, termsByLetter } from '../../data/terms';
+import { getCollection } from 'astro:content';
+
+const rawTerms = await getCollection('terms');
+const terms = rawTerms.map(e => ({
+  slug: e.slug,
+  letter: e.data.letter,
+  title: e.data.title,
+  subtitle: e.data.subtitle,
+  authored_by: e.data.authored_by,
+  authored_by_note: e.data.authored_by_note,
+  source: e.data.source,
+  provenance: e.data.provenance,
+  related: e.data.related,
+  tags: e.data.tags,
+  is_new: e.data.is_new,
+  contested: e.data.contested,
+  contested_note: e.data.contested_note,
+  marginalia: e.data.marginalia,
+  definition: e.body,
+}));
+
+const termsByLetter = terms.reduce((acc, term) => {
+  const l = term.letter || term.title[0].toUpperCase();
+  if (!acc[l]) acc[l] = [];
+  acc[l].push(term);
+  return acc;
+}, {} as Record<string, typeof terms>);
 
 const letters = Object.keys(termsByLetter).sort();
 const stripHtml = (html: string) => html.replace(/<[^>]*>/g, ' ');

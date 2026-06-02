@@ -1,0 +1,18 @@
+{
+  "doi": "10.1016/j.compbiomed.2024.108964",
+  "doi_url": "https://doi.org/10.1016/j.compbiomed.2024.108964",
+  "title": "Oscillatory phenomena in electrophysiological networks: The coupling between cell bioelectricity and transcription",
+  "year": "2024",
+  "journal": "Computers in Biology and Medicine",
+  "authors": [
+    "Javier Cervera",
+    "José A. Manzanares",
+    "Michael Levin",
+    "Salvador Mafe"
+  ],
+  "abstract": "Morphogenetic regulation during embryogenesis and regeneration rely on information transfer and coordination between different regions. Here, we explore theoretically the coupling between bioelectrical and transcriptional oscillations at the individual cell and multicellular levels. The simulations, based on a set of ion channels and intercellular gap junctions, show that bioelectrical and transcriptional waves can electrophysiologically couple distant regions of a model network in phase and antiphase oscillatory states that include synchronization phenomena. In this way, different multicellular regionalizations can be encoded by cell potentials that oscillate between depolarized and polarized states, thus allowing a spatio-temporal coding. Because the electric potential patterns characteristic of development and regeneration are correlated with the spatial distributions of signaling ions and molecules, bioelectricity can act as a template for slow biochemical signals following a hierarchy of experimental times. In particular, bioelectrical gradients that couple cell potentials to transcription rates give to each single cell a rough idea of its location in the multicellular ensemble, thus controlling local differentiation processes that switch on and off crucial parts of the genome.",
+  "pmid": "39106669",
+  "pmc": null,
+  "reachable": true,
+  "reachable_status": 200
+}

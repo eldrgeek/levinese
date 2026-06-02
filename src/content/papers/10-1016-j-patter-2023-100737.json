@@ -1,0 +1,18 @@
+{
+  "doi": "10.1016/j.patter.2023.100737",
+  "doi_url": "https://doi.org/10.1016/j.patter.2023.100737",
+  "title": "Cellular signaling pathways as plastic, proto-cognitive systems: Implications for biomedicine",
+  "year": "2023",
+  "journal": "Patterns",
+  "authors": [
+    "Juanita Mathews",
+    "Alan (Jaelyn) Chang",
+    "Liam Devlin",
+    "Michael Levin"
+  ],
+  "abstract": ". Further, we propose an expanded view of pathways from the perspective of basal cognition and argue that a broader understanding of pathways and how they process contextual information across scales will catalyze progress in many areas of physiology and neurobiology. We argue that this fuller understanding of the functionality and tractability of pathways must go beyond a focus on the mechanistic details of protein and drug structure to encompass their physiological history as well as their embedding within higher levels of organization in the organism, with numerous implications for data science addressing health and disease. Exploiting tools and concepts from behavioral and cognitive sciences to explore a proto-cognitive metaphor for the pathways underlying health and disease is more than a philosophical stance on biochemical processes; at stake is a new roadmap for overcoming the limitations of today's pharmacological strategies and for inferring future therapeutic interventions for a wide range of disease states.",
+  "pmid": "37223267",
+  "pmc": "PMC10201306",
+  "reachable": true,
+  "reachable_status": 200
+}

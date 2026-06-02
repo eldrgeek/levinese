@@ -1,0 +1,16 @@
+{
+  "doi": "10.3389/fpsyg.2016.00902",
+  "doi_url": "https://doi.org/10.3389/fpsyg.2016.00902",
+  "title": "On Having No Head: Cognition throughout Biological Systems",
+  "year": "2016",
+  "journal": "Frontiers in Psychology",
+  "authors": [
+    "František Baluška",
+    "Michael Levin"
+  ],
+  "abstract": "The central nervous system (CNS) underlies memory, perception, decision-making, and behavior in numerous organisms. However, neural networks have no monopoly on the signaling functions that implement these remarkable algorithms. It is often forgotten that neurons optimized cellular signaling modes that existed long before the CNS appeared during evolution, and were used by somatic cellular networks to orchestrate physiology, embryonic development, and behavior. Many of the key dynamics that enable information processing can, in fact, be implemented by different biological hardware. This is widely exploited by organisms throughout the tree of life. Here, we review data on memory, learning, and other aspects of cognition in a range of models, including single celled organisms, plants, and tissues in animal bodies. We discuss current knowledge of the molecular mechanisms at work in these systems, and suggest several hypotheses for future investigation. The study of cognitive processes implemented in aneural contexts is a fascinating, highly interdisciplinary topic that has many implications for evolution, cell biology, regenerative medicine, computer science, and synthetic bioengineering.",
+  "pmid": "27445884",
+  "pmc": "PMC4914563",
+  "reachable": true,
+  "reachable_status": 200
+}

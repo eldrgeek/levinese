@@ -1,0 +1,15 @@
+{
+  "doi": "10.1002/bies.201100136",
+  "doi_url": "https://doi.org/10.1002/bies.201100136",
+  "title": "Molecular bioelectricity in developmental biology: New tools and recent discoveries",
+  "year": "2012",
+  "journal": "BioEssays",
+  "authors": [
+    "Michael Levin"
+  ],
+  "abstract": "Abstract Significant progress in the molecular investigation of endogenous bioelectric signals during pattern formation in growing tissues has been enabled by recently developed techniques. Ion flows and voltage gradients produced by ion channels and pumps are key regulators of cell proliferation, migration, and differentiation. Now, instructive roles for bioelectrical gradients in embryogenesis, regeneration, and neoplasm are being revealed through the use of fluorescent voltage reporters and functional experiments using well‐characterized channel mutants. Transmembrane voltage gradients ( V mem ) determine anatomical polarity and function as master regulators during appendage regeneration and embryonic left‐right patterning. A state‐of‐the‐art recent study reveals that they can also serve as prepatterns for gene expression domains during craniofacial patterning. Continued development of novel tools and better ways to think about physical controls of cell‐cell interactions will lead to mastery of the morphogenetic information stored in physiological networks. This will enable fundamental advances in basic understanding of growth and form, as well as transformative biomedical applications in regenerative medicine.",
+  "pmid": "22237730",
+  "pmc": "PMC3430077",
+  "reachable": true,
+  "reachable_status": 200
+}

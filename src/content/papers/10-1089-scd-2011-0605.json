@@ -1,0 +1,19 @@
+{
+  "doi": "10.1089/scd.2011.0605",
+  "doi_url": "https://doi.org/10.1089/scd.2011.0605",
+  "title": "Inhibition of Planar Cell Polarity Extends Neural Growth During Regeneration, Homeostasis, and Development",
+  "year": "2012",
+  "journal": "Stem Cells and Development",
+  "authors": [
+    "Wendy S. Beane",
+    "Ai-Sun Tseng",
+    "Junji Morokuma",
+    "Joan M. Lemire",
+    "Michael Levin"
+  ],
+  "abstract": "The ability to stop producing or replacing cells at the appropriate time is essential, as uncontrolled growth can lead to loss of function and even cancer. Tightly regulated mechanisms coordinate the growth of stem cell progeny with the patterning needs of the host organism. Despite the importance of proper termination during regeneration, cell turnover, and embryonic development, very little is known about how tissues determine when patterning is complete during these processes. Using planarian flatworms, we show that the planar cell polarity (PCP) pathway is required to stop the growth of neural tissue. Although traditionally studied as regulators of tissue polarity, we found that loss of the PCP genes Vangl2 , DAAM1 , and ROCK by RNA interference (individually or together) resulted in supernumerary eyes and excess optical neurons in intact planarians, while regenerating planarians had continued hyperplasia throughout the nervous system long after controls ceased new growth. This failure to terminate growth suggests that neural tissues use PCP as a readout of patterning, highlighting a potential role for intact PCP as a signal to stem and progenitor cells to halt neuronal growth when patterning is finished. Moreover, we found this mechanism to be conserved in vertebrates. Loss of Vangl2 during normal development, as well as during Xenopus tadpole tail regeneration, also leads to the production of excess neural tissue. This evolutionarily conserved function of PCP represents a tractable new approach for controlling the growth of nerves.",
+  "pmid": "22339734",
+  "pmc": "PMC3411359",
+  "reachable": true,
+  "reachable_status": 403
+}

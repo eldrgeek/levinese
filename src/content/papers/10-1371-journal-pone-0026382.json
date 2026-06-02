@@ -1,0 +1,18 @@
+{
+  "doi": "10.1371/journal.pone.0026382",
+  "doi_url": "https://doi.org/10.1371/journal.pone.0026382",
+  "title": "HDAC Activity Is Required during Xenopus Tail Regeneration",
+  "year": "2011",
+  "journal": "PLoS ONE",
+  "authors": [
+    "Ai-Sun Tseng",
+    "Kátia Carneiro",
+    "Joan M. Lemire",
+    "Michael Levin"
+  ],
+  "abstract": "The ability to fully restore damaged or lost organs is present in only a subset of animals. The Xenopus tadpole tail is a complex appendage, containing epidermis, muscle, nerves, spinal cord, and vasculature, which regenerates after amputation. Understanding the mechanisms of tail regeneration may lead to new insights to promote biomedical regeneration in non-regenerative tissues. Although chromatin remodeling is known to be critical for stem cell pluripotency, its role in complex organ regeneration in vivo remains largely uncharacterized. Here we show that histone deacetylase (HDAC) activity is required for the early stages of tail regeneration. HDAC1 is expressed during the 1(st) two days of regeneration. Pharmacological blockade of HDACs using Trichostatin A (TSA) increased histone acetylation levels in the amputated tail. Furthermore, treatment with TSA or another HDAC inhibitor, valproic acid, specifically inhibited regeneration. Over-expression of wild-type Mad3, a transcriptional repressor known to associate in a complex with HDACs via Sin3, inhibited regeneration. Similarly, expression of a Mad3 mutant lacking the Sin3-interacting domain that is required for HDAC binding also blocks regeneration, suggesting that HDAC and Mad3 may act together to regulate regeneration. Inhibition of HDAC function resulted in aberrant expression of Notch1 and BMP2, two genes known to be required for tail regeneration. Our results identify a novel early role for HDAC in appendage regeneration and suggest that modulation of histone acetylation is important in regenerative repair of complex appendages.",
+  "pmid": "22022609",
+  "pmc": "PMC3194833",
+  "reachable": true,
+  "reachable_status": 200
+}

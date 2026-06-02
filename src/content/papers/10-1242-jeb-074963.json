@@ -1,0 +1,16 @@
+{
+  "doi": "10.1242/jeb.074963",
+  "doi_url": "https://doi.org/10.1242/jeb.074963",
+  "title": "Ectopic eyes outside the head in<i>Xenopus</i>tadpoles provide sensory data for light-mediated learning",
+  "year": "2013",
+  "journal": "Journal of Experimental Biology",
+  "authors": [
+    "Douglas J. Blackiston",
+    "Michael Levin"
+  ],
+  "abstract": "SUMMARY A major roadblock in the biomedical treatment of human sensory disorders, including blindness, has been an incomplete understanding of the nervous system and its ability to adapt to changes in sensory modality. Likewise, fundamental insight into the evolvability of complex functional anatomies requires understanding brain plasticity and the interaction between the nervous system and body architecture. While advances have been made in the generation of artificial and biological replacement components, the brain's ability to interpret sensory information arising from ectopic locations is not well understood. We report the use of eye primordia grafts to create ectopic eyes along the body axis of Xenopus tadpoles. These eyes are morphologically identical to native eyes and can be induced at caudal locations. Cell labeling studies reveal that eyes created in the tail send projections to the stomach and trunk. To assess function we performed light-mediated learning assays using an automated machine vision and environmental control system. The results demonstrate that ectopic eyes in the tail of Xenopus tadpoles could confer vision to the host. Thus ectopic visual organs were functional even when present at posterior locations. These data and protocols demonstrate the ability of vertebrate brains to interpret sensory input from ectopic structures and incorporate them into adaptive behavioral programs. This tractable new model for understanding the robust plasticity of the central nervous system has significant implications for regenerative medicine and sensory augmentation technology.",
+  "pmid": "23447666",
+  "pmc": "PMC3587383",
+  "reachable": true,
+  "reachable_status": 403
+}

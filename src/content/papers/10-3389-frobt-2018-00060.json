@@ -1,0 +1,18 @@
+{
+  "doi": "10.3389/frobt.2018.00060",
+  "doi_url": "https://doi.org/10.3389/frobt.2018.00060",
+  "title": "Inform: Efficient Information-Theoretic Analysis of Collective Behaviors",
+  "year": "2018",
+  "journal": "Frontiers in Robotics and AI",
+  "authors": [
+    "Douglas G. Moore",
+    "Gabriele Valentini",
+    "Sara I. Walker",
+    "Michael Levin"
+  ],
+  "abstract": "The study of collective behavior has traditionally relied on a variety of different methodological tools ranging from more theoretical methods such as population or game-theoretic models to empirical ones like Monte Carlo or multi-agent simulations. An approach that is increasingly being explored is the use of information theory as a methodological framework to study the flow of information and the statistical properties of collectives of interacting agents. While a few general purpose toolkits exist, most of the existing software for information theoretic analysis of collective systems is limited in scope. We introduce Inform, an open-source framework for efficient information theoretic analysis that exploits the computational power of a C library while simplifying its use through a variety of wrappers for common higher-level scripting languages. We focus on two such wrappers here: PyInform (Python) and rinform (R). Inform and its wrappers are cross-platform and general-purpose. They include classical information-theoretic measures, measures of information dynamics and information-based methods to study the statistical behavior of collective systems, and expose a lower-level API that allow users to construct measures of their own. We describe the architecture of the Inform framework, study its computational efficiency and use it to analyze three different case studies of collective behavior: biochemical information storage in regenerating planaria, nest-site selection in the ant Temnothorax rugatulus , and collective decision making in multi-agent simulations.",
+  "pmid": "33718436",
+  "pmc": "PMC7947678",
+  "reachable": true,
+  "reachable_status": 200
+}
