@@ -1,0 +1,587 @@
+---
+import Base from '../../layouts/Base.astro';
+import atlasRaw from '../../data/atlas.json';
+const atlasData = atlasRaw as any;
+---
+
+<Base
+  title="Semantic Atlas"
+  description="A 3D semantic space of all Levinese dictionary terms and Levin papers, projected via UMAP from shared BGE embeddings."
+>
+  <!-- Prevent footer/main padding from pushing canvas -->
+  <style>
+    main { padding: 0 !important; }
+    #atlas-root canvas { display: block; }
+  </style>
+
+  <div id="atlas-root" style="position:relative;width:100%;height:calc(100vh - 56px);overflow:hidden;background:#0d0d18;">
+
+    <!-- Canvas -->
+    <canvas id="atlas-canvas" style="width:100%;height:100%;display:block;"></canvas>
+
+    <!-- Top bar -->
+    <div id="top-bar" style="
+      position:absolute;top:0;left:0;right:0;z-index:10;
+      display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+      padding:8px 14px;
+      background:rgba(13,13,24,0.82);
+      backdrop-filter:blur(8px);
+      border-bottom:1px solid rgba(255,255,255,0.08);
+      font-family:'Inter',sans-serif;font-size:12px;color:#d4cfc6;
+    ">
+      <span style="font-family:'Lora',serif;font-size:14px;color:#e8a04a;margin-right:4px;white-space:nowrap;">Semantic Atlas</span>
+      <div style="display:flex;gap:6px;align-items:center;flex-shrink:0;">
+        <button id="btn-terms" class="atlas-toggle active" title="Show/hide dictionary terms">Terms</button>
+        <button id="btn-papers" class="atlas-toggle active" title="Show/hide papers">Papers</button>
+      </div>
+      <div style="display:flex;align-items:center;gap:6px;flex-shrink:0;">
+        <label style="white-space:nowrap;">Year</label>
+        <input id="year-min" type="range" min="1990" max="2024" value="1990" style="width:70px;accent-color:#5dbeb0;" title="Min year">
+        <span id="year-range-label" style="white-space:nowrap;min-width:60px;text-align:center;">all</span>
+        <input id="year-max" type="range" min="1990" max="2024" value="2024" style="width:70px;accent-color:#5dbeb0;" title="Max year">
+      </div>
+      <input id="search-box" type="text" placeholder="Search…" style="
+        padding:4px 8px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.15);
+        border-radius:4px;color:#d4cfc6;font-size:12px;width:130px;outline:none;
+      ">
+      <button id="btn-labels" class="atlas-toggle" title="Show/hide all labels">Labels</button>
+      <button id="btn-2d" class="atlas-toggle" title="Switch to 2D layout">2D</button>
+      <button id="btn-reset" style="
+        padding:3px 8px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.15);
+        border-radius:4px;cursor:pointer;color:#d4cfc6;font-size:12px;white-space:nowrap;
+      " title="Reset camera">↺ Reset</button>
+    </div>
+
+    <!-- Tooltip -->
+    <div id="atlas-tooltip" style="
+      position:absolute;pointer-events:none;z-index:20;display:none;
+      max-width:280px;padding:10px 13px;
+      background:rgba(13,13,24,0.92);backdrop-filter:blur(6px);
+      border:1px solid rgba(255,255,255,0.12);border-radius:6px;
+      font-family:'Inter',sans-serif;font-size:12px;color:#d4cfc6;
+      line-height:1.5;
+    "></div>
+
+    <!-- Legend -->
+    <div id="atlas-legend" style="
+      position:absolute;bottom:16px;right:16px;z-index:10;
+      padding:10px 13px;background:rgba(13,13,24,0.82);backdrop-filter:blur(6px);
+      border:1px solid rgba(255,255,255,0.08);border-radius:6px;
+      font-family:'Inter',sans-serif;font-size:11px;color:#d4cfc6;line-height:1.8;
+    ">
+      <div style="display:flex;align-items:center;gap:7px;">
+        <span style="width:12px;height:12px;border-radius:50%;background:#e8a04a;display:inline-block;flex-shrink:0;"></span>
+        Dictionary terms
+      </div>
+      <div style="display:flex;align-items:center;gap:7px;margin-top:3px;">
+        <span style="width:8px;height:8px;border-radius:50%;background:#2c5f7e;display:inline-block;flex-shrink:0;margin-left:2px;"></span>
+        Papers (older)
+      </div>
+      <div style="display:flex;align-items:center;gap:7px;margin-top:3px;">
+        <span style="width:8px;height:8px;border-radius:50%;background:#5dbeb0;display:inline-block;flex-shrink:0;margin-left:2px;"></span>
+        Papers (recent)
+      </div>
+      <div id="legend-stats" style="margin-top:6px;opacity:0.6;font-size:10px;"></div>
+    </div>
+
+    <!-- Loading overlay -->
+    <div id="atlas-loading" style="
+      position:absolute;inset:0;z-index:30;display:flex;flex-direction:column;
+      align-items:center;justify-content:center;
+      background:#0d0d18;color:#d4cfc6;font-family:'Inter',sans-serif;
+    ">
+      <div style="font-family:'Lora',serif;font-size:1.2rem;margin-bottom:8px;">Loading semantic space…</div>
+      <div style="font-size:12px;opacity:0.5;">483 points · UMAP projection</div>
+    </div>
+
+    <!-- No-WebGL fallback -->
+    <div id="atlas-no-webgl" style="
+      position:absolute;inset:0;z-index:40;display:none;
+      align-items:center;justify-content:center;background:#f7f5f0;
+      font-family:'Inter',sans-serif;text-align:center;
+    ">
+      <div>
+        <p style="color:#1c1b2e;margin-bottom:12px;">Your browser doesn't support WebGL, required for the 3D atlas.</p>
+        <a href="/dictionary/" style="color:#0c6b5a;">Browse the Dictionary instead →</a>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .atlas-toggle {
+      padding: 3px 8px;
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 4px;
+      cursor: pointer;
+      color: #d4cfc6;
+      font-size: 12px;
+      font-family: 'Inter', sans-serif;
+      white-space: nowrap;
+      transition: background 0.15s, border-color 0.15s;
+    }
+    .atlas-toggle.active {
+      background: rgba(93,190,176,0.2);
+      border-color: rgba(93,190,176,0.5);
+      color: #5dbeb0;
+    }
+  </style>
+
+  <script define:vars={{ atlasData }}>
+  (function () {
+    // ── Config ──────────────────────────────────────────────────────────────────
+    const TERM_SIZE   = 8.0;
+    const PAPER_SIZE  = 4.5;
+    const DIM_OPACITY = 0.15;
+    const COLOR_TERM_NORMAL = [0.76, 0.47, 0.04];   // #c2770a amber
+    const COLOR_TERM_NEW    = [0.91, 0.63, 0.29];   // #e8a04a brighter amber
+    const COLOR_PAPER_OLD   = [0.17, 0.37, 0.49];   // #2c5f7e blue
+    const COLOR_PAPER_NEW   = [0.36, 0.75, 0.69];   // #5dbeb0 teal
+
+    const points = atlasData.points;
+    const stats  = atlasData.stats;
+
+    // Compute year range for papers
+    const years = points.filter(p => p.type === 'paper' && p.year).map(p => p.year);
+    const minYear = Math.min(...years);
+    const maxYear = Math.max(...years);
+
+    // Top-15 terms for default labels (by related_count desc)
+    const topTermSlugs = new Set(
+      points
+        .filter(p => p.type === 'term')
+        .sort((a, b) => (b.related_count || 0) - (a.related_count || 0))
+        .slice(0, 15)
+        .map(p => p.id)
+    );
+
+    // ── State ────────────────────────────────────────────────────────────────────
+    let showTerms   = true;
+    let showPapers  = true;
+    let showLabels  = false;   // user toggled
+    let is2D        = false;
+    let filterYearMin = minYear;
+    let filterYearMax = maxYear;
+    let searchQuery = '';
+    let hoveredIdx  = -1;
+
+    // ── DOM refs ──────────────────────────────────────────────────────────────────
+    const canvas   = document.getElementById('atlas-canvas');
+    const tooltip  = document.getElementById('atlas-tooltip');
+    const loading  = document.getElementById('atlas-loading');
+    const noWebgl  = document.getElementById('atlas-no-webgl');
+    const legendStats = document.getElementById('legend-stats');
+
+    // ── WebGL check ───────────────────────────────────────────────────────────────
+    const testCtx = (() => { try { return canvas.getContext('webgl2') || canvas.getContext('webgl'); } catch(e) { return null; } })();
+    if (!testCtx) {
+      loading.style.display = 'none';
+      noWebgl.style.display = 'flex';
+      return;
+    }
+
+    legendStats.textContent = `${stats.terms} terms · ${stats.papers} papers`;
+
+    // ── Load Three.js lazily ─────────────────────────────────────────────────────
+    function loadScript(src) {
+      return new Promise((res, rej) => {
+        const s = document.createElement('script');
+        s.src = src; s.onload = res; s.onerror = rej;
+        document.head.appendChild(s);
+      });
+    }
+
+    Promise.all([
+      loadScript('https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js'),
+    ]).then(() =>
+      loadScript('https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js')
+    ).then(initScene).catch(err => {
+      loading.innerHTML = `<div style="color:#e88">Failed to load 3D library: ${err.message}</div>`;
+    });
+
+    // ── Helper: paper color by year ───────────────────────────────────────────────
+    function paperColor(year) {
+      if (!year) return COLOR_PAPER_OLD;
+      const t = Math.max(0, Math.min(1, (year - minYear) / Math.max(1, maxYear - minYear)));
+      return [
+        COLOR_PAPER_OLD[0] + t * (COLOR_PAPER_NEW[0] - COLOR_PAPER_OLD[0]),
+        COLOR_PAPER_OLD[1] + t * (COLOR_PAPER_NEW[1] - COLOR_PAPER_OLD[1]),
+        COLOR_PAPER_OLD[2] + t * (COLOR_PAPER_NEW[2] - COLOR_PAPER_OLD[2]),
+      ];
+    }
+
+    // ── Main init ─────────────────────────────────────────────────────────────────
+    function initScene() {
+      const THREE = window.THREE;
+      const root  = document.getElementById('atlas-root');
+      const W = root.clientWidth, H = root.clientHeight;
+
+      // Scene
+      const scene = new THREE.Scene();
+      scene.background = new THREE.Color(0x0d0d18);
+
+      // Camera
+      const camera = new THREE.PerspectiveCamera(55, W / H, 0.01, 500);
+      camera.position.set(0, 0, 12);
+
+      // Renderer
+      const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+      renderer.setSize(W, H);
+
+      // Controls
+      const controls = new THREE.OrbitControls(camera, renderer.domElement);
+      controls.enableDamping = true;
+      controls.dampingFactor = 0.06;
+      controls.minDistance = 1;
+      controls.maxDistance = 60;
+
+      // ── Geometry setup ──────────────────────────────────────────────────────────
+      const N = points.length;
+      const positions   = new Float32Array(N * 3);
+      const positions2D = new Float32Array(N * 3);  // 2D layout (z=0)
+      const colors      = new Float32Array(N * 3);
+      const sizes       = new Float32Array(N);
+      const opacities   = new Float32Array(N);
+
+      // Build arrays
+      for (let i = 0; i < N; i++) {
+        const p = points[i];
+        positions[i*3]   = p.x3; positions[i*3+1] = p.y3; positions[i*3+2] = p.z3;
+        positions2D[i*3] = p.x2; positions2D[i*3+1] = p.y2; positions2D[i*3+2] = 0;
+
+        const rgb = p.type === 'term'
+          ? (p.is_new ? COLOR_TERM_NEW : COLOR_TERM_NORMAL)
+          : paperColor(p.year);
+        colors[i*3] = rgb[0]; colors[i*3+1] = rgb[1]; colors[i*3+2] = rgb[2];
+
+        sizes[i]    = p.type === 'term' ? TERM_SIZE : PAPER_SIZE;
+        opacities[i] = 1.0;
+      }
+
+      // Shader material (per-vertex size, color, opacity; soft circle)
+      const mat = new THREE.ShaderMaterial({
+        uniforms: {},
+        vertexShader: `
+          attribute float aSize;
+          attribute vec3  aColor;
+          attribute float aOpacity;
+          varying vec3  vColor;
+          varying float vOpacity;
+          void main() {
+            vColor   = aColor;
+            vOpacity = aOpacity;
+            vec4 mvPos = modelViewMatrix * vec4(position, 1.0);
+            gl_PointSize = aSize * (380.0 / -mvPos.z);
+            gl_Position  = projectionMatrix * mvPos;
+          }
+        `,
+        fragmentShader: `
+          varying vec3  vColor;
+          varying float vOpacity;
+          void main() {
+            vec2  uv   = gl_PointCoord - 0.5;
+            float dist = length(uv);
+            if (dist > 0.5) discard;
+            float alpha = smoothstep(0.5, 0.35, dist) * vOpacity;
+            gl_FragColor = vec4(vColor, alpha);
+          }
+        `,
+        transparent: true,
+        depthWrite: false,
+      });
+
+      const geo = new THREE.BufferGeometry();
+      geo.setAttribute('position', new THREE.BufferAttribute(positions.slice(), 3));
+      geo.setAttribute('aColor',   new THREE.BufferAttribute(colors.slice(), 3));
+      geo.setAttribute('aSize',    new THREE.BufferAttribute(sizes.slice(), 1));
+      geo.setAttribute('aOpacity', new THREE.BufferAttribute(opacities.slice(), 1));
+
+      const pointsMesh = new THREE.Points(geo, mat);
+      scene.add(pointsMesh);
+
+      // ── Glow rings for is_new terms ─────────────────────────────────────────────
+      const newTermIndices = points.reduce((acc, p, i) => { if (p.is_new) acc.push(i); return acc; }, []);
+      if (newTermIndices.length > 0) {
+        const ringPos = new Float32Array(newTermIndices.length * 3);
+        newTermIndices.forEach((idx, j) => {
+          ringPos[j*3]   = positions[idx*3];
+          ringPos[j*3+1] = positions[idx*3+1];
+          ringPos[j*3+2] = positions[idx*3+2];
+        });
+        const ringGeo = new THREE.BufferGeometry();
+        ringGeo.setAttribute('position', new THREE.BufferAttribute(ringPos, 3));
+        const ringMat = new THREE.ShaderMaterial({
+          vertexShader: `
+            void main() {
+              vec4 mvPos = modelViewMatrix * vec4(position, 1.0);
+              gl_PointSize = ${(TERM_SIZE * 1.9).toFixed(1)} * (380.0 / -mvPos.z);
+              gl_Position  = projectionMatrix * mvPos;
+            }
+          `,
+          fragmentShader: `
+            void main() {
+              vec2  uv   = gl_PointCoord - 0.5;
+              float dist = length(uv);
+              if (dist < 0.38 || dist > 0.5) discard;
+              float a = smoothstep(0.5, 0.46, dist) * smoothstep(0.38, 0.43, dist) * 0.55;
+              gl_FragColor = vec4(0.91, 0.63, 0.29, a);
+            }
+          `,
+          transparent: true,
+          depthWrite: false,
+        });
+        scene.add(new THREE.Points(ringGeo, ringMat));
+      }
+
+      // ── Labels (canvas sprites for top-15 terms) ────────────────────────────────
+      const labelSprites = [];
+
+      function makeLabel(text, color) {
+        const cv = document.createElement('canvas');
+        cv.width = 256; cv.height = 48;
+        const ctx = cv.getContext('2d');
+        ctx.font = '500 15px Inter, sans-serif';
+        ctx.fillStyle = color || '#e8c87a';
+        ctx.textBaseline = 'middle';
+        ctx.fillText(text, 4, 24);
+        const tex = new THREE.CanvasTexture(cv);
+        const spriteMat = new THREE.SpriteMaterial({ map: tex, transparent: true, depthWrite: false });
+        const sprite = new THREE.Sprite(spriteMat);
+        sprite.scale.set(3.5, 0.65, 1);
+        return sprite;
+      }
+
+      function buildLabels(usePositions) {
+        labelSprites.forEach(s => scene.remove(s));
+        labelSprites.length = 0;
+        if (!showLabels) return;
+
+        const labelSet = is2D
+          ? points.filter(p => p.type === 'term')   // in 2D show all terms (less cluttered on flat view)
+          : points.filter(p => p.type === 'term' && topTermSlugs.has(p.id));
+
+        labelSet.forEach((p, li) => {
+          const globalIdx = points.indexOf(p);
+          const sprite = makeLabel(p.title, p.is_new ? '#e8a04a' : '#d4cfc6');
+          sprite.position.set(
+            usePositions[globalIdx*3]   + 0.18,
+            usePositions[globalIdx*3+1] + 0.22,
+            usePositions[globalIdx*3+2]
+          );
+          scene.add(sprite);
+          labelSprites.push(sprite);
+        });
+      }
+
+      // ── Raycaster ──────────────────────────────────────────────────────────────
+      const raycaster = new THREE.Raycaster();
+      raycaster.params.Points.threshold = 0.25;
+      const mouse = new THREE.Vector2();
+
+      canvas.addEventListener('mousemove', (e) => {
+        const rect = canvas.getBoundingClientRect();
+        mouse.x =  ((e.clientX - rect.left) / rect.width)  * 2 - 1;
+        mouse.y = -((e.clientY - rect.top)  / rect.height) * 2 + 1;
+
+        raycaster.setFromCamera(mouse, camera);
+        const hits = raycaster.intersectObject(pointsMesh);
+        const hit = hits.length > 0 ? hits[0] : null;
+        const idx = hit ? hit.index : -1;
+
+        if (idx !== hoveredIdx) {
+          hoveredIdx = idx;
+          if (idx >= 0) {
+            canvas.style.cursor = 'pointer';
+            showTooltip(e.clientX, e.clientY, points[idx]);
+          } else {
+            canvas.style.cursor = '';
+            tooltip.style.display = 'none';
+          }
+        } else if (idx >= 0) {
+          positionTooltip(e.clientX, e.clientY);
+        }
+      });
+
+      canvas.addEventListener('mouseleave', () => {
+        hoveredIdx = -1;
+        tooltip.style.display = 'none';
+        canvas.style.cursor = '';
+      });
+
+      canvas.addEventListener('click', () => {
+        if (hoveredIdx >= 0) {
+          window.location.href = points[hoveredIdx].url;
+        }
+      });
+
+      function showTooltip(cx, cy, p) {
+        let html = `<div style="font-weight:600;color:${p.type==='term'?'#e8a04a':'#5dbeb0'};margin-bottom:3px;">${escHtml(p.title)}</div>`;
+        if (p.subtitle) html += `<div style="opacity:0.75;margin-bottom:3px;">${escHtml(p.subtitle)}</div>`;
+        if (p.abstract_short) html += `<div style="opacity:0.6;font-size:11px;">${escHtml(p.abstract_short)}</div>`;
+        tooltip.innerHTML = html;
+        tooltip.style.display = 'block';
+        positionTooltip(cx, cy);
+      }
+
+      function positionTooltip(cx, cy) {
+        const root = document.getElementById('atlas-root');
+        const rr = root.getBoundingClientRect();
+        const tx = cx - rr.left + 14;
+        const ty = cy - rr.top  + 14;
+        const tw = tooltip.offsetWidth  || 240;
+        const th = tooltip.offsetHeight || 80;
+        tooltip.style.left = Math.min(tx, rr.width  - tw - 8) + 'px';
+        tooltip.style.top  = Math.min(ty, rr.height - th - 8) + 'px';
+      }
+
+      function escHtml(s) {
+        return (s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+      }
+
+      // ── Filter / search / opacity update ────────────────────────────────────────
+      const opAttr = geo.attributes.aOpacity;
+      const sizeAttr = geo.attributes.aSize;
+      const colorAttr = geo.attributes.aColor;
+
+      function applyFilters() {
+        const q = searchQuery.toLowerCase();
+        let visibleCount = 0;
+
+        for (let i = 0; i < N; i++) {
+          const p = points[i];
+          let visible = true;
+
+          if (p.type === 'term'  && !showTerms)  visible = false;
+          if (p.type === 'paper' && !showPapers) visible = false;
+
+          if (p.type === 'paper' && p.year) {
+            if (p.year < filterYearMin || p.year > filterYearMax) visible = false;
+          }
+
+          let matchSearch = true;
+          if (q) {
+            const haystack = ((p.title || '') + ' ' + (p.subtitle || '') + ' ' + (p.abstract_short || '')).toLowerCase();
+            matchSearch = haystack.includes(q);
+          }
+
+          opAttr.array[i] = !visible ? 0 : (q && !matchSearch ? DIM_OPACITY : 1.0);
+          if (visible) visibleCount++;
+        }
+
+        opAttr.needsUpdate = true;
+        legendStats.textContent = `${visibleCount} / ${N} points`;
+      }
+
+      // ── 2D ↔ 3D swap ────────────────────────────────────────────────────────────
+      const posAttr = geo.attributes.position;
+      let currentPositions = positions;
+
+      function applyLayout(use2D) {
+        const src = use2D ? positions2D : positions;
+        for (let i = 0; i < N * 3; i++) posAttr.array[i] = src[i];
+        posAttr.needsUpdate = true;
+        currentPositions = src;
+
+        if (use2D) {
+          controls.enableRotate = false;
+          camera.position.set(0, 0, 12);
+          controls.target.set(0, 0, 0);
+        } else {
+          controls.enableRotate = true;
+          camera.position.set(0, 0, 12);
+          controls.target.set(0, 0, 0);
+        }
+        controls.update();
+        buildLabels(src);
+      }
+
+      // ── Controls UI ────────────────────────────────────────────────────────────
+      document.getElementById('btn-terms').addEventListener('click', function() {
+        showTerms = !showTerms;
+        this.classList.toggle('active', showTerms);
+        applyFilters();
+      });
+
+      document.getElementById('btn-papers').addEventListener('click', function() {
+        showPapers = !showPapers;
+        this.classList.toggle('active', showPapers);
+        applyFilters();
+      });
+
+      document.getElementById('btn-labels').addEventListener('click', function() {
+        showLabels = !showLabels;
+        this.classList.toggle('active', showLabels);
+        buildLabels(currentPositions);
+      });
+
+      document.getElementById('btn-2d').addEventListener('click', function() {
+        is2D = !is2D;
+        this.classList.toggle('active', is2D);
+        this.textContent = is2D ? '3D' : '2D';
+        applyLayout(is2D);
+      });
+
+      document.getElementById('btn-reset').addEventListener('click', () => {
+        camera.position.set(0, 0, 12);
+        controls.target.set(0, 0, 0);
+        controls.update();
+      });
+
+      const yearMinEl = document.getElementById('year-min');
+      const yearMaxEl = document.getElementById('year-max');
+      const yearLabel = document.getElementById('year-range-label');
+
+      yearMinEl.value = minYear;
+      yearMaxEl.value = maxYear;
+
+      function updateYearLabel() {
+        yearLabel.textContent = filterYearMin === minYear && filterYearMax === maxYear
+          ? 'all'
+          : `${filterYearMin}–${filterYearMax}`;
+      }
+
+      yearMinEl.addEventListener('input', function() {
+        filterYearMin = Math.min(+this.value, filterYearMax - 1);
+        this.value = filterYearMin;
+        updateYearLabel();
+        applyFilters();
+      });
+
+      yearMaxEl.addEventListener('input', function() {
+        filterYearMax = Math.max(+this.value, filterYearMin + 1);
+        this.value = filterYearMax;
+        updateYearLabel();
+        applyFilters();
+      });
+
+      document.getElementById('search-box').addEventListener('input', function() {
+        searchQuery = this.value.trim();
+        applyFilters();
+      });
+
+      // ── Resize ─────────────────────────────────────────────────────────────────
+      const resizeObs = new ResizeObserver(() => {
+        const root = document.getElementById('atlas-root');
+        const w = root.clientWidth, h = root.clientHeight;
+        camera.aspect = w / h;
+        camera.updateProjectionMatrix();
+        renderer.setSize(w, h);
+      });
+      resizeObs.observe(document.getElementById('atlas-root'));
+
+      // ── Render loop ────────────────────────────────────────────────────────────
+      loading.style.display = 'none';
+      buildLabels(positions);
+      applyFilters();
+
+      function animate() {
+        requestAnimationFrame(animate);
+        controls.update();
+        renderer.render(scene, camera);
+      }
+      animate();
+    }
+  })();
+  </script>
+</Base>

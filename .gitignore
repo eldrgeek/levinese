@@ -8,3 +8,7 @@ dist/
 # Local Netlify folder
 .netlify
 __pycache__/
+
+# Atlas build intermediates (atlas.json is committed as pre-built artifact)
+*.npy
+*.pkl
