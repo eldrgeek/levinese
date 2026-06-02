@@ -19,6 +19,15 @@ const atlasData = atlasRaw as any;
     <!-- Canvas -->
     <canvas id="atlas-canvas" style="width:100%;height:100%;display:block;"></canvas>
 
+    <!-- Controls hint -->
+    <div style="
+      position:absolute;bottom:16px;left:16px;z-index:10;
+      padding:6px 10px;background:rgba(13,13,24,0.7);backdrop-filter:blur(4px);
+      border:1px solid rgba(255,255,255,0.08);border-radius:5px;
+      font-family:'Inter',sans-serif;font-size:10px;color:rgba(212,207,198,0.55);
+      line-height:1.6;pointer-events:none;
+    ">Drag: rotate &nbsp;·&nbsp; Two-finger / right-drag: pan &nbsp;·&nbsp; Scroll / pinch: zoom &nbsp;·&nbsp; Click: open</div>
+
     <!-- Top bar -->
     <div id="top-bar" style="
       position:absolute;top:0;left:0;right:0;z-index:10;
@@ -130,8 +139,8 @@ const atlasData = atlasRaw as any;
   <script define:vars={{ atlasData }}>
   (function () {
     // ── Config ──────────────────────────────────────────────────────────────────
-    const TERM_SIZE   = 8.0;
-    const PAPER_SIZE  = 4.5;
+    const TERM_SIZE   = 0.22;   // world units; shader scales by (380/-mvPos.z) → ~7px at z=12
+    const PAPER_SIZE  = 0.13;   // → ~4px at z=12
     const DIM_OPACITY = 0.15;
     const COLOR_TERM_NORMAL = [0.76, 0.47, 0.04];   // #c2770a amber
     const COLOR_TERM_NEW    = [0.91, 0.63, 0.29];   // #e8a04a brighter amber
@@ -233,6 +242,10 @@ const atlasData = atlasRaw as any;
       const controls = new THREE.OrbitControls(camera, renderer.domElement);
       controls.enableDamping = true;
       controls.dampingFactor = 0.06;
+      controls.enableRotate = true;
+      controls.enablePan = true;
+      controls.enableZoom = true;
+      controls.screenSpacePanning = true;
       controls.minDistance = 1;
       controls.maxDistance = 60;
 
@@ -256,7 +269,7 @@ const atlasData = atlasRaw as any;
         colors[i*3] = rgb[0]; colors[i*3+1] = rgb[1]; colors[i*3+2] = rgb[2];
 
         sizes[i]    = p.type === 'term' ? TERM_SIZE : PAPER_SIZE;
-        opacities[i] = 1.0;
+        opacities[i] = 0.85;
       }
 
       // Shader material (per-vertex size, color, opacity; soft circle)
@@ -300,39 +313,8 @@ const atlasData = atlasRaw as any;
       const pointsMesh = new THREE.Points(geo, mat);
       scene.add(pointsMesh);
 
-      // ── Glow rings for is_new terms ─────────────────────────────────────────────
-      const newTermIndices = points.reduce((acc, p, i) => { if (p.is_new) acc.push(i); return acc; }, []);
-      if (newTermIndices.length > 0) {
-        const ringPos = new Float32Array(newTermIndices.length * 3);
-        newTermIndices.forEach((idx, j) => {
-          ringPos[j*3]   = positions[idx*3];
-          ringPos[j*3+1] = positions[idx*3+1];
-          ringPos[j*3+2] = positions[idx*3+2];
-        });
-        const ringGeo = new THREE.BufferGeometry();
-        ringGeo.setAttribute('position', new THREE.BufferAttribute(ringPos, 3));
-        const ringMat = new THREE.ShaderMaterial({
-          vertexShader: `
-            void main() {
-              vec4 mvPos = modelViewMatrix * vec4(position, 1.0);
-              gl_PointSize = ${(TERM_SIZE * 1.9).toFixed(1)} * (380.0 / -mvPos.z);
-              gl_Position  = projectionMatrix * mvPos;
-            }
-          `,
-          fragmentShader: `
-            void main() {
-              vec2  uv   = gl_PointCoord - 0.5;
-              float dist = length(uv);
-              if (dist < 0.38 || dist > 0.5) discard;
-              float a = smoothstep(0.5, 0.46, dist) * smoothstep(0.38, 0.43, dist) * 0.55;
-              gl_FragColor = vec4(0.91, 0.63, 0.29, a);
-            }
-          `,
-          transparent: true,
-          depthWrite: false,
-        });
-        scene.add(new THREE.Points(ringGeo, ringMat));
-      }
+      // Fog for depth cues (is_new terms use COLOR_TERM_NEW, already visually distinct)
+      scene.fog = new THREE.Fog(0x0d0d18, 8, 30);
 
       // ── Labels (canvas sprites for top-15 terms) ────────────────────────────────
       const labelSprites = [];
@@ -522,12 +504,6 @@ const atlasData = atlasRaw as any;
         applyLayout(is2D);
       });
 
-      document.getElementById('btn-reset').addEventListener('click', () => {
-        camera.position.set(0, 0, 12);
-        controls.target.set(0, 0, 0);
-        controls.update();
-      });
-
       const yearMinEl = document.getElementById('year-min');
       const yearMaxEl = document.getElementById('year-max');
       const yearLabel = document.getElementById('year-range-label');
@@ -569,6 +545,29 @@ const atlasData = atlasRaw as any;
         renderer.setSize(w, h);
       });
       resizeObs.observe(document.getElementById('atlas-root'));
+
+      // ── Fit camera to bounding box ─────────────────────────────────────────────
+      const box = new THREE.Box3();
+      for (let i = 0; i < N; i++) {
+        box.expandByPoint(new THREE.Vector3(positions[i*3], positions[i*3+1], positions[i*3+2]));
+      }
+      const bboxCenter = new THREE.Vector3();
+      box.getCenter(bboxCenter);
+      const bboxSize = new THREE.Vector3();
+      box.getSize(bboxSize);
+      const maxDim = Math.max(bboxSize.x, bboxSize.y, bboxSize.z);
+      const fovRad = camera.fov * (Math.PI / 180);
+      const fitDist = (maxDim / 2) / Math.tan(fovRad / 2) * 1.5;
+      const defaultCamPos = new THREE.Vector3(bboxCenter.x, bboxCenter.y, bboxCenter.z + fitDist);
+      camera.position.copy(defaultCamPos);
+      controls.target.copy(bboxCenter);
+      controls.update();
+
+      document.getElementById('btn-reset').addEventListener('click', () => {
+        camera.position.copy(defaultCamPos);
+        controls.target.copy(bboxCenter);
+        controls.update();
+      });
 
       // ── Render loop ────────────────────────────────────────────────────────────
       loading.style.display = 'none';
