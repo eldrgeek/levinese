@@ -254,7 +254,7 @@ const maxYear = years[years.length - 1] ?? 2026;
   // Build search index
   const ms = new MiniSearch({
     fields: ['title', 'abstract', 'authors', 'journal'],
-    storeFields: ['id'],
+    storeFields: ['slug'],
     searchOptions: {
       boost: { title: 3, authors: 1.5, journal: 1, abstract: 0.8 },
       fuzzy: 0.2,
@@ -262,8 +262,9 @@ const maxYear = years[years.length - 1] ?? 2026;
     }
   });
 
-  const docs = papersData.map((p, i) => ({
-    id: i,
+  const docs = (papersData as Array<{slug: string; title?: string; abstract?: string; authors?: string[]; journal?: string}>).map((p) => ({
+    id: p.slug,
+    slug: p.slug,
     title: p.title || '',
     abstract: p.abstract || '',
     authors: (p.authors || []).join(' '),
@@ -283,7 +284,7 @@ const maxYear = years[years.length - 1] ?? 2026;
   const resultCount = document.getElementById('result-count')!;
   const rows = Array.from(document.querySelectorAll('.paper-row')) as HTMLElement[];
 
-  let searchResults: Set<number> | null = null;
+  let searchResults: Set<string> | null = null;
 
   function applyFilters() {
     const query = searchInput.value.trim();
@@ -296,14 +297,14 @@ const maxYear = years[years.length - 1] ?? 2026;
     // Search
     if (query.length >= 2) {
       const results = ms.search(query);
-      searchResults = new Set(results.map(r => r.id as number));
+      searchResults = new Set(results.map(r => r.id as string));
     } else {
       searchResults = null;
     }
 
     // Filter rows
-    let visible = rows.filter((row, idx) => {
-      if (searchResults !== null && !searchResults.has(idx)) return false;
+    let visible = rows.filter((row) => {
+      if (searchResults !== null && !searchResults.has(row.id)) return false;
       const year = parseInt(row.dataset.year || '0');
       if (year > 0 && (year < minY || year > maxY)) return false;
       if (journalFilter && !row.dataset.journal?.includes(journalFilter)) return false;
@@ -400,7 +401,11 @@ const maxYear = years[years.length - 1] ?? 2026;
 
     // Small delay to let DOM settle after filter/sort
     setTimeout(() => {
-      row.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      row.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      // Compensate for sticky nav (56px) + sticky controls bar
+      const controlsEl = document.getElementById('controls');
+      const stickyOffset = 56 + (controlsEl ? controlsEl.offsetHeight : 80) + 16;
+      setTimeout(() => window.scrollBy({ top: -stickyOffset, behavior: 'smooth' }), 50);
 
       // Expand abstract if present
       const panel = row.querySelector('.abstract-panel') as HTMLElement | null;
@@ -433,6 +438,7 @@ const maxYear = years[years.length - 1] ?? 2026;
   }
 
   .paper-row {
+    scroll-margin-top: 9rem;
     transition: background-color 0.1s;
   }
 
