@@ -48,21 +48,24 @@ const signedModels = llmReplies.filter(r => r.signed);
       </div>
       <div>
         <h2 class="font-serif text-2xl font-medium text-ink mb-4">What's in the archive</h2>
-        <div class="space-y-3">
+        <div class="mb-4">
+          <a href="/corpus/" class="inline-flex items-baseline gap-2">
+            <span class="font-mono text-3xl font-medium text-teal">1,099</span>
+            <span class="text-muted text-sm hover:text-teal transition-colors">total corpus items →</span>
+          </a>
+        </div>
+        <div class="space-y-2">
           {[
-            { count: '364', label: 'papers cataloged', href: '/papers/' },
-            { count: '333', label: 'video transcripts' },
-            { count: '350', label: 'blog posts' },
-            { count: '22', label: 'magazine articles' },
-            { count: '7', label: 'Substack posts' },
-            { count: '4', label: 'X archive pages' },
+            { count: '364', label: 'papers', href: '/corpus/?type=paper' },
+            { count: '340', label: 'video transcripts', href: '/corpus/?type=video' },
+            { count: '349', label: 'blog posts', href: '/corpus/?type=blog' },
+            { count: '35',  label: 'magazine articles', href: '/corpus/?type=magazine' },
+            { count: '7',   label: 'Substack posts', href: '/corpus/?type=substack' },
+            { count: '4',   label: 'X archive pages', href: '/corpus/?type=xpost' },
           ].map(({ count, label, href }) => (
             <div class="flex items-baseline gap-3">
-              <span class="font-mono text-2xl font-medium text-teal">{count}</span>
-              {href
-                ? <a href={href} class="text-muted text-sm hover:text-teal transition-colors">{label} →</a>
-                : <span class="text-muted text-sm">{label}</span>
-              }
+              <span class="font-mono text-xl font-medium text-teal/80 w-10 text-right">{count}</span>
+              <a href={href} class="text-muted text-sm hover:text-teal transition-colors">{label} →</a>
             </div>
           ))}
         </div>

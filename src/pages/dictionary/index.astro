@@ -25,7 +25,7 @@ function linkifySourceDois(source: string): string {
     const title = paperMap.get(slug);
     if (title) {
       const shortTitle = title.length > 60 ? title.slice(0, 57) + '…' : title;
-      return `<a href="/papers#${slug}" class="paper-link" title="${doiClean.replace(/"/g, '&quot;')}">${shortTitle}</a>${trailingPunct}`;
+      return `<a href="/corpus#${slug}" class="paper-link" title="${doiClean.replace(/"/g, '&quot;')}">${shortTitle}</a>${trailingPunct}`;
     }
     return doi;
   });

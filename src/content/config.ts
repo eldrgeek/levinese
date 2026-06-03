@@ -1,5 +1,13 @@
 import { defineCollection, z } from 'astro:content';
 
+const corpusBase = {
+  title: z.string(),
+  url: z.string().nullable().optional(),
+  date: z.string().nullable().optional(),
+  excerpt: z.string().nullable().optional(),
+  source_host: z.string().nullable().optional(),
+};
+
 const papers = defineCollection({
   type: 'data',
   schema: z.object({
@@ -16,6 +24,49 @@ const papers = defineCollection({
     pmc: z.string().nullable().optional(),
     reachable: z.boolean().nullable().optional().default(false),
     reachable_status: z.number().nullable().optional(),
+  }),
+});
+
+const videos = defineCollection({
+  type: 'data',
+  schema: z.object({
+    ...corpusBase,
+    platform: z.string().default('youtube'),
+    duration_sec: z.number().nullable().optional(),
+    transcript_chars: z.number().nullable().optional(),
+  }),
+});
+
+const blog = defineCollection({
+  type: 'data',
+  schema: z.object({
+    ...corpusBase,
+    site: z.string().nullable().optional(),
+  }),
+});
+
+const magazine = defineCollection({
+  type: 'data',
+  schema: z.object({
+    ...corpusBase,
+    publication: z.string().nullable().optional(),
+  }),
+});
+
+const substack = defineCollection({
+  type: 'data',
+  schema: z.object({
+    ...corpusBase,
+    substack_handle: z.string().nullable().optional(),
+  }),
+});
+
+const xposts = defineCollection({
+  type: 'data',
+  schema: z.object({
+    ...corpusBase,
+    handle: z.string().nullable().optional(),
+    thread_id: z.string().nullable().optional(),
   }),
 });
 
@@ -41,4 +92,4 @@ const terms = defineCollection({
   }),
 });
 
-export const collections = { papers, terms };
+export const collections = { papers, videos, blog, magazine, substack, xposts, terms };

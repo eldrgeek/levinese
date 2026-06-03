@@ -1,0 +1,659 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+// ── Load all collections ──────────────────────────────────────────────────
+const rawPapers    = await getCollection('papers');
+const rawVideos    = await getCollection('videos');
+const rawBlog      = await getCollection('blog');
+const rawMagazine  = await getCollection('magazine');
+const rawSubstack  = await getCollection('substack');
+const rawXposts    = await getCollection('xposts');
+const rawTerms     = await getCollection('terms');
+
+// ── Normalise each paper ─────────────────────────────────────────────────
+const papers = rawPapers.map(e => ({
+  slug: e.id.replace(/\.json$/, ''),
+  type: 'paper' as const,
+  title: e.data.title,
+  url: e.data.doi_url || e.data.link || null,
+  year: e.data.year ? parseInt(String(e.data.year)) || null : null,
+  date: e.data.year ? String(e.data.year) : null,
+  journal: e.data.journal ?? null,
+  authors: e.data.authors ?? [],
+  abstract: e.data.abstract ?? '',
+  doi: e.data.doi ?? null,
+  source_host: (() => {
+    const u = e.data.link || e.data.doi_url;
+    if (!u) return null;
+    try { return new URL(u).hostname.replace(/^www\./, ''); } catch { return null; }
+  })(),
+  excerpt: null as string | null,
+  reachable: e.data.reachable ?? false,
+}));
+
+// ── Normalise non-paper types ─────────────────────────────────────────────
+function yearFromDate(d: string | null | undefined): number | null {
+  if (!d) return null;
+  const m = d.match(/^(\d{4})/);
+  return m ? parseInt(m[1]) : null;
+}
+
+const videos = rawVideos.map(e => ({
+  slug: e.id.replace(/\.json$/, ''),
+  type: 'video' as const,
+  title: e.data.title,
+  url: e.data.url ?? null,
+  year: yearFromDate(e.data.date),
+  date: e.data.date ?? null,
+  duration_sec: e.data.duration_sec ?? null,
+  source_host: 'youtube.com',
+  excerpt: e.data.excerpt ?? null,
+  reachable: null,
+}));
+
+const blogPosts = rawBlog.map(e => ({
+  slug: e.id.replace(/\.json$/, ''),
+  type: 'blog' as const,
+  title: e.data.title,
+  url: e.data.url ?? null,
+  year: yearFromDate(e.data.date),
+  date: e.data.date ?? null,
+  source_host: e.data.source_host ?? 'thoughtforms.life',
+  excerpt: e.data.excerpt ?? null,
+  reachable: null,
+}));
+
+const magazineItems = rawMagazine.map(e => ({
+  slug: e.id.replace(/\.json$/, ''),
+  type: 'magazine' as const,
+  title: e.data.title,
+  url: e.data.url ?? null,
+  year: yearFromDate(e.data.date),
+  date: e.data.date ?? null,
+  source_host: e.data.source_host ?? null,
+  publication: (e.data as any).publication ?? null,
+  excerpt: e.data.excerpt ?? null,
+  reachable: null,
+}));
+
+const substackItems = rawSubstack.map(e => ({
+  slug: e.id.replace(/\.json$/, ''),
+  type: 'substack' as const,
+  title: e.data.title,
+  url: e.data.url ?? null,
+  year: yearFromDate(e.data.date),
+  date: e.data.date ?? null,
+  source_host: 'substack.com',
+  excerpt: e.data.excerpt ?? null,
+  reachable: null,
+}));
+
+const xpostItems = rawXposts.map(e => ({
+  slug: e.id.replace(/\.json$/, ''),
+  type: 'xpost' as const,
+  title: e.data.title,
+  url: e.data.url ?? null,
+  year: yearFromDate(e.data.date),
+  date: e.data.date ?? null,
+  source_host: e.data.source_host ?? 'thoughtforms.life',
+  excerpt: e.data.excerpt ?? null,
+  reachable: null,
+}));
+
+// ── Merge + default sort (papers by year desc, others by date desc) ───────
+const allItems = [
+  ...papers,
+  ...videos,
+  ...blogPosts,
+  ...magazineItems,
+  ...substackItems,
+  ...xpostItems,
+].sort((a, b) => (b.year ?? 0) - (a.year ?? 0));
+
+// ── Build citedByMap (DOI slugs + YouTube IDs) ────────────────────────────
+const paperSlugSet = new Set(papers.map(p => p.slug));
+
+// YouTube ID → video slug from our slug scheme
+const vidIdToSlug = new Map<string, string>();
+for (const v of rawVideos) {
+  const slug = v.id.replace(/\.json$/, '');
+  // Reverse the video_slug() function from the ingest script
+  let vidId: string;
+  if (slug.startsWith('yt-d')) {
+    vidId = '-' + slug.slice(4);
+  } else if (slug.startsWith('yt-')) {
+    vidId = slug.slice(3);
+  } else {
+    vidId = slug;
+  }
+  vidIdToSlug.set(vidId, slug);
+}
+
+function extractDois(source: string): string[] {
+  const re = /10\.\d{4,}\/[^\s,;)\]]+/g;
+  const out: string[] = [];
+  let m;
+  while ((m = re.exec(source)) !== null) {
+    out.push(m[0].replace(/[.,;)\]]+$/, ''));
+  }
+  return out;
+}
+
+function extractYoutubeIds(text: string): string[] {
+  const re = /youtube\.com\/watch\?v=([\w-]+)/g;
+  const out: string[] = [];
+  let m;
+  while ((m = re.exec(text)) !== null) out.push(m[1]);
+  return out;
+}
+
+const doiSlugRe = /^10-\d{4,}-.+/;
+const citedByMap = new Map<string, Array<{termSlug: string; termTitle: string}>>();
+
+for (const term of rawTerms) {
+  const termSlug = term.slug;
+  const termTitle = term.data.title;
+  const sourceText = term.data.source;
+  const provenance = term.data.provenance;
+
+  function addCite(targetSlug: string) {
+    if (!citedByMap.has(targetSlug)) citedByMap.set(targetSlug, []);
+    const existing = citedByMap.get(targetSlug)!;
+    if (!existing.some(e => e.termSlug === termSlug)) {
+      existing.push({ termSlug, termTitle });
+    }
+  }
+
+  // Provenance DOI slugs → papers
+  for (const prov of provenance) {
+    if (doiSlugRe.test(prov) && paperSlugSet.has(prov)) addCite(prov);
+  }
+
+  // Source text DOIs → papers
+  for (const doi of extractDois(sourceText)) {
+    const slug = doi.replace(/\./g, '-').replace(/\//g, '-');
+    if (paperSlugSet.has(slug)) addCite(slug);
+  }
+
+  // Source text YouTube IDs → videos
+  for (const vidId of extractYoutubeIds(sourceText)) {
+    const vSlug = vidIdToSlug.get(vidId);
+    if (vSlug) addCite(vSlug);
+  }
+}
+
+// ── Type counts ───────────────────────────────────────────────────────────
+const counts = {
+  all:      allItems.length,
+  paper:    papers.length,
+  video:    videos.length,
+  blog:     blogPosts.length,
+  magazine: magazineItems.length,
+  substack: substackItems.length,
+  xpost:    xpostItems.length,
+};
+
+const typeLabels: Record<string, string> = {
+  all:      `All ${counts.all}`,
+  paper:    `Papers ${counts.paper}`,
+  video:    `Videos ${counts.video}`,
+  blog:     `Blog ${counts.blog}`,
+  magazine: `Magazine ${counts.magazine}`,
+  substack: `Substack ${counts.substack}`,
+  xpost:    `X ${counts.xpost}`,
+};
+
+const typeBadge: Record<string, string> = {
+  paper:    'bg-blue-50 text-blue-700 border-blue-200',
+  video:    'bg-red-50 text-red-700 border-red-200',
+  blog:     'bg-stone-100 text-stone-600 border-stone-200',
+  magazine: 'bg-amber-50 text-amber-700 border-amber-200',
+  substack: 'bg-orange-50 text-orange-700 border-orange-200',
+  xpost:    'bg-sky-50 text-sky-700 border-sky-200',
+};
+---
+
+<Base
+  title="Corpus"
+  description={`Full Levin archive — ${counts.all} items including papers, video transcripts, blog posts, magazine articles, Substack, and X archives.`}
+>
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 pt-12 pb-16">
+
+    <!-- Header -->
+    <div class="mb-8">
+      <p class="text-sm font-medium text-teal uppercase tracking-widest mb-3">Archive</p>
+      <h1 class="font-serif text-4xl font-medium text-ink mb-3">Corpus</h1>
+      <p class="text-muted text-base max-w-2xl">
+        {counts.all} items from the Levin archive — papers, video transcripts, blog posts, magazine articles, Substack, and X archives.
+        Dictionary terms link to corpus items where sourced.
+      </p>
+      <div class="mt-3 flex flex-wrap gap-4 text-sm text-muted font-mono">
+        <span>{counts.paper} papers</span>
+        <span>{counts.video} videos</span>
+        <span>{counts.blog} blog</span>
+        <span>{counts.magazine} magazine</span>
+        <span>{counts.substack} substack</span>
+        <span>{counts.xpost} x</span>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <div id="controls" class="sticky top-14 z-40 bg-parchment/95 backdrop-blur-sm border-b border-border -mx-4 sm:-mx-6 px-4 sm:px-6 py-3 mb-6">
+
+      <!-- Type filter chips -->
+      <div class="flex flex-wrap gap-2 mb-3">
+        {Object.entries(typeLabels).map(([type, label]) => (
+          <button
+            class={`filter-chip px-3 py-1 rounded-full text-xs font-medium border transition-colors cursor-pointer ${type === 'all' ? 'chip-active bg-teal text-white border-teal' : 'bg-white text-muted border-border hover:border-teal/40 hover:text-ink'}`}
+            data-filter={type}
+          >{label}</button>
+        ))}
+      </div>
+
+      <div class="flex flex-col sm:flex-row gap-3">
+        <!-- Search -->
+        <div class="flex-1 relative">
+          <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+          </svg>
+          <input
+            id="search-input"
+            type="text"
+            placeholder="Search title, excerpt, authors…"
+            class="w-full pl-9 pr-4 py-2 bg-white border border-border rounded-md text-sm text-ink placeholder-muted focus:outline-none focus:ring-2 focus:ring-teal/30 focus:border-teal transition-colors"
+          />
+        </div>
+
+        <!-- Sort -->
+        <select id="sort-select" class="px-3 py-2 bg-white border border-border rounded-md text-sm text-ink focus:outline-none focus:ring-2 focus:ring-teal/30 appearance-none cursor-pointer pr-8">
+          <option value="date-desc">Date: newest first</option>
+          <option value="date-asc">Date: oldest first</option>
+          <option value="title-asc">Title A–Z</option>
+        </select>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-4 mt-2.5">
+        <!-- Year range -->
+        <div class="flex items-center gap-2 text-xs text-muted">
+          <span>Year:</span>
+          <input id="year-min" type="number" min="1990" max="2026" value="1990"
+            class="w-16 px-2 py-1 bg-white border border-border rounded text-xs text-ink focus:outline-none focus:ring-1 focus:ring-teal/30" />
+          <span>–</span>
+          <input id="year-max" type="number" min="1990" max="2026" value="2026"
+            class="w-16 px-2 py-1 bg-white border border-border rounded text-xs text-ink focus:outline-none focus:ring-1 focus:ring-teal/30" />
+        </div>
+
+        <!-- Result count -->
+        <span id="result-count" class="text-xs text-muted font-mono ml-auto"></span>
+      </div>
+    </div>
+
+    <!-- Corpus list -->
+    <div id="corpus-list" class="divide-y divide-border">
+      {allItems.map((item, idx) => {
+        const citedBy = citedByMap.get(item.slug) ?? [];
+
+        // For papers, get extra display fields
+        const isPaper = item.type === 'paper';
+        const p = isPaper ? (item as typeof papers[0]) : null;
+        const authorDisplay = p && p.authors.length > 0
+          ? p.authors.slice(0, 3).join(', ') + (p.authors.length > 3 ? ` +${p.authors.length - 3}` : '')
+          : null;
+
+        return (
+          <div
+            id={item.slug}
+            class="corpus-row py-4 group"
+            data-type={item.type}
+            data-title={item.title.toLowerCase()}
+            data-year={item.year ?? 0}
+            data-excerpt={(item.excerpt ?? '').toLowerCase().slice(0, 200)}
+            data-authors={isPaper && p ? (p.authors || []).join(' ').toLowerCase() : ''}
+            data-idx={idx}
+          >
+            <div class="flex items-start gap-3">
+              <!-- Expand toggle (papers with abstract only) -->
+              <button
+                class={`expand-btn shrink-0 mt-0.5 w-5 h-5 flex items-center justify-center text-muted/40 hover:text-muted transition-colors rounded ${isPaper && p?.abstract ? 'cursor-pointer' : 'cursor-default opacity-0'}`}
+                aria-label="Toggle abstract"
+                aria-expanded="false"
+                data-has-abstract={isPaper && p?.abstract ? '1' : '0'}
+              >
+                <svg class="chevron w-3.5 h-3.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/>
+                </svg>
+              </button>
+
+              <div class="flex-1 min-w-0">
+                <!-- Title row -->
+                <div class="flex items-start gap-2 flex-wrap">
+                  {item.url ? (
+                    <a
+                      href={item.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-ink font-medium text-sm hover:text-teal transition-colors leading-snug"
+                    >
+                      {item.title}
+                    </a>
+                  ) : (
+                    <span class="text-ink font-medium text-sm leading-snug">{item.title}</span>
+                  )}
+
+                  <!-- Type badge -->
+                  <span class={`shrink-0 text-xs font-medium border px-1.5 py-0.5 rounded mt-0.5 ${typeBadge[item.type]}`}>
+                    {item.type === 'xpost' ? 'x' : item.type}
+                  </span>
+
+                  {isPaper && p && !p.doi && p.source_host && (
+                    <span class="shrink-0 text-xs font-mono bg-surface border border-border text-muted px-1.5 py-0.5 rounded mt-0.5">{p.source_host}</span>
+                  )}
+                </div>
+
+                <!-- Meta row -->
+                <div class="flex flex-wrap items-baseline gap-x-3 gap-y-0.5 mt-1">
+                  {item.year && (
+                    <span class="text-xs font-mono text-muted/80">{item.year}</span>
+                  )}
+                  {isPaper && p?.journal && (
+                    <span class="text-xs text-muted italic truncate max-w-xs">{p.journal}</span>
+                  )}
+                  {authorDisplay && (
+                    <span class="text-xs text-muted/70">{authorDisplay}</span>
+                  )}
+                  {!isPaper && item.source_host && (
+                    <span class="text-xs text-muted/60 font-mono">{item.source_host}</span>
+                  )}
+                  {item.type === 'video' && (item as typeof videos[0]).duration_sec && (
+                    <span class="text-xs text-muted/60 font-mono">
+                      {Math.floor(((item as typeof videos[0]).duration_sec ?? 0) / 60)}m
+                    </span>
+                  )}
+                </div>
+
+                <!-- Excerpt (for non-papers) -->
+                {!isPaper && item.excerpt && (
+                  <p class="mt-1.5 text-xs text-muted leading-relaxed line-clamp-2">{item.excerpt}</p>
+                )}
+
+                <!-- Abstract (papers, hidden by default) -->
+                {isPaper && p?.abstract && (
+                  <div class="abstract-panel hidden mt-3 text-sm text-muted leading-relaxed border-l-2 border-border pl-3">
+                    {p.abstract}
+                  </div>
+                )}
+
+                <!-- Cited in -->
+                {citedBy.length > 0 && (
+                  <div class="cited-in mt-2 text-xs text-muted">
+                    <span class="font-medium">Cited in:</span>{' '}
+                    {citedBy.map((t, i) => (
+                      <Fragment>
+                        <a
+                          href={`/dictionary#term-${t.termSlug}`}
+                          class="text-teal hover:text-teal-mid underline underline-offset-2 decoration-teal/30"
+                        >{t.termTitle}</a>
+                        {i < citedBy.length - 1 ? ', ' : ''}
+                      </Fragment>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+
+    <!-- Empty state -->
+    <div id="empty-state" class="hidden text-center py-16 text-muted">
+      <p class="font-serif text-lg mb-2">No items match your search.</p>
+      <p class="text-sm">Try different keywords or clear your filters.</p>
+    </div>
+
+  </div>
+</Base>
+
+<script>
+  import MiniSearch from 'minisearch';
+  import papersData from '../../data/papers.json';
+  import corpusNonPapers from '../../data/corpus-non-papers.json';
+
+  // Merge search documents from both sources
+  type CorpusDoc = { id: string; type: string; title: string; excerpt: string; authors: string };
+
+  const docs: CorpusDoc[] = [
+    ...(papersData as Array<{slug: string; title?: string; abstract?: string; authors?: string[]; journal?: string}>).map(p => ({
+      id: p.slug,
+      type: 'paper',
+      title: p.title || '',
+      excerpt: (p.abstract || '') + ' ' + (p.journal || ''),
+      authors: (p.authors || []).join(' '),
+    })),
+    ...(corpusNonPapers as Array<{id: string; type: string; title: string; excerpt?: string}>).map(r => ({
+      id: r.id,
+      type: r.type,
+      title: r.title || '',
+      excerpt: r.excerpt || '',
+      authors: '',
+    })),
+  ];
+
+  const ms = new MiniSearch<CorpusDoc>({
+    idField: 'id',
+    fields: ['title', 'excerpt', 'authors'],
+    storeFields: ['id', 'type'],
+    searchOptions: {
+      boost: { title: 3, authors: 1.5, excerpt: 0.8 },
+      fuzzy: 0.2,
+      prefix: true,
+    },
+  });
+  ms.addAll(docs);
+
+  // DOM refs
+  const searchInput  = document.getElementById('search-input') as HTMLInputElement;
+  const sortSelect   = document.getElementById('sort-select') as HTMLSelectElement;
+  const yearMin      = document.getElementById('year-min') as HTMLInputElement;
+  const yearMax      = document.getElementById('year-max') as HTMLInputElement;
+  const corpusList   = document.getElementById('corpus-list')!;
+  const emptyState   = document.getElementById('empty-state')!;
+  const resultCount  = document.getElementById('result-count')!;
+  const filterChips  = Array.from(document.querySelectorAll('.filter-chip')) as HTMLButtonElement[];
+  const rows         = Array.from(document.querySelectorAll('.corpus-row')) as HTMLElement[];
+
+  let activeType: string = 'all';
+  let searchResults: Set<string> | null = null;
+
+  // Filter chip clicks
+  filterChips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      activeType = chip.dataset.filter ?? 'all';
+      filterChips.forEach(c => {
+        const active = c.dataset.filter === activeType;
+        c.classList.toggle('chip-active', active);
+        c.classList.toggle('bg-teal', active);
+        c.classList.toggle('text-white', active);
+        c.classList.toggle('border-teal', active);
+        c.classList.toggle('bg-white', !active);
+        c.classList.toggle('text-muted', !active);
+        c.classList.toggle('border-border', !active);
+      });
+      applyFilters();
+    });
+  });
+
+  function applyFilters() {
+    const query = searchInput.value.trim();
+    const sortMode = sortSelect.value;
+    const minY = parseInt(yearMin.value) || 0;
+    const maxY = parseInt(yearMax.value) || 9999;
+
+    if (query.length >= 2) {
+      const results = ms.search(query);
+      searchResults = new Set(results.map(r => r.id as string));
+    } else {
+      searchResults = null;
+    }
+
+    let visible = rows.filter(row => {
+      if (activeType !== 'all' && row.dataset.type !== activeType) return false;
+      if (searchResults !== null && !searchResults.has(row.id)) return false;
+      const year = parseInt(row.dataset.year || '0');
+      if (year > 0 && (year < minY || year > maxY)) return false;
+      return true;
+    });
+
+    // Sort
+    visible = visible.slice().sort((a, b) => {
+      if (sortMode === 'date-desc') return parseInt(b.dataset.year || '0') - parseInt(a.dataset.year || '0');
+      if (sortMode === 'date-asc')  return parseInt(a.dataset.year || '0') - parseInt(b.dataset.year || '0');
+      return (a.dataset.title || '').localeCompare(b.dataset.title || '');
+    });
+
+    // Show/hide
+    const visibleSet = new Set(visible);
+    rows.forEach(row => { row.style.display = visibleSet.has(row) ? '' : 'none'; });
+    visible.forEach(row => corpusList.appendChild(row));
+
+    const total = docs.length;
+    resultCount.textContent = visible.length < total
+      ? `Showing ${visible.length} of ${total}`
+      : `${total} items`;
+
+    emptyState.classList.toggle('hidden', visible.length > 0);
+  }
+
+  let searchTimer: ReturnType<typeof setTimeout>;
+  searchInput.addEventListener('input', () => {
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(applyFilters, 150);
+  });
+  sortSelect.addEventListener('change', applyFilters);
+  yearMin.addEventListener('change', applyFilters);
+  yearMax.addEventListener('change', applyFilters);
+
+  // Expand / collapse abstracts (papers)
+  document.addEventListener('click', e => {
+    const btn = (e.target as Element).closest('.expand-btn') as HTMLElement | null;
+    if (!btn || btn.dataset.hasAbstract !== '1') return;
+    const row = btn.closest('.corpus-row')!;
+    const panel = row.querySelector('.abstract-panel') as HTMLElement | null;
+    const chevron = btn.querySelector('.chevron') as SVGElement | null;
+    if (!panel) return;
+    const isOpen = !panel.classList.contains('hidden');
+    panel.classList.toggle('hidden', isOpen);
+    chevron?.classList.toggle('rotate-90', !isOpen);
+    btn.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+  });
+
+  document.addEventListener('click', e => {
+    const target = e.target as Element;
+    if (target.closest('a') || target.closest('.expand-btn')) return;
+    const row = target.closest('.corpus-row') as HTMLElement | null;
+    if (!row) return;
+    const panel = row.querySelector('.abstract-panel') as HTMLElement | null;
+    const btn = row.querySelector('.expand-btn') as HTMLElement | null;
+    if (!panel || !btn || btn.dataset.hasAbstract !== '1') return;
+    const isOpen = !panel.classList.contains('hidden');
+    panel.classList.toggle('hidden', isOpen);
+    const chevron = btn.querySelector('.chevron') as SVGElement | null;
+    chevron?.classList.toggle('rotate-90', !isOpen);
+    btn.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+  });
+
+  // Hash deep-link
+  function navigateToHash(hash: string) {
+    if (!hash) return;
+    const slug = hash.startsWith('#') ? hash.slice(1) : hash;
+    const row = document.getElementById(slug);
+    if (!row) return;
+
+    // If type-filtered away, reset to all
+    const rowType = row.dataset.type;
+    if (rowType && activeType !== 'all' && activeType !== rowType) {
+      const allChip = filterChips.find(c => c.dataset.filter === 'all');
+      allChip?.click();
+    }
+
+    setTimeout(() => {
+      row.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      const controlsEl = document.getElementById('controls');
+      const offset = 56 + (controlsEl?.offsetHeight ?? 100) + 16;
+      setTimeout(() => window.scrollBy({ top: -offset, behavior: 'smooth' }), 50);
+
+      const panel = row.querySelector('.abstract-panel') as HTMLElement | null;
+      const btn = row.querySelector('.expand-btn') as HTMLElement | null;
+      if (panel && btn && btn.dataset.hasAbstract === '1') {
+        panel.classList.remove('hidden');
+        btn.querySelector('.chevron')?.classList.add('rotate-90');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+
+      row.classList.add('corpus-highlight');
+      setTimeout(() => row.classList.remove('corpus-highlight'), 1800);
+    }, 100);
+  }
+
+  // Pre-filter from ?type= query param (used by homepage links)
+  const typeParam = new URLSearchParams(window.location.search).get('type');
+  if (typeParam && typeParam !== 'all') {
+    const chip = filterChips.find(c => c.dataset.filter === typeParam);
+    if (chip) {
+      activeType = typeParam;
+      filterChips.forEach(c => {
+        const active = c.dataset.filter === typeParam;
+        c.classList.toggle('chip-active', active);
+        c.classList.toggle('bg-teal', active);
+        c.classList.toggle('text-white', active);
+        c.classList.toggle('border-teal', active);
+        c.classList.toggle('bg-white', !active);
+        c.classList.toggle('text-muted', !active);
+        c.classList.toggle('border-border', !active);
+      });
+    }
+  }
+
+  applyFilters();
+  if (window.location.hash) navigateToHash(window.location.hash);
+  window.addEventListener('hashchange', () => navigateToHash(window.location.hash));
+</script>
+
+<style>
+  select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236b6878' stroke-width='2.5'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+  }
+
+  .corpus-row {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 80px;
+    scroll-margin-top: 9rem;
+    transition: background-color 0.1s;
+  }
+
+  .corpus-row:hover { background-color: rgba(12, 107, 90, 0.02); }
+
+  .abstract-panel { animation: slideDown 0.15s ease-out; }
+
+  @keyframes slideDown {
+    from { opacity: 0; transform: translateY(-4px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .corpus-highlight { animation: corpusFlash 1.5s ease-out forwards; }
+
+  @keyframes corpusFlash {
+    0%   { background-color: rgba(12, 107, 90, 0.12); }
+    100% { background-color: transparent; }
+  }
+
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+</style>

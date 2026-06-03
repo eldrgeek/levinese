@@ -5,6 +5,24 @@
 [build.environment]
   NODE_VERSION = "20"
 
+# /papers → /corpus (301 — canonical URL is /corpus now)
+# Anchors (#slug) pass through automatically.
+[[redirects]]
+  from = "/papers"
+  to = "/corpus"
+  status = 301
+
+[[redirects]]
+  from = "/papers/"
+  to = "/corpus/"
+  status = 301
+
+[[redirects]]
+  from = "/papers/*"
+  to = "/corpus/:splat"
+  status = 301
+
+# SPA fallback
 [[redirects]]
   from = "/*"
   to = "/index.html"

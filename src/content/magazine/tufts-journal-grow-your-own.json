@@ -1,0 +1,1 @@
+{"title": "features", "url": "https://tuftsjournal.tufts.edu/2009/01_1/features/01/", "date": "2009-01-14", "excerpt": "0&&parent.frames.length) {\nd=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}\nif(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i", "source_host": "tuftsjournal.tufts.edu", "publication": "tufts-journal"}
