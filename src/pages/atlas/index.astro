@@ -26,7 +26,7 @@ const atlasData = atlasRaw as any;
       border:1px solid rgba(255,255,255,0.08);border-radius:5px;
       font-family:'Inter',sans-serif;font-size:10px;color:rgba(212,207,198,0.55);
       line-height:1.6;pointer-events:none;
-    ">Drag: rotate &nbsp;·&nbsp; Two-finger / right-drag: pan &nbsp;·&nbsp; Scroll / pinch: zoom &nbsp;·&nbsp; Click: open</div>
+    ">Drag: rotate &nbsp;·&nbsp; Two-finger / right-drag: pan &nbsp;·&nbsp; Scroll / pinch: zoom &nbsp;·&nbsp; Hover / tap a dot, then "Open"</div>
 
     <!-- Top bar -->
     <div id="top-bar" style="
@@ -133,6 +133,25 @@ const atlasData = atlasRaw as any;
       background: rgba(93,190,176,0.2);
       border-color: rgba(93,190,176,0.5);
       color: #5dbeb0;
+    }
+    /* The explicit navigation affordance inside the dot tooltip. */
+    .atlas-open-link {
+      display: inline-block;
+      margin-top: 2px;
+      padding: 3px 9px;
+      background: rgba(93,190,176,0.18);
+      border: 1px solid rgba(93,190,176,0.5);
+      border-radius: 4px;
+      color: #7fd3c6;
+      font-size: 11px;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s;
+    }
+    .atlas-open-link:hover {
+      background: rgba(93,190,176,0.32);
+      color: #aee9df;
     }
   </style>
 
@@ -356,53 +375,105 @@ const atlasData = atlasRaw as any;
         });
       }
 
-      // ── Raycaster ──────────────────────────────────────────────────────────────
+      // ── Raycaster + tooltip interaction ─────────────────────────────────────────
+      // Navigation NEVER happens on a bare canvas click or drag. Hover (desktop)
+      // or tap (mobile) on a dot opens an interactive text box; the only way to
+      // reach the reference is the explicit "Open …" link inside that box.
       const raycaster = new THREE.Raycaster();
-      raycaster.params.Points.threshold = 0.25;
+      raycaster.params.Points.threshold = 0.22;
       const mouse = new THREE.Vector2();
 
-      canvas.addEventListener('mousemove', (e) => {
-        const rect = canvas.getBoundingClientRect();
-        mouse.x =  ((e.clientX - rect.left) / rect.width)  * 2 - 1;
-        mouse.y = -((e.clientY - rect.top)  / rect.height) * 2 + 1;
+      let pinned = false;          // box pinned open by a tap/click on a dot
+      let hideTimer = null;
 
+      function clearHide() { if (hideTimer) { clearTimeout(hideTimer); hideTimer = null; } }
+      function scheduleHide() {
+        clearHide();
+        hideTimer = setTimeout(() => { if (!pinned) hideTooltip(); }, 320);
+      }
+      function hideTooltip() {
+        tooltip.style.display = 'none';
+        tooltip.style.pointerEvents = 'none';
+        hoveredIdx = -1;
+        pinned = false;
+        canvas.style.cursor = '';
+      }
+
+      // Normalise legacy /papers# urls to /corpus# so the landing entry gets the
+      // scroll-to-center + highlight treatment on the corpus page.
+      function entryUrl(p) {
+        return (p.url || '').replace('/papers#', '/corpus#');
+      }
+
+      function pickAt(clientX, clientY) {
+        const rect = canvas.getBoundingClientRect();
+        mouse.x =  ((clientX - rect.left) / rect.width)  * 2 - 1;
+        mouse.y = -((clientY - rect.top)  / rect.height) * 2 + 1;
         raycaster.setFromCamera(mouse, camera);
         const hits = raycaster.intersectObject(pointsMesh);
-        const hit = hits.length > 0 ? hits[0] : null;
-        const idx = hit ? hit.index : -1;
+        // ignore points filtered out (opacity 0)
+        for (const h of hits) {
+          if (opAttr.array[h.index] > 0) return h.index;
+        }
+        return -1;
+      }
+
+      canvas.addEventListener('mousemove', (e) => {
+        if (pinned) return;        // leave the pinned box alone
+        const idx = pickAt(e.clientX, e.clientY);
 
         if (idx !== hoveredIdx) {
           hoveredIdx = idx;
           if (idx >= 0) {
             canvas.style.cursor = 'pointer';
+            clearHide();
             showTooltip(e.clientX, e.clientY, points[idx]);
           } else {
             canvas.style.cursor = '';
-            tooltip.style.display = 'none';
+            scheduleHide();        // grace period so the user can reach the box
           }
         } else if (idx >= 0) {
           positionTooltip(e.clientX, e.clientY);
         }
       });
 
-      canvas.addEventListener('mouseleave', () => {
-        hoveredIdx = -1;
-        tooltip.style.display = 'none';
-        canvas.style.cursor = '';
-      });
+      canvas.addEventListener('mouseleave', () => { if (!pinned) scheduleHide(); });
 
-      canvas.addEventListener('click', () => {
-        if (hoveredIdx >= 0) {
-          window.location.href = points[hoveredIdx].url;
+      // Keep the box alive while the pointer is over it (so the link is reachable).
+      tooltip.addEventListener('mouseenter', clearHide);
+      tooltip.addEventListener('mouseleave', () => { if (!pinned) scheduleHide(); });
+
+      // ── Click vs drag ────────────────────────────────────────────────────────────
+      // A drag is camera-only (OrbitControls) and must never select or navigate.
+      let downX = 0, downY = 0, dragged = false;
+      canvas.addEventListener('pointerdown', (e) => { downX = e.clientX; downY = e.clientY; dragged = false; });
+      canvas.addEventListener('pointermove', (e) => {
+        if (Math.abs(e.clientX - downX) > 5 || Math.abs(e.clientY - downY) > 5) dragged = true;
+      });
+      canvas.addEventListener('click', (e) => {
+        if (dragged) return;       // it was an orbit/pan — do nothing
+        const idx = pickAt(e.clientX, e.clientY);
+        if (idx >= 0) {
+          // Tap on a dot → pin an interactive box (the definitive "Open" link lives inside)
+          hoveredIdx = idx;
+          pinned = true;
+          clearHide();
+          showTooltip(e.clientX, e.clientY, points[idx]);
+        } else {
+          hideTooltip();           // tap on empty space dismisses
         }
       });
 
       function showTooltip(cx, cy, p) {
-        let html = `<div style="font-weight:600;color:${p.type==='term'?'#e8a04a':'#5dbeb0'};margin-bottom:3px;">${escHtml(p.title)}</div>`;
+        const accent = p.type === 'term' ? '#e8a04a' : '#5dbeb0';
+        let html = `<div style="font-weight:600;color:${accent};margin-bottom:3px;">${escHtml(p.title)}</div>`;
         if (p.subtitle) html += `<div style="opacity:0.75;margin-bottom:3px;">${escHtml(p.subtitle)}</div>`;
-        if (p.abstract_short) html += `<div style="opacity:0.6;font-size:11px;">${escHtml(p.abstract_short)}</div>`;
+        if (p.abstract_short) html += `<div style="opacity:0.6;font-size:11px;margin-bottom:6px;">${escHtml(p.abstract_short)}</div>`;
+        const label = p.type === 'term' ? 'Open in dictionary' : 'Open in corpus';
+        html += `<a class="atlas-open-link" href="${escHtml(entryUrl(p))}">${label} →</a>`;
         tooltip.innerHTML = html;
         tooltip.style.display = 'block';
+        tooltip.style.pointerEvents = 'auto';   // interactive so the link is clickable
         positionTooltip(cx, cy);
       }
 

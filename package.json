@@ -6,12 +6,18 @@
   "scripts": {
     "dev": "astro dev",
     "build": "node scripts/aggregate-content.mjs && astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "test": "npm run build && playwright test",
+    "test:ui": "playwright test --ui",
+    "test:headed": "playwright test --headed"
   },
   "dependencies": {
     "@astrojs/tailwind": "^5.1.3",
     "astro": "^4.16.0",
     "minisearch": "^7.2.0",
     "tailwindcss": "^3.4.14"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.60.0"
   }
 }

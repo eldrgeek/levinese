@@ -1,0 +1,27 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+<Base
+  title="Transcript — Coming Soon"
+  description="This transcript hasn't been published yet. Transcripts for the video corpus are being backfilled."
+>
+  <div class="max-w-2xl mx-auto px-4 sm:px-6 pt-24 pb-32 text-center">
+    <p class="text-sm font-medium text-teal uppercase tracking-widest mb-4">Transcript</p>
+    <h1 class="font-serif text-4xl font-medium text-ink mb-5">Coming soon</h1>
+    <p class="text-muted text-base leading-relaxed mb-8">
+      A written transcript for this video hasn't been published yet. We're
+      backfilling transcripts across the video corpus — check back soon, or
+      watch the clip directly in the meantime.
+    </p>
+    <div class="flex items-center justify-center gap-3">
+      <a
+        href="/corpus/?type=video"
+        class="inline-flex items-center gap-2 bg-teal text-white px-5 py-2.5 rounded-md text-sm font-medium hover:bg-teal-mid transition-colors"
+      >← Back to video corpus</a>
+      <a
+        href="/corpus/"
+        class="inline-flex items-center gap-2 bg-white border border-border text-ink px-5 py-2.5 rounded-md text-sm font-medium hover:bg-surface transition-colors"
+      >Browse all corpus</a>
+    </div>
+  </div>
+</Base>

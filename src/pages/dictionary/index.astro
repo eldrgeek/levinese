@@ -15,7 +15,13 @@ for (const p of rawPapers) {
 // DOI slug pattern: starts with "10-" followed by digits, then more segments
 const doiSlugRe = /^10-\d{4,}-.+/;
 
-// DOI in free text: 10.XXXX/... — find and replace with links
+function escAttr(s: string): string {
+  return s.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
+}
+
+// DOI in free text: 10.XXXX/... — link BOTH the paper title and the DOI itself.
+// The title cross-links to the corpus entry (Wikipedia-style, with scroll+highlight);
+// the DOI is rendered as a separate clickable link too, so both are navigable.
 function linkifySourceDois(source: string): string {
   // Match DOIs in source text, stop at whitespace, comma, semicolon, close-paren, close-bracket
   return source.replace(/10\.\d{4,}\/[^\s,;)\]]+/g, (doi) => {
@@ -25,7 +31,9 @@ function linkifySourceDois(source: string): string {
     const title = paperMap.get(slug);
     if (title) {
       const shortTitle = title.length > 60 ? title.slice(0, 57) + '…' : title;
-      return `<a href="/corpus#${slug}" class="paper-link" title="${doiClean.replace(/"/g, '&quot;')}">${shortTitle}</a>${trailingPunct}`;
+      const titleLink = `<a href="/corpus#${slug}" class="paper-link" title="${escAttr(title)}">${escAttr(shortTitle)}</a>`;
+      const doiLink = `<a href="/corpus#${slug}" class="paper-doi-link" title="${escAttr(doiClean)}">${escAttr(doiClean)}</a>`;
+      return `${titleLink} <span class="paper-doi">(${doiLink})</span>${trailingPunct}`;
     }
     return doi;
   });
@@ -169,7 +177,8 @@ const stripHtml = (html: string) => html.replace(/<[^>]*>/g, ' ');
                         .filter(p => doiSlugRe.test(p) && paperMap.has(p))
                         .map((p, i, arr) => (
                           <Fragment>
-                            <a href={`/papers#${p}`} class="paper-link">{paperMap.get(p)}</a>
+                            <a href={`/corpus#${p}`} class="paper-link">{paperMap.get(p)}</a>{' '}
+                            <span class="paper-doi">(<a href={`/corpus#${p}`} class="paper-doi-link">DOI</a>)</span>
                             {i < arr.length - 1 ? '; ' : ''}
                           </Fragment>
                         ))
@@ -290,4 +299,18 @@ const stripHtml = (html: string) => html.replace(/<[^>]*>/g, ' ');
     color: var(--color-teal-mid, #0a5a4a);
     text-decoration-color: color-mix(in srgb, currentColor 60%, transparent);
   }
+  /* DOI link — smaller, muted, monospace; distinct from the title link but still clickable. */
+  .paper-doi {
+    font-size: 0.85em;
+    color: var(--color-muted, #6b6878);
+  }
+  .paper-doi-link {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    color: var(--color-teal, #0c6b5a);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-color: color-mix(in srgb, currentColor 30%, transparent);
+    word-break: break-all;
+  }
+  .paper-doi-link:hover { color: var(--color-teal-mid, #0a5a4a); }
 </style>

@@ -108,7 +108,7 @@ def read_papers():
             "journal": journal,
             "abstract_short": abstract_short,
             "embed_text": embed_text,
-            "url": f"/papers#{slug}",
+            "url": f"/corpus#{slug}",
         })
     return papers
 

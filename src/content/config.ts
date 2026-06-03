@@ -34,6 +34,11 @@ const videos = defineCollection({
     platform: z.string().default('youtube'),
     duration_sec: z.number().nullable().optional(),
     transcript_chars: z.number().nullable().optional(),
+    // Transcript backfill: flip `has_transcript` to true and (optionally) set
+    // `transcript_url` once a transcript lands. Until then the corpus shows a
+    // transcript link that points to the /transcript-coming-soon placeholder.
+    has_transcript: z.boolean().optional().default(false),
+    transcript_url: z.string().nullable().optional(),
   }),
 });
 

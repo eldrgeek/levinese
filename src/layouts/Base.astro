@@ -59,8 +59,16 @@ const { title, description = "A gift to Michael Levin — dictionary, corpus bro
       </p>
     </div>
   </footer>
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  <script>
+  <!--
+    Netlify Identity widget (only used for the Decap CMS admin login flow).
+    These MUST be `is:inline` so Astro does NOT fold them into each page's
+    bundled ES module graph. The widget is served cross-origin with no
+    Access-Control-Allow-Origin header; when imported as a module dependency
+    the browser blocks it on CORS, which aborts the entire page module and
+    silently kills corpus search, dictionary filter, and sort site-wide.
+  -->
+  <script is:inline src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script is:inline>
     if (window.netlifyIdentity) {
       window.netlifyIdentity.on('init', user => {
         if (!user) {

@@ -39,18 +39,30 @@ function yearFromDate(d: string | null | undefined): number | null {
   return m ? parseInt(m[1]) : null;
 }
 
-const videos = rawVideos.map(e => ({
-  slug: e.id.replace(/\.json$/, ''),
-  type: 'video' as const,
-  title: e.data.title,
-  url: e.data.url ?? null,
-  year: yearFromDate(e.data.date),
-  date: e.data.date ?? null,
-  duration_sec: e.data.duration_sec ?? null,
-  source_host: 'youtube.com',
-  excerpt: e.data.excerpt ?? null,
-  reachable: null,
-}));
+const videos = rawVideos.map(e => {
+  const slug = e.id.replace(/\.json$/, '');
+  const hasTranscript = e.data.has_transcript === true
+    || (typeof e.data.transcript_chars === 'number' && e.data.transcript_chars > 0);
+  return {
+    slug,
+    type: 'video' as const,
+    title: e.data.title,
+    url: e.data.url ?? null,
+    year: yearFromDate(e.data.date),
+    date: e.data.date ?? null,
+    duration_sec: e.data.duration_sec ?? null,
+    source_host: 'youtube.com',
+    excerpt: e.data.excerpt ?? null,
+    reachable: null,
+    has_transcript: hasTranscript,
+    // Where the transcript link points. When a transcript exists, prefer an
+    // explicit transcript_url, else the /transcripts/<slug>/ convention.
+    // Until backfilled, it points to the shared "coming soon" placeholder.
+    transcript_url: hasTranscript
+      ? (e.data.transcript_url || `/transcripts/${slug}/`)
+      : '/transcript-coming-soon/',
+  };
+});
 
 const blogPosts = rawBlog.map(e => ({
   slug: e.id.replace(/\.json$/, ''),
@@ -377,6 +389,28 @@ const typeBadge: Record<string, string> = {
                   <p class="mt-1.5 text-xs text-muted leading-relaxed line-clamp-2">{item.excerpt}</p>
                 )}
 
+                <!-- Video dual-links: the clip itself + a transcript (or "coming soon") -->
+                {item.type === 'video' && (() => {
+                  const v = item as typeof videos[0];
+                  return (
+                    <div class="mt-2 flex flex-wrap items-center gap-3 text-xs">
+                      {v.url && (
+                        <a
+                          href={v.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-flex items-center gap-1 text-teal hover:text-teal-mid font-medium underline underline-offset-2 decoration-teal/30"
+                        >▶ Watch video<span aria-hidden="true">↗</span></a>
+                      )}
+                      <a
+                        href={v.transcript_url}
+                        class={`inline-flex items-center gap-1 underline underline-offset-2 ${v.has_transcript ? 'text-teal hover:text-teal-mid decoration-teal/30 font-medium' : 'text-muted hover:text-ink decoration-muted/30'}`}
+                        data-transcript={v.has_transcript ? 'ready' : 'coming-soon'}
+                      >📄 Transcript{v.has_transcript ? '' : ' (coming soon)'}<span aria-hidden="true">→</span></a>
+                    </div>
+                  );
+                })()}
+
                 <!-- Abstract (papers, hidden by default) -->
                 {isPaper && p?.abstract && (
                   <div class="abstract-panel hidden mt-3 text-sm text-muted leading-relaxed border-l-2 border-border pl-3">
@@ -450,7 +484,16 @@ const typeBadge: Record<string, string> = {
       prefix: true,
     },
   });
-  ms.addAll(docs);
+  // Dedupe by id before indexing — MiniSearch.addAll throws on a duplicate ID,
+  // which would abort this entire script (killing search, filter, and sort).
+  // The corpus data contains a few repeated ids (e.g. tweet-archive pages).
+  const seenDocIds = new Set<string>();
+  const uniqueDocs = docs.filter(d => {
+    if (seenDocIds.has(d.id)) return false;
+    seenDocIds.add(d.id);
+    return true;
+  });
+  ms.addAll(uniqueDocs);
 
   // DOM refs
   const searchInput  = document.getElementById('search-input') as HTMLInputElement;
@@ -517,7 +560,7 @@ const typeBadge: Record<string, string> = {
     rows.forEach(row => { row.style.display = visibleSet.has(row) ? '' : 'none'; });
     visible.forEach(row => corpusList.appendChild(row));
 
-    const total = docs.length;
+    const total = rows.length;
     resultCount.textContent = visible.length < total
       ? `Showing ${visible.length} of ${total}`
       : `${total} items`;
@@ -578,11 +621,8 @@ const typeBadge: Record<string, string> = {
     }
 
     setTimeout(() => {
-      row.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      const controlsEl = document.getElementById('controls');
-      const offset = 56 + (controlsEl?.offsetHeight ?? 100) + 16;
-      setTimeout(() => window.scrollBy({ top: -offset, behavior: 'smooth' }), 50);
-
+      // Expand the abstract first (if any) so the row has its final height
+      // before we center it — otherwise centering math is off.
       const panel = row.querySelector('.abstract-panel') as HTMLElement | null;
       const btn = row.querySelector('.expand-btn') as HTMLElement | null;
       if (panel && btn && btn.dataset.hasAbstract === '1') {
@@ -591,9 +631,33 @@ const typeBadge: Record<string, string> = {
         btn.setAttribute('aria-expanded', 'true');
       }
 
+      // Center the linked entry in the viewport (Wikipedia-style), but never let
+      // the row top slide under the sticky controls bar.
+      // content-visibility:auto causes off-screen rows to report zero rect; force
+      // the element visible before measuring so we get the true position + height.
+      const navH = 56;
+      const controlsEl = document.getElementById('controls');
+      const headerBottom = navH + (controlsEl?.offsetHeight ?? 133);
+      const vh = window.innerHeight;
+      row.style.contentVisibility = 'visible';
+      void row.offsetHeight;  // force synchronous layout
+      const r = row.getBoundingClientRect();
+      row.style.contentVisibility = '';  // restore
+      const rowH = Math.max(r.height, 40);
+      // Ideal top: centered in viewport. Clamped so top never hides under sticky bar.
+      const idealTop = (vh - rowH) / 2;
+      const safeTop = Math.max(idealTop, headerBottom + 8);
+      const scrollTarget = window.scrollY + r.top - safeTop;
+      const clampedTarget = Math.max(0, Math.min(scrollTarget, document.body.scrollHeight - vh));
+      window.scrollTo({ top: clampedTarget, behavior: 'smooth' });
+
+      // Temporary fading highlight on the targeted reference.
+      row.classList.remove('corpus-highlight');
+      // force reflow so the animation restarts even on repeat navigations
+      void row.offsetWidth;
       row.classList.add('corpus-highlight');
-      setTimeout(() => row.classList.remove('corpus-highlight'), 1800);
-    }, 100);
+      setTimeout(() => row.classList.remove('corpus-highlight'), 2400);
+    }, 120);
   }
 
   // Pre-filter from ?type= query param (used by homepage links)
@@ -643,11 +707,17 @@ const typeBadge: Record<string, string> = {
     to   { opacity: 1; transform: translateY(0); }
   }
 
-  .corpus-highlight { animation: corpusFlash 1.5s ease-out forwards; }
+  /* Wikipedia-style targeted-reference highlight that fades out. */
+  .corpus-highlight {
+    animation: corpusFlash 2.4s ease-out forwards;
+    border-radius: 6px;
+    box-shadow: 0 0 0 3px rgba(232, 160, 74, 0.0);
+  }
 
   @keyframes corpusFlash {
-    0%   { background-color: rgba(12, 107, 90, 0.12); }
-    100% { background-color: transparent; }
+    0%   { background-color: rgba(232, 197, 122, 0.55); box-shadow: 0 0 0 4px rgba(232, 197, 122, 0.45); }
+    15%  { background-color: rgba(232, 197, 122, 0.55); box-shadow: 0 0 0 4px rgba(232, 197, 122, 0.45); }
+    100% { background-color: transparent; box-shadow: 0 0 0 4px rgba(232, 197, 122, 0); }
   }
 
   .line-clamp-2 {
