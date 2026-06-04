@@ -1,0 +1,627 @@
+/* SOMA Guide Widget — portable floating assistant */
+
+/* ── Widget root ── */
+#soma-guide {
+  position: fixed;
+  z-index: 9999;
+  bottom: 28px;
+  right: 28px;
+  font-family: 'Georgia', serif;
+  font-size: 15px;
+  color: #060e18;
+  user-select: none;
+}
+
+/* ── FAB (minimized state) ── */
+.sg-fab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #c9a84c;
+  color: #060e18;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 20px 12px 14px;
+  font-family: inherit;
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.22);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.sg-fab:hover { transform: translateY(-2px); box-shadow: 0 6px 24px rgba(0,0,0,0.28); }
+.sg-fab-avatar { font-size: 1.2rem; line-height: 1; }
+.sg-fab-name { line-height: 1; }
+
+/* ── Panel ── */
+.sg-panel {
+  display: none;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.93);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 14px;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.18), 0 2px 8px rgba(0,0,0,0.08);
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+/* ── Mode: minimized ── */
+.sg--min .sg-panel { display: none; }
+.sg--min .sg-fab   { display: flex; }
+
+/* ── Mode: idle ── */
+.sg--idle .sg-fab  { display: none; }
+.sg--idle .sg-panel {
+  display: flex;
+  width: 340px;
+  max-height: min(520px, 85vh);
+}
+
+/* ── Mode: text ── */
+.sg--text .sg-fab  { display: none; }
+.sg--text .sg-panel {
+  display: flex;
+  width: 360px;
+  height: 480px;
+  resize: both;
+  overflow: auto;
+}
+
+/* ── Mode: walkthrough ── */
+.sg--walkthrough .sg-fab  { display: none; }
+.sg--walkthrough .sg-panel {
+  display: flex;
+  width: 340px;
+  max-height: min(520px, 85vh);
+}
+
+/* ── Mode: voice ── */
+.sg--voice .sg-fab  { display: none; }
+.sg--voice .sg-panel {
+  display: flex;
+  width: 220px;
+}
+
+/* ── Header ── */
+.sg-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 14px;
+  background: #060e18;
+  color: #fff;
+  cursor: grab;
+  border-radius: 14px 14px 0 0;
+}
+.sg-header:active { cursor: grabbing; }
+
+.sg-persona {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.sg-persona-avatar { font-size: 1.1rem; }
+.sg-persona-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #c9a84c;
+}
+
+.sg-header-btns {
+  display: flex;
+  gap: 4px;
+}
+.sg-header-btns button {
+  background: none;
+  border: none;
+  color: rgba(255,255,255,0.6);
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 6px;
+  line-height: 1;
+  transition: color 0.15s, background 0.15s;
+}
+.sg-header-btns button:hover {
+  color: #fff;
+  background: rgba(255,255,255,0.12);
+}
+
+/* Close (×) button — more prominent than the minimize (−) */
+.sg-btn-close {
+  color: rgba(255,255,255,0.85) !important;
+  font-size: 1.2rem !important;
+  padding: 2px 8px !important;
+  min-width: 28px;
+  min-height: 28px;
+}
+.sg-btn-close:hover {
+  color: #fff !important;
+  background: rgba(255,255,255,0.18) !important;
+}
+
+/* ── Body ── */
+.sg-body {
+  padding: 16px;
+  flex: 1;
+  overflow-y: auto;
+  min-height: 0;
+}
+
+/* ── Idle UI ── */
+.sg-greeting {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: #333;
+  margin: 0 0 14px;
+}
+.sg-topic-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+.sg-topic-btn {
+  background: #f5f1e8;
+  border: 1px solid #e8dfc4;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-family: inherit;
+  font-size: 0.84rem;
+  color: #060e18;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.15s, border-color 0.15s;
+}
+.sg-topic-btn:hover {
+  background: #ede7d3;
+  border-color: #c9a84c;
+}
+
+/* ── Voice UI ── */
+.sg-voice-ui {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 16px;
+  gap: 12px;
+}
+.sg-orb {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 38% 38%, #c9a84c, #8b6c2a);
+  box-shadow: 0 0 0 0 rgba(201, 168, 76, 0.5);
+  animation: sg-breathe 2.4s ease-in-out infinite;
+}
+.sg-orb.sg-orb--speaking {
+  animation: sg-pulse 0.6s ease-in-out infinite;
+}
+@keyframes sg-breathe {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(201,168,76,0.4); }
+  50%       { box-shadow: 0 0 0 12px rgba(201,168,76,0.0); }
+}
+@keyframes sg-pulse {
+  0%, 100% { transform: scale(1); box-shadow: 0 0 0 4px rgba(201,168,76,0.3); }
+  50%       { transform: scale(1.08); box-shadow: 0 0 0 10px rgba(201,168,76,0.0); }
+}
+.sg-voice-status {
+  font-size: 0.82rem;
+  color: #666;
+  margin: 0;
+  text-align: center;
+}
+.sg-voice-transcript {
+  font-size: 0.88rem;
+  color: #333;
+  margin: 0;
+  text-align: center;
+  line-height: 1.5;
+  min-height: 40px;
+}
+
+/* ── Text UI ── */
+.sg-text-ui {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.sg-messages {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 10px;
+  padding-right: 2px;
+}
+.sg-msg {
+  max-width: 85%;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  word-break: break-word;
+}
+.sg-msg--user {
+  background: #060e18;
+  color: #fff;
+  align-self: flex-end;
+  border-radius: 10px 10px 2px 10px;
+}
+.sg-msg--agent {
+  background: #f5f1e8;
+  color: #060e18;
+  align-self: flex-start;
+  border-radius: 10px 10px 10px 2px;
+}
+.sg-input-bar {
+  display: flex;
+  gap: 6px;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+.sg-input {
+  flex: 1;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-family: inherit;
+  font-size: 0.88rem;
+  outline: none;
+  transition: border-color 0.15s;
+}
+.sg-input:focus { border-color: #c9a84c; }
+.sg-send {
+  background: #c9a84c;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  color: #060e18;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.15s;
+}
+.sg-send:hover { background: #b8963e; }
+
+/* ── Walkthrough UI ── */
+.sg-wt-ui {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sg-wt-narration {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: #1a1a1a;
+  margin: 0;
+  background: #f5f1e8;
+  padding: 12px;
+  border-radius: 8px;
+  border-left: 3px solid #c9a84c;
+}
+.sg-wt-instruction {
+  font-size: 0.83rem;
+  line-height: 1.55;
+  color: #555;
+  margin: 0;
+  font-style: italic;
+}
+
+/* ── TTS narration bar ── */
+.sg-tts-bar {
+  display: flex;
+  gap: 6px;
+  justify-content: flex-end;
+  margin-top: 2px;
+}
+.sg-btn-icon {
+  background: none;
+  border: 1px solid rgba(201, 168, 76, 0.35);
+  border-radius: 5px;
+  color: #c9a84c;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.82rem;
+  line-height: 1;
+  padding: 3px 7px;
+  transition: background 0.15s, border-color 0.15s;
+}
+.sg-btn-icon:hover {
+  background: rgba(201, 168, 76, 0.14);
+  border-color: #c9a84c;
+}
+
+/* ── Walkthrough bar (Next/Exit controls) ── */
+.sg-wt-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-top: 1px solid #eee;
+  background: #fafafa;
+}
+.sg-wt-menu {
+  background: none;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 4px 9px;
+  font-size: 0.78rem;
+  cursor: pointer;
+  color: #555;
+  transition: border-color 0.15s, color 0.15s;
+}
+.sg-wt-menu:hover { border-color: #999; color: #333; }
+.sg-wt-exit {
+  background: none;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 5px 10px;
+  font-family: inherit;
+  font-size: 0.8rem;
+  cursor: pointer;
+  color: #666;
+  transition: border-color 0.15s, color 0.15s;
+}
+.sg-wt-exit:hover { border-color: #999; color: #333; }
+.sg-wt-prog {
+  flex: 1;
+  text-align: center;
+  font-size: 0.78rem;
+  color: #999;
+}
+.sg-wt-next {
+  background: #060e18;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 14px;
+  font-family: inherit;
+  font-size: 0.82rem;
+  color: #c9a84c;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.sg-wt-next:hover { background: #1a2a3a; }
+
+/* ── Resume bar ── */
+.sg-resume-bar {
+  padding: 12px 14px;
+  border-top: 1px solid #eee;
+  background: #fafafa;
+}
+.sg-resume-bar > p {
+  font-size: 0.82rem;
+  color: #555;
+  margin: 0 0 8px;
+}
+.sg-resume-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 8px;
+  max-height: 200px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #c9a84c transparent;
+}
+.sg-resume-steps::-webkit-scrollbar { width: 4px; }
+.sg-resume-steps::-webkit-scrollbar-thumb { background: rgba(201,168,76,0.45); border-radius: 2px; }
+.sg-resume-btns { display: flex; gap: 6px; flex-wrap: wrap; }
+.sg-wt-resume {
+  background: #060e18;
+  border: none;
+  border-radius: 6px;
+  padding: 4px 14px;
+  font-family: inherit;
+  font-size: 0.82rem;
+  color: #c9a84c;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.sg-wt-resume:hover { background: #1a2a3a; }
+.sg-wt-restart,
+.sg-wt-home {
+  background: none;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-family: inherit;
+  font-size: 0.8rem;
+  cursor: pointer;
+  color: #666;
+}
+.sg-wt-restart:hover,
+.sg-wt-home:hover { border-color: #999; color: #333; }
+
+/* ── Page element highlight ── */
+.sg-highlight {
+  outline: 3px solid #c9a84c !important;
+  outline-offset: 4px;
+  border-radius: 4px !important;
+  box-shadow: 0 0 0 8px rgba(201, 168, 76, 0.18), 0 0 20px rgba(201, 168, 76, 0.35) !important;
+  position: relative;
+  z-index: 1000;
+  transition: outline 0.25s ease, box-shadow 0.25s ease;
+}
+/* Inline elements (e.g. <a> in nav) need a block context to show the full ring */
+.sg-highlight[data-sg-was-inline] {
+  display: inline-block !important;
+}
+
+/* ── Demo cursor ── */
+.sg-demo-cursor {
+  position: fixed;
+  pointer-events: none;
+  z-index: 99999;
+  width: 20px;
+  height: 24px;
+  opacity: 0;
+  transition: left 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+              top  0.7s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity 0.2s;
+}
+.sg-demo-cursor--visible {
+  opacity: 1;
+}
+.sg-demo-cursor svg {
+  display: block;
+  filter: drop-shadow(1px 2px 3px rgba(0,0,0,0.45));
+}
+
+/* Click ripple animation */
+.sg-demo-ripple {
+  position: fixed;
+  pointer-events: none;
+  z-index: 99998;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(201, 168, 76, 0.55);
+  animation: sg-ripple 0.65s ease-out forwards;
+}
+@keyframes sg-ripple {
+  to { transform: scale(3.5); opacity: 0; }
+}
+
+/* Generic dropdown open class used by demo cursor */
+.sg-demo-open > .nav-dropdown-menu,
+.sg-demo-open > [role="menu"],
+.sg-demo-open > .dropdown-menu {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* ── Play/pause auto-advance button in walkthrough bar ── */
+.sg-wt-playpause {
+  font-size: 0.78rem;
+  padding: 3px 8px;
+  border: 1px solid rgba(201,168,76,0.4);
+  border-radius: 5px;
+  background: none;
+  color: #c9a84c;
+  cursor: pointer;
+  font-family: inherit;
+  line-height: 1;
+  transition: background 0.15s, border-color 0.15s;
+}
+.sg-wt-playpause:hover {
+  background: rgba(201,168,76,0.12);
+  border-color: #c9a84c;
+}
+
+/* ── Walkthrough navigator (step-tree) ── */
+.sg-wt-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  max-height: 130px;
+  overflow-y: auto;
+  border-top: 1px solid #e8e0c8;
+  padding-top: 8px;
+  margin-top: 2px;
+  scrollbar-width: thin;
+  scrollbar-color: #c9a84c transparent;
+}
+.sg-wt-nav::-webkit-scrollbar { width: 4px; }
+.sg-wt-nav::-webkit-scrollbar-thumb { background: rgba(201,168,76,0.45); border-radius: 2px; }
+.sg-wt-nav-step {
+  background: #f0ece0;
+  border: 1px solid #e0d8c0;
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-family: inherit;
+  font-size: 0.78rem;
+  color: #444;
+  cursor: pointer;
+  text-align: left;
+  line-height: 1.4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+.sg-wt-nav-step:hover {
+  background: #e8e0ca;
+  border-color: #b8963e;
+  color: #060e18;
+}
+.sg-wt-nav-step--current {
+  border-color: #c9a84c;
+  background: #f5eed8;
+  color: #060e18;
+  font-weight: 600;
+}
+.sg-wt-nav-step--sub {
+  margin-left: 14px;
+  font-size: 0.74rem;
+  color: #555;
+  background: #f8f5ef;
+  border-color: #e8e0cc;
+}
+.sg-wt-nav-step--sub:hover {
+  background: #ede7d3;
+  border-color: #b8963e;
+  color: #060e18;
+}
+.sg-wt-nav-step--sub.sg-wt-nav-step--current {
+  background: #f5eed8;
+  border-color: #c9a84c;
+  color: #060e18;
+  font-weight: 600;
+}
+
+/* ── Mobile responsive — ≤600px ── */
+@media (max-width: 600px) {
+  #soma-guide {
+    bottom: 14px;
+    right: 14px;
+  }
+
+  /* FAB — compact but still tappable */
+  .sg-fab {
+    padding: 10px 14px 10px 11px;
+    font-size: 0.82rem;
+    gap: 6px;
+  }
+  .sg-fab-avatar { font-size: 1.05rem; }
+
+  /* Expanded panel — stay within viewport, scrollable */
+  .sg--idle .sg-panel,
+  .sg--text .sg-panel,
+  .sg--walkthrough .sg-panel,
+  .sg--voice .sg-panel {
+    width: min(340px, calc(100vw - 28px));
+    max-height: min(72vh, 460px);
+  }
+
+  /* Text panel: fixed height, no resize handle (pinch/zoom handles zoom on mobile) */
+  .sg--text .sg-panel {
+    height: min(72vh, 460px);
+    resize: none;
+  }
+
+  /* Body: tighter padding saves vertical space */
+  .sg-body { padding: 12px; }
+
+  /* Walk-through nav — shorten scrollable area to save screen */
+  .sg-wt-nav { max-height: 100px; }
+
+  /* Resume steps list — same cap */
+  .sg-resume-steps { max-height: 140px; }
+
+  /* Close button — larger hit target on touch */
+  .sg-btn-close {
+    min-width: 36px !important;
+    min-height: 36px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
