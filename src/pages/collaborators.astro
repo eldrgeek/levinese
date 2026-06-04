@@ -1,0 +1,157 @@
+---
+import Base from '../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+const papers = await getCollection('papers');
+
+// Extract co-authors, excluding Michael Levin
+const authorMap = new Map<string, number>();
+for (const paper of papers) {
+  const authors: string[] = (paper.data as any).authors ?? [];
+  for (const raw of authors) {
+    const name = raw.trim();
+    if (!name) continue;
+    const lower = name.toLowerCase();
+    if (lower.match(/^m\.?\s*levin$/) || lower.match(/^michael\s+levin$/)) continue;
+    authorMap.set(name, (authorMap.get(name) ?? 0) + 1);
+  }
+}
+
+const coauthors = [...authorMap.entries()]
+  .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+
+const uniqueCount = coauthors.length;
+
+// Current lab members — sourced from as.tufts.edu/biology/levin-lab/people/current-lab-members (June 2026)
+const labMembers = [
+  { name: "Nora A-Rahim", role: "Post Bac Intern" },
+  { name: "Katia Barrett", role: "Postdoctoral Fellow" },
+  { name: "Ryan Chan", role: "Undergraduate Intern" },
+  { name: "Wesley Clawson", role: "Staff Scientist" },
+  { name: "Rakela Colón", role: "Lab Manager" },
+  { name: "Nikolai Davey", role: "Senior Research Technician" },
+  { name: "Devon Davidian", role: "Staff Scientist" },
+  { name: "Axel de Baat", role: "Postdoctoral Fellow" },
+  { name: "Kenel Dufort", role: "Senior Research Technician" },
+  { name: "Patrick Erickson", role: "Postdoctoral Fellow" },
+  { name: "Emily Ertle", role: "PhD Student" },
+  { name: "Tomika Gotch", role: "Program Coordinator" },
+  { name: "Caitlin Grasso", role: "Senior Research Assistant" },
+  { name: "Benedikt Hartl", role: "Affiliate Research Scientist" },
+  { name: "Hananel Hazan", role: "Staff Scientist" },
+  { name: "Douglas Hazel", role: "Computational Specialist" },
+  { name: "Erik Hoel", role: "Staff Scientist" },
+  { name: "Katarina Johnson", role: "Undergraduate Intern" },
+  { name: "Ann Karim", role: "Project Manager" },
+  { name: "James Kessler", role: "PhD Student" },
+  { name: "Gayathri Kondakath", role: "Senior Research Technician" },
+  { name: "Franz Kuchling", role: "Postdoctoral Fellow" },
+  { name: "Ethan Li", role: "Undergraduate Intern" },
+  { name: "Alyssa Liao", role: "Post Bac Intern" },
+  { name: "Jack Lindsay", role: "PhD Student" },
+  { name: "Jayati Mandal", role: "Lab Manager for Allen Center" },
+  { name: "Santosh Manicka", role: "Affiliate Research Scientist" },
+  { name: "Juanita Mathews", role: "Staff Scientist" },
+  { name: "Patrick McMillen", role: "Staff Scientist" },
+  { name: "Angelina Moy", role: "Undergraduate Student" },
+  { name: "Vaibhav Pai", role: "Staff Scientist" },
+  { name: "Sydney Palmer", role: "Research Technician" },
+  { name: "Tomáš Pelikán", role: "Visiting Scientist" },
+  { name: "Federico Pigozzi", role: "Postdoctoral Fellow" },
+  { name: "Angelina Pimkina", role: "Undergraduate Intern" },
+  { name: "Léo Pio-Lopez", role: "Affiliate Research Scientist" },
+  { name: "Aisha Rasool", role: "Project Manager" },
+  { name: "Lucrezia Rinaldi", role: "Senior Research Assistant" },
+  { name: "Adam Safron", role: "Staff Scientist" },
+  { name: "Adrita Samanta", role: "High School Student Intern" },
+  { name: "Arash Samiei", role: "Senior Research Assistant" },
+  { name: "Parker Scott", role: "Undergraduate Intern" },
+  { name: "Hamid Sediqi", role: "Postdoctoral Fellow" },
+  { name: "Elena Sergeeva", role: "Staff Scientist" },
+  { name: "Evgeniya (Zhenya) Shmeleva", role: "Staff Scientist" },
+  { name: "Lakshwin Shreesha", role: "Computational Research Associate" },
+  { name: "Danielle Steadman", role: "Senior Research Technician" },
+  { name: "Annette Sucholeiki", role: "Undergraduate Intern" },
+  { name: "Eva Swei", role: "Undergraduate Intern" },
+  { name: "Erin Switzer", role: "Senior Research Technician" },
+  { name: "Nadia Tabassum", role: "Postdoctoral Fellow" },
+  { name: "Emma Taddeo", role: "Center Project Administrative Director" },
+  { name: "Parande Tayyebi", role: "Research Assistant" },
+  { name: "Angela Tung", role: "Postdoctoral Fellow" },
+  { name: "Bryanna Vacanti", role: "Research Financial Assistant Director" },
+  { name: "Kathy Wang", role: "Undergraduate Intern" },
+  { name: "Yanbo Zhang", role: "Postdoctoral Fellow" },
+];
+---
+<Base title="Collaborators" description="Co-authors from the Levinese corpus and current Levin Lab members.">
+
+  <!-- Header -->
+  <section class="max-w-5xl mx-auto px-4 sm:px-6 pt-16 pb-10">
+    <div class="max-w-2xl">
+      <p class="text-sm font-medium text-teal uppercase tracking-widest mb-4">The people</p>
+      <h1 class="font-serif text-4xl sm:text-5xl font-medium text-ink leading-tight mb-6">
+        Collaborators
+      </h1>
+      <p class="text-xl text-muted font-serif italic leading-relaxed">
+        The researchers who co-authored the corpus with Michael Levin, and the current members of the Levin Lab.
+      </p>
+    </div>
+  </section>
+
+  <!-- Current Lab Members -->
+  <section class="max-w-5xl mx-auto px-4 sm:px-6 py-10 border-t border-border">
+    <div class="max-w-3xl">
+      <div class="flex items-baseline justify-between mb-6">
+        <h2 class="font-serif text-2xl font-medium text-ink">Current lab members</h2>
+        <a href="https://as.tufts.edu/biology/levin-lab/people/current-lab-members" target="_blank" rel="noopener" class="text-sm text-teal hover:text-teal-mid font-medium transition-colors">Source: Tufts Biology ↗</a>
+      </div>
+      <p class="text-sm text-muted mb-6">
+        Roster as listed on the <a href="https://as.tufts.edu/biology/levin-lab/people/current-lab-members" target="_blank" rel="noopener" class="text-teal hover:text-teal-mid">Levin Lab people page</a> (retrieved June 2026).
+      </p>
+      <div class="grid sm:grid-cols-2 gap-2">
+        {labMembers.map(m => (
+          <div class="flex items-baseline gap-2 py-1.5 border-b border-border/50">
+            <span class="font-medium text-ink text-sm">{m.name}</span>
+            <span class="text-xs text-muted">{m.role}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Co-authors from corpus -->
+  <section class="max-w-5xl mx-auto px-4 sm:px-6 py-10 border-t border-border">
+    <div class="max-w-3xl">
+      <div class="flex items-baseline justify-between mb-2">
+        <h2 class="font-serif text-2xl font-medium text-ink">Paper co-authors</h2>
+        <span class="text-sm text-muted">{uniqueCount} unique names</span>
+      </div>
+      <p class="text-sm text-muted mb-6">
+        Every author who co-authored a paper in the corpus with Michael Levin, sorted by number of papers. Names appear as listed in paper metadata — some individuals may appear under multiple spellings.
+      </p>
+
+      <!-- Top contributors (5+ papers) -->
+      <h3 class="font-serif text-base font-medium text-ink mb-3 mt-2">Frequent collaborators <span class="font-sans text-xs font-normal text-muted">(5+ papers)</span></h3>
+      <div class="flex flex-wrap gap-2 mb-8">
+        {coauthors.filter(([_, c]) => c >= 5).map(([name, count]) => (
+          <span class="inline-flex items-center gap-1.5 bg-teal-light border border-teal/20 text-teal px-3 py-1 rounded-full text-sm">
+            {name}
+            <span class="text-xs opacity-70">{count}</span>
+          </span>
+        ))}
+      </div>
+
+      <!-- All co-authors -->
+      <h3 class="font-serif text-base font-medium text-ink mb-3">All co-authors</h3>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-1">
+        {coauthors.map(([name, count]) => (
+          <div class="flex items-baseline justify-between gap-2 py-0.5 border-b border-border/40">
+            <span class="text-sm text-ink truncate">{name}</span>
+            <span class="text-xs text-muted shrink-0">{count}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+</Base>
