@@ -36,15 +36,8 @@ export const signatories: Signatory[] = [
     name: 'Mark Lesser',
     affiliation: 'Invited contributor',
     role: 'Human signatory',
-    status: 'pending',
-    signature: 'Invited; pending.',
-  },
-  {
-    name: 'Jan',
-    affiliation: 'Invited contributor',
-    role: 'Human signatory',
-    status: 'pending',
-    signature: 'Invited; pending.',
+    status: 'signed',
+    signature: 'Mike Levin continually expands my cognitive light cone.',
   },
 ];
 
