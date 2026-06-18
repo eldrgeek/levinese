@@ -39,6 +39,7 @@ const { title, description = "A gift to Michael Levin — dictionary, corpus bro
         <a href="/collaborators/" class="hover:text-ink transition-colors">Collaborators</a>
         <a href="/ask/" class="hover:text-ink transition-colors">Ask</a>
         <a href="/colophon/" class="hover:text-ink transition-colors">Colophon</a>
+        <button id="soma-signin" type="button" class="hover:text-ink transition-colors">Sign in</button>
       </div>
     </div>
   </nav>
@@ -67,6 +68,50 @@ const { title, description = "A gift to Michael Levin — dictionary, corpus bro
     the browser blocks it on CORS, which aborts the entire page module and
     silently kills corpus search, dictionary filter, and sort site-wide.
   -->
+  <!--
+    SOMA visitor auth (Supabase magic-link). This is the IDENTITY layer the
+    SOMA guide reads (window.SomaAuth.session) so a signed-in visitor gets a
+    persistent, recognized relationship with the Levin guide across visits and
+    devices. It is SEPARATE from the Netlify Identity widget below, which is
+    only the Decap CMS admin login. Must be `is:inline` (see CORS note below).
+  -->
+  <script is:inline src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+  <script is:inline src="/js/soma-auth-config.js"></script>
+  <script is:inline src="/js/soma-auth.js"></script>
+  <script is:inline>
+    (function () {
+      if (!window.SomaAuth) return;
+      // Bridge the Supabase session onto the property the SOMA guide reads.
+      window.SomaAuth.onAuthStateChange(function (event, session) {
+        window.SomaAuth.session = session || null;
+        var btn = document.getElementById('soma-signin');
+        if (btn) btn.textContent = session && session.user ? 'Sign out' : 'Sign in';
+        // Best-effort: let the guide re-read identity if it exposes a hook.
+        if (window.somaGuide && typeof window.somaGuide.refreshIdentity === 'function') {
+          try { window.somaGuide.refreshIdentity(); } catch (e) {}
+        }
+      });
+      window.SomaAuth.init(window.SOMA_AUTH_CONFIG.url, window.SOMA_AUTH_CONFIG.anonKey);
+      // Minimal sign-in/out affordance (v0 — refine UX later).
+      document.addEventListener('DOMContentLoaded', function () {
+        var btn = document.getElementById('soma-signin');
+        if (!btn) return;
+        btn.addEventListener('click', function () {
+          if (window.SomaAuth.session && window.SomaAuth.session.user) {
+            window.SomaAuth.signOut();
+            return;
+          }
+          var email = window.prompt('Enter your email to sign in. You’ll get a magic link to click — then the guide remembers you across visits.');
+          if (!email) return;
+          window.SomaAuth.signInWithOtp(email, { emailRedirectTo: window.location.origin + '/' })
+            .then(function (r) {
+              window.alert(r && r.error ? ('Sign-in error: ' + r.error.message) : 'Check your email for the magic link.');
+            });
+        });
+      });
+    })();
+  </script>
+
   <link rel="stylesheet" href="https://soma-guide.netlify.app/soma-guide.css" />
   <script is:inline src="/levinese-guide-config.js"></script>
   <script is:inline src="https://soma-guide.netlify.app/soma-guide.js"></script>
