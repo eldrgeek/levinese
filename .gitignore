@@ -12,3 +12,7 @@ __pycache__/
 # Atlas build intermediates (atlas.json is committed as pre-built artifact)
 *.npy
 *.pkl
+
+# Playwright artifacts
+test-results/
+playwright-report/

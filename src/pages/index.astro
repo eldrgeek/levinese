@@ -31,6 +31,111 @@ const signedModels = llmReplies.filter(r => r.signed);
     </div>
   </section>
 
+  <!-- Tour card (Show-Don't-Tell — SOMA app standard §7) -->
+  <section class="max-w-5xl mx-auto px-4 sm:px-6 pb-4">
+    <button
+      type="button"
+      id="tour-card"
+      class="group w-full max-w-2xl flex items-center gap-4 sm:gap-5 text-left bg-white border border-border rounded-xl p-3 sm:p-4 hover:border-teal/40 hover:shadow-sm transition-all"
+      aria-haspopup="dialog"
+      aria-controls="tour-lightbox"
+    >
+      <span class="relative shrink-0 block w-32 sm:w-44 aspect-video rounded-lg overflow-hidden bg-surface">
+        <img src="/videos/levinese-visitor-poster.jpg" alt="A guided tour of Levinese" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+        <span class="absolute inset-0 flex items-center justify-center">
+          <span class="flex items-center justify-center w-11 h-11 rounded-full bg-teal/90 text-white shadow-md group-hover:bg-teal transition-colors">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 ml-0.5"><path d="M8 5v14l11-7z"/></svg>
+          </span>
+        </span>
+      </span>
+      <span class="min-w-0">
+        <span class="block text-sm font-medium text-teal uppercase tracking-widest mb-1">▶ Guided tour</span>
+        <span class="block font-serif text-lg text-ink leading-snug mb-1">See how this site works — 3 min</span>
+        <span class="block text-sm text-muted">A narrated walkthrough of the dictionary, corpus, atlas, and the ideas behind them.</span>
+      </span>
+    </button>
+  </section>
+
+  <!-- Tour lightbox (no autoplay on load; playback starts on user open) -->
+  <div
+    id="tour-lightbox"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Levinese guided tour"
+    hidden
+    class="fixed inset-0 z-[100] items-center justify-center bg-ink/80 backdrop-blur-sm p-4"
+  >
+    <div class="relative w-full max-w-4xl bg-white rounded-xl overflow-hidden shadow-2xl">
+      <div class="flex items-center justify-between px-4 py-2.5 border-b border-border">
+        <span class="font-serif text-ink text-sm sm:text-base">A guided tour of Levinese</span>
+        <button type="button" id="tour-close" aria-label="Close tour" class="text-muted hover:text-ink transition-colors text-xl leading-none px-2">×</button>
+      </div>
+      <video
+        id="tour-video"
+        class="w-full bg-ink"
+        controls
+        preload="none"
+        playsinline
+        poster="/videos/levinese-visitor-poster.jpg"
+      >
+        <source src="/videos/levinese-visitor-walkthrough.mp4" type="video/mp4" />
+        <track kind="chapters" src="/videos/levinese-visitor-walkthrough.vtt" srclang="en" label="Chapters" default />
+      </video>
+      <div class="px-4 py-3 border-t border-border">
+        <p class="text-xs text-muted uppercase tracking-widest mb-2">Chapters</p>
+        <div id="tour-chapters" class="flex flex-wrap gap-1.5"></div>
+      </div>
+    </div>
+  </div>
+
+  <script is:inline>
+    (() => {
+      const card = document.getElementById('tour-card');
+      const box = document.getElementById('tour-lightbox');
+      const video = document.getElementById('tour-video');
+      const closeBtn = document.getElementById('tour-close');
+      const chaptersEl = document.getElementById('tour-chapters');
+      if (!card || !box || !video) return;
+
+      const chapters = [
+        { t: 0,     label: 'What is Levinese?' },
+        { t: 41.7,  label: 'Dictionary' },
+        { t: 75.4,  label: 'Corpus' },
+        { t: 104.9, label: 'Atlas' },
+        { t: 133.0, label: 'Collaborators' },
+        { t: 156.0, label: 'Ask' },
+        { t: 184.8, label: 'Colophon' },
+      ];
+      chapters.forEach((c) => {
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.textContent = c.label;
+        b.className = 'text-xs px-2.5 py-1 rounded-full bg-surface border border-border text-muted hover:border-teal/40 hover:text-teal transition-colors';
+        b.addEventListener('click', () => { video.currentTime = c.t; video.play(); });
+        chaptersEl.appendChild(b);
+      });
+
+      const open = () => {
+        box.hidden = false;
+        box.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+        // Playback is user-initiated (this open handler runs from a click) — not autoplay-on-load.
+        video.play().catch(() => {});
+      };
+      const close = () => {
+        video.pause();
+        box.hidden = true;
+        box.style.display = 'none';
+        document.body.style.overflow = '';
+      };
+
+      card.addEventListener('click', open);
+      closeBtn.addEventListener('click', close);
+      box.addEventListener('click', (e) => { if (e.target === box) close(); });
+      document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !box.hidden) close(); });
+    })();
+  </script>
+
   <!-- What is Levinese -->
   <section class="max-w-5xl mx-auto px-4 sm:px-6 py-10 border-t border-border">
     <div class="max-w-2xl">
