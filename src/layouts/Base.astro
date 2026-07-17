@@ -69,6 +69,48 @@ const { title, description = "A gift to Michael Levin — dictionary, corpus bro
       </p>
     </div>
   </footer>
+
+  <!-- Society bar: ties this property back to the wider Society of Minds Aligned -->
+  <footer class="society-bar">
+    <p class="society-bar__text">
+      Part of the <strong>Society of Minds Aligned</strong> —
+      <a href="https://minds-aligned-door.netlify.app">Minds Aligned</a>
+      <span class="society-bar__sep">·</span>
+      <a href="https://siliconchildren.com">Silicon Children</a>
+      <span class="society-bar__sep">·</span>
+      <a href="https://minds-at-work-soma.netlify.app">Minds at Work</a>
+    </p>
+  </footer>
+  <style>
+    .society-bar {
+      border-top: 1px solid rgba(15, 20, 31, 0.12);
+      background: #f5f1e6;
+      padding: 0.85rem 1.5rem;
+      text-align: center;
+    }
+    .society-bar__text {
+      margin: 0;
+      font-size: 0.78rem;
+      line-height: 1.5;
+      color: #6b6558;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+    .society-bar__text strong {
+      color: #1c1a17;
+      font-weight: 600;
+    }
+    .society-bar__sep {
+      margin: 0 0.35rem;
+      opacity: 0.5;
+    }
+    .society-bar a {
+      color: #0d7d72;
+      text-decoration: none;
+    }
+    .society-bar a:hover {
+      text-decoration: underline;
+    }
+  </style>
   <!--
     Netlify Identity widget (only used for the Decap CMS admin login flow).
     These MUST be `is:inline` so Astro does NOT fold them into each page's
@@ -135,6 +177,16 @@ const { title, description = "A gift to Michael Levin — dictionary, corpus bro
         }
       });
     }
+  </script>
+
+  <link rel="stylesheet" href="/vendor/soma-feedback/soma-feedback.css" />
+  <script
+    src="/vendor/soma-feedback/soma-feedback.js"
+    data-site="michael-levin"
+    data-endpoint="https://vpsmikewolf.duckdns.org/feedback-svc/feedback"
+    data-google-client-id="1072944905499-vm2v2i5dvn0a0d2o4ca36i1vge8cvbn0.apps.googleusercontent.com"
+    data-area="content"
+    defer>
   </script>
 </body>
 </html>
