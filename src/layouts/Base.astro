@@ -70,10 +70,84 @@ const { title, description = "A gift to Michael Levin — dictionary, corpus bro
     </div>
   </footer>
 
+
+  <!-- SOMA Onboard: join the constellation, or invite someone into it. One membership
+       for all thirteen properties, held at the hub. Inlined rather than imported because
+       this repo is outside the agi-2026 monorepo and cannot reach @soma/feedback. -->
+  <div class="join-bar">
+    <a class="join-bar__cta" id="join-bar-cta" href="https://agi2026.netlify.app/join/?ch=levinese">
+      Join the constellation
+    </a>
+  </div>
+  <script is:inline>
+    (function () {
+      var HUB = 'https://agi2026.netlify.app';
+      var SITE = 'levinese';
+      var cta = document.getElementById('join-bar-cta');
+      if (!cta) return;
+      var token;
+      try { token = localStorage.getItem('agi26.session'); } catch (_) {}
+      if (!token) return;
+      cta.textContent = 'Invite someone';
+      cta.href = '#';
+      cta.addEventListener('click', function (e) {
+        e.preventDefault();
+        if (cta.dataset.busy) return;
+        cta.dataset.busy = '1';
+        cta.textContent = 'Preparing\u2026';
+        import(HUB + '/vendor/soma-onboard/invite-sheet.js')
+          .then(function () {
+            return fetch(HUB + '/api/onboard/prepare-invite', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + token },
+              body: JSON.stringify({ channelHint: SITE }),
+            });
+          })
+          .then(function (r) { return r.json(); })
+          .then(function (invite) {
+            var sheet = document.querySelector('soma-invite-sheet');
+            if (!sheet) { sheet = document.createElement('soma-invite-sheet'); document.body.appendChild(sheet); }
+            sheet.invite = invite;
+            if (typeof sheet.open === 'function') sheet.open();
+            cta.textContent = 'Invite someone';
+          })
+          .catch(function () { cta.textContent = 'Could not prepare an invite'; })
+          .then(function () { delete cta.dataset.busy; });
+      });
+    })();
+  </script>
+  <style>
+    .join-bar {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      background: #0a0f1a;
+      padding: 1rem 1.5rem 1.15rem;
+      text-align: center;
+    }
+    .join-bar__cta {
+      display: inline-block;
+      padding: 0.55rem 1.4rem;
+      border: 1px solid rgba(111, 155, 255, 0.5);
+      border-radius: 999px;
+      color: #6f9bff;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: background 0.15s, border-color 0.15s, color 0.15s;
+    }
+    .join-bar__cta:hover {
+      background: rgba(111, 155, 255, 0.12);
+      border-color: #6f9bff;
+      color: #9dbcff;
+    }
+  </style>
+
   <!-- Society bar: ties this property back to the wider Society of Minds Aligned -->
   <footer class="society-bar">
     <p class="society-bar__text">
       Part of the <strong>Society of Minds Aligned</strong> —
+      <a href="https://agi2026.netlify.app/soma2026/" class="society-bar__lead">SOMA 2026</a>
+      <span class="society-bar__sep">·</span>
       <a href="https://minds-aligned-door.netlify.app">Minds Aligned</a>
       <span class="society-bar__sep">·</span>
       <a href="https://siliconchildren.com">Silicon Children</a>
@@ -99,6 +173,10 @@ const { title, description = "A gift to Michael Levin — dictionary, corpus bro
       color: #1c1a17;
       font-weight: 600;
     }
+    .society-bar__lead {
+      font-weight: 600;
+    }
+
     .society-bar__sep {
       margin: 0 0.35rem;
       opacity: 0.5;
@@ -165,6 +243,7 @@ const { title, description = "A gift to Michael Levin — dictionary, corpus bro
 
   <link rel="stylesheet" href="https://soma-guide.netlify.app/soma-guide.css" />
   <script is:inline src="/levinese-guide-config.js"></script>
+  <script is:inline src="/levinese-host.js"></script>
   <script is:inline src="https://soma-guide.netlify.app/soma-guide.js"></script>
   <script is:inline src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <script is:inline>
