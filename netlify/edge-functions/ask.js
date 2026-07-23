@@ -55,12 +55,30 @@ const STOP = new Set([
   'will', 'with', 'you', 'your', 'me', 'my', 'about', 'can', 'tell',
 ]);
 
+/* Hyphens are not decoration in these corpora, they are where the concepts live:
+ * cyber-animism, free-energy, neuro-symbolic. Writers hyphenate inconsistently, so a
+ * raw token match starves — asking joschese "what is cyber-animism?" retrieved NOTHING
+ * while the archive held a term page titled "cyberanimism", and the host then honestly
+ * reported an absence that wasn't real. Every hyphenated token therefore expands to the
+ * hyphenated form, the joined form, and its parts, on both the index and the query side. */
 function tokenize(s) {
-  return String(s || '')
+  const out = [];
+  const raw = String(s || '')
     .toLowerCase()
     .replace(/[^a-z0-9\s-]/g, ' ')
-    .split(/\s+/)
-    .filter((t) => t.length > 2 && !STOP.has(t));
+    .split(/\s+/);
+
+  for (const t of raw) {
+    if (t.length > 2 && !STOP.has(t)) out.push(t);
+    if (t.indexOf('-') === -1) continue;
+
+    const joined = t.replace(/-/g, '');
+    if (joined.length > 2 && !STOP.has(joined)) out.push(joined);
+    for (const part of t.split('-')) {
+      if (part.length > 2 && !STOP.has(part)) out.push(part);
+    }
+  }
+  return out;
 }
 
 /* Built lazily on first ask and reused for the life of the isolate, so the cost
@@ -142,6 +160,19 @@ function systemFrame(hostName) {
   ].join('\n');
 }
 
+/* The upstream occasionally leaks a line of its own scratchpad before the answer —
+ * observed live: "The answer is in the context, so I'll answer directly without tools."
+ * A host that narrates its own tool-use reads as broken, so drop a leading line that is
+ * plainly about the model's process rather than about the archive. Deliberately narrow:
+ * it only fires on the FIRST line, only when there is a real answer after it. */
+const PREAMBLE = /^(?:the answer is|i(?:'ll| will| can)\b|based on|looking at|since )[^\n]{0,160}?(?:context|tools?|passages?|archive materials?|directly)[^\n]{0,40}\n+/i;
+
+function stripPreamble(text) {
+  const t = String(text || '').trim();
+  const stripped = t.replace(PREAMBLE, '').trim();
+  return stripped.length > 40 ? stripped : t;
+}
+
 function json(status, obj) {
   return new Response(JSON.stringify(obj), { status, headers: CORS });
 }
@@ -197,7 +228,7 @@ export default async (request) => {
 
     const data = await res.json();
     return json(200, {
-      answer: data.answer || '',
+      answer: stripPreamble(data.answer),
       sources: hits.map((d) => ({ title: d.t, year: d.y, url: d.u })),
       retrieved: hits.length,
     });
