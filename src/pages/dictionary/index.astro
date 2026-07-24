@@ -93,7 +93,7 @@ const stripHtml = (html: string) => html.replace(/<[^>]*>/g, ' ');
         <div class="relative flex-1 max-w-xs">
           <svg class="absolute left-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-muted pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
           <input id="dict-search" type="search" placeholder="Filter terms…"
-            class="w-full pl-8 pr-8 py-1.5 text-sm border border-border rounded-md bg-white text-ink placeholder:text-muted/60 focus:outline-none focus:border-teal/50 focus:ring-1 focus:ring-teal/20" />
+            class="w-full pl-8 pr-8 py-1.5 text-sm border border-border rounded-md bg-surface text-ink placeholder:text-muted/60 focus:outline-none focus:border-teal/50 focus:ring-1 focus:ring-teal/20" />
           <button id="dict-clear" class="absolute right-2 top-1/2 -translate-y-1/2 text-muted hover:text-ink hidden text-xs leading-none" aria-label="Clear search">✕</button>
         </div>
         <span id="dict-count" class="text-xs text-muted whitespace-nowrap tabular-nums">Showing {terms.length} of {terms.length}</span>
@@ -102,7 +102,7 @@ const stripHtml = (html: string) => html.replace(/<[^>]*>/g, ' ');
       <div class="flex flex-wrap gap-1">
         {letters.map(letter => (
           <a href={`#letter-${letter}`} data-letter={letter}
-            class="dict-letter w-7 h-7 flex items-center justify-center rounded text-xs font-medium text-muted border border-transparent hover:bg-white hover:border-border hover:text-ink transition-colors"
+            class="dict-letter w-7 h-7 flex items-center justify-center rounded text-xs font-medium text-muted border border-transparent hover:bg-surface hover:border-border hover:text-ink transition-colors"
           >{letter}</a>
         ))}
       </div>
@@ -141,7 +141,7 @@ const stripHtml = (html: string) => html.replace(/<[^>]*>/g, ' ');
               </div>
 
               <!-- Definition -->
-              <div class="bg-white border border-border rounded-lg p-6 mb-4">
+              <div class="bg-surface border border-border rounded-lg p-6 mb-4">
                 <p class="leading-relaxed text-ink" set:html={term.definition} />
               </div>
 

@@ -24,7 +24,7 @@ const signedModels = llmReplies.filter(r => r.signed);
         <a href="/dictionary/" class="inline-flex items-center gap-2 bg-teal text-white px-5 py-2.5 rounded-md text-sm font-medium hover:bg-teal-mid transition-colors">
           Open Dictionary
         </a>
-        <a href="/corpus/" class="inline-flex items-center gap-2 bg-white border border-border text-ink px-5 py-2.5 rounded-md text-sm font-medium hover:bg-surface transition-colors">
+        <a href="/corpus/" class="inline-flex items-center gap-2 bg-surface border border-border text-ink px-5 py-2.5 rounded-md text-sm font-medium hover:bg-surface transition-colors">
           Browse Corpus
         </a>
       </div>
@@ -36,7 +36,7 @@ const signedModels = llmReplies.filter(r => r.signed);
     <button
       type="button"
       id="tour-card"
-      class="group w-full max-w-2xl flex items-center gap-4 sm:gap-5 text-left bg-white border border-border rounded-xl p-3 sm:p-4 hover:border-teal/40 hover:shadow-sm transition-all"
+      class="group w-full max-w-2xl flex items-center gap-4 sm:gap-5 text-left bg-surface border border-border rounded-xl p-3 sm:p-4 hover:border-teal/40 hover:shadow-sm transition-all"
       aria-haspopup="dialog"
       aria-controls="tour-lightbox"
     >
@@ -63,16 +63,16 @@ const signedModels = llmReplies.filter(r => r.signed);
     aria-modal="true"
     aria-label="Levinese guided tour"
     hidden
-    class="fixed inset-0 z-[100] items-center justify-center bg-ink/80 backdrop-blur-sm p-4"
+    class="fixed inset-0 z-[100] items-center justify-center bg-black/70 backdrop-blur-sm p-4"
   >
-    <div class="relative w-full max-w-4xl bg-white rounded-xl overflow-hidden shadow-2xl">
+    <div class="relative w-full max-w-4xl bg-surface rounded-xl overflow-hidden shadow-2xl">
       <div class="flex items-center justify-between px-4 py-2.5 border-b border-border">
         <span class="font-serif text-ink text-sm sm:text-base">A guided tour of Levinese</span>
         <button type="button" id="tour-close" aria-label="Close tour" class="text-muted hover:text-ink transition-colors text-xl leading-none px-2">×</button>
       </div>
       <video
         id="tour-video"
-        class="w-full bg-ink"
+        class="w-full bg-black"
         controls
         preload="metadata"
         playsinline
@@ -225,7 +225,7 @@ const signedModels = llmReplies.filter(r => r.signed);
     </div>
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
       {terms.slice(0, 6).map(term => (
-        <a href={`/dictionary/#${term.slug}`} class="group block bg-white border border-border rounded-lg p-4 hover:border-teal/40 hover:shadow-sm transition-all">
+        <a href={`/dictionary/#${term.slug}`} class="group block bg-surface border border-border rounded-lg p-4 hover:border-teal/40 hover:shadow-sm transition-all">
           <div class="flex items-start justify-between gap-2 mb-2">
             <h3 class="font-serif font-medium text-ink group-hover:text-teal transition-colors">{term.title}</h3>
             {term.is_new && (

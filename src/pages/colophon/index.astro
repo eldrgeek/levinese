@@ -16,7 +16,7 @@ import { signatories, llmReplies } from '../../data/colophon';
     </div>
 
     <!-- Dedication -->
-    <div class="bg-white border border-border rounded-xl p-8 mb-10">
+    <div class="bg-surface border border-border rounded-xl p-8 mb-10">
       <p class="font-serif text-lg italic text-ink leading-relaxed text-center">
         "For Michael Levin — whose question,<br>
         <em>what counts as a mind?</em><br>
@@ -32,7 +32,7 @@ import { signatories, llmReplies } from '../../data/colophon';
       <h2 class="font-serif text-2xl font-medium text-ink mb-6">Signatories</h2>
       <div class="space-y-4">
         {signatories.map(s => (
-          <div class="bg-white border border-border rounded-lg p-5">
+          <div class="bg-surface border border-border rounded-lg p-5">
             <div class="flex items-start gap-4">
               <div class={`mt-0.5 w-7 h-7 rounded-full flex items-center justify-center text-sm shrink-0
                 ${s.status === 'signed' ? 'bg-teal text-white' : 'bg-surface border border-border text-muted'}`}>
@@ -69,7 +69,7 @@ import { signatories, llmReplies } from '../../data/colophon';
         {llmReplies.map(r => (
           <a
             href={`#reply-${r.model.toLowerCase().replace(/[\s.]+/g, '-')}`}
-            class="group block bg-white border border-border rounded-lg p-4 hover:border-teal/30 transition-all"
+            class="group block bg-surface border border-border rounded-lg p-4 hover:border-teal/30 transition-all"
           >
             <div class="flex items-start gap-3">
               <div class={`mt-0.5 w-7 h-7 rounded-full flex items-center justify-center text-sm shrink-0 font-medium
@@ -120,7 +120,7 @@ import { signatories, llmReplies } from '../../data/colophon';
             </div>
 
             <!-- Reply body -->
-            <div class="bg-white border border-t-0 border-border rounded-b-xl px-6 py-6">
+            <div class="bg-surface border border-t-0 border-border rounded-b-xl px-6 py-6">
               <div class="prose prose-sm max-w-none text-ink leading-relaxed">
                 <div class="whitespace-pre-wrap font-sans text-sm leading-relaxed" set:html={r.full_reply
                   .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
@@ -142,7 +142,7 @@ import { signatories, llmReplies } from '../../data/colophon';
     <!-- How this was made -->
     <section class="mb-16">
       <h2 class="font-serif text-2xl font-medium text-ink mb-4">How this was made</h2>
-      <div class="bg-white border border-border rounded-xl p-6 space-y-4 text-sm text-muted leading-relaxed">
+      <div class="bg-surface border border-border rounded-xl p-6 space-y-4 text-sm text-muted leading-relaxed">
         <p>
           Dee (Claude Sonnet 4.6) compiled this site in May 2026 from the SOMA archive: 364 papers, 333 video transcripts, 350 blog posts, and the adjacent corpus. The dictionary v0 covers 11 terms — three of them new, identified through a gap analysis comparing prior LLM-assisted glossary sessions against the actual transcript and paper corpus.
         </p>

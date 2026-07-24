@@ -257,7 +257,7 @@ const typeBadge: Record<string, string> = {
       <div class="flex flex-wrap gap-2 mb-3">
         {Object.entries(typeLabels).map(([type, label]) => (
           <button
-            class={`filter-chip px-3 py-1 rounded-full text-xs font-medium border transition-colors cursor-pointer ${type === 'all' ? 'chip-active bg-teal text-white border-teal' : 'bg-white text-muted border-border hover:border-teal/40 hover:text-ink'}`}
+            class={`filter-chip px-3 py-1 rounded-full text-xs font-medium border transition-colors cursor-pointer ${type === 'all' ? 'chip-active bg-teal text-white border-teal' : 'bg-surface text-muted border-border hover:border-teal/40 hover:text-ink'}`}
             data-filter={type}
           >{label}</button>
         ))}
@@ -273,12 +273,12 @@ const typeBadge: Record<string, string> = {
             id="search-input"
             type="text"
             placeholder="Search title, excerpt, authors…"
-            class="w-full pl-9 pr-4 py-2 bg-white border border-border rounded-md text-sm text-ink placeholder-muted focus:outline-none focus:ring-2 focus:ring-teal/30 focus:border-teal transition-colors"
+            class="w-full pl-9 pr-4 py-2 bg-surface border border-border rounded-md text-sm text-ink placeholder-muted focus:outline-none focus:ring-2 focus:ring-teal/30 focus:border-teal transition-colors"
           />
         </div>
 
         <!-- Sort -->
-        <select id="sort-select" class="px-3 py-2 bg-white border border-border rounded-md text-sm text-ink focus:outline-none focus:ring-2 focus:ring-teal/30 appearance-none cursor-pointer pr-8">
+        <select id="sort-select" class="px-3 py-2 bg-surface border border-border rounded-md text-sm text-ink focus:outline-none focus:ring-2 focus:ring-teal/30 appearance-none cursor-pointer pr-8">
           <option value="date-desc">Date: newest first</option>
           <option value="date-asc">Date: oldest first</option>
           <option value="title-asc">Title A–Z</option>
@@ -290,10 +290,10 @@ const typeBadge: Record<string, string> = {
         <div class="flex items-center gap-2 text-xs text-muted">
           <span>Year:</span>
           <input id="year-min" type="number" min="1990" max="2026" value="1990"
-            class="w-16 px-2 py-1 bg-white border border-border rounded text-xs text-ink focus:outline-none focus:ring-1 focus:ring-teal/30" />
+            class="w-16 px-2 py-1 bg-surface border border-border rounded text-xs text-ink focus:outline-none focus:ring-1 focus:ring-teal/30" />
           <span>–</span>
           <input id="year-max" type="number" min="1990" max="2026" value="2026"
-            class="w-16 px-2 py-1 bg-white border border-border rounded text-xs text-ink focus:outline-none focus:ring-1 focus:ring-teal/30" />
+            class="w-16 px-2 py-1 bg-surface border border-border rounded text-xs text-ink focus:outline-none focus:ring-1 focus:ring-teal/30" />
         </div>
 
         <!-- Result count -->
@@ -519,7 +519,7 @@ const typeBadge: Record<string, string> = {
         c.classList.toggle('bg-teal', active);
         c.classList.toggle('text-white', active);
         c.classList.toggle('border-teal', active);
-        c.classList.toggle('bg-white', !active);
+        c.classList.toggle('bg-surface', !active);
         c.classList.toggle('text-muted', !active);
         c.classList.toggle('border-border', !active);
       });
@@ -672,7 +672,7 @@ const typeBadge: Record<string, string> = {
         c.classList.toggle('bg-teal', active);
         c.classList.toggle('text-white', active);
         c.classList.toggle('border-teal', active);
-        c.classList.toggle('bg-white', !active);
+        c.classList.toggle('bg-surface', !active);
         c.classList.toggle('text-muted', !active);
         c.classList.toggle('border-border', !active);
       });
