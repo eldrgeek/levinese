@@ -218,6 +218,21 @@ export default async (request) => {
     if (!res.ok) {
       const detail = await res.text().catch(() => '');
       console.warn('[ask] infer service', res.status, detail.slice(0, 300));
+
+      /* 429 = the shared daily question pool is dry, not an outage — pass the real
+       * meaning through instead of the generic "can't reach" message. Without this,
+       * the one day the pool empties, all 13 rooms read as broken (the exact
+       * impression the /agi page promises they won't give). Review finding 4,
+       * 2026-07-26 hardening pass. */
+      if (res.status === 429) {
+        return json(429, {
+          error: 'daily_pool_exhausted',
+          answer:
+            hostName +
+            " has answered the maximum number of questions for today across the whole SOMA estate — the pool resets at midnight Pacific. The archive itself is still fully browsable — try the corpus page.",
+        });
+      }
+
       return json(502, {
         error: 'inference_unavailable',
         answer:
