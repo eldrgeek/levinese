@@ -71,6 +71,55 @@ const { title, description = "A gift to Michael Levin — dictionary, corpus bro
   </footer>
 
 
+  <!-- "Is this you?" — the door back to the person the archive is about.
+       This archive was built out of a living person's published work without asking them
+       first. Defensible (it's all public, the host is named for a concept not the person,
+       and it says up front that it isn't them) but still done TO someone rather than WITH
+       them. This bar offers to hand it over — their voice, their instructions, their veto
+       — or to take it down. Gold, not the JoinBar's blue: different ask, different row.
+       Inlined rather than imported because this repo is outside the agi-2026 monorepo and
+       cannot reach @soma/feedback; canonical source is
+       agi-2026/packages/feedback/src/components/ClaimBar.astro. -->
+  <div class="claim-bar">
+    <a class="claim-bar__cta" href="https://mike-wolf.com/agi/yours/michael-levin/">
+      <span class="claim-bar__q">Are you Michael Levin?</span>
+      <span class="claim-bar__rest">Or know Michael Levin? We'd like to hand this room over. &rarr;</span>
+    </a>
+  </div>
+  <style>
+    .claim-bar {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      background: #0a0f1a;
+      padding: 0.9rem 1.5rem 1rem;
+      text-align: center;
+    }
+    .claim-bar__cta {
+      display: inline-flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: baseline;
+      gap: 0.42rem;
+      padding: 0.5rem 1.3rem;
+      border: 1px solid rgba(201, 162, 39, 0.45);
+      border-radius: 999px;
+      color: #c9a227;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 0.8rem;
+      text-decoration: none;
+      transition: background 0.15s, border-color 0.15s, color 0.15s;
+    }
+    .claim-bar__q { font-weight: 600; }
+    .claim-bar__rest { font-weight: 400; opacity: 0.72; }
+    .claim-bar__cta:hover {
+      background: rgba(201, 162, 39, 0.12);
+      border-color: #c9a227;
+      color: #e0be4d;
+    }
+    @media (max-width: 520px) {
+      .claim-bar__cta { flex-direction: column; gap: 0.15rem; border-radius: 14px; line-height: 1.45; }
+    }
+  </style>
+
   <!-- SOMA Onboard: join the constellation, or invite someone into it. One membership
        for all thirteen properties, held at the hub. Inlined rather than imported because
        this repo is outside the agi-2026 monorepo and cannot reach @soma/feedback. -->
