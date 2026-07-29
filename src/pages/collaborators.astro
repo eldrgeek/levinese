@@ -38,7 +38,7 @@ const labMembers = [
   { name: "Tomika Gotch", role: "Program Coordinator" },
   { name: "Caitlin Grasso", role: "Senior Research Assistant" },
   { name: "Benedikt Hartl", role: "Affiliate Research Scientist" },
-  { name: "Hananel Hazan", role: "Staff Scientist" },
+  { name: "Hananel Hazan", role: "Staff Scientist", archiveUrl: "https://agi26-hananel-hazan.netlify.app" },
   { name: "Douglas Hazel", role: "Computational Specialist" },
   { name: "Erik Hoel", role: "Staff Scientist" },
   { name: "Katarina Johnson", role: "Undergraduate Intern" },
@@ -113,6 +113,9 @@ const labMembers = [
           <div class="flex items-baseline gap-2 py-1.5 border-b border-border/50">
             <span class="font-medium text-ink text-sm">{m.name}</span>
             <span class="text-xs text-muted">{m.role}</span>
+            {(m as { archiveUrl?: string }).archiveUrl && (
+              <a href={(m as { archiveUrl?: string }).archiveUrl} class="text-xs text-teal hover:text-teal-mid font-medium ml-auto">archive →</a>
+            )}
           </div>
         ))}
       </div>
