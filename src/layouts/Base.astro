@@ -291,6 +291,51 @@ const { title, description = "A gift to Michael Levin — dictionary, corpus bro
   </script>
 
   <link rel="stylesheet" href="https://soma-guide.netlify.app/soma-guide.css" />
+  <!-- Morph's "thinking" state. The shared widget shows a bare "…" bubble while
+       /api/ask runs (often 10-20 s), which reads as stuck. This site-local style
+       turns that bubble into a labelled, animated indicator. The bubble is
+       .sg-msg--thinking, created and removed by soma-guide.js _askInference. -->
+  <style is:global>
+    .sg-msg--thinking {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      font-size: 0;
+      padding: 9px 14px;
+    }
+    .sg-msg--thinking::before {
+      content: "";
+      width: 30px;
+      height: 8px;
+      flex-shrink: 0;
+      background:
+        radial-gradient(circle closest-side, #3C6CDD 90%, transparent) 0 50% / 8px 8px no-repeat,
+        radial-gradient(circle closest-side, #3C6CDD 90%, transparent) 50% 50% / 8px 8px no-repeat,
+        radial-gradient(circle closest-side, #3C6CDD 90%, transparent) 100% 50% / 8px 8px no-repeat;
+      animation: morph-dots 1.2s infinite ease-in-out;
+    }
+    .sg-msg--thinking::after {
+      content: "Morph is reading Levin's work";
+      font-size: 0.82rem;
+      font-style: italic;
+      color: #475066;
+      animation: morph-label 10s forwards steps(1);
+    }
+    @keyframes morph-dots {
+      0%, 100% { background-size: 8px 8px, 5px 5px, 5px 5px; }
+      33%      { background-size: 5px 5px, 8px 8px, 5px 5px; }
+      66%      { background-size: 5px 5px, 5px 5px, 8px 8px; }
+    }
+    @keyframes morph-label {
+      0%   { content: "Morph is reading Levin's work"; }
+      80%  { content: "Still thinking. Answers can take up to 30 seconds"; }
+      100% { content: "Still thinking. Answers can take up to 30 seconds"; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .sg-msg--thinking::before { animation: none; }
+      .sg-msg--thinking::after { animation: none; }
+    }
+  </style>
   <script is:inline src="/levinese-guide-config.js"></script>
   <script is:inline src="/levinese-host.js"></script>
   <script is:inline src="https://soma-guide.netlify.app/soma-guide.js"></script>
