@@ -5,12 +5,21 @@
  *
  * v3 (2026-07-05): single Submit button, clarify conversation thread,
  * build-by-intent server response, and optional Google admin affordance.
+ * v3.3 (2026-07-15): mode chooser (request vs review) + 1-5 star signal for
+ * the new review/appreciation register.
+ * v4.1 (2026-08-07): introduce-once line (.soma-feedback-intro) + a
+ * responsive audit — iOS safe-area inset on the root (a fixed bottom-left
+ * element sat under the home-indicator bar on notched phones with no inset
+ * at all), and a max-height + scroll on the panel itself (nothing previously
+ * capped its height, so on a short/landscape viewport the bottom of the
+ * panel — Submit, status, footer — could render off-screen above the top
+ * edge with no way to reach it).
  */
 
 .soma-feedback-root {
   position: fixed;
-  left: 16px;
-  bottom: 16px;
+  left: calc(16px + env(safe-area-inset-left, 0px));
+  bottom: calc(16px + env(safe-area-inset-bottom, 0px));
   z-index: 9999;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
@@ -58,6 +67,12 @@
   left: 0;
   width: 340px;
   max-width: calc(100vw - 32px);
+  /* Nothing previously capped panel height — on a short/landscape viewport
+     the bottom of a long panel (Submit, status, footer) could render off
+     the top edge of the screen with no way to reach it. 72px ≈ the 52px
+     lift above the tab + 16px root offset + a small margin. */
+  max-height: calc(100vh - 72px - env(safe-area-inset-bottom, 0px));
+  overflow-y: auto;
   background: #1a1e27;
   color: #f0f0f0;
   border: 1px solid rgba(255, 255, 255, 0.12);
@@ -81,6 +96,31 @@
   margin-bottom: 10px;
 }
 
+.soma-feedback-context {
+  font-size: 11px;
+  color: #7d8290;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  padding: 4px 8px;
+  margin-bottom: 10px;
+}
+
+/* v4.1 introduce-once line — shown once ever, above everything else in the
+   panel. A touch more present than the muted context line (it's a greeting,
+   not metadata) but still quiet — this widget's whole ethos is "quiet unless
+   asked," so the intro doesn't get its own dismiss button or animation. */
+.soma-feedback-intro {
+  font-size: 12px;
+  line-height: 1.4;
+  color: #d8dce6;
+  background: rgba(91, 140, 255, 0.08);
+  border: 1px solid rgba(91, 140, 255, 0.2);
+  border-radius: 8px;
+  padding: 8px 10px;
+  margin-bottom: 10px;
+}
+
 .soma-feedback-close {
   width: 44px;
   height: 44px;
@@ -98,6 +138,67 @@
   cursor: pointer;
 }
 .soma-feedback-close:hover { color: #fff; background: rgba(255, 255, 255, 0.08); }
+
+.soma-feedback-mode-chooser {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.soma-feedback-mode-choice {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: left;
+  padding: 10px 12px;
+  min-height: 44px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: #0f1219;
+  color: #f0f0f0;
+  cursor: pointer;
+  font: inherit;
+}
+.soma-feedback-mode-choice:hover { border-color: #5b8cff; background: #141826; }
+.soma-feedback-mode-choice strong { font-size: 13px; }
+.soma-feedback-mode-choice-sub { font-size: 11px; color: #a9adb8; }
+
+.soma-feedback-mode-switch {
+  display: inline-block;
+  margin: -2px 0 10px;
+  padding: 0;
+  border: none;
+  background: none;
+  color: #a9adb8;
+  font-size: 11px;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  cursor: pointer;
+}
+.soma-feedback-mode-switch:hover { color: #f0f0f0; }
+
+.soma-feedback-star-row {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+.soma-feedback-star {
+  min-width: 32px;
+  min-height: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+  background: #0f1219;
+  color: #565c6b;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+}
+.soma-feedback-star:hover { color: #a9adb8; }
+.soma-feedback-star--selected { color: #ffcf5b; border-color: rgba(255, 207, 91, 0.4); }
+.soma-feedback-star:disabled { opacity: 0.6; cursor: default; }
 
 .soma-feedback-textarea,
 .soma-feedback-input,
@@ -175,6 +276,43 @@
 }
 .soma-feedback-status--success { color: #7be08a; }
 .soma-feedback-status--error { color: #ff8a8a; }
+
+/* Accept confirmation toast (feedback #3/#5): larger, higher-contrast, and
+   BESIDE the widget rather than inside the dialog, so an accepted submission
+   is unmistakable. Anchored to the right of the tab at the bottom-left root. */
+.soma-feedback-toast {
+  position: absolute;
+  left: calc(100% + 12px);
+  bottom: 0;
+  width: 280px;
+  max-width: 60vw;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: #123a24;
+  border: 1px solid #3fd67a;
+  color: #d7f7e2;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 600;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  pointer-events: none;
+}
+.soma-feedback-toast--show {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (max-width: 640px) {
+  /* No room beside it on narrow screens — lift it above the tab instead. */
+  .soma-feedback-toast {
+    left: 0;
+    bottom: 52px;
+    width: 280px;
+    max-width: calc(100vw - 24px);
+  }
+}
 
 .soma-feedback-thread {
   display: flex;
@@ -254,6 +392,93 @@
 .soma-feedback-admin-link:hover { color: #f0f0f0; }
 
 @media (max-width: 420px) {
-  .soma-feedback-root { left: 8px; bottom: 8px; }
+  .soma-feedback-root {
+    left: calc(8px + env(safe-area-inset-left, 0px));
+    bottom: calc(8px + env(safe-area-inset-bottom, 0px));
+  }
   .soma-feedback-panel { width: calc(100vw - 24px); }
+}
+
+/* ── v4 lane correction (2026-08-02) ─────────────────────────────────────────
+   Shown only in the acknowledgment, only when the request/review lane was
+   INFERRED rather than stated. Deliberately quiet: it is an escape hatch for a
+   wrong guess, not a second question. Making it loud would re-create the
+   up-front chooser this release removed, just one step later. */
+.soma-feedback-kind-correction {
+  margin-top: 6px;
+  font-size: 11px;
+  line-height: 1.5;
+  color: #8b90a0;
+}
+.soma-feedback-kind-correction-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: #9fc7ff;
+  text-decoration: underline;
+  cursor: pointer;
+  /* 44px touch target via padding would break the inline flow, so the row
+     itself carries the height instead (WQ-130 a11y pass kept the same way). */
+  min-height: 22px;
+}
+.soma-feedback-kind-correction-btn:hover,
+.soma-feedback-kind-correction-btn:focus-visible {
+  color: #cfe2ff;
+}
+.soma-feedback-kind-correction-btn:disabled {
+  color: #6b7080;
+  cursor: default;
+  text-decoration: none;
+}
+
+/* Opt-in fresh-build notice; separate from the feedback composer. */
+.soma-feedback-fresh-build {
+  position: fixed;
+  top: calc(12px + env(safe-area-inset-top, 0px));
+  right: calc(12px + env(safe-area-inset-right, 0px));
+  z-index: 10000;
+  max-width: calc(100vw - 48px);
+  padding: 8px 12px;
+  border: 1px solid #64748b;
+  border-radius: 8px;
+  background: #1f2430;
+  color: #f5f5f5;
+  font: 14px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+.soma-feedback-fresh-build button {
+  min-height: 44px;
+  padding: 4px 8px;
+  border: 0;
+  background: transparent;
+  color: #b8d5ff;
+  font: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.soma-feedback-fresh-build button:focus-visible {
+  outline: 2px solid #b8d5ff;
+  outline-offset: 2px;
+}
+
+/* ── v4.2 draggable tab (2026-09-16) ─────────────────────────────────────────
+   The tab can be dragged anywhere; each site remembers where, per browser.
+   Unmoved, none of the classes below are set and the chip looks exactly as it
+   did. Moved, the panel and the toast open toward the middle of the screen:
+   --align-right when the tab is in the right half, --open-down when it is in
+   the top half. JS also shifts and height-caps the panel to keep it on screen. */
+.soma-feedback-tab { touch-action: none; }
+.soma-feedback-root--dragging .soma-feedback-tab {
+  cursor: grabbing;
+  transform: none;
+  transition: none;
+}
+.soma-feedback-root--align-right .soma-feedback-panel { left: auto; right: 0; }
+.soma-feedback-root--open-down .soma-feedback-panel { bottom: auto; top: 52px; }
+.soma-feedback-root--align-right .soma-feedback-toast { left: auto; right: calc(100% + 12px); }
+.soma-feedback-root--open-down .soma-feedback-toast { bottom: auto; top: 0; }
+@media (max-width: 640px) {
+  .soma-feedback-root--align-right .soma-feedback-toast { left: auto; right: 0; }
+  .soma-feedback-root--open-down .soma-feedback-toast { bottom: auto; top: 52px; }
 }
