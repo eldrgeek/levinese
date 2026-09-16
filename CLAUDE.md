@@ -18,7 +18,7 @@ last_reviewed: 2026-06-23
 
 **Depends on / used by:** template/source for `Joscha`, `agi-2026` per-thinker subsites. Guide widget + SomaAuth visitor auth come from SOMA. Ask backend is an external Cloudflare tunnel (see `.env`).
 
-**Live site + hub:** this IS the canonical live Michael Levin site for AGI-2026 → **levinese-preview.netlify.app** (linked from the hub roster at agi2026.netlify.app). `src/layouts/Base.astro` carries a "← Back to AGI 2026" bar; keep it pointing at agi2026.netlify.app. GitHub CD is wired — `git push origin master` auto-deploys. To (re)wire Netlify CD use the `netlify-deploy` skill (expect recipe; never pipe input into `netlify init`).
+**Live site + hub:** this IS the canonical live Michael Levin site for AGI-2026 → **levinese-preview.netlify.app** (linked from the hub roster at agi2026.netlify.app). `src/layouts/Base.astro` carries a "← Back to AGI 2026" bar; keep it pointing at agi2026.netlify.app. A push to master does NOT deploy (checked 2026-09-16: every recent deploy is manual, no commit ref). Deploy with `npm run build` then `~/Projects/_estate/bin/ship levinese-preview -- netlify deploy --prod --dir dist`. To (re)wire Netlify CD use the `netlify-deploy` skill (expect recipe; never pipe input into `netlify init`).
 
 **Gotchas**
 - Build is two-step: `aggregate-content.mjs` must run before `astro build` (the `build` script does this; bare `astro build` ships stale data).
