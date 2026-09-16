@@ -2,6 +2,7 @@
 slug: "aging-as-a-loss-of-goal-directedness"
 letter: "A"
 title: "Aging as a Loss of Goal-Directedness"
+plain: "A way of describing aging as cells gradually losing the ability to work together toward the body's big-picture goals, rather than just wearing out. The usual view of aging asks which molecules have broken down. Levin's version asks what happens when cells, which are still individually capable, stop coordinating around shared targets like the body's correct shape and its priorities for repair.\n\nThis doesn't deny that damage happens. It changes what a treatment should target. Instead of only replacing worn parts, an anti-aging treatment might try to restore the signals that convince cells to keep working together on the larger project of the body."
 subtitle: "senescence as shrinking agency, not just accumulating damage"
 authored_by: "Prior art (Grok-67, Grok-Lex)"
 source: "Levin et al. (2025) \"Aging as a Loss of Goal-Directedness: An Evolutionary Simulation and Analysis Under the TAME Framework,\" Advanced Science. DOI 10.1002/advs.202509872. Also Pio-Lopez & Levin (2024) \"Aging as a loss of morphostatic information.\" DOI 10.1016/j.arr.2024.102310."

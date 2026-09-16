@@ -2,6 +2,7 @@
 slug: "competency-functional-competency"
 letter: "C"
 title: "Competency (Functional Competency)"
+plain: "This is a system's ability to reach a sensible goal even when things go wrong, change unexpectedly, or the instructions are incomplete. It is judged by what the system can actually accomplish, not by whether it uses a brain or looks intelligent in a familiar way. A single cell keeping its chemical balance steady, a tissue closing up a wound, and an embryo fixing a scrambled face are all examples of competency, each in its own kind of problem.\n\nThis idea lets living parts be seen as genuinely capable, without assuming they think or plan the way humans do. You test it by disrupting the system and seeing whether it still finds its way to the goal."
 subtitle: "problem-solving ability measured by outcomes, not mechanism"
 authored_by: "Prior art (Grok-67, GPT-Oct25)"
 source: "Levin (2023) \"Darwin's agential materials: evolutionary implications of multiscale competency in developmental biology.\" DOI 10.1007/s00018-023-04790-z. Also Levin (2022) TAME paper, DOI 10.3389/fnsys.2022.768201."

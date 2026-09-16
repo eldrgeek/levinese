@@ -2,6 +2,7 @@
 slug: "synthbiosis"
 letter: "S"
 title: "Synthbiosis"
+plain: "Levin's made-up word, combining \"synthesis\" and \"bios\" (life), for a relationship where living things and engineered things both benefit and thrive together, rather than one simply using the other. It applies to hybrids like xenobots and other combinations of biology and engineering.\n\nThe term pushes back on two opposite worries: the fear that engineering ruins something natural, and the view that living material is just raw stuff for humans to use. Instead, Levin frames the goal as deliberately designing living and engineered forms to flourish together."
 subtitle: "living and engineered forms in mutual thriving"
 authored_by: "Prior art (Grok-Lex, Grok-67)"
 source: "Levin, \"FAQs from my academic work,\" thoughtforms.life. Also McMillen & Levin (2024) \"Collective intelligence: a unifying concept for integrating biology across scales and substrates.\" Communications Biology. DOI 10.1038/s42003-024-06037-4."

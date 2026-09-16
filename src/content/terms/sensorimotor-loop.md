@@ -2,6 +2,7 @@
 slug: "sensorimotor-loop"
 letter: "S"
 title: "Sensorimotor Loop"
+plain: "A cycle of sensing and then acting that Levin sees even in cells, not just in animals with muscles and nerves. A cell senses things like nearby chemicals, voltage, physical stress, or injury, then acts by changing gene activity, moving, dividing, or changing its connections to neighbors.\n\nThis matters because it treats body-building as active, not automatic. A group of cells is not blindly running a fixed script; it is checking its current state against a bigger goal and adjusting, which is Levin's basic picture of cells acting like agents."
 subtitle: "cellular sensing and action in morphospace"
 authored_by: "Codex"
 source: "Levin (2019) \"The Computational Boundary of a 'Self': Developmental Bioelectricity Drives Multicellularity and Scale-Free Cognition.\" DOI 10.3389/fpsyg.2019.02688."

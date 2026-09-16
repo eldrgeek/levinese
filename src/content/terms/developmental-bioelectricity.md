@@ -2,6 +2,7 @@
 slug: "developmental-bioelectricity"
 letter: "D"
 title: "Developmental Bioelectricity"
+plain: "This is the study of how the natural electrical states inside living tissue help guide growth, shape-building, healing, and repair. Cells hold a small voltage across their membranes, pass signals to neighboring cells, and change their behavior, including which genes turn on, in response to patterns of that voltage.\n\nIn Levin's work, this field connects basic questions about how simple systems process information to real regenerative medicine. Electrical patterns can store information about body shape, link cells into a larger coordinated group, and be changed on purpose, which is why the same ideas come up whether the topic is regrowing a flatworm's head, correcting a frog's face, or treating cancer."
 subtitle: "voltage as a control layer for building bodies"
 authored_by: "Prior art (Grok-Lex, GPT-Oct25)"
 source: "Levin (2019) \"The Computational Boundary of a 'Self': Developmental Bioelectricity Drives Multicellularity and Scale-Free Cognition.\" DOI 10.3389/fpsyg.2019.02688. Also Levin & Martyniuk (2018) \"The bioelectric code.\" DOI 10.1016/j.biosystems.2017.08.009."

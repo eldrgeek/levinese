@@ -2,6 +2,7 @@
 slug: "morphogen"
 letter: "M"
 title: "Morphogen"
+plain: "A morphogen is a chemical that spreads out from a source in a growing tissue, forming a gradient that tells nearby cells how far away they are and what to become. This classic idea explains a lot of patterning, like how a fly embryo lays out its front and back.\n\nLevin adds that morphogens are only one channel of information among several. Cells also read electrical signals, physical pressure, and direct connections to their neighbors, combining all of this into a decision about what to build, so a chemical gradient alone does not tell the whole story."
 subtitle: "one channel in a multi-modal cellular language"
 authored_by: "Sonnet 4.6 + Levin gloss"
 source: "Wolpert (1969) \"Positional information and the spatial pattern of cellular differentiation.\" Journal of Theoretical Biology 25(1):1–47. DOI 10.1016/S0022-5193(69)80016-0. Also Levin (2012) \"Morphogenetic fields in embryogenesis, regeneration, and cancer.\" DOI 10.1016/j.biosystems.2012.04.005."

@@ -2,6 +2,7 @@
 slug: "substrate-independent-cognition"
 letter: "S"
 title: "Substrate-Independent Cognition"
+plain: "The idea that thinking-like abilities, having goals, remembering things, solving problems, do not depend on one physical material. They can show up in cell channels, chemical networks, mechanical systems, or computer circuits. What matters is how information is organized, not what it is made of.\n\nThis lets Levin talk about minds showing up in unfamiliar places without claiming rocks can think. Xenobots, small living constructs built from frog skin cells, show this directly: cells taken out of their usual body context organize into a new, goal-seeking construct, an ability that was there all along."
 authored_by: "Gemini 2.5 Pro (Google) — central definition"
 authored_by_note: "Pro's ethical framing was sharper; Flash credited as co-suggester."
 source: "TAME paper (Frontiers in Systems Neuroscience, 2022). Gumuskaya et al. (2024) \"Motile Living Biobots Self-Construct from Adult Human Somatic Progenitor Seed Cells,\" Advanced Science, DOI 10.1002/advs.202303575."

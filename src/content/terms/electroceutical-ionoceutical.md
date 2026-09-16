@@ -2,6 +2,7 @@
 slug: "electroceutical-ionoceutical"
 letter: "E"
 title: "Electroceutical / Ionoceutical"
+plain: "These are treatments that work by changing a tissue's electrical or ion-based signaling, instead of only using chemistry aimed at other targets. 'Electroceutical' is the broad term for using fields, devices, or channel-changing drugs to get a medical result. 'Ionoceutical' is Levin's more precise version, focused on the tiny channels and gates in cell membranes that cells use to process information.\n\nThis matters because the target is not only nerves. Ordinary cells also hold a voltage and link up electrically with their neighbors. So a treatment like this can nudge a whole group of cells toward a healthier state, instead of controlling every gene and pathway one by one."
 subtitle: "therapeutics aimed at bioelectric control surfaces"
 authored_by: "Prior art (Grok-67, Claude-Oct25)"
 source: "Levin et al. (2024) \"Electroceuticals: emerging applications beyond the nervous system and excitable tissues.\" DOI 10.1016/j.tips.2024.03.001. Also Mathews & Levin (2023) \"Morphoceuticals.\" DOI 10.1016/j.drudis.2023.103585."

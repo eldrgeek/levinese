@@ -2,6 +2,7 @@
 slug: "morphoceutical"
 letter: "M"
 title: "Morphoceutical"
+plain: "A morphoceutical is a medical treatment aimed at the control system that tells a tissue what shape to build or repair, rather than at the tissue itself. It is not a scaffold, a transplant, or a detailed stem-cell recipe. It is usually a signal, often electrical, that nudges a group of cells toward the right target shape and then lets the cells work out the details themselves.\n\nThe idea matters because it treats disease, aging, and failed healing as problems with the body's shape-control signals, which might be reset rather than micromanaged piece by piece."
 subtitle: "a drug for anatomical setpoints"
 authored_by: "Prior art (Grok-67, Claude-Oct25)"
 source: "Mathews & Levin (2023) \"Morphoceuticals: Perspectives for discovery of drugs targeting anatomical control mechanisms in regenerative medicine, cancer and aging.\" DOI 10.1016/j.drudis.2023.103585."

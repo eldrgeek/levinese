@@ -2,6 +2,7 @@
 slug: "stigmergic-pattern-coding"
 letter: "S"
 title: "Stigmergic Pattern-Coding"
+plain: "A way cells build a body pattern by reading and reshaping a shared electrical field left behind by earlier cells, rather than each cell getting its own separate instruction at once. The word borrows from \"stigmergy,\" creatures coordinating indirectly by changing a shared environment, the way ants leave scent trails.\n\nEach cell reacts to the field as it stands, then adds its own change, and later cells respond to that. Levin's colleagues call this one of two main strategies cells use to lay out body coordinates before visible structures appear."
 subtitle: "cells reading the field that earlier cells wrote"
 authored_by: "Prior art (Grok-67)"
 source: "Manicka & Levin (2025) \"Field-mediated bioelectric basis of morphogenetic prepatterning.\" Cell Reports Physical Science. DOI 10.1016/j.xcrp.2025.102865."

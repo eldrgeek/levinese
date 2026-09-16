@@ -2,6 +2,7 @@
 slug: "recruitment"
 letter: "R"
 title: "Recruitment"
+plain: "What happens when a cell or small group of cells sends a signal that converts neighboring cells to the same state, instead of just passing the message along. The newly converted cells then send the same signal outward, so the effect keeps spreading outward on its own.\n\nThis matters because it shows how a small starting signal can build a large, coordinated body pattern, like an eye, with no central controller. A tiny cue recruits a region, that region recruits a larger one, which is also the idea behind treatments that nudge tissue and let it finish the job."
 subtitle: "pulling neighbors into a shared goal via instructional signals"
 authored_by: "Sonnet 4.6 + Levin gloss"
 source: "Levin (2022) \"Technological Approach to Mind Everywhere,\" Frontiers in Systems Neuroscience. DOI 10.3389/fnsys.2022.768201. Also Levin (2012) \"Morphogenetic fields in embryogenesis, regeneration, and cancer.\" DOI 10.1016/j.biosystems.2012.04.005."

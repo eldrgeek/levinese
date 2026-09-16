@@ -2,6 +2,7 @@
 slug: "hyper-developmental-biology"
 letter: "H"
 title: "Hyper-Developmental Biology"
+plain: "This is the proposed idea that development is not only about one embryo building one body, but can also involve groups of embryos coordinating together as a larger system. Research on frog embryos found that large groups resist harmful substances better than embryos raised alone, and that this protection depends on short-range signals passing between the embryos.\n\nThe group is not just averaging out random noise; it seems to produce its own group-level response. This raises a striking possibility: many past measurements of how harmful a substance is to embryos may have been unknowingly affected by this hidden group-level protection."
 subtitle: "developmental cognition above the single embryo"
 authored_by: "Prior art (Grok-67)"
 source: "Tung et al. (2024) \"Embryos assist morphogenesis of others through calcium and ATP signaling mechanisms in collective teratogen resistance.\" DOI 10.1038/s41467-023-44522-2. Also Levin blog post \"What Groups of Embryos Know: Toward a Hyper-Developmental Biology.\""

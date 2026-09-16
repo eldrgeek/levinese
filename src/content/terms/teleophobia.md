@@ -2,6 +2,7 @@
 slug: "teleophobia"
 letter: "T"
 title: "Teleophobia"
+plain: "An excessive fear, in Levin's view, of ever saying a non-human, non-brained living system has a goal or purpose. He argues biology has overcorrected so far against this language that it now avoids useful ideas out of caution alone.\n\nSaying a tissue is \"trying\" to rebuild a limb might sound unscientific, but Levin argues that refusing to say it closes off experiments and treatments that goal-directed thinking would suggest. His test is simple: does treating a system as goal-directed actually help predict and guide it? If so, avoiding the language just gets in the way."
 subtitle: "the scientific fear of saying \"goal\""
 authored_by: "Prior art (Grok-Lex, Claude-Oct25)"
 source: "Levin, \"FAQs from my academic work,\" thoughtforms.life. Also Levin (2022) \"Technological Approach to Mind Everywhere,\" Frontiers in Systems Neuroscience. DOI 10.3389/fnsys.2022.768201."

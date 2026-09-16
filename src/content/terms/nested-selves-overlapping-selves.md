@@ -2,6 +2,7 @@
 slug: "nested-selves-overlapping-selves"
 letter: "N"
 title: "Nested Selves (Overlapping Selves)"
+plain: "A living body is not one single self all the way through. It is more like a stack of partly overlapping selves: cells, tissues, organs, and the whole organism can each have their own goals, memories, and boundaries. Sometimes these interests line up, sometimes they compete, and a healthy animal is really a successful team-up where many smaller selves work toward shared goals.\n\nLevin treats \"self\" as something that can be measured and can shift, rather than a fixed fact, because situations like healing, pregnancy, or cancer show the boundary of self moving around."
 subtitle: "selves inside selves, with goals at many scales"
 authored_by: "Prior art (GPT-Oct25)"
 source: "Levin (2019) \"The Computational Boundary of a 'Self'.\" DOI 10.3389/fpsyg.2019.02688. Also Shamilov et al. (2023) \"Nested Selves: Self-Organization and Shared Markov Blankets in Prenatal Development in Humans.\" DOI 10.1111/tops.12717."

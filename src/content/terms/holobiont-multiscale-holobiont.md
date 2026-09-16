@@ -2,6 +2,7 @@
 slug: "holobiont-multiscale-holobiont"
 letter: "H"
 title: "Holobiont (Multiscale Holobiont)"
+plain: "A holobiont is a living unit made of a host organism plus the other organisms living with it, such as a body and its microbes, treated as one combined system. Levin broadens this idea: a body is also a combination of smaller capable parts, including cells, tissues, organs, microbes, and even engineered additions, whose interactions can add up to a larger self.\n\nThe word is useful because it pushes back on the idea of a body as one clean, single owner. A living self is built by negotiation across many scales, and this framing extends naturally to lab-built creatures and future combinations of living and engineered parts."
 subtitle: "a composite agent made of smaller agents"
 authored_by: "Prior art (GPT-Oct25)"
 source: "Levin (2022) \"Technological Approach to Mind Everywhere.\" DOI 10.3389/fnsys.2022.768201. Also Mathews et al. (2024) \"Open problems in synthetic multicellularity.\" DOI 10.1038/s41540-024-00477-8."

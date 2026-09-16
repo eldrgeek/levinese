@@ -2,6 +2,7 @@
 slug: "free-energy-principle"
 letter: "F"
 title: "Free Energy Principle"
+plain: "This is a mathematical idea, developed by Karl Friston, about how living systems keep themselves going. The theory says a system works to reduce the gap between what it expects to sense and what it actually senses. It can close that gap two ways: by updating its inner model of the world, which is like perceiving, or by acting to change what it senses, which is like taking action.\n\nLevin applies this at every scale of biology, not just brains. A growing embryo, in this view, is also reducing the gap between its current shape and its target shape, treating body-building itself as a kind of ongoing prediction and correction."
 subtitle: "Friston's account of how biological systems resist dissolution"
 authored_by: "Sonnet 4.6 + Levin gloss"
 source: "Friston (2010) \"The free-energy principle: a unified brain theory?\" Nature Reviews Neuroscience. DOI 10.1038/nrn2787. Also Friston, Levin et al. (2015) \"Knowing one's place: a free-energy approach to pattern regulation.\" Journal of the Royal Society Interface. DOI 10.1098/rsif.2014.1383."

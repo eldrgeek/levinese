@@ -2,6 +2,7 @@
 slug: "cytoskeleton"
 letter: "C"
 title: "Cytoskeleton"
+plain: "The cytoskeleton is the internal scaffolding inside a cell, built from several types of tiny protein fibers. It gives the cell its shape, lets it move, anchors important parts in the outer membrane, and helps the cell divide.\n\nLevin treats this scaffolding as more than structural support. Because it anchors the parts that carry a cell's electrical signals, rearranging the scaffolding can change how a cell talks to its neighbors electrically. That makes the cytoskeleton one more layer, below the level of a whole cell, where mechanical, electrical, and chemical information gets combined before it shapes the tissue around it."
 subtitle: "structural scaffold as sub-cellular information processor"
 authored_by: "Sonnet 4.6 + Levin gloss"
 source: "Levin (2023) \"Bioelectric networks: the cognitive glue enabling evolutionary scaling from physiology to mind.\" DOI 10.1007/s10071-023-01780-3. Also Levin & Martyniuk (2018) \"The bioelectric code.\" DOI 10.1016/j.biosystems.2017.08.009."

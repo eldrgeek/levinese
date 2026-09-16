@@ -2,6 +2,7 @@
 slug: "inflationary-leaps"
 letter: "I"
 title: "Inflationary Leaps"
+plain: "These are major evolutionary jumps that suddenly expand how much space and time a living system can sense, remember, and act across, what Levin calls its cognitive light cone. The clearest example is the shift to multicellularity, where once-separate cells become working parts of one larger body. The rise of nervous systems is another such leap, giving animals much larger memory and planning ability.\n\nThis framing treats evolution as, in part, a story of expanding agency, not just collecting new traits. It also has a darker side: cancer and related breakdowns can be seen as a local step backward, where the larger self loses its hold over its own parts."
 subtitle: "evolutionary jumps in cognitive boundary size"
 authored_by: "Prior art (GPT-Oct25, Grok-67)"
 source: "Levin (2019) \"The Computational Boundary of a 'Self': Developmental Bioelectricity Drives Multicellularity and Scale-Free Cognition.\" DOI 10.3389/fpsyg.2019.02688."

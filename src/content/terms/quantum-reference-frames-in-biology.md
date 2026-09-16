@@ -2,6 +2,7 @@
 slug: "quantum-reference-frames-in-biology"
 letter: "Q"
 title: "Quantum Reference Frames (in biology)"
+plain: "A way of describing living systems as layers of observers, where each layer, a synapse, a cell, a whole tissue, has its own boundary and its own way of sensing the world. Levin and colleagues borrow this idea from physics to model how these layers nest inside each other.\n\nThis does not mean ordinary thinking is some mysterious quantum effect. It is a language for a simple point: what a system can sense and control depends on the scale it works at, and larger systems are built from smaller ones nested like Russian dolls."
 subtitle: "a formal language for nested biological observers"
 authored_by: "Prior art (GPT-Oct25)"
 source: "Fields, Glazebrook & Levin (2022) \"Neurons as hierarchies of quantum reference frames.\" DOI 10.1016/j.biosystems.2022.104714."

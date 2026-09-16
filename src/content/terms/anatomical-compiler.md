@@ -2,6 +2,7 @@
 slug: "anatomical-compiler"
 letter: "A"
 title: "Anatomical Compiler"
+plain: "Levin's speculative idea for a future tool: you would describe the body shape you want, and the tool would work out the exact electrical and chemical signals needed to get cells to build it. The comparison is to a computer compiler, which turns a human-readable program into low-level instructions a machine can run. An anatomical compiler would turn a description of a desired shape into cell-level signals, without a scientist managing every tiny step by hand.\n\nIt matters as a target for the field: once scientists can read the body's bioelectric signals and write new ones, the next step is a tool that generates those signals from a goal. Levin is clear this is still more vision than finished science."
 subtitle: "Levin's speculative central technology"
 authored_by: "Prior art (GPT-Oct25, Grok-67, Claude-Oct25)"
 source: "Trends in Molecular Medicine (2023), S1471-4914(23)00142-9. Also Psychology Today article on Levin. Grok-Colophon notes the concept as valuable."

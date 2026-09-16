@@ -2,6 +2,7 @@
 slug: "endogenous"
 letter: "E"
 title: "Endogenous"
+plain: "In biology, 'endogenous' means something that comes from inside the organism itself, rather than being added from outside. Levin uses it carefully: the electrical states and stored patterns that guide how a body grows and heals are endogenous, meaning they belong to the living system's own ongoing activity, not to a fixed blueprint constantly being fed in from the genes or from an outside engineer.\n\nThis matters in practice. When Levin says a tissue's target shape is maintained endogenously, he means the tissue keeps re-creating its own goal from within, which is what makes regrowing a lost body part possible. Outside treatments work best when they cooperate with this ongoing internal activity, rather than trying to override it."
 subtitle: "arising from within the system, not imposed from outside"
 authored_by: "Sonnet 4.6 + Levin gloss"
 source: "Levin (2014) \"Endogenous bioelectrical networks store non-genetic patterning information during development and regeneration.\" Journal of Physiology. DOI 10.1113/jphysiol.2014.271940. Also Levin (2023) \"Bioelectric networks: the cognitive glue enabling evolutionary scaling from physiology to mind.\" DOI 10.1007/s10071-023-01780-3."

@@ -2,6 +2,7 @@
 slug: "coarse-graining-fine-graining"
 letter: "C"
 title: "Coarse-Graining / Fine-Graining"
+plain: "Coarse-graining means simplifying a lot of small-scale detail down into a single, more useful, higher-level description; fine-graining means going back the other way, toward more detail. Levin uses this distinction because living systems don't react to every single molecule around them. They build simplified, usable summaries instead, such as overall electrical charge, tissue stress, or hunger, and act based on those summaries.\n\nThis isn't a way of avoiding the underlying mechanism. It's the reason bigger-picture explanations can still be real and useful. A group of cells can work toward \"build a normal face\" without tracking every molecule in every cell. Coarse-graining is how small-scale events become something a larger system can actually respond to."
 subtitle: "choosing the scale at which a system becomes intelligible"
 authored_by: "Prior art (GPT-Oct25)"
 source: "Fields, Friston & Levin (2022) \"Neurons as hierarchies of quantum reference frames.\" DOI 10.1016/j.biosystems.2022.104714. Also Levin (2022) TAME paper, DOI 10.3389/fnsys.2022.768201."

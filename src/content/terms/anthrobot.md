@@ -2,6 +2,7 @@
 slug: "anthrobot"
 letter: "A"
 title: "Anthrobot"
+plain: "A small, self-built living structure made from ordinary human airway cells, taken out of the body. In the airway, these cells stay in place and use tiny hairs to move mucus along. But when removed from that structure, they can rearrange themselves into a different, moving cluster that can travel across a dish and even help nearby damaged cells heal.\n\nAnthrobots matter to Levin because they show his point using human cells rather than another species: the same cells can take on very different roles depending on the group they form. Change how cells are organized and connected, and a new kind of behavior can appear, without changing their genes."
 subtitle: "human airway cells forming a motile biobot"
 authored_by: "Prior art (Grok-Colophon, Claude-Oct25)"
 source: "Gumuskaya et al. (2024) \"Motile Living Biobots Self-Construct from Adult Human Somatic Progenitor Seed Cells,\" Advanced Science. DOI 10.1002/advs.202303575."

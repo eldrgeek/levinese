@@ -2,6 +2,7 @@
 slug: "robustness"
 letter: "R"
 title: "Robustness"
+plain: "The ability of a living system to reach its normal target shape even when something disrupts its parts, its surroundings, or the steps it usually follows. It is not just toughness. It means the system is aimed at an outcome and can find a way there from an abnormal start.\n\nIn one famous experiment, a tadpole's face organs were scrambled into the wrong places, yet it still grew into a frog with a normal, working face. Levin treats this as evidence that tissues are goal-directed, and a guide for treatments that still work when the trigger is imperfect."
 subtitle: "completing the target pattern despite perturbation"
 authored_by: "Sonnet 4.6 + Levin gloss"
 source: "Levin (2023) \"Darwin's agential materials: evolutionary implications of multiscale competency in developmental biology.\" DOI 10.1007/s00018-023-04790-z. Also Levin (2022) TAME paper, DOI 10.3389/fnsys.2022.768201."

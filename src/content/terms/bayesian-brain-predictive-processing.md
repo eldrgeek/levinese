@@ -2,6 +2,7 @@
 slug: "bayesian-brain-predictive-processing"
 letter: "B"
 title: "Bayesian Brain / Predictive Processing"
+plain: "An idea from neuroscience: instead of passively receiving information from the senses, the brain constantly predicts what it expects to sense, and pays attention mainly to the parts that don't match. Those mismatches update its internal model. Under this view, perceiving, thinking, and acting are really the same process: reducing the gap between expectation and reality.\n\nLevin uses this to argue that this prediction-and-correction doesn't require a brain at all. A group of cells healing a wound is, in a real sense, predicting a target shape, noticing where the current shape is wrong, and acting to fix it. A brain, on this view, is a faster, later version of something biology was already doing."
 subtitle: "the brain as a prediction machine — and what that means below the brain"
 authored_by: "Sonnet 4.6 + Levin gloss"
 source: "Clark (2015) \"Surfing Uncertainty: Prediction, Action, and the Embodied Mind.\" Also Fields, Friston & Levin (2022) \"Neurons as hierarchies of quantum reference frames.\" DOI 10.1016/j.biosystems.2022.104714."

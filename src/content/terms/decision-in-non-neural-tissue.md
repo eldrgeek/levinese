@@ -2,6 +2,7 @@
 slug: "decision-in-non-neural-tissue"
 letter: "D"
 title: "Decision (in non-neural tissue)"
+plain: "This describes a moment when a group of cells without nerves changes course in a way that looks like a choice, rather than just a mechanical push. It does not mean every cell is conscious. It means the tissue gathers information, weighs it in some rough sense, and shifts its behavior toward a goal, such as a healing wound choosing between forming a scar or regrowing a limb.\n\nResearch shows electrical networks in tissue can store information, predict outcomes, and guide action without any nerves at all. So these are not tiny versions of human thinking, but real, gradual, information-based shifts in behavior."
 subtitle: "choice-like transitions outside brains"
 authored_by: "Prior art (GPT-Oct25)"
 source: "Manicka & Levin (2019) \"Modeling somatic computation with non-neural bioelectric networks.\" DOI 10.1038/s41598-019-54859-8. Also Levin (2022) TAME paper, DOI 10.3389/fnsys.2022.768201."

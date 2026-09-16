@@ -2,6 +2,7 @@
 slug: "plasticity"
 letter: "P"
 title: "Plasticity"
+plain: "In biology, plasticity usually means a system's ability to change in response to its conditions. Levin sharpens this idea by tying it to goals: plasticity is a system's ability to find a new way to reach the same target when its usual path is blocked or disrupted. It is not just reacting to a disturbance, it is reorganizing around a goal despite the disturbance.\n\nAn organism that develops normally despite genetic damage, or a lab-built cell cluster that finds a new way to move in an unfamiliar setting, is showing plasticity in this sense. A related idea, robustness, asks whether a system actually reaches its goal; plasticity asks how many paths it has available to try."
 subtitle: "finding a new path to the same goal"
 authored_by: "Sonnet 4.6 + Levin gloss"
 source: "Levin (2023) \"Darwin's agential materials: evolutionary implications of multiscale competency in developmental biology.\" DOI 10.1007/s00018-023-04790-z. Also McMillen & Levin (2024) \"Collective intelligence: a unifying concept for integrating biology across scales and substrates.\" DOI 10.1038/s42003-024-06037-4."

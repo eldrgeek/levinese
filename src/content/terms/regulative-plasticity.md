@@ -2,6 +2,7 @@
 slug: "regulative-plasticity"
 letter: "R"
 title: "Regulative Plasticity"
+plain: "The ability of a living system to reach its normal target shape or function even after its starting point or parts have been disturbed. Instead of following one fixed set of steps, it finds its way to the right outcome from wherever it happens to start.\n\nFor example, half of a sea-urchin embryo can still grow into a complete, normally shaped larva. Levin treats this as proof that real goal-seeking is happening, and as a guide for treatments: helping a tissue fix itself works better than controlling every step by hand."
 subtitle: "reaching the target despite a disrupted path"
 authored_by: "Prior art (GPT-Oct25)"
 source: "Levin (2023) \"Darwin's agential materials: evolutionary implications of multiscale competency in developmental biology.\" DOI 10.1007/s00018-023-04790-z. Also Levin (2022) TAME paper, DOI 10.3389/fnsys.2022.768201."

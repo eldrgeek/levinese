@@ -2,6 +2,7 @@
 slug: "computational-boundary-of-a-self"
 letter: "C"
 title: "Computational Boundary of a Self"
+plain: "This is the edge around whatever a system can sense, remember, model, and act on as one connected agent. It loosens the idea of a 'self' from just skin, genes, or a brain. A single cell has one such boundary; a tissue whose cells are linked together has another, wider one; a whole organism has another. The boundary is drawn by what information a system can pull together and control, not by what it looks like from outside.\n\nThis idea explains the cognitive light cone: to find where a self is, you ask what size of goal it can pursue. Cancer, healing, learning, and biological engineering all become stories about that boundary shrinking, growing, joining, or moving."
 subtitle: "where the agent ends is an empirical question"
 authored_by: "Prior art (GPT-Oct25, Grok-67)"
 source: "Levin (2019) \"The Computational Boundary of a 'Self': Developmental Bioelectricity Drives Multicellularity and Scale-Free Cognition.\" DOI 10.3389/fpsyg.2019.02688."

@@ -2,6 +2,7 @@
 slug: "tame"
 letter: "T"
 title: "TAME"
+plain: "Short for \"Technological Approach to Mind Everywhere,\" Levin's framework for studying and engineering minds in unfamiliar kinds of bodies, from cells to robots. It avoids a hard line between \"real minds\" and \"mere mechanisms,\" asking instead: what is this system trying to do, what can it remember, and what would change its behavior?\n\nThe \"technological\" part matters: TAME is meant to guide real experiments and tools, not just debate. If cells, tissues, and robots can all be treated as agents to some degree, the task becomes finding how to communicate with each one."
 subtitle: "Technological Approach to Mind Everywhere"
 authored_by: "Prior art (Grok-Lex, Grok-67, GPT-Oct25, Claude-Oct25)"
 source: "Levin (2022) \"Technological Approach to Mind Everywhere,\" Frontiers in Systems Neuroscience. DOI 10.3389/fnsys.2022.768201."

@@ -2,6 +2,7 @@
 slug: "ion-channel"
 letter: "I"
 title: "Ion Channel"
+plain: "Ion channels are tiny gated openings in a cell's outer membrane that let specific charged particles flow in or out. Whether they are open or closed depends on voltage, chemical signals, physical pressure, or light, and together they set a cell's resting electrical state and how quickly it can change that state.\n\nLevin treats individual ion channels as the basic switches of a cell's electrical signaling system. Each type of channel does a different job, and changing which channels are open rewrites the electrical message a cell sends to its neighbors. That makes ion channels one of the most direct ways to intervene in the electrical patterns that guide how tissue grows."
 subtitle: "the read/write head of the bioelectric code"
 authored_by: "Sonnet 4.6 + Levin gloss"
 source: "Levin & Martyniuk (2018) \"The bioelectric code: An ancient computational medium for dynamic control of growth and form.\" DOI 10.1016/j.biosystems.2017.08.009. Also Levin et al. (2024) \"Electroceuticals: emerging applications beyond the nervous system and excitable tissues.\" DOI 10.1016/j.tips.2024.03.001."

@@ -2,6 +2,7 @@
 slug: "non-neural-bioelectric-network-ben"
 letter: "N"
 title: "Non-Neural Bioelectric Network (BEN)"
+plain: "A non-neural bioelectric network, or BEN, is a system made of ordinary cells, not nerve cells, that uses electrical signals, tiny channels, and direct cell-to-cell connections to help decide how a body grows, heals, and takes shape. The point isn't that regular tissue is secretly a hidden brain.\n\nIt's that many abilities we associate with nerves and brains, like holding a state, reacting to feedback, and making decisions based on context, are much older than neurons and already run in ordinary body tissue. Levin uses BENs to argue that brains are a faster, later version of a much older electrical strategy already used throughout the body."
 subtitle: "electrical computation outside the nervous system"
 authored_by: "Prior art (GPT-Oct25)"
 source: "Manicka & Levin (2019) \"Modeling somatic computation with non-neural bioelectric networks.\" DOI 10.1038/s41598-019-54859-8."

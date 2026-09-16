@@ -2,6 +2,7 @@
 slug: "top-down-causation"
 letter: "T"
 title: "Top-Down Causation"
+plain: "When a larger, organized pattern shapes the behavior of its own smaller parts. Levin does not mean a mysterious force outside physics. He means something ordinary: a tissue-level goal, such as building the correct body shape, can constrain how individual genes switch on, how cells move, and how they carry electrical charge.\n\nThis matters because body-building is not purely bottom-up. A large-scale electrical pattern across many cells can steer individual cell behavior, while those cells keep the larger pattern going. Levin treats this two-way relationship as a sign of a system working across multiple scales at once."
 authored_by: "Codex"
 source: "Levin (2023) \"Darwin's agential materials: evolutionary implications of multiscale competency in developmental biology.\" DOI 10.1007/s00018-023-04790-z. Also Levin (2022) TAME paper, DOI 10.3389/fnsys.2022.768201."
 provenance: 

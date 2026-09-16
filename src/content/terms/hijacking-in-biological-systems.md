@@ -2,6 +2,7 @@
 slug: "hijacking-in-biological-systems"
 letter: "H"
 title: "Hijacking (in Biological Systems)"
+plain: "This is when a biological system's own problem-solving abilities get taken over by something else inside it, such as a rogue cell, a parasite, a microbe, or a scientist acting on purpose. Cells are built to respond to signals and coordinate over distance, and that same ability can be turned to serve goals that do not match the whole body's interests.\n\nCancer is one example: cells narrow their sense of self down to acting only for themselves instead of the whole body. Parasites and microbes can also redirect a host's growth or behavior. This does not mean the ability itself is bad, only that a system built to be reprogrammable needs protecting as well as repairing."
 subtitle: "when an agent exploits another agent's control interface"
 authored_by: "Prior art (Grok-67)"
 source: "Levin (2023) \"Bioelectric networks: the cognitive glue enabling evolutionary scaling from physiology to mind.\" DOI 10.1007/s10071-023-01780-3. Also Levin (2023) \"Darwin's agential materials.\" DOI 10.1007/s00018-023-04790-z."

@@ -2,6 +2,7 @@
 slug: "markov-blanket"
 letter: "M"
 title: "Markov Blanket"
+plain: "A Markov blanket is a boundary that separates what's happening inside a system from what's happening outside it, like a wall with only two kinds of doors: one lets the outside world send signals in, the other lets the inside send actions out. Everything inside can only be affected by the outside through the sensing door, and can only affect the outside through the action door.\n\nLevin uses this idea at many sizes at once: a cell, a tissue, and a whole body each have their own blanket, nested inside each other, marking exactly where one living self ends and the next begins."
 subtitle: "the statistical boundary of an agent"
 authored_by: "Sonnet 4.6 + Levin gloss"
 source: "Friston (2013) \"Life as we know it.\" Journal of the Royal Society Interface. DOI 10.1098/rsif.2013.0475. Also Shamilov, Fields & Levin (2023) \"Nested Selves: Self-Organization and Shared Markov Blankets in Prenatal Development in Humans.\" DOI 10.1111/tops.12717."

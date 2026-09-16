@@ -2,6 +2,7 @@
 slug: "allostasis"
 letter: "A"
 title: "Allostasis"
+plain: "A way a living system stays stable by adjusting its own target, not just by correcting toward one fixed target the way homeostasis does. Homeostasis asks, am I at the target? Allostasis asks, given what I expect is coming, what should my target now be? A cell working this way doesn't just fix an error. It resets the goal itself, based on prediction.\n\nLevin argues this distinction matters for future treatments: a therapy that resets a fixed setpoint is doing something different from one that restores a tissue's flexibility to keep recalibrating its own goals over time. Aging, on this view, might involve losing that flexibility too, not only losing memory of the correct form."
 subtitle: "stability through change"
 authored_by: "Dee (new entry from GAPS analysis)"
 source: "Present in 15 video transcript files. Related to TAME framework. See also Pio-Lopez & Levin (2024) \"Aging as a loss of morphostatic information,\" Ageing Research Reviews (DOI 10.1016/j.arr.2024.102310)."

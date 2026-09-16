@@ -2,6 +2,7 @@
 slug: "cognitive-light-cone"
 letter: "C"
 title: "Cognitive Light Cone"
+plain: "This is a way to measure how far an agent's awareness and control reach, in space and in time. It borrows the idea of a light cone from physics, where a light cone marks the region an event can possibly affect. Here the question is: how much space and how much time does a living system sense, remember, and act on as one connected whole?\n\nA bacterium has a small cognitive light cone, reacting to nearby chemicals over short spans of time. A growing embryo has a much bigger one, coordinating its whole body plan over hours or days, and a brain has a bigger one still. This reach can shrink after damage and later be restored."
 authored_by: "Claude Sonnet 4.6 (Anthropic) — central definition"
 authored_by_note: "Sonnet's draft selected as central per project decisions. Opus and Haiku add marginalia."
 source: "\"The Computational Boundary of a 'Self'\" (Frontiers in Psychology, 2019). YouTube: \"What are Cognitive Light Cones?\" \"The Multiscale Wisdom of the Body\" (Levin, 2025)."

@@ -2,6 +2,7 @@
 slug: "selflet"
 letter: "S"
 title: "Selflet"
+plain: "The smallest unit that still counts as a self in Levin's framework: a system with just enough boundary, memory, and goal-seeking behavior to register as an agent at all. The ending \"-let\" signals smallness, not that it is a fake or lesser version of a self.\n\nThe term matters once selves are taken seriously at every scale, from a single cell up to a whole body. A cell keeping its internal chemistry balanced is a selflet. Connect enough selflets and their combined effort can add up to a self at the level of a whole tissue."
 subtitle: "the smallest unit of agency that still counts as a self"
 authored_by: "Prior art (Claude-Oct25)"
 source: "Levin (2019) \"The Computational Boundary of a 'Self': Developmental Bioelectricity Drives Multicellularity and Scale-Free Cognition.\" DOI 10.3389/fpsyg.2019.02688. Also Levin (2022) TAME paper, DOI 10.3389/fnsys.2022.768201."

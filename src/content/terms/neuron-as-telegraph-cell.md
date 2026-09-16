@@ -2,6 +2,7 @@
 slug: "neuron-as-telegraph-cell"
 letter: "N"
 title: "Neuron as Telegraph Cell"
+plain: "Most neuroscience treats neurons, the cells that make up nerves and brains, as the one thing that makes thinking possible. Levin flips this around: neurons are ordinary cells that evolved a faster, more specialized way of sending signals using electricity, something nearly all living cells already do more slowly through tiny channels and connections in their outer surface. A neuron is a cell that figured out how to send fast, aimed signals, at the cost of doing less of everything else.\n\nSo the thinking-related activity of a body is not just in the nervous system. It runs through the whole electrical network of the body, with nerves as one fast, later-evolved part of a much older system."
 subtitle: "brains are a later, faster version of an ancient electrical strategy"
 authored_by: "Sonnet 4.6 + Levin gloss"
 source: "Levin (2023) \"Bioelectric networks: the cognitive glue enabling evolutionary scaling from physiology to mind.\" DOI 10.1007/s10071-023-01780-3. Also Manicka & Levin (2019) \"Modeling somatic computation with non-neural bioelectric networks.\" DOI 10.1038/s41598-019-54859-8."

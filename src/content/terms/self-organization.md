@@ -2,6 +2,7 @@
 slug: "self-organization"
 letter: "S"
 title: "Self-Organization"
+plain: "When many small parts, following only local, simple rules, produce a large ordered pattern on their own, with no outside plan directing them. Crystals forming and termite mounds are examples. Nothing in the local rules directly spells out the big pattern; it emerges over time.\n\nLevin separates this from true goal-seeking. A whirlpool self-organizes, but by his standard it is not an agent, because it cannot aim for a target and correct itself when disturbed. Real cognition begins once self-organization gets hooked up to a target the system works to reach and defends."
 subtitle: "ordered patterns from local rules — necessary but not sufficient for agency"
 authored_by: "Sonnet 4.6 + Levin gloss"
 source: "Ashby (1952) \"Design for a Brain.\" Also McMillen & Levin (2024) \"Collective intelligence: a unifying concept for integrating biology across scales and substrates.\" Communications Biology. DOI 10.1038/s42003-024-06037-4."

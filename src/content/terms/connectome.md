@@ -2,6 +2,7 @@
 slug: "connectome"
 letter: "C"
 title: "Connectome"
+plain: "A connectome is a complete map of the connections in a nervous system: which nerve cell links to which other one, and how strongly. It was first fully mapped in a tiny worm species, and scientists now use it to try to predict behavior from wiring.\n\nLevin extends the idea beyond nerve cells. Ordinary body cells are also connected, through direct channels between them and through electrical signals passing along tissue. This wider bioelectric connectome shapes which cells can share information, work together, and form a larger coordinated self, and changing it can change how a tissue grows or heals, much like rewiring a nervous system changes behavior."
 subtitle: "Levin extends it to the non-neural bioelectric wiring of tissues"
 authored_by: "Sonnet 4.6 + Levin gloss"
 source: "White et al. (1986) \"The structure of the nervous system of the nematode Caenorhabditis elegans.\" Philosophical Transactions of the Royal Society B. DOI 10.1098/rstb.1986.0056. Also Levin (2023) \"Bioelectric networks: the cognitive glue enabling evolutionary scaling from physiology to mind.\" DOI 10.1007/s10071-023-01780-3."

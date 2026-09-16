@@ -2,6 +2,7 @@
 slug: "gene-regulatory-network"
 letter: "G"
 title: "Gene Regulatory Network (GRN)"
+plain: "A gene regulatory network is the whole interacting system of molecules that controls which genes are turned on or off, in which cells, and when. It is the molecular machinery behind a cell becoming, say, a skin cell or a nerve cell, and it sets the range of gene patterns a cell could possibly use.\n\nLevin treats this network as a kind of default setting that can be steered by a separate layer: the tissue's electrical patterns. The gene network defines what is possible, but the electrical pattern across a tissue can decide which of those possibilities actually happens. That means a treatment changing a tissue's electrical state can change cell behavior without touching the genes directly."
 subtitle: "the genetic default that gets overridden by bioelectric instruction"
 authored_by: "Sonnet 4.6 + Levin gloss"
 source: "Peter & Davidson (2011) \"A gene regulatory network controlling the embryonic specification of endoderm.\" Nature 474:635–639. DOI 10.1038/nature10100. Also Cervera, Levin & Mafe (2025) \"Top-down perspectives on cell membrane potential and protein transcription.\" Scientific Reports. DOI 10.1038/s41598-025-31696-6."

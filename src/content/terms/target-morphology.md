@@ -2,6 +2,7 @@
 slug: "target-morphology"
 letter: "T"
 title: "Target Morphology"
+plain: "The body shape a living system works to build, repair, or maintain, using cells spread across a whole tissue rather than one blueprint in one place. It is not a direct readout of DNA. It behaves more like a shared goal held by electrical, chemical, and mechanical signals together.\n\nThe best evidence: tissues often fix disruptions and still reach the normal shape. A tadpole's face parts can be scrambled, yet it still grows a normal, working face. Rewiring the electrical signals directly has even produced worms that keep regenerating two heads, showing the goal itself can be changed."
 authored_by: "Codex (OpenAI) — central definition"
 authored_by_note: "Codex's definition selected per project decisions as the clearest engineering framing."
 source: "TAME paper. thoughtforms.life FAQ. Kriegman et al. (2020) PNAS (xenobots). Planarian regeneration papers (Levin lab)."

@@ -2,6 +2,7 @@
 slug: "calcium-signalling"
 letter: "C"
 title: "Calcium Signalling"
+plain: "The use of calcium, a common charged particle, as a signal that travels inside and between cells almost everywhere in biology. A sudden rise in a cell's calcium level, often released from internal stores or let in from outside, can trigger movement, changes in gene activity, and rearrangement of the cell's structure. It works like a rapid, all-purpose alarm system.\n\nLevin's lab treats calcium signals as more than a local trigger: they travel between connected cells and carry information about stress or damage across a tissue. Research on embryos shows calcium signals help cells coordinate a repair response together, rather than each cell reacting alone. Calcium is one channel through which cells share information about a problem."
 subtitle: "information carrier for cross-cell state, not just metabolism"
 authored_by: "Sonnet 4.6 + Levin gloss"
 source: "Tung et al. (2024) \"Embryos assist morphogenesis of others through calcium and ATP signaling mechanisms in collective teratogen resistance.\" Nature Communications. DOI 10.1038/s41467-023-44522-2. Also Levin (2023) \"Bioelectric networks: the cognitive glue enabling evolutionary scaling from physiology to mind.\" DOI 10.1007/s10071-023-01780-3."

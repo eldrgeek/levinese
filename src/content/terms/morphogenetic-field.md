@@ -2,6 +2,7 @@
 slug: "morphogenetic-field"
 letter: "M"
 title: "Morphogenetic Field"
+plain: "A morphogenetic field is the pattern of information spread across a tissue that helps cells work together to build a full body shape. It is not a mysterious aura and not a single chemical spreading from one point. It is the combined pattern of electrical, chemical, physical, and gene-activity signals that lets cells know what the group is trying to build.\n\nNo single cell needs a complete map of the body. The shared field carries that information, so the whole tissue can coordinate, and even repair itself toward the right shape."
 subtitle: "pattern control distributed across tissue"
 authored_by: "Prior art (GPT-Oct25)"
 source: "Levin (2012) \"Morphogenetic fields in embryogenesis, regeneration, and cancer: non-local control of complex patterning.\" DOI 10.1016/j.biosystems.2012.04.005."

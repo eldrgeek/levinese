@@ -2,6 +2,7 @@
 slug: "pattern-completion"
 letter: "P"
 title: "Pattern Completion"
+plain: "Pattern completion is the ability to fill in a whole pattern from a partial or damaged version of it. Levin compares this to how some computer networks can recall a full stored pattern from a fuzzy or incomplete cue, and how a cut piece of a flatworm can rebuild missing body parts from just a small remaining fragment.\n\nThe point is not that tissue is literally a brain, but that both kinds of systems use spread-out memory to move from incomplete information toward a complete, stable result. Healing after injury looks less like plain growth and more like completing a remembered shape."
 subtitle: "robust regeneration as filling in the missing body"
 authored_by: "Codex"
 source: "Levin (2023) \"Bioelectric networks: the cognitive glue enabling evolutionary scaling from physiology to mind.\" DOI 10.1007/s10071-023-01780-3."

@@ -2,6 +2,7 @@
 slug: "morphostasis"
 letter: "M"
 title: "Morphostasis"
+plain: "Morphostasis is the ongoing work of keeping a body's shape the same over time. It is different from first building that shape and from a simple fixed setpoint. Cells are constantly dying and replacing themselves, yet the overall form stays recognizable, and morphostasis is the active process holding that form together against wear and disruption.\n\nLevin and a colleague suggest that aging may be a slow breakdown of the signals, especially electrical ones, that say \"keep this shape.\" As those signals lose clarity across the body, tissues drift away from their intended form instead of healing back to it."
 subtitle: "the maintenance of form"
 authored_by: "Dee (new entry from GAPS analysis)"
 source: "Pio-Lopez & Levin (2024) \"Aging as a loss of morphostatic information: A developmental bioelectricity perspective,\" Ageing Research Reviews. DOI 10.1016/j.arr.2024.102310. Confirmed in transcript Aedd7WNSbeE."

@@ -2,6 +2,7 @@
 slug: "goal-directedness"
 letter: "G"
 title: "Goal-Directedness"
+plain: "In Levin's use, this means a system's ability to close the gap between how things are now and how it 'wants' them to be, by sensing, acting, and adjusting even when disrupted. It does not require human-style intention, planning, or conscious wanting. A body keeping its temperature steady, a regrowing limb, a healing wound, and an animal learning a task can all be compared by how strong and flexible their goal-seeking is.\n\nThis lets Levin treat 'purpose' as something that can be tested and measured, rather than a forbidden idea. A process counts as more goal-directed when it reaches the same result from different starting points and stops once the goal is met."
 subtitle: "teleology made operational"
 authored_by: "Prior art (Grok-Colophon, GPT-Oct25, Claude-Oct25)"
 source: "Levin (2019) \"The Computational Boundary of a 'Self'.\" DOI 10.3389/fpsyg.2019.02688. Also Fields & Levin (2026) \"Mind Everywhere: A Framework for Conceptualizing Goal-Directedness in Biology and Other Domains-Part Two.\" DOI 10.1007/s13752-025-00524-5."

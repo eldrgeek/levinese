@@ -2,6 +2,7 @@
 slug: "thoughts-are-thinkers-continuum"
 letter: "T"
 title: "Thoughts-Are-Thinkers Continuum"
+plain: "In everyday human experience, a thought feels separate from the person having it. Levin argues that at the cell level, this separation stops making clean sense. A wave of electrical activity moving through a tissue is not clearly owned by a separate thinker standing apart from it; the process and the thing doing it are the same moving pattern.\n\nThis is why Levin says a tissue \"knows\" something and means more than a figure of speech. It marks one end of a spectrum where thought and thinker fuse together, changing what kind of communication with the system is even possible."
 subtitle: "where the process and the agent collapse into one"
 authored_by: "Sonnet 4.6"
 source: "Levin, \"Who's the data? Implications of the thoughts-are-thinkers continuum for developmental bioelectricity,\" thoughtforms.life blog post."

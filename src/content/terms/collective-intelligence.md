@@ -2,6 +2,7 @@
 slug: "collective-intelligence"
 letter: "C"
 title: "Collective Intelligence"
+plain: "This is the problem-solving ability that shows up when many smaller, capable parts work together to act as one bigger agent. It is not just a comparison to teamwork, and it is not limited to animals or human groups. A body counts as a collective intelligence when individual cells, each with their own small agenda, coordinate to heal a wound, regrow a missing part, or keep the body's overall shape correct.\n\nThis matters for medicine. If sickness sometimes means the parts have stopped coordinating well, then treatment can try to restore that bigger shared goal, instead of controlling every tiny piece by hand."
 subtitle: "Levin's operational use"
 authored_by: "Prior art (GPT-Oct25, Claude-Oct25, Grok-Lex)"
 source: "McMillen & Levin (2024) \"Collective intelligence: A unifying concept for integrating biology across scales and substrates,\" Communications Biology. DOI 10.1038/s42003-024-06037-4."

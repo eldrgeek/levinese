@@ -2,6 +2,7 @@
 slug: "bioelectric-code"
 letter: "B"
 title: "Bioelectric Code"
+plain: "The connection between a cell's electrical state and the body shape that state helps produce. Cells hold a small electrical charge, pass signals through direct connections to neighboring cells, and change their behavior and gene activity in response to voltage patterns nearby. Levin treats this as an old, cell-level information system that lets tissues store and pass along building instructions, without changing the genes themselves.\n\nIt isn't a simple lookup table where one voltage equals one body part. It's closer to a rich signaling language: patterns of voltage nudge groups of cells toward one stable body shape or another. That's why a short-term electrical change can cause a lasting effect, like a flatworm regrowing two heads long after treatment ends."
 authored_by: "Prior art (Grok-Lex, Grok-67, GPT-Oct25, Sonnet-Colophon)"
 source: "Levin & Martyniuk (2018) \"The bioelectric code: An ancient computational medium for dynamic control of growth and form.\" DOI 10.1016/j.biosystems.2017.08.009."
 provenance: 

@@ -2,6 +2,7 @@
 slug: "cognitive-glue"
 letter: "C"
 title: "Cognitive Glue"
+plain: "Whatever lets separate, capable smaller units share enough information, such as stress signals or shared goals, to act as one bigger, smarter system. In Levin's work on electrical signaling, the \"glue\" is the network of channels and direct cell-to-cell connections that binds individual cells into a tissue with goals no single cell could pursue alone.\n\nThe word \"glue\" describes a function, not a material. Electrical signaling is Levin's main example, but the deeper point is about scale: a larger intelligent system appears once separate parts stop acting only on their own and start sharing a sense of what matters to the whole group. Cognitive glue widens a system's concern from one part to the whole collective."
 subtitle: "what binds smaller agents into a larger one"
 authored_by: "Prior art (Grok-Lex, Grok-67, Gemini-BuddhDoc, GPT-Oct25)"
 source: "Levin (2023) \"Bioelectric networks: the cognitive glue enabling evolutionary scaling from physiology to mind.\" DOI 10.1007/s10071-023-01780-3. Also Lagasse & Levin (2024) \"Stress sharing as cognitive glue for collective intelligences.\" DOI 10.1016/j.bbrc.2024.150396."

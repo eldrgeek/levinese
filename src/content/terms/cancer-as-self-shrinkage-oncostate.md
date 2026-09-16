@@ -2,6 +2,7 @@
 slug: "cancer-as-self-shrinkage-oncostate"
 letter: "C"
 title: "Cancer as Self-Shrinkage / Oncostate"
+plain: "Levin's description of cancer as a shrinking of what a cell counts as \"itself.\" A healthy cell stays electrically and chemically connected to the rest of the body and works toward its larger goals. A cancer cell instead narrows its sense of self down to just its own survival, treats the rest of the body as separate territory, and goes back to older, simpler goals like multiplying and spreading. A tumor, in this view, isn't just broken growth. It's a capable cell acting at the wrong scale.\n\nThe word \"oncostate\" points to the electrical pattern often seen in cancer cells. This matters for treatment because it suggests some tumors might be talked back into cooperating, rather than only being killed."
 subtitle: "a smaller self escaping the body's larger goals"
 authored_by: "Prior art (Claude-Oct25, Grok-Colophon, Sonnet-Colophon)"
 source: "Levin (2021) \"Bioelectrical approaches to cancer as a problem of the scaling of the cellular self.\" DOI 10.1016/j.pbiomolbio.2021.04.007. Also Levin (2023) \"Cancer's unique bioelectric properties: From cells to body-wide networks.\" DOI 10.1016/j.plrev.2023.09.013."

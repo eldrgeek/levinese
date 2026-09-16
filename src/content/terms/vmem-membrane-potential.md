@@ -2,6 +2,7 @@
 slug: "vmem-membrane-potential"
 letter: "V"
 title: "Vmem (Membrane Potential)"
+plain: "The difference in electrical charge between the inside and outside of a cell's outer membrane, often called Vmem. Ordinary biology treats this voltage as background upkeep. Levin treats it as far more central: the pattern of this voltage across many cells forms a code, where different patterns push cells toward different body shapes.\n\nScientists can see this voltage using glowing dyes that respond to it, mapping hidden patterns before any visible shape appears, and can change it with drugs, light, or by altering the channels that control it. Reading and writing this code drives Levin's bioelectricity research."
 subtitle: "the primary unit of the bioelectric code"
 authored_by: "Sonnet 4.6"
 source: "Levin & Martyniuk (2018) \"The bioelectric code: An ancient computational medium for dynamic control of growth and form.\" Biosystems. DOI 10.1016/j.biosystems.2017.08.009. Also Levin (2012) \"Morphogenetic fields in embryogenesis, regeneration, and cancer.\" DOI 10.1016/j.biosystems.2012.04.005."

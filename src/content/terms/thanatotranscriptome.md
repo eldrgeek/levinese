@@ -2,6 +2,7 @@
 slug: "thanatotranscriptome"
 letter: "T"
 title: "Thanatotranscriptome"
+plain: "A distinctive pattern of gene activity that switches on in cells once separated from their normal body, as when frog cells are used to build xenobots. Genes linked to stress, immune response, and sensing turn on, as if the cells are falling back on older, more independent behaviors instead of simply dying off.\n\nLevin and colleagues found this is not passive decay. It looks like an ancient set of instructions that normally stays quiet inside a body and switches on once the usual signals from the larger organism disappear, suggesting older, self-reliant programs are still there underneath."
 subtitle: "what cells say when freed from their organism"
 authored_by: "Sonnet 4.6"
 source: "Blackiston et al. (2025) \"Basal Xenobot transcriptomics reveals changes and novel control modality in cells freed from organismal influence.\" Nature Communications Biology. DOI 10.1038/s42003-025-08086-9. Also Levin, OSF preprint qz4w6."

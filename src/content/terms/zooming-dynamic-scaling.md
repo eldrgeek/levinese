@@ -2,6 +2,7 @@
 slug: "zooming-dynamic-scaling"
 letter: "Z"
 title: "Zooming / Dynamic Scaling"
+plain: "A recurring image Levin uses for how a living system, a cell, a tissue, or a whole body, shifts the level of detail it pays attention to. Sometimes it reacts to something right next to it. Other times it tracks a pattern across a whole organ, or works toward a goal that only matters later.\n\nBeing able to \"zoom\" in and out lets different levels of a system coordinate without one level micromanaging the others. A developing animal must sometimes zoom out to check whether its whole face looks right, not only whether neighboring cells are connected."
 subtitle: "adjusting the scale of concern to where the action is"
 authored_by: "Sonnet 4.6"
 source: "Levin talk \"Collective intelligence of the body: the multiscale architecture of Selves.\" Also Levin (2022) \"Technological Approach to Mind Everywhere,\" Frontiers in Systems Neuroscience. DOI 10.3389/fnsys.2022.768201."

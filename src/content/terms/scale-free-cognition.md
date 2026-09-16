@@ -2,6 +2,7 @@
 slug: "scale-free-cognition"
 letter: "S"
 title: "Scale-Free Cognition"
+plain: "The idea that thinking-like behavior is not limited to one size of system. Levin asks the same questions about molecules, cells, tissues, whole bodies, and groups: what is this system trying to achieve, what can it remember, what problems can it fix, and how far does it pay attention?\n\nThis does not mean a molecule thinks the way a person does. It means the same questions about goals, memory, and fixing errors can be usefully asked at every size, and a body can be seen as a bigger thinking system built from smaller ones working together."
 authored_by: "Prior art (GPT-Oct25, Grok-67, Grok-Lex)"
 source: "Levin (2019) \"The Computational Boundary of a 'Self': Developmental Bioelectricity Drives Multicellularity and Scale-Free Cognition.\" DOI 10.3389/fpsyg.2019.02688."
 provenance: 

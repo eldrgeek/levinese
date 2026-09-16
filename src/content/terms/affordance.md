@@ -2,6 +2,7 @@
 slug: "affordance"
 letter: "A"
 title: "Affordance"
+plain: "A term from psychologist James Gibson for what an environment offers a creature able to use it. A ledge offers a place to stand, but only to an animal heavy enough to stay on it. An affordance isn't a feature of the world alone, or of the animal alone. It's a fit between the two, and it shifts if either side changes.\n\nLevin extends this beyond physical spaces to problem spaces, like the paths a cell or tissue can take while healing. What a space offers a cell depends on how much that cell can sense and do. Making a cell more capable, Levin argues, can reveal repair options that were always available but previously out of reach."
 subtitle: "what a problem space offers to an agent capable of perceiving it"
 authored_by: "Sonnet 4.6 + Levin gloss"
 source: "Gibson (1979) \"The Ecological Approach to Visual Perception.\" Also Levin (2022) \"Technological Approach to Mind Everywhere,\" Frontiers in Systems Neuroscience. DOI 10.3389/fnsys.2022.768201."

@@ -2,6 +2,7 @@
 slug: "axis-of-persuadability"
 letter: "A"
 title: "Axis of Persuadability"
+plain: "A way of ranking systems by what it takes to change how they behave. At one end are things like a mechanical clock: to change what it does, you have to physically open it up and rebuild it. Farther along are systems, like trained animals or people, that can be changed just by giving them new information, rewards, or reasons. Being far along this scale means a system's own goals can shift just from communication, not force.\n\nLevin finds this useful because it turns \"does this thing have a mind\" into a practical question instead: how much can you change its behavior just by talking to it, rather than rebuilding it?"
 subtitle: "how much control can be achieved by communication"
 authored_by: "Prior art (Grok-67, Grok-Dup, Grok-Colophon)"
 source: "Levin (2022) \"Technological Approach to Mind Everywhere,\" Frontiers in Systems Neuroscience. DOI 10.3389/fnsys.2022.768201. Also thoughtforms.life FAQ."

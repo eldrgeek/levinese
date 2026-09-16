@@ -2,6 +2,7 @@
 slug: "information-substrate"
 letter: "I"
 title: "Information Substrate"
+plain: "This names the layer where the patterns that guide body-building are actually stored and changed, above the level of individual genes. For Levin, that layer is not the genome. DNA sets what a cell is able to build, but not the larger instructions, such as electrical patterns, cell-to-cell connections, and physical forces, that steer the overall shape a tissue is growing toward.\n\nThis matters because, without naming this layer, everything gets pushed back onto genes alone, and genes alone cannot explain why a brief electrical change can leave a lasting change in body shape. Treatments aimed at this substrate try to rewrite these living patterns directly, rather than editing genes."
 subtitle: "the informational layer between genes and form"
 authored_by: "Sonnet 4.6 + Levin gloss"
 source: "Levin (2022) \"Technological Approach to Mind Everywhere,\" Frontiers in Systems Neuroscience. DOI 10.3389/fnsys.2022.768201. Also Levin & Martyniuk (2018) \"The bioelectric code: An ancient computational medium for dynamic control of growth and form.\" DOI 10.1016/j.biosystems.2017.08.009."

@@ -2,6 +2,7 @@
 slug: "bioelectric-pattern-memory"
 letter: "B"
 title: "Bioelectric Pattern Memory"
+plain: "The idea that a body stores information about its own correct shape in ongoing electrical activity across its cells, not only in its DNA. The clearest example is in flatworms: a brief electrical change can shift what shape a fragment regrows into, so that it comes back with two heads in every future regeneration, long after the original treatment ends. That memory isn't stored in one special cell. It's held by the ongoing state of a whole network of connected cells.\n\nThis phrase matters because it makes \"memory\" concrete rather than poetic. Levin means an actual physical state, held in electrical activity, that can be read, reset, or rewritten, and that a future treatment could target directly."
 subtitle: "anatomical memory stored in physiological networks"
 authored_by: "Codex"
 source: "Levin (2019) \"The Computational Boundary of a 'Self': Developmental Bioelectricity Drives Multicellularity and Scale-Free Cognition.\" DOI 10.3389/fpsyg.2019.02688. Also Levin (2023) \"Bioelectric networks: the cognitive glue enabling evolutionary scaling from physiology to mind.\" DOI 10.1007/s10071-023-01780-3."

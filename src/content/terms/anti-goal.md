@@ -2,6 +2,7 @@
 slug: "anti-goal"
 letter: "A"
 title: "Anti-Goal"
+plain: "A state a living system actively works to avoid, rather than a state it works to reach. Levin often talks about targets and goals, but the same idea has a flip side: systems also react to danger signs, injury, or drift away from what's healthy. The anti-goal is what \"wrong\" looks like inside a system's own sense of its possible futures.\n\nThis matters because a lot of biological action shows up as repair. A wound, a misplaced organ, or unhealthy electrical activity becomes something a cell collective actively works against, because it registers as unacceptable, not because some outside rule says so."
 subtitle: "the state an agent works to stay out of"
 authored_by: "Codex"
 source: "Levin (2022) \"Technological Approach to Mind Everywhere,\" Frontiers in Systems Neuroscience. DOI 10.3389/fnsys.2022.768201."

@@ -2,6 +2,7 @@
 slug: "bowtie-architecture"
 letter: "B"
 title: "Bowtie Architecture"
+plain: "A pattern where a wide range of information gets squeezed through a narrow bottleneck, then expanded back out into many outcomes, like the knot in a bowtie connecting its two wide ends. DNA, in this view, isn't a literal, detailed blueprint for the body. It's more like that narrow knot: a compact, evolved set of resources that growth and repair systems can expand into many shapes depending on context.\n\nThis helps explain flexibility. If DNA spelled out every detail of the final body directly, development would break easily. A bowtie-style system instead keeps a compact core while letting cells improvise around damage and unexpected problems. DNA supplies the starting material; the living system supplies the rest."
 subtitle: "compressed evolutionary memory, expanded developmental possibility"
 authored_by: "Prior art (Grok-67)"
 source: "Levin & collaborators (2025) \"What does evolution make? Learning in living lineages and machines,\" Trends in Genetics. DOI 10.1016/j.tig.2025.04.002. Also Levin (2022) TAME paper, DOI 10.3389/fnsys.2022.768201."

@@ -2,6 +2,7 @@
 slug: "basal-cognition"
 letter: "B"
 title: "Basal Cognition"
+plain: "The idea that thinking-like behavior isn't limited to brains. Even simple groups of cells can sense their surroundings, remember past states, pursue goals, adjust to change, and fix their own mistakes. Basal cognition names this basic layer of \"thinking,\" the kind that shows up at the roots of the evolutionary tree, before nervous systems existed.\n\n\"Basal\" means foundational, not primitive: the oldest, simplest form of this ability, which nerve cells later built on but didn't invent. In one striking example, briefly changing a flatworm's electrical signals produces a worm with two heads, and it keeps regrowing two heads afterward, even after its nervous system regrows from scratch. That points to memory that doesn't depend on neurons."
 authored_by: "Prior art (Grok-Lex, Grok-67, GPT-Oct25, Claude-Oct25, GemPro-Colophon)"
 source: "\"Bioelectric networks: the cognitive glue enabling evolutionary scaling from physiology to mind\" (Springer, 2023). Also PMC6923654. TAME paper (Frontiers in Systems Neuroscience, 2022)."
 provenance: 

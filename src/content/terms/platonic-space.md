@@ -2,6 +2,7 @@
 slug: "platonic-space"
 letter: "P"
 title: "Platonic Space"
+plain: "Platonic Space is Levin's speculative name for an ordered space of possible patterns that exists apart from physical matter, which physical systems might somehow connect to. The idea responds to a puzzle: lab-built cell clusters and other new living or computational systems sometimes show organized behavior that nothing selected for through evolution.\n\nInstead of treating each surprise as just appearing from nowhere, Levin suggests biology and engineering might be building interfaces that let existing, pattern-like possibilities show up in physical form. In its stronger version, bodies and brains are described as thin doorways for patterns beyond them, which is why this idea is marked as contested rather than settled."
 subtitle: "the proposed space of possible patterns"
 authored_by: "Prior art (Grok-Lex, Grok-67, Grok-Colophon)"
 source: "Levin, \"Where do novel goals come from?\" OSF preprint 7m3bv. Also transcript -syJO94VXg4."

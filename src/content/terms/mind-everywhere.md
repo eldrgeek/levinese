@@ -2,6 +2,7 @@
 slug: "mind-everywhere"
 letter: "M"
 title: "Mind Everywhere"
+plain: "This is Levin's broad idea that mind should be studied as something systems can have more or less of, not as an all-or-nothing trait only brains get. \"Everywhere\" does not mean a single cell thinks like a person. It means tools normally used to study minds, like goals, memory, and learning, can also help explain cells, tissues, and other systems whenever they improve our ability to predict and steer what a system does.\n\nThe related project TAME asks how to detect, compare, and communicate with these different kinds of minds."
 subtitle: "the broad framework behind TAME"
 authored_by: "Codex"
 source: "Levin (2022) \"Technological Approach to Mind Everywhere,\" Frontiers in Systems Neuroscience. DOI 10.3389/fnsys.2022.768201. Also Fields & Levin (2026) \"Mind Everywhere: A Framework for Conceptualizing Goal-Directedness in Biology and Other Domains-Part Two.\" DOI 10.1007/s13752-025-00524-5."

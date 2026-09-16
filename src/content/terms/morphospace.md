@@ -2,6 +2,7 @@
 slug: "morphospace"
 letter: "M"
 title: "Morphospace"
+plain: "Morphospace is the imagined space of every possible body shape, organ, or living structure, including many shapes evolution has never actually tried. Levin treats it as a space that cells can explore and move through, not just a list of pictures. A tadpole's face, a worm's body plan, and a lab-built cell cluster are all specific points or paths inside this space.\n\nThinking about shape this way turns anatomy into something that can be searched and steered, rather than something fixed forever by an organism's history."
 subtitle: "the space of possible bodies"
 authored_by: "Prior art (GPT-Oct25, Grok-67)"
 source: "McMillen & Levin (2024) \"Collective intelligence: a unifying concept for integrating biology across scales and substrates.\" Communications Biology. DOI 10.1038/s42003-024-06037-4. Also transcript SyJj5g42aPE."

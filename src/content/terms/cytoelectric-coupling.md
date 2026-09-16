@@ -2,6 +2,7 @@
 slug: "cytoelectric-coupling"
 letter: "C"
 title: "Cytoelectric Coupling"
+plain: "This is the two-way link between a cell's electrical state and its internal machinery. The tiny voltage across a cell's outer membrane is not just a side effect of its chemistry; it can influence which genes get turned on, while the cell's genes and proteins reshape that voltage in return, forming a loop rather than a one-way signal.\n\nThis matters because it shows electricity is not replacing genes here. Voltage, gene activity, and cell behavior all shape each other. That loop is one way a pattern affecting a whole tissue can change what happens gene by gene, without a separate instruction for every gene."
 subtitle: "membrane voltage and gene expression as one feedback system"
 authored_by: "Codex"
 source: "Cervera, Levin & Mafe (2025) \"Top-down perspectives on cell membrane potential and protein transcription.\" Scientific Reports. DOI 10.1038/s41598-025-31696-6."

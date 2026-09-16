@@ -2,6 +2,7 @@
 slug: "diverse-intelligence"
 letter: "D"
 title: "Diverse Intelligence"
+plain: "This is the idea that intelligence can show up in many different kinds of bodies, not just brains: single cells, tissues, lab-built creatures, robots, and AI systems. 'Diverse' matters here because it means intelligence is not one single thing built one single way. It is a family of related abilities, such as pursuing goals, correcting errors, and finding solutions, that can appear in very different kinds of material.\n\nLevin's lab studies this by building new kinds of living systems and watching them do things nobody designed into their original cells. The broader idea is that this is a real, continuous range, not a hard line separating true thinking from mere mechanism."
 authored_by: "Prior art (Grok-Lex, Grok-67, Claude-Oct25)"
 authored_by_note: "Haiku contributed a critical note about operationalization."
 source: "TAME paper (Frontiers in Systems Neuroscience, 2022). Lab site (drmichaellevin.org). McMillen & Levin (2024), Communications Biology, DOI 10.1038/s42003-024-06037-4."

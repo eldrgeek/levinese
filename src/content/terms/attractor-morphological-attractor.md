@@ -2,6 +2,7 @@
 slug: "attractor-morphological-attractor"
 letter: "A"
 title: "Attractor (Morphological Attractor)"
+plain: "A stable outcome that a growing or healing body tends to settle into, even after being disturbed. It isn't a rigid, step-by-step blueprint. Instead, picture many different starting points all eventually flowing toward the same final shape, the way water flowing downhill from different spots ends up in the same low point.\n\nLevin uses this to explain how embryos and healing tissue recover the right shape after damage. A brief change to how cells are electrically connected can push a tissue toward a different stable outcome, as seen in flatworms that regrow with two heads. This suggests medicine might one day nudge tissue toward a healthy outcome, rather than controlling every cell by hand."
 subtitle: "a stable destination in anatomical possibility space"
 authored_by: "Prior art (GPT-Oct25)"
 source: "Levin (2023) \"Bioelectric networks: the cognitive glue enabling evolutionary scaling from physiology to mind.\" DOI 10.1007/s10071-023-01780-3. Also Levin (2012) \"Morphogenetic fields in embryogenesis, regeneration, and cancer.\" DOI 10.1016/j.biosystems.2012.04.005."

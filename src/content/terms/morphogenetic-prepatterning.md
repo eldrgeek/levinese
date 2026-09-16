@@ -2,6 +2,7 @@
 slug: "morphogenetic-prepatterning"
 letter: "M"
 title: "Morphogenetic Prepatterning"
+plain: "Before a body part actually takes visible shape, an early pattern can already exist in a tissue that hints at what's coming. Levin's key example is an early electrical pattern in an embryo that shows up before the face forms and helps guide how the face develops.\n\nThis is not just a leftover trace of genes already switching on. It works like a rough sketch, made in the body's electrical activity, that later development fills in and follows."
 subtitle: "early voltage patterns before visible anatomy"
 authored_by: "Prior art (Grok-67)"
 source: "Manicka & Levin (2025) \"Field-mediated bioelectric basis of morphogenetic prepatterning.\" Cell Reports Physical Science. DOI 10.1016/j.xcrp.2025.102865."

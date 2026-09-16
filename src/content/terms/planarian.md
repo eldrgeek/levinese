@@ -2,6 +2,7 @@
 slug: "planarian"
 letter: "P"
 title: "Planarian"
+plain: "A planarian is a small flatworm that Levin's lab studies closely because of an unusual talent: cut it into pieces, and each piece can regrow into a whole new worm. This makes planarians useful for separating what genes control from what the body's electrical and physical signals control, since both are clearly at work during regrowth.\n\nIn a famous experiment, a short electrical change during regrowth can make a worm regrow with two heads instead of one, and later pieces keep regrowing that way even without repeating the treatment. This shows body shape can be guided by memory-like signals spread through tissue, not just fixed genetic instructions."
 subtitle: "Levin's workhorse model for regenerative pattern memory"
 authored_by: "Prior art (Claude-Oct25, Grok-Colophon, Sonnet-Colophon)"
 source: "Levin (2019) \"Planarian regeneration as a model of anatomical homeostasis.\" DOI 10.1016/j.semcdb.2018.04.003. Also Emmons-Bell et al. (2015) \"Gap Junctional Blockade Stochastically Induces Different Species-Specific Head Anatomies.\" DOI 10.3390/ijms161126065."

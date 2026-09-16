@@ -81,6 +81,9 @@ const terms = defineCollection({
     letter: z.string(),
     title: z.string(),
     subtitle: z.string().optional(),
+    // Plain-language version of the definition, for the dictionary's
+    // "Plain language" view. Rewritten from the body only; adds no claims.
+    plain: z.string().optional(),
     authored_by: z.string(),
     authored_by_note: z.string().optional(),
     source: z.string(),

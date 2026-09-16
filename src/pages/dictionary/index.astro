@@ -44,6 +44,7 @@ const terms = rawTerms.map(e => ({
   letter: e.data.letter,
   title: e.data.title,
   subtitle: e.data.subtitle,
+  plain: e.data.plain,
   authored_by: e.data.authored_by,
   authored_by_note: e.data.authored_by_note,
   source: e.data.source,
@@ -67,6 +68,8 @@ const termsByLetter = terms.reduce((acc, term) => {
 
 const letters = Object.keys(termsByLetter).sort();
 const stripHtml = (html: string) => html.replace(/<[^>]*>/g, ' ');
+const plainParas = (text?: string) => (text ?? '').split(/\n\s*\n/).map(p => p.trim()).filter(Boolean);
+const plainCount = terms.filter(t => t.plain).length;
 ---
 <Base title="Dictionary" description="A working dictionary of Levinese — the conceptual vocabulary developed by Michael Levin across 364 papers, 333 transcripts, and a decade of biological research on the nature of mind.">
 
@@ -98,6 +101,13 @@ const stripHtml = (html: string) => html.replace(/<[^>]*>/g, ' ');
         </div>
         <span id="dict-count" class="text-xs text-muted whitespace-nowrap tabular-nums">Showing {terms.length} of {terms.length}</span>
       </div>
+      <!-- View switch: full entries or plain-language versions -->
+      {plainCount > 0 && (
+        <div class="view-switch" role="group" aria-label="How to read the definitions">
+          <button type="button" data-view="full" aria-pressed="true">Full entry</button>
+          <button type="button" data-view="plain" aria-pressed="false">Plain language</button>
+        </div>
+      )}
       <!-- Letter rail -->
       <div class="flex flex-wrap gap-1">
         {letters.map(letter => (
@@ -110,7 +120,10 @@ const stripHtml = (html: string) => html.replace(/<[^>]*>/g, ' ');
   </div>
 
   <!-- Terms -->
-  <div class="max-w-5xl mx-auto px-4 sm:px-6 mt-6">
+  <div id="dict-terms" class="max-w-5xl mx-auto px-4 sm:px-6 mt-6" data-view="full">
+    <p class="plain-banner text-sm text-muted mb-8 max-w-2xl leading-relaxed">
+      You're reading the plain-language view. Each short version was written by Claude from the full entry and adds nothing the full entry doesn't say. Open "Show the full entry" under any term for the sources, or ask Morph, the site's AI guide, to go further.
+    </p>
     {letters.map(letter => (
       <div id={`letter-${letter}`} class="dict-section mb-14 scroll-mt-28" data-letter={letter}>
         <div class="flex items-center gap-4 mb-8">
@@ -123,7 +136,8 @@ const stripHtml = (html: string) => html.replace(/<[^>]*>/g, ' ');
             <article
               id={`term-${term.slug}`}
               class="dict-entry scroll-mt-28"
-              data-search={`${term.title} ${term.subtitle ?? ''} ${stripHtml(term.definition)} ${term.tags.join(' ')}`.toLowerCase()}
+              data-search={`${term.title} ${term.subtitle ?? ''} ${stripHtml(term.definition)} ${term.plain ?? ''} ${term.tags.join(' ')}`.toLowerCase()}
+              data-term={term.title}
             >
               <!-- Term header -->
               <div class="flex items-start gap-3 mb-3">
@@ -140,6 +154,19 @@ const stripHtml = (html: string) => html.replace(/<[^>]*>/g, ' ');
                 </div>
               </div>
 
+              <!-- Plain-language version (shown in the Plain language view) -->
+              {term.plain && (
+                <div class="def-plain bg-surface border border-border rounded-lg p-6 mb-3">
+                  {plainParas(term.plain).map(p => (
+                    <p class="leading-relaxed text-ink text-[1.05rem] mb-3 last:mb-0">{p}</p>
+                  ))}
+                  <button type="button" class="show-full mt-4 text-xs text-teal hover:text-teal-mid underline underline-offset-2 decoration-teal/30" aria-expanded="false">
+                    Show the full entry
+                  </button>
+                </div>
+              )}
+
+              <div class={term.plain ? 'def-full' : ''}>
               <!-- Definition -->
               <div class="bg-surface border border-border rounded-lg p-6 mb-4">
                 <p class="leading-relaxed text-ink" set:html={term.definition} />
@@ -186,6 +213,17 @@ const stripHtml = (html: string) => html.replace(/<[^>]*>/g, ' ');
                     </p>
                   )}
                 </div>
+              </div>
+
+              </div>
+
+              <!-- Ask Morph about this term -->
+              <div class="ask-morph mt-4" hidden>
+                <span class="ask-morph__label">Ask Morph</span>
+                <button type="button" data-ask="simpler">Explain it more simply</button>
+                <button type="button" data-ask="example">Give me an example</button>
+                <button type="button" data-ask="why">Why does it matter?</button>
+                <button type="button" data-ask="own">Ask your own question…</button>
               </div>
 
               <!-- Tags + related -->
@@ -283,9 +321,158 @@ const stripHtml = (html: string) => html.replace(/<[^>]*>/g, ' ');
   });
 
   sections.forEach(s => observer.observe(s));
+
+  // ── View switch: "Full entry" or "Plain language" ─────────────────────────
+  // The choice is remembered per browser and can be linked with ?view=plain.
+  const termsEl = document.getElementById('dict-terms') as HTMLElement;
+  const viewBtns = document.querySelectorAll<HTMLButtonElement>('.view-switch button');
+  const VIEW_KEY = 'levinese.dictionary.view';
+
+  function setView(view: string, remember: boolean) {
+    const v = view === 'plain' ? 'plain' : 'full';
+    termsEl.dataset.view = v;
+    viewBtns.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.view === v)));
+    termsEl.querySelectorAll<HTMLElement>('.dict-entry.show-full-open').forEach(el => el.classList.remove('show-full-open'));
+    termsEl.querySelectorAll<HTMLButtonElement>('.show-full').forEach(b => { b.setAttribute('aria-expanded', 'false'); b.textContent = 'Show the full entry'; });
+    if (remember) {
+      try { localStorage.setItem(VIEW_KEY, v); } catch (_) {}
+      const url = new URL(location.href);
+      if (v === 'plain') url.searchParams.set('view', 'plain'); else url.searchParams.delete('view');
+      history.replaceState(null, '', url);
+    }
+  }
+
+  if (viewBtns.length) {
+    let initial = new URLSearchParams(location.search).get('view');
+    if (!initial) { try { initial = localStorage.getItem(VIEW_KEY); } catch (_) {} }
+    if (initial) setView(initial, false);
+    viewBtns.forEach(b => b.addEventListener('click', () => setView(b.dataset.view ?? 'full', true)));
+  }
+
+  termsEl.addEventListener('click', e => {
+    const btn = (e.target as HTMLElement).closest<HTMLButtonElement>('.show-full');
+    if (!btn) return;
+    const entry = btn.closest<HTMLElement>('.dict-entry');
+    if (!entry) return;
+    const open = entry.classList.toggle('show-full-open');
+    btn.setAttribute('aria-expanded', String(open));
+    btn.textContent = open ? 'Hide the full entry' : 'Show the full entry';
+  });
+
+  // ── Ask Morph about a term ────────────────────────────────────────────────
+  // Morph is the SOMA Guide widget (soma-guide.js, persona set in
+  // /levinese-host.js). It answers from the corpus via /api/ask. The buttons
+  // only appear once the widget has loaded, so they never lead nowhere.
+  const QUESTIONS: Record<string, (t: string) => string> = {
+    simpler: t => `Explain "${t}" in plain language, as if to a curious 12-year-old. Keep it short.`,
+    example: t => `Give me one concrete example of "${t}" from Michael Levin's work, in plain language.`,
+    why: t => `Why does "${t}" matter? What does it change about how we think about living things? Plain language, please.`,
+  };
+
+  function morph(): any { return (window as any).somaGuide; }
+
+  function openMorph(g: any) {
+    if (g.mode === 'text') return;
+    if (!g._morphOpened && typeof g._openAsk === 'function') { g._morphOpened = true; g._openAsk(); }
+    else if (typeof g._setMode === 'function') g._setMode('text');
+    else g.open();
+  }
+
+  termsEl.addEventListener('click', e => {
+    const btn = (e.target as HTMLElement).closest<HTMLButtonElement>('.ask-morph button');
+    if (!btn) return;
+    const g = morph();
+    const term = btn.closest<HTMLElement>('.dict-entry')?.dataset.term;
+    if (!g || !term) return;
+    openMorph(g);
+    const kind = btn.dataset.ask ?? '';
+    if (QUESTIONS[kind]) {
+      g._sendText(QUESTIONS[kind](term));
+      return;
+    }
+    const input = g.el?.querySelector('.sg-input') as HTMLInputElement | HTMLTextAreaElement | null;
+    if (input) {
+      input.value = `About "${term}": `;
+      input.focus();
+      input.setSelectionRange(input.value.length, input.value.length);
+    }
+  });
+
+  // Reveal the Ask Morph rows once the widget exists (it loads from another origin).
+  let tries = 0;
+  const reveal = setInterval(() => {
+    const g = morph();
+    if (g && typeof g._sendText === 'function') {
+      document.querySelectorAll<HTMLElement>('.ask-morph').forEach(el => { el.hidden = false; });
+      clearInterval(reveal);
+    } else if (++tries > 40) {
+      clearInterval(reveal);
+    }
+  }, 250);
 </script>
 
 <style>
+  /* View switch */
+  .view-switch {
+    display: inline-flex;
+    border: 1px solid rgba(255,255,255,0.10);
+    border-radius: 999px;
+    padding: 2px;
+    background: #151B2B;
+    flex-shrink: 0;
+    align-self: flex-start;
+  }
+  .view-switch button {
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0.3rem 0.8rem;
+    border-radius: 999px;
+    color: #9BA3B5;
+    transition: background 0.15s, color 0.15s;
+  }
+  .view-switch button[aria-pressed="true"] {
+    background: #3C6CDD;
+    color: #F5F1EB;
+  }
+  .view-switch button:not([aria-pressed="true"]):hover { color: #E9EAED; }
+
+  /* Full view hides the plain versions. Plain view hides full entries unless opened. */
+  #dict-terms[data-view="full"] .def-plain,
+  #dict-terms[data-view="full"] .plain-banner { display: none; }
+  #dict-terms[data-view="plain"] .def-full { display: none; }
+  #dict-terms[data-view="plain"] .dict-entry.show-full-open .def-full { display: block; margin-top: 0.75rem; }
+
+  /* Ask Morph row */
+  .ask-morph {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  .ask-morph[hidden] { display: none; }
+  .ask-morph__label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #3C6CDD;
+    margin-right: 0.2rem;
+  }
+  .ask-morph__label::before { content: "🧬 "; }
+  .ask-morph button {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.7rem;
+    border-radius: 999px;
+    border: 1px solid color-mix(in srgb, #3C6CDD 30%, transparent);
+    color: #3C6CDD;
+    background: transparent;
+    transition: background 0.15s, border-color 0.15s;
+  }
+  .ask-morph button:hover {
+    background: color-mix(in srgb, #3C6CDD 8%, transparent);
+    border-color: #3C6CDD;
+  }
+
   /* Paper links — subtle, distinct from related-term links */
   .paper-link {
     color: var(--color-teal, #0c6b5a);

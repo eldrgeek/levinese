@@ -2,6 +2,7 @@
 slug: "active-information"
 letter: "A"
 title: "Active Information"
+plain: "Information that actually changes what happens next, instead of sitting on record like a photo in a drawer. Levin uses the phrase to stress that biological information gets used: cells read it, act on it, and can even rewrite it. It behaves less like a filed report and more like a live instruction that keeps shaping the body's next steps."
 subtitle: "information that does work, not just is recorded"
 authored_by: "Mike (close reading of Levin's Self-Improvising Memories)"
 source: "Levin, \"Self-Improvising Memories\" (mlevin77 Substack / thoughtforms.life). Definitions curated by Mike Wolf from the article text."

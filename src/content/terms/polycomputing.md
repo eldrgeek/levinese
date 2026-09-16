@@ -2,6 +2,7 @@
 slug: "polycomputing"
 letter: "P"
 title: "Polycomputing"
+plain: "Polycomputing is the idea that what counts as \"computation\" depends on who is looking and how. The same physical process, activity inside a tissue, say, might be doing metabolism, growth patterning, and immune signaling all at once, not as separate programs on separate parts, but as one process describable correctly in several different ways at the same time.\n\nWhich computation you see depends on the level you're looking at, much like asking what water \"is\" depends on what you want to predict about it. This is a promising but still early idea, and researchers have not fully worked out the rules for what counts as a separate computation sharing the same physical hardware."
 subtitle: "flagged for refinement"
 authored_by: "Prior art (Grok-67, Claude-Oct25)"
 authored_by_note: "Haiku offered to write a fuller definition; flagged by Opus as needing formalization."

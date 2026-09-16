@@ -2,6 +2,7 @@
 slug: "stress-sharing"
 letter: "S"
 title: "Stress / Stress Sharing"
+plain: "The way a cell can broadcast a signal about its own internal problem, its \"stress,\" so nearby cells can sense it and help fix it. In Levin's usage this is a real physical signal: chemical waves or released molecules that carry the message outward when a cell's normal state is off.\n\nWhen neighbors respond, the fix becomes a group effort rather than something one cell handles alone. This is one way small units link into a larger problem-solving team: the more widely a stress signal travels, the bigger the group that ends up working on it."
 subtitle: "exported error signals as cognitive glue"
 authored_by: "Prior art (Grok-67, Grok-Lex, GPT-Oct25)"
 source: "Lagasse & Levin (2024) \"Stress sharing as cognitive glue for collective intelligences.\" Biochemical and Biophysical Research Communications. DOI 10.1016/j.bbrc.2024.150396."

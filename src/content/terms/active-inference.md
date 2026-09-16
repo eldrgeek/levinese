@@ -2,6 +2,7 @@
 slug: "active-inference"
 letter: "A"
 title: "Active Inference"
+plain: "A theory that says a system such as a brain doesn't just build a picture of the world and update it. It also acts on the world, to make things actually match what it expected. Sensing and acting are treated as two ways of doing the same job: closing the gap between prediction and reality.\n\nLevin applies this to a growing embryo. The embryo predicts the shape it should become, and its cells move, divide, and adjust electrical signals to close the gap between the current shape and that target. Cancer, in this view, is cells narrowing their prediction down to just their own survival, instead of the whole body's shape."
 subtitle: "Friston's account of action as prediction-matching, extended to morphogenesis"
 authored_by: "Sonnet 4.6 + Levin gloss"
 source: "Friston, Levin et al. (2022) \"Active inference, morphogenesis, and computational psychiatry.\" Frontiers in Computational Neuroscience. DOI 10.3389/fncom.2022.988977."

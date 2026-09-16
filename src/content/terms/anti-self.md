@@ -2,6 +2,7 @@
 slug: "anti-self"
 letter: "A"
 title: "Anti-Self"
+plain: "A term for a smaller group of cells whose goals have split off from the larger body they're part of. Levin's clearest example is cancer: cells shrink their sense of \"us\" down to just themselves, start treating the rest of the body as outside territory, and chase old, simple goals like spreading and multiplying, even when that harms the whole organism.\n\nThe anti-self isn't evil material. It's ordinary cellular agency operating at the wrong scale. Normally, cells stay connected to the bigger body through electrical and chemical signals. When that connection breaks down, a capable but misaligned self can appear inside the larger one."
 subtitle: "a dissociated sub-agent working against the larger body"
 authored_by: "Codex"
 source: "Levin (2022) \"Technological Approach to Mind Everywhere,\" Frontiers in Systems Neuroscience. DOI 10.3389/fnsys.2022.768201. See also Levin (2021) \"Bioelectrical approaches to cancer as a problem of the scaling of the cellular self.\""

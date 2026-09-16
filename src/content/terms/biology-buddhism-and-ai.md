@@ -2,6 +2,7 @@
 slug: "biology-buddhism-and-ai"
 letter: "B"
 title: "Biology, Buddhism, and AI"
+plain: "A 2022 paper by Thomas Doctor, Olaf Witkowski, Elizaveta Solomonova, Bill Duane, and Michael Levin. It argues that intelligence, in any body, can be understood as a form of care: noticing a problem within some range of concern, and trying to fix it. The paper borrows from Buddhism, especially the vow to work for the well-being of all beings, as a way to describe this precisely. A system that could care about an unlimited range of things would, by this definition, be unlimited in intelligence.\n\nApplied to biology, a cell cares about its chemical balance, a tissue cares about its shape, and an animal cares about its behavior. Each is intelligent in proportion to what it can respond to."
 subtitle: "intelligence as care, scaled to the size of the world you attend to"
 authored_by: "Prior art (Grok-Buddhism, Gemini-BuddhDoc)"
 source: "Doctor, Witkowski, Solomonova, Duane & Levin (2022) \"Biology, Buddhism, and AI: Care as the Driver of Intelligence.\" Entropy 24(5):710. DOI 10.3390/e24050710."

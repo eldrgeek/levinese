@@ -2,6 +2,7 @@
 slug: "multi-scale-competency-architecture"
 letter: "M"
 title: "Multi-Scale Competency Architecture"
+plain: "Living things are organized as layers of capable problem-solvers stacked on top of each other, from molecules to cells to tissues to whole organisms. Each layer can sense its surroundings, fix problems, and pursue its own small goals. A multi-scale competency architecture is how these layers are linked together so smaller goals serve bigger ones without being wiped out.\n\nHealthy growth happens when cell-level goals get folded into larger goals, like building a limb. Levin sees cancer as this system breaking down: the cells stay capable, but their goals shrink back to only caring about themselves."
 subtitle: "competent parts nested into competent wholes"
 authored_by: "Prior art (GPT-Oct25, Grok-67, Grok-Lex, Claude-Oct25)"
 source: "Levin (2023) \"Darwin's agential materials: evolutionary implications of multiscale competency in developmental biology.\" DOI 10.1007/s00018-023-04790-z. Also Levin (2022) TAME paper, DOI 10.3389/fnsys.2022.768201."

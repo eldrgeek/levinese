@@ -2,6 +2,7 @@
 slug: "information-topology"
 letter: "I"
 title: "Information Topology"
+plain: "This describes the pattern of connections that determines what can act together as a single system. It is not just the physical layout of a body. It is about which parts can share information, which goals can become shared goals, and what larger agent becomes possible once those connections change.\n\nThis is why reorganizing a system does not always mean moving its physical pieces around. A tissue can change how connected it effectively is through cell-to-cell channels, electrical states, or learning, and by doing so change the size of the coordinated system that appears, without rebuilding any physical hardware."
 subtitle: "the shape of possible agents and couplings"
 authored_by: "Codex"
 source: "Levin (2022) \"Technological Approach to Mind Everywhere,\" Frontiers in Systems Neuroscience. DOI 10.3389/fnsys.2022.768201. Also Balaguer et al. (2025) \"Associative conditioning in gene regulatory network models increases integrative causal emergence.\" DOI 10.1038/s42003-025-08411-2."

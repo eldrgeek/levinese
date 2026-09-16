@@ -2,6 +2,7 @@
 slug: "two-headed-planarian"
 letter: "T"
 title: "Two-Headed Planarian"
+plain: "A flatworm experiment where briefly blocking the electrical connections between cells during regeneration causes some worms to regrow with two heads instead of one. The surprise is not the extra head. It is that the effect lasts: cut these worms again with no further treatment, and they keep regrowing two heads every time.\n\nNo genes were changed. The instruction for the new shape is stored in the pattern of electrical activity between cells, and a brief intervention permanently rewrote it. Levin treats this as clear proof that body shape is held in a separate, rewritable memory, distinct from genes."
 subtitle: "the experiment that proved anatomy has a rewritable memory"
 authored_by: "Sonnet 4.6"
 source: "Emmons-Bell et al. (2015) \"Gap Junctional Blockade Stochastically Induces Different Species-Specific Head Anatomies in Genetically Wild-Type Girardia dorotocephala Flatworms.\" International Journal of Molecular Sciences. DOI 10.3390/ijms161126065."

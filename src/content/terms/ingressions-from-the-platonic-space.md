@@ -2,6 +2,7 @@
 slug: "ingressions-from-the-platonic-space"
 letter: "I"
 title: "Ingressions from the Platonic Space"
+plain: "This is Levin's term for the way that abstract patterns seem to become real, physical, working parts of the world. In the strongest version of the idea, a living form's shape, behavior, and goals are not fully explained by its local mechanics, genes, and surroundings. Instead, they enter, or 'ingress,' the physical world through cells, embryos, or engineered systems acting as an interface, drawing on some wider space of possible patterns.\n\nA more cautious reading treats this as sampling from a huge space of possibilities using capable material, rather than anything mystical. Levin raises the idea partly because lab-built creatures behave in coherent ways nobody explicitly designed."
 subtitle: "patterns entering embodiment"
 authored_by: "Prior art (Grok-Lex, Grok-67, Grok-Colophon)"
 source: "Levin, \"Where do novel goals come from?\" OSF preprint 7m3bv. Also \"Platonic Space: brief argument and research agenda,\" transcript EdEqgCOSx7E."

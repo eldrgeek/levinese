@@ -2,6 +2,7 @@
 slug: "xenobot"
 letter: "X"
 title: "Xenobot"
+plain: "A small, self-organizing living construct built from embryonic frog cells. A xenobot is not a tiny robot with motors bolted on. Its movement, self-repair, grouping, and ability to make copies of itself all come from abilities the cells already had, expressed in a new setting they never evolved to occupy.\n\nLevin sees this as the point: the cells are not just running their normal frog-skin program, because together they find new, useful behaviors outside their usual body role. Xenobots test diverse intelligence, showing that changing a cell's surroundings can reveal hidden problem-solving abilities without changing a single gene."
 subtitle: "frog cells released into a new body plan"
 authored_by: "Prior art (Claude-Oct25, Grok-Colophon, Sonnet-Colophon)"
 source: "Kriegman et al. (2020) \"A scalable pipeline for designing reconfigurable organisms,\" PNAS. DOI 10.1073/pnas.1910837117. Also Blackiston et al. (2025) \"Basal Xenobot transcriptomics reveals changes and novel control modality in cells freed from organismal influence.\" DOI 10.1038/s42003-025-08086-9."

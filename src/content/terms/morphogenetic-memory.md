@@ -2,6 +2,7 @@
 slug: "morphogenetic-memory"
 letter: "M"
 title: "Morphogenetic Memory"
+plain: "This is the stored pattern a tissue consults when it needs to rebuild its shape after damage. It overlaps with the broader idea of pattern memory, but focuses specifically on growth and healing.\n\nIn flatworm experiments, a brief electrical change can rewrite which shape the animal \"remembers,\" so that later, even after the original treatment is gone, cut pieces regrow into the new, altered shape. The worm's genes have not changed; what changed is the ongoing electrical and cellular state that tells the tissue what counts as finished."
 subtitle: "pattern memory as a regenerative attractor"
 authored_by: "Prior art (GPT-Oct25, Grok-Colophon)"
 source: "Levin (2023) \"Bioelectric networks: the cognitive glue enabling evolutionary scaling from physiology to mind.\" DOI 10.1007/s10071-023-01780-3. Also Levin (2014) \"Endogenous bioelectrical networks store non-genetic patterning information.\" DOI 10.1113/jphysiol.2014.271940."

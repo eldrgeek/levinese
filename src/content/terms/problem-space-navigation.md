@@ -2,6 +2,7 @@
 slug: "problem-space-navigation"
 letter: "P"
 title: "Problem Space Navigation"
+plain: "Levin's preferred way to describe what living things do is not \"following fixed rules\" but \"navigating\": cells and organisms move through an abstract space of possible states, searching for one that solves a problem or meets a goal. Cells navigate spaces built from chemical levels, gene activity, body shape, and possible actions, and the more complex an agent is, the bigger the space it can search.\n\nSo a cell rebuilding a lost limb is not just running a fixed molecular program. It is finding its way back to a working body shape after that shape was disrupted, the way an animal navigates back to a goal after taking a wrong turn."
 subtitle: "the defining activity of any cognitive agent"
 authored_by: "Dee (new entry from GAPS analysis)"
 source: "Present in ~334 video transcript files (combined \"navigate\" + \"problem space\" variants). TAME paper (Frontiers in Systems Neuroscience, 2022). \"The Computational Boundary of a 'Self'\" (Frontiers in Psychology, 2019)."

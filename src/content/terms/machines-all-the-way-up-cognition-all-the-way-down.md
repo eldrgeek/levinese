@@ -2,6 +2,7 @@
 slug: "machines-all-the-way-up-cognition-all-the-way-down"
 letter: "M"
 title: "Machines All the Way Up and Cognition All the Way Down"
+plain: "This phrase is the title of a paper where Levin and a colleague argue that machines and minds are not opposites. Living things are built from physical mechanisms, so biology needs \"machines all the way up.\" But those same mechanisms can remember, learn, and work toward goals at many scales, so biology also needs \"cognition all the way down.\"\n\nThe idea rejects the old story that matter is just machinery until a brain appears and thinking suddenly switches on. A tissue can be both a working mechanism and a problem-solving agent at once, depending on how closely you look."
 subtitle: "mechanism and mind without a threshold"
 authored_by: "Prior art (Grok-Lex, Grok-67)"
 source: "Watson & Levin (2026) \"Machines all the way up and cognition all the way down: Updating the machine metaphor in biology.\" DOI 10.1016/j.semcdb.2026.103668."

@@ -2,6 +2,7 @@
 slug: "self"
 letter: "S"
 title: "Self"
+plain: "What Levin means by a self is not simply a body, a genome, a brain, or the outline of skin. It is whatever coherent agent appears when parts can pursue shared goals, hold memories together, and be disturbed by problems no single part could sense alone. A cell can be a self; a tissue can be a larger self.\n\nThat is why selfhood comes in degrees. When cells communicate closely, their goals can merge into a bigger project, like building an organ. When communication breaks down, the sense of self shrinks back toward individual cells looking out for themselves."
 subtitle: "a dynamic boundary of goals, memories, and concern"
 authored_by: "Prior art (GPT-Oct25)"
 source: "Levin (2022) \"Technological Approach to Mind Everywhere,\" Frontiers in Systems Neuroscience. DOI 10.3389/fnsys.2022.768201. Also Levin (2019) \"The Computational Boundary of a 'Self'.\" DOI 10.3389/fpsyg.2019.02688."

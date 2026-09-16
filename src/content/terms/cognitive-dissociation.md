@@ -2,6 +2,7 @@
 slug: "cognitive-dissociation"
 letter: "C"
 title: "Cognitive Dissociation"
+plain: "A breakdown in the connection that normally lets small, capable parts of a body work toward its larger goals. In healthy tissue, cells keep their own local abilities while staying lined up with the goals of the tissue and the whole body. Cognitive dissociation happens when the parts are still capable on their own, but stop receiving or acting on signals from that larger group.\n\nLevin applies this to aging and cancer. Older tissue may drift because healing signals no longer coordinate repair well; tumors can form when cells narrow their goals back to their own survival. Dysfunction isn't always about broken parts. It can be capable parts working at the wrong scale, once the connection holding them together weakens."
 subtitle: "when competent parts stop sharing the larger goal"
 authored_by: "Prior art (Grok-67)"
 source: "Pio-Lopez & Levin (2024) \"Aging as a loss of morphostatic information.\" DOI 10.1016/j.arr.2024.102310. Also Levin (2021) \"Bioelectrical approaches to cancer as a problem of the scaling of the cellular self.\" DOI 10.1016/j.pbiomolbio.2021.04.007."

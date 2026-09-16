@@ -2,6 +2,7 @@
 slug: "confabulation-in-anatomical-space"
 letter: "C"
 title: "Confabulation in Anatomical Space"
+plain: "This describes how some living bodies rebuild and reinterpret their own shape on the fly, instead of following a strict fixed plan. When part of the body is missing or out of place, the system does not just fail. It fills in a workable pattern in the moment, the way a person might fill in a gap in a story rather than leaving it blank. Levin uses this idea to explain why some animals, such as flatworms, can regrow such a wide range of body shapes."
 subtitle: "on-the-fly pattern completion"
 authored_by: "Mike (close reading of Levin's Self-Improvising Memories)"
 source: "Levin, \"Self-Improvising Memories\" (mlevin77 Substack / thoughtforms.life). Definitions curated by Mike Wolf from the article text."

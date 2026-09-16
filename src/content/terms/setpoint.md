@@ -2,6 +2,7 @@
 slug: "setpoint"
 letter: "S"
 title: "Setpoint"
+plain: "A stored target state that a control system works to reach or restore, similar to the number set on a thermostat. Ordinary setpoints include a healthy internal voltage or acidity level. Levin extends the idea to whole-body shape: a tissue can have a setpoint for the normal pattern of a limb or face.\n\nThe key difference from a step-by-step instruction is that a setpoint is a goal, not a recipe. If a treatment can change the setpoint itself, the tissue can often do the detailed work of reaching that new goal without being told every step."
 subtitle: "the goal state a system regulates toward"
 authored_by: "Prior art (Grok-67, GPT-Oct25)"
 source: "Levin (2022) \"Technological Approach to Mind Everywhere,\" Frontiers in Systems Neuroscience. DOI 10.3389/fnsys.2022.768201. Also Mathews & Levin (2023) \"Morphoceuticals.\" DOI 10.1016/j.drudis.2023.103585."
