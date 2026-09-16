@@ -296,14 +296,16 @@ const { title, description = "A gift to Michael Levin — dictionary, corpus bro
        turns that bubble into a labelled, animated indicator. The bubble is
        .sg-msg--thinking, created and removed by soma-guide.js _askInference. -->
   <style is:global>
-    .sg-msg--thinking {
+    .sg .sg-msg.sg-msg--thinking {
       display: inline-flex;
+      color: transparent;
+      letter-spacing: normal;
       align-items: center;
       gap: 0.55rem;
       font-size: 0;
       padding: 9px 14px;
     }
-    .sg-msg--thinking::before {
+    .sg .sg-msg.sg-msg--thinking::before {
       content: "";
       width: 30px;
       height: 8px;
@@ -314,8 +316,11 @@ const { title, description = "A gift to Michael Levin — dictionary, corpus bro
         radial-gradient(circle closest-side, #3C6CDD 90%, transparent) 100% 50% / 8px 8px no-repeat;
       animation: morph-dots 1.2s infinite ease-in-out;
     }
-    .sg-msg--thinking::after {
+    .sg .sg-msg.sg-msg--thinking::after {
       content: "Morph is reading Levin's work";
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: normal;
+      white-space: nowrap;
       font-size: 0.82rem;
       font-style: italic;
       color: #475066;
@@ -328,12 +333,12 @@ const { title, description = "A gift to Michael Levin — dictionary, corpus bro
     }
     @keyframes morph-label {
       0%   { content: "Morph is reading Levin's work"; }
-      80%  { content: "Still thinking. Answers can take up to 30 seconds"; }
-      100% { content: "Still thinking. Answers can take up to 30 seconds"; }
+      80%  { content: "Still thinking (up to 30 seconds)"; }
+      100% { content: "Still thinking (up to 30 seconds)"; }
     }
     @media (prefers-reduced-motion: reduce) {
-      .sg-msg--thinking::before { animation: none; }
-      .sg-msg--thinking::after { animation: none; }
+      .sg .sg-msg.sg-msg--thinking::before { animation: none; }
+      .sg .sg-msg.sg-msg--thinking::after { animation: none; }
     }
   </style>
   <script is:inline src="/levinese-guide-config.js"></script>
