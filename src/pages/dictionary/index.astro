@@ -88,6 +88,87 @@ const plainCount = terms.filter(t => t.plain).length;
     </div>
   </div>
 
+  <!-- Watch first: how to use this dictionary. Mark Lesser asked for this as a
+       button on the page he shares with his OLLI class (2026-09-17). It opens a
+       lightbox; nothing autoplays, and the page is fully usable without it. -->
+  <section class="max-w-5xl mx-auto px-4 sm:px-6 pb-8">
+    <button
+      type="button"
+      id="howto-card"
+      class="group w-full flex items-center gap-4 sm:gap-5 text-left bg-teal-light/40 border border-teal/30 rounded-xl p-3 sm:p-4 hover:border-teal/60 hover:shadow-sm transition-all"
+      aria-haspopup="dialog"
+      aria-controls="howto-lightbox"
+    >
+      <span class="relative shrink-0 block w-32 sm:w-44 aspect-video rounded-lg overflow-hidden bg-black">
+        <img src="/videos/levinese-dictionary-howto-poster.jpg" alt="" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+        <span class="absolute inset-0 flex items-center justify-center">
+          <span class="flex items-center justify-center w-11 h-11 rounded-full bg-teal/90 text-white shadow-md group-hover:bg-teal transition-colors">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 ml-0.5"><path d="M8 5v14l11-7z"/></svg>
+          </span>
+        </span>
+      </span>
+      <span class="min-w-0">
+        <span class="block text-sm font-medium text-teal uppercase tracking-widest mb-1">&#9654; Watch this first</span>
+        <span class="block font-serif text-lg text-ink leading-snug mb-1">How to use this dictionary &mdash; 72 seconds</span>
+        <span class="block text-sm text-muted">Plain language versus the full entry, and how to ask Morph about any term. New here? Start with this.</span>
+      </span>
+    </button>
+  </section>
+
+  <div
+    id="howto-lightbox"
+    role="dialog"
+    aria-modal="true"
+    aria-label="How to use this dictionary"
+    hidden
+    class="fixed inset-0 z-[100] items-center justify-center bg-black/70 backdrop-blur-sm p-4"
+  >
+    <div class="relative w-full max-w-4xl bg-surface rounded-xl overflow-hidden shadow-2xl">
+      <div class="flex items-center justify-between px-4 py-2.5 border-b border-border">
+        <span class="font-serif text-ink text-sm sm:text-base">How to use this dictionary</span>
+        <button type="button" id="howto-close" aria-label="Close" class="text-muted hover:text-ink transition-colors text-xl leading-none px-2">&times;</button>
+      </div>
+      <video id="howto-video" class="w-full bg-black" controls preload="metadata" playsinline
+             poster="/videos/levinese-dictionary-howto-poster.jpg">
+        <source src="/videos/levinese-dictionary-howto.mp4" type="video/mp4" />
+      </video>
+      <div class="px-4 py-3 border-t border-border">
+        <p class="text-sm text-muted">
+          Want the whole site instead? The <a href="/" class="text-teal hover:underline">home page</a> has a three-minute guided tour of the dictionary, corpus and atlas.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script is:inline>
+    (() => {
+      const card = document.getElementById('howto-card');
+      const box = document.getElementById('howto-lightbox');
+      const video = document.getElementById('howto-video');
+      const closeBtn = document.getElementById('howto-close');
+      if (!card || !box || !video) return;
+
+      const open = () => {
+        box.hidden = false;
+        box.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+        video.play().catch(() => {});
+      };
+      const close = () => {
+        video.pause();
+        box.hidden = true;
+        box.style.display = '';
+        document.body.style.overflow = '';
+        card.focus();
+      };
+
+      card.addEventListener('click', open);
+      closeBtn && closeBtn.addEventListener('click', close);
+      box.addEventListener('click', (e) => { if (e.target === box) close(); });
+      document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !box.hidden) close(); });
+    })();
+  </script>
+
   <!-- Sticky search + letter rail -->
   <div id="dict-nav" class="sticky top-14 z-40 bg-parchment/95 backdrop-blur-sm border-b border-border">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 py-3 flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-4">
