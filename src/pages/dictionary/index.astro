@@ -109,8 +109,8 @@ const plainCount = terms.filter(t => t.plain).length;
       </span>
       <span class="min-w-0">
         <span class="block text-sm font-medium text-teal uppercase tracking-widest mb-1">&#9654; Watch this first</span>
-        <span class="block font-serif text-lg text-ink leading-snug mb-1">How to use this dictionary &mdash; 72 seconds</span>
-        <span class="block text-sm text-muted">Plain language versus the full entry, and how to ask Morph about any term. New here? Start with this.</span>
+        <span class="block font-serif text-lg text-ink leading-snug mb-1">How to use Levinese &mdash; two minutes</span>
+        <span class="block text-sm text-muted">Finding a term, plain language versus the full entry, asking Morph, and how to tell us when an entry is wrong. New here? Start with this.</span>
       </span>
     </button>
   </section>
@@ -125,16 +125,17 @@ const plainCount = terms.filter(t => t.plain).length;
   >
     <div class="relative w-full max-w-4xl bg-surface rounded-xl overflow-hidden shadow-2xl">
       <div class="flex items-center justify-between px-4 py-2.5 border-b border-border">
-        <span class="font-serif text-ink text-sm sm:text-base">How to use this dictionary</span>
+        <span class="font-serif text-ink text-sm sm:text-base">How to use Levinese</span>
         <button type="button" id="howto-close" aria-label="Close" class="text-muted hover:text-ink transition-colors text-xl leading-none px-2">&times;</button>
       </div>
       <video id="howto-video" class="w-full bg-black" controls preload="metadata" playsinline
              poster="/videos/levinese-dictionary-howto-poster.jpg">
         <source src="/videos/levinese-dictionary-howto.mp4" type="video/mp4" />
+        <track kind="captions" src="/videos/levinese-dictionary-howto.vtt" srclang="en" label="English" default />
       </video>
       <div class="px-4 py-3 border-t border-border">
         <p class="text-sm text-muted">
-          Want the whole site instead? The <a href="/" class="text-teal hover:underline">home page</a> has a three-minute guided tour of the dictionary, corpus and atlas.
+          Want more? The <a href="/" class="text-teal hover:underline">home page</a> has a longer guided tour that also covers the atlas and the collaborators.
         </p>
       </div>
     </div>
