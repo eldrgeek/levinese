@@ -50,4 +50,27 @@ test.describe('dictionary filter + cross-links', () => {
     const stalePapers = await page.locator('a[href^="/papers#"]').count();
     expect(stalePapers).toBe(0);
   });
+
+  for (const view of ['', '?view=plain']) {
+    test(`search matches definition text and ranks title hits first ${view}`, async ({ page }) => {
+      await page.goto('/dictionary/' + view);
+      // The magnifier is a working control, not decoration.
+      await page.click('#dict-search-go');
+      await expect(page.locator('#dict-search')).toBeFocused();
+      const box = await page.locator('#dict-search').boundingBox();
+      expect(box!.width).toBeGreaterThan(300);
+
+      // "flatworm" appears in definitions only, never in a title.
+      await page.keyboard.type('flatworm');
+      const bodyHits = page.locator('#dict-results .dict-entry:not([hidden])');
+      await expect(bodyHits.first()).toBeVisible();
+
+      // "planarian" is in two titles and many bodies; the title hits come first.
+      await page.fill('#dict-search', 'PLANARIAN');
+      const order = await page.$$eval('#dict-results .dict-entry:not([hidden])',
+        els => els.map(e => (e as HTMLElement).dataset.title!.includes('planarian')));
+      expect(order.length).toBeGreaterThan(2);
+      expect(order.indexOf(false)).toBeGreaterThan(order.lastIndexOf(true));
+    });
+  }
 });
