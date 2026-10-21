@@ -16,3 +16,6 @@ __pycache__/
 # Playwright artifacts
 test-results/
 playwright-report/
+
+# Deno lock written by `netlify dev` for edge functions (local only)
+deno.lock
