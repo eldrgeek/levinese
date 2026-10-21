@@ -7,6 +7,15 @@
 
 # /papers → /corpus (301 — canonical URL is /corpus now)
 # Anchors (#slug) pass through automatically.
+# Feedback chip, central host (soma-chip repo), proxied so it stays same-origin.
+# Must come before any SPA fallback. vendor/soma-feedback/soma-chip-loader.js falls
+# back to the vendored chip when this answers badly or slowly. (bead pm-8e8a)
+[[redirects]]
+  from = "/soma-chip/*"
+  to = "https://soma-chip.netlify.app/:splat"
+  status = 200
+  force = true
+
 [[redirects]]
   from = "/papers"
   to = "/corpus"
