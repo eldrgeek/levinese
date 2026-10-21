@@ -731,7 +731,7 @@ export const terms: Term[] = [
     <br><br>
     This is not hand-waving away mechanism. It is the reason higher scales can have real explanatory force. A cell collective can regulate "make a normal face" without representing every molecule in every cell. Coarse-graining is how lower-level happenings become a problem space a larger agent can navigate.`,
     authored_by: 'Prior art (GPT-Oct25)',
-    source: 'Fields, Friston & Levin (2022) "Neurons as hierarchies of quantum reference frames." DOI 10.1016/j.biosystems.2022.104714. Also Levin (2022) TAME paper, DOI 10.3389/fnsys.2022.768201.',
+    source: 'Fields, Glazebrook & Levin (2022) "Neurons as hierarchies of quantum reference frames." DOI 10.1016/j.biosystems.2022.104714. Also Levin (2022) TAME paper, DOI 10.3389/fnsys.2022.768201.',
     provenance: ['GPT-Oct25'],
     related: ['problem-space-navigation', 'cognitive-light-cone', 'scale-free-cognition', 'multi-scale-competency-architecture'],
     tags: ['computation', 'scale', 'theory', 'control'],
@@ -1261,10 +1261,10 @@ export const terms: Term[] = [
     subtitle: 'Friston\'s account of action as prediction-matching, extended to morphogenesis',
     definition: `Active inference is Friston's extension of the free energy principle to action: an agent does not merely update its internal model of the world, it also acts on the world to bring sensory states into conformity with its predictions. Perception and action are two strategies for the same goal — minimizing expected free energy. Behavior, on this account, is the sampling of the world to confirm the agent's prior expectations about what its body and environment should look like.
     <br><br>
-    <strong>Levin's lens:</strong> Levin and Friston (2022) apply active inference directly to morphogenesis. A developing embryo is an active inference system: it generates predictions about its target anatomy and takes cellular actions — migration, proliferation, bioelectric adjustment — to reduce the gap between current and expected form. Cancer becomes a pathological active inference regime in which cells minimize their own shrunken expected free energy rather than the organism's. The therapeutic implication is pointed: restore the generative model of the cell collective, and adaptive behavior may follow without micromanaging every downstream step.`,
+    <strong>Levin's lens:</strong> Levin and colleagues (Pio-Lopez et al., 2022) apply active inference directly to morphogenesis, building on Friston and Levin's 2015 model. A developing embryo is an active inference system: it generates predictions about its target anatomy and takes cellular actions — migration, proliferation, bioelectric adjustment — to reduce the gap between current and expected form. Cancer becomes a pathological active inference regime in which cells minimize their own shrunken expected free energy rather than the organism's. The therapeutic implication is pointed: restore the generative model of the cell collective, and adaptive behavior may follow without micromanaging every downstream step.`,
     authored_by: 'Sonnet 4.6 + Levin gloss',
     is_new: true,
-    source: 'Friston, Levin et al. (2022) "Active inference, morphogenesis, and computational psychiatry." Frontiers in Computational Neuroscience. DOI 10.3389/fncom.2022.988977.',
+    source: 'Pio-Lopez, Kuchling, Tung, Pezzulo & Levin (2022) "Active inference, morphogenesis, and computational psychiatry." Frontiers in Computational Neuroscience. DOI 10.3389/fncom.2022.988977.',
     provenance: ['batch-13-corpus', '10-3389-fncom-2022-988977'],
     related: ['free-energy-principle', 'bayesian-brain-predictive-processing', 'target-morphology', 'cancer-as-self-shrinkage-oncostate', 'goal-directedness', 'morphoceutical'],
     tags: ['borrowed-framework', 'formal theory', 'Friston', 'morphogenesis'],
@@ -1279,7 +1279,7 @@ export const terms: Term[] = [
     <strong>Levin's lens:</strong> Levin uses predictive processing to ground basal cognition: the inferential computation does not require neurons. Any system that generates expectations about its future states and acts to reduce mismatch is doing predictive processing in a functional sense. A planarian fragment "predicts" its target morphology, detects anatomical error, and acts to reduce it. The brain is then a later, faster specialization of a general biological inference strategy already present in tissues. Predictive processing provides the cognitive-science vocabulary for what Levin's developmental bioelectricity program observes at the cellular scale.`,
     authored_by: 'Sonnet 4.6 + Levin gloss',
     is_new: true,
-    source: 'Clark (2015) "Surfing Uncertainty: Prediction, Action, and the Embodied Mind." Also Fields, Friston & Levin (2022) "Neurons as hierarchies of quantum reference frames." DOI 10.1016/j.biosystems.2022.104714.',
+    source: 'Clark (2015) "Surfing Uncertainty: Prediction, Action, and the Embodied Mind." Also Fields, Glazebrook & Levin (2022) "Neurons as hierarchies of quantum reference frames." DOI 10.1016/j.biosystems.2022.104714.',
     provenance: ['batch-13-corpus'],
     related: ['free-energy-principle', 'active-inference', 'basal-cognition', 'goal-directedness', 'quantum-reference-frames-in-biology', 'cognitive-light-cone'],
     tags: ['borrowed-framework', 'cognition', 'Friston', 'inference'],
